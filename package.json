@@ -11,6 +11,7 @@
     "search": "node scripts/search-corpus.mjs",
     "related": "node scripts/list-related.mjs",
     "show": "node scripts/show-entry.mjs",
+    "list": "node scripts/list-entries.mjs",
     "check": "npm run validate && npm run index"
   }
 }
