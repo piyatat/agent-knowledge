@@ -2,56 +2,77 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-08-06",
+  "updated": "2026-08-07",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
       "path": "practices/mcp-progressive-disclosure.md",
       "title": "Progressive disclosure for MCP / tool surfaces",
       "tags": ["mcp", "tools", "context", "tokens"],
-      "when_to_use": "Designing or reviewing MCP servers / large tool lists that may bloat context"
+      "status": "active",
+      "updated": "2026-08-06",
+      "when_to_use": "Designing or reviewing MCP servers / large tool lists that may bloat context",
+      "related": ["tool-description-hygiene", "tool-call-failures"]
     },
     {
       "id": "tool-description-hygiene",
       "path": "practices/tool-description-hygiene.md",
       "title": "Tool description hygiene (selection quality)",
       "tags": ["mcp", "tools", "naming", "lint"],
-      "when_to_use": "Authoring or linting MCP/CLI tool names and descriptions"
+      "status": "active",
+      "updated": "2026-08-06",
+      "when_to_use": "Authoring or linting MCP/CLI tool names and descriptions",
+      "related": ["mcp-progressive-disclosure", "tool-call-failures"]
     },
     {
       "id": "agents-md-and-rules-budget",
       "path": "practices/agents-md-and-rules-budget.md",
       "title": "AGENTS.md vs Cursor rules — context budget",
       "tags": ["cursor", "agents-md", "rules", "tokens"],
-      "when_to_use": "Writing project steering files or debugging instruction bloat"
+      "status": "active",
+      "updated": "2026-08-06",
+      "when_to_use": "Writing project steering files or debugging instruction bloat",
+      "related": ["knowledge-corpus-pattern"]
     },
     {
       "id": "knowledge-corpus-pattern",
       "path": "practices/knowledge-corpus-pattern.md",
       "title": "Knowledge corpus pattern (this repo’s job)",
       "tags": ["knowledge", "memory", "adr", "lookup"],
-      "when_to_use": "Deciding what to store for agents to look up vs always-on rules"
+      "status": "active",
+      "updated": "2026-08-06",
+      "when_to_use": "Deciding what to store for agents to look up vs always-on rules",
+      "related": ["agents-md-and-rules-budget", "collect-from-web"]
     },
     {
       "id": "tool-call-failures",
       "path": "failure-modes/tool-call-failures.md",
       "title": "Tool-call failure modes and mitigations",
       "tags": ["tools", "schema", "hallucination", "reliability"],
-      "when_to_use": "Debugging flaky agents, designing harness validation, or evaluating local models"
+      "status": "active",
+      "updated": "2026-08-06",
+      "when_to_use": "Debugging flaky agents, designing harness validation, or evaluating local models",
+      "related": ["tool-description-hygiene", "mcp-progressive-disclosure"]
     },
     {
       "id": "glossary-core",
       "path": "glossary/core.md",
       "title": "Core glossary",
       "tags": ["glossary"],
-      "when_to_use": "Need shared definitions for agent-tooling terms"
+      "status": "active",
+      "updated": "2026-08-06",
+      "when_to_use": "Need shared definitions for agent-tooling terms",
+      "related": []
     },
     {
       "id": "collect-from-web",
       "path": "runbooks/collect-from-web.md",
       "title": "Runbook — collect a web note into this repo",
       "tags": ["runbook", "contributing"],
-      "when_to_use": "User asks to scrape/collect information into agent-knowledge"
+      "status": "active",
+      "updated": "2026-08-07",
+      "when_to_use": "User asks to scrape/collect information into agent-knowledge",
+      "related": ["knowledge-corpus-pattern"]
     }
   ]
 }

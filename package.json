@@ -1,0 +1,12 @@
+{
+  "name": "agent-knowledge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lookup corpus for AI coding agents — curated notes with sources",
+  "type": "module",
+  "scripts": {
+    "index": "node scripts/generate-index.mjs",
+    "validate": "node scripts/validate-corpus.mjs",
+    "check": "npm run validate && npm run index"
+  }
+}

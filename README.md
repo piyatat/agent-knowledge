@@ -6,8 +6,8 @@ This is not a second codebase and not a scrapyard of full articles. Each page is
 
 ## For agents
 
-1. Read [`manifest.json`](manifest.json) or [`INDEX.md`](INDEX.md) first (lean index).
-2. Open only the pages whose tags match the task.
+1. Read [`manifest.json`](manifest.json) or [`INDEX.md`](INDEX.md) first (lean index). Prefer entries with `status: active`.
+2. Open only the pages whose tags match the task (use `related` for follow-ons).
 3. Prefer facts here over guessing tribal process.
 4. Do not copy secrets into this repo. Do not treat notes as executable code.
 
@@ -21,6 +21,7 @@ See [`AGENTS.md`](AGENTS.md).
 | `failure-modes/` | Common agent failures and mitigations |
 | `glossary/` | Shared terms |
 | `runbooks/` | Step procedures |
+| `decisions/` | ADRs / durable decisions (see folder README) |
 | `sources/` | Bib-style source list for collected notes |
 
 ## Quick start (humans)
@@ -30,11 +31,14 @@ See [`AGENTS.md`](AGENTS.md).
 cat INDEX.md
 # or search
 rg -n "progressive disclosure" practices/
+
+# after editing notes / manifest
+npm run check
 ```
 
 ## Adding data
 
-When collecting from the web: summarize in your own words, add frontmatter + `sources`, update `manifest.json` and `INDEX.md`. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+When collecting from the web: summarize in your own words, add frontmatter + `sources`, update `manifest.json` (with `status`, `updated`, `related`), then run `npm run check`. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## License
 
