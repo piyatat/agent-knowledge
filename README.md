@@ -33,6 +33,8 @@ cat INDEX.md
 rg -n "progressive disclosure" practices/
 # list tags → entry ids (optional filter: npm run tags -- mcp)
 npm run tags
+# search titles, tags, when_to_use, and note bodies
+npm run search -- progressive disclosure
 
 # after editing notes / manifest
 npm run check
