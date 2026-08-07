@@ -35,6 +35,8 @@ rg -n "progressive disclosure" practices/
 npm run tags
 # search titles, tags, when_to_use, and note bodies
 npm run search -- progressive disclosure
+# list related entries for one id
+npm run related -- mcp-progressive-disclosure
 
 # after editing notes / manifest
 npm run check

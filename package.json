@@ -9,6 +9,7 @@
     "validate": "node scripts/validate-corpus.mjs",
     "tags": "node scripts/list-tags.mjs",
     "search": "node scripts/search-corpus.mjs",
+    "related": "node scripts/list-related.mjs",
     "check": "npm run validate && npm run index"
   }
 }
