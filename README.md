@@ -37,6 +37,8 @@ npm run tags
 npm run search -- progressive disclosure
 # list related entries for one id
 npm run related -- mcp-progressive-disclosure
+# show full metadata for one id (path, tags, when_to_use)
+npm run show -- mcp-progressive-disclosure
 
 # after editing notes / manifest
 npm run check
