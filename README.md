@@ -41,6 +41,8 @@ npm run related -- mcp-progressive-disclosure
 npm run show -- mcp-progressive-disclosure
 # list all entry ids and titles (optional filter: npm run list -- active)
 npm run list
+# count entries by status (tab-separated, includes total row)
+npm run count
 
 # after editing notes / manifest
 npm run check

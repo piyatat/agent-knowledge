@@ -12,6 +12,7 @@
     "related": "node scripts/list-related.mjs",
     "show": "node scripts/show-entry.mjs",
     "list": "node scripts/list-entries.mjs",
+    "count": "node scripts/count-entries.mjs",
     "check": "npm run validate && npm run index"
   }
 }
