@@ -31,6 +31,8 @@ See [`AGENTS.md`](AGENTS.md).
 cat INDEX.md
 # or search
 rg -n "progressive disclosure" practices/
+# list tags → entry ids (optional filter: npm run tags -- mcp)
+npm run tags
 
 # after editing notes / manifest
 npm run check
