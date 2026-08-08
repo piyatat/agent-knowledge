@@ -11,13 +11,23 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | mcp-progressive-disclosure | `practices/mcp-progressive-disclosure.md` | active | 2026-08-06 | Designing or reviewing MCP servers / large tool lists that may bloat context | tool-description-hygiene, tool-call-failures |
 | tool-description-hygiene | `practices/tool-description-hygiene.md` | active | 2026-08-06 | Authoring or linting MCP/CLI tool names and descriptions | mcp-progressive-disclosure, tool-call-failures |
 | agents-md-and-rules-budget | `practices/agents-md-and-rules-budget.md` | active | 2026-08-06 | Writing project steering files or debugging instruction bloat | knowledge-corpus-pattern |
-| knowledge-corpus-pattern | `practices/knowledge-corpus-pattern.md` | active | 2026-08-06 | Deciding what to store for agents to look up vs always-on rules | agents-md-and-rules-budget, collect-from-web |
+| knowledge-corpus-pattern | `practices/knowledge-corpus-pattern.md` | active | 2026-08-06 | Deciding what to store for agents to look up vs always-on rules | agents-md-and-rules-budget, collect-from-web, memory-wiki-vs-rag |
+| agent-eval-harness | `practices/agent-eval-harness.md` | active | 2026-08-08 | Designing offline evals, replay suites, or CI gates for tool-using agents | tool-call-failures, structured-outputs-for-agents, agent-observability-otel |
+| context-compaction | `practices/context-compaction.md` | active | 2026-08-08 | Long agent sessions hit token limits, cost spikes, or lose the plot after tool-heavy loops | agents-md-and-rules-budget, knowledge-corpus-pattern, memory-wiki-vs-rag |
+| tools-mcp-skills-layers | `practices/tools-mcp-skills-layers.md` | active | 2026-08-08 | Deciding whether to build a skill, an MCP server, or a local tool for an agent capability | mcp-progressive-disclosure, tool-description-hygiene, knowledge-corpus-pattern |
+| multi-agent-handoffs | `practices/multi-agent-handoffs.md` | active | 2026-08-08 | Splitting work across specialist agents or designing parent/subagent routing | tools-mcp-skills-layers, context-compaction, agent-observability-otel |
+| agent-observability-otel | `practices/agent-observability-otel.md` | active | 2026-08-08 | Instrumenting agent loops for latency, cost, tool failures, or multi-agent debugging | agent-eval-harness, tool-call-failures, multi-agent-handoffs |
+| structured-outputs-for-agents | `practices/structured-outputs-for-agents.md` | active | 2026-08-08 | Hardening tool calls, routing payloads, or final agent JSON that downstream code will execute | tool-description-hygiene, tool-call-failures, prompt-injection-agent-defense |
+| memory-wiki-vs-rag | `practices/memory-wiki-vs-rag.md` | active | 2026-08-08 | Choosing how agents should remember project conventions, decisions, or large corpora across sessions | knowledge-corpus-pattern, agents-md-and-rules-budget, context-compaction |
+| agent-cost-step-budgets | `practices/agent-cost-step-budgets.md` | active | 2026-08-08 | Capping runaway tool loops, cloud agent spend, or CI eval cost | agent-eval-harness, context-compaction, agent-observability-otel |
+| human-in-the-loop-approvals | `practices/human-in-the-loop-approvals.md` | active | 2026-08-08 | Agents can mutate prod, spend money, delete data, or push code without review | prompt-injection-agent-defense, multi-agent-handoffs |
 
 ## Failure Modes
 
 | id | path | status | updated | when_to_use | related |
 | --- | --- | --- | --- | --- | --- |
-| tool-call-failures | `failure-modes/tool-call-failures.md` | active | 2026-08-06 | Debugging flaky agents, designing harness validation, or evaluating local models | tool-description-hygiene, mcp-progressive-disclosure |
+| tool-call-failures | `failure-modes/tool-call-failures.md` | active | 2026-08-06 | Debugging flaky agents, designing harness validation, or evaluating local models | tool-description-hygiene, mcp-progressive-disclosure, agent-eval-harness, structured-outputs-for-agents, prompt-injection-agent-defense |
+| prompt-injection-agent-defense | `failure-modes/prompt-injection-agent-defense.md` | active | 2026-08-08 | Threat-modeling agents that read untrusted content or call powerful tools (shell, email, MCP) | tool-call-failures, structured-outputs-for-agents, human-in-the-loop-approvals |
 
 ## Glossary
 

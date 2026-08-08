@@ -1,64 +1,109 @@
 {
   "name": "agent-knowledge",
   "version": "0.1.0",
-  "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-08-07",
+  "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
+  "updated": "2026-08-08",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
       "path": "practices/mcp-progressive-disclosure.md",
       "title": "Progressive disclosure for MCP / tool surfaces",
-      "tags": ["mcp", "tools", "context", "tokens"],
+      "tags": [
+        "mcp",
+        "tools",
+        "context",
+        "tokens"
+      ],
       "status": "active",
       "updated": "2026-08-06",
       "when_to_use": "Designing or reviewing MCP servers / large tool lists that may bloat context",
-      "related": ["tool-description-hygiene", "tool-call-failures"]
+      "related": [
+        "tool-description-hygiene",
+        "tool-call-failures"
+      ]
     },
     {
       "id": "tool-description-hygiene",
       "path": "practices/tool-description-hygiene.md",
       "title": "Tool description hygiene (selection quality)",
-      "tags": ["mcp", "tools", "naming", "lint"],
+      "tags": [
+        "mcp",
+        "tools",
+        "naming",
+        "lint"
+      ],
       "status": "active",
       "updated": "2026-08-06",
       "when_to_use": "Authoring or linting MCP/CLI tool names and descriptions",
-      "related": ["mcp-progressive-disclosure", "tool-call-failures"]
+      "related": [
+        "mcp-progressive-disclosure",
+        "tool-call-failures"
+      ]
     },
     {
       "id": "agents-md-and-rules-budget",
       "path": "practices/agents-md-and-rules-budget.md",
-      "title": "AGENTS.md vs Cursor rules — context budget",
-      "tags": ["cursor", "agents-md", "rules", "tokens"],
+      "title": "AGENTS.md vs Cursor rules \u2014 context budget",
+      "tags": [
+        "cursor",
+        "agents-md",
+        "rules",
+        "tokens"
+      ],
       "status": "active",
       "updated": "2026-08-06",
       "when_to_use": "Writing project steering files or debugging instruction bloat",
-      "related": ["knowledge-corpus-pattern"]
+      "related": [
+        "knowledge-corpus-pattern"
+      ]
     },
     {
       "id": "knowledge-corpus-pattern",
       "path": "practices/knowledge-corpus-pattern.md",
-      "title": "Knowledge corpus pattern (this repo’s job)",
-      "tags": ["knowledge", "memory", "adr", "lookup"],
+      "title": "Knowledge corpus pattern (this repo\u2019s job)",
+      "tags": [
+        "knowledge",
+        "memory",
+        "adr",
+        "lookup"
+      ],
       "status": "active",
       "updated": "2026-08-06",
       "when_to_use": "Deciding what to store for agents to look up vs always-on rules",
-      "related": ["agents-md-and-rules-budget", "collect-from-web"]
+      "related": [
+        "agents-md-and-rules-budget",
+        "collect-from-web",
+        "memory-wiki-vs-rag"
+      ]
     },
     {
       "id": "tool-call-failures",
       "path": "failure-modes/tool-call-failures.md",
       "title": "Tool-call failure modes and mitigations",
-      "tags": ["tools", "schema", "hallucination", "reliability"],
+      "tags": [
+        "tools",
+        "schema",
+        "hallucination",
+        "reliability"
+      ],
       "status": "active",
       "updated": "2026-08-06",
       "when_to_use": "Debugging flaky agents, designing harness validation, or evaluating local models",
-      "related": ["tool-description-hygiene", "mcp-progressive-disclosure"]
+      "related": [
+        "tool-description-hygiene",
+        "mcp-progressive-disclosure",
+        "agent-eval-harness",
+        "structured-outputs-for-agents",
+        "prompt-injection-agent-defense"
+      ]
     },
     {
       "id": "glossary-core",
       "path": "glossary/core.md",
       "title": "Core glossary",
-      "tags": ["glossary"],
+      "tags": [
+        "glossary"
+      ],
       "status": "active",
       "updated": "2026-08-06",
       "when_to_use": "Need shared definitions for agent-tooling terms",
@@ -67,12 +112,205 @@
     {
       "id": "collect-from-web",
       "path": "runbooks/collect-from-web.md",
-      "title": "Runbook — collect a web note into this repo",
-      "tags": ["runbook", "contributing"],
+      "title": "Runbook \u2014 collect a web note into this repo",
+      "tags": [
+        "runbook",
+        "contributing"
+      ],
       "status": "active",
       "updated": "2026-08-07",
       "when_to_use": "User asks to scrape/collect information into agent-knowledge",
-      "related": ["knowledge-corpus-pattern"]
+      "related": [
+        "knowledge-corpus-pattern"
+      ]
+    },
+    {
+      "id": "agent-eval-harness",
+      "path": "practices/agent-eval-harness.md",
+      "title": "Agent evaluation harness (golden tasks + CI gates)",
+      "tags": [
+        "evals",
+        "harness",
+        "ci",
+        "reliability"
+      ],
+      "status": "active",
+      "updated": "2026-08-08",
+      "when_to_use": "Designing offline evals, replay suites, or CI gates for tool-using agents",
+      "related": [
+        "tool-call-failures",
+        "structured-outputs-for-agents",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "context-compaction",
+      "path": "practices/context-compaction.md",
+      "title": "Context compaction for long-running agents",
+      "tags": [
+        "context",
+        "tokens",
+        "compaction",
+        "memory"
+      ],
+      "status": "active",
+      "updated": "2026-08-08",
+      "when_to_use": "Long agent sessions hit token limits, cost spikes, or lose the plot after tool-heavy loops",
+      "related": [
+        "agents-md-and-rules-budget",
+        "knowledge-corpus-pattern",
+        "memory-wiki-vs-rag"
+      ]
+    },
+    {
+      "id": "tools-mcp-skills-layers",
+      "path": "practices/tools-mcp-skills-layers.md",
+      "title": "Tools vs MCP vs Skills (three layers)",
+      "tags": [
+        "mcp",
+        "skills",
+        "tools",
+        "architecture"
+      ],
+      "status": "active",
+      "updated": "2026-08-08",
+      "when_to_use": "Deciding whether to build a skill, an MCP server, or a local tool for an agent capability",
+      "related": [
+        "mcp-progressive-disclosure",
+        "tool-description-hygiene",
+        "knowledge-corpus-pattern"
+      ]
+    },
+    {
+      "id": "prompt-injection-agent-defense",
+      "path": "failure-modes/prompt-injection-agent-defense.md",
+      "title": "Prompt injection defenses for tool-using agents",
+      "tags": [
+        "security",
+        "prompt-injection",
+        "owasp",
+        "tools"
+      ],
+      "status": "active",
+      "updated": "2026-08-08",
+      "when_to_use": "Threat-modeling agents that read untrusted content or call powerful tools (shell, email, MCP)",
+      "related": [
+        "tool-call-failures",
+        "structured-outputs-for-agents",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "multi-agent-handoffs",
+      "path": "practices/multi-agent-handoffs.md",
+      "title": "Multi-agent handoffs vs agents-as-tools",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "handoff"
+      ],
+      "status": "active",
+      "updated": "2026-08-08",
+      "when_to_use": "Splitting work across specialist agents or designing parent/subagent routing",
+      "related": [
+        "tools-mcp-skills-layers",
+        "context-compaction",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "agent-observability-otel",
+      "path": "practices/agent-observability-otel.md",
+      "title": "Agent observability with OpenTelemetry GenAI spans",
+      "tags": [
+        "observability",
+        "otel",
+        "tracing",
+        "tools"
+      ],
+      "status": "active",
+      "updated": "2026-08-08",
+      "when_to_use": "Instrumenting agent loops for latency, cost, tool failures, or multi-agent debugging",
+      "related": [
+        "agent-eval-harness",
+        "tool-call-failures",
+        "multi-agent-handoffs"
+      ]
+    },
+    {
+      "id": "structured-outputs-for-agents",
+      "path": "practices/structured-outputs-for-agents.md",
+      "title": "Structured outputs and strict tool schemas",
+      "tags": [
+        "schema",
+        "structured-output",
+        "tools",
+        "reliability"
+      ],
+      "status": "active",
+      "updated": "2026-08-08",
+      "when_to_use": "Hardening tool calls, routing payloads, or final agent JSON that downstream code will execute",
+      "related": [
+        "tool-description-hygiene",
+        "tool-call-failures",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "memory-wiki-vs-rag",
+      "path": "practices/memory-wiki-vs-rag.md",
+      "title": "Agent memory: wiki/index vs RAG",
+      "tags": [
+        "memory",
+        "rag",
+        "wiki",
+        "knowledge"
+      ],
+      "status": "active",
+      "updated": "2026-08-08",
+      "when_to_use": "Choosing how agents should remember project conventions, decisions, or large corpora across sessions",
+      "related": [
+        "knowledge-corpus-pattern",
+        "agents-md-and-rules-budget",
+        "context-compaction"
+      ]
+    },
+    {
+      "id": "agent-cost-step-budgets",
+      "path": "practices/agent-cost-step-budgets.md",
+      "title": "Cost and step budgets for agent runs",
+      "tags": [
+        "cost",
+        "tokens",
+        "budgets",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-08-08",
+      "when_to_use": "Capping runaway tool loops, cloud agent spend, or CI eval cost",
+      "related": [
+        "agent-eval-harness",
+        "context-compaction",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "human-in-the-loop-approvals",
+      "path": "practices/human-in-the-loop-approvals.md",
+      "title": "Human-in-the-loop approvals for risky agent actions",
+      "tags": [
+        "hitl",
+        "safety",
+        "approvals",
+        "tools"
+      ],
+      "status": "active",
+      "updated": "2026-08-08",
+      "when_to_use": "Agents can mutate prod, spend money, delete data, or push code without review",
+      "related": [
+        "prompt-injection-agent-defense",
+        "multi-agent-handoffs"
+      ]
     }
   ]
 }
