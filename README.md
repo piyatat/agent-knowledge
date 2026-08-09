@@ -2,7 +2,7 @@
 
 A **lookup corpus for AI coding agents** — short, tagged markdown notes they can browse or search before inventing process.
 
-This is not a second codebase and not a scrapyard of full articles. Each page is a distilled note with **source links**. Ask the maintainer to collect more from the net; new entries land here with attribution.
+This is not a second codebase and not a scrapyard of full articles. Each page is a distilled note with **source links**. In Cursor, run **`/agent-knowledge-ingest`** to scrape the web and add curated notes (see `runbooks/collect-from-web.md`).
 
 ## For agents
 

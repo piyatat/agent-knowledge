@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-08-08",
+  "updated": "2026-08-09",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -140,7 +140,8 @@
       "related": [
         "tool-call-failures",
         "structured-outputs-for-agents",
-        "agent-observability-otel"
+        "agent-observability-otel",
+        "deterministic-tool-mocks"
       ]
     },
     {
@@ -234,7 +235,8 @@
       "related": [
         "agent-eval-harness",
         "tool-call-failures",
-        "multi-agent-handoffs"
+        "multi-agent-handoffs",
+        "telemetry-redaction-genai"
       ]
     },
     {
@@ -310,6 +312,196 @@
       "related": [
         "prompt-injection-agent-defense",
         "multi-agent-handoffs"
+      ]
+    },
+    {
+      "id": "mcp-oauth-scopes",
+      "path": "practices/mcp-oauth-scopes.md",
+      "title": "MCP OAuth 2.1, PKCE, and tool scopes",
+      "tags": [
+        "mcp",
+        "oauth",
+        "security",
+        "auth"
+      ],
+      "status": "active",
+      "updated": "2026-08-09",
+      "when_to_use": "Securing remote HTTP MCP servers or designing least-privilege agent tool access",
+      "related": [
+        "prompt-injection-agent-defense",
+        "tools-mcp-skills-layers",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "agent-code-sandboxing",
+      "path": "practices/agent-code-sandboxing.md",
+      "title": "Sandboxing agent code execution",
+      "tags": [
+        "sandbox",
+        "security",
+        "firecracker",
+        "gvisor"
+      ],
+      "status": "active",
+      "updated": "2026-08-09",
+      "when_to_use": "Agents run shell, Python, or other LLM-generated code that must not escape the host",
+      "related": [
+        "prompt-injection-agent-defense",
+        "human-in-the-loop-approvals",
+        "tool-call-failures"
+      ]
+    },
+    {
+      "id": "prompt-caching-for-agents",
+      "path": "practices/prompt-caching-for-agents.md",
+      "title": "Prompt caching discipline for agent loops",
+      "tags": [
+        "caching",
+        "tokens",
+        "cost",
+        "context"
+      ],
+      "status": "active",
+      "updated": "2026-08-09",
+      "when_to_use": "Cutting input cost/latency on multi-turn agents with large system prompts or tool schemas",
+      "related": [
+        "context-compaction",
+        "agent-cost-step-budgets",
+        "mcp-progressive-disclosure"
+      ]
+    },
+    {
+      "id": "telemetry-redaction-genai",
+      "path": "practices/telemetry-redaction-genai.md",
+      "title": "Redact GenAI content before OTel export",
+      "tags": [
+        "otel",
+        "privacy",
+        "redaction",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-08-09",
+      "when_to_use": "Exporting agent traces/logs that may contain prompts, completions, tool args, or secrets",
+      "related": [
+        "agent-observability-otel",
+        "prompt-injection-agent-defense",
+        "structured-outputs-for-agents"
+      ]
+    },
+    {
+      "id": "grounding-and-citations",
+      "path": "practices/grounding-and-citations.md",
+      "title": "Grounding answers with sources and citation checks",
+      "tags": [
+        "grounding",
+        "citations",
+        "hallucination",
+        "rag"
+      ],
+      "status": "active",
+      "updated": "2026-08-09",
+      "when_to_use": "Agents answer from retrieved docs/tools and must not invent unsupported claims",
+      "related": [
+        "memory-wiki-vs-rag",
+        "tool-call-failures",
+        "agent-eval-harness"
+      ]
+    },
+    {
+      "id": "agent-retry-idempotency",
+      "path": "practices/agent-retry-idempotency.md",
+      "title": "Retries and idempotency for agent tool calls",
+      "tags": [
+        "reliability",
+        "retries",
+        "idempotency",
+        "tools"
+      ],
+      "status": "active",
+      "updated": "2026-08-09",
+      "when_to_use": "Designing tool APIs or harnesses where agents retry after timeouts, 429s, or flaky side effects",
+      "related": [
+        "tool-call-failures",
+        "structured-outputs-for-agents",
+        "agent-cost-step-budgets"
+      ]
+    },
+    {
+      "id": "subagent-context-isolation",
+      "path": "practices/subagent-context-isolation.md",
+      "title": "Subagent context isolation",
+      "tags": [
+        "subagent",
+        "context",
+        "orchestration",
+        "tokens"
+      ],
+      "status": "active",
+      "updated": "2026-08-09",
+      "when_to_use": "Spawning child agents or Task seats without leaking the parent\u2019s full transcript",
+      "related": [
+        "multi-agent-handoffs",
+        "context-compaction",
+        "prompt-caching-for-agents"
+      ]
+    },
+    {
+      "id": "rate-limit-backoff-tools",
+      "path": "practices/rate-limit-backoff-tools.md",
+      "title": "Rate limits and backoff for agent tools",
+      "tags": [
+        "rate-limit",
+        "backoff",
+        "ops",
+        "tools"
+      ],
+      "status": "active",
+      "updated": "2026-08-09",
+      "when_to_use": "Agents hammer APIs (GitHub, LLM, SaaS) and trip 429s or burn quotas",
+      "related": [
+        "agent-retry-idempotency",
+        "agent-cost-step-budgets",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "skills-dispatch-hygiene",
+      "path": "practices/skills-dispatch-hygiene.md",
+      "title": "Skill description and dispatch hygiene",
+      "tags": [
+        "skills",
+        "cursor",
+        "dispatch",
+        "tokens"
+      ],
+      "status": "active",
+      "updated": "2026-08-09",
+      "when_to_use": "Authoring Cursor/Claude skills so they trigger reliably without bloating always-on context",
+      "related": [
+        "tools-mcp-skills-layers",
+        "tool-description-hygiene",
+        "agents-md-and-rules-budget"
+      ]
+    },
+    {
+      "id": "deterministic-tool-mocks",
+      "path": "practices/deterministic-tool-mocks.md",
+      "title": "Deterministic tool mocks for agent evals",
+      "tags": [
+        "evals",
+        "mocks",
+        "replay",
+        "ci"
+      ],
+      "status": "active",
+      "updated": "2026-08-09",
+      "when_to_use": "Building CI evals that must not depend on live APIs or nondeterministic tool side effects",
+      "related": [
+        "agent-eval-harness",
+        "agent-retry-idempotency",
+        "structured-outputs-for-agents"
       ]
     }
   ]

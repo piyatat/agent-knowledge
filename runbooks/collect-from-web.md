@@ -4,10 +4,16 @@ title: Runbook — collect a web note into this repo
 tags: [runbook, contributing]
 status: active
 updated: 2026-08-07
-when_to_use: User asks to scrape/collect information into agent-knowledge
+when_to_use: User asks to scrape/collect information into agent-knowledge (prefer /agent-knowledge-ingest)
 ---
 
-## Steps
+## Preferred entry
+
+In Cursor, run **`/agent-knowledge-ingest`** (skill: `agent-knowledge-ingest`). It scrapes, dedupes against the manifest, writes notes, and runs `npm run check`.
+
+Optional args: `topic:…` `tags:…` `limit:N` `gap-fill` `dry-run` `no-push` `draft` `folder:practices|failure-modes|glossary|runbooks|decisions`.
+
+## Steps (manual)
 
 1. Clarify the topic / tags the user wants.
 2. WebSearch + WebFetch primary sources (prefer docs, RFCs, primary blogs).
