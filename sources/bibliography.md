@@ -78,3 +78,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude Code skills architecture / progressive loading | https://www.mindstudio.ai/blog/claude-code-skills-architecture-progressive-context-loading |
 | Agent Evaluation Harness — Replay + CI Gates | https://www.kunalganglani.com/blog/agent-evaluation-harness-replay |
 | How to Build an Evaluation Harness for Your AI Agent | https://www.scien.cx/2026/07/08/how-to-build-an-evaluation-harness-for-your-ai-agent-so-it-doesnt-break-in-production/ |
+
+## Daily ingest 2026-08-10
+
+| Topic | URL |
+| --- | --- |
+| Graceful tool-output truncation (Agent Patterns) | https://agentpatterns.ai/tool-engineering/graceful-tool-output-truncation/ |
+| Tool Results Are Context Too (Multigrid) | https://multigrid.ai/learn/tool-result-context |
+| Writing tools for agents (Anthropic) | https://www.anthropic.com/engineering/writing-tools-for-agents |
+| Tool Calling Best Practices for LLMs (2026) | https://ai-tldr.dev/learn/llm-apis/function-calling/tool-calling-best-practices/ |
+| LLM Agent Tool Result Summarization and Truncation | https://solana.garden/guides/llm-agent-tool-result-summarization-truncation-explained/ |
+| How we contain Claude across products (Anthropic) | https://www.anthropic.com/engineering/how-we-contain-claude |
+| Trustworthy agents in practice (Anthropic) | https://www.anthropic.com/research/trustworthy-agents |
+| Guardrails and human review (OpenAI) | https://developers.openai.com/api/docs/guides/agents/guardrails-approvals |
+| A2A project (GitHub) | https://github.com/a2aproject/A2A |
+| MCP vs A2A (Auth0) | https://auth0.com/blog/mcp-vs-a2a/ |
+| MCP server concepts | https://modelcontextprotocol.io/docs/learn/server-concepts |
+| WorkflowAgent (AI SDK) | https://ai-sdk.dev/docs/agents/workflow-agent |
+| What is WorkflowAgent? (Vercel KB) | https://vercel.com/kb/guide/what-is-workflowagent |
+| Agent approval workflow stack guide | https://vercel.com/kb/guide/agent-approval-workflow-stack-guide |
+| Demystifying evals for AI agents (Anthropic) | https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents |
+| judge-audit-mcp | https://github.com/asif786ka/judge-audit-mcp |
+| When AIs Judge AIs (arXiv) | https://arxiv.org/html/2508.02994v1 |
+| MCP tools specification | https://modelcontextprotocol.io/specification/2025-03-26/server/tools |
+| Tools vs Resources vs Prompts | https://prashamhtrivedi.in/mcp-primitive-youre-misusing/ |
+| AI Agent Sandboxing: MicroVMs, gVisor, WASM | https://zylos.ai/research/2026-04-04-ai-agent-sandboxing-security-isolation |
+| Sandboxing an Agent That Executes Code | https://dev.to/multigrid/sandboxing-an-agent-that-executes-code-1noi |
+| gitleaks | https://github.com/gitleaks/gitleaks |
+| Catching Secrets in AI-Generated Code Before They Reach Git | https://dev.to/marcin_brzozka_ff45b1ccb6/catching-secrets-in-ai-generated-code-before-they-reach-git-2kdk |
+| I let an AI agent into my repo — lock down first | https://dev.to/mikobuilds/i-let-an-ai-agent-into-my-repo-heres-what-i-lock-down-first-5145 |

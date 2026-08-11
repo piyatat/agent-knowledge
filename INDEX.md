@@ -31,6 +31,15 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | rate-limit-backoff-tools | `practices/rate-limit-backoff-tools.md` | active | 2026-08-09 | Agents hammer APIs (GitHub, LLM, SaaS) and trip 429s or burn quotas | agent-retry-idempotency, agent-cost-step-budgets, agent-observability-otel |
 | skills-dispatch-hygiene | `practices/skills-dispatch-hygiene.md` | active | 2026-08-09 | Authoring Cursor/Claude skills so they trigger reliably without bloating always-on context | tools-mcp-skills-layers, tool-description-hygiene, agents-md-and-rules-budget |
 | deterministic-tool-mocks | `practices/deterministic-tool-mocks.md` | active | 2026-08-09 | Building CI evals that must not depend on live APIs or nondeterministic tool side effects | agent-eval-harness, agent-retry-idempotency, structured-outputs-for-agents |
+| tool-result-observation-budgets | `practices/tool-result-observation-budgets.md` | active | 2026-08-10 | When tool outputs blow the context window or agents loop on partial reads | context-compaction, mcp-progressive-disclosure, agent-cost-step-budgets |
+| parallel-tool-calling | `practices/parallel-tool-calling.md` | active | 2026-08-10 | When independent tool calls can run in one model turn to cut latency | agent-retry-idempotency, tool-call-failures, multi-agent-handoffs |
+| computer-use-containment | `practices/computer-use-containment.md` | active | 2026-08-10 | Granting agents desktop, GUI, or browser control beyond scoped APIs | agent-code-sandboxing, prompt-injection-agent-defense, human-in-the-loop-approvals |
+| durable-agent-workflows | `practices/durable-agent-workflows.md` | active | 2026-08-10 | Agent loops must survive crashes, timeouts, or hours-long human approvals | human-in-the-loop-approvals, agent-retry-idempotency, agent-observability-otel |
+| llm-judge-bias | `practices/llm-judge-bias.md` | active | 2026-08-10 | Scoring agents with an LLM judge or shipping eval numbers from preference tests | agent-eval-harness, deterministic-tool-mocks, grounding-and-citations |
+| mcp-resources-vs-tools | `practices/mcp-resources-vs-tools.md` | active | 2026-08-10 | Designing an MCP server and choosing which primitive exposes a capability | mcp-progressive-disclosure, tool-description-hygiene, tools-mcp-skills-layers |
+| workspace-mount-boundaries | `practices/workspace-mount-boundaries.md` | active | 2026-08-10 | Giving coding agents local file access via mounts, workspaces, or folder allowlists | agent-code-sandboxing, computer-use-containment, prompt-injection-agent-defense |
+| agent-output-secret-scanning | `practices/agent-output-secret-scanning.md` | active | 2026-08-10 | Agents edit repos or propose commits that might leak keys into git history | telemetry-redaction-genai, agent-code-sandboxing, human-in-the-loop-approvals |
+| streaming-approval-resume | `practices/streaming-approval-resume.md` | active | 2026-08-10 | Agent UIs stream tokens and must pause for tool approvals or reconnect mid-run | human-in-the-loop-approvals, durable-agent-workflows, agent-retry-idempotency |
 
 ## Failure Modes
 
@@ -44,6 +53,7 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | id | path | status | updated | when_to_use | related |
 | --- | --- | --- | --- | --- | --- |
 | glossary-core | `glossary/core.md` | active | 2026-08-06 | Need shared definitions for agent-tooling terms | — |
+| a2a-vs-mcp | `glossary/a2a-vs-mcp.md` | active | 2026-08-10 | Choosing protocols for multi-agent collaboration vs tool/data access | tools-mcp-skills-layers, multi-agent-handoffs, mcp-oauth-scopes |
 
 ## Runbooks
 

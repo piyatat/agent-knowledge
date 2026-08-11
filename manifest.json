@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-08-09",
+  "updated": "2026-08-10",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -502,6 +502,196 @@
         "agent-eval-harness",
         "agent-retry-idempotency",
         "structured-outputs-for-agents"
+      ]
+    },
+    {
+      "id": "tool-result-observation-budgets",
+      "path": "practices/tool-result-observation-budgets.md",
+      "title": "Tool-result observation budgets and truncation",
+      "tags": [
+        "tools",
+        "context",
+        "tokens",
+        "truncation"
+      ],
+      "status": "active",
+      "updated": "2026-08-10",
+      "when_to_use": "When tool outputs blow the context window or agents loop on partial reads",
+      "related": [
+        "context-compaction",
+        "mcp-progressive-disclosure",
+        "agent-cost-step-budgets"
+      ]
+    },
+    {
+      "id": "parallel-tool-calling",
+      "path": "practices/parallel-tool-calling.md",
+      "title": "Parallel tool calling without shared-state races",
+      "tags": [
+        "tools",
+        "latency",
+        "orchestration",
+        "reliability"
+      ],
+      "status": "active",
+      "updated": "2026-08-10",
+      "when_to_use": "When independent tool calls can run in one model turn to cut latency",
+      "related": [
+        "agent-retry-idempotency",
+        "tool-call-failures",
+        "multi-agent-handoffs"
+      ]
+    },
+    {
+      "id": "computer-use-containment",
+      "path": "practices/computer-use-containment.md",
+      "title": "Computer-use and browser-agent containment",
+      "tags": [
+        "security",
+        "sandbox",
+        "browser",
+        "computer-use"
+      ],
+      "status": "active",
+      "updated": "2026-08-10",
+      "when_to_use": "Granting agents desktop, GUI, or browser control beyond scoped APIs",
+      "related": [
+        "agent-code-sandboxing",
+        "prompt-injection-agent-defense",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "a2a-vs-mcp",
+      "path": "glossary/a2a-vs-mcp.md",
+      "title": "A2A vs MCP \u2014 agent-to-agent vs agent-to-tool",
+      "tags": [
+        "a2a",
+        "mcp",
+        "glossary",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-08-10",
+      "when_to_use": "Choosing protocols for multi-agent collaboration vs tool/data access",
+      "related": [
+        "tools-mcp-skills-layers",
+        "multi-agent-handoffs",
+        "mcp-oauth-scopes"
+      ]
+    },
+    {
+      "id": "durable-agent-workflows",
+      "path": "practices/durable-agent-workflows.md",
+      "title": "Durable agent workflows and checkpointed steps",
+      "tags": [
+        "workflows",
+        "durability",
+        "reliability",
+        "approvals"
+      ],
+      "status": "active",
+      "updated": "2026-08-10",
+      "when_to_use": "Agent loops must survive crashes, timeouts, or hours-long human approvals",
+      "related": [
+        "human-in-the-loop-approvals",
+        "agent-retry-idempotency",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "llm-judge-bias",
+      "path": "practices/llm-judge-bias.md",
+      "title": "LLM-as-judge bias and judge QA",
+      "tags": [
+        "evals",
+        "judge",
+        "bias",
+        "quality"
+      ],
+      "status": "active",
+      "updated": "2026-08-10",
+      "when_to_use": "Scoring agents with an LLM judge or shipping eval numbers from preference tests",
+      "related": [
+        "agent-eval-harness",
+        "deterministic-tool-mocks",
+        "grounding-and-citations"
+      ]
+    },
+    {
+      "id": "mcp-resources-vs-tools",
+      "path": "practices/mcp-resources-vs-tools.md",
+      "title": "MCP resources vs tools vs prompts",
+      "tags": [
+        "mcp",
+        "tools",
+        "resources",
+        "design"
+      ],
+      "status": "active",
+      "updated": "2026-08-10",
+      "when_to_use": "Designing an MCP server and choosing which primitive exposes a capability",
+      "related": [
+        "mcp-progressive-disclosure",
+        "tool-description-hygiene",
+        "tools-mcp-skills-layers"
+      ]
+    },
+    {
+      "id": "workspace-mount-boundaries",
+      "path": "practices/workspace-mount-boundaries.md",
+      "title": "Workspace mount boundaries and symlink escapes",
+      "tags": [
+        "security",
+        "sandbox",
+        "filesystem",
+        "permissions"
+      ],
+      "status": "active",
+      "updated": "2026-08-10",
+      "when_to_use": "Giving coding agents local file access via mounts, workspaces, or folder allowlists",
+      "related": [
+        "agent-code-sandboxing",
+        "computer-use-containment",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "agent-output-secret-scanning",
+      "path": "practices/agent-output-secret-scanning.md",
+      "title": "Secret scanning for agent-written code and commits",
+      "tags": [
+        "security",
+        "secrets",
+        "ci",
+        "gitleaks"
+      ],
+      "status": "active",
+      "updated": "2026-08-10",
+      "when_to_use": "Agents edit repos or propose commits that might leak keys into git history",
+      "related": [
+        "telemetry-redaction-genai",
+        "agent-code-sandboxing",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "streaming-approval-resume",
+      "path": "practices/streaming-approval-resume.md",
+      "title": "Streaming runs, interruptions, and approval resume",
+      "tags": [
+        "approvals",
+        "streaming",
+        "reliability",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-08-10",
+      "when_to_use": "Agent UIs stream tokens and must pause for tool approvals or reconnect mid-run",
+      "related": [
+        "human-in-the-loop-approvals",
+        "durable-agent-workflows",
+        "agent-retry-idempotency"
       ]
     }
   ]
