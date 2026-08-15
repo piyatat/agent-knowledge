@@ -13,6 +13,7 @@
     "show": "node scripts/show-entry.mjs",
     "list": "node scripts/list-entries.mjs",
     "count": "node scripts/count-entries.mjs",
+    "count:tags": "node scripts/count-entries.mjs --by-tag",
     "check": "npm run validate && npm run index"
   }
 }

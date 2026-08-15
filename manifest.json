@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-08-10",
+  "updated": "2026-08-15",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -692,6 +692,376 @@
         "human-in-the-loop-approvals",
         "durable-agent-workflows",
         "agent-retry-idempotency"
+      ]
+    },
+    {
+      "id": "mcp-mrtr-input-required",
+      "path": "practices/mcp-mrtr-input-required.md",
+      "title": "MCP Multi Round-Trip Requests (input_required)",
+      "tags": [
+        "mcp",
+        "elicitation",
+        "stateless",
+        "tools"
+      ],
+      "status": "active",
+      "updated": "2026-08-12",
+      "when_to_use": "Building stateless MCP tools that need user confirmation or missing params mid-call",
+      "related": [
+        "human-in-the-loop-approvals",
+        "mcp-oauth-scopes",
+        "streaming-approval-resume"
+      ]
+    },
+    {
+      "id": "mcp-elicitation-modes",
+      "path": "practices/mcp-elicitation-modes.md",
+      "title": "MCP elicitation form vs URL mode",
+      "tags": [
+        "mcp",
+        "elicitation",
+        "security",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-08-12",
+      "when_to_use": "Designing MCP tools that need structured user input or out-of-band auth/payment",
+      "related": [
+        "mcp-mrtr-input-required",
+        "human-in-the-loop-approvals",
+        "mcp-oauth-scopes"
+      ]
+    },
+    {
+      "id": "mcp-stateless-core",
+      "path": "practices/mcp-stateless-core.md",
+      "title": "MCP 2026 stateless core migration",
+      "tags": [
+        "mcp",
+        "stateless",
+        "transport",
+        "migration"
+      ],
+      "status": "active",
+      "updated": "2026-08-12",
+      "when_to_use": "Upgrading MCP servers/clients to the 2026-07-28 revision or debugging session breakage",
+      "related": [
+        "mcp-mrtr-input-required",
+        "mcp-deprecated-roots-sampling",
+        "rate-limit-backoff-tools"
+      ]
+    },
+    {
+      "id": "mcp-deprecated-roots-sampling",
+      "path": "glossary/mcp-deprecated-roots-sampling.md",
+      "title": "Deprecated MCP Roots, Sampling, and Logging",
+      "tags": [
+        "mcp",
+        "glossary",
+        "migration",
+        "deprecation"
+      ],
+      "status": "active",
+      "updated": "2026-08-12",
+      "when_to_use": "Auditing older MCP servers that still advertise roots/sampling/logging capabilities",
+      "related": [
+        "mcp-stateless-core",
+        "mcp-resources-vs-tools",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "agent-session-transcript-audit",
+      "path": "practices/agent-session-transcript-audit.md",
+      "title": "Auditing agent session JSONL transcripts",
+      "tags": [
+        "security",
+        "audit",
+        "session",
+        "tools"
+      ],
+      "status": "active",
+      "updated": "2026-08-12",
+      "when_to_use": "Reviewing Cursor/Claude/Codex session exports for risky runtime behavior",
+      "related": [
+        "agent-output-secret-scanning",
+        "prompt-injection-agent-defense",
+        "computer-use-containment"
+      ]
+    },
+    {
+      "id": "subagent-lifecycle-hooks",
+      "path": "practices/subagent-lifecycle-hooks.md",
+      "title": "Subagent lifecycle hooks and pairing",
+      "tags": [
+        "subagent",
+        "hooks",
+        "telemetry",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-08-12",
+      "when_to_use": "Instrumenting parent/child agent spawns with durable start/stop records",
+      "related": [
+        "subagent-context-isolation",
+        "agent-session-transcript-audit",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "heartbeat-dead-man-switch",
+      "path": "practices/heartbeat-dead-man-switch.md",
+      "title": "Heartbeat dead-man-switch monitoring",
+      "tags": [
+        "ops",
+        "monitoring",
+        "reliability",
+        "cron"
+      ],
+      "status": "active",
+      "updated": "2026-08-12",
+      "when_to_use": "Background jobs or automations must prove they ran, not just that an HTTP endpoint is up",
+      "related": [
+        "agent-retry-idempotency",
+        "durable-agent-workflows",
+        "agent-output-secret-scanning"
+      ]
+    },
+    {
+      "id": "webhook-receiver-freshness",
+      "path": "practices/webhook-receiver-freshness.md",
+      "title": "Webhook receiver freshness checks",
+      "tags": [
+        "webhooks",
+        "monitoring",
+        "ops",
+        "reliability"
+      ],
+      "status": "active",
+      "updated": "2026-08-12",
+      "when_to_use": "Inbound webhooks can go silent while the HTTP handler still returns 200",
+      "related": [
+        "heartbeat-dead-man-switch",
+        "agent-retry-idempotency",
+        "tool-call-failures"
+      ]
+    },
+    {
+      "id": "jsonl-session-state-gaps",
+      "path": "failure-modes/jsonl-session-state-gaps.md",
+      "title": "JSONL session state inference gaps",
+      "tags": [
+        "observability",
+        "session",
+        "failure-modes",
+        "cursor"
+      ],
+      "status": "active",
+      "updated": "2026-08-12",
+      "when_to_use": "External tools tail agent JSONL and guess running/waiting/done from heuristics",
+      "related": [
+        "subagent-lifecycle-hooks",
+        "agent-session-transcript-audit",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "synthetic-canary-pipelines",
+      "path": "practices/synthetic-canary-pipelines.md",
+      "title": "Synthetic canary events for webhook pipelines",
+      "tags": [
+        "testing",
+        "webhooks",
+        "reliability",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-08-12",
+      "when_to_use": "Validating that ingested events reach downstream destinations within an SLA",
+      "related": [
+        "heartbeat-dead-man-switch",
+        "webhook-receiver-freshness",
+        "deterministic-tool-mocks"
+      ]
+    },
+    {
+      "id": "lost-in-the-middle",
+      "path": "failure-modes/lost-in-the-middle.md",
+      "title": "Lost-in-the-middle context failures",
+      "tags": [
+        "context",
+        "failure-modes",
+        "tokens"
+      ],
+      "status": "active",
+      "updated": "2026-08-15",
+      "when_to_use": "When long prompts bury critical instructions or evidence in the middle of the window",
+      "related": [
+        "context-compaction",
+        "context-rot-stale-instructions",
+        "tool-result-observation-budgets"
+      ]
+    },
+    {
+      "id": "context-rot-stale-instructions",
+      "path": "failure-modes/context-rot-stale-instructions.md",
+      "title": "Context rot from stale instructions",
+      "tags": [
+        "context",
+        "failure-modes",
+        "rules"
+      ],
+      "status": "active",
+      "updated": "2026-08-15",
+      "when_to_use": "When AGENTS.md/rules/skills contradict newer decisions or outdated steps keep winning",
+      "related": [
+        "agents-md-and-rules-budget",
+        "instruction-conflict-resolution",
+        "corpus-freshness-revalidation"
+      ]
+    },
+    {
+      "id": "instruction-conflict-resolution",
+      "path": "failure-modes/instruction-conflict-resolution.md",
+      "title": "Resolving conflicting agent instructions",
+      "tags": [
+        "rules",
+        "failure-modes",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-08-15",
+      "when_to_use": "When system, project, skill, and user instructions disagree and the agent picks the wrong one",
+      "related": [
+        "agents-md-and-rules-budget",
+        "human-in-the-loop-approvals",
+        "skills-dispatch-hygiene"
+      ]
+    },
+    {
+      "id": "adr-format-for-agents",
+      "path": "decisions/adr-format-for-agents.md",
+      "title": "ADR format tuned for coding agents",
+      "tags": [
+        "adr",
+        "decisions",
+        "knowledge"
+      ],
+      "status": "active",
+      "updated": "2026-08-15",
+      "when_to_use": "Recording architecture decisions so agents can look up why without loading full history",
+      "related": [
+        "knowledge-corpus-pattern",
+        "memory-wiki-vs-rag",
+        "agents-md-and-rules-budget"
+      ]
+    },
+    {
+      "id": "mcp-streamable-http-transport",
+      "path": "practices/mcp-streamable-http-transport.md",
+      "title": "MCP Streamable HTTP transport",
+      "tags": [
+        "mcp",
+        "transport",
+        "stateless"
+      ],
+      "status": "active",
+      "updated": "2026-08-15",
+      "when_to_use": "Choosing or migrating MCP remote transport away from legacy HTTP+SSE",
+      "related": [
+        "mcp-stateless-core",
+        "mcp-mrtr-input-required",
+        "mcp-oauth-scopes"
+      ]
+    },
+    {
+      "id": "agent-conversation-correlation-otel",
+      "path": "practices/agent-conversation-correlation-otel.md",
+      "title": "Correlate agent conversations in OpenTelemetry",
+      "tags": [
+        "otel",
+        "observability",
+        "tracing"
+      ],
+      "status": "active",
+      "updated": "2026-08-15",
+      "when_to_use": "Linking multi-turn agent runs, tool calls, and subagents in traces",
+      "related": [
+        "agent-observability-otel",
+        "telemetry-redaction-genai",
+        "subagent-lifecycle-hooks"
+      ]
+    },
+    {
+      "id": "agent-model-routing-fallback",
+      "path": "practices/agent-model-routing-fallback.md",
+      "title": "Model routing and fallback for agents",
+      "tags": [
+        "routing",
+        "reliability",
+        "cost"
+      ],
+      "status": "active",
+      "updated": "2026-08-15",
+      "when_to_use": "Selecting primary vs fallback models when quality, latency, or provider errors demand it",
+      "related": [
+        "agent-cost-step-budgets",
+        "agent-retry-idempotency",
+        "rate-limit-backoff-tools"
+      ]
+    },
+    {
+      "id": "agent-to-agent-a2a-protocol",
+      "path": "practices/agent-to-agent-a2a-protocol.md",
+      "title": "Using A2A for agent-to-agent delegation",
+      "tags": [
+        "a2a",
+        "orchestration",
+        "mcp"
+      ],
+      "status": "active",
+      "updated": "2026-08-15",
+      "when_to_use": "Delegating work to peer agents via Agent2Agent instead of stuffing everything into one tool loop",
+      "related": [
+        "a2a-vs-mcp",
+        "multi-agent-handoffs",
+        "subagent-context-isolation"
+      ]
+    },
+    {
+      "id": "mcp-server-lifecycle-health",
+      "path": "practices/mcp-server-lifecycle-health.md",
+      "title": "MCP server lifecycle and health checks",
+      "tags": [
+        "mcp",
+        "ops",
+        "reliability"
+      ],
+      "status": "active",
+      "updated": "2026-08-15",
+      "when_to_use": "Running remote MCP servers with startup, readiness, and dependency health signals",
+      "related": [
+        "mcp-streamable-http-transport",
+        "rate-limit-backoff-tools",
+        "heartbeat-dead-man-switch"
+      ]
+    },
+    {
+      "id": "corpus-freshness-revalidation",
+      "path": "practices/corpus-freshness-revalidation.md",
+      "title": "Revalidating knowledge corpus freshness",
+      "tags": [
+        "knowledge",
+        "ops",
+        "quality"
+      ],
+      "status": "active",
+      "updated": "2026-08-15",
+      "when_to_use": "Keeping agent-knowledge notes accurate as MCP/agent ecosystems change",
+      "related": [
+        "knowledge-corpus-pattern",
+        "collect-from-web",
+        "context-rot-stale-instructions"
       ]
     }
   ]

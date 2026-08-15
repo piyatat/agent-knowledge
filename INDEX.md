@@ -40,6 +40,20 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | workspace-mount-boundaries | `practices/workspace-mount-boundaries.md` | active | 2026-08-10 | Giving coding agents local file access via mounts, workspaces, or folder allowlists | agent-code-sandboxing, computer-use-containment, prompt-injection-agent-defense |
 | agent-output-secret-scanning | `practices/agent-output-secret-scanning.md` | active | 2026-08-10 | Agents edit repos or propose commits that might leak keys into git history | telemetry-redaction-genai, agent-code-sandboxing, human-in-the-loop-approvals |
 | streaming-approval-resume | `practices/streaming-approval-resume.md` | active | 2026-08-10 | Agent UIs stream tokens and must pause for tool approvals or reconnect mid-run | human-in-the-loop-approvals, durable-agent-workflows, agent-retry-idempotency |
+| mcp-mrtr-input-required | `practices/mcp-mrtr-input-required.md` | active | 2026-08-12 | Building stateless MCP tools that need user confirmation or missing params mid-call | human-in-the-loop-approvals, mcp-oauth-scopes, streaming-approval-resume |
+| mcp-elicitation-modes | `practices/mcp-elicitation-modes.md` | active | 2026-08-12 | Designing MCP tools that need structured user input or out-of-band auth/payment | mcp-mrtr-input-required, human-in-the-loop-approvals, mcp-oauth-scopes |
+| mcp-stateless-core | `practices/mcp-stateless-core.md` | active | 2026-08-12 | Upgrading MCP servers/clients to the 2026-07-28 revision or debugging session breakage | mcp-mrtr-input-required, mcp-deprecated-roots-sampling, rate-limit-backoff-tools |
+| agent-session-transcript-audit | `practices/agent-session-transcript-audit.md` | active | 2026-08-12 | Reviewing Cursor/Claude/Codex session exports for risky runtime behavior | agent-output-secret-scanning, prompt-injection-agent-defense, computer-use-containment |
+| subagent-lifecycle-hooks | `practices/subagent-lifecycle-hooks.md` | active | 2026-08-12 | Instrumenting parent/child agent spawns with durable start/stop records | subagent-context-isolation, agent-session-transcript-audit, agent-observability-otel |
+| heartbeat-dead-man-switch | `practices/heartbeat-dead-man-switch.md` | active | 2026-08-12 | Background jobs or automations must prove they ran, not just that an HTTP endpoint is up | agent-retry-idempotency, durable-agent-workflows, agent-output-secret-scanning |
+| webhook-receiver-freshness | `practices/webhook-receiver-freshness.md` | active | 2026-08-12 | Inbound webhooks can go silent while the HTTP handler still returns 200 | heartbeat-dead-man-switch, agent-retry-idempotency, tool-call-failures |
+| synthetic-canary-pipelines | `practices/synthetic-canary-pipelines.md` | active | 2026-08-12 | Validating that ingested events reach downstream destinations within an SLA | heartbeat-dead-man-switch, webhook-receiver-freshness, deterministic-tool-mocks |
+| mcp-streamable-http-transport | `practices/mcp-streamable-http-transport.md` | active | 2026-08-15 | Choosing or migrating MCP remote transport away from legacy HTTP+SSE | mcp-stateless-core, mcp-mrtr-input-required, mcp-oauth-scopes |
+| agent-conversation-correlation-otel | `practices/agent-conversation-correlation-otel.md` | active | 2026-08-15 | Linking multi-turn agent runs, tool calls, and subagents in traces | agent-observability-otel, telemetry-redaction-genai, subagent-lifecycle-hooks |
+| agent-model-routing-fallback | `practices/agent-model-routing-fallback.md` | active | 2026-08-15 | Selecting primary vs fallback models when quality, latency, or provider errors demand it | agent-cost-step-budgets, agent-retry-idempotency, rate-limit-backoff-tools |
+| agent-to-agent-a2a-protocol | `practices/agent-to-agent-a2a-protocol.md` | active | 2026-08-15 | Delegating work to peer agents via Agent2Agent instead of stuffing everything into one tool loop | a2a-vs-mcp, multi-agent-handoffs, subagent-context-isolation |
+| mcp-server-lifecycle-health | `practices/mcp-server-lifecycle-health.md` | active | 2026-08-15 | Running remote MCP servers with startup, readiness, and dependency health signals | mcp-streamable-http-transport, rate-limit-backoff-tools, heartbeat-dead-man-switch |
+| corpus-freshness-revalidation | `practices/corpus-freshness-revalidation.md` | active | 2026-08-15 | Keeping agent-knowledge notes accurate as MCP/agent ecosystems change | knowledge-corpus-pattern, collect-from-web, context-rot-stale-instructions |
 
 ## Failure Modes
 
@@ -47,6 +61,10 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | --- | --- | --- | --- | --- | --- |
 | tool-call-failures | `failure-modes/tool-call-failures.md` | active | 2026-08-06 | Debugging flaky agents, designing harness validation, or evaluating local models | tool-description-hygiene, mcp-progressive-disclosure, agent-eval-harness, structured-outputs-for-agents, prompt-injection-agent-defense |
 | prompt-injection-agent-defense | `failure-modes/prompt-injection-agent-defense.md` | active | 2026-08-08 | Threat-modeling agents that read untrusted content or call powerful tools (shell, email, MCP) | tool-call-failures, structured-outputs-for-agents, human-in-the-loop-approvals |
+| jsonl-session-state-gaps | `failure-modes/jsonl-session-state-gaps.md` | active | 2026-08-12 | External tools tail agent JSONL and guess running/waiting/done from heuristics | subagent-lifecycle-hooks, agent-session-transcript-audit, agent-observability-otel |
+| lost-in-the-middle | `failure-modes/lost-in-the-middle.md` | active | 2026-08-15 | When long prompts bury critical instructions or evidence in the middle of the window | context-compaction, context-rot-stale-instructions, tool-result-observation-budgets |
+| context-rot-stale-instructions | `failure-modes/context-rot-stale-instructions.md` | active | 2026-08-15 | When AGENTS.md/rules/skills contradict newer decisions or outdated steps keep winning | agents-md-and-rules-budget, instruction-conflict-resolution, corpus-freshness-revalidation |
+| instruction-conflict-resolution | `failure-modes/instruction-conflict-resolution.md` | active | 2026-08-15 | When system, project, skill, and user instructions disagree and the agent picks the wrong one | agents-md-and-rules-budget, human-in-the-loop-approvals, skills-dispatch-hygiene |
 
 ## Glossary
 
@@ -54,9 +72,16 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | --- | --- | --- | --- | --- | --- |
 | glossary-core | `glossary/core.md` | active | 2026-08-06 | Need shared definitions for agent-tooling terms | — |
 | a2a-vs-mcp | `glossary/a2a-vs-mcp.md` | active | 2026-08-10 | Choosing protocols for multi-agent collaboration vs tool/data access | tools-mcp-skills-layers, multi-agent-handoffs, mcp-oauth-scopes |
+| mcp-deprecated-roots-sampling | `glossary/mcp-deprecated-roots-sampling.md` | active | 2026-08-12 | Auditing older MCP servers that still advertise roots/sampling/logging capabilities | mcp-stateless-core, mcp-resources-vs-tools, agent-observability-otel |
 
 ## Runbooks
 
 | id | path | status | updated | when_to_use | related |
 | --- | --- | --- | --- | --- | --- |
 | collect-from-web | `runbooks/collect-from-web.md` | active | 2026-08-07 | User asks to scrape/collect information into agent-knowledge | knowledge-corpus-pattern |
+
+## Decisions
+
+| id | path | status | updated | when_to_use | related |
+| --- | --- | --- | --- | --- | --- |
+| adr-format-for-agents | `decisions/adr-format-for-agents.md` | active | 2026-08-15 | Recording architecture decisions so agents can look up why without loading full history | knowledge-corpus-pattern, memory-wiki-vs-rag, agents-md-and-rules-budget |

@@ -107,3 +107,50 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | gitleaks | https://github.com/gitleaks/gitleaks |
 | Catching Secrets in AI-Generated Code Before They Reach Git | https://dev.to/marcin_brzozka_ff45b1ccb6/catching-secrets-in-ai-generated-code-before-they-reach-git-2kdk |
 | I let an AI agent into my repo — lock down first | https://dev.to/mikobuilds/i-let-an-ai-agent-into-my-repo-heres-what-i-lock-down-first-5145 |
+
+## Daily ingest 2026-08-12
+
+| Topic | URL |
+| --- | --- |
+| MCP elicitation (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation |
+| MCP round-trip requests replace elicitation | https://www.channel.tel/blog/mcp-round-trip-requests-replace-elicitation |
+| The 2026-07-28 Specification (MCP Blog) | https://blog.modelcontextprotocol.io/posts/2026-07-28/ |
+| FastMCP elicitation guide | https://gofastmcp.com/servers/elicitation |
+| Scaling AI Agent Infrastructure — MCP stateless (Google) | https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/ |
+| MCP 2026-07-28: what the stateless core removes | https://packetnebula.com/articles/mcp-2026-07-28-what-stateless-removes/ |
+| MCP stateless migration guide | https://hashnode.com/blog/mcp-stateless-migration |
+| SEP-2577: Deprecate Roots, Sampling, and Logging | https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2577-deprecate-roots-sampling-and-logging.md |
+| AAIF: MCP 2026-07-28 migration | https://aaif.io/blog/mcp-2026-07-28-whats-changing-and-how-to-migrate |
+| SessionTrail — transcript behavior reviewer | https://github.com/Conalh/SessionTrail |
+| Agent Trace Hub | https://github.com/selimozten/agent-trace-hub |
+| Agent-Trail dashboard | https://github.com/camtrik/agent-trail |
+| Claude Code self-telemetry guide | https://github.com/ytrofr/claude-code-guide/blob/main/docs/guide/part5-advanced/03-self-telemetry.md |
+| JSONL observability gaps (Claude Code #41215) | https://github.com/anthropics/claude-code/issues/41215 |
+| Cronitor heartbeat monitoring | https://cronitor.io/docs/heartbeat-monitoring |
+| incident.io heartbeat monitoring | https://docs.incident.io/alerts/heartbeat-monitoring |
+| Webhook + heartbeat monitoring | https://cronalert.com/blog/webhook-endpoint-monitoring |
+| Monitoring webhook receivers (inbound) | https://cronalert.com/blog/webhook-receiver-monitoring |
+| Synthetic end-to-end webhook pipeline testing | https://gethook.to/blog/synthetic-end-to-end-webhook-pipeline-testing |
+
+## Daily ingest 2026-08-15 (cloud catch-up)
+
+| Topic | URL |
+| --- | --- |
+| Lost in the Middle (Liu et al.) | https://arxiv.org/abs/2307.03172 |
+| Context Compaction: Delete Noise, Keep Signal | https://www.morphllm.com/context-compaction |
+| AGENTS.md vs Cursor rules — context budget | https://github.com/piyatat/agent-knowledge/blob/main/practices/agents-md-and-rules-budget.md |
+| OWASP LLM Prompt Injection Prevention | https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html |
+| Human-in-the-loop approvals (corpus) | https://github.com/piyatat/agent-knowledge/blob/main/practices/human-in-the-loop-approvals.md |
+| ADRs before memory RAG | https://dev.to/shimo4228/claude-codes-memory-has-no-vectors-try-adrs-before-memory-rag-4kik |
+| Knowledge corpus pattern | https://github.com/piyatat/agent-knowledge/blob/main/practices/knowledge-corpus-pattern.md |
+| MCP 2026-07-28 specification blog | https://blog.modelcontextprotocol.io/posts/2026-07-28/ |
+| Google: MCP stateless updates | https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/ |
+| OpenTelemetry GenAI semantic conventions | https://github.com/open-telemetry/semantic-conventions/blob/v1.37.0/docs/gen-ai/gen-ai-spans.md |
+| AI Agent Observability with OpenTelemetry | https://docs.base14.io/guides/ai-observability/agent-observability/ |
+| Agent cost/step budgets (corpus) | https://github.com/piyatat/agent-knowledge/blob/main/practices/agent-cost-step-budgets.md |
+| Rate limits and backoff (corpus) | https://github.com/piyatat/agent-knowledge/blob/main/practices/rate-limit-backoff-tools.md |
+| A2A project | https://github.com/a2aproject/A2A |
+| MCP vs A2A (Auth0) | https://auth0.com/blog/mcp-vs-a2a/ |
+| MCP server concepts | https://modelcontextprotocol.io/docs/learn/server-concepts |
+| Heartbeat dead-man-switch (corpus) | https://github.com/piyatat/agent-knowledge/blob/main/practices/heartbeat-dead-man-switch.md |
+| Collect from web (corpus) | https://github.com/piyatat/agent-knowledge/blob/main/runbooks/collect-from-web.md |
