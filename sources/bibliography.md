@@ -188,3 +188,36 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | MCP Authorization (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization |
 | MCP OAuth 2.1 implementation (PKCE & scopes) | https://www.practical-devsecops.com/mcp-oauth-2-1-implementation/ |
 | Authorization: OAuth 2.1 for HTTP MCP Servers | https://imti.co/mcp-authorization-oauth/ |
+
+## Daily ingest 2026-08-22 (evening gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| AG-UI overview | https://docs.ag-ui.com/introduction |
+| AG-UI GitHub | https://github.com/ag-ui-protocol/ag-ui/ |
+| A2UI home | https://a2ui.org/ |
+| What is A2UI | https://github.com/a2ui-project/a2ui/blob/main/docs/introduction/what-is-a2ui.md |
+| Cursor Automations | https://cursor.com/docs/cloud-agent/automations |
+| Cloud Agents and Cursor Harness Improvements (2026-08-19) | https://cursor.com/changelog/08-19-26 |
+| Bugbot docs | https://cursor.com/docs/bugbot.md |
+| Building a better Bugbot | https://cursor.com/blog/building-bugbot |
+| Bugbot updates (June 2026) | https://cursor.com/blog/bugbot-updates-june-2026 |
+| Claude Code permissions | https://code.claude.com/docs/en/permissions |
+| Claude Code hooks guide | https://code.claude.com/docs/en/hooks-guide |
+| Guardrails and human review (OpenAI) | https://developers.openai.com/api/docs/guides/agents/guardrails-approvals |
+| MCP caching (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/caching |
+| SEP-2549 TTL for list results | https://modelcontextprotocol.io/seps/2549-TTL-for-list-results |
+| MCP Python SDK — caching hints | https://py.sdk.modelcontextprotocol.io/client/caching/ |
+| MCP subscriptions (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/patterns/subscriptions |
+| The 2026-07-28 Specification (MCP Blog) | https://blog.modelcontextprotocol.io/posts/2026-07-28/ |
+| MCP TypeScript SDK — subscribe to changes | https://ts.sdk.modelcontextprotocol.io/v2/clients/subscriptions.html |
+| MCP completion (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/completion |
+| MCP TypeScript SDK — Completion | https://ts.sdk.modelcontextprotocol.io/v2/servers/completion.html |
+| MCP Python SDK — Completions | https://py.sdk.modelcontextprotocol.io/v2/servers/completions/ |
+| microsoft/playwright-mcp | https://github.com/Microsoft/playwright-mcp |
+| MCP Security Best Practices | https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices |
+| Playwright MCP security guide | https://microsoft-playwright-mcp.mintlify.app/guides/security |
+| OpenAI Agents SDK — Guardrails | https://openai.github.io/openai-agents-python/guardrails/ |
+| NVIDIA NeMo Guardrails | https://github.com/NVIDIA-NeMo/Guardrails |
+| MCP tools (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/tools |
+| MCP server concepts | https://modelcontextprotocol.io/docs/learn/server-concepts |

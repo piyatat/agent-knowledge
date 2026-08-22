@@ -36,7 +36,7 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | computer-use-containment | `practices/computer-use-containment.md` | active | 2026-08-10 | Granting agents desktop, GUI, or browser control beyond scoped APIs | agent-code-sandboxing, prompt-injection-agent-defense, human-in-the-loop-approvals |
 | durable-agent-workflows | `practices/durable-agent-workflows.md` | active | 2026-08-10 | Agent loops must survive crashes, timeouts, or hours-long human approvals | human-in-the-loop-approvals, agent-retry-idempotency, agent-observability-otel, mcp-tasks-extension |
 | llm-judge-bias | `practices/llm-judge-bias.md` | active | 2026-08-10 | Scoring agents with an LLM judge or shipping eval numbers from preference tests | agent-eval-harness, deterministic-tool-mocks, grounding-and-citations |
-| mcp-resources-vs-tools | `practices/mcp-resources-vs-tools.md` | active | 2026-08-10 | Designing an MCP server and choosing which primitive exposes a capability | mcp-progressive-disclosure, tool-description-hygiene, tools-mcp-skills-layers, mcp-apps-extension |
+| mcp-resources-vs-tools | `practices/mcp-resources-vs-tools.md` | active | 2026-08-22 | Designing an MCP server and choosing which primitive exposes a capability | mcp-progressive-disclosure, tool-description-hygiene, tools-mcp-skills-layers, mcp-apps-extension, mcp-completions |
 | workspace-mount-boundaries | `practices/workspace-mount-boundaries.md` | active | 2026-08-10 | Giving coding agents local file access via mounts, workspaces, or folder allowlists | agent-code-sandboxing, computer-use-containment, prompt-injection-agent-defense |
 | agent-output-secret-scanning | `practices/agent-output-secret-scanning.md` | active | 2026-08-10 | Agents edit repos or propose commits that might leak keys into git history | telemetry-redaction-genai, agent-code-sandboxing, human-in-the-loop-approvals |
 | streaming-approval-resume | `practices/streaming-approval-resume.md` | active | 2026-08-10 | Agent UIs stream tokens and must pause for tool approvals or reconnect mid-run | human-in-the-loop-approvals, durable-agent-workflows, agent-retry-idempotency |
@@ -62,6 +62,14 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | cursor-cloud-always-on | `practices/cursor-cloud-always-on.md` | active | 2026-08-22 | Designing always-on Cursor cloud agents that wake on PRs/Slack/cron or hold a long-lived objective | subagent-context-isolation, durable-agent-workflows, skills-dispatch-hygiene |
 | memory-files-vs-enforcement-hooks | `practices/memory-files-vs-enforcement-hooks.md` | active | 2026-08-22 | Choosing CLAUDE.md/AGENTS.md memory versus a PreToolUse (or equivalent) hook that must actually block an action | agents-md-and-rules-budget, human-in-the-loop-approvals, instruction-conflict-resolution |
 | agent-skills-open-standard | `practices/agent-skills-open-standard.md` | active | 2026-08-22 | Authoring portable SKILL.md packages or implementing skill discovery across Cursor/Claude/Codex-class agents | skills-dispatch-hygiene, tools-mcp-skills-layers, mcp-progressive-disclosure |
+| cursor-automations | `practices/cursor-automations.md` | active | 2026-08-22 | Configuring scheduled or event-triggered Cursor cloud agents (not a running agent’s PR/Slack subscription) | cursor-cloud-always-on, cursor-bugbot-review, computer-use-containment |
+| cursor-bugbot-review | `practices/cursor-bugbot-review.md` | active | 2026-08-22 | Wiring Cursor’s PR review agent (comments, checks, /review, Autofix) without treating it as a merge gate by default | cursor-automations, human-in-the-loop-approvals, agent-eval-harness |
+| permission-modes-allow-ask-deny | `practices/permission-modes-allow-ask-deny.md` | active | 2026-08-22 | Configuring a coding-agent host so tool approvals are enforced in the runtime, not only in AGENTS.md | memory-files-vs-enforcement-hooks, human-in-the-loop-approvals, agent-guardrails-vs-approvals |
+| mcp-list-caching | `practices/mcp-list-caching.md` | active | 2026-08-22 | Implementing or consuming 2026-07-28 tools/list, prompts/list, resources/*, or server/discover without leaking cross-user cache | mcp-stateless-core, prompt-caching-for-agents, mcp-subscriptions-listen |
+| mcp-subscriptions-listen | `practices/mcp-subscriptions-listen.md` | active | 2026-08-22 | Receiving tools/prompts/resources change events on 2026-07-28 without a standalone GET SSE or resources/subscribe | mcp-streamable-http-transport, mcp-stateless-core, mcp-list-caching |
+| mcp-completions | `practices/mcp-completions.md` | active | 2026-08-22 | Adding host autocomplete for prompt arguments or resource URI template variables | mcp-resources-vs-tools, mcp-elicitation-modes, tool-description-hygiene |
+| playwright-mcp-containment | `practices/playwright-mcp-containment.md` | active | 2026-08-22 | Connecting @playwright/mcp (or similar browser MCP) to a coding agent | computer-use-containment, mcp-registry-admission, prompt-injection-agent-defense |
+| agent-guardrails-vs-approvals | `practices/agent-guardrails-vs-approvals.md` | active | 2026-08-22 | Deciding whether to auto-block a run or pause it for a person before a side-effecting tool | human-in-the-loop-approvals, permission-modes-allow-ask-deny, streaming-approval-resume |
 
 ## Failure Modes
 
@@ -82,6 +90,7 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | glossary-core | `glossary/core.md` | active | 2026-08-06 | Need shared definitions for agent-tooling terms | — |
 | a2a-vs-mcp | `glossary/a2a-vs-mcp.md` | active | 2026-08-10 | Choosing protocols for multi-agent collaboration vs tool/data access | tools-mcp-skills-layers, multi-agent-handoffs, mcp-oauth-scopes |
 | mcp-deprecated-roots-sampling | `glossary/mcp-deprecated-roots-sampling.md` | active | 2026-08-12 | Auditing older MCP servers that still advertise roots/sampling/logging capabilities | mcp-stateless-core, mcp-resources-vs-tools, agent-observability-otel |
+| ag-ui-vs-a2ui | `glossary/ag-ui-vs-a2ui.md` | active | 2026-08-22 | Choosing how an agent talks to a frontend vs declaring widgets vs shipping a sandboxed MCP iframe | a2a-vs-mcp, mcp-apps-extension, streaming-approval-resume |
 
 ## Runbooks
 

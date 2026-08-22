@@ -640,13 +640,14 @@
         "design"
       ],
       "status": "active",
-      "updated": "2026-08-10",
+      "updated": "2026-08-22",
       "when_to_use": "Designing an MCP server and choosing which primitive exposes a capability",
       "related": [
         "mcp-progressive-disclosure",
         "tool-description-hygiene",
         "tools-mcp-skills-layers",
-        "mcp-apps-extension"
+        "mcp-apps-extension",
+        "mcp-completions"
       ]
     },
     {
@@ -1246,6 +1247,177 @@
         "skills-dispatch-hygiene",
         "tools-mcp-skills-layers",
         "mcp-progressive-disclosure"
+      ]
+    },
+    {
+      "id": "ag-ui-vs-a2ui",
+      "path": "glossary/ag-ui-vs-a2ui.md",
+      "title": "AG-UI vs A2UI vs MCP Apps",
+      "tags": [
+        "ag-ui",
+        "a2ui",
+        "ux",
+        "glossary"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Choosing how an agent talks to a frontend vs declaring widgets vs shipping a sandboxed MCP iframe",
+      "related": [
+        "a2a-vs-mcp",
+        "mcp-apps-extension",
+        "streaming-approval-resume"
+      ]
+    },
+    {
+      "id": "cursor-automations",
+      "path": "practices/cursor-automations.md",
+      "title": "Cursor Automations — standing rules vs subscriptions",
+      "tags": [
+        "cursor",
+        "automations",
+        "orchestration",
+        "cron"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Configuring scheduled or event-triggered Cursor cloud agents (not a running agent’s PR/Slack subscription)",
+      "related": [
+        "cursor-cloud-always-on",
+        "cursor-bugbot-review",
+        "computer-use-containment"
+      ]
+    },
+    {
+      "id": "cursor-bugbot-review",
+      "path": "practices/cursor-bugbot-review.md",
+      "title": "Cursor Bugbot — PR review agent",
+      "tags": [
+        "cursor",
+        "review",
+        "ci",
+        "evals"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Wiring Cursor’s PR review agent (comments, checks, /review, Autofix) without treating it as a merge gate by default",
+      "related": [
+        "cursor-automations",
+        "human-in-the-loop-approvals",
+        "agent-eval-harness"
+      ]
+    },
+    {
+      "id": "permission-modes-allow-ask-deny",
+      "path": "practices/permission-modes-allow-ask-deny.md",
+      "title": "Permission modes and allow / ask / deny rules",
+      "tags": [
+        "permissions",
+        "hitl",
+        "hooks",
+        "safety"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Configuring a coding-agent host so tool approvals are enforced in the runtime, not only in AGENTS.md",
+      "related": [
+        "memory-files-vs-enforcement-hooks",
+        "human-in-the-loop-approvals",
+        "agent-guardrails-vs-approvals"
+      ]
+    },
+    {
+      "id": "mcp-list-caching",
+      "path": "practices/mcp-list-caching.md",
+      "title": "MCP list/read caching (ttlMs and cacheScope)",
+      "tags": [
+        "mcp",
+        "caching",
+        "tokens",
+        "transport"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Implementing or consuming 2026-07-28 tools/list, prompts/list, resources/*, or server/discover without leaking cross-user cache",
+      "related": [
+        "mcp-stateless-core",
+        "prompt-caching-for-agents",
+        "mcp-subscriptions-listen"
+      ]
+    },
+    {
+      "id": "mcp-subscriptions-listen",
+      "path": "practices/mcp-subscriptions-listen.md",
+      "title": "MCP subscriptions/listen for change notifications",
+      "tags": [
+        "mcp",
+        "transport",
+        "reliability",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Receiving tools/prompts/resources change events on 2026-07-28 without a standalone GET SSE or resources/subscribe",
+      "related": [
+        "mcp-streamable-http-transport",
+        "mcp-stateless-core",
+        "mcp-list-caching"
+      ]
+    },
+    {
+      "id": "mcp-completions",
+      "path": "practices/mcp-completions.md",
+      "title": "MCP completion/complete for prompts and resource templates",
+      "tags": [
+        "mcp",
+        "ux",
+        "prompts",
+        "resources"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Adding host autocomplete for prompt arguments or resource URI template variables",
+      "related": [
+        "mcp-resources-vs-tools",
+        "mcp-elicitation-modes",
+        "tool-description-hygiene"
+      ]
+    },
+    {
+      "id": "playwright-mcp-containment",
+      "path": "practices/playwright-mcp-containment.md",
+      "title": "Playwright MCP is not a security boundary",
+      "tags": [
+        "mcp",
+        "browser",
+        "security",
+        "sandbox"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Connecting @playwright/mcp (or similar browser MCP) to a coding agent",
+      "related": [
+        "computer-use-containment",
+        "mcp-registry-admission",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "agent-guardrails-vs-approvals",
+      "path": "practices/agent-guardrails-vs-approvals.md",
+      "title": "Guardrails vs human-approval interruptions",
+      "tags": [
+        "guardrails",
+        "hitl",
+        "safety",
+        "reliability"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Deciding whether to auto-block a run or pause it for a person before a side-effecting tool",
+      "related": [
+        "human-in-the-loop-approvals",
+        "permission-modes-allow-ask-deny",
+        "streaming-approval-resume"
       ]
     }
   ]
