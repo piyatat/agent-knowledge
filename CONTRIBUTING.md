@@ -30,6 +30,7 @@ when_to_use: One line — when an agent should open this page
 4. Prefer `status: active` for notes agents should open; use `draft` or `deprecated` otherwise.
 5. Edit `manifest.json` as the **single source of truth** (include `status`, `updated`, `related: []`). Sync the note’s frontmatter `status` / `updated` to match. Then run `npm run check` to validate and regenerate `INDEX.md`.
 6. Add or update a row in `sources/bibliography.md`.
+7. **Scheduled ingest** (cron / Cursor automation) lands on **`main`**: after `npm run check`, commit and `git push origin main`. Do not create a feature branch or pull request. Interactive collection still waits for an explicit push request.
 
 ## Scripts
 

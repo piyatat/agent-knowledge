@@ -50,7 +50,7 @@ npm run check
 
 ## Adding data
 
-When collecting from the web: summarize in your own words, add frontmatter + `sources`, update `manifest.json` (with `status`, `updated`, `related`), then run `npm run check`. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+When collecting from the web: summarize in your own words, add frontmatter + `sources`, update `manifest.json` (with `status`, `updated`, `related`), then run `npm run check`. See [`CONTRIBUTING.md`](CONTRIBUTING.md). Daily ingest automations push those commits to **`main`** (no extra branch or PR).
 
 ## License
 

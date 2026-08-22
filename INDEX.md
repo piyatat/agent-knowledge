@@ -87,7 +87,7 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 
 | id | path | status | updated | when_to_use | related |
 | --- | --- | --- | --- | --- | --- |
-| collect-from-web | `runbooks/collect-from-web.md` | active | 2026-08-07 | User asks to scrape/collect information into agent-knowledge | knowledge-corpus-pattern |
+| collect-from-web | `runbooks/collect-from-web.md` | active | 2026-08-22 | User asks to scrape/collect information into agent-knowledge | knowledge-corpus-pattern |
 
 ## Decisions
 
