@@ -154,3 +154,37 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | MCP server concepts | https://modelcontextprotocol.io/docs/learn/server-concepts |
 | Heartbeat dead-man-switch (corpus) | https://github.com/piyatat/agent-knowledge/blob/main/practices/heartbeat-dead-man-switch.md |
 | Collect from web (corpus) | https://github.com/piyatat/agent-knowledge/blob/main/runbooks/collect-from-web.md |
+
+## Daily ingest 2026-08-22 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| MCP Apps overview | https://apps.extensions.modelcontextprotocol.io/api/documents/overview.html |
+| SEP-1865: MCP Apps | https://modelcontextprotocol.io/seps/1865-mcp-apps-interactive-user-interfaces-for-mcp |
+| MCP Apps are live (MCP Blog, 2026-01-26) | https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/ |
+| MCP Tasks overview | https://modelcontextprotocol.io/extensions/tasks/overview |
+| SEP-2663: Tasks Extension | https://modelcontextprotocol.io/seps/2663-tasks-extension |
+| The 2026-07-28 Specification (MCP Blog) | https://blog.modelcontextprotocol.io/posts/2026-07-28/ |
+| Code execution with MCP (Anthropic) | https://www.anthropic.com/engineering/code-execution-with-mcp |
+| Programmatic Tool Calling (OpenAI) | https://developers.openai.com/api/docs/guides/tools-programmatic-tool-calling |
+| The next generation of MCP (Cloudflare) | https://blog.cloudflare.com/mcp-v2/ |
+| Tool search (OpenAI) | https://developers.openai.com/api/docs/guides/tools-tool-search |
+| API deployment checklist — use tool_search | https://developers.openai.com/api/docs/guides/deployment-checklist |
+| The MCP Registry (about) | https://modelcontextprotocol.io/registry/about |
+| MCP Registry in 2026: discover, verify, connect | https://digitalthoughtdisruption.com/2026/07/20/mcp-registry-discover-verify-safely-connect-servers/ |
+| MCP supply chain: treat servers as artifacts | https://nhimg.org/articles/mcp-supply-chain-security-means-treating-servers-as-artifacts/ |
+| Cloud Agents and Cursor Harness Improvements (2026-08-19) | https://cursor.com/changelog/08-19-26 |
+| Cursor changelog index | https://cursor.com/changelog |
+| Cursor gives cloud agents subscriptions, /goal and subagent VMs | https://aiweekly.co/alerts/cursor-gives-cloud-agents-subscriptions-goal-and-subagent-vms |
+| Claude Code memory | https://code.claude.com/docs/en/memory |
+| Claude Code hooks guide | https://code.claude.com/docs/en/hooks-guide |
+| Which CLAUDE.md files actually load | https://dev.to/rulestack/which-claudemd-files-claude-code-actually-loads-and-in-what-order-3be0 |
+| MCP Security Best Practices (2026-07-28) | https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices |
+| MCP authorization security considerations | https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/security-considerations |
+| MCP Security: risks and best practices (OX) | https://www.ox.security/academy/ai-security/mcp-security-risks-and-best-practices-for-model-context-protocol/ |
+| Agent Skills specification | https://agentskills.io/specification |
+| Agent Skills overview | https://agentskills.io/home |
+| Equipping agents with Agent Skills (Anthropic) | https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills |
+| MCP Authorization (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization |
+| MCP OAuth 2.1 implementation (PKCE & scopes) | https://www.practical-devsecops.com/mcp-oauth-2-1-implementation/ |
+| Authorization: OAuth 2.1 for HTTP MCP Servers | https://imti.co/mcp-authorization-oauth/ |

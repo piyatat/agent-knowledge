@@ -1,8 +1,8 @@
 {
   "name": "agent-knowledge",
   "version": "0.1.0",
-  "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-08-15",
+  "description": "Lookup corpus for AI coding agents — curated notes with sources",
+  "updated": "2026-08-22",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -19,7 +19,8 @@
       "when_to_use": "Designing or reviewing MCP servers / large tool lists that may bloat context",
       "related": [
         "tool-description-hygiene",
-        "tool-call-failures"
+        "tool-call-failures",
+        "tool-search-defer-loading"
       ]
     },
     {
@@ -43,7 +44,7 @@
     {
       "id": "agents-md-and-rules-budget",
       "path": "practices/agents-md-and-rules-budget.md",
-      "title": "AGENTS.md vs Cursor rules \u2014 context budget",
+      "title": "AGENTS.md vs Cursor rules — context budget",
       "tags": [
         "cursor",
         "agents-md",
@@ -54,13 +55,14 @@
       "updated": "2026-08-06",
       "when_to_use": "Writing project steering files or debugging instruction bloat",
       "related": [
-        "knowledge-corpus-pattern"
+        "knowledge-corpus-pattern",
+        "memory-files-vs-enforcement-hooks"
       ]
     },
     {
       "id": "knowledge-corpus-pattern",
       "path": "practices/knowledge-corpus-pattern.md",
-      "title": "Knowledge corpus pattern (this repo\u2019s job)",
+      "title": "Knowledge corpus pattern (this repo’s job)",
       "tags": [
         "knowledge",
         "memory",
@@ -112,7 +114,7 @@
     {
       "id": "collect-from-web",
       "path": "runbooks/collect-from-web.md",
-      "title": "Runbook \u2014 collect a web note into this repo",
+      "title": "Runbook — collect a web note into this repo",
       "tags": [
         "runbook",
         "contributing"
@@ -179,7 +181,8 @@
       "related": [
         "mcp-progressive-disclosure",
         "tool-description-hygiene",
-        "knowledge-corpus-pattern"
+        "knowledge-corpus-pattern",
+        "agent-skills-open-standard"
       ]
     },
     {
@@ -198,7 +201,8 @@
       "related": [
         "tool-call-failures",
         "structured-outputs-for-agents",
-        "human-in-the-loop-approvals"
+        "human-in-the-loop-approvals",
+        "mcp-server-trust-failures"
       ]
     },
     {
@@ -311,13 +315,14 @@
       "when_to_use": "Agents can mutate prod, spend money, delete data, or push code without review",
       "related": [
         "prompt-injection-agent-defense",
-        "multi-agent-handoffs"
+        "multi-agent-handoffs",
+        "memory-files-vs-enforcement-hooks"
       ]
     },
     {
       "id": "mcp-oauth-scopes",
       "path": "practices/mcp-oauth-scopes.md",
-      "title": "MCP OAuth 2.1, PKCE, and tool scopes",
+      "title": "MCP OAuth 2.1, CIMD, PKCE, and tool scopes",
       "tags": [
         "mcp",
         "oauth",
@@ -325,12 +330,14 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-08-09",
+      "updated": "2026-08-22",
       "when_to_use": "Securing remote HTTP MCP servers or designing least-privilege agent tool access",
       "related": [
         "prompt-injection-agent-defense",
         "tools-mcp-skills-layers",
-        "human-in-the-loop-approvals"
+        "human-in-the-loop-approvals",
+        "mcp-server-trust-failures",
+        "mcp-registry-admission"
       ]
     },
     {
@@ -349,7 +356,8 @@
       "related": [
         "prompt-injection-agent-defense",
         "human-in-the-loop-approvals",
-        "tool-call-failures"
+        "tool-call-failures",
+        "code-mode-tool-orchestration"
       ]
     },
     {
@@ -440,11 +448,12 @@
       ],
       "status": "active",
       "updated": "2026-08-09",
-      "when_to_use": "Spawning child agents or Task seats without leaking the parent\u2019s full transcript",
+      "when_to_use": "Spawning child agents or Task seats without leaking the parent’s full transcript",
       "related": [
         "multi-agent-handoffs",
         "context-compaction",
-        "prompt-caching-for-agents"
+        "prompt-caching-for-agents",
+        "cursor-cloud-always-on"
       ]
     },
     {
@@ -482,7 +491,8 @@
       "related": [
         "tools-mcp-skills-layers",
         "tool-description-hygiene",
-        "agents-md-and-rules-budget"
+        "agents-md-and-rules-budget",
+        "agent-skills-open-standard"
       ]
     },
     {
@@ -564,7 +574,7 @@
     {
       "id": "a2a-vs-mcp",
       "path": "glossary/a2a-vs-mcp.md",
-      "title": "A2A vs MCP \u2014 agent-to-agent vs agent-to-tool",
+      "title": "A2A vs MCP — agent-to-agent vs agent-to-tool",
       "tags": [
         "a2a",
         "mcp",
@@ -596,7 +606,8 @@
       "related": [
         "human-in-the-loop-approvals",
         "agent-retry-idempotency",
-        "agent-observability-otel"
+        "agent-observability-otel",
+        "mcp-tasks-extension"
       ]
     },
     {
@@ -634,7 +645,8 @@
       "related": [
         "mcp-progressive-disclosure",
         "tool-description-hygiene",
-        "tools-mcp-skills-layers"
+        "tools-mcp-skills-layers",
+        "mcp-apps-extension"
       ]
     },
     {
@@ -748,7 +760,8 @@
       "related": [
         "mcp-mrtr-input-required",
         "mcp-deprecated-roots-sampling",
-        "rate-limit-backoff-tools"
+        "rate-limit-backoff-tools",
+        "mcp-tasks-extension"
       ]
     },
     {
@@ -1062,6 +1075,177 @@
         "knowledge-corpus-pattern",
         "collect-from-web",
         "context-rot-stale-instructions"
+      ]
+    },
+    {
+      "id": "mcp-apps-extension",
+      "path": "practices/mcp-apps-extension.md",
+      "title": "MCP Apps — sandboxed UI in the host",
+      "tags": [
+        "mcp",
+        "ux",
+        "security",
+        "extensions"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Shipping interactive MCP tool UIs (forms, charts, dashboards) inside a host iframe",
+      "related": [
+        "mcp-resources-vs-tools",
+        "human-in-the-loop-approvals",
+        "computer-use-containment"
+      ]
+    },
+    {
+      "id": "mcp-tasks-extension",
+      "path": "practices/mcp-tasks-extension.md",
+      "title": "MCP Tasks extension for long-running tool calls",
+      "tags": [
+        "mcp",
+        "durability",
+        "extensions",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "MCP tools that run minutes-to-hours (CI, batch, human approval) and must not hold the HTTP request",
+      "related": [
+        "durable-agent-workflows",
+        "mcp-stateless-core",
+        "mcp-mrtr-input-required"
+      ]
+    },
+    {
+      "id": "code-mode-tool-orchestration",
+      "path": "practices/code-mode-tool-orchestration.md",
+      "title": "Code-mode tool orchestration (MCP + programmatic calling)",
+      "tags": [
+        "mcp",
+        "tools",
+        "tokens",
+        "sandbox"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Tool catalogs or intermediate results are too large to hop through the model on every call",
+      "related": [
+        "agent-code-sandboxing",
+        "mcp-progressive-disclosure",
+        "tool-search-defer-loading"
+      ]
+    },
+    {
+      "id": "tool-search-defer-loading",
+      "path": "practices/tool-search-defer-loading.md",
+      "title": "Tool search and defer_loading",
+      "tags": [
+        "tools",
+        "tokens",
+        "mcp",
+        "caching"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Large function/MCP catalogs blow the prefix or invalidate prompt cache when the tool list changes",
+      "related": [
+        "mcp-progressive-disclosure",
+        "prompt-caching-for-agents",
+        "code-mode-tool-orchestration"
+      ]
+    },
+    {
+      "id": "mcp-registry-admission",
+      "path": "practices/mcp-registry-admission.md",
+      "title": "MCP registry is discovery, not a trust root",
+      "tags": [
+        "mcp",
+        "security",
+        "supply-chain",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Installing, pinning, or allowlisting MCP servers from the public registry or npx/uvx",
+      "related": [
+        "mcp-server-trust-failures",
+        "mcp-oauth-scopes",
+        "agent-code-sandboxing"
+      ]
+    },
+    {
+      "id": "cursor-cloud-always-on",
+      "path": "practices/cursor-cloud-always-on.md",
+      "title": "Cursor cloud agents — subscriptions, /goal, isolated subagents",
+      "tags": [
+        "cursor",
+        "orchestration",
+        "subagent",
+        "durability"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Designing always-on Cursor cloud agents that wake on PRs/Slack/cron or hold a long-lived objective",
+      "related": [
+        "subagent-context-isolation",
+        "durable-agent-workflows",
+        "skills-dispatch-hygiene"
+      ]
+    },
+    {
+      "id": "memory-files-vs-enforcement-hooks",
+      "path": "practices/memory-files-vs-enforcement-hooks.md",
+      "title": "Memory files vs enforcement hooks",
+      "tags": [
+        "memory",
+        "hooks",
+        "cursor",
+        "rules"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Choosing CLAUDE.md/AGENTS.md memory versus a PreToolUse (or equivalent) hook that must actually block an action",
+      "related": [
+        "agents-md-and-rules-budget",
+        "human-in-the-loop-approvals",
+        "instruction-conflict-resolution"
+      ]
+    },
+    {
+      "id": "mcp-server-trust-failures",
+      "path": "failure-modes/mcp-server-trust-failures.md",
+      "title": "MCP server trust failures (passthrough, deputy, rug pull)",
+      "tags": [
+        "mcp",
+        "security",
+        "oauth",
+        "failure-modes"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Threat-modeling remote MCP servers that proxy third-party APIs or can change their tool list after install",
+      "related": [
+        "mcp-oauth-scopes",
+        "prompt-injection-agent-defense",
+        "mcp-registry-admission"
+      ]
+    },
+    {
+      "id": "agent-skills-open-standard",
+      "path": "practices/agent-skills-open-standard.md",
+      "title": "Agent Skills open standard (SKILL.md)",
+      "tags": [
+        "skills",
+        "mcp",
+        "tokens",
+        "architecture"
+      ],
+      "status": "active",
+      "updated": "2026-08-22",
+      "when_to_use": "Authoring portable SKILL.md packages or implementing skill discovery across Cursor/Claude/Codex-class agents",
+      "related": [
+        "skills-dispatch-hygiene",
+        "tools-mcp-skills-layers",
+        "mcp-progressive-disclosure"
       ]
     }
   ]
