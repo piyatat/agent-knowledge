@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-08-22",
+  "updated": "2026-08-23",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -762,7 +762,10 @@
         "mcp-mrtr-input-required",
         "mcp-deprecated-roots-sampling",
         "rate-limit-backoff-tools",
-        "mcp-tasks-extension"
+        "mcp-tasks-extension",
+        "mcp-server-discover",
+        "mcp-http-gateway-headers",
+        "mcp-2026-roadmap"
       ]
     },
     {
@@ -1039,7 +1042,8 @@
       "related": [
         "a2a-vs-mcp",
         "multi-agent-handoffs",
-        "subagent-context-isolation"
+        "subagent-context-isolation",
+        "a2a-agent-card-discovery"
       ]
     },
     {
@@ -1189,7 +1193,10 @@
       "related": [
         "subagent-context-isolation",
         "durable-agent-workflows",
-        "skills-dispatch-hygiene"
+        "skills-dispatch-hygiene",
+        "cursor-cloud-mcp-diagnostics",
+        "cursor-environment-builds",
+        "cursor-cloud-oidc-identity"
       ]
     },
     {
@@ -1246,7 +1253,8 @@
       "related": [
         "skills-dispatch-hygiene",
         "tools-mcp-skills-layers",
-        "mcp-progressive-disclosure"
+        "mcp-progressive-disclosure",
+        "malicious-skills-supply-chain"
       ]
     },
     {
@@ -1418,6 +1426,199 @@
         "human-in-the-loop-approvals",
         "permission-modes-allow-ask-deny",
         "streaming-approval-resume"
+      ]
+    },
+    {
+      "id": "malicious-skills-supply-chain",
+      "path": "failure-modes/malicious-skills-supply-chain.md",
+      "title": "Malicious Agent Skills and marketplace supply chain",
+      "tags": [
+        "skills",
+        "security",
+        "supply-chain",
+        "failure-modes"
+      ],
+      "status": "active",
+      "updated": "2026-08-23",
+      "when_to_use": "Installing, ranking, or allowlisting third-party SKILL.md packages from a public marketplace",
+      "related": [
+        "agent-skills-open-standard",
+        "mcp-registry-admission",
+        "agent-memory-poisoning",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "a2a-agent-card-discovery",
+      "path": "practices/a2a-agent-card-discovery.md",
+      "title": "A2A Agent Card discovery and well-known URIs",
+      "tags": [
+        "a2a",
+        "discovery",
+        "orchestration",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-08-23",
+      "when_to_use": "Publishing or consuming an Agent2Agent Agent Card so peers can find skills and auth without a shared tool loop",
+      "related": [
+        "a2a-vs-mcp",
+        "agent-to-agent-a2a-protocol",
+        "mcp-registry-admission"
+      ]
+    },
+    {
+      "id": "mcp-server-discover",
+      "path": "practices/mcp-server-discover.md",
+      "title": "MCP server/discover (capability probe)",
+      "tags": [
+        "mcp",
+        "discovery",
+        "stateless",
+        "transport"
+      ],
+      "status": "active",
+      "updated": "2026-08-23",
+      "when_to_use": "Implementing or calling server/discover on 2026-07-28 instead of an initialize handshake",
+      "related": [
+        "mcp-stateless-core",
+        "mcp-list-caching",
+        "mcp-http-gateway-headers"
+      ]
+    },
+    {
+      "id": "mcp-http-gateway-headers",
+      "path": "practices/mcp-http-gateway-headers.md",
+      "title": "MCP HTTP headers for gateways (Mcp-Method, Mcp-Name)",
+      "tags": [
+        "mcp",
+        "transport",
+        "gateway",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-08-23",
+      "when_to_use": "Putting a load balancer, WAF, or API gateway in front of Streamable HTTP MCP without parsing JSON-RPC bodies",
+      "related": [
+        "mcp-stateless-core",
+        "mcp-streamable-http-transport",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "agent-memory-poisoning",
+      "path": "failure-modes/agent-memory-poisoning.md",
+      "title": "Persistent agent memory poisoning",
+      "tags": [
+        "memory",
+        "security",
+        "prompt-injection",
+        "failure-modes"
+      ],
+      "status": "active",
+      "updated": "2026-08-23",
+      "when_to_use": "Agents write long-term memory (files, vectors, MEMORIES.md) from email, Slack, RAG docs, or untrusted tool output",
+      "related": [
+        "memory-wiki-vs-rag",
+        "cursor-automations",
+        "prompt-injection-agent-defense",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "cursor-cloud-mcp-diagnostics",
+      "path": "practices/cursor-cloud-mcp-diagnostics.md",
+      "title": "Cursor Cloud MCP — run diagnostics tools",
+      "tags": [
+        "cursor",
+        "mcp",
+        "observability",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-08-23",
+      "when_to_use": "A Cursor cloud agent must inspect its own run, sibling runs, environment, builds, or setup logs",
+      "related": [
+        "cursor-cloud-always-on",
+        "cursor-environment-builds",
+        "cursor-automations"
+      ]
+    },
+    {
+      "id": "cursor-environment-builds",
+      "path": "practices/cursor-environment-builds.md",
+      "title": "Cursor Cloud Agent environment Builds",
+      "tags": [
+        "cursor",
+        "ops",
+        "reliability",
+        "ci"
+      ],
+      "status": "active",
+      "updated": "2026-08-23",
+      "when_to_use": "Speeding up or debugging Cloud Agent VM startup (clone/install vs start/terminals)",
+      "related": [
+        "cursor-cloud-always-on",
+        "cursor-cloud-mcp-diagnostics",
+        "mcp-server-lifecycle-health"
+      ]
+    },
+    {
+      "id": "cursor-cloud-oidc-identity",
+      "path": "practices/cursor-cloud-oidc-identity.md",
+      "title": "Cursor Cloud Agent OIDC tokens",
+      "tags": [
+        "cursor",
+        "auth",
+        "security",
+        "identity"
+      ],
+      "status": "active",
+      "updated": "2026-08-23",
+      "when_to_use": "Letting a Cloud Agent assume AWS/GCP/Azure/Vault roles without long-lived keys in Secrets",
+      "related": [
+        "cursor-cloud-always-on",
+        "mcp-oauth-scopes",
+        "mcp-2026-roadmap"
+      ]
+    },
+    {
+      "id": "mcp-2026-roadmap",
+      "path": "practices/mcp-2026-roadmap.md",
+      "title": "MCP 2026 roadmap — five priority areas",
+      "tags": [
+        "mcp",
+        "roadmap",
+        "identity",
+        "transport"
+      ],
+      "status": "active",
+      "updated": "2026-08-23",
+      "when_to_use": "Deciding whether a missing MCP feature is already in 2026-07-28 or still roadmap (DPoP, WIF, HTTP-over-stdio)",
+      "related": [
+        "mcp-stateless-core",
+        "mcp-oauth-scopes",
+        "tool-search-defer-loading"
+      ]
+    },
+    {
+      "id": "cursor-cloud-mcp-http-vs-stdio",
+      "path": "practices/cursor-cloud-mcp-http-vs-stdio.md",
+      "title": "Cursor Cloud MCP — prefer HTTP over stdio",
+      "tags": [
+        "cursor",
+        "mcp",
+        "security",
+        "transport"
+      ],
+      "status": "active",
+      "updated": "2026-08-23",
+      "when_to_use": "Attaching MCP servers to Cursor Cloud Agents (team or personal) and choosing HTTP vs stdio",
+      "related": [
+        "cursor-cloud-mcp-diagnostics",
+        "cursor-automations",
+        "mcp-registry-admission",
+        "playwright-mcp-containment"
       ]
     }
   ]

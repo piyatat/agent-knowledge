@@ -221,3 +221,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | NVIDIA NeMo Guardrails | https://github.com/NVIDIA-NeMo/Guardrails |
 | MCP tools (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/tools |
 | MCP server concepts | https://modelcontextprotocol.io/docs/learn/server-concepts |
+
+## Daily ingest 2026-08-23 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| AST01 — Malicious Skills (OWASP) | https://owasp.org/www-project-agentic-skills-top-10/ast01.html |
+| Agent Skills Guide 2026 (Termdock) | https://www.termdock.com/en/blog/agent-skills-guide |
+| Agent Skills specification | https://agentskills.io/specification |
+| Agent Discovery (A2A Protocol) | https://a2a-protocol.org/latest/topics/agent-discovery/ |
+| A2A Agent Cards (StackA2A) | https://stacka2a.dev/blog/a2a-agent-card-explained |
+| A2A Agent Card Specification (StackA2A) | https://stacka2a.dev/learn/agent-card-spec |
+| MCP Discovery (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/discover |
+| The 2026-07-28 Specification (MCP Blog) | https://blog.modelcontextprotocol.io/posts/2026-07-28/ |
+| How AgentCore Gateway supports the MCP 2026-07-28 spec | https://aws.amazon.com/blogs/machine-learning/how-agentcore-gateway-supports-the-mcp-2026-07-28-spec/ |
+| Stateless MCP still needs an MCP-native dataplane (agentgateway) | https://agentgateway.dev/blog/2026-07-21-stateless-mcp-still-needs-mcp-native-dataplane/ |
+| Agent Memory Poisoning (Tian Pan) | https://tianpan.co/blog/2026-04-10-agent-memory-poisoning-persistent-compromise |
+| From Untrusted Input to Trusted Memory (αXiv 2606.04329) | https://www.alphaxiv.org/abs/2606.04329 |
+| Cursor Automations | https://cursor.com/docs/cloud-agent/automations |
+| Cloud Agent capabilities | https://cursor.com/docs/cloud-agent/capabilities |
+| Cloud Agents overview | https://cursor.com/docs/cloud-agent |
+| Cloud Agent Builds | https://cursor.com/docs/cloud-agent/builds |
+| Cloud agents start 3x faster with builds | https://cursor.com/blog/builds |
+| OIDC tokens (Cursor Cloud Agents) | https://cursor.com/docs/cloud-agent/identity |
+| Secrets & Network | https://cursor.com/docs/cloud-agent/security-network.md |
+| MCP development roadmap | https://modelcontextprotocol.io/development/roadmap |
+| The New MCP Roadmap (blog) | https://blog.modelcontextprotocol.io/posts/mcp-roadmap/ |
