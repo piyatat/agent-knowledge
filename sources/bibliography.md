@@ -247,3 +247,36 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Secrets & Network | https://cursor.com/docs/cloud-agent/security-network.md |
 | MCP development roadmap | https://modelcontextprotocol.io/development/roadmap |
 | The New MCP Roadmap (blog) | https://blog.modelcontextprotocol.io/posts/mcp-roadmap/ |
+
+## Daily ingest 2026-08-24 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| MCP tools (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/tools |
+| schema.ts ToolAnnotations / outputSchema | https://github.com/modelcontextprotocol/specification/blob/main/schema/2026-07-28/schema.ts |
+| Tool Annotations as Risk Vocabulary (MCP Blog) | https://blog.modelcontextprotocol.io/posts/2026-03-16-tool-annotations/ |
+| 2026-07-28 changelog (SEP-2106) | https://modelcontextprotocol.io/specification/2026-07-28/changelog.md |
+| MCP prompts (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/prompts |
+| MCP server concepts | https://modelcontextprotocol.io/docs/learn/server-concepts |
+| MCP completion (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/completion |
+| MCP pagination (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/pagination |
+| MCP Python SDK — Pagination | https://py.sdk.modelcontextprotocol.io/v2/advanced/pagination/ |
+| Using Headless CLI | https://cursor.com/docs/cli/headless |
+| Using Agent in CLI | https://cursor.com/docs/cli/using |
+| GitHub Actions (Cursor CLI) | https://cursor.com/docs/cli/github-actions.md |
+| CLI permissions | https://cursor.com/docs/cli/reference/permissions.md |
+| CLI authentication | https://cursor.com/docs/cli/reference/authentication.md |
+| Worktrees (Agents Window / IDE) | https://cursor.com/docs/configuration/worktrees.md |
+| CLI changelog — Git worktrees | https://cursor.com/docs/cli/changelog |
+| sandbox.json reference | https://cursor.com/docs/reference/sandbox.md |
+| Run Modes | https://cursor.com/docs/agent/security/run-modes.md |
+| Implementing a secure sandbox for local agents | https://cursor.com/blog/agent-sandboxing |
+| Cursor Agent Skills | https://cursor.com/docs/skills |
+| Claude Code skills | https://code.claude.com/docs/en/skills |
+| Agent Skills specification | https://agentskills.io/specification |
+| OWASP Top 10 for Agentic Applications for 2026 | https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ |
+| Release post — ASI01–ASI10 examples | https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/ |
+| OWASP Agentic Skills Top 10 | https://owasp.org/www-project-agentic-skills-top-10/ |
+| Cursor Plugins | https://cursor.com/docs/plugins.md |
+| Plugins help | https://cursor.com/help/customization/plugins.md |
+| Agent Plugins standard | https://agent-plugins.org |

@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-08-23",
+  "updated": "2026-08-24",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -259,7 +259,8 @@
       "related": [
         "tool-description-hygiene",
         "tool-call-failures",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "mcp-output-schema"
       ]
     },
     {
@@ -357,7 +358,8 @@
         "prompt-injection-agent-defense",
         "human-in-the-loop-approvals",
         "tool-call-failures",
-        "code-mode-tool-orchestration"
+        "code-mode-tool-orchestration",
+        "cursor-sandbox-json"
       ]
     },
     {
@@ -433,7 +435,8 @@
       "related": [
         "tool-call-failures",
         "structured-outputs-for-agents",
-        "agent-cost-step-budgets"
+        "agent-cost-step-budgets",
+        "mcp-tool-annotations"
       ]
     },
     {
@@ -492,7 +495,8 @@
         "tools-mcp-skills-layers",
         "tool-description-hygiene",
         "agents-md-and-rules-budget",
-        "agent-skills-open-standard"
+        "agent-skills-open-standard",
+        "skills-invocation-modes"
       ]
     },
     {
@@ -647,7 +651,8 @@
         "tool-description-hygiene",
         "tools-mcp-skills-layers",
         "mcp-apps-extension",
-        "mcp-completions"
+        "mcp-completions",
+        "mcp-prompts"
       ]
     },
     {
@@ -666,7 +671,9 @@
       "related": [
         "agent-code-sandboxing",
         "computer-use-containment",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "cursor-worktrees",
+        "cursor-sandbox-json"
       ]
     },
     {
@@ -1196,7 +1203,8 @@
         "skills-dispatch-hygiene",
         "cursor-cloud-mcp-diagnostics",
         "cursor-environment-builds",
-        "cursor-cloud-oidc-identity"
+        "cursor-cloud-oidc-identity",
+        "cursor-cli-headless"
       ]
     },
     {
@@ -1254,7 +1262,9 @@
         "skills-dispatch-hygiene",
         "tools-mcp-skills-layers",
         "mcp-progressive-disclosure",
-        "malicious-skills-supply-chain"
+        "malicious-skills-supply-chain",
+        "skills-invocation-modes",
+        "cursor-plugins"
       ]
     },
     {
@@ -1330,7 +1340,9 @@
       "related": [
         "memory-files-vs-enforcement-hooks",
         "human-in-the-loop-approvals",
-        "agent-guardrails-vs-approvals"
+        "agent-guardrails-vs-approvals",
+        "cursor-cli-headless",
+        "cursor-sandbox-json"
       ]
     },
     {
@@ -1349,7 +1361,8 @@
       "related": [
         "mcp-stateless-core",
         "prompt-caching-for-agents",
-        "mcp-subscriptions-listen"
+        "mcp-subscriptions-listen",
+        "mcp-pagination"
       ]
     },
     {
@@ -1387,7 +1400,8 @@
       "related": [
         "mcp-resources-vs-tools",
         "mcp-elicitation-modes",
-        "tool-description-hygiene"
+        "tool-description-hygiene",
+        "mcp-prompts"
       ]
     },
     {
@@ -1445,7 +1459,9 @@
         "agent-skills-open-standard",
         "mcp-registry-admission",
         "agent-memory-poisoning",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "cursor-plugins",
+        "owasp-agentic-asi-top-10"
       ]
     },
     {
@@ -1502,7 +1518,8 @@
       "related": [
         "mcp-stateless-core",
         "mcp-streamable-http-transport",
-        "agent-observability-otel"
+        "agent-observability-otel",
+        "mcp-tool-annotations"
       ]
     },
     {
@@ -1619,6 +1636,203 @@
         "cursor-automations",
         "mcp-registry-admission",
         "playwright-mcp-containment"
+      ]
+    },
+    {
+      "id": "mcp-tool-annotations",
+      "path": "practices/mcp-tool-annotations.md",
+      "title": "MCP tool annotations are hints, not permissions",
+      "tags": [
+        "mcp",
+        "tools",
+        "security",
+        "safety"
+      ],
+      "status": "active",
+      "updated": "2026-08-24",
+      "when_to_use": "Designing MCP tools/clients that show confirmations, auto-approve reads, or retry on failure using readOnlyHint and friends",
+      "related": [
+        "mcp-server-trust-failures",
+        "human-in-the-loop-approvals",
+        "agent-retry-idempotency",
+        "mcp-http-gateway-headers"
+      ]
+    },
+    {
+      "id": "mcp-output-schema",
+      "path": "practices/mcp-output-schema.md",
+      "title": "MCP outputSchema and structuredContent",
+      "tags": [
+        "mcp",
+        "tools",
+        "schema",
+        "structured-output"
+      ],
+      "status": "active",
+      "updated": "2026-08-24",
+      "when_to_use": "Returning typed MCP tool results that a host or downstream code will parse, not only prose in content[]",
+      "related": [
+        "structured-outputs-for-agents",
+        "tool-call-failures",
+        "mcp-tool-annotations"
+      ]
+    },
+    {
+      "id": "mcp-prompts",
+      "path": "practices/mcp-prompts.md",
+      "title": "MCP prompts — user-controlled templates",
+      "tags": [
+        "mcp",
+        "prompts",
+        "ux",
+        "design"
+      ],
+      "status": "active",
+      "updated": "2026-08-24",
+      "when_to_use": "Exposing slash-command-shaped MCP workflows the user picks, instead of a model-invoked tool",
+      "related": [
+        "mcp-resources-vs-tools",
+        "mcp-completions",
+        "mcp-mrtr-input-required",
+        "skills-invocation-modes"
+      ]
+    },
+    {
+      "id": "mcp-pagination",
+      "path": "practices/mcp-pagination.md",
+      "title": "MCP opaque cursor pagination",
+      "tags": [
+        "mcp",
+        "transport",
+        "reliability",
+        "tokens"
+      ],
+      "status": "active",
+      "updated": "2026-08-24",
+      "when_to_use": "Implementing or consuming tools/list, prompts/list, resources/list, or resources/templates/list with large catalogs",
+      "related": [
+        "mcp-list-caching",
+        "mcp-progressive-disclosure",
+        "tool-search-defer-loading"
+      ]
+    },
+    {
+      "id": "cursor-cli-headless",
+      "path": "practices/cursor-cli-headless.md",
+      "title": "Cursor CLI headless agent in scripts and CI",
+      "tags": [
+        "cursor",
+        "cli",
+        "ci",
+        "permissions"
+      ],
+      "status": "active",
+      "updated": "2026-08-24",
+      "when_to_use": "Running the Cursor agent from a terminal, GitHub Action, or script without the editor UI",
+      "related": [
+        "permission-modes-allow-ask-deny",
+        "cursor-cloud-always-on",
+        "cursor-worktrees",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "cursor-worktrees",
+      "path": "practices/cursor-worktrees.md",
+      "title": "Cursor Git worktrees for isolated agent runs",
+      "tags": [
+        "cursor",
+        "git",
+        "isolation",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-08-24",
+      "when_to_use": "Running parallel Cursor agents or comparing models without colliding on the main checkout",
+      "related": [
+        "cursor-cli-headless",
+        "subagent-context-isolation",
+        "workspace-mount-boundaries"
+      ]
+    },
+    {
+      "id": "cursor-sandbox-json",
+      "path": "practices/cursor-sandbox-json.md",
+      "title": "Cursor sandbox.json and Auto-review run modes",
+      "tags": [
+        "cursor",
+        "sandbox",
+        "security",
+        "permissions"
+      ],
+      "status": "active",
+      "updated": "2026-08-24",
+      "when_to_use": "Constraining local Cursor agent shell/network/filesystem (not Cloud Agent VMs)",
+      "related": [
+        "agent-code-sandboxing",
+        "permission-modes-allow-ask-deny",
+        "computer-use-containment",
+        "cursor-cli-headless"
+      ]
+    },
+    {
+      "id": "skills-invocation-modes",
+      "path": "practices/skills-invocation-modes.md",
+      "title": "Skill invocation — model vs slash vs custom mode",
+      "tags": [
+        "skills",
+        "cursor",
+        "dispatch",
+        "permissions"
+      ],
+      "status": "active",
+      "updated": "2026-08-24",
+      "when_to_use": "Choosing whether a SKILL.md auto-fires, only runs via /name, or stays pinned as a Custom Mode",
+      "related": [
+        "skills-dispatch-hygiene",
+        "agent-skills-open-standard",
+        "mcp-prompts",
+        "cursor-plugins"
+      ]
+    },
+    {
+      "id": "owasp-agentic-asi-top-10",
+      "path": "glossary/owasp-agentic-asi-top-10.md",
+      "title": "OWASP ASI Top 10 vs AST Skills Top 10",
+      "tags": [
+        "owasp",
+        "security",
+        "glossary",
+        "failure-modes"
+      ],
+      "status": "active",
+      "updated": "2026-08-24",
+      "when_to_use": "Mapping agent security work to OWASP codes — ASI01–ASI10 (applications) vs AST01–AST10 (skills)",
+      "related": [
+        "malicious-skills-supply-chain",
+        "prompt-injection-agent-defense",
+        "agent-memory-poisoning",
+        "mcp-server-trust-failures"
+      ]
+    },
+    {
+      "id": "cursor-plugins",
+      "path": "practices/cursor-plugins.md",
+      "title": "Cursor plugins and team marketplaces",
+      "tags": [
+        "cursor",
+        "plugins",
+        "skills",
+        "supply-chain"
+      ],
+      "status": "active",
+      "updated": "2026-08-24",
+      "when_to_use": "Packaging or installing rules/skills/MCP/hooks as a Cursor or Agent Plugin instead of loose files",
+      "related": [
+        "agent-skills-open-standard",
+        "mcp-registry-admission",
+        "malicious-skills-supply-chain",
+        "cursor-cloud-mcp-http-vs-stdio"
       ]
     }
   ]
