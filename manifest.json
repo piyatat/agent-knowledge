@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-08-24",
+  "updated": "2026-08-25",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -56,7 +56,8 @@
       "when_to_use": "Writing project steering files or debugging instruction bloat",
       "related": [
         "knowledge-corpus-pattern",
-        "memory-files-vs-enforcement-hooks"
+        "memory-files-vs-enforcement-hooks",
+        "cursor-rules-layers"
       ]
     },
     {
@@ -240,7 +241,8 @@
         "agent-eval-harness",
         "tool-call-failures",
         "multi-agent-handoffs",
-        "telemetry-redaction-genai"
+        "telemetry-redaction-genai",
+        "mcp-otel-trace-context"
       ]
     },
     {
@@ -456,7 +458,8 @@
         "multi-agent-handoffs",
         "context-compaction",
         "prompt-caching-for-agents",
-        "cursor-cloud-always-on"
+        "cursor-cloud-always-on",
+        "cursor-custom-subagents"
       ]
     },
     {
@@ -772,7 +775,9 @@
         "mcp-tasks-extension",
         "mcp-server-discover",
         "mcp-http-gateway-headers",
-        "mcp-2026-roadmap"
+        "mcp-2026-roadmap",
+        "mcp-request-meta",
+        "mcp-cancellation"
       ]
     },
     {
@@ -791,7 +796,8 @@
       "related": [
         "mcp-stateless-core",
         "mcp-resources-vs-tools",
-        "agent-observability-otel"
+        "agent-observability-otel",
+        "mcp-request-meta"
       ]
     },
     {
@@ -995,7 +1001,8 @@
       "related": [
         "mcp-stateless-core",
         "mcp-mrtr-input-required",
-        "mcp-oauth-scopes"
+        "mcp-oauth-scopes",
+        "mcp-cancellation"
       ]
     },
     {
@@ -1050,7 +1057,8 @@
         "a2a-vs-mcp",
         "multi-agent-handoffs",
         "subagent-context-isolation",
-        "a2a-agent-card-discovery"
+        "a2a-agent-card-discovery",
+        "a2a-streaming-async"
       ]
     },
     {
@@ -1204,7 +1212,8 @@
         "cursor-cloud-mcp-diagnostics",
         "cursor-environment-builds",
         "cursor-cloud-oidc-identity",
-        "cursor-cli-headless"
+        "cursor-cli-headless",
+        "cursor-custom-subagents"
       ]
     },
     {
@@ -1223,7 +1232,8 @@
       "related": [
         "agents-md-and-rules-budget",
         "human-in-the-loop-approvals",
-        "instruction-conflict-resolution"
+        "instruction-conflict-resolution",
+        "cursor-hooks-json"
       ]
     },
     {
@@ -1342,7 +1352,8 @@
         "human-in-the-loop-approvals",
         "agent-guardrails-vs-approvals",
         "cursor-cli-headless",
-        "cursor-sandbox-json"
+        "cursor-sandbox-json",
+        "cursor-hooks-json"
       ]
     },
     {
@@ -1381,7 +1392,9 @@
       "related": [
         "mcp-streamable-http-transport",
         "mcp-stateless-core",
-        "mcp-list-caching"
+        "mcp-list-caching",
+        "mcp-cancellation",
+        "mcp-progress-notifications"
       ]
     },
     {
@@ -1480,7 +1493,8 @@
       "related": [
         "a2a-vs-mcp",
         "agent-to-agent-a2a-protocol",
-        "mcp-registry-admission"
+        "mcp-registry-admission",
+        "a2a-streaming-async"
       ]
     },
     {
@@ -1792,7 +1806,8 @@
         "skills-dispatch-hygiene",
         "agent-skills-open-standard",
         "mcp-prompts",
-        "cursor-plugins"
+        "cursor-plugins",
+        "cursor-slash-commands"
       ]
     },
     {
@@ -1832,7 +1847,210 @@
         "agent-skills-open-standard",
         "mcp-registry-admission",
         "malicious-skills-supply-chain",
-        "cursor-cloud-mcp-http-vs-stdio"
+        "cursor-cloud-mcp-http-vs-stdio",
+        "cursor-hooks-json",
+        "cursor-slash-commands",
+        "cursor-custom-subagents"
+      ]
+    },
+    {
+      "id": "cursor-hooks-json",
+      "path": "practices/cursor-hooks-json.md",
+      "title": "Cursor hooks.json — observe and block the agent loop",
+      "tags": [
+        "cursor",
+        "hooks",
+        "permissions",
+        "safety"
+      ],
+      "status": "active",
+      "updated": "2026-08-25",
+      "when_to_use": "Defining .cursor/hooks.json (or ~/.cursor/hooks.json) so scripts can deny tools, format after edits, or audit cloud agent turns",
+      "related": [
+        "memory-files-vs-enforcement-hooks",
+        "permission-modes-allow-ask-deny",
+        "cursor-plugins",
+        "cursor-custom-subagents"
+      ]
+    },
+    {
+      "id": "cursor-agent-modes",
+      "path": "practices/cursor-agent-modes.md",
+      "title": "Cursor Agent, Ask, Plan, and Debug modes",
+      "tags": [
+        "cursor",
+        "ux",
+        "orchestration",
+        "reliability"
+      ],
+      "status": "active",
+      "updated": "2026-08-25",
+      "when_to_use": "Choosing Agent vs Ask vs Plan vs Debug, or debugging why a mode switch lost chat context",
+      "related": [
+        "cursor-rules-layers",
+        "cursor-cli-headless",
+        "skills-invocation-modes",
+        "cursor-custom-subagents"
+      ]
+    },
+    {
+      "id": "cursor-rules-layers",
+      "path": "practices/cursor-rules-layers.md",
+      "title": "Cursor rules — team, project, user, AGENTS.md",
+      "tags": [
+        "cursor",
+        "rules",
+        "agents-md",
+        "tokens"
+      ],
+      "status": "active",
+      "updated": "2026-08-25",
+      "when_to_use": "Authoring .cursor/rules/*.mdc, Team Rules, or nested AGENTS.md and deciding precedence vs alwaysApply",
+      "related": [
+        "agents-md-and-rules-budget",
+        "instruction-conflict-resolution",
+        "cursor-hooks-json",
+        "cursor-plugins"
+      ]
+    },
+    {
+      "id": "mcp-progress-notifications",
+      "path": "practices/mcp-progress-notifications.md",
+      "title": "MCP progressToken and notifications/progress",
+      "tags": [
+        "mcp",
+        "transport",
+        "ux",
+        "reliability"
+      ],
+      "status": "active",
+      "updated": "2026-08-25",
+      "when_to_use": "Adding long-running MCP request progress bars or debugging missing notifications/progress",
+      "related": [
+        "mcp-cancellation",
+        "mcp-subscriptions-listen",
+        "mcp-tasks-extension",
+        "mcp-request-meta"
+      ]
+    },
+    {
+      "id": "mcp-cancellation",
+      "path": "practices/mcp-cancellation.md",
+      "title": "MCP cancellation — close SSE vs notifications/cancelled",
+      "tags": [
+        "mcp",
+        "transport",
+        "reliability",
+        "stateless"
+      ],
+      "status": "active",
+      "updated": "2026-08-25",
+      "when_to_use": "Implementing client abort, request timeouts, or tearing down subscriptions/listen on MCP 2026-07-28",
+      "related": [
+        "mcp-streamable-http-transport",
+        "mcp-subscriptions-listen",
+        "mcp-progress-notifications",
+        "mcp-stateless-core"
+      ]
+    },
+    {
+      "id": "a2a-streaming-async",
+      "path": "practices/a2a-streaming-async.md",
+      "title": "A2A streaming SSE vs push-notification webhooks",
+      "tags": [
+        "a2a",
+        "streaming",
+        "webhooks",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-08-25",
+      "when_to_use": "Choosing A2A message/stream vs webhook push for long tasks, or threat-modeling Agent Card pushNotifications",
+      "related": [
+        "a2a-agent-card-discovery",
+        "agent-to-agent-a2a-protocol",
+        "webhook-receiver-freshness",
+        "durable-agent-workflows"
+      ]
+    },
+    {
+      "id": "cursor-slash-commands",
+      "path": "practices/cursor-slash-commands.md",
+      "title": "Cursor slash commands vs Skills",
+      "tags": [
+        "cursor",
+        "skills",
+        "prompts",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-08-25",
+      "when_to_use": "Adding reusable /commands in .cursor/commands or deciding whether to migrate them to SKILL.md",
+      "related": [
+        "skills-invocation-modes",
+        "mcp-prompts",
+        "cursor-plugins",
+        "cursor-agent-modes"
+      ]
+    },
+    {
+      "id": "cursor-custom-subagents",
+      "path": "practices/cursor-custom-subagents.md",
+      "title": "Cursor custom subagents (.cursor/agents)",
+      "tags": [
+        "cursor",
+        "subagent",
+        "orchestration",
+        "isolation"
+      ],
+      "status": "active",
+      "updated": "2026-08-25",
+      "when_to_use": "Adding markdown subagents under .cursor/agents, choosing Explore/Bash/Browser vs custom, or /in-cloud handoff",
+      "related": [
+        "subagent-context-isolation",
+        "cursor-cloud-always-on",
+        "cursor-worktrees",
+        "skills-invocation-modes"
+      ]
+    },
+    {
+      "id": "mcp-otel-trace-context",
+      "path": "practices/mcp-otel-trace-context.md",
+      "title": "MCP _meta traceparent / tracestate / baggage",
+      "tags": [
+        "mcp",
+        "otel",
+        "observability",
+        "tracing"
+      ],
+      "status": "active",
+      "updated": "2026-08-25",
+      "when_to_use": "Propagating OpenTelemetry trace context through MCP JSON-RPC _meta (SEP-414)",
+      "related": [
+        "agent-observability-otel",
+        "agent-conversation-correlation-otel",
+        "telemetry-redaction-genai",
+        "mcp-request-meta"
+      ]
+    },
+    {
+      "id": "mcp-request-meta",
+      "path": "practices/mcp-request-meta.md",
+      "title": "MCP per-request _meta (protocolVersion, capabilities, logLevel)",
+      "tags": [
+        "mcp",
+        "stateless",
+        "transport",
+        "observability"
+      ],
+      "status": "active",
+      "updated": "2026-08-25",
+      "when_to_use": "Debugging 400/-32602 on MCP 2026-07-28 or implementing clients that no longer send initialize",
+      "related": [
+        "mcp-stateless-core",
+        "mcp-deprecated-roots-sampling",
+        "mcp-progress-notifications",
+        "mcp-otel-trace-context"
       ]
     }
   ]

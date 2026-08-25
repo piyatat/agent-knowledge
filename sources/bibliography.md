@@ -280,3 +280,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Cursor Plugins | https://cursor.com/docs/plugins.md |
 | Plugins help | https://cursor.com/help/customization/plugins.md |
 | Agent Plugins standard | https://agent-plugins.org |
+
+## Daily ingest 2026-08-25 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Cursor Hooks | https://cursor.com/docs/hooks.md |
+| Cloud Agents — hooks support | https://cursor.com/docs/cloud-agent |
+| Cloud Agents help — Do Cloud Agents run hooks? | https://cursor.com/help/ai-features/cloud-agents |
+| Agent mode help | https://cursor.com/help/ai-features/agent |
+| Ask mode help | https://cursor.com/help/ai-features/ask-mode.md |
+| Plan Mode | https://cursor.com/docs/agent/plan-mode |
+| Debug Mode | https://cursor.com/docs/agent/debug-mode |
+| Best practices for coding with agents | https://cursor.com/blog/agent-best-practices |
+| Cursor Rules | https://cursor.com/docs/rules.md |
+| Customize Cursor | https://cursor.com/docs/customize-cursor |
+| Deeplinks | https://cursor.com/docs/reference/deeplinks.md |
+| MCP Progress (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/patterns/progress |
+| MCP Streamable HTTP | https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/streamable-http |
+| MCP changelog 2026-07-28 | https://modelcontextprotocol.io/specification/2026-07-28/changelog |
+| MCP Cancellation (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/patterns/cancellation |
+| A2A Streaming & Asynchronous Operations | https://a2a-protocol.org/latest/topics/streaming-and-async/ |
+| A2A Protocol specification | https://a2a-protocol.org/latest/specification/ |
+| A2A streaming-and-async (GitHub docs) | https://github.com/a2aproject/A2A/blob/main/docs/topics/streaming-and-async.md |
+| Plugin commands format | https://cursor.com/docs/reference/plugins.md |
+| Cursor Agent Skills — migrate-to-skills | https://cursor.com/docs/skills |
+| Cursor Subagents | https://cursor.com/docs/subagents |
+| MCP Basic — _meta and OpenTelemetry trace context (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic |
+| OpenTelemetry semantic conventions for MCP | https://opentelemetry.io/docs/specs/semconv/gen-ai/mcp/ |
+| MCP Logging (deprecated) | https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/logging |
