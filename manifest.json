@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-08-25",
+  "updated": "2026-08-26",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -340,7 +340,8 @@
         "tools-mcp-skills-layers",
         "human-in-the-loop-approvals",
         "mcp-server-trust-failures",
-        "mcp-registry-admission"
+        "mcp-registry-admission",
+        "mcp-authorization-discovery"
       ]
     },
     {
@@ -655,7 +656,9 @@
         "tools-mcp-skills-layers",
         "mcp-apps-extension",
         "mcp-completions",
-        "mcp-prompts"
+        "mcp-prompts",
+        "mcp-resource-templates",
+        "mcp-content-blocks"
       ]
     },
     {
@@ -1002,7 +1005,8 @@
         "mcp-stateless-core",
         "mcp-mrtr-input-required",
         "mcp-oauth-scopes",
-        "mcp-cancellation"
+        "mcp-cancellation",
+        "mcp-stdio-transport"
       ]
     },
     {
@@ -1414,7 +1418,8 @@
         "mcp-resources-vs-tools",
         "mcp-elicitation-modes",
         "tool-description-hygiene",
-        "mcp-prompts"
+        "mcp-prompts",
+        "mcp-resource-templates"
       ]
     },
     {
@@ -1494,7 +1499,9 @@
         "a2a-vs-mcp",
         "agent-to-agent-a2a-protocol",
         "mcp-registry-admission",
-        "a2a-streaming-async"
+        "a2a-streaming-async",
+        "a2a-signed-agent-cards",
+        "a2a-enterprise-auth"
       ]
     },
     {
@@ -1649,7 +1656,8 @@
         "cursor-cloud-mcp-diagnostics",
         "cursor-automations",
         "mcp-registry-admission",
-        "playwright-mcp-containment"
+        "playwright-mcp-containment",
+        "cursor-mcp-json"
       ]
     },
     {
@@ -1688,7 +1696,8 @@
       "related": [
         "structured-outputs-for-agents",
         "tool-call-failures",
-        "mcp-tool-annotations"
+        "mcp-tool-annotations",
+        "mcp-content-blocks"
       ]
     },
     {
@@ -1786,7 +1795,8 @@
         "agent-code-sandboxing",
         "permission-modes-allow-ask-deny",
         "computer-use-containment",
-        "cursor-cli-headless"
+        "cursor-cli-headless",
+        "cursor-ignore-files"
       ]
     },
     {
@@ -1890,7 +1900,8 @@
         "cursor-rules-layers",
         "cursor-cli-headless",
         "skills-invocation-modes",
-        "cursor-custom-subagents"
+        "cursor-custom-subagents",
+        "cursor-at-mentions"
       ]
     },
     {
@@ -2050,7 +2061,208 @@
         "mcp-stateless-core",
         "mcp-deprecated-roots-sampling",
         "mcp-progress-notifications",
-        "mcp-otel-trace-context"
+        "mcp-otel-trace-context",
+        "mcp-jsonrpc-errors"
+      ]
+    },
+    {
+      "id": "cursor-mcp-json",
+      "path": "practices/cursor-mcp-json.md",
+      "title": "Cursor mcp.json — project vs global MCP config",
+      "tags": [
+        "cursor",
+        "mcp",
+        "config",
+        "auth"
+      ],
+      "status": "active",
+      "updated": "2026-08-26",
+      "when_to_use": "Adding or debugging .cursor/mcp.json / ~/.cursor/mcp.json (stdio, HTTP/SSE, interpolation, static OAuth)",
+      "related": [
+        "cursor-cloud-mcp-http-vs-stdio",
+        "mcp-registry-admission",
+        "mcp-oauth-scopes",
+        "cursor-plugins"
+      ]
+    },
+    {
+      "id": "cursor-ignore-files",
+      "path": "practices/cursor-ignore-files.md",
+      "title": ".cursorignore vs .cursorindexingignore",
+      "tags": [
+        "cursor",
+        "indexing",
+        "privacy",
+        "filesystem"
+      ],
+      "status": "active",
+      "updated": "2026-08-26",
+      "when_to_use": "Blocking Agent/Tab/@ access to secrets, or keeping large generated files out of semantic search without hiding them",
+      "related": [
+        "cursor-sandbox-json",
+        "cursor-at-mentions",
+        "workspace-mount-boundaries",
+        "agent-output-secret-scanning"
+      ]
+    },
+    {
+      "id": "cursor-at-mentions",
+      "path": "practices/cursor-at-mentions.md",
+      "title": "Cursor @ mentions — attach context, do not dump folders",
+      "tags": [
+        "cursor",
+        "context",
+        "ux",
+        "tokens"
+      ],
+      "status": "active",
+      "updated": "2026-08-26",
+      "when_to_use": "Deciding whether to @-attach files, diffs, terminals, or chats versus letting Agent search",
+      "related": [
+        "cursor-ignore-files",
+        "cursor-agent-modes",
+        "context-compaction",
+        "cursor-slash-commands"
+      ]
+    },
+    {
+      "id": "mcp-stdio-transport",
+      "path": "practices/mcp-stdio-transport.md",
+      "title": "MCP stdio transport — stdout is protocol, stderr is logs",
+      "tags": [
+        "mcp",
+        "transport",
+        "stdio",
+        "reliability"
+      ],
+      "status": "active",
+      "updated": "2026-08-26",
+      "when_to_use": "Implementing or debugging a local MCP subprocess (npx/python/docker) whose stdout must stay JSON-RPC",
+      "related": [
+        "mcp-streamable-http-transport",
+        "cursor-cloud-mcp-http-vs-stdio",
+        "mcp-server-discover",
+        "mcp-deprecated-roots-sampling",
+        "mcp-jsonrpc-errors"
+      ]
+    },
+    {
+      "id": "mcp-jsonrpc-errors",
+      "path": "practices/mcp-jsonrpc-errors.md",
+      "title": "MCP JSON-RPC error codes (−32020..−32022, −32602)",
+      "tags": [
+        "mcp",
+        "schema",
+        "reliability",
+        "transport"
+      ],
+      "status": "active",
+      "updated": "2026-08-26",
+      "when_to_use": "Mapping MCP 400s / JSON-RPC errors, or choosing a code instead of inventing −3200x",
+      "related": [
+        "mcp-request-meta",
+        "mcp-http-gateway-headers",
+        "mcp-resource-templates",
+        "mcp-server-discover"
+      ]
+    },
+    {
+      "id": "mcp-resource-templates",
+      "path": "practices/mcp-resource-templates.md",
+      "title": "MCP resource templates (RFC 6570) and resources/read",
+      "tags": [
+        "mcp",
+        "resources",
+        "ux",
+        "design"
+      ],
+      "status": "active",
+      "updated": "2026-08-26",
+      "when_to_use": "Exposing a large or parameterized MCP dataset that cannot be fully enumerated in resources/list",
+      "related": [
+        "mcp-resources-vs-tools",
+        "mcp-completions",
+        "mcp-list-caching",
+        "mcp-subscriptions-listen",
+        "mcp-jsonrpc-errors"
+      ]
+    },
+    {
+      "id": "mcp-authorization-discovery",
+      "path": "practices/mcp-authorization-discovery.md",
+      "title": "MCP OAuth discovery — RFC 9728 PRM and WWW-Authenticate",
+      "tags": [
+        "mcp",
+        "oauth",
+        "auth",
+        "discovery"
+      ],
+      "status": "active",
+      "updated": "2026-08-26",
+      "when_to_use": "Implementing 401 handling or Protected Resource Metadata so an MCP client can find the authorization server",
+      "related": [
+        "mcp-oauth-scopes",
+        "mcp-server-trust-failures",
+        "mcp-streamable-http-transport"
+      ]
+    },
+    {
+      "id": "a2a-signed-agent-cards",
+      "path": "practices/a2a-signed-agent-cards.md",
+      "title": "A2A signed Agent Cards (JWS + RFC 8785)",
+      "tags": [
+        "a2a",
+        "security",
+        "discovery",
+        "auth"
+      ],
+      "status": "active",
+      "updated": "2026-08-26",
+      "when_to_use": "Publishing or verifying an A2A v1.0 Agent Card so peers can detect tampering before they delegate",
+      "related": [
+        "a2a-agent-card-discovery",
+        "a2a-enterprise-auth",
+        "agent-to-agent-a2a-protocol"
+      ]
+    },
+    {
+      "id": "a2a-enterprise-auth",
+      "path": "practices/a2a-enterprise-auth.md",
+      "title": "A2A auth — HTTP headers, not JSON-RPC identity",
+      "tags": [
+        "a2a",
+        "auth",
+        "security",
+        "oauth"
+      ],
+      "status": "active",
+      "updated": "2026-08-26",
+      "when_to_use": "Declaring Agent Card securitySchemes or sending credentials on A2A JSON-RPC / gRPC / HTTP+JSON calls",
+      "related": [
+        "a2a-agent-card-discovery",
+        "a2a-signed-agent-cards",
+        "a2a-streaming-async",
+        "mcp-oauth-scopes"
+      ]
+    },
+    {
+      "id": "mcp-content-blocks",
+      "path": "practices/mcp-content-blocks.md",
+      "title": "MCP content[] blocks — text, image, audio, resource_link, resource",
+      "tags": [
+        "mcp",
+        "tools",
+        "ux",
+        "resources"
+      ],
+      "status": "active",
+      "updated": "2026-08-26",
+      "when_to_use": "Returning mixed media from tools/call or choosing resource_link vs embedding bytes in the result",
+      "related": [
+        "mcp-output-schema",
+        "mcp-resources-vs-tools",
+        "tool-result-observation-budgets",
+        "cursor-mcp-json"
       ]
     }
   ]

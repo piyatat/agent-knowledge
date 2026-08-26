@@ -309,3 +309,30 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | MCP Basic — _meta and OpenTelemetry trace context (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic |
 | OpenTelemetry semantic conventions for MCP | https://opentelemetry.io/docs/specs/semconv/gen-ai/mcp/ |
 | MCP Logging (deprecated) | https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/logging |
+
+## Daily ingest 2026-08-26 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Cursor MCP | https://cursor.com/docs/mcp |
+| MCP integrations (help) | https://cursor.com/help/customization/mcp |
+| Cloud Agent capabilities — MCP tools | https://cursor.com/docs/cloud-agent/capabilities |
+| Cursor ignore file | https://cursor.com/docs/reference/ignore-file |
+| sandbox.json reference | https://cursor.com/docs/reference/sandbox.md |
+| @ mentions and context (help) | https://cursor.com/help/customization/context.md |
+| Prompting agents | https://cursor.com/docs/agent/prompting |
+| MCP stdio (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/stdio |
+| MCP changelog 2026-07-28 | https://modelcontextprotocol.io/specification/2026-07-28/changelog |
+| MCP Logging (deprecated) | https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/logging |
+| MCP Basic — error codes (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic |
+| MCP resources (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/resources |
+| RFC 6570 URI Template | https://datatracker.ietf.org/doc/html/rfc6570 |
+| MCP completion (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/completion |
+| MCP Authorization Server Discovery (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/authorization-server-discovery |
+| MCP Authorization (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization |
+| RFC 9728 OAuth 2.0 Protected Resource Metadata | https://datatracker.ietf.org/doc/html/rfc9728 |
+| A2A Protocol specification | https://a2a-protocol.org/latest/specification/ |
+| What's New in A2A v1.0 | https://a2a-protocol.org/latest/whats-new-v1/ |
+| a2a.utils.signing (Python SDK) | https://a2a-protocol.org/latest/sdk/python/api/a2a.utils.signing.html |
+| A2A Enterprise-Ready Features | https://a2a-protocol.org/latest/topics/enterprise-ready/ |
+| MCP tools — content types (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/tools |
