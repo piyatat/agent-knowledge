@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-08-26",
+  "updated": "2026-08-27",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2263,6 +2263,206 @@
         "mcp-resources-vs-tools",
         "tool-result-observation-budgets",
         "cursor-mcp-json"
+      ]
+    },
+    {
+      "id": "mcp-icons",
+      "path": "practices/mcp-icons.md",
+      "title": "MCP icons — Implementation, Tool, Prompt, Resource",
+      "tags": [
+        "mcp",
+        "ux",
+        "security",
+        "design"
+      ],
+      "status": "active",
+      "updated": "2026-08-27",
+      "when_to_use": "Adding icons to an MCP server/tool/prompt/resource or reviewing a host that renders them",
+      "related": [
+        "mcp-prompts",
+        "mcp-resources-vs-tools",
+        "mcp-server-trust-failures",
+        "mcp-content-blocks"
+      ]
+    },
+    {
+      "id": "mcp-localhost-dns-rebinding",
+      "path": "failure-modes/mcp-localhost-dns-rebinding.md",
+      "title": "Local MCP HTTP — Origin/Host checks vs DNS rebinding",
+      "tags": [
+        "mcp",
+        "security",
+        "transport",
+        "failure-modes"
+      ],
+      "status": "active",
+      "updated": "2026-08-27",
+      "when_to_use": "Serving Streamable HTTP MCP on localhost, or reviewing a server bound to 0.0.0.0 without Origin checks",
+      "related": [
+        "mcp-streamable-http-transport",
+        "playwright-mcp-containment",
+        "mcp-server-trust-failures",
+        "cursor-mcp-json"
+      ]
+    },
+    {
+      "id": "mcp-state-handle-hijacking",
+      "path": "failure-modes/mcp-state-handle-hijacking.md",
+      "title": "MCP state-handle hijacking (cart IDs, workflow IDs)",
+      "tags": [
+        "mcp",
+        "security",
+        "stateless",
+        "failure-modes"
+      ],
+      "status": "active",
+      "updated": "2026-08-27",
+      "when_to_use": "Minting cross-request IDs in a 2026-07-28 MCP tool (cart, job, conversation) that the client sends back later",
+      "related": [
+        "mcp-stateless-core",
+        "mcp-mrtr-input-required",
+        "mcp-oauth-scopes",
+        "mcp-server-trust-failures"
+      ]
+    },
+    {
+      "id": "cursor-privacy-mode",
+      "path": "practices/cursor-privacy-mode.md",
+      "title": "Cursor Privacy Mode vs Legacy, ZDR, and Cloud Agent storage",
+      "tags": [
+        "cursor",
+        "privacy",
+        "security",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-08-27",
+      "when_to_use": "Enabling Cloud Agents under Privacy Mode, explaining ZDR vs training, or reviewing Legacy Privacy Mode blocks",
+      "related": [
+        "cursor-cloud-always-on",
+        "cursor-self-hosted-agents",
+        "cursor-ignore-files",
+        "cursor-cloud-secrets-network"
+      ]
+    },
+    {
+      "id": "cursor-cloud-secrets-network",
+      "path": "practices/cursor-cloud-secrets-network.md",
+      "title": "Cloud Agent secrets, signed commits, and egress allowlists",
+      "tags": [
+        "cursor",
+        "security",
+        "secrets",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-08-27",
+      "when_to_use": "Configuring Cloud Agent env/runtime/build secrets, network modes, git IP allowlists, or signed-commit branch rules",
+      "related": [
+        "cursor-cloud-oidc-identity",
+        "cursor-sandbox-json",
+        "cursor-privacy-mode",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "cursor-codebase-search",
+      "path": "practices/cursor-codebase-search.md",
+      "title": "Cursor Agent search — Instant Grep, embeddings, Explore",
+      "tags": [
+        "cursor",
+        "indexing",
+        "context",
+        "tools"
+      ],
+      "status": "active",
+      "updated": "2026-08-27",
+      "when_to_use": "Debugging why Agent missed a symbol, choosing grep vs semantic search, or explaining indexing privacy vs .cursorignore",
+      "related": [
+        "cursor-ignore-files",
+        "cursor-custom-subagents",
+        "cursor-at-mentions",
+        "tool-result-observation-budgets"
+      ]
+    },
+    {
+      "id": "cursor-self-hosted-agents",
+      "path": "practices/cursor-self-hosted-agents.md",
+      "title": "Cloud Agents — managed VM vs My Machines vs Self-Hosted Pool",
+      "tags": [
+        "cursor",
+        "ops",
+        "security",
+        "isolation"
+      ],
+      "status": "active",
+      "updated": "2026-08-27",
+      "when_to_use": "Deciding whether Cloud Agent tool calls stay on Cursor VMs or move to a worker you operate",
+      "related": [
+        "cursor-cloud-always-on",
+        "cursor-privacy-mode",
+        "cursor-cloud-secrets-network",
+        "cursor-environment-builds"
+      ]
+    },
+    {
+      "id": "a2a-task-lifecycle",
+      "path": "practices/a2a-task-lifecycle.md",
+      "title": "A2A Task vs Message, contextId, and artifacts",
+      "tags": [
+        "a2a",
+        "orchestration",
+        "durability",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-08-27",
+      "when_to_use": "Implementing A2A SendMessage results (Message vs Task) or continuing work after a terminal task",
+      "related": [
+        "a2a-streaming-async",
+        "agent-to-agent-a2a-protocol",
+        "durable-agent-workflows",
+        "a2a-vs-mcp"
+      ]
+    },
+    {
+      "id": "a2a-extensions",
+      "path": "practices/a2a-extensions.md",
+      "title": "A2A extensions — Agent Card URI, A2A-Extensions header",
+      "tags": [
+        "a2a",
+        "extensions",
+        "discovery",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-08-27",
+      "when_to_use": "Declaring or opting into an A2A extension (new RPC methods, profiles, or metadata) without forking core types",
+      "related": [
+        "a2a-agent-card-discovery",
+        "a2a-enterprise-auth",
+        "mcp-apps-extension",
+        "mcp-2026-roadmap"
+      ]
+    },
+    {
+      "id": "mcp-skills-extension",
+      "path": "practices/mcp-skills-extension.md",
+      "title": "MCP Skills extension (SEP-2640, draft)",
+      "tags": [
+        "mcp",
+        "skills",
+        "resources",
+        "extensions"
+      ],
+      "status": "draft",
+      "updated": "2026-08-27",
+      "when_to_use": "Serving or consuming Agent Skills over MCP (skill://, skills/list) — not a ratified spec yet",
+      "related": [
+        "agent-skills-open-standard",
+        "mcp-resources-vs-tools",
+        "malicious-skills-supply-chain",
+        "skills-dispatch-hygiene"
       ]
     }
   ]

@@ -336,3 +336,30 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | a2a.utils.signing (Python SDK) | https://a2a-protocol.org/latest/sdk/python/api/a2a.utils.signing.html |
 | A2A Enterprise-Ready Features | https://a2a-protocol.org/latest/topics/enterprise-ready/ |
 | MCP tools — content types (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/tools |
+
+## Daily ingest 2026-08-27 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| MCP Base Protocol — icons (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic |
+| SEP-973 — icons and websiteUrl | https://modelcontextprotocol.io/seps/973-expose-additional-metadata-for-implementations-res.md |
+| MCP Streamable HTTP (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/streamable-http |
+| MCP Security Best Practices | https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices |
+| MCP TypeScript SDK — Serve over HTTP | https://ts.sdk.modelcontextprotocol.io/v2/serving/http.html |
+| MCP MRTR (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/patterns/mrtr |
+| Privacy and Data Governance | https://cursor.com/docs/enterprise/privacy-and-data-governance |
+| Cloud Agent security | https://cursor.com/docs/cloud-agent/security |
+| Secrets & Network | https://cursor.com/docs/cloud-agent/security-network |
+| Data Use & Privacy Overview | https://cursor.com/privacy-overview |
+| Cloud Agent OIDC tokens | https://cursor.com/docs/cloud-agent/identity |
+| Agent tools — Search | https://cursor.com/docs/agent/tools/search |
+| Ignore file | https://cursor.com/docs/reference/ignore-file |
+| Governed Cloud Agents / self-hosted | https://cursor.com/docs/cloud-agent/self-hosted |
+| Choose where Cloud Agents run | https://cursor.com/docs/cloud-agent/self-hosted-guides/choose-runtime |
+| A2A Life of a Task | https://a2a-protocol.org/latest/topics/life-of-a-task/ |
+| A2A Core Concepts | https://a2a-protocol.org/latest/topics/key-concepts/ |
+| A2A Protocol specification | https://a2a-protocol.org/latest/specification/ |
+| A2A Extensions | https://a2a-protocol.org/latest/topics/extensions/ |
+| SEP-2640 Skills Extension (draft) | https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2640-skills-extension.md |
+| experimental-ext-skills SEP draft | https://github.com/modelcontextprotocol/experimental-ext-skills/blob/main/docs/sep-draft-skills-extension.md |
+| fast-agent — Skills over MCP | https://fast-agent.ai/mcp/skills-over-mcp/ |
