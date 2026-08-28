@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-08-27",
+  "updated": "2026-08-28",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1207,7 +1207,7 @@
         "durability"
       ],
       "status": "active",
-      "updated": "2026-08-22",
+      "updated": "2026-08-28",
       "when_to_use": "Designing always-on Cursor cloud agents that wake on PRs/Slack/cron or hold a long-lived objective",
       "related": [
         "subagent-context-isolation",
@@ -1217,7 +1217,9 @@
         "cursor-environment-builds",
         "cursor-cloud-oidc-identity",
         "cursor-cli-headless",
-        "cursor-custom-subagents"
+        "cursor-custom-subagents",
+        "cursor-origin",
+        "cursor-cloud-pr-artifacts"
       ]
     },
     {
@@ -2463,6 +2465,186 @@
         "mcp-resources-vs-tools",
         "malicious-skills-supply-chain",
         "skills-dispatch-hygiene"
+      ]
+    },
+    {
+      "id": "cursor-origin",
+      "path": "practices/cursor-origin.md",
+      "title": "Cursor Origin — git forge for agents (early beta)",
+      "tags": [
+        "cursor",
+        "git",
+        "ops",
+        "hosting"
+      ],
+      "status": "active",
+      "updated": "2026-08-28",
+      "when_to_use": "Hosting or mirroring repos on Cursor Origin, using the origin CLI, or attaching Cloud Agents without a third-party SCM",
+      "related": [
+        "cursor-privacy-mode",
+        "cursor-cloud-always-on",
+        "cursor-automations",
+        "cursor-bugbot-review"
+      ]
+    },
+    {
+      "id": "cursor-environment-json",
+      "path": "practices/cursor-environment-json.md",
+      "title": "Cloud Agent environment.json — install vs start vs terminals",
+      "tags": [
+        "cursor",
+        "ops",
+        "config",
+        "ci"
+      ],
+      "status": "active",
+      "updated": "2026-08-28",
+      "when_to_use": "Authoring .cursor/environment.json, choosing snapshot vs Dockerfile, or splitting install from per-run services",
+      "related": [
+        "cursor-environment-builds",
+        "cursor-cloud-secrets-network",
+        "cursor-cloud-always-on",
+        "cursor-self-hosted-agents"
+      ]
+    },
+    {
+      "id": "cursor-cloud-pr-artifacts",
+      "path": "practices/cursor-cloud-pr-artifacts.md",
+      "title": "Cloud Agent PR artifacts, remote desktop, and CI autofix",
+      "tags": [
+        "cursor",
+        "ci",
+        "computer-use",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-08-28",
+      "when_to_use": "Reviewing Cloud Agent PRs via screenshots/video, taking remote desktop, or controlling GitHub Actions auto-fix",
+      "related": [
+        "computer-use-containment",
+        "cursor-cloud-always-on",
+        "cursor-bugbot-review",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "mcp-feature-lifecycle",
+      "path": "practices/mcp-feature-lifecycle.md",
+      "title": "MCP feature lifecycle — Active, Deprecated, Removed",
+      "tags": [
+        "mcp",
+        "deprecation",
+        "governance",
+        "migration"
+      ],
+      "status": "active",
+      "updated": "2026-08-28",
+      "when_to_use": "Planning SDK support around a deprecated MCP feature, or checking whether something is already on the removal clock",
+      "related": [
+        "mcp-deprecated-roots-sampling",
+        "mcp-2026-roadmap",
+        "mcp-stateless-core",
+        "mcp-extensions-framework"
+      ]
+    },
+    {
+      "id": "mcp-extensions-framework",
+      "path": "practices/mcp-extensions-framework.md",
+      "title": "MCP extensions framework — IDs, negotiation, official vs experimental",
+      "tags": [
+        "mcp",
+        "extensions",
+        "governance",
+        "design"
+      ],
+      "status": "active",
+      "updated": "2026-08-28",
+      "when_to_use": "Adding an opt-in MCP capability (Tasks, Apps, auth) or choosing an extension ID instead of forking core",
+      "related": [
+        "mcp-apps-extension",
+        "mcp-tasks-extension",
+        "mcp-skills-extension",
+        "mcp-feature-lifecycle"
+      ]
+    },
+    {
+      "id": "a2a-protocol-bindings",
+      "path": "practices/a2a-protocol-bindings.md",
+      "title": "A2A protocol bindings — JSON-RPC, gRPC, HTTP+JSON, A2A-Version",
+      "tags": [
+        "a2a",
+        "transport",
+        "versioning",
+        "interoperability"
+      ],
+      "status": "active",
+      "updated": "2026-08-28",
+      "when_to_use": "Choosing JSON-RPC vs gRPC vs REST for an A2A agent, or implementing A2A-Version / supportedInterfaces",
+      "related": [
+        "a2a-agent-card-discovery",
+        "a2a-extensions",
+        "a2a-enterprise-auth",
+        "agent-to-agent-a2a-protocol"
+      ]
+    },
+    {
+      "id": "mcp-oauth-discovery-ssrf",
+      "path": "failure-modes/mcp-oauth-discovery-ssrf.md",
+      "title": "OAuth discovery and CIMD fetch SSRF",
+      "tags": [
+        "mcp",
+        "security",
+        "oauth",
+        "failure-modes"
+      ],
+      "status": "active",
+      "updated": "2026-08-28",
+      "when_to_use": "Implementing MCP OAuth metadata fetch or an authorization server that resolves URL client_ids (CIMD)",
+      "related": [
+        "mcp-authorization-discovery",
+        "mcp-oauth-scopes",
+        "mcp-localhost-dns-rebinding",
+        "mcp-server-trust-failures"
+      ]
+    },
+    {
+      "id": "mcp-enterprise-managed-auth",
+      "path": "practices/mcp-enterprise-managed-auth.md",
+      "title": "MCP Enterprise-Managed Authorization (ID-JAG)",
+      "tags": [
+        "mcp",
+        "oauth",
+        "identity",
+        "extensions"
+      ],
+      "status": "active",
+      "updated": "2026-08-28",
+      "when_to_use": "Replacing per-server OAuth consent with corporate IdP policy for employee MCP access",
+      "related": [
+        "mcp-oauth-scopes",
+        "mcp-extensions-framework",
+        "mcp-oauth-client-credentials",
+        "mcp-authorization-discovery"
+      ]
+    },
+    {
+      "id": "mcp-oauth-client-credentials",
+      "path": "practices/mcp-oauth-client-credentials.md",
+      "title": "MCP OAuth Client Credentials extension (M2M)",
+      "tags": [
+        "mcp",
+        "oauth",
+        "extensions",
+        "ci"
+      ],
+      "status": "active",
+      "updated": "2026-08-28",
+      "when_to_use": "Connecting a CI job, daemon, or backend to a remote MCP server with no human in the loop",
+      "related": [
+        "mcp-oauth-scopes",
+        "mcp-extensions-framework",
+        "mcp-enterprise-managed-auth",
+        "cursor-cloud-oidc-identity"
       ]
     }
   ]

@@ -3,25 +3,26 @@ id: cursor-cloud-always-on
 title: Cursor cloud agents — subscriptions, /goal, isolated subagents
 tags: [cursor, orchestration, subagent, durability]
 status: active
-updated: 2026-08-22
+updated: 2026-08-28
 when_to_use: Designing always-on Cursor cloud agents that wake on PRs/Slack/cron or hold a long-lived objective
 ---
 
 ## Summary
 
-Cursor’s 2026-08-19 harness treats cloud agents as an event-driven system: **subscriptions** wake a run on PR/Slack/schedule, `/goal` holds an objective across loops, subagents can get their **own VMs**, and steering messages queue until the next tool call instead of interrupting.
+Cloud agents are an event-driven harness: **subscriptions** wake one conversation on GitHub/Slack/Linear/timers, `/goal` holds an objective across loops, subagents can get **own VMs**, and steering queues until the next tool call. Origin (`cursor-origin`) can be the SCM. Automatic GitHub Actions retries are `cursor-cloud-pr-artifacts`, not a subscription.
 
 ## Notes
 
-- Subscriptions (cloud agents only for now): watch a PR, Slack thread, or scheduled task and resume when it changes. Agents auto-subscribe to PRs they open and try to drive CI + bot comments to done.
-- `/goal` is not a one-shot prompt — example: “fix all flaky tests and make CI green.” Pair with a Custom Mode (pinned skill) or `/loop` for recurring check-ins.
-- Custom Modes pin a skill in chat (⌥⏎ / Alt+Enter from `/`) so that skill stays always-on. That is the opposite of progressive skill loading — budget tokens accordingly.
-- Isolated subagent VMs: each child gets a clean project copy and context so parallel swarms do not collide on the parent working tree. Use for “test my change in a fresh env” rather than sharing one dirty checkout.
-- Steering: follow-ups wait for the next tool boundary. Prefer this over killing a mid-flight edit when the run may last an hour.
-- Still apply HITL, secret scanning, and sandbox rules — always-on plus auto-PR-follow-up increases blast radius if a subscription fires on untrusted review text.
+- Subscriptions belong to **one** conversation; events arrive as follow-ups with full context. Bursts coalesce — the agent re-reads the PR/thread/issue before acting. Max lifetime **180 days**; agents unsubscribe when the wait is done. Prompt it (“keep this PR green until merge”) or use `/subscribe`. Recurring timers also have `/loop`.
+- Integrations: **GitHub** (one PR, a repo, or one author’s PRs; CI on a branch); **Slack** (thread replies, channel messages, new public channels); **Linear** (issue create/state, comments); **Timers** (delay or cron). Requires the matching Cursor integration.
+- `/goal` is not a one-shot prompt — e.g. “fix all flaky tests and make CI green.” Pair with a Custom Mode (pinned skill) so the skill stays always-on (token cost vs progressive loading).
+- Isolated subagent VMs: each child gets a clean project copy. Steering follow-ups wait for the next tool boundary instead of interrupting a long edit.
+- Untrusted review text, Slack, and Linear comments are prompt-injection surface. Pair with HITL, secret scanning, and skip autofix after human commits (`cursor-cloud-pr-artifacts`).
 
 ## Sources
 
+- [Cloud Agent capabilities — Subscriptions](https://cursor.com/docs/cloud-agent/capabilities) — accessed 2026-08-28
 - [Cloud Agents and Cursor Harness Improvements (2026-08-19)](https://cursor.com/changelog/08-19-26) — accessed 2026-08-22
-- [Cursor changelog index](https://cursor.com/changelog) — accessed 2026-08-22
-- [Cursor gives cloud agents subscriptions, /goal and subagent VMs](https://aiweekly.co/alerts/cursor-gives-cloud-agents-subscriptions-goal-and-subagent-vms) — accessed 2026-08-22
+- [Cursor changelog index](https://cursor.com/changelog) — accessed 2026-08-28
+- [Cloud Agents help](https://cursor.com/help/ai-features/cloud-agents) — accessed 2026-08-28
+

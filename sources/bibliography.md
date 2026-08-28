@@ -363,3 +363,35 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | SEP-2640 Skills Extension (draft) | https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2640-skills-extension.md |
 | experimental-ext-skills SEP draft | https://github.com/modelcontextprotocol/experimental-ext-skills/blob/main/docs/sep-draft-skills-extension.md |
 | fast-agent — Skills over MCP | https://fast-agent.ai/mcp/skills-over-mcp/ |
+
+## Daily ingest 2026-08-28 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Origin overview | https://cursor.com/docs/origin |
+| Mirror a GitHub repository | https://cursor.com/docs/origin/mirror-github |
+| Install the Origin CLI | https://cursor.com/docs/origin/cli |
+| Origin Code Hosting changelog | https://cursor.com/changelog/origin-code-hosting |
+| Cloud Environment Setup | https://cursor.com/docs/cloud-agent/setup |
+| Cloud Agent Builds | https://cursor.com/docs/cloud-agent/builds |
+| Cloud Agents overview | https://cursor.com/docs/cloud-agent |
+| Cloud Agent capabilities | https://cursor.com/docs/cloud-agent/capabilities |
+| Cloud Agents help | https://cursor.com/help/ai-features/cloud-agents |
+| Cloud Agents and Cursor Harness Improvements (2026-08-19) | https://cursor.com/changelog/08-19-26 |
+| Cursor changelog index | https://cursor.com/changelog |
+| Feature Lifecycle and Deprecation Policy | https://modelcontextprotocol.io/community/feature-lifecycle |
+| SEP-2596 | https://modelcontextprotocol.io/seps/2596-spec-feature-lifecycle-and-deprecation |
+| MCP 2026-07-28 changelog | https://modelcontextprotocol.io/specification/2026-07-28/changelog |
+| MCP Extensions overview | https://modelcontextprotocol.io/extensions/overview |
+| SEP-2133 — Extensions | https://modelcontextprotocol.io/seps/2133-extensions |
+| Authorization extensions overview | https://modelcontextprotocol.io/extensions/auth/overview |
+| A2A Protocol specification | https://a2a-protocol.org/latest/specification/ |
+| What's New in A2A v1.0 | https://a2a-protocol.org/latest/whats-new-v1/ |
+| Custom Protocol Bindings | https://a2a-protocol.org/latest/topics/custom-protocol-bindings/ |
+| MCP Security Best Practices — SSRF | https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices |
+| MCP Client Registration (CIMD) | https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/client-registration |
+| SEP-991 — CIMD | https://modelcontextprotocol.io/seps/991-enable-url-based-client-registration-using-oauth-c |
+| Enterprise-Managed Authorization | https://modelcontextprotocol.io/extensions/auth/enterprise-managed-authorization |
+| MCP Authorization (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization |
+| OAuth Client Credentials extension | https://modelcontextprotocol.io/extensions/auth/oauth-client-credentials |
+| RFC 7523 JWT Bearer | https://datatracker.ietf.org/doc/html/rfc7523 |
