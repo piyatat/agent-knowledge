@@ -1,8 +1,8 @@
 {
   "name": "agent-knowledge",
   "version": "0.1.0",
-  "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-08-28",
+  "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
+  "updated": "2026-08-29",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -44,7 +44,7 @@
     {
       "id": "agents-md-and-rules-budget",
       "path": "practices/agents-md-and-rules-budget.md",
-      "title": "AGENTS.md vs Cursor rules — context budget",
+      "title": "AGENTS.md vs Cursor rules \u2014 context budget",
       "tags": [
         "cursor",
         "agents-md",
@@ -63,7 +63,7 @@
     {
       "id": "knowledge-corpus-pattern",
       "path": "practices/knowledge-corpus-pattern.md",
-      "title": "Knowledge corpus pattern (this repo’s job)",
+      "title": "Knowledge corpus pattern (this repo\u2019s job)",
       "tags": [
         "knowledge",
         "memory",
@@ -115,7 +115,7 @@
     {
       "id": "collect-from-web",
       "path": "runbooks/collect-from-web.md",
-      "title": "Runbook — collect a web note into this repo",
+      "title": "Runbook \u2014 collect a web note into this repo",
       "tags": [
         "runbook",
         "contributing"
@@ -454,7 +454,7 @@
       ],
       "status": "active",
       "updated": "2026-08-09",
-      "when_to_use": "Spawning child agents or Task seats without leaking the parent’s full transcript",
+      "when_to_use": "Spawning child agents or Task seats without leaking the parent\u2019s full transcript",
       "related": [
         "multi-agent-handoffs",
         "context-compaction",
@@ -582,20 +582,22 @@
     {
       "id": "a2a-vs-mcp",
       "path": "glossary/a2a-vs-mcp.md",
-      "title": "A2A vs MCP — agent-to-agent vs agent-to-tool",
+      "title": "A2A vs MCP vs ACP \u2014 three different agent wires",
       "tags": [
         "a2a",
         "mcp",
+        "acp",
         "glossary",
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-08-10",
-      "when_to_use": "Choosing protocols for multi-agent collaboration vs tool/data access",
+      "updated": "2026-08-29",
+      "when_to_use": "Choosing protocols for multi-agent collaboration vs tool/data access vs IDE\u2194agent embedding",
       "related": [
         "tools-mcp-skills-layers",
         "multi-agent-handoffs",
-        "mcp-oauth-scopes"
+        "mcp-oauth-scopes",
+        "agent-client-protocol-acp"
       ]
     },
     {
@@ -1104,7 +1106,7 @@
     {
       "id": "mcp-apps-extension",
       "path": "practices/mcp-apps-extension.md",
-      "title": "MCP Apps — sandboxed UI in the host",
+      "title": "MCP Apps \u2014 sandboxed UI in the host",
       "tags": [
         "mcp",
         "ux",
@@ -1199,7 +1201,7 @@
     {
       "id": "cursor-cloud-always-on",
       "path": "practices/cursor-cloud-always-on.md",
-      "title": "Cursor cloud agents — subscriptions, /goal, isolated subagents",
+      "title": "Cursor cloud agents \u2014 subscriptions, /goal, isolated subagents",
       "tags": [
         "cursor",
         "orchestration",
@@ -1299,13 +1301,14 @@
       "related": [
         "a2a-vs-mcp",
         "mcp-apps-extension",
-        "streaming-approval-resume"
+        "streaming-approval-resume",
+        "agent-client-protocol-acp"
       ]
     },
     {
       "id": "cursor-automations",
       "path": "practices/cursor-automations.md",
-      "title": "Cursor Automations — standing rules vs subscriptions",
+      "title": "Cursor Automations \u2014 standing rules vs subscriptions",
       "tags": [
         "cursor",
         "automations",
@@ -1314,17 +1317,19 @@
       ],
       "status": "active",
       "updated": "2026-08-22",
-      "when_to_use": "Configuring scheduled or event-triggered Cursor cloud agents (not a running agent’s PR/Slack subscription)",
+      "when_to_use": "Configuring scheduled or event-triggered Cursor cloud agents (not a running agent\u2019s PR/Slack subscription)",
       "related": [
         "cursor-cloud-always-on",
         "cursor-bugbot-review",
-        "computer-use-containment"
+        "computer-use-containment",
+        "cursor-security-agents",
+        "cursor-pr-routing-approval"
       ]
     },
     {
       "id": "cursor-bugbot-review",
       "path": "practices/cursor-bugbot-review.md",
-      "title": "Cursor Bugbot — PR review agent",
+      "title": "Cursor Bugbot \u2014 PR review agent",
       "tags": [
         "cursor",
         "review",
@@ -1333,11 +1338,13 @@
       ],
       "status": "active",
       "updated": "2026-08-22",
-      "when_to_use": "Wiring Cursor’s PR review agent (comments, checks, /review, Autofix) without treating it as a merge gate by default",
+      "when_to_use": "Wiring Cursor\u2019s PR review agent (comments, checks, /review, Autofix) without treating it as a merge gate by default",
       "related": [
         "cursor-automations",
         "human-in-the-loop-approvals",
-        "agent-eval-harness"
+        "agent-eval-harness",
+        "cursor-security-agents",
+        "cursor-pr-routing-approval"
       ]
     },
     {
@@ -1359,7 +1366,8 @@
         "agent-guardrails-vs-approvals",
         "cursor-cli-headless",
         "cursor-sandbox-json",
-        "cursor-hooks-json"
+        "cursor-hooks-json",
+        "claude-agent-sdk"
       ]
     },
     {
@@ -1568,7 +1576,7 @@
     {
       "id": "cursor-cloud-mcp-diagnostics",
       "path": "practices/cursor-cloud-mcp-diagnostics.md",
-      "title": "Cursor Cloud MCP — run diagnostics tools",
+      "title": "Cursor Cloud MCP \u2014 run diagnostics tools",
       "tags": [
         "cursor",
         "mcp",
@@ -1619,13 +1627,14 @@
       "related": [
         "cursor-cloud-always-on",
         "mcp-oauth-scopes",
-        "mcp-2026-roadmap"
+        "mcp-2026-roadmap",
+        "cursor-cloud-agent-metadata"
       ]
     },
     {
       "id": "mcp-2026-roadmap",
       "path": "practices/mcp-2026-roadmap.md",
-      "title": "MCP 2026 roadmap — five priority areas",
+      "title": "MCP 2026 roadmap \u2014 five priority areas",
       "tags": [
         "mcp",
         "roadmap",
@@ -1638,13 +1647,15 @@
       "related": [
         "mcp-stateless-core",
         "mcp-oauth-scopes",
-        "tool-search-defer-loading"
+        "tool-search-defer-loading",
+        "mcp-server-cards",
+        "mcp-file-uploads"
       ]
     },
     {
       "id": "cursor-cloud-mcp-http-vs-stdio",
       "path": "practices/cursor-cloud-mcp-http-vs-stdio.md",
-      "title": "Cursor Cloud MCP — prefer HTTP over stdio",
+      "title": "Cursor Cloud MCP \u2014 prefer HTTP over stdio",
       "tags": [
         "cursor",
         "mcp",
@@ -1705,7 +1716,7 @@
     {
       "id": "mcp-prompts",
       "path": "practices/mcp-prompts.md",
-      "title": "MCP prompts — user-controlled templates",
+      "title": "MCP prompts \u2014 user-controlled templates",
       "tags": [
         "mcp",
         "prompts",
@@ -1758,7 +1769,9 @@
         "permission-modes-allow-ask-deny",
         "cursor-cloud-always-on",
         "cursor-worktrees",
-        "human-in-the-loop-approvals"
+        "human-in-the-loop-approvals",
+        "agent-client-protocol-acp",
+        "cursor-sdk"
       ]
     },
     {
@@ -1804,7 +1817,7 @@
     {
       "id": "skills-invocation-modes",
       "path": "practices/skills-invocation-modes.md",
-      "title": "Skill invocation — model vs slash vs custom mode",
+      "title": "Skill invocation \u2014 model vs slash vs custom mode",
       "tags": [
         "skills",
         "cursor",
@@ -1834,7 +1847,7 @@
       ],
       "status": "active",
       "updated": "2026-08-24",
-      "when_to_use": "Mapping agent security work to OWASP codes — ASI01–ASI10 (applications) vs AST01–AST10 (skills)",
+      "when_to_use": "Mapping agent security work to OWASP codes \u2014 ASI01\u2013ASI10 (applications) vs AST01\u2013AST10 (skills)",
       "related": [
         "malicious-skills-supply-chain",
         "prompt-injection-agent-defense",
@@ -1868,7 +1881,7 @@
     {
       "id": "cursor-hooks-json",
       "path": "practices/cursor-hooks-json.md",
-      "title": "Cursor hooks.json — observe and block the agent loop",
+      "title": "Cursor hooks.json \u2014 observe and block the agent loop",
       "tags": [
         "cursor",
         "hooks",
@@ -1909,7 +1922,7 @@
     {
       "id": "cursor-rules-layers",
       "path": "practices/cursor-rules-layers.md",
-      "title": "Cursor rules — team, project, user, AGENTS.md",
+      "title": "Cursor rules \u2014 team, project, user, AGENTS.md",
       "tags": [
         "cursor",
         "rules",
@@ -1949,7 +1962,7 @@
     {
       "id": "mcp-cancellation",
       "path": "practices/mcp-cancellation.md",
-      "title": "MCP cancellation — close SSE vs notifications/cancelled",
+      "title": "MCP cancellation \u2014 close SSE vs notifications/cancelled",
       "tags": [
         "mcp",
         "transport",
@@ -2070,7 +2083,7 @@
     {
       "id": "cursor-mcp-json",
       "path": "practices/cursor-mcp-json.md",
-      "title": "Cursor mcp.json — project vs global MCP config",
+      "title": "Cursor mcp.json \u2014 project vs global MCP config",
       "tags": [
         "cursor",
         "mcp",
@@ -2110,7 +2123,7 @@
     {
       "id": "cursor-at-mentions",
       "path": "practices/cursor-at-mentions.md",
-      "title": "Cursor @ mentions — attach context, do not dump folders",
+      "title": "Cursor @ mentions \u2014 attach context, do not dump folders",
       "tags": [
         "cursor",
         "context",
@@ -2130,7 +2143,7 @@
     {
       "id": "mcp-stdio-transport",
       "path": "practices/mcp-stdio-transport.md",
-      "title": "MCP stdio transport — stdout is protocol, stderr is logs",
+      "title": "MCP stdio transport \u2014 stdout is protocol, stderr is logs",
       "tags": [
         "mcp",
         "transport",
@@ -2151,7 +2164,7 @@
     {
       "id": "mcp-jsonrpc-errors",
       "path": "practices/mcp-jsonrpc-errors.md",
-      "title": "MCP JSON-RPC error codes (−32020..−32022, −32602)",
+      "title": "MCP JSON-RPC error codes (\u221232020..\u221232022, \u221232602)",
       "tags": [
         "mcp",
         "schema",
@@ -2160,7 +2173,7 @@
       ],
       "status": "active",
       "updated": "2026-08-26",
-      "when_to_use": "Mapping MCP 400s / JSON-RPC errors, or choosing a code instead of inventing −3200x",
+      "when_to_use": "Mapping MCP 400s / JSON-RPC errors, or choosing a code instead of inventing \u22123200x",
       "related": [
         "mcp-request-meta",
         "mcp-http-gateway-headers",
@@ -2192,7 +2205,7 @@
     {
       "id": "mcp-authorization-discovery",
       "path": "practices/mcp-authorization-discovery.md",
-      "title": "MCP OAuth discovery — RFC 9728 PRM and WWW-Authenticate",
+      "title": "MCP OAuth discovery \u2014 RFC 9728 PRM and WWW-Authenticate",
       "tags": [
         "mcp",
         "oauth",
@@ -2230,7 +2243,7 @@
     {
       "id": "a2a-enterprise-auth",
       "path": "practices/a2a-enterprise-auth.md",
-      "title": "A2A auth — HTTP headers, not JSON-RPC identity",
+      "title": "A2A auth \u2014 HTTP headers, not JSON-RPC identity",
       "tags": [
         "a2a",
         "auth",
@@ -2250,7 +2263,7 @@
     {
       "id": "mcp-content-blocks",
       "path": "practices/mcp-content-blocks.md",
-      "title": "MCP content[] blocks — text, image, audio, resource_link, resource",
+      "title": "MCP content[] blocks \u2014 text, image, audio, resource_link, resource",
       "tags": [
         "mcp",
         "tools",
@@ -2270,7 +2283,7 @@
     {
       "id": "mcp-icons",
       "path": "practices/mcp-icons.md",
-      "title": "MCP icons — Implementation, Tool, Prompt, Resource",
+      "title": "MCP icons \u2014 Implementation, Tool, Prompt, Resource",
       "tags": [
         "mcp",
         "ux",
@@ -2290,7 +2303,7 @@
     {
       "id": "mcp-localhost-dns-rebinding",
       "path": "failure-modes/mcp-localhost-dns-rebinding.md",
-      "title": "Local MCP HTTP — Origin/Host checks vs DNS rebinding",
+      "title": "Local MCP HTTP \u2014 Origin/Host checks vs DNS rebinding",
       "tags": [
         "mcp",
         "security",
@@ -2370,7 +2383,7 @@
     {
       "id": "cursor-codebase-search",
       "path": "practices/cursor-codebase-search.md",
-      "title": "Cursor Agent search — Instant Grep, embeddings, Explore",
+      "title": "Cursor Agent search \u2014 Instant Grep, embeddings, Explore",
       "tags": [
         "cursor",
         "indexing",
@@ -2390,7 +2403,7 @@
     {
       "id": "cursor-self-hosted-agents",
       "path": "practices/cursor-self-hosted-agents.md",
-      "title": "Cloud Agents — managed VM vs My Machines vs Self-Hosted Pool",
+      "title": "Cloud Agents \u2014 managed VM vs My Machines vs Self-Hosted Pool",
       "tags": [
         "cursor",
         "ops",
@@ -2430,7 +2443,7 @@
     {
       "id": "a2a-extensions",
       "path": "practices/a2a-extensions.md",
-      "title": "A2A extensions — Agent Card URI, A2A-Extensions header",
+      "title": "A2A extensions \u2014 Agent Card URI, A2A-Extensions header",
       "tags": [
         "a2a",
         "extensions",
@@ -2459,7 +2472,7 @@
       ],
       "status": "draft",
       "updated": "2026-08-27",
-      "when_to_use": "Serving or consuming Agent Skills over MCP (skill://, skills/list) — not a ratified spec yet",
+      "when_to_use": "Serving or consuming Agent Skills over MCP (skill://, skills/list) \u2014 not a ratified spec yet",
       "related": [
         "agent-skills-open-standard",
         "mcp-resources-vs-tools",
@@ -2470,7 +2483,7 @@
     {
       "id": "cursor-origin",
       "path": "practices/cursor-origin.md",
-      "title": "Cursor Origin — git forge for agents (early beta)",
+      "title": "Cursor Origin \u2014 git forge for agents (early beta)",
       "tags": [
         "cursor",
         "git",
@@ -2478,19 +2491,20 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-08-28",
-      "when_to_use": "Hosting or mirroring repos on Cursor Origin, using the origin CLI, or attaching Cloud Agents without a third-party SCM",
+      "updated": "2026-08-29",
+      "when_to_use": "Hosting or mirroring repos on Cursor Origin, using the origin CLI, or starting a Cloud Agent without a third-party SCM",
       "related": [
         "cursor-privacy-mode",
         "cursor-cloud-always-on",
         "cursor-automations",
-        "cursor-bugbot-review"
+        "cursor-bugbot-review",
+        "cursor-sdk"
       ]
     },
     {
       "id": "cursor-environment-json",
       "path": "practices/cursor-environment-json.md",
-      "title": "Cloud Agent environment.json — install vs start vs terminals",
+      "title": "Cloud Agent environment.json \u2014 install vs start vs terminals",
       "tags": [
         "cursor",
         "ops",
@@ -2530,7 +2544,7 @@
     {
       "id": "mcp-feature-lifecycle",
       "path": "practices/mcp-feature-lifecycle.md",
-      "title": "MCP feature lifecycle — Active, Deprecated, Removed",
+      "title": "MCP feature lifecycle \u2014 Active, Deprecated, Removed",
       "tags": [
         "mcp",
         "deprecation",
@@ -2550,7 +2564,7 @@
     {
       "id": "mcp-extensions-framework",
       "path": "practices/mcp-extensions-framework.md",
-      "title": "MCP extensions framework — IDs, negotiation, official vs experimental",
+      "title": "MCP extensions framework \u2014 IDs, negotiation, official vs experimental",
       "tags": [
         "mcp",
         "extensions",
@@ -2570,7 +2584,7 @@
     {
       "id": "a2a-protocol-bindings",
       "path": "practices/a2a-protocol-bindings.md",
-      "title": "A2A protocol bindings — JSON-RPC, gRPC, HTTP+JSON, A2A-Version",
+      "title": "A2A protocol bindings \u2014 JSON-RPC, gRPC, HTTP+JSON, A2A-Version",
       "tags": [
         "a2a",
         "transport",
@@ -2645,6 +2659,166 @@
         "mcp-extensions-framework",
         "mcp-enterprise-managed-auth",
         "cursor-cloud-oidc-identity"
+      ]
+    },
+    {
+      "id": "agent-client-protocol-acp",
+      "path": "glossary/agent-client-protocol-acp.md",
+      "title": "ACP \u2014 Agent Client Protocol (IDE \u2194 coding agent)",
+      "tags": [
+        "acp",
+        "glossary",
+        "orchestration",
+        "interoperability"
+      ],
+      "status": "active",
+      "updated": "2026-08-29",
+      "when_to_use": "Connecting a coding agent to an IDE (or exposing Cursor via agent acp) versus MCP tools or A2A peers",
+      "related": [
+        "a2a-vs-mcp",
+        "cursor-cli-headless",
+        "ag-ui-vs-a2ui",
+        "tools-mcp-skills-layers"
+      ]
+    },
+    {
+      "id": "cursor-security-agents",
+      "path": "practices/cursor-security-agents.md",
+      "title": "Cursor Security Agents \u2014 reviewer vs vulnerability scanner",
+      "tags": [
+        "cursor",
+        "security",
+        "review",
+        "automations"
+      ],
+      "status": "active",
+      "updated": "2026-08-29",
+      "when_to_use": "Wiring Cursor-managed security review on PRs or a scheduled codebase scan (not Bugbot quality review)",
+      "related": [
+        "cursor-bugbot-review",
+        "cursor-pr-routing-approval",
+        "cursor-automations",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "cursor-pr-routing-approval",
+      "path": "practices/cursor-pr-routing-approval.md",
+      "title": "Cursor PR Routing & Approval \u2014 reviewers and low-risk auto-approve",
+      "tags": [
+        "cursor",
+        "review",
+        "approvals",
+        "automations"
+      ],
+      "status": "active",
+      "updated": "2026-08-29",
+      "when_to_use": "Auto-assigning PR reviewers or auto-approving low-risk changes without treating the agent as a full code review",
+      "related": [
+        "cursor-bugbot-review",
+        "cursor-security-agents",
+        "cursor-automations",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "cursor-cloud-agent-metadata",
+      "path": "practices/cursor-cloud-agent-metadata.md",
+      "title": "Cloud Agent in-VM metadata vs SDK metadata tags",
+      "tags": [
+        "cursor",
+        "identity",
+        "observability",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-08-29",
+      "when_to_use": "Reading the current Cloud Agent id/owner/turn/repos from inside the VM, or attaching caller tags when creating an agent",
+      "related": [
+        "cursor-cloud-oidc-identity",
+        "cursor-sdk",
+        "cursor-hooks-json",
+        "cursor-cloud-always-on"
+      ]
+    },
+    {
+      "id": "claude-agent-sdk",
+      "path": "practices/claude-agent-sdk.md",
+      "title": "Claude Agent SDK \u2014 Claude Code loop as a library",
+      "tags": [
+        "sdk",
+        "orchestration",
+        "permissions",
+        "mcp"
+      ],
+      "status": "active",
+      "updated": "2026-08-29",
+      "when_to_use": "Embedding Claude Code\u2019s agent loop in Python/TypeScript instead of driving the CLI or calling the Messages API yourself",
+      "related": [
+        "permission-modes-allow-ask-deny",
+        "tools-mcp-skills-layers",
+        "agent-skills-open-standard",
+        "cursor-cli-headless"
+      ]
+    },
+    {
+      "id": "cursor-sdk",
+      "path": "practices/cursor-sdk.md",
+      "title": "Cursor Python SDK \u2014 local and cloud Agent.create",
+      "tags": [
+        "cursor",
+        "sdk",
+        "cli",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-08-29",
+      "when_to_use": "Scripting the same Cursor agent from Python (local cwd or Cloud VM) instead of the CLI or editor",
+      "related": [
+        "cursor-cli-headless",
+        "cursor-cloud-always-on",
+        "cursor-cloud-agent-metadata",
+        "cursor-origin"
+      ]
+    },
+    {
+      "id": "mcp-server-cards",
+      "path": "practices/mcp-server-cards.md",
+      "title": "MCP Server Cards \u2014 discovery without connecting (SEP-2127 draft)",
+      "tags": [
+        "mcp",
+        "discovery",
+        "roadmap",
+        "extensions"
+      ],
+      "status": "draft",
+      "updated": "2026-08-29",
+      "when_to_use": "Planning well-known MCP server metadata / \u201cbusiness cards\u201d \u2014 not a shipped 2026-07-28 feature",
+      "related": [
+        "mcp-2026-roadmap",
+        "mcp-registry-admission",
+        "a2a-agent-card-discovery",
+        "mcp-extensions-framework"
+      ]
+    },
+    {
+      "id": "mcp-file-uploads",
+      "path": "practices/mcp-file-uploads.md",
+      "title": "MCP file inputs \u2014 native pickers (SEP-2356 draft)",
+      "tags": [
+        "mcp",
+        "ux",
+        "elicitation",
+        "roadmap"
+      ],
+      "status": "draft",
+      "updated": "2026-08-29",
+      "when_to_use": "Designing an MCP tool that needs a user-selected file \u2014 do not invent a base64-in-prose contract if you can wait for SEP-2356",
+      "related": [
+        "mcp-elicitation-modes",
+        "mcp-content-blocks",
+        "mcp-2026-roadmap",
+        "mcp-apps-extension"
       ]
     }
   ]

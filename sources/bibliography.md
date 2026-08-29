@@ -395,3 +395,33 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | MCP Authorization (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization |
 | OAuth Client Credentials extension | https://modelcontextprotocol.io/extensions/auth/oauth-client-credentials |
 | RFC 7523 JWT Bearer | https://datatracker.ietf.org/doc/html/rfc7523 |
+
+## Daily ingest 2026-08-29 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| ACP protocol overview | https://agentclientprotocol.com/protocol/overview |
+| ACP v2 overview | https://agentclientprotocol.com/protocol/v2/overview |
+| ACP v2 transports | https://agentclientprotocol.com/protocol/v2/transports |
+| Migrating from ACP v1 | https://agentclientprotocol.com/protocol/v2/migration |
+| Using Agent in CLI | https://cursor.com/docs/cli/using |
+| Cursor joined the ACP Registry (JetBrains) | https://blog.jetbrains.com/ai/2026/03/cursor-joined-the-acp-registry-and-is-now-live-in-your-jetbrains-ide/ |
+| Security Agents | https://cursor.com/docs/security-agents |
+| PR Routing & Approval | https://cursor.com/docs/approval-agents |
+| Automations (help) | https://cursor.com/help/ai-features/automations |
+| Agent metadata | https://cursor.com/docs/cloud-agent/metadata |
+| OIDC tokens | https://cursor.com/docs/cloud-agent/identity |
+| Cursor Python SDK | https://cursor.com/docs/sdk/python |
+| Using Headless CLI | https://cursor.com/docs/cli/headless |
+| Agent SDK overview | https://code.claude.com/docs/en/agent-sdk/overview |
+| Give Claude custom tools | https://code.claude.com/docs/en/agent-sdk/custom-tools |
+| Configure permissions (Agent SDK) | https://code.claude.com/docs/en/agent-sdk/permissions |
+| Server Card Working Group charter | https://modelcontextprotocol.io/community/working-groups/server-card |
+| File Uploads Working Group charter | https://modelcontextprotocol.io/community/working-groups/file-uploads |
+| The New MCP Roadmap | https://blog.modelcontextprotocol.io/posts/mcp-roadmap/ |
+| MCP development roadmap | https://modelcontextprotocol.io/development/roadmap |
+| MCP resources (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/resources |
+| Start from scratch, without a repo | https://cursor.com/changelog/start-from-scratch |
+| A2A project (GitHub) | https://github.com/a2aproject/A2A |
+| MCP vs A2A (Auth0) | https://auth0.com/blog/mcp-vs-a2a/ |
+| MCP server concepts | https://modelcontextprotocol.io/docs/learn/server-concepts |
