@@ -425,3 +425,36 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | A2A project (GitHub) | https://github.com/a2aproject/A2A |
 | MCP vs A2A (Auth0) | https://auth0.com/blog/mcp-vs-a2a/ |
 | MCP server concepts | https://modelcontextprotocol.io/docs/learn/server-concepts |
+
+## Daily ingest 2026-08-30 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Agent Skills overview | https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview |
+| Using Agent Skills with the API | https://platform.claude.com/docs/en/build-with-claude/skills-guide |
+| Claude Platform release notes | https://platform.claude.com/docs/en/release-notes/overview |
+| Extend agents with skills (Agent SDK) | https://code.claude.com/docs/en/agent-sdk/skills |
+| Computer use (OpenAI) | https://developers.openai.com/api/docs/guides/tools-computer-use |
+| Tools — OpenAI Agents SDK (JS) | https://openai.github.io/openai-agents-js/guides/tools/ |
+| Computer use tool (Claude) | https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool |
+| Browser use tool (Claude) | https://platform.claude.com/docs/en/agents-and-tools/tool-use/browser-use-tool |
+| ACP v2 overview | https://agentclientprotocol.com/protocol/v2/overview |
+| Migrating from ACP v1 | https://agentclientprotocol.com/protocol/v2/migration |
+| ACP v2 draft announcement | https://github.com/agentclientprotocol/agent-client-protocol/blob/main/docs/announcements/acp-v2-draft.mdx |
+| ACP (Cursor CLI) | https://cursor.com/docs/cli/acp.md |
+| Using Agent in CLI | https://cursor.com/docs/cli/using |
+| ACP protocol overview | https://agentclientprotocol.com/protocol/overview |
+| Model Context Protocol (Cursor) | https://cursor.com/docs/mcp |
+| Model and Integration Management | https://cursor.com/docs/enterprise/model-and-integration-management |
+| Enterprise | https://cursor.com/docs/enterprise |
+| OpenAI Agents SDK | https://openai.github.io/openai-agents-python/ |
+| Agent orchestration (OpenAI Agents SDK) | https://openai.github.io/openai-agents-python/multi_agent/ |
+| Human-in-the-loop (OpenAI Agents SDK) | https://openai.github.io/openai-agents-python/human_in_the_loop/ |
+| A2A joins AAIF’s open agentic stack | https://aaif.io/blog/a2a-joins-aaif |
+| AAIF projects | https://aaif.io/projects |
+| Agent2Agent (AAIF) | https://aaif.io/projects/agent2agent |
+| A2A Protocol | https://a2a-protocol.org/latest/ |
+| Agent Skills specification | https://agentskills.io/specification |
+| Agent Skills overview (agentskills.io) | https://agentskills.io/home |
+| Equipping agents with Agent Skills (Anthropic) | https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills |
+

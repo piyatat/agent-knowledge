@@ -3,13 +3,13 @@ id: agent-skills-open-standard
 title: Agent Skills open standard (SKILL.md)
 tags: [skills, mcp, tokens, architecture]
 status: active
-updated: 2026-08-22
+updated: 2026-08-30
 when_to_use: Authoring portable SKILL.md packages or implementing skill discovery across Cursor/Claude/Codex-class agents
 ---
 
 ## Summary
 
-Agent Skills is an open folder format: a directory with required `SKILL.md` (YAML frontmatter + markdown body) plus optional `scripts/`, `references/`, and `assets/`. Agents load **name + description** at startup (~100 tokens), the body on activation, and extra files only as needed.
+Agent Skills is an open folder format: a directory with required `SKILL.md` (YAML frontmatter + markdown body) plus optional `scripts/`, `references/`, and `assets/`. Agents load **name + description** at startup (~100 tokens), the body on activation, and extra files only as needed. Claude’s **Skills API** (`/v1/skills` + Messages `container`) is a separate product surface — same folder idea, no sync (`claude-skills-api`).
 
 ## Notes
 
@@ -19,6 +19,7 @@ Agent Skills is an open folder format: a directory with required `SKILL.md` (YAM
 - Description is the entire dispatch surface at rest — vague “helps with PDFs” misses; keyword-rich when-to-use text is the trigger. Complementary to (not a replacement for) MCP: skills teach procedure, MCP exposes live tools.
 - Bundled `scripts/` are real code the agent may execute — sandbox them. `allowed-tools` is experimental and client-dependent; do not assume it is an enforcement boundary.
 - Skills compose with code-mode: saving a working wrapper plus `SKILL.md` turns an ad-hoc script into a reusable capability.
+- Do not assume one upload reaches Claude Code, claude.ai, and the Messages API. Copy the package per host; API execution also has no network / no pip (`claude-skills-api`).
 
 ## Sources
 

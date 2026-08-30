@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-08-29",
+  "updated": "2026-08-30",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -576,7 +576,9 @@
       "related": [
         "agent-code-sandboxing",
         "prompt-injection-agent-defense",
-        "human-in-the-loop-approvals"
+        "human-in-the-loop-approvals",
+        "openai-computer-tool",
+        "claude-computer-browser-toolsets"
       ]
     },
     {
@@ -597,7 +599,8 @@
         "tools-mcp-skills-layers",
         "multi-agent-handoffs",
         "mcp-oauth-scopes",
-        "agent-client-protocol-acp"
+        "agent-client-protocol-acp",
+        "a2a-aaif-governance"
       ]
     },
     {
@@ -1274,7 +1277,7 @@
         "architecture"
       ],
       "status": "active",
-      "updated": "2026-08-22",
+      "updated": "2026-08-30",
       "when_to_use": "Authoring portable SKILL.md packages or implementing skill discovery across Cursor/Claude/Codex-class agents",
       "related": [
         "skills-dispatch-hygiene",
@@ -1282,7 +1285,8 @@
         "mcp-progressive-disclosure",
         "malicious-skills-supply-chain",
         "skills-invocation-modes",
-        "cursor-plugins"
+        "cursor-plugins",
+        "claude-skills-api"
       ]
     },
     {
@@ -1670,7 +1674,8 @@
         "cursor-automations",
         "mcp-registry-admission",
         "playwright-mcp-containment",
-        "cursor-mcp-json"
+        "cursor-mcp-json",
+        "cursor-enterprise-mcp-policy"
       ]
     },
     {
@@ -1771,7 +1776,8 @@
         "cursor-worktrees",
         "human-in-the-loop-approvals",
         "agent-client-protocol-acp",
-        "cursor-sdk"
+        "cursor-sdk",
+        "cursor-acp-extensions"
       ]
     },
     {
@@ -1875,7 +1881,8 @@
         "cursor-cloud-mcp-http-vs-stdio",
         "cursor-hooks-json",
         "cursor-slash-commands",
-        "cursor-custom-subagents"
+        "cursor-custom-subagents",
+        "cursor-enterprise-mcp-policy"
       ]
     },
     {
@@ -2097,7 +2104,8 @@
         "cursor-cloud-mcp-http-vs-stdio",
         "mcp-registry-admission",
         "mcp-oauth-scopes",
-        "cursor-plugins"
+        "cursor-plugins",
+        "cursor-enterprise-mcp-policy"
       ]
     },
     {
@@ -2672,13 +2680,15 @@
         "interoperability"
       ],
       "status": "active",
-      "updated": "2026-08-29",
+      "updated": "2026-08-30",
       "when_to_use": "Connecting a coding agent to an IDE (or exposing Cursor via agent acp) versus MCP tools or A2A peers",
       "related": [
         "a2a-vs-mcp",
         "cursor-cli-headless",
         "ag-ui-vs-a2ui",
-        "tools-mcp-skills-layers"
+        "tools-mcp-skills-layers",
+        "acp-v2-session-lifecycle",
+        "cursor-acp-extensions"
       ]
     },
     {
@@ -2758,7 +2768,9 @@
         "permission-modes-allow-ask-deny",
         "tools-mcp-skills-layers",
         "agent-skills-open-standard",
-        "cursor-cli-headless"
+        "cursor-cli-headless",
+        "openai-agents-sdk",
+        "claude-skills-api"
       ]
     },
     {
@@ -2819,6 +2831,166 @@
         "mcp-content-blocks",
         "mcp-2026-roadmap",
         "mcp-apps-extension"
+      ]
+    },
+    {
+      "id": "claude-skills-api",
+      "path": "practices/claude-skills-api.md",
+      "title": "Claude Skills API \u2014 GA container skills vs filesystem skills",
+      "tags": [
+        "skills",
+        "sdk",
+        "api",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-08-30",
+      "when_to_use": "Loading Skills on the Claude Messages API (/v1/skills, container) instead of SKILL.md on disk",
+      "related": [
+        "agent-skills-open-standard",
+        "claude-agent-sdk",
+        "malicious-skills-supply-chain",
+        "skills-invocation-modes"
+      ]
+    },
+    {
+      "id": "openai-computer-tool",
+      "path": "practices/openai-computer-tool.md",
+      "title": "OpenAI Responses computer tool (GA vs computer_use_preview)",
+      "tags": [
+        "computer-use",
+        "tools",
+        "sdk",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-08-30",
+      "when_to_use": "Implementing or migrating OpenAI computer-use loops on the Responses API",
+      "related": [
+        "computer-use-containment",
+        "openai-agents-sdk",
+        "playwright-mcp-containment",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "claude-computer-browser-toolsets",
+      "path": "practices/claude-computer-browser-toolsets.md",
+      "title": "Claude computer and browser toolsets (20260801 GA)",
+      "tags": [
+        "computer-use",
+        "tools",
+        "browser",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-08-30",
+      "when_to_use": "Implementing Claude desktop or in-page browser control after the 2026-08-19 GA",
+      "related": [
+        "computer-use-containment",
+        "openai-computer-tool",
+        "playwright-mcp-containment",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "acp-v2-session-lifecycle",
+      "path": "practices/acp-v2-session-lifecycle.md",
+      "title": "ACP v2 session and prompt lifecycle (draft)",
+      "tags": [
+        "acp",
+        "session",
+        "orchestration",
+        "migration"
+      ],
+      "status": "draft",
+      "updated": "2026-08-30",
+      "when_to_use": "Implementing or migrating an ACP client/agent to protocolVersion 2 session semantics",
+      "related": [
+        "agent-client-protocol-acp",
+        "cursor-acp-extensions",
+        "a2a-vs-mcp",
+        "streaming-approval-resume"
+      ]
+    },
+    {
+      "id": "cursor-acp-extensions",
+      "path": "practices/cursor-acp-extensions.md",
+      "title": "Cursor ACP \u2014 cursor/* extension methods and v1 session flow",
+      "tags": [
+        "cursor",
+        "acp",
+        "cli",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-08-30",
+      "when_to_use": "Embedding Cursor via agent acp in a custom IDE/client, or implementing cursor/* RPCs",
+      "related": [
+        "agent-client-protocol-acp",
+        "acp-v2-session-lifecycle",
+        "cursor-cli-headless",
+        "cursor-custom-subagents"
+      ]
+    },
+    {
+      "id": "cursor-enterprise-mcp-policy",
+      "path": "practices/cursor-enterprise-mcp-policy.md",
+      "title": "Cursor enterprise MCP \u2014 allowlist vs marketplace distribution",
+      "tags": [
+        "cursor",
+        "mcp",
+        "security",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-08-30",
+      "when_to_use": "Separating who may run an MCP server from how it gets installed (Teams/Enterprise)",
+      "related": [
+        "cursor-plugins",
+        "cursor-mcp-json",
+        "cursor-cloud-mcp-http-vs-stdio",
+        "mcp-registry-admission"
+      ]
+    },
+    {
+      "id": "openai-agents-sdk",
+      "path": "practices/openai-agents-sdk.md",
+      "title": "OpenAI Agents SDK \u2014 Agent + Runner vs Responses API",
+      "tags": [
+        "sdk",
+        "orchestration",
+        "handoff",
+        "tools"
+      ],
+      "status": "active",
+      "updated": "2026-08-30",
+      "when_to_use": "Choosing openai-agents (Python/JS) instead of owning the Responses API loop yourself",
+      "related": [
+        "claude-agent-sdk",
+        "cursor-sdk",
+        "multi-agent-handoffs",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "a2a-aaif-governance",
+      "path": "glossary/a2a-aaif-governance.md",
+      "title": "A2A under AAIF \u2014 same foundation as MCP, not a merge",
+      "tags": [
+        "a2a",
+        "glossary",
+        "governance",
+        "interoperability"
+      ],
+      "status": "active",
+      "updated": "2026-08-30",
+      "when_to_use": "Explaining who governs A2A vs MCP, or whether AAIF hosting changed the wire",
+      "related": [
+        "a2a-vs-mcp",
+        "agent-to-agent-a2a-protocol",
+        "agent-client-protocol-acp",
+        "mcp-2026-roadmap"
       ]
     }
   ]
