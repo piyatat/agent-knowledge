@@ -458,3 +458,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Agent Skills overview (agentskills.io) | https://agentskills.io/home |
 | Equipping agents with Agent Skills (Anthropic) | https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills |
 
+## Daily ingest 2026-08-31 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| WebMCP (Chrome) | https://developer.chrome.com/docs/ai/webmcp |
+| WebMCP Imperative API | https://developer.chrome.com/docs/ai/webmcp/imperative-api |
+| WebMCP Declarative API | https://developer.chrome.com/docs/ai/webmcp/declarative-api |
+| NLWeb README | https://github.com/microsoft/NLWeb |
+| NLWeb REST API | https://github.com/microsoft/NLWeb/blob/main/docs/nlweb-rest-api.md |
+| Codex SDK | https://developers.openai.com/codex/sdk |
+| Codex SDK (learn.chatgpt.com) | https://learn.chatgpt.com/docs/codex-sdk |
+| ACP Mode (Gemini CLI) | https://geminicli.com/docs/cli/acp-mode/ |
+| gemini-cli acp-mode.md | https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/acp-mode.md |
+| Create plugins (Claude Code) | https://code.claude.com/docs/en/plugins |
+| Discover and install plugins | https://code.claude.com/docs/en/discover-plugins |
+| Plugin marketplaces | https://code.claude.com/docs/en/plugin-marketplaces |
+| Plugins reference | https://code.claude.com/docs/en/plugins-reference |
+| AGENTS.md | https://agents.md/ |
+| agentsmd/agents.md | https://github.com/agentsmd/agents.md |
+| AAIF projects | https://aaif.io/projects |
+| Linux Foundation announces AAIF | https://aaif.io/news/linux-foundation-announces-formation-of-aaif |
+| permissions.json reference | https://cursor.com/docs/reference/permissions |
+| Run Modes | https://cursor.com/docs/agent/security/run-modes |
+| Enterprise deployment patterns | https://cursor.com/docs/enterprise/deployment-patterns |
+| Cursor Rules | https://cursor.com/docs/rules.md |
+| MCP development roadmap | https://modelcontextprotocol.io/development/roadmap |
+| The New MCP Roadmap (blog) | https://blog.modelcontextprotocol.io/posts/mcp-roadmap/ |
+| SEP-1932: DPoP Profile for MCP | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/1932 |
+

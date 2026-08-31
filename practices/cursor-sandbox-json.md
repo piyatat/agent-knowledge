@@ -3,13 +3,13 @@ id: cursor-sandbox-json
 title: Cursor sandbox.json and Auto-review run modes
 tags: [cursor, sandbox, security, permissions]
 status: active
-updated: 2026-08-24
+updated: 2026-08-31
 when_to_use: Constraining local Cursor agent shell/network/filesystem (not Cloud Agent VMs)
 ---
 
 ## Summary
 
-Local Cursor agents combine **Run Modes** (when to ask) with **sandboxing** (what a sandboxed shell can reach). `permissions.json` steers Auto-review; `sandbox.json` sets network and extra paths. Neither file weakens team-admin or hardcoded protections. Cloud Agents skip Run Modes — they already run on a dedicated VM.
+Local Cursor agents combine **Run Modes** (when to ask) with **sandboxing** (what a sandboxed shell can reach). `permissions.json` steers Auto-review allowlists (`cursor-permissions-json`); `sandbox.json` sets network and extra paths. Neither file weakens team-admin or hardcoded protections. Cloud Agents skip Run Modes — they already run on a dedicated VM.
 
 ## Notes
 

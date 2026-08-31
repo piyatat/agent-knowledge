@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-08-30",
+  "updated": "2026-08-31",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -52,12 +52,13 @@
         "tokens"
       ],
       "status": "active",
-      "updated": "2026-08-06",
+      "updated": "2026-08-31",
       "when_to_use": "Writing project steering files or debugging instruction bloat",
       "related": [
         "knowledge-corpus-pattern",
         "memory-files-vs-enforcement-hooks",
-        "cursor-rules-layers"
+        "cursor-rules-layers",
+        "agents-md-open-format"
       ]
     },
     {
@@ -1810,14 +1811,15 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-08-24",
+      "updated": "2026-08-31",
       "when_to_use": "Constraining local Cursor agent shell/network/filesystem (not Cloud Agent VMs)",
       "related": [
         "agent-code-sandboxing",
         "permission-modes-allow-ask-deny",
         "computer-use-containment",
         "cursor-cli-headless",
-        "cursor-ignore-files"
+        "cursor-ignore-files",
+        "cursor-permissions-json"
       ]
     },
     {
@@ -2991,6 +2993,166 @@
         "agent-to-agent-a2a-protocol",
         "agent-client-protocol-acp",
         "mcp-2026-roadmap"
+      ]
+    },
+    {
+      "id": "webmcp-browser-tools",
+      "path": "practices/webmcp-browser-tools.md",
+      "title": "WebMCP \u2014 page-declared tools for in-browser agents",
+      "tags": [
+        "webmcp",
+        "mcp",
+        "browser",
+        "tools"
+      ],
+      "status": "draft",
+      "updated": "2026-08-31",
+      "when_to_use": "A website should expose structured tools to a browser agent instead of relying on DOM scraping",
+      "related": [
+        "nlweb-site-mcp",
+        "computer-use-containment",
+        "mcp-apps-extension",
+        "ag-ui-vs-a2ui"
+      ]
+    },
+    {
+      "id": "nlweb-site-mcp",
+      "path": "practices/nlweb-site-mcp.md",
+      "title": "NLWeb \u2014 site /ask and /mcp for agents",
+      "tags": [
+        "nlweb",
+        "mcp",
+        "web",
+        "discovery"
+      ],
+      "status": "active",
+      "updated": "2026-08-31",
+      "when_to_use": "Exposing a website\u2019s catalog to agents via natural language instead of scraping HTML",
+      "related": [
+        "webmcp-browser-tools",
+        "mcp-resources-vs-tools",
+        "agent-to-agent-a2a-protocol",
+        "a2a-vs-mcp"
+      ]
+    },
+    {
+      "id": "openai-codex-sdk",
+      "path": "practices/openai-codex-sdk.md",
+      "title": "OpenAI Codex SDK \u2014 coding threads vs Agents SDK",
+      "tags": [
+        "sdk",
+        "openai",
+        "orchestration",
+        "sandbox"
+      ],
+      "status": "active",
+      "updated": "2026-08-31",
+      "when_to_use": "Driving Codex CLI/app-server from TypeScript or Python instead of openai-agents or a raw Responses loop",
+      "related": [
+        "openai-agents-sdk",
+        "claude-agent-sdk",
+        "cursor-sdk",
+        "agent-code-sandboxing"
+      ]
+    },
+    {
+      "id": "gemini-cli-acp",
+      "path": "practices/gemini-cli-acp.md",
+      "title": "Gemini CLI ACP mode \u2014 IDE embedding over stdio",
+      "tags": [
+        "acp",
+        "gemini",
+        "cli",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-08-31",
+      "when_to_use": "Embedding Gemini CLI in an IDE via Agent Client Protocol, or comparing ACP agents (Cursor vs Gemini)",
+      "related": [
+        "agent-client-protocol-acp",
+        "acp-v2-session-lifecycle",
+        "cursor-acp-extensions",
+        "cursor-cli-headless"
+      ]
+    },
+    {
+      "id": "claude-code-plugins",
+      "path": "practices/claude-code-plugins.md",
+      "title": "Claude Code plugins and marketplaces",
+      "tags": [
+        "plugins",
+        "skills",
+        "claude",
+        "supply-chain"
+      ],
+      "status": "active",
+      "updated": "2026-08-31",
+      "when_to_use": "Packaging or installing Claude Code skills/hooks/MCP/LSP as a plugin instead of loose .claude/ files",
+      "related": [
+        "cursor-plugins",
+        "agent-skills-open-standard",
+        "malicious-skills-supply-chain",
+        "claude-agent-sdk"
+      ]
+    },
+    {
+      "id": "agents-md-open-format",
+      "path": "practices/agents-md-open-format.md",
+      "title": "AGENTS.md open format (AAIF)",
+      "tags": [
+        "agents-md",
+        "standards",
+        "interoperability",
+        "aaif"
+      ],
+      "status": "active",
+      "updated": "2026-08-31",
+      "when_to_use": "Authoring a portable AGENTS.md for multiple coding agents, or deciding filename vs CLAUDE.md / Cursor rules",
+      "related": [
+        "agents-md-and-rules-budget",
+        "cursor-rules-layers",
+        "a2a-aaif-governance",
+        "knowledge-corpus-pattern"
+      ]
+    },
+    {
+      "id": "cursor-permissions-json",
+      "path": "practices/cursor-permissions-json.md",
+      "title": "Cursor permissions.json \u2014 MCP/terminal allowlists and Auto-review steering",
+      "tags": [
+        "cursor",
+        "permissions",
+        "mcp",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-08-31",
+      "when_to_use": "Committing or MDM-deploying which MCP tools and shell prefixes skip approval in local Cursor",
+      "related": [
+        "cursor-sandbox-json",
+        "permission-modes-allow-ask-deny",
+        "cursor-hooks-json",
+        "cursor-mcp-json"
+      ]
+    },
+    {
+      "id": "mcp-dpop-extension",
+      "path": "practices/mcp-dpop-extension.md",
+      "title": "MCP DPoP \u2014 sender-constrained tokens (roadmap / SEP-1932)",
+      "tags": [
+        "mcp",
+        "oauth",
+        "security",
+        "identity"
+      ],
+      "status": "draft",
+      "updated": "2026-08-31",
+      "when_to_use": "Planning sender-constrained OAuth for remote MCP \u2014 do not treat DPoP as part of 2026-07-28",
+      "related": [
+        "mcp-2026-roadmap",
+        "mcp-oauth-scopes",
+        "mcp-oauth-client-credentials",
+        "mcp-enterprise-managed-auth"
       ]
     }
   ]
