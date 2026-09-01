@@ -487,3 +487,31 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | The New MCP Roadmap (blog) | https://blog.modelcontextprotocol.io/posts/mcp-roadmap/ |
 | SEP-1932: DPoP Profile for MCP | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/1932 |
 
+## Daily ingest 2026-09-01 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Introduction (agentgateway) | https://agentgateway.dev/docs/standalone/latest/about/introduction/ |
+| agentgateway joins AAIF | https://aaif.io/blog/agentgateway-joins-aaif-as-an-open-gateway-for-agentic-ai-infrastructure |
+| agentgateway/agentgateway | https://github.com/agentgateway/agentgateway |
+| goose home | https://goose-docs.ai/ |
+| Using Extensions (goose) | https://goose-docs.ai/docs/getting-started/using-extensions |
+| ACP Providers (goose) | https://goose-docs.ai/docs/guides/acp-providers |
+| Recipes (goose) | https://goose-docs.ai/docs/guides/recipes/ |
+| aaif-goose/goose | https://github.com/aaif-goose/goose |
+| Sandbox Agents (OpenAI API) | https://developers.openai.com/api/docs/guides/agents/sandboxes |
+| Sandbox clients (Agents SDK JS) | https://openai.github.io/openai-agents-js/guides/sandbox-agents/clients/ |
+| OpenAI Agents SDK | https://openai.github.io/openai-agents-python/ |
+| Slack (Cursor docs) | https://cursor.com/docs/integrations/slack.md |
+| Cloud Agents and Cursor Harness Improvements | https://cursor.com/changelog/08-19-26 |
+| Model and Integration Management | https://cursor.com/docs/enterprise/model-and-integration-management |
+| Google Workspace Plugins (changelog) | https://cursor.com/changelog/google-workspace-plugins |
+| Cursor Plugins | https://cursor.com/docs/plugins |
+| Customize Cursor | https://cursor.com/docs/customize-cursor |
+| Model Context Protocol (Cursor) | https://cursor.com/docs/mcp |
+| A2UI Protocol v0.9 | https://a2ui.org/specification/v0.9-a2ui/ |
+| A2UI v0.8 → v0.9 evolution guide | https://github.com/google/A2UI/blob/main/specification/v0_9/docs/evolution_guide.md |
+| A2UI v0.9 (Google Developers Blog) | https://developers.googleblog.com/a2ui-v0-9-generative-ui/ |
+| Plugins in the SDK (Claude) | https://code.claude.com/docs/en/agent-sdk/plugins.md |
+
+

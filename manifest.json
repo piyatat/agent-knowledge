@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-08-31",
+  "updated": "2026-09-01",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1301,7 +1301,7 @@
         "glossary"
       ],
       "status": "active",
-      "updated": "2026-08-22",
+      "updated": "2026-09-01",
       "when_to_use": "Choosing how an agent talks to a frontend vs declaring widgets vs shipping a sandboxed MCP iframe",
       "related": [
         "a2a-vs-mcp",
@@ -1874,7 +1874,7 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-08-24",
+      "updated": "2026-09-01",
       "when_to_use": "Packaging or installing rules/skills/MCP/hooks as a Cursor or Agent Plugin instead of loose files",
       "related": [
         "agent-skills-open-standard",
@@ -1884,7 +1884,8 @@
         "cursor-hooks-json",
         "cursor-slash-commands",
         "cursor-custom-subagents",
-        "cursor-enterprise-mcp-policy"
+        "cursor-enterprise-mcp-policy",
+        "cursor-google-workspace-plugins"
       ]
     },
     {
@@ -2764,7 +2765,7 @@
         "mcp"
       ],
       "status": "active",
-      "updated": "2026-08-29",
+      "updated": "2026-09-01",
       "when_to_use": "Embedding Claude Code\u2019s agent loop in Python/TypeScript instead of driving the CLI or calling the Messages API yourself",
       "related": [
         "permission-modes-allow-ask-deny",
@@ -2772,7 +2773,8 @@
         "agent-skills-open-standard",
         "cursor-cli-headless",
         "openai-agents-sdk",
-        "claude-skills-api"
+        "claude-skills-api",
+        "claude-code-plugins"
       ]
     },
     {
@@ -2966,13 +2968,14 @@
         "tools"
       ],
       "status": "active",
-      "updated": "2026-08-30",
+      "updated": "2026-09-01",
       "when_to_use": "Choosing openai-agents (Python/JS) instead of owning the Responses API loop yourself",
       "related": [
         "claude-agent-sdk",
         "cursor-sdk",
         "multi-agent-handoffs",
-        "human-in-the-loop-approvals"
+        "human-in-the-loop-approvals",
+        "openai-sandbox-agents"
       ]
     },
     {
@@ -2986,13 +2989,15 @@
         "interoperability"
       ],
       "status": "active",
-      "updated": "2026-08-30",
+      "updated": "2026-09-01",
       "when_to_use": "Explaining who governs A2A vs MCP, or whether AAIF hosting changed the wire",
       "related": [
         "a2a-vs-mcp",
         "agent-to-agent-a2a-protocol",
         "agent-client-protocol-acp",
-        "mcp-2026-roadmap"
+        "mcp-2026-roadmap",
+        "agentgateway-aaif",
+        "goose-aaif-agent"
       ]
     },
     {
@@ -3153,6 +3158,106 @@
         "mcp-oauth-scopes",
         "mcp-oauth-client-credentials",
         "mcp-enterprise-managed-auth"
+      ]
+    },
+    {
+      "id": "agentgateway-aaif",
+      "path": "practices/agentgateway-aaif.md",
+      "title": "agentgateway \u2014 AAIF proxy for MCP, A2A, and LLM traffic",
+      "tags": [
+        "aaif",
+        "mcp",
+        "a2a",
+        "gateway"
+      ],
+      "status": "active",
+      "updated": "2026-09-01",
+      "when_to_use": "Putting a policy/observability proxy in front of MCP servers, A2A agents, or LLM backends instead of exposing them raw",
+      "related": [
+        "a2a-aaif-governance",
+        "mcp-http-gateway-headers",
+        "mcp-server-trust-failures",
+        "goose-aaif-agent"
+      ]
+    },
+    {
+      "id": "goose-aaif-agent",
+      "path": "practices/goose-aaif-agent.md",
+      "title": "goose \u2014 AAIF local agent (desktop, CLI, API)",
+      "tags": [
+        "aaif",
+        "goose",
+        "mcp",
+        "acp"
+      ],
+      "status": "active",
+      "updated": "2026-09-01",
+      "when_to_use": "Choosing or embedding the AAIF-hosted local agent (goose) versus Cursor/Claude Code/Codex",
+      "related": [
+        "a2a-aaif-governance",
+        "agent-client-protocol-acp",
+        "agent-skills-open-standard",
+        "agentgateway-aaif"
+      ]
+    },
+    {
+      "id": "openai-sandbox-agents",
+      "path": "practices/openai-sandbox-agents.md",
+      "title": "OpenAI SandboxAgent \u2014 isolated workspace vs hosted shell",
+      "tags": [
+        "openai",
+        "sandbox",
+        "sdk",
+        "orchestration"
+      ],
+      "status": "draft",
+      "updated": "2026-09-01",
+      "when_to_use": "An openai-agents job needs a real filesystem, shell, mounts, or resumable workspace \u2014 not only a chat turn",
+      "related": [
+        "openai-agents-sdk",
+        "agent-code-sandboxing",
+        "openai-codex-sdk",
+        "agents-md-open-format"
+      ]
+    },
+    {
+      "id": "cursor-slack-cloud-agents",
+      "path": "practices/cursor-slack-cloud-agents.md",
+      "title": "Cursor Slack \u2014 @cursor Cloud Agents vs subscriptions",
+      "tags": [
+        "cursor",
+        "slack",
+        "automations",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-01",
+      "when_to_use": "Starting or steering a Cloud Agent from Slack, or configuring channel routing / privacy for @cursor",
+      "related": [
+        "cursor-cloud-always-on",
+        "cursor-automations",
+        "cursor-self-hosted-agents",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "cursor-google-workspace-plugins",
+      "path": "practices/cursor-google-workspace-plugins.md",
+      "title": "Cursor Google Workspace plugins (Gmail, Drive, Calendar)",
+      "tags": [
+        "cursor",
+        "plugins",
+        "mcp",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-01",
+      "when_to_use": "Connecting Gmail, Drive, or Calendar to a Cursor agent, or threat-modeling mailbox/drive tool access",
+      "related": [
+        "cursor-plugins",
+        "cursor-enterprise-mcp-policy",
+        "mcp-server-trust-failures",
+        "prompt-injection-agent-defense"
       ]
     }
   ]
