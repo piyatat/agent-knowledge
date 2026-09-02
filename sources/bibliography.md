@@ -514,4 +514,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | A2UI v0.9 (Google Developers Blog) | https://developers.googleblog.com/a2ui-v0-9-generative-ui/ |
 | Plugins in the SDK (Claude) | https://code.claude.com/docs/en/agent-sdk/plugins.md |
 
+## Daily ingest 2026-09-02 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Self-Hosted Machines | https://cursor.com/docs/cloud-agent/self-hosted |
+| Team Pools | https://cursor.com/docs/cloud-agent/bring-your-own-machine/pools |
+| Choose where Cloud Agents run | https://cursor.com/docs/cloud-agent/bring-your-own-machine/choose-runtime |
+| Computer use and desktop sharing | https://cursor.com/docs/cloud-agent/bring-your-own-machine/computer-use |
+| Self-hosted machines (changelog) | https://cursor.com/changelog/self-hosted-machines |
+| Cloud Agents API | https://cursor.com/docs/cloud-agent/api/endpoints |
+| Cloud Run Worker Pools | https://cursor.com/docs/cloud-agent/self-hosted-cloud-run.md |
+| Secrets & Network — private connectivity | https://cursor.com/docs/cloud-agent/security-network |
+| Origin repository settings | https://cursor.com/docs/origin/settings |
+| Codebase settings | https://cursor.com/docs/origin/codebase-settings |
+| Origin API | https://cursor.com/docs/origin/api |
+| Origin Code Hosting changelog | https://cursor.com/changelog/origin-code-hosting |
+| Start from scratch, without a repo | https://cursor.com/changelog/start-from-scratch |
+| Model Context Protocol (Cursor) | https://cursor.com/docs/mcp |
+| MCP integrations (help) | https://cursor.com/help/customization/mcp |
+| MCP Apps overview | https://apps.extensions.modelcontextprotocol.io/api/documents/overview.html |
+| Codex App Server | https://learn.chatgpt.com/docs/app-server |
+| codex-rs/app-server README | https://github.com/openai/codex/blob/main/codex-rs/app-server/README.md |
+| Codex SDK | https://developers.openai.com/codex/sdk |
+
+
 

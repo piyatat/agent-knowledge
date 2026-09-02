@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -572,14 +572,15 @@
         "computer-use"
       ],
       "status": "active",
-      "updated": "2026-08-10",
+      "updated": "2026-09-02",
       "when_to_use": "Granting agents desktop, GUI, or browser control beyond scoped APIs",
       "related": [
         "agent-code-sandboxing",
         "prompt-injection-agent-defense",
         "human-in-the-loop-approvals",
         "openai-computer-tool",
-        "claude-computer-browser-toolsets"
+        "claude-computer-browser-toolsets",
+        "cursor-self-hosted-computer-use"
       ]
     },
     {
@@ -1123,7 +1124,8 @@
       "related": [
         "mcp-resources-vs-tools",
         "human-in-the-loop-approvals",
-        "computer-use-containment"
+        "computer-use-containment",
+        "cursor-mcp-apps"
       ]
     },
     {
@@ -1307,7 +1309,8 @@
         "a2a-vs-mcp",
         "mcp-apps-extension",
         "streaming-approval-resume",
-        "agent-client-protocol-acp"
+        "agent-client-protocol-acp",
+        "cursor-mcp-apps"
       ]
     },
     {
@@ -1905,7 +1908,8 @@
         "memory-files-vs-enforcement-hooks",
         "permission-modes-allow-ask-deny",
         "cursor-plugins",
-        "cursor-custom-subagents"
+        "cursor-custom-subagents",
+        "cursor-self-hosted-pools"
       ]
     },
     {
@@ -2108,7 +2112,8 @@
         "mcp-registry-admission",
         "mcp-oauth-scopes",
         "cursor-plugins",
-        "cursor-enterprise-mcp-policy"
+        "cursor-enterprise-mcp-policy",
+        "cursor-mcp-apps"
       ]
     },
     {
@@ -2414,7 +2419,7 @@
     {
       "id": "cursor-self-hosted-agents",
       "path": "practices/cursor-self-hosted-agents.md",
-      "title": "Cloud Agents \u2014 managed VM vs My Machines vs Self-Hosted Pool",
+      "title": "Cloud Agents \u2014 managed VM vs My Machines vs Team Pools",
       "tags": [
         "cursor",
         "ops",
@@ -2422,13 +2427,16 @@
         "isolation"
       ],
       "status": "active",
-      "updated": "2026-08-27",
+      "updated": "2026-09-02",
       "when_to_use": "Deciding whether Cloud Agent tool calls stay on Cursor VMs or move to a worker you operate",
       "related": [
         "cursor-cloud-always-on",
         "cursor-privacy-mode",
         "cursor-cloud-secrets-network",
-        "cursor-environment-builds"
+        "cursor-environment-builds",
+        "cursor-self-hosted-pools",
+        "cursor-self-hosted-integrations",
+        "cursor-self-hosted-computer-use"
       ]
     },
     {
@@ -2502,14 +2510,15 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-08-29",
+      "updated": "2026-09-02",
       "when_to_use": "Hosting or mirroring repos on Cursor Origin, using the origin CLI, or starting a Cloud Agent without a third-party SCM",
       "related": [
         "cursor-privacy-mode",
         "cursor-cloud-always-on",
         "cursor-automations",
         "cursor-bugbot-review",
-        "cursor-sdk"
+        "cursor-sdk",
+        "cursor-origin-apps"
       ]
     },
     {
@@ -2549,7 +2558,8 @@
         "computer-use-containment",
         "cursor-cloud-always-on",
         "cursor-bugbot-review",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "cursor-self-hosted-computer-use"
       ]
     },
     {
@@ -3051,13 +3061,14 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-08-31",
+      "updated": "2026-09-02",
       "when_to_use": "Driving Codex CLI/app-server from TypeScript or Python instead of openai-agents or a raw Responses loop",
       "related": [
         "openai-agents-sdk",
         "claude-agent-sdk",
         "cursor-sdk",
-        "agent-code-sandboxing"
+        "agent-code-sandboxing",
+        "openai-codex-app-server"
       ]
     },
     {
@@ -3237,7 +3248,8 @@
         "cursor-cloud-always-on",
         "cursor-automations",
         "cursor-self-hosted-agents",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "cursor-self-hosted-pools"
       ]
     },
     {
@@ -3258,6 +3270,126 @@
         "cursor-enterprise-mcp-policy",
         "mcp-server-trust-failures",
         "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "cursor-self-hosted-pools",
+      "path": "practices/cursor-self-hosted-pools.md",
+      "title": "Cursor Team Pools \u2014 named routing, any-repo, hibernation",
+      "tags": [
+        "cursor",
+        "ops",
+        "isolation",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-02",
+      "when_to_use": "Routing Cloud Agents to a named self-hosted worker fleet, scaling to zero, or keeping workspace state across idle follow-ups",
+      "related": [
+        "cursor-self-hosted-agents",
+        "cursor-self-hosted-integrations",
+        "cursor-self-hosted-computer-use",
+        "cursor-cloud-always-on"
+      ]
+    },
+    {
+      "id": "cursor-self-hosted-integrations",
+      "path": "practices/cursor-self-hosted-integrations.md",
+      "title": "Self-Hosted Machines \u2014 partner hosts and sandbox templates",
+      "tags": [
+        "cursor",
+        "ops",
+        "sandbox",
+        "isolation"
+      ],
+      "status": "active",
+      "updated": "2026-09-02",
+      "when_to_use": "Running Cloud Agent tool execution on AWS Lambda, Daytona, E2B, Modal, Vercel, Cloudflare, Namespace, or Coder instead of a Cursor-managed VM",
+      "related": [
+        "cursor-self-hosted-agents",
+        "cursor-self-hosted-pools",
+        "agent-code-sandboxing",
+        "cursor-cloud-secrets-network"
+      ]
+    },
+    {
+      "id": "cursor-self-hosted-computer-use",
+      "path": "practices/cursor-self-hosted-computer-use.md",
+      "title": "Self-Hosted Machines \u2014 computer use and Linux desktop sharing",
+      "tags": [
+        "cursor",
+        "computer-use",
+        "sandbox",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-02",
+      "when_to_use": "Letting a My Machines or Team Pool worker click/type/screenshot, or watching a Linux agent desktop from Cursor",
+      "related": [
+        "computer-use-containment",
+        "cursor-self-hosted-agents",
+        "cursor-cloud-pr-artifacts",
+        "cursor-self-hosted-pools"
+      ]
+    },
+    {
+      "id": "cursor-origin-apps",
+      "path": "practices/cursor-origin-apps.md",
+      "title": "Origin apps \u2014 Vercel, Depot, Buildkite, and the Origin API",
+      "tags": [
+        "cursor",
+        "git",
+        "ci",
+        "hosting"
+      ],
+      "status": "active",
+      "updated": "2026-09-02",
+      "when_to_use": "Connecting preview/CI apps to an Origin repo, or writing an internal Origin API app (JWT + installation tokens)",
+      "related": [
+        "cursor-origin",
+        "cursor-cloud-always-on",
+        "cursor-automations",
+        "cursor-sdk"
+      ]
+    },
+    {
+      "id": "openai-codex-app-server",
+      "path": "practices/openai-codex-app-server.md",
+      "title": "Codex App Server \u2014 JSON-RPC harness vs SDK vs MCP",
+      "tags": [
+        "openai",
+        "sdk",
+        "orchestration",
+        "transport"
+      ],
+      "status": "active",
+      "updated": "2026-09-02",
+      "when_to_use": "Embedding Codex (auth, history, approvals, streamed events) in a custom client instead of the Codex SDK or a deprecated MCP server",
+      "related": [
+        "openai-codex-sdk",
+        "openai-agents-sdk",
+        "agent-client-protocol-acp",
+        "cursor-sdk"
+      ]
+    },
+    {
+      "id": "cursor-mcp-apps",
+      "path": "practices/cursor-mcp-apps.md",
+      "title": "Cursor as an MCP Apps host",
+      "tags": [
+        "cursor",
+        "mcp",
+        "ux",
+        "extensions"
+      ],
+      "status": "active",
+      "updated": "2026-09-02",
+      "when_to_use": "Shipping or reviewing an MCP tool that returns interactive UI inside Cursor (not a Canvas, not AG-UI/A2UI)",
+      "related": [
+        "mcp-apps-extension",
+        "ag-ui-vs-a2ui",
+        "cursor-mcp-json",
+        "cursor-permissions-json"
       ]
     }
   ]
