@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-09-02",
+  "updated": "2026-09-03",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1303,7 +1303,7 @@
         "glossary"
       ],
       "status": "active",
-      "updated": "2026-09-01",
+      "updated": "2026-09-03",
       "when_to_use": "Choosing how an agent talks to a frontend vs declaring widgets vs shipping a sandboxed MCP iframe",
       "related": [
         "a2a-vs-mcp",
@@ -1324,14 +1324,16 @@
         "cron"
       ],
       "status": "active",
-      "updated": "2026-08-22",
+      "updated": "2026-09-03",
       "when_to_use": "Configuring scheduled or event-triggered Cursor cloud agents (not a running agent\u2019s PR/Slack subscription)",
       "related": [
         "cursor-cloud-always-on",
         "cursor-bugbot-review",
         "computer-use-containment",
         "cursor-security-agents",
-        "cursor-pr-routing-approval"
+        "cursor-pr-routing-approval",
+        "cursor-linear-cloud-agents",
+        "cursor-github-cloud-agents"
       ]
     },
     {
@@ -2798,13 +2800,14 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-08-29",
+      "updated": "2026-09-03",
       "when_to_use": "Scripting the same Cursor agent from Python (local cwd or Cloud VM) instead of the CLI or editor",
       "related": [
         "cursor-cli-headless",
         "cursor-cloud-always-on",
         "cursor-cloud-agent-metadata",
-        "cursor-origin"
+        "cursor-origin",
+        "cursor-cloud-agents-api"
       ]
     },
     {
@@ -3242,14 +3245,16 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-01",
+      "updated": "2026-09-03",
       "when_to_use": "Starting or steering a Cloud Agent from Slack, or configuring channel routing / privacy for @cursor",
       "related": [
         "cursor-cloud-always-on",
         "cursor-automations",
         "cursor-self-hosted-agents",
         "prompt-injection-agent-defense",
-        "cursor-self-hosted-pools"
+        "cursor-self-hosted-pools",
+        "cursor-linear-cloud-agents",
+        "cursor-github-cloud-agents"
       ]
     },
     {
@@ -3390,6 +3395,127 @@
         "ag-ui-vs-a2ui",
         "cursor-mcp-json",
         "cursor-permissions-json"
+      ]
+    },
+    {
+      "id": "cursor-linear-cloud-agents",
+      "path": "practices/cursor-linear-cloud-agents.md",
+      "title": "Cursor Linear \u2014 @Cursor Cloud Agents vs automations",
+      "tags": [
+        "cursor",
+        "linear",
+        "automations",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-03",
+      "when_to_use": "Starting or steering a Cloud Agent from Linear, or configuring repo/model hints on issues",
+      "related": [
+        "cursor-slack-cloud-agents",
+        "cursor-automations",
+        "cursor-cloud-always-on",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "cursor-github-cloud-agents",
+      "path": "practices/cursor-github-cloud-agents.md",
+      "title": "Cursor GitHub \u2014 App install vs @cursor mentions",
+      "tags": [
+        "cursor",
+        "github",
+        "automations",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-03",
+      "when_to_use": "Connecting the Cursor GitHub App, or starting a Cloud Agent with @cursor / @cursoragent on an issue or PR",
+      "related": [
+        "cursor-slack-cloud-agents",
+        "cursor-bugbot-review",
+        "cursor-automations",
+        "cursor-cloud-always-on",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "cursor-cloud-agents-api",
+      "path": "practices/cursor-cloud-agents-api.md",
+      "title": "Cursor Cloud Agents API \u2014 durable agent plus runs",
+      "tags": [
+        "cursor",
+        "api",
+        "sdk",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-03",
+      "when_to_use": "Launching or following up Cloud Agents over HTTPS instead of the Python SDK, CLI, or editor",
+      "related": [
+        "cursor-sdk",
+        "cursor-cloud-always-on",
+        "cursor-self-hosted-pools",
+        "cursor-cloud-agent-metadata"
+      ]
+    },
+    {
+      "id": "openai-codex-plugins",
+      "path": "practices/openai-codex-plugins.md",
+      "title": "Codex plugins and marketplaces",
+      "tags": [
+        "openai",
+        "plugins",
+        "skills",
+        "supply-chain"
+      ],
+      "status": "active",
+      "updated": "2026-09-03",
+      "when_to_use": "Installing or packaging Codex/ChatGPT plugins (.codex-plugin) instead of Cursor or Claude Code plugin formats",
+      "related": [
+        "openai-codex-sdk",
+        "claude-code-plugins",
+        "cursor-plugins",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "claude-code-hooks",
+      "path": "practices/claude-code-hooks.md",
+      "title": "Claude Code hooks \u2014 settings.json lifecycle gates",
+      "tags": [
+        "claude",
+        "hooks",
+        "permissions",
+        "safety"
+      ],
+      "status": "active",
+      "updated": "2026-09-03",
+      "when_to_use": "Authoring .claude/settings.json hooks, or choosing command/http/prompt hooks instead of CLAUDE.md advice",
+      "related": [
+        "memory-files-vs-enforcement-hooks",
+        "cursor-hooks-json",
+        "claude-code-plugins",
+        "permission-modes-allow-ask-deny"
+      ]
+    },
+    {
+      "id": "claude-code-github-action",
+      "path": "practices/claude-code-github-action.md",
+      "title": "Claude Code GitHub Action \u2014 @claude in workflows",
+      "tags": [
+        "claude",
+        "github",
+        "ci",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-03",
+      "when_to_use": "Wiring anthropics/claude-code-action so @claude (or a prompt) runs Claude Code inside GitHub Actions",
+      "related": [
+        "claude-code-hooks",
+        "claude-agent-sdk",
+        "cursor-github-cloud-agents",
+        "cursor-automations"
       ]
     }
   ]

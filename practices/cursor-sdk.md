@@ -3,13 +3,13 @@ id: cursor-sdk
 title: Cursor Python SDK — local and cloud Agent.create
 tags: [cursor, sdk, cli, orchestration]
 status: active
-updated: 2026-08-29
+updated: 2026-09-03
 when_to_use: Scripting the same Cursor agent from Python (local cwd or Cloud VM) instead of the CLI or editor
 ---
 
 ## Summary
 
-`cursor-sdk` (`pip install cursor-sdk`, Python ≥3.10) is one interface for the **local** agent (your disk) and **cloud** agents (Cursor VMs). It is an agent SDK — not a chat-completions API. Auth is `CURSOR_API_KEY` (user or service account; Team Admin keys are not supported yet). Spend appears under the SDK tag.
+`cursor-sdk` (`pip install cursor-sdk`, Python ≥3.10) is one interface for the **local** agent (your disk) and **cloud** agents (Cursor VMs). It is an agent SDK — not a chat-completions API and not the HTTP Cloud Agents API (`cursor-cloud-agents-api`). Auth is `CURSOR_API_KEY` (user or service account; Team Admin keys are not supported yet). Spend appears under the SDK tag.
 
 ## Notes
 

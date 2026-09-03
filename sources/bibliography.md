@@ -538,5 +538,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | codex-rs/app-server README | https://github.com/openai/codex/blob/main/codex-rs/app-server/README.md |
 | Codex SDK | https://developers.openai.com/codex/sdk |
 
+## Daily ingest 2026-09-03 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Linear (Cursor docs) | https://cursor.com/docs/integrations/linear |
+| GitHub (Cursor docs) | https://cursor.com/docs/integrations/github |
+| Cloud Agents | https://cursor.com/docs/cloud-agent |
+| Cloud Agent capabilities | https://cursor.com/docs/cloud-agent/capabilities.md |
+| Cloud Agents API | https://cursor.com/docs/cloud-agent/api/endpoints |
+| Team Pools | https://cursor.com/docs/cloud-agent/self-hosted/pool |
+| My Machines | https://cursor.com/docs/cloud-agent/self-hosted-guides/my-machines |
+| Cursor Automations | https://cursor.com/docs/cloud-agent/automations |
+| Package your plugin (Codex) | https://developers.openai.com/plugins/build/plugins |
+| Codex CLI developer commands | https://developers.openai.com/codex/cli/reference.md |
+| Codex releases | https://github.com/openai/codex/releases |
+| Claude Code hooks reference | https://code.claude.com/docs/en/hooks.md |
+| Automate actions with hooks | https://code.claude.com/docs/en/hooks-guide |
+| Claude Code memory | https://code.claude.com/docs/en/memory |
+| Claude Code GitHub Actions | https://code.claude.com/docs/en/github-actions.md |
+| claude-code-action configuration | https://github.com/anthropics/claude-code-action/blob/main/docs/configuration.md |
+| A2UI v0.9.1 → v1.0 evolution guide | https://a2ui.org/specification/v1.0-evolution-guide/ |
+| A2UI home | https://a2ui.org/ |
+
 
 

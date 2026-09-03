@@ -3,13 +3,13 @@ id: cursor-slack-cloud-agents
 title: Cursor Slack — @cursor Cloud Agents vs subscriptions
 tags: [cursor, slack, automations, orchestration]
 status: active
-updated: 2026-09-01
+updated: 2026-09-03
 when_to_use: Starting or steering a Cloud Agent from Slack, or configuring channel routing / privacy for @cursor
 ---
 
 ## Summary
 
-Slack `@cursor` **starts a Cloud Agent** (plan → work → PR). That is not a **subscription** (a running agent watching a thread) and not an **Automation** (a saved trigger+prompt). Use this page for mention syntax, routing, and Slack privacy; use `cursor-cloud-always-on` / `cursor-automations` for the other two wake-ups.
+Slack `@cursor` **starts a Cloud Agent** (plan → work → PR). That is not a **subscription** (a running agent watching a thread) and not an **Automation** (a saved trigger+prompt). Linear and GitHub have the same mention-vs-automation split (`cursor-linear-cloud-agents`, `cursor-github-cloud-agents`). Use this page for Slack syntax, routing, and privacy.
 
 ## Notes
 
