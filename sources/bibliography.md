@@ -561,5 +561,31 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | A2UI v0.9.1 → v1.0 evolution guide | https://a2ui.org/specification/v1.0-evolution-guide/ |
 | A2UI home | https://a2ui.org/ |
 
+## Daily ingest 2026-09-04 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Create custom subagents | https://code.claude.com/docs/en/sub-agents |
+| How Claude remembers your project | https://code.claude.com/docs/en/memory.md |
+| Connect Claude Code to tools via MCP | https://code.claude.com/docs/en/mcp |
+| Run parallel sessions with worktrees | https://code.claude.com/docs/en/worktrees |
+| Common workflows (Claude Code) | https://code.claude.com/docs/en/common-workflows |
+| Service Accounts (Cursor) | https://cursor.com/docs/account/enterprise/service-accounts |
+| Cloud Agents API | https://cursor.com/docs/cloud-agent/api/endpoints |
+| Cloud Agents API v0 (legacy) | https://cursor.com/docs/cloud-agent/api/v0 |
+| Webhooks (Cursor Cloud Agents) | https://cursor.com/docs/cloud-agent/api/webhooks |
+| Team Pools | https://cursor.com/docs/cloud-agent/self-hosted/pool |
+| Cloud environments (Codex) | https://learn.chatgpt.com/docs/environments/cloud-environment |
+| openai/codex-universal | https://github.com/openai/codex-universal |
+| Permissions (Codex) | https://learn.chatgpt.com/docs/permissions |
+| Codex GitHub Action | https://developers.openai.com/codex/github-action.md |
+| openai/codex-action README | https://github.com/openai/codex-action/blob/main/README.md |
+| About GitHub Copilot cloud agent | https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent |
+| GitHub Copilot cloud agent how-tos | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent |
+| Invoking custom agents (Copilot CLI) | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/invoke-custom-agents |
+| Copilot coding agent AGENTS.md | https://github.blog/changelog/2025-08-28-copilot-coding-agent-now-supports-agents-md-custom-instructions/ |
+| Cursor MCP | https://cursor.com/docs/mcp |
+| AGENTS.md | https://agents.md/ |
+
 
 
