@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -3716,6 +3716,206 @@
         "claude-code-github-action",
         "agents-md-open-format",
         "openai-codex-github-action"
+      ]
+    },
+    {
+      "id": "claude-code-permissions",
+      "path": "practices/claude-code-permissions.md",
+      "title": "Claude Code permissions — allow / ask / deny vs modes",
+      "tags": [
+        "claude",
+        "permissions",
+        "safety",
+        "hooks"
+      ],
+      "status": "active",
+      "updated": "2026-09-05",
+      "when_to_use": "Writing Claude Code permission rules or choosing defaultMode vs a PreToolUse hook",
+      "related": [
+        "permission-modes-allow-ask-deny",
+        "claude-code-sandboxing",
+        "claude-code-hooks",
+        "claude-code-settings"
+      ]
+    },
+    {
+      "id": "claude-code-sandboxing",
+      "path": "practices/claude-code-sandboxing.md",
+      "title": "Claude Code sandbox — OS isolation for Bash",
+      "tags": [
+        "claude",
+        "sandbox",
+        "security",
+        "permissions"
+      ],
+      "status": "active",
+      "updated": "2026-09-05",
+      "when_to_use": "Enabling Claude Code /sandbox, or deciding OS isolation vs permission rules",
+      "related": [
+        "claude-code-permissions",
+        "agent-code-sandboxing",
+        "cursor-sandbox-json",
+        "openai-codex-permissions"
+      ]
+    },
+    {
+      "id": "claude-code-headless",
+      "path": "practices/claude-code-headless.md",
+      "title": "Claude Code headless — claude -p and --bare",
+      "tags": [
+        "claude",
+        "cli",
+        "ci",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-05",
+      "when_to_use": "Scripting Claude Code in CI, or choosing --bare vs loading project hooks/MCP",
+      "related": [
+        "claude-agent-sdk",
+        "cursor-cli-headless",
+        "claude-code-mcp",
+        "claude-code-github-action"
+      ]
+    },
+    {
+      "id": "claude-code-settings",
+      "path": "practices/claude-code-settings.md",
+      "title": "Claude Code settings.json — scopes and precedence",
+      "tags": [
+        "claude",
+        "config",
+        "permissions",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-09-05",
+      "when_to_use": "Choosing user vs project vs managed settings, or debugging which file won",
+      "related": [
+        "claude-code-permissions",
+        "claude-code-hooks",
+        "claude-code-memory",
+        "claude-code-mcp"
+      ]
+    },
+    {
+      "id": "openai-codex-mcp",
+      "path": "practices/openai-codex-mcp.md",
+      "title": "Codex MCP — config.toml servers vs deprecated mcp-server",
+      "tags": [
+        "openai",
+        "mcp",
+        "config",
+        "auth"
+      ],
+      "status": "active",
+      "updated": "2026-09-05",
+      "when_to_use": "Adding stdio or HTTP MCP to Codex, or replacing a codex mcp-server integration",
+      "related": [
+        "openai-codex-sdk",
+        "openai-codex-plugins",
+        "claude-code-mcp",
+        "cursor-mcp-json"
+      ]
+    },
+    {
+      "id": "openai-codex-agents-md",
+      "path": "practices/openai-codex-agents-md.md",
+      "title": "Codex AGENTS.md discovery — override files and byte cap",
+      "tags": [
+        "openai",
+        "agents-md",
+        "config",
+        "memory"
+      ],
+      "status": "active",
+      "updated": "2026-09-05",
+      "when_to_use": "Authoring Codex-specific AGENTS.md layers, or debugging which instruction file won",
+      "related": [
+        "agents-md-open-format",
+        "claude-code-memory",
+        "openai-codex-permissions",
+        "agents-md-and-rules-budget"
+      ]
+    },
+    {
+      "id": "github-copilot-custom-agents",
+      "path": "practices/github-copilot-custom-agents.md",
+      "title": "GitHub Copilot custom agents — .agent.md profiles",
+      "tags": [
+        "github",
+        "subagent",
+        "orchestration",
+        "mcp"
+      ],
+      "status": "active",
+      "updated": "2026-09-05",
+      "when_to_use": "Authoring Copilot .agent.md profiles for CLI or cloud agent, or scoping tools/MCP per persona",
+      "related": [
+        "github-copilot-coding-agent",
+        "github-copilot-cli",
+        "cursor-custom-subagents",
+        "claude-code-subagents"
+      ]
+    },
+    {
+      "id": "github-copilot-cli",
+      "path": "practices/github-copilot-cli.md",
+      "title": "GitHub Copilot CLI — terminal agent vs cloud coding agent",
+      "tags": [
+        "github",
+        "cli",
+        "permissions",
+        "sandbox"
+      ],
+      "status": "active",
+      "updated": "2026-09-05",
+      "when_to_use": "Running copilot in a terminal or -p script, or contrasting it with Copilot cloud agent",
+      "related": [
+        "github-copilot-coding-agent",
+        "github-copilot-custom-agents",
+        "cursor-cli-headless",
+        "claude-code-headless"
+      ]
+    },
+    {
+      "id": "gemini-cli-skills",
+      "path": "practices/gemini-cli-skills.md",
+      "title": "Gemini CLI Agent Skills — activate_skill and discovery tiers",
+      "tags": [
+        "gemini",
+        "skills",
+        "cli",
+        "tokens"
+      ],
+      "status": "active",
+      "updated": "2026-09-05",
+      "when_to_use": "Installing or authoring SKILL.md for Gemini CLI, or contrasting skills with GEMINI.md",
+      "related": [
+        "agent-skills-open-standard",
+        "gemini-cli-mcp",
+        "gemini-cli-acp",
+        "skills-dispatch-hygiene"
+      ]
+    },
+    {
+      "id": "gemini-cli-mcp",
+      "path": "practices/gemini-cli-mcp.md",
+      "title": "Gemini CLI MCP — settings.json servers and OAuth",
+      "tags": [
+        "gemini",
+        "mcp",
+        "config",
+        "auth"
+      ],
+      "status": "active",
+      "updated": "2026-09-05",
+      "when_to_use": "Adding MCP to Gemini CLI, or debugging trust / OAuth / env redaction",
+      "related": [
+        "gemini-cli-acp",
+        "gemini-cli-skills",
+        "claude-code-mcp",
+        "mcp-oauth-scopes"
       ]
     }
   ]

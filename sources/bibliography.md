@@ -587,5 +587,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Cursor MCP | https://cursor.com/docs/mcp |
 | AGENTS.md | https://agents.md/ |
 
+## Daily ingest 2026-09-05 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Configure permissions (Claude Code) | https://code.claude.com/docs/en/permissions |
+| Claude Code settings | https://code.claude.com/docs/en/settings |
+| Configure the sandboxed Bash tool | https://code.claude.com/docs/en/sandboxing |
+| Run Claude Code programmatically | https://code.claude.com/docs/en/headless |
+| CLI reference (Claude Code) | https://code.claude.com/docs/en/cli-reference |
+| Model Context Protocol (Codex) | https://developers.openai.com/codex/mcp |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+| Command line options (Codex CLI) | https://developers.openai.com/codex/cli/reference |
+| Custom instructions with AGENTS.md (Codex) | https://learn.chatgpt.com/docs/agent-configuration/agents-md |
+| Advanced Configuration (Codex) | https://learn.chatgpt.com/docs/config-file/config-advanced |
+| Custom agents configuration (Copilot) | https://docs.github.com/en/copilot/reference/custom-agents-configuration |
+| Creating custom agents for Copilot cloud agent | https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents |
+| Invoking custom agents (Copilot CLI) | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/invoke-custom-agents |
+| About GitHub Copilot CLI | https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-copilot-cli |
+| Using GitHub Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview |
+| Allowing and denying tool use (Copilot CLI) | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools |
+| Agent Skills (Gemini CLI) | https://geminicli.com/docs/cli/skills/ |
+| Creating Agent Skills (Gemini CLI) | https://geminicli.com/docs/cli/creating-skills/ |
+| Agent Skills specification | https://agentskills.io/specification |
+| MCP servers with Gemini CLI | https://geminicli.com/docs/tools/mcp-server/ |
+| Gemini CLI configuration | https://geminicli.com/docs/reference/configuration/ |
+| Gemini CLI for the enterprise | https://geminicli.com/docs/cli/enterprise/ |
+
 
 
