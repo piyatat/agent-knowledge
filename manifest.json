@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-05",
+  "updated": "2026-09-06",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1289,7 +1289,8 @@
         "malicious-skills-supply-chain",
         "skills-invocation-modes",
         "cursor-plugins",
-        "claude-skills-api"
+        "claude-skills-api",
+        "github-copilot-skills"
       ]
     },
     {
@@ -2947,7 +2948,8 @@
         "agent-client-protocol-acp",
         "acp-v2-session-lifecycle",
         "cursor-cli-headless",
-        "cursor-custom-subagents"
+        "cursor-custom-subagents",
+        "cursor-jetbrains-acp"
       ]
     },
     {
@@ -3131,7 +3133,9 @@
         "agents-md-and-rules-budget",
         "cursor-rules-layers",
         "a2a-aaif-governance",
-        "knowledge-corpus-pattern"
+        "knowledge-corpus-pattern",
+        "github-copilot-instructions",
+        "gemini-cli-gemini-md"
       ]
     },
     {
@@ -3675,7 +3679,8 @@
         "openai-codex-github-action",
         "openai-codex-sdk",
         "permission-modes-allow-ask-deny",
-        "openai-codex-cloud-environments"
+        "openai-codex-cloud-environments",
+        "openai-codex-sandbox"
       ]
     },
     {
@@ -3715,7 +3720,10 @@
         "cursor-github-cloud-agents",
         "claude-code-github-action",
         "agents-md-open-format",
-        "openai-codex-github-action"
+        "openai-codex-github-action",
+        "github-copilot-instructions",
+        "github-copilot-mcp",
+        "github-copilot-skills"
       ]
     },
     {
@@ -3755,7 +3763,9 @@
         "claude-code-permissions",
         "agent-code-sandboxing",
         "cursor-sandbox-json",
-        "openai-codex-permissions"
+        "openai-codex-permissions",
+        "openai-codex-sandbox",
+        "gemini-cli-sandboxing"
       ]
     },
     {
@@ -3855,7 +3865,9 @@
         "github-copilot-coding-agent",
         "github-copilot-cli",
         "cursor-custom-subagents",
-        "claude-code-subagents"
+        "claude-code-subagents",
+        "github-copilot-skills",
+        "github-copilot-mcp"
       ]
     },
     {
@@ -3875,7 +3887,10 @@
         "github-copilot-coding-agent",
         "github-copilot-custom-agents",
         "cursor-cli-headless",
-        "claude-code-headless"
+        "claude-code-headless",
+        "github-copilot-instructions",
+        "github-copilot-mcp",
+        "github-copilot-skills"
       ]
     },
     {
@@ -3895,7 +3910,9 @@
         "agent-skills-open-standard",
         "gemini-cli-mcp",
         "gemini-cli-acp",
-        "skills-dispatch-hygiene"
+        "skills-dispatch-hygiene",
+        "gemini-cli-gemini-md",
+        "gemini-cli-extensions"
       ]
     },
     {
@@ -3915,7 +3932,210 @@
         "gemini-cli-acp",
         "gemini-cli-skills",
         "claude-code-mcp",
-        "mcp-oauth-scopes"
+        "mcp-oauth-scopes",
+        "gemini-cli-extensions",
+        "gemini-cli-settings"
+      ]
+    },
+    {
+      "id": "gemini-cli-gemini-md",
+      "path": "practices/gemini-cli-gemini-md.md",
+      "title": "Gemini CLI GEMINI.md — hierarchical context files",
+      "tags": [
+        "gemini",
+        "memory",
+        "agents-md",
+        "context"
+      ],
+      "status": "active",
+      "updated": "2026-09-06",
+      "when_to_use": "Authoring GEMINI.md, importing context with @file.md, or pointing Gemini CLI at AGENTS.md",
+      "related": [
+        "gemini-cli-skills",
+        "agents-md-open-format",
+        "gemini-cli-settings",
+        "agents-md-and-rules-budget"
+      ]
+    },
+    {
+      "id": "gemini-cli-sandboxing",
+      "path": "practices/gemini-cli-sandboxing.md",
+      "title": "Gemini CLI sandbox — Seatbelt, Docker, gVisor, LXC",
+      "tags": [
+        "gemini",
+        "sandbox",
+        "isolation",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-06",
+      "when_to_use": "Enabling Gemini CLI --sandbox, or choosing Docker vs Seatbelt vs gVisor isolation",
+      "related": [
+        "gemini-cli-settings",
+        "agent-code-sandboxing",
+        "claude-code-sandboxing",
+        "openai-codex-sandbox"
+      ]
+    },
+    {
+      "id": "gemini-cli-extensions",
+      "path": "practices/gemini-cli-extensions.md",
+      "title": "Gemini CLI extensions — gemini-extension.json packages",
+      "tags": [
+        "gemini",
+        "extensions",
+        "mcp",
+        "skills"
+      ],
+      "status": "active",
+      "updated": "2026-09-06",
+      "when_to_use": "Packaging or installing a Gemini CLI extension instead of loose settings.json MCP or skills",
+      "related": [
+        "gemini-cli-mcp",
+        "gemini-cli-skills",
+        "cursor-plugins",
+        "claude-code-plugins",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "gemini-cli-settings",
+      "path": "practices/gemini-cli-settings.md",
+      "title": "Gemini CLI settings.json — scopes and system overrides",
+      "tags": [
+        "gemini",
+        "config",
+        "governance",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-06",
+      "when_to_use": "Choosing user vs workspace vs system Gemini settings, or enforcing YOLO/sandbox/MCP allowlists",
+      "related": [
+        "gemini-cli-mcp",
+        "gemini-cli-sandboxing",
+        "gemini-cli-gemini-md",
+        "claude-code-settings"
+      ]
+    },
+    {
+      "id": "github-copilot-instructions",
+      "path": "practices/github-copilot-instructions.md",
+      "title": "GitHub Copilot custom instructions — copilot-instructions.md vs AGENTS.md",
+      "tags": [
+        "github",
+        "agents-md",
+        "memory",
+        "prompts"
+      ],
+      "status": "active",
+      "updated": "2026-09-06",
+      "when_to_use": "Authoring .github/copilot-instructions.md, path-specific instructions, or choosing vs AGENTS.md",
+      "related": [
+        "github-copilot-skills",
+        "github-copilot-coding-agent",
+        "agents-md-open-format",
+        "github-copilot-cli"
+      ]
+    },
+    {
+      "id": "github-copilot-mcp",
+      "path": "practices/github-copilot-mcp.md",
+      "title": "GitHub Copilot MCP — repo settings vs CLI mcp-config.json",
+      "tags": [
+        "github",
+        "mcp",
+        "auth",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-06",
+      "when_to_use": "Adding MCP for Copilot cloud agent / code review, or contrasting it with Copilot CLI MCP",
+      "related": [
+        "github-copilot-coding-agent",
+        "github-copilot-cli",
+        "github-copilot-custom-agents",
+        "mcp-server-trust-failures"
+      ]
+    },
+    {
+      "id": "github-copilot-skills",
+      "path": "practices/github-copilot-skills.md",
+      "title": "GitHub Copilot Agent Skills — SKILL.md and gh skill",
+      "tags": [
+        "github",
+        "skills",
+        "cli",
+        "supply-chain"
+      ],
+      "status": "active",
+      "updated": "2026-09-06",
+      "when_to_use": "Adding SKILL.md for Copilot cloud agent / CLI / IDE, or installing skills with gh skill",
+      "related": [
+        "agent-skills-open-standard",
+        "github-copilot-instructions",
+        "github-copilot-cli",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "claude-code-checkpointing",
+      "path": "practices/claude-code-checkpointing.md",
+      "title": "Claude Code checkpointing — /rewind file snapshots",
+      "tags": [
+        "claude",
+        "session",
+        "ux",
+        "git"
+      ],
+      "status": "active",
+      "updated": "2026-09-06",
+      "when_to_use": "Using /rewind to undo Claude Code edits, or deciding checkpoints vs git",
+      "related": [
+        "claude-code-headless",
+        "claude-code-subagents",
+        "context-compaction",
+        "cursor-worktrees"
+      ]
+    },
+    {
+      "id": "cursor-jetbrains-acp",
+      "path": "practices/cursor-jetbrains-acp.md",
+      "title": "Cursor in JetBrains — ACP Registry agent",
+      "tags": [
+        "cursor",
+        "acp",
+        "interoperability",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-06",
+      "when_to_use": "Running Cursor’s agent inside IntelliJ/PyCharm/WebStorm instead of the Cursor editor",
+      "related": [
+        "cursor-acp-extensions",
+        "agent-client-protocol-acp",
+        "gemini-cli-acp",
+        "cursor-cli-headless"
+      ]
+    },
+    {
+      "id": "openai-codex-sandbox",
+      "path": "practices/openai-codex-sandbox.md",
+      "title": "Codex sandbox — workspace-write vs approvals",
+      "tags": [
+        "openai",
+        "sandbox",
+        "permissions",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-06",
+      "when_to_use": "Setting Codex sandbox_mode / approval_policy, or contrasting them with permission profiles",
+      "related": [
+        "openai-codex-permissions",
+        "openai-codex-cloud-environments",
+        "claude-code-sandboxing",
+        "gemini-cli-sandboxing"
       ]
     }
   ]

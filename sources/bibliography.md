@@ -614,5 +614,34 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Gemini CLI configuration | https://geminicli.com/docs/reference/configuration/ |
 | Gemini CLI for the enterprise | https://geminicli.com/docs/cli/enterprise/ |
 
+## Daily ingest 2026-09-06 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Provide context with GEMINI.md files | https://geminicli.com/docs/cli/gemini-md/ |
+| Memory Import Processor | https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/memport.md |
+| Gemini CLI settings | https://geminicli.com/docs/cli/settings/ |
+| Sandboxing in Gemini CLI | https://geminicli.com/docs/cli/sandbox/ |
+| Gemini CLI for the enterprise | https://geminicli.com/docs/cli/enterprise/ |
+| Extension reference (Gemini CLI) | https://geminicli.com/docs/extensions/reference/ |
+| Gemini CLI configuration | https://geminicli.com/docs/reference/configuration/ |
+| Adding repository custom instructions | https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions |
+| About customizing GitHub Copilot responses | https://docs.github.com/en/copilot/concepts/prompting/response-customization |
+| Copilot customization cheat sheet | https://docs.github.com/en/copilot/reference/customization-cheat-sheet |
+| Configure MCP servers for your repository | https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers |
+| Custom agents configuration (Copilot) | https://docs.github.com/en/copilot/reference/custom-agents-configuration |
+| About agent skills (Copilot) | https://docs.github.com/en/copilot/concepts/agents/about-agent-skills |
+| Adding agent skills for GitHub Copilot | https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills |
+| Agent Skills specification | https://agentskills.io/specification |
+| Checkpointing (Claude Code) | https://code.claude.com/docs/en/checkpointing |
+| Claude Code VS Code | https://code.claude.com/docs/en/vs-code |
+| JetBrains (Cursor) | https://cursor.com/docs/integrations/jetbrains |
+| ACP (Cursor CLI) | https://cursor.com/docs/cli/acp.md |
+| ACP protocol overview | https://agentclientprotocol.com/protocol/overview |
+| Sandbox (Codex) | https://learn.chatgpt.com/docs/sandboxing |
+| Agent approvals & security (Codex) | https://learn.chatgpt.com/docs/agent-approvals-security |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+| Permissions (Codex) | https://learn.chatgpt.com/docs/permissions |
+
 
 
