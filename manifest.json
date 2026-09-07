@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-06",
+  "updated": "2026-09-07",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -580,7 +580,8 @@
         "human-in-the-loop-approvals",
         "openai-computer-tool",
         "claude-computer-browser-toolsets",
-        "cursor-self-hosted-computer-use"
+        "cursor-self-hosted-computer-use",
+        "cursor-browser"
       ]
     },
     {
@@ -1290,7 +1291,9 @@
         "skills-invocation-modes",
         "cursor-plugins",
         "claude-skills-api",
-        "github-copilot-skills"
+        "github-copilot-skills",
+        "claude-code-skills",
+        "openai-codex-skills"
       ]
     },
     {
@@ -2053,7 +2056,8 @@
         "subagent-context-isolation",
         "cursor-cloud-always-on",
         "cursor-worktrees",
-        "skills-invocation-modes"
+        "skills-invocation-modes",
+        "cursor-browser"
       ]
     },
     {
@@ -3113,7 +3117,8 @@
         "cursor-plugins",
         "agent-skills-open-standard",
         "malicious-skills-supply-chain",
-        "claude-agent-sdk"
+        "claude-agent-sdk",
+        "claude-code-skills"
       ]
     },
     {
@@ -3479,7 +3484,8 @@
         "openai-codex-sdk",
         "claude-code-plugins",
         "cursor-plugins",
-        "malicious-skills-supply-chain"
+        "malicious-skills-supply-chain",
+        "openai-codex-skills"
       ]
     },
     {
@@ -3723,7 +3729,8 @@
         "openai-codex-github-action",
         "github-copilot-instructions",
         "github-copilot-mcp",
-        "github-copilot-skills"
+        "github-copilot-skills",
+        "github-copilot-code-review"
       ]
     },
     {
@@ -3743,7 +3750,8 @@
         "permission-modes-allow-ask-deny",
         "claude-code-sandboxing",
         "claude-code-hooks",
-        "claude-code-settings"
+        "claude-code-settings",
+        "claude-code-plan-mode"
       ]
     },
     {
@@ -4015,7 +4023,10 @@
         "gemini-cli-mcp",
         "gemini-cli-sandboxing",
         "gemini-cli-gemini-md",
-        "claude-code-settings"
+        "claude-code-settings",
+        "gemini-cli-hooks",
+        "gemini-cli-headless",
+        "gemini-cli-trusted-folders"
       ]
     },
     {
@@ -4035,7 +4046,8 @@
         "github-copilot-skills",
         "github-copilot-coding-agent",
         "agents-md-open-format",
-        "github-copilot-cli"
+        "github-copilot-cli",
+        "github-copilot-code-review"
       ]
     },
     {
@@ -4055,7 +4067,8 @@
         "github-copilot-coding-agent",
         "github-copilot-cli",
         "github-copilot-custom-agents",
-        "mcp-server-trust-failures"
+        "mcp-server-trust-failures",
+        "github-copilot-code-review"
       ]
     },
     {
@@ -4075,7 +4088,8 @@
         "agent-skills-open-standard",
         "github-copilot-instructions",
         "github-copilot-cli",
-        "malicious-skills-supply-chain"
+        "malicious-skills-supply-chain",
+        "github-copilot-code-review"
       ]
     },
     {
@@ -4095,7 +4109,8 @@
         "claude-code-headless",
         "claude-code-subagents",
         "context-compaction",
-        "cursor-worktrees"
+        "cursor-worktrees",
+        "cursor-checkpoints"
       ]
     },
     {
@@ -4136,6 +4151,212 @@
         "openai-codex-cloud-environments",
         "claude-code-sandboxing",
         "gemini-cli-sandboxing"
+      ]
+    },
+    {
+      "id": "openai-codex-skills",
+      "path": "practices/openai-codex-skills.md",
+      "title": "Codex Agent Skills — SKILL.md discovery and invocation",
+      "tags": [
+        "openai",
+        "skills",
+        "cli",
+        "tokens"
+      ],
+      "status": "active",
+      "updated": "2026-09-07",
+      "when_to_use": "Authoring or installing SKILL.md for Codex, or contrasting Codex skills with plugins",
+      "related": [
+        "openai-codex-plugins",
+        "openai-codex-agents-md",
+        "agent-skills-open-standard",
+        "claude-code-skills",
+        "github-copilot-skills"
+      ]
+    },
+    {
+      "id": "openai-codex-hooks",
+      "path": "practices/openai-codex-hooks.md",
+      "title": "Codex hooks — hooks.json lifecycle gates",
+      "tags": [
+        "openai",
+        "hooks",
+        "permissions",
+        "safety"
+      ],
+      "status": "active",
+      "updated": "2026-09-07",
+      "when_to_use": "Authoring Codex hooks.json or inline [hooks], or choosing managed vs project hooks",
+      "related": [
+        "claude-code-hooks",
+        "cursor-hooks-json",
+        "gemini-cli-hooks",
+        "memory-files-vs-enforcement-hooks",
+        "openai-codex-plugins"
+      ]
+    },
+    {
+      "id": "gemini-cli-hooks",
+      "path": "practices/gemini-cli-hooks.md",
+      "title": "Gemini CLI hooks — settings.json lifecycle scripts",
+      "tags": [
+        "gemini",
+        "hooks",
+        "permissions",
+        "safety"
+      ],
+      "status": "active",
+      "updated": "2026-09-07",
+      "when_to_use": "Authoring Gemini CLI hooks in settings.json, or comparing them with Claude/Codex/Cursor hooks",
+      "related": [
+        "gemini-cli-settings",
+        "gemini-cli-extensions",
+        "gemini-cli-trusted-folders",
+        "claude-code-hooks",
+        "openai-codex-hooks"
+      ]
+    },
+    {
+      "id": "gemini-cli-headless",
+      "path": "practices/gemini-cli-headless.md",
+      "title": "Gemini CLI headless — -p scripts and JSON output",
+      "tags": [
+        "gemini",
+        "cli",
+        "ci",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-07",
+      "when_to_use": "Scripting Gemini CLI in CI, or choosing -p / --output-format vs an interactive session",
+      "related": [
+        "gemini-cli-trusted-folders",
+        "gemini-cli-sandboxing",
+        "gemini-cli-settings",
+        "claude-code-headless",
+        "cursor-cli-headless"
+      ]
+    },
+    {
+      "id": "gemini-cli-trusted-folders",
+      "path": "practices/gemini-cli-trusted-folders.md",
+      "title": "Gemini CLI trusted folders — workspace safe mode",
+      "tags": [
+        "gemini",
+        "security",
+        "config",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-09-07",
+      "when_to_use": "Enabling Gemini folder trust, or debugging CI FatalUntrustedWorkspaceError",
+      "related": [
+        "gemini-cli-headless",
+        "gemini-cli-settings",
+        "gemini-cli-mcp",
+        "gemini-cli-sandboxing"
+      ]
+    },
+    {
+      "id": "github-copilot-code-review",
+      "path": "practices/github-copilot-code-review.md",
+      "title": "GitHub Copilot code review — agentic PR comments",
+      "tags": [
+        "github",
+        "review",
+        "ci",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-07",
+      "when_to_use": "Requesting Copilot as a PR reviewer, or contrasting it with Copilot cloud agent / Cursor Bugbot",
+      "related": [
+        "github-copilot-coding-agent",
+        "github-copilot-instructions",
+        "github-copilot-skills",
+        "github-copilot-mcp",
+        "cursor-bugbot-review"
+      ]
+    },
+    {
+      "id": "claude-code-skills",
+      "path": "practices/claude-code-skills.md",
+      "title": "Claude Code skills — SKILL.md vs .claude/commands",
+      "tags": [
+        "claude",
+        "skills",
+        "cli",
+        "tokens"
+      ],
+      "status": "active",
+      "updated": "2026-09-07",
+      "when_to_use": "Authoring .claude/skills SKILL.md, or migrating .claude/commands into skills",
+      "related": [
+        "claude-code-plugins",
+        "claude-skills-api",
+        "agent-skills-open-standard",
+        "openai-codex-skills",
+        "skills-invocation-modes"
+      ]
+    },
+    {
+      "id": "claude-code-plan-mode",
+      "path": "practices/claude-code-plan-mode.md",
+      "title": "Claude Code plan mode — research then approve",
+      "tags": [
+        "claude",
+        "permissions",
+        "orchestration",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-07",
+      "when_to_use": "Starting Claude Code in plan mode, or reviewing the plan-approval flow before edits",
+      "related": [
+        "claude-code-permissions",
+        "cursor-agent-modes",
+        "human-in-the-loop-approvals",
+        "claude-code-sandboxing"
+      ]
+    },
+    {
+      "id": "cursor-browser",
+      "path": "practices/cursor-browser.md",
+      "title": "Cursor Agent browser — native MCP webview",
+      "tags": [
+        "cursor",
+        "browser",
+        "computer-use",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-07",
+      "when_to_use": "Letting Cursor Agent drive a browser, or configuring enterprise origin allowlists",
+      "related": [
+        "computer-use-containment",
+        "cursor-custom-subagents",
+        "playwright-mcp-containment",
+        "cursor-self-hosted-computer-use"
+      ]
+    },
+    {
+      "id": "cursor-checkpoints",
+      "path": "practices/cursor-checkpoints.md",
+      "title": "Cursor Agent checkpoints — local file snapshots",
+      "tags": [
+        "cursor",
+        "session",
+        "ux",
+        "git"
+      ],
+      "status": "active",
+      "updated": "2026-09-07",
+      "when_to_use": "Restoring a Cursor Agent checkpoint, or deciding checkpoints vs git / Claude /rewind",
+      "related": [
+        "claude-code-checkpointing",
+        "cursor-worktrees",
+        "cursor-custom-subagents",
+        "cursor-cli-headless"
       ]
     }
   ]

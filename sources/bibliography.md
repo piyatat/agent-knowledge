@@ -643,5 +643,43 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
 | Permissions (Codex) | https://learn.chatgpt.com/docs/permissions |
 
+## Daily ingest 2026-09-07 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Agent Skills – Codex | https://developers.openai.com/codex/skills |
+| Build skills (Codex) | https://developers.openai.com/codex/build-skills |
+| Customization – Codex | https://developers.openai.com/codex/concepts/customization |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+| Agent Skills specification | https://agentskills.io/specification |
+| Hooks (Codex) | https://developers.openai.com/codex/hooks |
+| Managed configuration (Codex) | https://developers.openai.com/codex/enterprise/managed-configuration |
+| Slash commands in Codex CLI | https://developers.openai.com/codex/cli/slash-commands |
+| Gemini CLI hooks | https://geminicli.com/docs/hooks/ |
+| Hooks reference (Gemini CLI) | https://geminicli.com/docs/hooks/reference/ |
+| Writing hooks for Gemini CLI | https://geminicli.com/docs/hooks/writing-hooks/ |
+| Gemini CLI configuration | https://geminicli.com/docs/reference/configuration/ |
+| Headless mode reference | https://geminicli.com/docs/cli/headless/ |
+| Automate tasks with headless mode | https://geminicli.com/docs/cli/tutorials/automation/ |
+| Trusted Folders (Gemini CLI) | https://geminicli.com/docs/cli/trusted-folders/ |
+| Gemini CLI settings | https://geminicli.com/docs/cli/settings/ |
+| Gemini CLI for the enterprise | https://geminicli.com/docs/cli/enterprise/ |
+| Using GitHub Copilot code review on GitHub | https://docs.github.com/en/copilot/how-tos/copilot-on-github/use-copilot-agents/copilot-code-review |
+| Copilot code review now runs on an agentic architecture | https://github.blog/changelog/2026-03-05-copilot-code-review-now-runs-on-an-agentic-architecture/ |
+| Using custom instructions to unlock the power of Copilot code review | https://docs.github.com/en/copilot/tutorials/customize-code-review |
+| Adding agent skills for GitHub Copilot | https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills |
+| Extend Claude with skills | https://code.claude.com/docs/en/custom-skills |
+| Skills (Claude Code) | https://code.claude.com/docs/en/skills |
+| Claude Code plugins | https://code.claude.com/docs/en/plugins |
+| Choose a permission mode | https://code.claude.com/docs/en/permission-modes |
+| Configure permissions | https://code.claude.com/docs/en/permissions |
+| Commands reference | https://code.claude.com/docs/en/commands |
+| Common workflows | https://code.claude.com/docs/en/common-workflows |
+| Browser (Cursor) | https://cursor.com/docs/agent/tools/browser |
+| Cursor Agent overview | https://cursor.com/docs/agent/overview |
+| Subagents (Cursor) | https://cursor.com/docs/subagents |
+| Using Agent in CLI | https://cursor.com/docs/cli/using |
+| CLI Changelog | https://cursor.com/docs/cli/changelog |
+
 
 
