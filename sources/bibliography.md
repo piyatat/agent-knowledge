@@ -681,5 +681,41 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Using Agent in CLI | https://cursor.com/docs/cli/using |
 | CLI Changelog | https://cursor.com/docs/cli/changelog |
 
+## Daily ingest 2026-09-09 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Output styles (Claude Code) | https://code.claude.com/docs/en/output-styles |
+| Claude Code settings | https://code.claude.com/docs/en/settings |
+| What's new 2026-w34 — Concise style | https://code.claude.com/docs/en/whats-new/2026-w34 |
+| Modifying system prompts (Agent SDK) | https://code.claude.com/docs/en/agent-sdk/modifying-system-prompts |
+| Customize your status line | https://code.claude.com/docs/en/statusline |
+| Discover and install plugins — code intelligence | https://code.claude.com/docs/en/discover-plugins |
+| Plugins reference — LSP servers | https://code.claude.com/docs/en/plugins-reference |
+| Create plugins — add LSP servers | https://code.claude.com/docs/en/plugins |
+| Large codebases (Claude Code) | https://code.claude.com/docs/en/large-codebases |
+| Use Claude Code in VS Code | https://code.claude.com/docs/en/vs-code |
+| Claude Code overview — VS Code | https://code.claude.com/docs/en/overview |
+| Slash commands in Codex CLI | https://developers.openai.com/codex/cli/slash-commands |
+| Code review (ChatGPT / Codex) | https://learn.chatgpt.com/docs/code-review |
+| Codex CLI command reference — codex review | https://developers.openai.com/codex/cli/reference |
+| Long-running work (Codex) | https://developers.openai.com/codex/long-running-work |
+| Using Goals in Codex | https://developers.openai.com/cookbook/examples/codex/using_goals_in_codex |
+| Run long horizon tasks with Codex | https://developers.openai.com/blog/run-long-horizon-tasks-with-codex |
+| Plan Mode (Gemini CLI) | https://geminicli.com/docs/cli/plan-mode/ |
+| Planning tools (Gemini CLI) | https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/planning.md |
+| Gemini CLI commands | https://geminicli.com/docs/reference/commands/ |
+| Plan mode announcement (Gemini CLI) | https://developers.googleblog.com/plan-mode-now-available-in-gemini-cli/ |
+| Checkpointing (Gemini CLI) | https://geminicli.com/docs/cli/checkpointing/ |
+| Gemini CLI settings | https://geminicli.com/docs/cli/settings/ |
+| About GitHub Copilot Spaces | https://docs.github.com/en/copilot/concepts/context/spaces |
+| Creating GitHub Copilot Spaces | https://docs.github.com/en/copilot/how-tos/provide-context/use-copilot-spaces/create-copilot-spaces |
+| Using GitHub Copilot Spaces | https://docs.github.com/en/copilot/how-tos/provide-context/use-copilot-spaces/use-copilot-spaces |
+| Remote GitHub MCP Server — copilot_spaces | https://github.com/github/github-mcp-server/blob/main/docs/remote-server.md |
+| Asking GitHub Copilot questions in your IDE | https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide |
+| About GitHub Copilot cloud agent — vs agent mode | https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent |
+| GitHub Copilot features — agentic | https://docs.github.com/en/copilot/get-started/features |
+| Using Copilot cloud agent in your IDE | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-in-your-ide |
+
 
 

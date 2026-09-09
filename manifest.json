@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-07",
+  "updated": "2026-09-09",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -4357,6 +4357,210 @@
         "cursor-worktrees",
         "cursor-custom-subagents",
         "cursor-cli-headless"
+      ]
+    },
+    {
+      "id": "claude-code-output-styles",
+      "path": "practices/claude-code-output-styles.md",
+      "title": "Claude Code output styles — role, tone, and format",
+      "tags": [
+        "claude",
+        "prompts",
+        "ux",
+        "tokens"
+      ],
+      "status": "active",
+      "updated": "2026-09-09",
+      "when_to_use": "Changing how Claude Code replies every turn, or authoring a custom output-styles markdown file",
+      "related": [
+        "claude-code-settings",
+        "claude-code-memory",
+        "claude-code-skills",
+        "claude-code-plan-mode"
+      ]
+    },
+    {
+      "id": "claude-code-statusline",
+      "path": "practices/claude-code-statusline.md",
+      "title": "Claude Code status line — local stdin JSON bar",
+      "tags": [
+        "claude",
+        "ux",
+        "cli",
+        "observability"
+      ],
+      "status": "active",
+      "updated": "2026-09-09",
+      "when_to_use": "Authoring a Claude Code statusLine command, or debugging a missing/stale footer bar",
+      "related": [
+        "claude-code-settings",
+        "claude-code-output-styles",
+        "context-compaction"
+      ]
+    },
+    {
+      "id": "claude-code-lsp",
+      "path": "practices/claude-code-lsp.md",
+      "title": "Claude Code LSP — language-server code intelligence",
+      "tags": [
+        "claude",
+        "tools",
+        "plugins",
+        "quality"
+      ],
+      "status": "active",
+      "updated": "2026-09-09",
+      "when_to_use": "Installing an LSP plugin so Claude can jump to defs / see type errors, or writing .lsp.json",
+      "related": [
+        "claude-code-plugins",
+        "claude-code-mcp",
+        "tool-result-observation-budgets",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "claude-code-vscode",
+      "path": "practices/claude-code-vscode.md",
+      "title": "Claude Code VS Code extension vs bundled CLI",
+      "tags": [
+        "claude",
+        "ux",
+        "cli",
+        "interoperability"
+      ],
+      "status": "active",
+      "updated": "2026-09-09",
+      "when_to_use": "Installing Claude Code in VS Code/Cursor/Open VSX, or deciding extension panel vs terminal CLI",
+      "related": [
+        "claude-code-headless",
+        "claude-code-plan-mode",
+        "claude-code-permissions",
+        "claude-code-output-styles",
+        "cursor-agent-modes"
+      ]
+    },
+    {
+      "id": "openai-codex-review",
+      "path": "practices/openai-codex-review.md",
+      "title": "Codex /review — working-tree review without edits",
+      "tags": [
+        "openai",
+        "review",
+        "cli",
+        "git"
+      ],
+      "status": "active",
+      "updated": "2026-09-09",
+      "when_to_use": "Running Codex /review or codex review, or contrasting it with Copilot/Bugbot PR review",
+      "related": [
+        "openai-codex-sandbox",
+        "openai-codex-github-action",
+        "github-copilot-code-review",
+        "cursor-bugbot-review"
+      ]
+    },
+    {
+      "id": "openai-codex-plan-mode",
+      "path": "practices/openai-codex-plan-mode.md",
+      "title": "Codex /plan vs /goal — plan then durable objective",
+      "tags": [
+        "openai",
+        "orchestration",
+        "cli",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-09",
+      "when_to_use": "Switching Codex into plan mode, or choosing /plan vs /goal for a long task",
+      "related": [
+        "openai-codex-review",
+        "openai-codex-agents-md",
+        "openai-codex-sandbox",
+        "claude-code-plan-mode",
+        "cursor-agent-modes"
+      ]
+    },
+    {
+      "id": "gemini-cli-plan-mode",
+      "path": "practices/gemini-cli-plan-mode.md",
+      "title": "Gemini CLI plan mode — read-only then approve",
+      "tags": [
+        "gemini",
+        "permissions",
+        "orchestration",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-09",
+      "when_to_use": "Entering Gemini CLI Plan mode, or customizing plan.toml / plan directory policies",
+      "related": [
+        "gemini-cli-hooks",
+        "gemini-cli-settings",
+        "gemini-cli-checkpointing",
+        "claude-code-plan-mode",
+        "openai-codex-plan-mode"
+      ]
+    },
+    {
+      "id": "gemini-cli-checkpointing",
+      "path": "practices/gemini-cli-checkpointing.md",
+      "title": "Gemini CLI checkpointing — shadow-git /restore",
+      "tags": [
+        "gemini",
+        "session",
+        "git",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-09",
+      "when_to_use": "Enabling Gemini CLI checkpoints, or restoring files+chat before a tool write",
+      "related": [
+        "gemini-cli-plan-mode",
+        "gemini-cli-settings",
+        "claude-code-checkpointing",
+        "cursor-checkpoints"
+      ]
+    },
+    {
+      "id": "github-copilot-spaces",
+      "path": "practices/github-copilot-spaces.md",
+      "title": "GitHub Copilot Spaces — curated grounded context",
+      "tags": [
+        "github",
+        "context",
+        "mcp",
+        "memory"
+      ],
+      "status": "active",
+      "updated": "2026-09-09",
+      "when_to_use": "Creating a Copilot Space, or wiring copilot_spaces MCP tools in IDE agent mode",
+      "related": [
+        "github-copilot-mcp",
+        "github-copilot-ide-agent",
+        "github-copilot-instructions",
+        "github-copilot-coding-agent",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "github-copilot-ide-agent",
+      "path": "practices/github-copilot-ide-agent.md",
+      "title": "GitHub Copilot IDE agent mode vs cloud agent",
+      "tags": [
+        "github",
+        "orchestration",
+        "ux",
+        "permissions"
+      ],
+      "status": "active",
+      "updated": "2026-09-09",
+      "when_to_use": "Using Copilot Chat Agent/Plan/Ask in an IDE, or choosing local agent mode vs Actions cloud agent",
+      "related": [
+        "github-copilot-coding-agent",
+        "github-copilot-cli",
+        "github-copilot-custom-agents",
+        "github-copilot-spaces",
+        "cursor-agent-modes"
       ]
     }
   ]
