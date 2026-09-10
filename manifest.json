@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -4561,6 +4561,216 @@
         "github-copilot-custom-agents",
         "github-copilot-spaces",
         "cursor-agent-modes"
+      ]
+    },
+    {
+      "id": "claude-code-workflows",
+      "path": "practices/claude-code-workflows.md",
+      "title": "Claude Code dynamic workflows — scripted subagent fan-out",
+      "tags": [
+        "claude",
+        "orchestration",
+        "subagent",
+        "workflows"
+      ],
+      "status": "active",
+      "updated": "2026-09-10",
+      "when_to_use": "Running /deep-research or a saved .claude/workflows script, or choosing workflows vs subagents vs agent teams",
+      "related": [
+        "claude-code-subagents",
+        "claude-code-agent-teams",
+        "claude-code-agent-view",
+        "durable-agent-workflows",
+        "claude-agent-sdk"
+      ]
+    },
+    {
+      "id": "claude-code-remote-control",
+      "path": "practices/claude-code-remote-control.md",
+      "title": "Claude Code Remote Control — steer a local session from phone or browser",
+      "tags": [
+        "claude",
+        "ux",
+        "session",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-10",
+      "when_to_use": "Connecting claude.ai/code or the Claude mobile app to a local CLI/VS Code session, or contrasting it with Claude Code on the web",
+      "related": [
+        "claude-code-vscode",
+        "claude-code-headless",
+        "claude-code-workflows",
+        "cursor-cloud-always-on"
+      ]
+    },
+    {
+      "id": "claude-code-agent-teams",
+      "path": "practices/claude-code-agent-teams.md",
+      "title": "Claude Code agent teams — lead, teammates, mailbox",
+      "tags": [
+        "claude",
+        "multi-agent",
+        "orchestration",
+        "experimental"
+      ],
+      "status": "active",
+      "updated": "2026-09-10",
+      "when_to_use": "Enabling CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS for peer sessions with a shared task list, or contrasting teams with subagents and workflows",
+      "related": [
+        "claude-code-subagents",
+        "claude-code-workflows",
+        "claude-code-agent-view",
+        "subagent-context-isolation",
+        "multi-agent-handoffs"
+      ]
+    },
+    {
+      "id": "claude-code-agent-view",
+      "path": "practices/claude-code-agent-view.md",
+      "title": "Claude Code agent view — claude agents dispatcher",
+      "tags": [
+        "claude",
+        "orchestration",
+        "session",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-10",
+      "when_to_use": "Dispatching or monitoring background Claude Code sessions with claude agents, or contrasting it with subagents and agent teams",
+      "related": [
+        "claude-code-subagents",
+        "claude-code-agent-teams",
+        "claude-code-workflows",
+        "claude-code-worktrees",
+        "claude-code-remote-control"
+      ]
+    },
+    {
+      "id": "gemini-cli-auto-memory",
+      "path": "practices/gemini-cli-auto-memory.md",
+      "title": "Gemini CLI Auto Memory — inbox patches and drafted skills",
+      "tags": [
+        "gemini",
+        "memory",
+        "skills",
+        "experimental"
+      ],
+      "status": "active",
+      "updated": "2026-09-10",
+      "when_to_use": "Enabling experimental.autoMemory or reviewing /memory inbox candidates, vs editing GEMINI.md yourself",
+      "related": [
+        "gemini-cli-gemini-md",
+        "gemini-cli-skills",
+        "gemini-cli-settings",
+        "claude-code-memory",
+        "agent-memory-poisoning"
+      ]
+    },
+    {
+      "id": "gemini-cli-conductor",
+      "path": "practices/gemini-cli-conductor.md",
+      "title": "Gemini CLI Conductor — spec/plan tracks in-repo",
+      "tags": [
+        "gemini",
+        "extensions",
+        "orchestration",
+        "planning"
+      ],
+      "status": "active",
+      "updated": "2026-09-10",
+      "when_to_use": "Installing the Conductor extension for spec-driven tracks, or contrasting it with built-in Plan mode",
+      "related": [
+        "gemini-cli-plan-mode",
+        "gemini-cli-extensions",
+        "gemini-cli-auto-memory",
+        "claude-code-plan-mode",
+        "openai-codex-plan-mode"
+      ]
+    },
+    {
+      "id": "github-copilot-hooks",
+      "path": "practices/github-copilot-hooks.md",
+      "title": "GitHub Copilot hooks — CLI and cloud-agent lifecycle scripts",
+      "tags": [
+        "github",
+        "hooks",
+        "permissions",
+        "safety"
+      ],
+      "status": "active",
+      "updated": "2026-09-10",
+      "when_to_use": "Authoring .github/hooks JSON or ~/.copilot/hooks for Copilot CLI / cloud agent, or contrasting with Claude/Cursor/Codex hooks",
+      "related": [
+        "github-copilot-cli",
+        "github-copilot-coding-agent",
+        "github-copilot-plugins",
+        "claude-code-hooks",
+        "cursor-hooks-json",
+        "openai-codex-hooks"
+      ]
+    },
+    {
+      "id": "github-copilot-plugins",
+      "path": "practices/github-copilot-plugins.md",
+      "title": "GitHub Copilot plugins — plugin.json, marketplaces, Agent Plugins 1.0",
+      "tags": [
+        "github",
+        "plugins",
+        "skills",
+        "supply-chain"
+      ],
+      "status": "active",
+      "updated": "2026-09-10",
+      "when_to_use": "Packaging or installing a Copilot plugin (CLI, cloud agent, or Copilot app), or choosing Agent Plugins 1.0 vs the legacy manifest",
+      "related": [
+        "github-copilot-cli",
+        "github-copilot-skills",
+        "github-copilot-hooks",
+        "github-copilot-custom-agents",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "openai-codex-memories",
+      "path": "practices/openai-codex-memories.md",
+      "title": "Codex local memories — ~/.codex/memories vs AGENTS.md",
+      "tags": [
+        "openai",
+        "memory",
+        "cli",
+        "privacy"
+      ],
+      "status": "active",
+      "updated": "2026-09-10",
+      "when_to_use": "Enabling Codex features.memories, using /memories, or contrasting local memory files with AGENTS.md",
+      "related": [
+        "openai-codex-agents-md",
+        "openai-codex-plugins",
+        "claude-code-memory",
+        "gemini-cli-auto-memory",
+        "agent-memory-poisoning"
+      ]
+    },
+    {
+      "id": "cursor-cli-mcp",
+      "path": "practices/cursor-cli-mcp.md",
+      "title": "Cursor CLI MCP — agent mcp and /mcp",
+      "tags": [
+        "cursor",
+        "mcp",
+        "cli",
+        "auth"
+      ],
+      "status": "active",
+      "updated": "2026-09-10",
+      "when_to_use": "Enabling, logging into, or listing MCP servers from the Cursor CLI (agent mcp / /mcp), vs editing mcp.json",
+      "related": [
+        "cursor-mcp-json",
+        "cursor-cli-headless",
+        "cursor-cloud-mcp-http-vs-stdio",
+        "cursor-acp-extensions",
+        "mcp-oauth-scopes"
       ]
     }
   ]

@@ -717,5 +717,40 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | GitHub Copilot features — agentic | https://docs.github.com/en/copilot/get-started/features |
 | Using Copilot cloud agent in your IDE | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-in-your-ide |
 
+## Daily ingest 2026-09-10 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Dynamic workflows (Claude Code) | https://code.claude.com/docs/en/workflows |
+| Run agents in parallel (Claude Code) | https://code.claude.com/docs/en/agents |
+| Agent SDK subagents — Workflow tool | https://code.claude.com/docs/en/agent-sdk/subagents |
+| Remote Control (Claude Code) | https://code.claude.com/docs/en/remote-control |
+| Claude Code in Slack | https://code.claude.com/docs/en/slack |
+| Agent teams (Claude Code) | https://code.claude.com/docs/en/agent-teams |
+| Create custom subagents | https://code.claude.com/docs/en/sub-agents |
+| Agent view (Claude Code) | https://code.claude.com/docs/en/agent-view |
+| Auto Memory (Gemini CLI) | https://geminicli.com/docs/cli/auto-memory/ |
+| Manage context and memory (Gemini CLI) | https://geminicli.com/docs/cli/tutorials/memory-management/ |
+| Gemini CLI settings | https://geminicli.com/docs/cli/settings/ |
+| Plan Mode — Conductor | https://geminicli.com/docs/cli/plan-mode/ |
+| Conductor announcement | https://developers.googleblog.com/conductor-introducing-context-driven-development-for-gemini-cli/ |
+| Gemini CLI extensions catalog | https://geminicli.com/extensions/ |
+| Extension reference (Gemini CLI) | https://geminicli.com/docs/extensions/reference/ |
+| About hooks for GitHub Copilot | https://docs.github.com/en/copilot/concepts/agents/hooks |
+| GitHub Copilot hooks reference | https://docs.github.com/en/copilot/reference/hooks-reference |
+| Using hooks with Copilot CLI | https://docs.github.com/en/copilot/tutorials/copilot-cli-hooks |
+| About GitHub Copilot plugins | https://docs.github.com/en/copilot/concepts/agents/about-plugins |
+| Creating a plugin for GitHub Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-creating |
+| GitHub Copilot CLI plugin reference | https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference |
+| GitHub Copilot CLI command reference | https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference |
+| Memories (Codex) | https://developers.openai.com/codex/customization/memories |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+| Slash commands in Codex CLI | https://developers.openai.com/codex/cli/slash-commands |
+| Customization – Codex | https://developers.openai.com/codex/concepts/customization |
+| Cursor CLI MCP | https://cursor.com/docs/cli/mcp |
+| Using Agent in CLI | https://cursor.com/docs/cli/using |
+| CLI slash commands | https://cursor.com/docs/cli/reference/slash-commands |
+| CLI Changelog | https://cursor.com/docs/cli/changelog |
+
 
 
