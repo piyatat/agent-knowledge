@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -4771,6 +4771,216 @@
         "cursor-cloud-mcp-http-vs-stdio",
         "cursor-acp-extensions",
         "mcp-oauth-scopes"
+      ]
+    },
+    {
+      "id": "claude-code-routines",
+      "path": "practices/claude-code-routines.md",
+      "title": "Claude Code routines — cloud schedule, API, and GitHub triggers",
+      "tags": [
+        "claude",
+        "automations",
+        "cron",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-11",
+      "when_to_use": "Creating a /schedule cloud routine, or choosing routines vs Desktop scheduled tasks vs /loop",
+      "related": [
+        "claude-code-channels",
+        "claude-code-on-the-web",
+        "claude-code-github-action",
+        "cursor-automations",
+        "durable-agent-workflows"
+      ]
+    },
+    {
+      "id": "claude-code-channels",
+      "path": "practices/claude-code-channels.md",
+      "title": "Claude Code channels — push events into a running local session",
+      "tags": [
+        "claude",
+        "webhooks",
+        "mcp",
+        "plugins"
+      ],
+      "status": "active",
+      "updated": "2026-09-11",
+      "when_to_use": "Enabling --channels for Telegram/Discord/iMessage, or contrasting channels with Slack, Remote Control, and routines",
+      "related": [
+        "claude-code-remote-control",
+        "claude-code-slack",
+        "claude-code-routines",
+        "webhook-receiver-freshness",
+        "claude-code-plugins"
+      ]
+    },
+    {
+      "id": "claude-code-slack",
+      "path": "practices/claude-code-slack.md",
+      "title": "Claude Code in Slack — @Claude web sessions vs Claude Tag",
+      "tags": [
+        "claude",
+        "slack",
+        "orchestration",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-11",
+      "when_to_use": "Setting up @Claude in Slack, or choosing the earlier per-user Slack app vs Claude Tag",
+      "related": [
+        "claude-code-on-the-web",
+        "claude-code-channels",
+        "claude-code-remote-control",
+        "cursor-slack-cloud-agents",
+        "openai-codex-slack"
+      ]
+    },
+    {
+      "id": "claude-code-chrome",
+      "path": "practices/claude-code-chrome.md",
+      "title": "Claude Code Chrome — Claude in Chrome browser tools",
+      "tags": [
+        "claude",
+        "browser",
+        "computer-use",
+        "mcp"
+      ],
+      "status": "active",
+      "updated": "2026-09-11",
+      "when_to_use": "Enabling claude --chrome or /chrome, or contrasting it with Cursor Browser and computer use",
+      "related": [
+        "claude-computer-browser-toolsets",
+        "cursor-browser",
+        "computer-use-containment",
+        "playwright-mcp-containment",
+        "claude-code-mcp"
+      ]
+    },
+    {
+      "id": "claude-code-on-the-web",
+      "path": "practices/claude-code-on-the-web.md",
+      "title": "Claude Code on the web — --cloud, --teleport, cloud sessions",
+      "tags": [
+        "claude",
+        "hosting",
+        "session",
+        "git"
+      ],
+      "status": "active",
+      "updated": "2026-09-11",
+      "when_to_use": "Starting or teleporting a claude.ai/code cloud session, or contrasting it with Remote Control",
+      "related": [
+        "claude-code-remote-control",
+        "claude-code-routines",
+        "claude-code-slack",
+        "claude-code-github-action",
+        "cursor-cloud-always-on"
+      ]
+    },
+    {
+      "id": "gemini-cli-telemetry",
+      "path": "practices/gemini-cli-telemetry.md",
+      "title": "Gemini CLI telemetry — OpenTelemetry logs, metrics, traces",
+      "tags": [
+        "gemini",
+        "observability",
+        "otel",
+        "privacy"
+      ],
+      "status": "active",
+      "updated": "2026-09-11",
+      "when_to_use": "Enabling Gemini CLI OTel export, or deciding whether prompts belong in traces",
+      "related": [
+        "gemini-cli-settings",
+        "agent-observability-otel",
+        "telemetry-redaction-genai",
+        "mcp-otel-trace-context",
+        "gemini-cli-headless"
+      ]
+    },
+    {
+      "id": "gemini-cli-sessions",
+      "path": "practices/gemini-cli-sessions.md",
+      "title": "Gemini CLI sessions — --resume, retention, and /resume",
+      "tags": [
+        "gemini",
+        "session",
+        "cli",
+        "memory"
+      ],
+      "status": "active",
+      "updated": "2026-09-11",
+      "when_to_use": "Resuming a Gemini CLI chat, setting retention, or contrasting /resume with checkpointing",
+      "related": [
+        "gemini-cli-checkpointing",
+        "gemini-cli-auto-memory",
+        "gemini-cli-gemini-md",
+        "gemini-cli-headless",
+        "claude-code-checkpointing"
+      ]
+    },
+    {
+      "id": "openai-codex-worktrees",
+      "path": "practices/openai-codex-worktrees.md",
+      "title": "Codex worktrees — Local vs Handoff vs managed checkouts",
+      "tags": [
+        "openai",
+        "git",
+        "isolation",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-11",
+      "when_to_use": "Running parallel Codex desktop chats in Git worktrees, or using Handoff vs Create branch",
+      "related": [
+        "cursor-worktrees",
+        "claude-code-worktrees",
+        "openai-codex-cloud-environments",
+        "workspace-mount-boundaries",
+        "openai-codex-agents-md"
+      ]
+    },
+    {
+      "id": "openai-codex-slack",
+      "path": "practices/openai-codex-slack.md",
+      "title": "Codex in Slack and Linear — @Codex cloud chats from chat/issues",
+      "tags": [
+        "openai",
+        "slack",
+        "linear",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-11",
+      "when_to_use": "Installing @Codex in Slack or Linear, or contrasting it with local Linear MCP",
+      "related": [
+        "openai-codex-cloud-environments",
+        "openai-codex-mcp",
+        "claude-code-slack",
+        "cursor-slack-cloud-agents",
+        "cursor-linear-cloud-agents"
+      ]
+    },
+    {
+      "id": "cursor-design-mode",
+      "path": "practices/cursor-design-mode.md",
+      "title": "Cursor Design Mode — visual prompts in the Agents Window browser",
+      "tags": [
+        "cursor",
+        "ux",
+        "browser",
+        "design"
+      ],
+      "status": "active",
+      "updated": "2026-09-11",
+      "when_to_use": "Pointing Agent at a live UI element, drawing on the page, or contrasting Design Mode with Agent/Ask/Plan/Debug",
+      "related": [
+        "cursor-agent-modes",
+        "cursor-browser",
+        "cursor-custom-subagents",
+        "computer-use-containment",
+        "claude-code-chrome"
       ]
     }
   ]

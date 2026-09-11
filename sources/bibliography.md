@@ -752,5 +752,35 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | CLI slash commands | https://cursor.com/docs/cli/reference/slash-commands |
 | CLI Changelog | https://cursor.com/docs/cli/changelog |
 
+## Daily ingest 2026-09-11 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Automate work with routines | https://code.claude.com/docs/en/routines |
+| Schedule recurring tasks in Claude Code Desktop | https://code.claude.com/docs/en/desktop-scheduled-tasks |
+| Run prompts on a schedule | https://code.claude.com/docs/en/scheduled-tasks |
+| Push events into a running session with channels | https://code.claude.com/docs/en/channels |
+| Channels reference | https://code.claude.com/docs/en/channels-reference |
+| Claude Code in Slack | https://code.claude.com/docs/en/slack |
+| Claude Tag | https://code.claude.com/docs/en/claude-tag |
+| Use Claude Code on the web | https://code.claude.com/docs/en/claude-code-on-the-web |
+| Get started with Claude Code on the web | https://code.claude.com/docs/en/web-quickstart |
+| Remote Control | https://code.claude.com/docs/en/remote-control |
+| Use Claude Code with Chrome | https://code.claude.com/docs/en/chrome |
+| Computer use | https://code.claude.com/docs/en/computer-use |
+| Observability with OpenTelemetry (Gemini CLI) | https://geminicli.com/docs/cli/telemetry/ |
+| Gemini CLI settings | https://geminicli.com/docs/cli/settings/ |
+| Session management (Gemini CLI) | https://geminicli.com/docs/cli/session-management.md |
+| Checkpointing (Gemini CLI) | https://geminicli.com/docs/cli/checkpointing/ |
+| Manage context and memory (Gemini CLI) | https://geminicli.com/docs/cli/tutorials/memory-management/ |
+| Worktrees (Codex) | https://learn.chatgpt.com/docs/environments/git-worktrees |
+| Worktrees (Codex app) | https://developers.openai.com/codex/app/worktrees |
+| Use Codex in Slack | https://learn.chatgpt.com/docs/third-party/slack |
+| Use Codex in Linear | https://learn.chatgpt.com/docs/third-party/linear |
+| Codex cloud | https://learn.chatgpt.com/docs/cloud |
+| Design Mode (Cursor) | https://cursor.com/docs/agent/design-mode |
+| Agents Window | https://cursor.com/docs/agent/agents-window |
+| Browser (Cursor) | https://cursor.com/docs/agent/tools/browser |
+
 
 
