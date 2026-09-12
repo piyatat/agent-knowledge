@@ -782,5 +782,36 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Agents Window | https://cursor.com/docs/agent/agents-window |
 | Browser (Cursor) | https://cursor.com/docs/agent/tools/browser |
 
+## Daily ingest 2026-09-12 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Explore the context window | https://code.claude.com/docs/en/context-window |
+| Manage sessions | https://code.claude.com/docs/en/sessions |
+| Memory (Claude Code) | https://code.claude.com/docs/en/memory |
+| Desktop application | https://code.claude.com/docs/en/desktop |
+| Claude Code on the web | https://code.claude.com/docs/en/claude-code-on-the-web |
+| Remote Control | https://code.claude.com/docs/en/remote-control |
+| Code Review | https://code.claude.com/docs/en/code-review |
+| Find bugs with ultrareview | https://code.claude.com/docs/en/ultrareview |
+| JetBrains IDEs | https://code.claude.com/docs/en/jetbrains |
+| Permissions (Claude Code) | https://code.claude.com/docs/en/permissions |
+| Run prompts on a schedule | https://code.claude.com/docs/en/scheduled-tasks |
+| Automate work with routines | https://code.claude.com/docs/en/routines |
+| Schedule recurring tasks in Claude Code Desktop | https://code.claude.com/docs/en/desktop-scheduled-tasks |
+| Command line options – Codex CLI | https://developers.openai.com/codex/cli/reference |
+| Codex GitHub Action | https://developers.openai.com/codex/github-action.md |
+| Slash commands in Codex CLI | https://developers.openai.com/codex/cli/slash-commands |
+| Troubleshooting – Codex app | https://developers.openai.com/codex/app/troubleshooting |
+| Policy engine (Gemini CLI) | https://geminicli.com/docs/reference/policy-engine/ |
+| Gemini CLI cheatsheet | https://geminicli.com/docs/cli/cli-reference/ |
+| Gemini CLI settings | https://geminicli.com/docs/cli/settings/ |
+| Gemini CLI for the enterprise | https://geminicli.com/docs/cli/enterprise/ |
+| Using Agent in CLI | https://cursor.com/docs/cli/using |
+| CLI overview | https://cursor.com/docs/cli/overview |
+| CLI Changelog | https://cursor.com/docs/cli/changelog |
+| Subagents (Cursor) | https://cursor.com/docs/subagents |
+| Cloud Agents | https://cursor.com/docs/cloud-agent |
+
 
 

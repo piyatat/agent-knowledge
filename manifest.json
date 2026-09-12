@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-11",
+  "updated": "2026-09-12",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -4981,6 +4981,215 @@
         "cursor-custom-subagents",
         "computer-use-containment",
         "claude-code-chrome"
+      ]
+    },
+    {
+      "id": "claude-code-context-window",
+      "path": "practices/claude-code-context-window.md",
+      "title": "Claude Code context window — /compact, /context, /autocompact",
+      "tags": [
+        "claude",
+        "context",
+        "tokens",
+        "compaction"
+      ],
+      "status": "active",
+      "updated": "2026-09-12",
+      "when_to_use": "Managing Claude Code context with /compact or /context, or deciding what survives compaction",
+      "related": [
+        "context-compaction",
+        "claude-code-checkpointing",
+        "claude-code-memory",
+        "claude-code-subagents",
+        "claude-code-sessions"
+      ]
+    },
+    {
+      "id": "claude-code-desktop",
+      "path": "practices/claude-code-desktop.md",
+      "title": "Claude Code Desktop — Code tab vs CLI vs cloud",
+      "tags": [
+        "claude",
+        "ux",
+        "orchestration",
+        "hosting"
+      ],
+      "status": "active",
+      "updated": "2026-09-12",
+      "when_to_use": "Using the Claude Desktop Code tab, choosing Desktop vs CLI, or sending a CLI session with /desktop",
+      "related": [
+        "claude-code-on-the-web",
+        "claude-code-remote-control",
+        "claude-code-vscode",
+        "claude-code-sessions",
+        "claude-code-chrome"
+      ]
+    },
+    {
+      "id": "claude-code-sessions",
+      "path": "practices/claude-code-sessions.md",
+      "title": "Claude Code sessions — --resume, --continue, /branch",
+      "tags": [
+        "claude",
+        "session",
+        "cli",
+        "memory"
+      ],
+      "status": "active",
+      "updated": "2026-09-12",
+      "when_to_use": "Resuming a Claude Code CLI conversation, branching it, or locating JSONL transcripts",
+      "related": [
+        "claude-code-checkpointing",
+        "claude-code-context-window",
+        "claude-code-desktop",
+        "gemini-cli-sessions",
+        "claude-code-scheduled-tasks"
+      ]
+    },
+    {
+      "id": "claude-code-code-review",
+      "path": "practices/claude-code-code-review.md",
+      "title": "Claude Code review — /code-review, ultrareview, GitHub App",
+      "tags": [
+        "claude",
+        "review",
+        "github",
+        "ci"
+      ],
+      "status": "active",
+      "updated": "2026-09-12",
+      "when_to_use": "Running /code-review or ultrareview, or enabling Claude GitHub PR review",
+      "related": [
+        "cursor-bugbot-review",
+        "github-copilot-code-review",
+        "openai-codex-review",
+        "claude-code-on-the-web",
+        "claude-code-github-action"
+      ]
+    },
+    {
+      "id": "claude-code-jetbrains",
+      "path": "practices/claude-code-jetbrains.md",
+      "title": "Claude Code in JetBrains — plugin plus hidden ide MCP",
+      "tags": [
+        "claude",
+        "acp",
+        "interoperability",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-12",
+      "when_to_use": "Installing Claude Code in IntelliJ/PyCharm/WebStorm, or allowlisting the hidden ide MCP tools",
+      "related": [
+        "cursor-jetbrains-acp",
+        "claude-code-vscode",
+        "claude-code-mcp",
+        "claude-code-permissions"
+      ]
+    },
+    {
+      "id": "claude-code-scheduled-tasks",
+      "path": "practices/claude-code-scheduled-tasks.md",
+      "title": "Claude Code /loop — session-scoped cron vs routines",
+      "tags": [
+        "claude",
+        "automations",
+        "cron",
+        "session"
+      ],
+      "status": "active",
+      "updated": "2026-09-12",
+      "when_to_use": "Polling in an open Claude Code session with /loop, or choosing /loop vs Desktop tasks vs cloud routines",
+      "related": [
+        "claude-code-routines",
+        "claude-code-channels",
+        "cursor-automations",
+        "claude-code-sessions",
+        "durable-agent-workflows"
+      ]
+    },
+    {
+      "id": "openai-codex-exec",
+      "path": "practices/openai-codex-exec.md",
+      "title": "Codex exec — non-interactive CLI and exec resume",
+      "tags": [
+        "openai",
+        "cli",
+        "ci",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-12",
+      "when_to_use": "Scripting Codex with codex exec / codex e, or resuming a headless exec session",
+      "related": [
+        "openai-codex-github-action",
+        "openai-codex-sessions",
+        "claude-code-headless",
+        "cursor-cli-headless",
+        "openai-codex-sandbox"
+      ]
+    },
+    {
+      "id": "openai-codex-sessions",
+      "path": "practices/openai-codex-sessions.md",
+      "title": "Codex sessions — resume, fork, archive, /app",
+      "tags": [
+        "openai",
+        "session",
+        "cli",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-12",
+      "when_to_use": "Resuming or forking a Codex TUI chat, archiving it, or continuing in the ChatGPT desktop app",
+      "related": [
+        "openai-codex-exec",
+        "claude-code-sessions",
+        "gemini-cli-sessions",
+        "agent-session-transcript-audit",
+        "openai-codex-plan-mode"
+      ]
+    },
+    {
+      "id": "gemini-cli-policy-engine",
+      "path": "practices/gemini-cli-policy-engine.md",
+      "title": "Gemini CLI policy engine — TOML allow/deny/ask",
+      "tags": [
+        "gemini",
+        "permissions",
+        "security",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-09-12",
+      "when_to_use": "Writing ~/.gemini/policies TOML rules, or replacing tools.exclude / YOLO allowlists",
+      "related": [
+        "gemini-cli-settings",
+        "gemini-cli-plan-mode",
+        "gemini-cli-sandboxing",
+        "permission-modes-allow-ask-deny",
+        "gemini-cli-mcp"
+      ]
+    },
+    {
+      "id": "cursor-cli-cloud-handoff",
+      "path": "practices/cursor-cli-cloud-handoff.md",
+      "title": "Cursor CLI cloud handoff — & transfer vs /in-cloud",
+      "tags": [
+        "cursor",
+        "cli",
+        "orchestration",
+        "session"
+      ],
+      "status": "active",
+      "updated": "2026-09-12",
+      "when_to_use": "Sending a Cursor CLI conversation to a Cloud Agent with &, or contrasting it with /in-cloud",
+      "related": [
+        "cursor-cli-headless",
+        "cursor-cloud-always-on",
+        "cursor-custom-subagents",
+        "cursor-worktrees",
+        "cursor-cloud-mcp-http-vs-stdio"
       ]
     }
   ]
