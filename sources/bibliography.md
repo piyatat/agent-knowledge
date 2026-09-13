@@ -813,5 +813,42 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Subagents (Cursor) | https://cursor.com/docs/subagents |
 | Cloud Agents | https://cursor.com/docs/cloud-agent |
 
+## Daily ingest 2026-09-13 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Introducing Projects | https://cursor.com/blog/projects |
+| Cursor Projects changelog | https://cursor.com/changelog/projects |
+| Cloud Agents | https://cursor.com/docs/cloud-agent |
+| Cloud Agent capabilities | https://cursor.com/docs/cloud-agent/capabilities |
+| Agents Window | https://cursor.com/docs/agent/agents-window |
+| Subagents (Cursor) | https://cursor.com/docs/subagents |
+| Design Mode (Cursor) | https://cursor.com/docs/agent/design-mode |
+| Configure auto mode | https://code.claude.com/docs/en/auto-mode-config |
+| Configure permissions (Claude Code) | https://code.claude.com/docs/en/permissions |
+| Claude Code settings | https://code.claude.com/docs/en/settings |
+| Model configuration (Claude Code) | https://code.claude.com/docs/en/model-config |
+| Dynamic workflows | https://code.claude.com/docs/en/workflows |
+| Debug your configuration | https://code.claude.com/docs/en/debug-your-config |
+| Skills (Claude Code) | https://code.claude.com/docs/en/skills |
+| Auto-review (Codex) | https://developers.openai.com/codex/concepts/sandboxing/auto-review |
+| Agent approvals & security (Codex) | https://developers.openai.com/codex/agent-approvals-security |
+| Managed configuration (Codex) | https://developers.openai.com/codex/enterprise/managed-configuration |
+| Advanced configuration (Codex) | https://developers.openai.com/codex/config-advanced |
+| Subagents (Gemini CLI) | https://geminicli.com/docs/core/subagents/ |
+| Plan Mode (Gemini CLI) | https://geminicli.com/docs/cli/plan-mode/ |
+| Gemini CLI configuration | https://geminicli.com/docs/reference/configuration/ |
+| Model selection (Gemini CLI) | https://geminicli.com/docs/cli/model/ |
+| Rewind (Gemini CLI) | https://geminicli.com/docs/cli/rewind/ |
+| Checkpointing (Gemini CLI) | https://geminicli.com/docs/cli/checkpointing/ |
+| Session management (Gemini CLI) | https://geminicli.com/docs/cli/session-management.md |
+| Enterprise managed permissions (changelog) | https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/ |
+| Enterprise managed settings reference | https://docs.github.com/en/copilot/reference/enterprise-managed-settings-reference |
+| Configuring enterprise-managed settings | https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings |
+| About Copilot automations | https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-automations |
+| Creating automations with Copilot cloud agent | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-automations |
+| Managing access to GitHub Copilot cloud agent | https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/cloud-agent/access-management |
+| About GitHub Copilot cloud agent | https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent |
+
 
 

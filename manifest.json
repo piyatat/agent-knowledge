@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-12",
+  "updated": "2026-09-13",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -5189,7 +5189,218 @@
         "cursor-cloud-always-on",
         "cursor-custom-subagents",
         "cursor-worktrees",
-        "cursor-cloud-mcp-http-vs-stdio"
+        "cursor-cloud-mcp-http-vs-stdio",
+        "cursor-agents-window"
+      ]
+    },
+    {
+      "id": "cursor-projects",
+      "path": "practices/cursor-projects.md",
+      "title": "Cursor Projects — coordinator, shared context, subscriptions",
+      "tags": [
+        "cursor",
+        "orchestration",
+        "subagent",
+        "automations"
+      ],
+      "status": "active",
+      "updated": "2026-09-13",
+      "when_to_use": "Starting a Cursor Project for a multi-PR feature, migration, or standing “gardening” job instead of a single chat",
+      "related": [
+        "cursor-cloud-always-on",
+        "cursor-automations",
+        "cursor-custom-subagents",
+        "cursor-agents-window",
+        "agent-memory-poisoning"
+      ]
+    },
+    {
+      "id": "cursor-agents-window",
+      "path": "practices/cursor-agents-window.md",
+      "title": "Cursor Agents Window — parallel agents vs the editor",
+      "tags": [
+        "cursor",
+        "ux",
+        "orchestration",
+        "session"
+      ],
+      "status": "active",
+      "updated": "2026-09-13",
+      "when_to_use": "Opening the Agents Window, managing many local/cloud agents, or choosing it versus the classic IDE",
+      "related": [
+        "cursor-agent-modes",
+        "cursor-design-mode",
+        "cursor-projects",
+        "cursor-cli-cloud-handoff",
+        "cursor-worktrees"
+      ]
+    },
+    {
+      "id": "claude-code-auto-mode",
+      "path": "practices/claude-code-auto-mode.md",
+      "title": "Claude Code auto mode — classifier after deny/ask",
+      "tags": [
+        "claude",
+        "permissions",
+        "safety",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-09-13",
+      "when_to_use": "Configuring autoMode.environment / classifier rules, or debugging an auto-mode denial",
+      "related": [
+        "claude-code-permissions",
+        "claude-code-sandboxing",
+        "claude-code-settings",
+        "permission-modes-allow-ask-deny",
+        "claude-code-doctor"
+      ]
+    },
+    {
+      "id": "claude-code-effort",
+      "path": "practices/claude-code-effort.md",
+      "title": "Claude Code effort — /effort, ultracode, skill frontmatter",
+      "tags": [
+        "claude",
+        "tokens",
+        "cost",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-13",
+      "when_to_use": "Setting /effort or ultracode, or overriding effort on a skill/subagent",
+      "related": [
+        "claude-code-workflows",
+        "claude-code-settings",
+        "claude-code-context-window",
+        "agent-cost-step-budgets",
+        "claude-code-subagents"
+      ]
+    },
+    {
+      "id": "claude-code-doctor",
+      "path": "practices/claude-code-doctor.md",
+      "title": "Claude Code /doctor — what loaded vs safe-mode",
+      "tags": [
+        "claude",
+        "config",
+        "reliability",
+        "cli"
+      ],
+      "status": "active",
+      "updated": "2026-09-13",
+      "when_to_use": "Debugging ignored CLAUDE.md/settings/hooks/MCP/skills, or isolating a session with --safe-mode",
+      "related": [
+        "claude-code-settings",
+        "claude-code-memory",
+        "claude-code-mcp",
+        "claude-code-hooks",
+        "claude-code-skills"
+      ]
+    },
+    {
+      "id": "openai-codex-auto-review",
+      "path": "practices/openai-codex-auto-review.md",
+      "title": "Codex auto-review — Guardian reviewer at the sandbox edge",
+      "tags": [
+        "openai",
+        "approvals",
+        "sandbox",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-13",
+      "when_to_use": "Setting approvals_reviewer = auto_review, or writing guardian / [auto_review].policy",
+      "related": [
+        "openai-codex-sandbox",
+        "openai-codex-permissions",
+        "human-in-the-loop-approvals",
+        "agent-guardrails-vs-approvals",
+        "openai-codex-sessions"
+      ]
+    },
+    {
+      "id": "gemini-cli-subagents",
+      "path": "practices/gemini-cli-subagents.md",
+      "title": "Gemini CLI subagents — @name, .gemini/agents, browser_agent",
+      "tags": [
+        "gemini",
+        "subagent",
+        "orchestration",
+        "isolation"
+      ],
+      "status": "active",
+      "updated": "2026-09-13",
+      "when_to_use": "Authoring .gemini/agents markdown, forcing @codebase_investigator, or enabling browser_agent",
+      "related": [
+        "gemini-cli-plan-mode",
+        "gemini-cli-policy-engine",
+        "claude-code-subagents",
+        "cursor-custom-subagents",
+        "subagent-context-isolation"
+      ]
+    },
+    {
+      "id": "gemini-cli-rewind",
+      "path": "practices/gemini-cli-rewind.md",
+      "title": "Gemini CLI /rewind — conversation vs code revert",
+      "tags": [
+        "gemini",
+        "session",
+        "ux",
+        "git"
+      ],
+      "status": "active",
+      "updated": "2026-09-13",
+      "when_to_use": "Undoing a Gemini CLI turn with /rewind or Esc Esc, or contrasting it with /restore checkpoints",
+      "related": [
+        "gemini-cli-checkpointing",
+        "gemini-cli-sessions",
+        "claude-code-checkpointing",
+        "cursor-checkpoints",
+        "gemini-cli-subagents"
+      ]
+    },
+    {
+      "id": "github-copilot-managed-permissions",
+      "path": "practices/github-copilot-managed-permissions.md",
+      "title": "Copilot enterprise managed permissions — deny/ask/allow",
+      "tags": [
+        "github",
+        "permissions",
+        "governance",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-13",
+      "when_to_use": "Shipping managed-settings.json permission rules for Copilot CLI, VS Code Agent Host, or the Copilot app",
+      "related": [
+        "github-copilot-hooks",
+        "permission-modes-allow-ask-deny",
+        "github-copilot-cli",
+        "github-copilot-coding-agent",
+        "cursor-permissions-json"
+      ]
+    },
+    {
+      "id": "github-copilot-automations",
+      "path": "practices/github-copilot-automations.md",
+      "title": "Copilot cloud-agent automations — schedule and repo events",
+      "tags": [
+        "github",
+        "automations",
+        "orchestration",
+        "cron"
+      ],
+      "status": "active",
+      "updated": "2026-09-13",
+      "when_to_use": "Creating a Copilot cloud-agent automation for schedule/issue/PR events, or contrasting it with Cursor Automations",
+      "related": [
+        "github-copilot-coding-agent",
+        "cursor-automations",
+        "github-copilot-hooks",
+        "prompt-injection-agent-defense",
+        "github-copilot-managed-permissions"
       ]
     }
   ]
