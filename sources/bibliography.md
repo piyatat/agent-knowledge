@@ -850,5 +850,33 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Managing access to GitHub Copilot cloud agent | https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/cloud-agent/access-management |
 | About GitHub Copilot cloud agent | https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent |
 
+## Daily ingest 2026-09-14 (gap-fill)
 
+| Topic | URL |
+| --- | --- |
+| Control MCP server access for your organization | https://code.claude.com/docs/en/managed-mcp |
+| Deploy managed settings | https://code.claude.com/docs/en/managed-settings |
+| Server-managed settings | https://code.claude.com/docs/en/server-managed-settings |
+| Escalate hard decisions with the advisor tool | https://code.claude.com/docs/en/advisor |
+| CLI reference (Claude Code) | https://code.claude.com/docs/en/cli-reference |
+| Model configuration (Claude Code) | https://code.claude.com/docs/en/model-config |
+| Using GitHub Copilot in JetBrains IDEs | https://docs.github.com/en/copilot/concepts/agents/copilot-in-jetbrains |
+| Enterprise-managed sandbox in Copilot for JetBrains | https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/ |
+| ACP protocol overview | https://agentclientprotocol.com/protocol/overview |
+| About cloud and local sandboxes for GitHub Copilot | https://docs.github.com/en/copilot/concepts/about-cloud-and-local-sandboxes |
+| Using local sandboxing | https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing |
+| GitHub Copilot CLI command reference | https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference |
+| Billing for cloud and local sandboxes | https://docs.github.com/billing/concepts/product-billing/cloud-and-local-sandboxes |
+| Agent approvals & security (Codex) | https://developers.openai.com/codex/agent-approvals-security |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+| Advanced configuration (Codex) | https://developers.openai.com/codex/config-advanced |
+| Slash commands in Codex CLI | https://developers.openai.com/codex/cli/slash-commands |
+| App Server (Codex) | https://developers.openai.com/codex/app-server |
+| Plugins (Codex) | https://developers.openai.com/codex/plugins |
+| SEP-2640 Skills Extension (PR) | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2640 |
+| experimental-ext-skills | https://github.com/modelcontextprotocol/experimental-ext-skills |
+| Skills Over MCP: SEP-2640 status | https://unifiedharnessprotocol.dev/skills-over-mcp/ |
+| Auto-resolution and analysis updates in Copilot code review | https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/ |
+| Trusted Folders (Gemini CLI) | https://geminicli.com/docs/cli/trusted-folders/ |
+| gemini-cli v0.59.0 | https://github.com/google-gemini/gemini-cli/releases/tag/v0.59.0 |
 

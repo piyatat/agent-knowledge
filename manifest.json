@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-13",
+  "updated": "2026-09-14",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2489,7 +2489,7 @@
     {
       "id": "mcp-skills-extension",
       "path": "practices/mcp-skills-extension.md",
-      "title": "MCP Skills extension (SEP-2640, draft)",
+      "title": "MCP Skills extension (SEP-2640, Accepted not Final)",
       "tags": [
         "mcp",
         "skills",
@@ -2497,8 +2497,8 @@
         "extensions"
       ],
       "status": "draft",
-      "updated": "2026-08-27",
-      "when_to_use": "Serving or consuming Agent Skills over MCP (skill://, skills/list) — not a ratified spec yet",
+      "updated": "2026-09-14",
+      "when_to_use": "Serving or consuming Agent Skills over MCP (skill://, skills/list) — Accepted SEP, not a released extension",
       "related": [
         "agent-skills-open-standard",
         "mcp-resources-vs-tools",
@@ -3485,7 +3485,8 @@
         "claude-code-plugins",
         "cursor-plugins",
         "malicious-skills-supply-chain",
-        "openai-codex-skills"
+        "openai-codex-skills",
+        "openai-codex-apps"
       ]
     },
     {
@@ -3585,7 +3586,8 @@
         "cursor-mcp-json",
         "mcp-server-trust-failures",
         "claude-code-plugins",
-        "mcp-oauth-scopes"
+        "mcp-oauth-scopes",
+        "claude-code-managed-mcp"
       ]
     },
     {
@@ -3898,7 +3900,9 @@
         "claude-code-headless",
         "github-copilot-instructions",
         "github-copilot-mcp",
-        "github-copilot-skills"
+        "github-copilot-skills",
+        "github-copilot-sandbox",
+        "github-copilot-jetbrains"
       ]
     },
     {
@@ -3934,7 +3938,7 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-09-05",
+      "updated": "2026-09-14",
       "when_to_use": "Adding MCP to Gemini CLI, or debugging trust / OAuth / env redaction",
       "related": [
         "gemini-cli-acp",
@@ -3942,7 +3946,9 @@
         "claude-code-mcp",
         "mcp-oauth-scopes",
         "gemini-cli-extensions",
-        "gemini-cli-settings"
+        "gemini-cli-settings",
+        "gemini-cli-trusted-folders",
+        "mcp-oauth-discovery-ssrf"
       ]
     },
     {
@@ -4130,7 +4136,8 @@
         "cursor-acp-extensions",
         "agent-client-protocol-acp",
         "gemini-cli-acp",
-        "cursor-cli-headless"
+        "cursor-cli-headless",
+        "github-copilot-jetbrains"
       ]
     },
     {
@@ -4144,13 +4151,14 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-09-06",
+      "updated": "2026-09-14",
       "when_to_use": "Setting Codex sandbox_mode / approval_policy, or contrasting them with permission profiles",
       "related": [
         "openai-codex-permissions",
         "openai-codex-cloud-environments",
         "claude-code-sandboxing",
-        "gemini-cli-sandboxing"
+        "gemini-cli-sandboxing",
+        "openai-codex-granular-approvals"
       ]
     },
     {
@@ -4268,7 +4276,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-07",
+      "updated": "2026-09-14",
       "when_to_use": "Requesting Copilot as a PR reviewer, or contrasting it with Copilot cloud agent / Cursor Bugbot",
       "related": [
         "github-copilot-coding-agent",
@@ -5274,7 +5282,8 @@
         "claude-code-settings",
         "claude-code-context-window",
         "agent-cost-step-budgets",
-        "claude-code-subagents"
+        "claude-code-subagents",
+        "claude-code-advisor"
       ]
     },
     {
@@ -5316,7 +5325,8 @@
         "openai-codex-permissions",
         "human-in-the-loop-approvals",
         "agent-guardrails-vs-approvals",
-        "openai-codex-sessions"
+        "openai-codex-sessions",
+        "openai-codex-granular-approvals"
       ]
     },
     {
@@ -5401,6 +5411,133 @@
         "github-copilot-hooks",
         "prompt-injection-agent-defense",
         "github-copilot-managed-permissions"
+      ]
+    },
+    {
+      "id": "claude-code-managed-mcp",
+      "path": "practices/claude-code-managed-mcp.md",
+      "title": "Claude Code managed MCP — managed-mcp.json vs allowlists",
+      "tags": [
+        "claude",
+        "mcp",
+        "governance",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-14",
+      "when_to_use": "Deploying a fixed MCP set for Claude Code, or locking allowedMcpServers so users cannot broaden it",
+      "related": [
+        "claude-code-mcp",
+        "claude-code-settings",
+        "cursor-enterprise-mcp-policy",
+        "mcp-server-trust-failures",
+        "mcp-oauth-scopes"
+      ]
+    },
+    {
+      "id": "claude-code-advisor",
+      "path": "practices/claude-code-advisor.md",
+      "title": "Claude Code advisor — second-model consult at decision points",
+      "tags": [
+        "claude",
+        "orchestration",
+        "tokens",
+        "cost"
+      ],
+      "status": "active",
+      "updated": "2026-09-14",
+      "when_to_use": "Enabling /advisor or advisorModel, or choosing advisor vs opusplan vs a stronger /model",
+      "related": [
+        "claude-code-effort",
+        "claude-code-subagents",
+        "claude-code-plan-mode",
+        "agent-cost-step-budgets",
+        "claude-code-settings"
+      ]
+    },
+    {
+      "id": "github-copilot-jetbrains",
+      "path": "practices/github-copilot-jetbrains.md",
+      "title": "Copilot in JetBrains — plugin vs AI Assistant ACP vs CLI",
+      "tags": [
+        "github",
+        "acp",
+        "interoperability",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-14",
+      "when_to_use": "Choosing Copilot’s JetBrains plugin, AI Assistant ACP agent, or Copilot CLI in the IDE terminal",
+      "related": [
+        "cursor-jetbrains-acp",
+        "claude-code-jetbrains",
+        "github-copilot-cli",
+        "github-copilot-ide-agent",
+        "github-copilot-sandbox",
+        "agent-client-protocol-acp"
+      ]
+    },
+    {
+      "id": "github-copilot-sandbox",
+      "path": "practices/github-copilot-sandbox.md",
+      "title": "Copilot CLI sandboxes — local MXC vs --cloud",
+      "tags": [
+        "github",
+        "sandbox",
+        "cli",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-14",
+      "when_to_use": "Enabling Copilot CLI /sandbox or copilot --cloud, or contrasting them with the Actions cloud agent",
+      "related": [
+        "github-copilot-cli",
+        "github-copilot-managed-permissions",
+        "github-copilot-coding-agent",
+        "agent-code-sandboxing",
+        "openai-codex-sandbox"
+      ]
+    },
+    {
+      "id": "openai-codex-granular-approvals",
+      "path": "practices/openai-codex-granular-approvals.md",
+      "title": "Codex granular approval_policy — per-category prompt gates",
+      "tags": [
+        "openai",
+        "approvals",
+        "permissions",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-14",
+      "when_to_use": "Auto-rejecting some Codex prompt categories while keeping sandbox escalations interactive",
+      "related": [
+        "openai-codex-sandbox",
+        "openai-codex-auto-review",
+        "openai-codex-apps",
+        "human-in-the-loop-approvals",
+        "agent-guardrails-vs-approvals"
+      ]
+    },
+    {
+      "id": "openai-codex-apps",
+      "path": "practices/openai-codex-apps.md",
+      "title": "Codex apps — ChatGPT connectors via /apps and $app-slug",
+      "tags": [
+        "openai",
+        "mcp",
+        "plugins",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-14",
+      "when_to_use": "Attaching a ChatGPT connector in Codex with /apps, or gating apps.* in config.toml",
+      "related": [
+        "openai-codex-plugins",
+        "openai-codex-mcp",
+        "openai-codex-granular-approvals",
+        "mcp-apps-extension",
+        "cursor-mcp-apps"
       ]
     }
   ]
