@@ -880,3 +880,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Trusted Folders (Gemini CLI) | https://geminicli.com/docs/cli/trusted-folders/ |
 | gemini-cli v0.59.0 | https://github.com/google-gemini/gemini-cli/releases/tag/v0.59.0 |
 
+## Daily ingest 2026-09-15 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Cursor Router | https://cursor.com/docs/cursor-router |
+| Cursor Python SDK | https://cursor.com/docs/sdk/python |
+| Cursor TypeScript SDK | https://cursor.com/docs/sdk/typescript |
+| Review GitLab merge requests with Codex | https://learn.chatgpt.com/docs/third-party/gitlab |
+| Connecting GitLab to ChatGPT and Codex | https://help.openai.com/en/articles/20001486-connecting-gitlab-to-chatgpt-and-codex |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+| Review GitHub pull requests with Codex | https://learn.chatgpt.com/docs/third-party/github |
+| Visual Studio Code 1.136 | https://code.visualstudio.com/updates/v1_136 |
+| GitHub Copilot weekly releases — August 31 | https://github.blog/changelog/2026-09-04-github-copilot-weekly-releases-august-31/ |
+| Use the Agents window (Preview) | https://code.visualstudio.com/docs/agents/agents-window |
+| Content exclusions generally available in Copilot app and CLI | https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/ |
+| Content exclusion for GitHub Copilot | https://docs.github.com/en/copilot/concepts/content-exclusion |
+| Excluding content from GitHub Copilot | https://docs.github.com/en/copilot/how-tos/configure-content-exclusion/exclude-content-from-copilot |
+| REST API endpoints for Copilot content exclusion management | https://docs.github.com/en/rest/copilot/copilot-content-exclusion-management |
+| Remote Subagents | https://geminicli.com/docs/core/remote-agents/ |
+| Subagents (Gemini CLI) | https://geminicli.com/docs/core/subagents/ |
+| Gemini CLI releases | https://geminicli.com/docs/releases/ |
+| Test plugins with evals | https://code.claude.com/docs/en/plugin-evals |
+| Plugins reference | https://code.claude.com/docs/en/plugins-reference |
+| Create plugins | https://code.claude.com/docs/en/plugins |
+| Codex Security plugin quickstart | https://developers.openai.com/codex/security/plugin |
+| Codex Security | https://developers.openai.com/codex/security |
+| Run a Codex Security scan | https://developers.openai.com/codex/security/plugin/scans |
+| Review code changes for security | https://developers.openai.com/codex/security/plugin/code-changes |
+

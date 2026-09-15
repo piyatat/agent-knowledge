@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-14",
+  "updated": "2026-09-15",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -3111,14 +3111,15 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-08-31",
+      "updated": "2026-09-15",
       "when_to_use": "Packaging or installing Claude Code skills/hooks/MCP/LSP as a plugin instead of loose .claude/ files",
       "related": [
         "cursor-plugins",
         "agent-skills-open-standard",
         "malicious-skills-supply-chain",
         "claude-agent-sdk",
-        "claude-code-skills"
+        "claude-code-skills",
+        "claude-code-plugin-eval"
       ]
     },
     {
@@ -3891,7 +3892,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-09-05",
+      "updated": "2026-09-15",
       "when_to_use": "Running copilot in a terminal or -p script, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -3902,7 +3903,8 @@
         "github-copilot-mcp",
         "github-copilot-skills",
         "github-copilot-sandbox",
-        "github-copilot-jetbrains"
+        "github-copilot-jetbrains",
+        "github-copilot-content-exclusions"
       ]
     },
     {
@@ -5340,14 +5342,15 @@
         "isolation"
       ],
       "status": "active",
-      "updated": "2026-09-13",
+      "updated": "2026-09-15",
       "when_to_use": "Authoring .gemini/agents markdown, forcing @codebase_investigator, or enabling browser_agent",
       "related": [
         "gemini-cli-plan-mode",
         "gemini-cli-policy-engine",
         "claude-code-subagents",
         "cursor-custom-subagents",
-        "subagent-context-isolation"
+        "subagent-context-isolation",
+        "gemini-cli-remote-subagents"
       ]
     },
     {
@@ -5538,6 +5541,147 @@
         "openai-codex-granular-approvals",
         "mcp-apps-extension",
         "cursor-mcp-apps"
+      ]
+    },
+    {
+      "id": "cursor-router",
+      "path": "practices/cursor-router.md",
+      "title": "Cursor Router — Auto Cost, Balance, and Intelligence",
+      "tags": [
+        "cursor",
+        "routing",
+        "cost",
+        "models"
+      ],
+      "status": "active",
+      "updated": "2026-09-15",
+      "when_to_use": "Choosing Auto Cost vs Balance vs Intelligence, or passing auto-smart from the Cursor SDK",
+      "related": [
+        "cursor-sdk",
+        "agent-model-routing-fallback",
+        "agent-cost-step-budgets",
+        "cursor-agent-modes"
+      ]
+    },
+    {
+      "id": "openai-codex-gitlab",
+      "path": "practices/openai-codex-gitlab.md",
+      "title": "Codex GitLab — @codex review and cloud MR tasks",
+      "tags": [
+        "openai",
+        "gitlab",
+        "review",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-15",
+      "when_to_use": "Connecting GitLab.com or self-managed GitLab to Codex cloud, or requesting @codex review on a merge request",
+      "related": [
+        "openai-codex-review",
+        "openai-codex-slack",
+        "openai-codex-cloud-environments",
+        "openai-codex-security",
+        "github-copilot-code-review"
+      ]
+    },
+    {
+      "id": "github-copilot-agent-merge",
+      "path": "practices/github-copilot-agent-merge.md",
+      "title": "VS Code Agent Merge — drive a PR to merge-ready",
+      "tags": [
+        "github",
+        "review",
+        "orchestration",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-15",
+      "when_to_use": "Enabling Agent Merge on a VS Code agent session to clear review comments, failed checks, and merge conflicts",
+      "related": [
+        "github-copilot-ide-agent",
+        "github-copilot-code-review",
+        "github-copilot-coding-agent",
+        "cursor-agents-window"
+      ]
+    },
+    {
+      "id": "github-copilot-content-exclusions",
+      "path": "practices/github-copilot-content-exclusions.md",
+      "title": "Copilot content exclusions — policy vs agent mode",
+      "tags": [
+        "github",
+        "privacy",
+        "security",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-09-15",
+      "when_to_use": "Configuring Copilot to ignore paths, or checking whether CLI/app vs IDE agent mode will honor those rules",
+      "related": [
+        "github-copilot-cli",
+        "github-copilot-ide-agent",
+        "github-copilot-code-review",
+        "cursor-ignore-files"
+      ]
+    },
+    {
+      "id": "gemini-cli-remote-subagents",
+      "path": "practices/gemini-cli-remote-subagents.md",
+      "title": "Gemini CLI remote subagents — A2A cards and auth",
+      "tags": [
+        "gemini",
+        "a2a",
+        "subagent",
+        "auth"
+      ],
+      "status": "active",
+      "updated": "2026-09-15",
+      "when_to_use": "Pointing Gemini CLI at a remote A2A agent via .gemini/agents, or configuring apiKey/http/oauth/google-credentials",
+      "related": [
+        "gemini-cli-subagents",
+        "a2a-agent-card-discovery",
+        "a2a-enterprise-auth",
+        "agent-to-agent-a2a-protocol"
+      ]
+    },
+    {
+      "id": "claude-code-plugin-eval",
+      "path": "practices/claude-code-plugin-eval.md",
+      "title": "Claude Code plugin eval — scored cases and CI gates",
+      "tags": [
+        "claude",
+        "plugins",
+        "evals",
+        "ci"
+      ],
+      "status": "active",
+      "updated": "2026-09-15",
+      "when_to_use": "Scoring a Claude Code plugin with claude plugin eval, or gating plugin PRs on WITH vs W/OUT delta",
+      "related": [
+        "claude-code-plugins",
+        "claude-code-skills",
+        "agent-eval-harness",
+        "llm-judge-bias"
+      ]
+    },
+    {
+      "id": "openai-codex-security",
+      "path": "practices/openai-codex-security.md",
+      "title": "Codex Security plugin — scans, diffs, and cloud review",
+      "tags": [
+        "openai",
+        "plugins",
+        "security",
+        "review"
+      ],
+      "status": "active",
+      "updated": "2026-09-15",
+      "when_to_use": "Installing Codex Security for a local scan, a diff scan in CI, or @codex security review on GitHub",
+      "related": [
+        "openai-codex-plugins",
+        "openai-codex-review",
+        "openai-codex-auto-review",
+        "openai-codex-gitlab"
       ]
     }
   ]
