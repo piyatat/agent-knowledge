@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-15",
+  "updated": "2026-09-16",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1328,7 +1328,7 @@
         "cron"
       ],
       "status": "active",
-      "updated": "2026-09-03",
+      "updated": "2026-09-16",
       "when_to_use": "Configuring scheduled or event-triggered Cursor cloud agents (not a running agent’s PR/Slack subscription)",
       "related": [
         "cursor-cloud-always-on",
@@ -1337,7 +1337,11 @@
         "cursor-security-agents",
         "cursor-pr-routing-approval",
         "cursor-linear-cloud-agents",
-        "cursor-github-cloud-agents"
+        "cursor-github-cloud-agents",
+        "cursor-gitlab-cloud-agents",
+        "cursor-bitbucket-cloud-agents",
+        "cursor-azure-devops",
+        "cursor-microsoft-teams"
       ]
     },
     {
@@ -1358,7 +1362,10 @@
         "human-in-the-loop-approvals",
         "agent-eval-harness",
         "cursor-security-agents",
-        "cursor-pr-routing-approval"
+        "cursor-pr-routing-approval",
+        "cursor-azure-devops",
+        "cursor-gitlab-cloud-agents",
+        "cursor-bitbucket-cloud-agents"
       ]
     },
     {
@@ -3264,7 +3271,8 @@
         "prompt-injection-agent-defense",
         "cursor-self-hosted-pools",
         "cursor-linear-cloud-agents",
-        "cursor-github-cloud-agents"
+        "cursor-github-cloud-agents",
+        "cursor-microsoft-teams"
       ]
     },
     {
@@ -3424,7 +3432,8 @@
         "cursor-slack-cloud-agents",
         "cursor-automations",
         "cursor-cloud-always-on",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "cursor-microsoft-teams"
       ]
     },
     {
@@ -3445,7 +3454,8 @@
         "cursor-bugbot-review",
         "cursor-automations",
         "cursor-cloud-always-on",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "cursor-gitlab-cloud-agents"
       ]
     },
     {
@@ -3733,7 +3743,8 @@
         "github-copilot-instructions",
         "github-copilot-mcp",
         "github-copilot-skills",
-        "github-copilot-code-review"
+        "github-copilot-code-review",
+        "github-copilot-jira"
       ]
     },
     {
@@ -3790,13 +3801,14 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-05",
-      "when_to_use": "Scripting Claude Code in CI, or choosing --bare vs loading project hooks/MCP",
+      "updated": "2026-09-16",
+      "when_to_use": "Scripting Claude Code in CI, or choosing --bare vs --permission-prompts none",
       "related": [
         "claude-agent-sdk",
         "cursor-cli-headless",
         "claude-code-mcp",
-        "claude-code-github-action"
+        "claude-code-github-action",
+        "claude-code-permissions"
       ]
     },
     {
@@ -3830,13 +3842,14 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-09-05",
+      "updated": "2026-09-16",
       "when_to_use": "Adding stdio or HTTP MCP to Codex, or replacing a codex mcp-server integration",
       "related": [
         "openai-codex-sdk",
         "openai-codex-plugins",
         "claude-code-mcp",
-        "cursor-mcp-json"
+        "cursor-mcp-json",
+        "mcp-oauth-scopes"
       ]
     },
     {
@@ -3904,7 +3917,8 @@
         "github-copilot-skills",
         "github-copilot-sandbox",
         "github-copilot-jetbrains",
-        "github-copilot-content-exclusions"
+        "github-copilot-content-exclusions",
+        "github-copilot-auto-model"
       ]
     },
     {
@@ -4570,7 +4584,8 @@
         "github-copilot-cli",
         "github-copilot-custom-agents",
         "github-copilot-spaces",
-        "cursor-agent-modes"
+        "cursor-agent-modes",
+        "github-copilot-auto-model"
       ]
     },
     {
@@ -4731,14 +4746,15 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-09-10",
-      "when_to_use": "Packaging or installing a Copilot plugin (CLI, cloud agent, or Copilot app), or choosing Agent Plugins 1.0 vs the legacy manifest",
+      "updated": "2026-09-16",
+      "when_to_use": "Packaging or installing a Copilot plugin (CLI, cloud agent, or Copilot app), or replacing copilot plugins --kind flags",
       "related": [
         "github-copilot-cli",
         "github-copilot-skills",
         "github-copilot-hooks",
         "github-copilot-custom-agents",
-        "malicious-skills-supply-chain"
+        "malicious-skills-supply-chain",
+        "github-copilot-mcp"
       ]
     },
     {
@@ -5560,7 +5576,8 @@
         "cursor-sdk",
         "agent-model-routing-fallback",
         "agent-cost-step-budgets",
-        "cursor-agent-modes"
+        "cursor-agent-modes",
+        "github-copilot-auto-model"
       ]
     },
     {
@@ -5682,6 +5699,132 @@
         "openai-codex-review",
         "openai-codex-auto-review",
         "openai-codex-gitlab"
+      ]
+    },
+    {
+      "id": "cursor-gitlab-cloud-agents",
+      "path": "practices/cursor-gitlab-cloud-agents.md",
+      "title": "Cursor GitLab — Cloud Agents and Bugbot (Premium+)",
+      "tags": [
+        "cursor",
+        "gitlab",
+        "automations",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-16",
+      "when_to_use": "Connecting GitLab.com or self-hosted GitLab to Cursor Cloud Agents, Bugbot, or Automations",
+      "related": [
+        "cursor-github-cloud-agents",
+        "cursor-bugbot-review",
+        "cursor-automations",
+        "prompt-injection-agent-defense",
+        "openai-codex-gitlab"
+      ]
+    },
+    {
+      "id": "cursor-microsoft-teams",
+      "path": "practices/cursor-microsoft-teams.md",
+      "title": "Cursor Microsoft Teams — @Cursor Cloud Agents",
+      "tags": [
+        "cursor",
+        "automations",
+        "orchestration",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-16",
+      "when_to_use": "Starting or steering a Cloud Agent from Microsoft Teams, or contrasting @Cursor with Slack/Linear mentions",
+      "related": [
+        "cursor-slack-cloud-agents",
+        "cursor-linear-cloud-agents",
+        "cursor-github-cloud-agents",
+        "cursor-automations",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "cursor-bitbucket-cloud-agents",
+      "path": "practices/cursor-bitbucket-cloud-agents.md",
+      "title": "Cursor Bitbucket — Cloud vs Data Center identities",
+      "tags": [
+        "cursor",
+        "git",
+        "automations",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-16",
+      "when_to_use": "Connecting Bitbucket Cloud to Cloud Agents/Bugbot, or enabling Bugbot on Bitbucket Data Center",
+      "related": [
+        "cursor-github-cloud-agents",
+        "cursor-gitlab-cloud-agents",
+        "cursor-bugbot-review",
+        "cursor-automations",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "cursor-azure-devops",
+      "path": "practices/cursor-azure-devops.md",
+      "title": "Cursor Azure DevOps — Cloud Agents and Bugbot (public beta)",
+      "tags": [
+        "cursor",
+        "git",
+        "review",
+        "automations"
+      ],
+      "status": "active",
+      "updated": "2026-09-16",
+      "when_to_use": "Connecting Azure DevOps Services to Cloud Agents or Bugbot, or checking which Cursor features still require GitHub",
+      "related": [
+        "cursor-bugbot-review",
+        "cursor-github-cloud-agents",
+        "cursor-automations",
+        "cursor-gitlab-cloud-agents",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "github-copilot-jira",
+      "path": "practices/github-copilot-jira.md",
+      "title": "Copilot cloud agent from Jira — assign, @mention, automation",
+      "tags": [
+        "github",
+        "automations",
+        "orchestration",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-16",
+      "when_to_use": "Starting Copilot cloud agent from a Jira work item, or contrasting Jira assign vs a follow-up on the GitHub session",
+      "related": [
+        "github-copilot-coding-agent",
+        "github-copilot-automations",
+        "github-copilot-custom-agents",
+        "prompt-injection-agent-defense",
+        "cursor-linear-cloud-agents"
+      ]
+    },
+    {
+      "id": "github-copilot-auto-model",
+      "path": "practices/github-copilot-auto-model.md",
+      "title": "Copilot Auto — Efficiency, Balance, and Intelligence tiers",
+      "tags": [
+        "github",
+        "routing",
+        "cost",
+        "models"
+      ],
+      "status": "active",
+      "updated": "2026-09-16",
+      "when_to_use": "Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or contrasting it with Cursor Router",
+      "related": [
+        "cursor-router",
+        "github-copilot-cli",
+        "github-copilot-ide-agent",
+        "github-copilot-coding-agent",
+        "agent-model-routing-fallback"
       ]
     }
   ]

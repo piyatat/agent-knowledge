@@ -909,3 +909,25 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Run a Codex Security scan | https://developers.openai.com/codex/security/plugin/scans |
 | Review code changes for security | https://developers.openai.com/codex/security/plugin/code-changes |
 
+## Daily ingest 2026-09-16 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| GitLab (Cursor docs) | https://cursor.com/docs/integrations/gitlab |
+| Microsoft Teams (Cursor docs) | https://cursor.com/docs/integrations/microsoft-teams |
+| Slack (Cursor docs) | https://cursor.com/docs/integrations/slack.md |
+| Bitbucket (Cursor docs) | https://cursor.com/docs/integrations/bitbucket |
+| Azure DevOps (Cursor docs) | https://cursor.com/docs/integrations/azure-devops |
+| Cursor Automations | https://cursor.com/docs/cloud-agent/automations |
+| Integrating Copilot cloud agent with Jira | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-jira |
+| About GitHub Copilot cloud agent | https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent |
+| About Copilot auto model selection | https://docs.github.com/en/copilot/concepts/auto-model-selection |
+| Configure cost and quality in Copilot auto model selection | https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/ |
+| Cursor Router | https://cursor.com/docs/cursor-router |
+| Run Claude Code programmatically | https://code.claude.com/docs/en/headless |
+| CLI reference (Claude Code) | https://code.claude.com/docs/en/cli-reference |
+| GitHub Copilot CLI command reference | https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference |
+| Model Context Protocol (Codex) | https://developers.openai.com/codex/mcp |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+

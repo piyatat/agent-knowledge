@@ -3,8 +3,8 @@ id: claude-code-headless
 title: Claude Code headless — claude -p and --bare
 tags: [claude, cli, ci, orchestration]
 status: active
-updated: 2026-09-05
-when_to_use: Scripting Claude Code in CI, or choosing --bare vs loading project hooks/MCP
+updated: 2026-09-16
+when_to_use: Scripting Claude Code in CI, or choosing --bare vs --permission-prompts none
 ---
 
 ## Summary
@@ -18,8 +18,9 @@ when_to_use: Scripting Claude Code in CI, or choosing --bare vs loading project 
 - Bare mode does not read OAuth / keychain. Set `ANTHROPIC_API_KEY` (or `apiKeyHelper` in `--settings`). Bedrock / Google Agent Platform / Foundry keep their provider creds. Tools left: Bash, Read, Edit.
 - Background Bash started during `-p` is killed ~5s after the final result; background **subagents** wait (default 10 min, `CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS`). SIGTERM → abort, kill Bash tree, `SessionEnd`, exit 143. Stdin cap 10MB.
 - `--safe-mode` is different: keeps auth, model, built-in tools, and permissions, but drops customizations; managed policy still applies. `--bare` is the CI default you should plan for.
+- Unattended hosts that still have a permission host (Agent SDK `canUseTool`, or `--permission-prompt-tool`): pass **`--permission-prompts none`** (v2.1.259+) so Claude **denies** instead of waiting. Combine with `--permission-mode auto` if the classifier should still allow pre-approved work. The flag also hides person-only tools such as `AskUserQuestion` and cancels unanswered MCP elicitation. Default is `host`. Earlier CLIs reject the flag as unknown.
 
 ## Sources
 
-- [Run Claude Code programmatically](https://code.claude.com/docs/en/headless) — accessed 2026-09-05
-- [CLI reference](https://code.claude.com/docs/en/cli-reference) — accessed 2026-09-05
+- [Run Claude Code programmatically](https://code.claude.com/docs/en/headless) — accessed 2026-09-16
+- [CLI reference](https://code.claude.com/docs/en/cli-reference) — accessed 2026-09-16
