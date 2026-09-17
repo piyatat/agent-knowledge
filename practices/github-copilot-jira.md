@@ -3,13 +3,13 @@ id: github-copilot-jira
 title: Copilot cloud agent from Jira — assign, @mention, automation
 tags: [github, automations, orchestration, ux]
 status: active
-updated: 2026-09-16
-when_to_use: Starting Copilot cloud agent from a Jira work item, or contrasting Jira assign vs a follow-up on the GitHub session
+updated: 2026-09-17
+when_to_use: Starting Copilot cloud agent from a Jira work item, or contrasting Jira assign vs Cursor `@Cursor` on Jira
 ---
 
 ## Summary
 
-The **GitHub Copilot for Jira** app starts **Copilot cloud agent** from Jira Cloud (title, description, labels, comments, custom fields such as acceptance criteria). It is not Cursor `@Cursor` in Linear (`cursor-linear-cloud-agents`) and not a GitHub-side Copilot Automation (`github-copilot-automations`). **Continue in Chat** updates the existing PR; a later `@GitHub Copilot` comment on the work item opens a **new** PR.
+The **GitHub Copilot for Jira** app starts **Copilot cloud agent** from Jira Cloud (title, description, labels, comments, custom fields such as acceptance criteria). It is not Cursor `@Cursor` on Jira (`cursor-jira`), not Linear `@Cursor` (`cursor-linear-cloud-agents`), and not a GitHub-side Copilot Automation (`github-copilot-automations`). **Continue in Chat** updates the existing PR; a later `@GitHub Copilot` comment on the work item opens a **new** PR.
 
 ## Notes
 

@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1355,7 +1355,7 @@
         "evals"
       ],
       "status": "active",
-      "updated": "2026-08-22",
+      "updated": "2026-09-17",
       "when_to_use": "Wiring Cursor’s PR review agent (comments, checks, /review, Autofix) without treating it as a merge gate by default",
       "related": [
         "cursor-automations",
@@ -1365,7 +1365,8 @@
         "cursor-pr-routing-approval",
         "cursor-azure-devops",
         "cursor-gitlab-cloud-agents",
-        "cursor-bitbucket-cloud-agents"
+        "cursor-bitbucket-cloud-agents",
+        "cursor-agent-review"
       ]
     },
     {
@@ -5796,14 +5797,15 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-09-16",
-      "when_to_use": "Starting Copilot cloud agent from a Jira work item, or contrasting Jira assign vs a follow-up on the GitHub session",
+      "updated": "2026-09-17",
+      "when_to_use": "Starting Copilot cloud agent from a Jira work item, or contrasting Jira assign vs Cursor `@Cursor` on Jira",
       "related": [
         "github-copilot-coding-agent",
         "github-copilot-automations",
         "github-copilot-custom-agents",
         "prompt-injection-agent-defense",
-        "cursor-linear-cloud-agents"
+        "cursor-linear-cloud-agents",
+        "cursor-jira"
       ]
     },
     {
@@ -5825,6 +5827,171 @@
         "github-copilot-ide-agent",
         "github-copilot-coding-agent",
         "agent-model-routing-fallback"
+      ]
+    },
+    {
+      "id": "cursor-grok-bot",
+      "path": "practices/cursor-grok-bot.md",
+      "title": "Cursor Grok Bot — named Bots on a shared cloud computer",
+      "tags": [
+        "cursor",
+        "computer-use",
+        "orchestration",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-17",
+      "when_to_use": "Creating or governing Cursor Grok Bots (named teammates, shared computer, skills/routines) instead of a one-shot Cloud Agent",
+      "related": [
+        "computer-use-containment",
+        "cursor-sandbox-json",
+        "prompt-injection-agent-defense",
+        "cursor-cloud-always-on",
+        "cursor-privacy-mode"
+      ]
+    },
+    {
+      "id": "cursor-jira",
+      "path": "practices/cursor-jira.md",
+      "title": "Cursor Jira — assign or @Cursor Cloud Agents",
+      "tags": [
+        "cursor",
+        "automations",
+        "orchestration",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-17",
+      "when_to_use": "Starting a Cloud Agent from a Jira work item, or contrasting Cursor Jira with Copilot-for-Jira",
+      "related": [
+        "cursor-linear-cloud-agents",
+        "github-copilot-jira",
+        "cursor-automations",
+        "prompt-injection-agent-defense",
+        "cursor-github-cloud-agents"
+      ]
+    },
+    {
+      "id": "cursor-notion",
+      "path": "practices/cursor-notion.md",
+      "title": "Cursor in Notion — agents from specs and task boards",
+      "tags": [
+        "cursor",
+        "automations",
+        "orchestration",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-17",
+      "when_to_use": "Delegating a Notion spec or task to a Cursor Cloud Agent, or debugging page-access / GitHub push from Notion",
+      "related": [
+        "cursor-sdk",
+        "cursor-cloud-always-on",
+        "cursor-jira",
+        "cursor-linear-cloud-agents",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "cursor-xcode",
+      "path": "practices/cursor-xcode.md",
+      "title": "Cursor + Xcode MCP bridge (xcrun mcpbridge)",
+      "tags": [
+        "cursor",
+        "mcp",
+        "cli",
+        "interoperability"
+      ],
+      "status": "active",
+      "updated": "2026-09-17",
+      "when_to_use": "Letting Cursor’s agent build, test, or preview an Xcode project via Apple’s MCP tools",
+      "related": [
+        "cursor-mcp-json",
+        "cursor-cli-mcp",
+        "cursor-jetbrains-acp",
+        "mcp-server-trust-failures"
+      ]
+    },
+    {
+      "id": "cursor-agent-review",
+      "path": "practices/cursor-agent-review.md",
+      "title": "Cursor Agent Review — local working-tree review",
+      "tags": [
+        "cursor",
+        "review",
+        "git",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-17",
+      "when_to_use": "Running a local Agent Review on uncommitted/unpushed changes, or contrasting it with Bugbot on PRs",
+      "related": [
+        "cursor-bugbot-review",
+        "cursor-security-agents",
+        "cursor-agent-modes",
+        "human-in-the-loop-approvals",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "claude-code-gitlab-ci",
+      "path": "practices/claude-code-gitlab-ci.md",
+      "title": "Claude Code GitLab CI/CD — @claude jobs and MRs",
+      "tags": [
+        "claude",
+        "gitlab",
+        "ci",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-17",
+      "when_to_use": "Running Claude Code in GitLab CI/CD (beta) from @claude comments or MR/web triggers",
+      "related": [
+        "claude-code-github-action",
+        "claude-code-headless",
+        "openai-codex-gitlab",
+        "cursor-gitlab-cloud-agents",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "openai-codex-sites",
+      "path": "practices/openai-codex-sites.md",
+      "title": "ChatGPT Sites — hosted web apps from Codex/ChatGPT",
+      "tags": [
+        "openai",
+        "hosting",
+        "ux",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-17",
+      "when_to_use": "Publishing a ChatGPT Site (public beta) from a prompt or local project, or contrasting Sites with Codex apps/plugins",
+      "related": [
+        "openai-codex-apps",
+        "openai-codex-plugins",
+        "cursor-origin",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "gemini-cli-custom-commands",
+      "path": "practices/gemini-cli-custom-commands.md",
+      "title": "Gemini CLI custom commands — TOML slash prompts",
+      "tags": [
+        "gemini",
+        "prompts",
+        "cli",
+        "skills"
+      ],
+      "status": "active",
+      "updated": "2026-09-17",
+      "when_to_use": "Authoring ~/.gemini/commands or project .gemini/commands TOML slash commands, or contrasting them with Agent Skills",
+      "related": [
+        "gemini-cli-skills",
+        "cursor-slash-commands",
+        "skills-invocation-modes",
+        "gemini-cli-gemini-md"
       ]
     }
   ]

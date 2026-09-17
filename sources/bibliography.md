@@ -931,3 +931,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
 | ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
 
+## Daily ingest 2026-09-17 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Grok Bot | https://cursor.com/docs/grok-bot |
+| Get started with Grok Bot | https://cursor.com/docs/grok-bot/get-started |
+| Work with Grok Bot | https://cursor.com/docs/grok-bot/work |
+| Grok Bot security | https://cursor.com/docs/grok-bot/security |
+| Jira (Cursor docs) | https://cursor.com/docs/integrations/jira |
+| Linear (Cursor docs) | https://cursor.com/docs/integrations/linear |
+| Notion (Cursor docs) | https://cursor.com/docs/integrations/notion |
+| Cloud Agents | https://cursor.com/docs/cloud-agent |
+| Xcode (Cursor docs) | https://cursor.com/docs/integrations/xcode |
+| MCP overview (Cursor) | https://cursor.com/docs/mcp |
+| Agent Review | https://cursor.com/docs/agent/agent-review |
+| Bugbot | https://cursor.com/docs/bugbot |
+| Bugbot docs | https://cursor.com/docs/bugbot.md |
+| Claude Code GitLab CI/CD | https://code.claude.com/docs/en/gitlab-ci-cd |
+| Claude Code GitHub Actions | https://code.claude.com/docs/en/github-actions |
+| CLI reference (Claude Code) | https://code.claude.com/docs/en/cli-reference |
+| Sites (Codex/ChatGPT docs) | https://developers.openai.com/codex/sites |
+| Plugins (Codex) | https://developers.openai.com/codex/plugins |
+| Custom commands (Gemini CLI) | https://geminicli.com/docs/cli/custom-commands/ |
+| Agent Skills (Gemini CLI) | https://geminicli.com/docs/cli/skills/ |
+| Ignore files (.geminiignore) | https://geminicli.com/docs/cli/gemini-ignore/ |
+
