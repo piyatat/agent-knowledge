@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1328,7 +1328,7 @@
         "cron"
       ],
       "status": "active",
-      "updated": "2026-09-16",
+      "updated": "2026-09-18",
       "when_to_use": "Configuring scheduled or event-triggered Cursor cloud agents (not a running agent’s PR/Slack subscription)",
       "related": [
         "cursor-cloud-always-on",
@@ -1341,7 +1341,9 @@
         "cursor-gitlab-cloud-agents",
         "cursor-bitbucket-cloud-agents",
         "cursor-azure-devops",
-        "cursor-microsoft-teams"
+        "cursor-microsoft-teams",
+        "cursor-sentry",
+        "cursor-pagerduty"
       ]
     },
     {
@@ -2995,14 +2997,15 @@
         "tools"
       ],
       "status": "active",
-      "updated": "2026-09-01",
+      "updated": "2026-09-18",
       "when_to_use": "Choosing openai-agents (Python/JS) instead of owning the Responses API loop yourself",
       "related": [
         "claude-agent-sdk",
         "cursor-sdk",
         "multi-agent-handoffs",
         "human-in-the-loop-approvals",
-        "openai-sandbox-agents"
+        "openai-sandbox-agents",
+        "openai-agents-api"
       ]
     },
     {
@@ -5992,6 +5995,171 @@
         "cursor-slash-commands",
         "skills-invocation-modes",
         "gemini-cli-gemini-md"
+      ]
+    },
+    {
+      "id": "openai-agents-api",
+      "path": "practices/openai-agents-api.md",
+      "title": "OpenAI Agents API — hosted Codex harness sessions",
+      "tags": [
+        "openai",
+        "api",
+        "sandbox",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-18",
+      "when_to_use": "Calling POST /v1/agents/sessions for a managed Codex loop instead of openai-agents or Codex CLI",
+      "related": [
+        "openai-agents-sdk",
+        "openai-sandbox-agents",
+        "openai-codex-sdk",
+        "durable-agent-workflows",
+        "openai-codex-subagents"
+      ]
+    },
+    {
+      "id": "claude-code-self-hosted",
+      "path": "practices/claude-code-self-hosted.md",
+      "title": "Claude Code self-hosted environments — org runners for cloud sessions",
+      "tags": [
+        "claude",
+        "ops",
+        "isolation",
+        "hosting"
+      ],
+      "status": "active",
+      "updated": "2026-09-18",
+      "when_to_use": "Running Claude Code cloud sessions on your hosts instead of Anthropic-managed environments",
+      "related": [
+        "claude-code-on-the-web",
+        "claude-code-remote-control",
+        "cursor-self-hosted-agents",
+        "claude-code-routines",
+        "claude-code-github-action"
+      ]
+    },
+    {
+      "id": "openai-codex-subagents",
+      "path": "practices/openai-codex-subagents.md",
+      "title": "Codex subagents — parallel threads and custom agent TOML",
+      "tags": [
+        "openai",
+        "subagent",
+        "orchestration",
+        "isolation"
+      ],
+      "status": "active",
+      "updated": "2026-09-18",
+      "when_to_use": "Delegating Codex/ChatGPT Work work to parallel subagents, or authoring ~/.codex/agents TOML",
+      "related": [
+        "openai-codex-sessions",
+        "claude-code-subagents",
+        "cursor-custom-subagents",
+        "gemini-cli-subagents",
+        "subagent-context-isolation"
+      ]
+    },
+    {
+      "id": "github-copilot-hydrafusion",
+      "path": "practices/github-copilot-hydrafusion.md",
+      "title": "Copilot HydraFusion — research-preview multi-model workflows",
+      "tags": [
+        "github",
+        "routing",
+        "models",
+        "cost"
+      ],
+      "status": "draft",
+      "updated": "2026-09-18",
+      "when_to_use": "Trying Copilot CLI HydraFusion instead of Auto Efficiency/Balance/Intelligence",
+      "related": [
+        "github-copilot-auto-model",
+        "github-copilot-cli",
+        "agent-model-routing-fallback",
+        "cursor-router"
+      ]
+    },
+    {
+      "id": "cursor-sentry",
+      "path": "practices/cursor-sentry.md",
+      "title": "Cursor × Sentry — Seer handoff and Automation issue triggers",
+      "tags": [
+        "cursor",
+        "automations",
+        "orchestration",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-09-18",
+      "when_to_use": "Starting a Cursor Cloud Agent from a Sentry issue, or wiring Sentry triggers on an Automation",
+      "related": [
+        "cursor-automations",
+        "cursor-pagerduty",
+        "github-copilot-sentry",
+        "cursor-cloud-always-on",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "github-copilot-sentry",
+      "path": "practices/github-copilot-sentry.md",
+      "title": "Copilot × Sentry — Seer send-to-agent and Copilot-app canvas",
+      "tags": [
+        "github",
+        "automations",
+        "orchestration",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-09-18",
+      "when_to_use": "Sending a Sentry Seer RCA to Copilot cloud agent, or fixing crashes from the Copilot app Sentry canvas",
+      "related": [
+        "github-copilot-coding-agent",
+        "cursor-sentry",
+        "github-copilot-jira",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "github-copilot-dev-containers",
+      "path": "practices/github-copilot-dev-containers.md",
+      "title": "VS Code Agents window — local Dev Container sessions",
+      "tags": [
+        "github",
+        "sandbox",
+        "isolation",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-18",
+      "when_to_use": "Running a VS Code Agents window session inside a project Dev Container instead of the host toolchain",
+      "related": [
+        "github-copilot-ide-agent",
+        "github-copilot-sandbox",
+        "workspace-mount-boundaries",
+        "agent-code-sandboxing"
+      ]
+    },
+    {
+      "id": "cursor-pagerduty",
+      "path": "practices/cursor-pagerduty.md",
+      "title": "Cursor Automations — PagerDuty incident triggers",
+      "tags": [
+        "cursor",
+        "automations",
+        "orchestration",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-09-18",
+      "when_to_use": "Starting a Cursor Automation from PagerDuty incident events (not a mention-based Cloud Agent)",
+      "related": [
+        "cursor-automations",
+        "cursor-sentry",
+        "cursor-cloud-always-on",
+        "prompt-injection-agent-defense",
+        "heartbeat-dead-man-switch"
       ]
     }
   ]

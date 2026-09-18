@@ -3,13 +3,13 @@ id: openai-agents-sdk
 title: OpenAI Agents SDK — Agent + Runner vs Responses API
 tags: [sdk, orchestration, handoff, tools]
 status: active
-updated: 2026-09-01
+updated: 2026-09-18
 when_to_use: Choosing openai-agents (Python/JS) instead of owning the Responses API loop yourself
 ---
 
 ## Summary
 
-`openai-agents` is a small runtime on top of the **Responses API**: `Agent` + `Runner`, tools, guardrails, handoffs, sessions, tracing. It is not the chat-completions SDK and not Cursor/Claude Code’s coding-agent loop. Use Responses directly when you want to own turns; use this SDK when the runtime should run tools, pause for HITL, or host a sandbox workspace.
+`openai-agents` is a small runtime on top of the **Responses API**: `Agent` + `Runner`, tools, guardrails, handoffs, sessions, tracing. It is not the chat-completions SDK, not Cursor/Claude Code’s coding-agent loop, and not the hosted **Agents API** (`openai-agents-api`, `POST /v1/agents/sessions`). Use Responses directly when you want to own turns; use this SDK when the runtime should run tools, pause for HITL, or host a sandbox workspace; use the Agents API when OpenAI should run the Codex harness.
 
 ## Notes
 
@@ -26,3 +26,4 @@ when_to_use: Choosing openai-agents (Python/JS) instead of owning the Responses 
 - [Human-in-the-loop](https://openai.github.io/openai-agents-python/human_in_the_loop/) — accessed 2026-08-30
 - [Tools (JS SDK)](https://openai.github.io/openai-agents-js/guides/tools/) — accessed 2026-08-30
 - [Sandbox Agents (OpenAI API)](https://developers.openai.com/api/docs/guides/agents/sandboxes) — accessed 2026-09-01
+- [Agents API overview](https://developers.openai.com/api/docs/guides/agents-api/overview) — accessed 2026-09-18

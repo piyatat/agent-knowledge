@@ -957,3 +957,34 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Agent Skills (Gemini CLI) | https://geminicli.com/docs/cli/skills/ |
 | Ignore files (.geminiignore) | https://geminicli.com/docs/cli/gemini-ignore/ |
 
+## Daily ingest 2026-09-18 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Agents API overview | https://developers.openai.com/api/docs/guides/agents-api/overview |
+| Agents API quickstart | https://developers.openai.com/api/docs/guides/agents-api/quickstart |
+| OpenAI-hosted sandboxes | https://developers.openai.com/api/docs/guides/agents-api/environments/openai-hosted |
+| Self-hosted sandboxes (Agents API) | https://developers.openai.com/api/docs/guides/agents-api/environments/self-hosted |
+| Agents API architecture | https://developers.openai.com/api/docs/guides/agents-api/architecture |
+| Self-hosted environments (Claude Code) | https://code.claude.com/docs/en/self-hosted-environments |
+| Self-hosted environments quickstart | https://code.claude.com/docs/en/self-hosted-environments-quickstart |
+| Deploy self-hosted environments | https://code.claude.com/docs/en/self-hosted-environments-deploy |
+| Self-hosted environments reference | https://code.claude.com/docs/en/self-hosted-environments-reference |
+| Subagents (Codex) | https://developers.openai.com/codex/subagents |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+| Sample Configuration (Codex) | https://developers.openai.com/codex/config-sample |
+| Project HydraFusion | https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/ |
+| GitHub Copilot weekly releases — September 7 | https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7/ |
+| About Copilot auto model selection | https://docs.github.com/en/copilot/concepts/auto-model-selection |
+| Cursor Agent (Sentry) | https://docs.sentry.io/integrations/coding-agents/cursor/ |
+| Seer Autofix — handoff to coding agents | https://docs.sentry.io/product/ai-in-sentry/seer/autofix/ |
+| Cursor Automations | https://cursor.com/docs/cloud-agent/automations |
+| GitHub Copilot Agent (Sentry) | https://docs.sentry.io/integrations/coding-agents/copilot/ |
+| GitHub Copilot weekly releases — September 14 | https://github.blog/changelog/2026-09-18-github-copilot-weekly-releases-september-14/ |
+| Configure MCP servers for Copilot | https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers |
+| Visual Studio Code 1.138 | https://code.visualstudio.com/updates/v1_138 |
+| Trust and safety for AI agents | https://code.visualstudio.com/docs/agents/concepts/trust-and-safety |
+| Use the Agents window | https://code.visualstudio.com/docs/agents/agents-window |
+| Cloud agents overview | https://cursor.com/docs/cloud-agent |
+
+
