@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -587,23 +587,25 @@
     {
       "id": "a2a-vs-mcp",
       "path": "glossary/a2a-vs-mcp.md",
-      "title": "A2A vs MCP vs ACP — three different agent wires",
+      "title": "A2A vs MCP vs ACP vs AHP — four different agent wires",
       "tags": [
         "a2a",
         "mcp",
         "acp",
+        "ahp",
         "glossary",
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-08-29",
-      "when_to_use": "Choosing protocols for multi-agent collaboration vs tool/data access vs IDE↔agent embedding",
+      "updated": "2026-09-19",
+      "when_to_use": "Choosing protocols for tools vs peer agents vs IDE↔agent embedding vs multi-client session hosts",
       "related": [
         "tools-mcp-skills-layers",
         "multi-agent-handoffs",
         "mcp-oauth-scopes",
         "agent-client-protocol-acp",
-        "a2a-aaif-governance"
+        "a2a-aaif-governance",
+        "agent-host-protocol-ahp"
       ]
     },
     {
@@ -4581,15 +4583,17 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-09-09",
-      "when_to_use": "Using Copilot Chat Agent/Plan/Ask in an IDE, or choosing local agent mode vs Actions cloud agent",
+      "updated": "2026-09-19",
+      "when_to_use": "Using Copilot Chat Agent/Plan/Ask in an IDE, or choosing Agent Host vs extension-host vs Actions cloud agent",
       "related": [
         "github-copilot-coding-agent",
         "github-copilot-cli",
         "github-copilot-custom-agents",
         "github-copilot-spaces",
         "cursor-agent-modes",
-        "github-copilot-auto-model"
+        "github-copilot-auto-model",
+        "agent-host-protocol-ahp",
+        "github-copilot-dev-containers"
       ]
     },
     {
@@ -6160,6 +6164,168 @@
         "cursor-cloud-always-on",
         "prompt-injection-agent-defense",
         "heartbeat-dead-man-switch"
+      ]
+    },
+    {
+      "id": "cursor-cli-persist",
+      "path": "practices/cursor-cli-persist.md",
+      "title": "Cursor CLI persist — detach and reattach a running agent",
+      "tags": [
+        "cursor",
+        "cli",
+        "session",
+        "durability"
+      ],
+      "status": "active",
+      "updated": "2026-09-19",
+      "when_to_use": "Keeping a Cursor CLI agent running after disconnect, or choosing persist vs resume vs & cloud handoff",
+      "related": [
+        "cursor-cli-cloud-handoff",
+        "cursor-cli-headless",
+        "cursor-cli-mcp",
+        "durable-agent-workflows"
+      ]
+    },
+    {
+      "id": "cursor-origin-migrations",
+      "path": "practices/cursor-origin-migrations.md",
+      "title": "Origin Migration API — GitHub mirror transitions",
+      "tags": [
+        "cursor",
+        "git",
+        "api",
+        "hosting"
+      ],
+      "status": "active",
+      "updated": "2026-09-19",
+      "when_to_use": "Scripting a GitHub ↔ Origin mirror cutover, detach, or forced inbound adoption",
+      "related": [
+        "cursor-origin",
+        "cursor-origin-apps",
+        "cursor-sdk"
+      ]
+    },
+    {
+      "id": "cursor-conversation-insights",
+      "path": "practices/cursor-conversation-insights.md",
+      "title": "Cursor Conversation Insights — on-device work classifiers",
+      "tags": [
+        "cursor",
+        "observability",
+        "privacy",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-09-19",
+      "when_to_use": "Reading Enterprise Conversation Insights (or the Analytics API slice), not raw chat export",
+      "related": [
+        "cursor-otel-export",
+        "cursor-privacy-mode",
+        "cursor-grok-bot",
+        "telemetry-redaction-genai"
+      ]
+    },
+    {
+      "id": "cursor-otel-export",
+      "path": "practices/cursor-otel-export.md",
+      "title": "Cursor OpenTelemetry Export — enterprise OTLP metrics and logs",
+      "tags": [
+        "cursor",
+        "observability",
+        "otel",
+        "privacy"
+      ],
+      "status": "active",
+      "updated": "2026-09-19",
+      "when_to_use": "Streaming Cursor usage to a team collector over OTLP/HTTP, or joining sessions without prompt content",
+      "related": [
+        "cursor-conversation-insights",
+        "gemini-cli-telemetry",
+        "agent-observability-otel",
+        "telemetry-redaction-genai",
+        "cursor-grok-bot"
+      ]
+    },
+    {
+      "id": "agent-host-protocol-ahp",
+      "path": "glossary/agent-host-protocol-ahp.md",
+      "title": "AHP — Agent Host Protocol (sessions server ↔ clients)",
+      "tags": [
+        "ahp",
+        "glossary",
+        "orchestration",
+        "interoperability"
+      ],
+      "status": "active",
+      "updated": "2026-09-19",
+      "when_to_use": "Distinguishing AHP from ACP/MCP/A2A, or connecting a UI to a persistent agent-host process",
+      "related": [
+        "a2a-vs-mcp",
+        "agent-client-protocol-acp",
+        "github-copilot-ide-agent",
+        "github-copilot-dev-containers"
+      ]
+    },
+    {
+      "id": "openai-codex-ide",
+      "path": "practices/openai-codex-ide.md",
+      "title": "Codex IDE extension — VS Code, Cursor, JetBrains, Xcode",
+      "tags": [
+        "openai",
+        "ux",
+        "cli",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-19",
+      "when_to_use": "Installing Codex beside the editor, or choosing local IDE chat vs Codex cloud handoff",
+      "related": [
+        "openai-codex-sessions",
+        "openai-codex-sandbox",
+        "openai-codex-mcp",
+        "openai-codex-cloud-environments",
+        "github-copilot-ide-agent"
+      ]
+    },
+    {
+      "id": "claude-code-cross-session",
+      "path": "practices/claude-code-cross-session.md",
+      "title": "Claude Code cross-session messaging — ListAgents and SendMessage",
+      "tags": [
+        "claude",
+        "session",
+        "multi-agent",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-19",
+      "when_to_use": "Passing a finding between local Claude Code sessions, or locking down SendMessage / inbound peer mail",
+      "related": [
+        "claude-code-agent-teams",
+        "claude-code-remote-control",
+        "claude-code-subagents",
+        "claude-code-headless",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "gemini-cli-evals",
+      "path": "practices/gemini-cli-evals.md",
+      "title": "Gemini CLI behavioral evals — EDK tool-call assertions",
+      "tags": [
+        "gemini",
+        "evals",
+        "testing",
+        "reliability"
+      ],
+      "status": "active",
+      "updated": "2026-09-19",
+      "when_to_use": "Authoring or CI-gating Gemini CLI evals/*.eval.ts that assert tool behavior, not prose",
+      "related": [
+        "agent-eval-harness",
+        "deterministic-tool-mocks",
+        "gemini-cli-settings",
+        "llm-judge-bias"
       ]
     }
   ]

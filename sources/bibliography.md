@@ -987,4 +987,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Use the Agents window | https://code.visualstudio.com/docs/agents/agents-window |
 | Cloud agents overview | https://cursor.com/docs/cloud-agent |
 
+## Daily ingest 2026-09-19 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| CLI Changelog | https://cursor.com/docs/cli/changelog |
+| Cursor CLI overview | https://cursor.com/docs/cli/overview |
+| Using Agent in CLI | https://cursor.com/docs/cli/using |
+| Origin Migration API | https://cursor.com/docs/api/origin/migrations |
+| Origin API Changelog | https://cursor.com/docs/api/origin/changelog |
+| Usage Analytics | https://cursor.com/docs/account/teams/analytics |
+| Analytics API | https://cursor.com/docs/account/teams/analytics-api |
+| OpenTelemetry Export | https://cursor.com/docs/enterprise/opentelemetry-export |
+| What is the Agent Host Protocol? | https://microsoft.github.io/agent-host-protocol/guide/what-is-ahp |
+| VS Code Agent Host architecture | https://code.visualstudio.com/docs/agents/concepts/agent-host |
+| Introducing the Agent Host | https://code.visualstudio.com/blogs/2026/08/26/agent-host-architecture |
+| Visual Studio Code 1.136 | https://code.visualstudio.com/updates/v1_136 |
+| IDE extension (Codex) | https://developers.openai.com/codex/ide |
+| Settings (Codex IDE) | https://developers.openai.com/codex/ide/settings |
+| Commands (Codex IDE) | https://developers.openai.com/codex/ide/commands |
+| Cross-session messaging | https://code.claude.com/docs/en/cross-session-messaging |
+| Tools reference (Claude Code) | https://code.claude.com/docs/en/tools |
+| What's new 2026-w32 | https://code.claude.com/docs/en/whats-new/2026-w32 |
+| Behavioral Evaluations & EDK Guide | https://geminicli.com/docs/behavioral-evals/ |
+| Latest stable release v0.53.0 | https://geminicli.com/docs/changelogs/latest/ |
+
 

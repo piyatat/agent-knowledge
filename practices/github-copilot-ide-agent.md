@@ -3,19 +3,20 @@ id: github-copilot-ide-agent
 title: GitHub Copilot IDE agent mode vs cloud agent
 tags: [github, orchestration, ux, permissions]
 status: active
-updated: 2026-09-09
-when_to_use: Using Copilot Chat Agent/Plan/Ask in an IDE, or choosing local agent mode vs Actions cloud agent
+updated: 2026-09-19
+when_to_use: Using Copilot Chat Agent/Plan/Ask in an IDE, or choosing Agent Host vs extension-host vs Actions cloud agent
 ---
 
 ## Summary
 
-**IDE agent mode** (VS Code, JetBrains, Visual Studio, …) lets Copilot pick files, stream edits, run terminal commands, and iterate **in your local workspace**. **Cloud agent** is a separate Actions-hosted job that plans/edits on a remote branch (`github-copilot-coding-agent`). Org policy can hide the Agent option. Each agent-mode prompt consumes GitHub AI credits.
+**IDE agent mode** (VS Code, JetBrains, Visual Studio, …) lets Copilot pick files, stream edits, run terminal commands, and iterate **in your local workspace**. In current VS Code Stable, many of those sessions run in a dedicated **Agent Host** process over AHP (`agent-host-protocol-ahp`), so the session can outlive the window. **Cloud agent** is a separate Actions-hosted job (`github-copilot-coding-agent`). Org policy can hide the Agent option. Each agent-mode prompt consumes GitHub AI credits.
 
 ## Notes
 
 - VS Code Chat agents dropdown: **Agent** (autonomous local edits + tools/MCP), **Plan** (implementation plan; Start Implementation / Open in Editor hand off to Agent), **Ask** (answers, no autonomous multi-file loop). JetBrains/VS also document **Edit** (you pick the file set, accept per turn) vs Agent. Not Cursor’s four modes (`cursor-agent-modes`).
+- Agent Host vs extension host: host sessions apply edits to the session folder/worktree (review, then commit/merge/discard). Extension-host sessions still use keep/undo pending edits. Shared multi-window sessions, multiple chats, quick chats, remote/Dev Container hosts, and Assisted permissions are Agent Host–only. Autopilot is an **agent mode** on the host and a **permission level** on the extension host. Existing extension-host sessions stay there.
 - Subagents: enable `runSubagent` in the tools picker (and in custom-agent `tools` frontmatter). Same model/tools as the parent; **cannot nest**; no mid-run user pauses; result returns to the main chat. Invoke automatically (description match), by name, or `#runSubagent`. Custom agents: `github-copilot-custom-agents`.
-- Spaces MCP tools work **only in Agent mode** (`github-copilot-spaces`). Cloud-agent “Delegate this task” from the same Chat box starts the **remote** agent (may offer to push local changes first) — do not confuse the two buttons.
+- Spaces MCP tools work **only in Agent mode** (`github-copilot-spaces`). Cloud-agent “Delegate this task” from the same Chat box starts the **remote** agent (may offer to push local changes first) — do not confuse the two buttons. Local Dev Container sessions put the host **inside** the container (`github-copilot-dev-containers`).
 - CLI `copilot` is another local surface (`github-copilot-cli`). Treat issue text and MCP results as untrusted (`prompt-injection-agent-defense`). Do not use IDE agent mode as a merge gate.
 
 ## Sources
@@ -24,3 +25,5 @@ when_to_use: Using Copilot Chat Agent/Plan/Ask in an IDE, or choosing local agen
 - [About GitHub Copilot cloud agent — vs agent mode](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent) — accessed 2026-09-09
 - [GitHub Copilot features — agentic](https://docs.github.com/en/copilot/get-started/features) — accessed 2026-09-09
 - [Using Copilot cloud agent in your IDE](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-in-your-ide) — accessed 2026-09-09
+- [VS Code Agent Host architecture](https://code.visualstudio.com/docs/agents/concepts/agent-host) — accessed 2026-09-19
+- [Visual Studio Code 1.136](https://code.visualstudio.com/updates/v1_136) — accessed 2026-09-19
