@@ -1012,4 +1012,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Behavioral Evaluations & EDK Guide | https://geminicli.com/docs/behavioral-evals/ |
 | Latest stable release v0.53.0 | https://geminicli.com/docs/changelogs/latest/ |
 
+## Daily ingest 2026-09-20 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Scheduled tasks (Codex app) | https://developers.openai.com/codex/app/automations |
+| Worktrees (Codex app) | https://developers.openai.com/codex/app/worktrees |
+| Sandbox (Codex) | https://developers.openai.com/codex/agent-approvals-security |
+| Choose and use an agent harness | https://code.visualstudio.com/docs/agents/run/agent-harnesses |
+| Understand agent sessions and handoff | https://code.visualstudio.com/docs/agents/concepts/sessions |
+| Manage agent sessions in VS Code | https://code.visualstudio.com/docs/agents/run/sessions/manage-sessions |
+| VS Code Agent Host architecture | https://code.visualstudio.com/docs/agents/concepts/agent-host |
+| GitHub Copilot weekly releases — September 14 | https://github.blog/changelog/2026-09-18-github-copilot-weekly-releases-september-14/ |
+| Cursor for iOS | https://cursor.com/docs/cloud-agent/mobile |
+| Cloud Agents | https://cursor.com/docs/cloud-agent |
+| Design Mode | https://cursor.com/docs/agent/design-mode |
+| Agent Skills (Cursor) | https://cursor.com/docs/skills.md |
+| Cursor Plugins | https://cursor.com/docs/plugins |
+| Agent Discovery (A2A Protocol) | https://a2a-protocol.org/latest/topics/agent-discovery/ |
+| What's New in A2A v1.0 | https://a2a-protocol.org/latest/whats-new-v1/ |
+| A2A Protocol specification | https://a2a-protocol.org/latest/specification/ |
+| Extension reference (Gemini CLI) | https://geminicli.com/docs/extensions/reference/ |
+| Gemini CLI configuration | https://geminicli.com/docs/reference/configuration/ |
+| Latest stable release v0.60.0 | https://geminicli.com/docs/changelogs/latest/ |
+
 

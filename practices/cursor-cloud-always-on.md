@@ -3,13 +3,13 @@ id: cursor-cloud-always-on
 title: Cursor cloud agents — subscriptions, /goal, isolated subagents
 tags: [cursor, orchestration, subagent, durability]
 status: active
-updated: 2026-08-28
+updated: 2026-09-20
 when_to_use: Designing always-on Cursor cloud agents that wake on PRs/Slack/cron or hold a long-lived objective
 ---
 
 ## Summary
 
-Cloud agents are an event-driven harness: **subscriptions** wake one conversation on GitHub/Slack/Linear/timers, `/goal` holds an objective across loops, subagents can get **own VMs**, and steering queues until the next tool call. Origin (`cursor-origin`) can be the SCM. Automatic GitHub Actions retries are `cursor-cloud-pr-artifacts`, not a subscription.
+Cloud agents are an event-driven harness: **subscriptions** wake one conversation on GitHub/Slack/Linear/timers, `/goal` holds an objective across loops, subagents can get **own VMs**, and steering queues until the next tool call. Origin (`cursor-origin`) can be the SCM. The same runs show up in the **iOS** inbox (`cursor-ios`). Automatic GitHub Actions retries are `cursor-cloud-pr-artifacts`, not a subscription.
 
 ## Notes
 
@@ -17,7 +17,7 @@ Cloud agents are an event-driven harness: **subscriptions** wake one conversatio
 - Integrations: **GitHub** (one PR, a repo, or one author’s PRs; CI on a branch); **Slack** (thread replies, channel messages, new public channels); **Linear** (issue create/state, comments); **Timers** (delay or cron). Requires the matching Cursor integration.
 - `/goal` is not a one-shot prompt — e.g. “fix all flaky tests and make CI green.” Pair with a Custom Mode (pinned skill) so the skill stays always-on (token cost vs progressive loading).
 - Isolated subagent VMs: each child gets a clean project copy. Steering follow-ups wait for the next tool boundary instead of interrupting a long edit.
-- Untrusted review text, Slack, and Linear comments are prompt-injection surface. Pair with HITL, secret scanning, and skip autofix after human commits (`cursor-cloud-pr-artifacts`).
+- Untrusted review text, Slack, and Linear comments are prompt-injection surface. Pair with HITL, secret scanning, and skip autofix after human commits (`cursor-cloud-pr-artifacts`). Personal `~/.cursor/skills/` reach these VMs only if Sync Skills is on (`cursor-skills-cloud-sync`).
 
 ## Sources
 
@@ -25,4 +25,5 @@ Cloud agents are an event-driven harness: **subscriptions** wake one conversatio
 - [Cloud Agents and Cursor Harness Improvements (2026-08-19)](https://cursor.com/changelog/08-19-26) — accessed 2026-08-22
 - [Cursor changelog index](https://cursor.com/changelog) — accessed 2026-08-28
 - [Cloud Agents help](https://cursor.com/help/ai-features/cloud-agents) — accessed 2026-08-28
+- [Cursor for iOS](https://cursor.com/docs/cloud-agent/mobile) — accessed 2026-09-20
 

@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1218,7 +1218,7 @@
         "durability"
       ],
       "status": "active",
-      "updated": "2026-08-28",
+      "updated": "2026-09-20",
       "when_to_use": "Designing always-on Cursor cloud agents that wake on PRs/Slack/cron or hold a long-lived objective",
       "related": [
         "subagent-context-isolation",
@@ -1230,7 +1230,9 @@
         "cursor-cli-headless",
         "cursor-custom-subagents",
         "cursor-origin",
-        "cursor-cloud-pr-artifacts"
+        "cursor-cloud-pr-artifacts",
+        "cursor-ios",
+        "cursor-skills-cloud-sync"
       ]
     },
     {
@@ -1529,7 +1531,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-08-23",
+      "updated": "2026-09-20",
       "when_to_use": "Publishing or consuming an Agent2Agent Agent Card so peers can find skills and auth without a shared tool loop",
       "related": [
         "a2a-vs-mcp",
@@ -1537,7 +1539,8 @@
         "mcp-registry-admission",
         "a2a-streaming-async",
         "a2a-signed-agent-cards",
-        "a2a-enterprise-auth"
+        "a2a-enterprise-auth",
+        "a2a-protocol-bindings"
       ]
     },
     {
@@ -3960,7 +3963,7 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-09-14",
+      "updated": "2026-09-20",
       "when_to_use": "Adding MCP to Gemini CLI, or debugging trust / OAuth / env redaction",
       "related": [
         "gemini-cli-acp",
@@ -3970,7 +3973,8 @@
         "gemini-cli-extensions",
         "gemini-cli-settings",
         "gemini-cli-trusted-folders",
-        "mcp-oauth-discovery-ssrf"
+        "mcp-oauth-discovery-ssrf",
+        "mcp-authorization-discovery"
       ]
     },
     {
@@ -4024,7 +4028,7 @@
         "skills"
       ],
       "status": "active",
-      "updated": "2026-09-06",
+      "updated": "2026-09-20",
       "when_to_use": "Packaging or installing a Gemini CLI extension instead of loose settings.json MCP or skills",
       "related": [
         "gemini-cli-mcp",
@@ -4583,7 +4587,7 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-09-19",
+      "updated": "2026-09-20",
       "when_to_use": "Using Copilot Chat Agent/Plan/Ask in an IDE, or choosing Agent Host vs extension-host vs Actions cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4593,7 +4597,9 @@
         "cursor-agent-modes",
         "github-copilot-auto-model",
         "agent-host-protocol-ahp",
-        "github-copilot-dev-containers"
+        "github-copilot-dev-containers",
+        "vscode-agent-harnesses",
+        "vscode-external-sessions"
       ]
     },
     {
@@ -6326,6 +6332,111 @@
         "deterministic-tool-mocks",
         "gemini-cli-settings",
         "llm-judge-bias"
+      ]
+    },
+    {
+      "id": "openai-codex-automations",
+      "path": "practices/openai-codex-automations.md",
+      "title": "Codex scheduled tasks — time and Gmail/Slack/GitHub events",
+      "tags": [
+        "openai",
+        "automations",
+        "cron",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-20",
+      "when_to_use": "Scheduling a Codex/ChatGPT Work task, or contrasting it with Cursor/Copilot/Claude automations",
+      "related": [
+        "cursor-automations",
+        "github-copilot-automations",
+        "claude-code-routines",
+        "openai-codex-worktrees",
+        "openai-codex-sandbox"
+      ]
+    },
+    {
+      "id": "vscode-agent-harnesses",
+      "path": "practices/vscode-agent-harnesses.md",
+      "title": "VS Code session targets — Local, Copilot, Claude, Codex, Cloud",
+      "tags": [
+        "github",
+        "vscode",
+        "orchestration",
+        "interoperability"
+      ],
+      "status": "active",
+      "updated": "2026-09-20",
+      "when_to_use": "Choosing a VS Code Session Target, or handing a Local chat to Copilot/Claude/Codex/Cloud",
+      "related": [
+        "github-copilot-ide-agent",
+        "agent-host-protocol-ahp",
+        "vscode-external-sessions",
+        "openai-codex-ide",
+        "claude-code-vscode"
+      ]
+    },
+    {
+      "id": "vscode-external-sessions",
+      "path": "practices/vscode-external-sessions.md",
+      "title": "VS Code external sessions — discover CLI/app chats and auto-cleanup",
+      "tags": [
+        "github",
+        "vscode",
+        "session",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-20",
+      "when_to_use": "Opening a Copilot CLI, Copilot app, Claude Code, or Codex session inside VS Code, or auto-archiving merged sessions",
+      "related": [
+        "vscode-agent-harnesses",
+        "agent-host-protocol-ahp",
+        "github-copilot-cli",
+        "claude-code-cross-session",
+        "github-copilot-ide-agent"
+      ]
+    },
+    {
+      "id": "cursor-ios",
+      "path": "practices/cursor-ios.md",
+      "title": "Cursor for iOS — cloud inbox and Remote Control",
+      "tags": [
+        "cursor",
+        "ux",
+        "mobile",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-20",
+      "when_to_use": "Starting or steering a Cloud Agent from the iPhone/iPad app, or handing a desktop session to the phone",
+      "related": [
+        "cursor-cloud-always-on",
+        "cursor-design-mode",
+        "cursor-privacy-mode",
+        "cursor-self-hosted-pools",
+        "claude-code-remote-control"
+      ]
+    },
+    {
+      "id": "cursor-skills-cloud-sync",
+      "path": "practices/cursor-skills-cloud-sync.md",
+      "title": "Cursor Sync Skills — personal ~/.cursor/skills on Cloud Agents",
+      "tags": [
+        "cursor",
+        "skills",
+        "cloud",
+        "privacy"
+      ],
+      "status": "active",
+      "updated": "2026-09-20",
+      "when_to_use": "Making personal Cursor skills available to Cloud Agents, or debugging why a self-hosted worker lacks a skill",
+      "related": [
+        "skills-invocation-modes",
+        "cursor-plugins",
+        "cursor-ios",
+        "cursor-self-hosted-pools",
+        "malicious-skills-supply-chain"
       ]
     }
   ]
