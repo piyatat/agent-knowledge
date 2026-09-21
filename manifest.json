@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1347,7 +1347,8 @@
         "cursor-azure-devops",
         "cursor-microsoft-teams",
         "cursor-sentry",
-        "cursor-pagerduty"
+        "cursor-pagerduty",
+        "vscode-agent-automations"
       ]
     },
     {
@@ -1843,7 +1844,8 @@
         "computer-use-containment",
         "cursor-cli-headless",
         "cursor-ignore-files",
-        "cursor-permissions-json"
+        "cursor-permissions-json",
+        "vscode-agent-sandboxing"
       ]
     },
     {
@@ -2135,7 +2137,8 @@
         "mcp-oauth-scopes",
         "cursor-plugins",
         "cursor-enterprise-mcp-policy",
-        "cursor-mcp-apps"
+        "cursor-mcp-apps",
+        "vscode-mcp"
       ]
     },
     {
@@ -2820,14 +2823,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-03",
+      "updated": "2026-09-21",
       "when_to_use": "Scripting the same Cursor agent from Python (local cwd or Cloud VM) instead of the CLI or editor",
       "related": [
         "cursor-cli-headless",
         "cursor-cloud-always-on",
         "cursor-cloud-agent-metadata",
         "cursor-origin",
-        "cursor-cloud-agents-api"
+        "cursor-cloud-agents-api",
+        "cursor-sdk-typescript"
       ]
     },
     {
@@ -3127,7 +3131,7 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-09-15",
+      "updated": "2026-09-21",
       "when_to_use": "Packaging or installing Claude Code skills/hooks/MCP/LSP as a plugin instead of loose .claude/ files",
       "related": [
         "cursor-plugins",
@@ -3135,7 +3139,9 @@
         "malicious-skills-supply-chain",
         "claude-agent-sdk",
         "claude-code-skills",
-        "claude-code-plugin-eval"
+        "claude-code-plugin-eval",
+        "claude-code-security",
+        "claude-code-security-guidance"
       ]
     },
     {
@@ -3506,7 +3512,8 @@
         "cursor-plugins",
         "malicious-skills-supply-chain",
         "openai-codex-skills",
-        "openai-codex-apps"
+        "openai-codex-apps",
+        "openai-codex-record-replay"
       ]
     },
     {
@@ -3526,7 +3533,8 @@
         "memory-files-vs-enforcement-hooks",
         "cursor-hooks-json",
         "claude-code-plugins",
-        "permission-modes-allow-ask-deny"
+        "permission-modes-allow-ask-deny",
+        "claude-code-security-guidance"
       ]
     },
     {
@@ -4100,7 +4108,8 @@
         "github-copilot-cli",
         "github-copilot-custom-agents",
         "mcp-server-trust-failures",
-        "github-copilot-code-review"
+        "github-copilot-code-review",
+        "vscode-mcp"
       ]
     },
     {
@@ -4205,7 +4214,8 @@
         "openai-codex-agents-md",
         "agent-skills-open-standard",
         "claude-code-skills",
-        "github-copilot-skills"
+        "github-copilot-skills",
+        "openai-codex-record-replay"
       ]
     },
     {
@@ -4915,7 +4925,8 @@
         "claude-code-routines",
         "claude-code-slack",
         "claude-code-github-action",
-        "cursor-cloud-always-on"
+        "cursor-cloud-always-on",
+        "claude-code-artifacts"
       ]
     },
     {
@@ -5104,7 +5115,9 @@
         "github-copilot-code-review",
         "openai-codex-review",
         "claude-code-on-the-web",
-        "claude-code-github-action"
+        "claude-code-github-action",
+        "claude-code-security",
+        "claude-code-security-guidance"
       ]
     },
     {
@@ -5443,7 +5456,8 @@
         "cursor-automations",
         "github-copilot-hooks",
         "prompt-injection-agent-defense",
-        "github-copilot-managed-permissions"
+        "github-copilot-managed-permissions",
+        "vscode-agent-automations"
       ]
     },
     {
@@ -5528,7 +5542,8 @@
         "github-copilot-managed-permissions",
         "github-copilot-coding-agent",
         "agent-code-sandboxing",
-        "openai-codex-sandbox"
+        "openai-codex-sandbox",
+        "vscode-agent-sandboxing"
       ]
     },
     {
@@ -6373,7 +6388,10 @@
         "agent-host-protocol-ahp",
         "vscode-external-sessions",
         "openai-codex-ide",
-        "claude-code-vscode"
+        "claude-code-vscode",
+        "vscode-agent-sandboxing",
+        "vscode-agent-automations",
+        "vscode-mcp"
       ]
     },
     {
@@ -6394,7 +6412,8 @@
         "agent-host-protocol-ahp",
         "github-copilot-cli",
         "claude-code-cross-session",
-        "github-copilot-ide-agent"
+        "github-copilot-ide-agent",
+        "vscode-agent-automations"
       ]
     },
     {
@@ -6437,6 +6456,178 @@
         "cursor-ios",
         "cursor-self-hosted-pools",
         "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "claude-code-security",
+      "path": "practices/claude-code-security.md",
+      "title": "Claude Security plugin — multi-agent scan and reviewed patches",
+      "tags": [
+        "claude",
+        "plugins",
+        "security",
+        "review"
+      ],
+      "status": "active",
+      "updated": "2026-09-21",
+      "when_to_use": "Running /claude-security on a repo or diff, or contrasting it with security-guidance / Code Review / Codex Security",
+      "related": [
+        "claude-code-security-guidance",
+        "claude-code-code-review",
+        "claude-code-plugins",
+        "openai-codex-security",
+        "claude-code-auto-mode"
+      ]
+    },
+    {
+      "id": "claude-code-security-guidance",
+      "path": "practices/claude-code-security-guidance.md",
+      "title": "Claude security-guidance plugin — in-session edit and commit review",
+      "tags": [
+        "claude",
+        "plugins",
+        "security",
+        "hooks"
+      ],
+      "status": "active",
+      "updated": "2026-09-21",
+      "when_to_use": "Installing security-guidance so Claude reviews its own edits, or adding repo-specific security patterns",
+      "related": [
+        "claude-code-security",
+        "claude-code-code-review",
+        "claude-code-hooks",
+        "claude-code-plugins",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "vscode-agent-sandboxing",
+      "path": "practices/vscode-agent-sandboxing.md",
+      "title": "VS Code agent terminal sandbox — Seatbelt, bubblewrap, MXC",
+      "tags": [
+        "vscode",
+        "sandbox",
+        "security",
+        "permissions"
+      ],
+      "status": "active",
+      "updated": "2026-09-21",
+      "when_to_use": "Enabling chat.agent.sandbox for VS Code / Copilot Agent Host terminals, or contrasting it with MCP and Dev Container isolation",
+      "related": [
+        "vscode-mcp",
+        "vscode-agent-harnesses",
+        "github-copilot-sandbox",
+        "cursor-sandbox-json",
+        "github-copilot-dev-containers",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "vscode-agent-automations",
+      "path": "practices/vscode-agent-automations.md",
+      "title": "VS Code agent automations — local schedule and .automation.md",
+      "tags": [
+        "vscode",
+        "automations",
+        "cron",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-21",
+      "when_to_use": "Scheduling a recurring VS Code Agents-window task, or contrasting it with Cursor / Copilot / Codex automations",
+      "related": [
+        "github-copilot-automations",
+        "cursor-automations",
+        "openai-codex-automations",
+        "vscode-agent-harnesses",
+        "vscode-agent-sandboxing",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "vscode-mcp",
+      "path": "practices/vscode-mcp.md",
+      "title": "VS Code MCP — mcp.json, Agent Host files, and stdio sandbox",
+      "tags": [
+        "vscode",
+        "mcp",
+        "config",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-21",
+      "when_to_use": "Adding MCP in VS Code / Agent Host, or contrasting .vscode/mcp.json with Cursor and Copilot repo MCP",
+      "related": [
+        "cursor-mcp-json",
+        "github-copilot-mcp",
+        "vscode-agent-sandboxing",
+        "vscode-agent-harnesses",
+        "mcp-apps-extension",
+        "mcp-oauth-scopes"
+      ]
+    },
+    {
+      "id": "cursor-sdk-typescript",
+      "path": "practices/cursor-sdk-typescript.md",
+      "title": "Cursor TypeScript SDK — @cursor/sdk local and cloud",
+      "tags": [
+        "cursor",
+        "sdk",
+        "orchestration",
+        "sandbox"
+      ],
+      "status": "active",
+      "updated": "2026-09-21",
+      "when_to_use": "Scripting Cursor from Node/Bun with @cursor/sdk, or replacing the local agent system prompt",
+      "related": [
+        "cursor-sdk",
+        "cursor-cli-headless",
+        "cursor-hooks-json",
+        "cursor-sandbox-json",
+        "cursor-cloud-agents-api",
+        "cursor-service-accounts"
+      ]
+    },
+    {
+      "id": "claude-code-artifacts",
+      "path": "practices/claude-code-artifacts.md",
+      "title": "Claude Code artifacts — live claude.ai pages from a session",
+      "tags": [
+        "claude",
+        "ux",
+        "hosting",
+        "mcp"
+      ],
+      "status": "active",
+      "updated": "2026-09-21",
+      "when_to_use": "Publishing a Claude Code session as a claude.ai artifact, or wiring MCP connectors into a live page",
+      "related": [
+        "claude-code-on-the-web",
+        "claude-code-remote-control",
+        "openai-codex-sites",
+        "claude-code-mcp",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "openai-codex-record-replay",
+      "path": "practices/openai-codex-record-replay.md",
+      "title": "Codex Record & Replay — demonstrate a Mac workflow into a skill",
+      "tags": [
+        "openai",
+        "skills",
+        "computer-use",
+        "plugins"
+      ],
+      "status": "active",
+      "updated": "2026-09-21",
+      "when_to_use": "Recording a macOS workflow as a Codex/ChatGPT skill, or deciding when to promote it to a plugin",
+      "related": [
+        "openai-codex-skills",
+        "openai-codex-plugins",
+        "openai-computer-tool",
+        "computer-use-containment",
+        "prompt-injection-agent-defense"
       ]
     }
   ]

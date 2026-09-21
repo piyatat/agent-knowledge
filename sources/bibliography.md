@@ -1036,4 +1036,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Gemini CLI configuration | https://geminicli.com/docs/reference/configuration/ |
 | Latest stable release v0.60.0 | https://geminicli.com/docs/changelogs/latest/ |
 
+## Daily ingest 2026-09-21 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Scan your codebase for vulnerabilities | https://code.claude.com/docs/en/claude-security |
+| Catch security issues as Claude writes code | https://code.claude.com/docs/en/security-guidance |
+| Code Review | https://code.claude.com/docs/en/code-review |
+| Discover and install plugins | https://code.claude.com/docs/en/discover-plugins |
+| Sandbox agent terminal commands | https://code.visualstudio.com/docs/agents/run/agent-sandboxing |
+| Understand trust and safety for AI agents | https://code.visualstudio.com/docs/agents/concepts/trust-and-safety |
+| Secure AI-assisted development in VS Code | https://code.visualstudio.com/docs/agents/run/security |
+| Create and manage agent automations | https://code.visualstudio.com/docs/agents/run/automations |
+| Choose and use an agent harness | https://code.visualstudio.com/docs/agents/run/agent-harnesses |
+| MCP configuration reference | https://code.visualstudio.com/docs/agents/reference/mcp-configuration |
+| Cursor TypeScript SDK | https://cursor.com/docs/sdk/typescript |
+| SDK Changelog | https://cursor.com/docs/sdk/changelog |
+| Cursor SDK Bridge | https://cursor.com/docs/sdk/bridge |
+| Cursor Python SDK | https://cursor.com/docs/sdk/python |
+| Share session output as artifacts | https://code.claude.com/docs/en/artifacts |
+| Feature availability | https://code.claude.com/docs/en/feature-availability |
+| Tools reference | https://code.claude.com/docs/en/tools-reference |
+| Record & Replay | https://developers.openai.com/codex/record-and-replay |
+| Agent Skills – Codex | https://developers.openai.com/codex/skills |
+| Build plugins | https://developers.openai.com/codex/plugins |
+|
 
