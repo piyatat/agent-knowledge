@@ -1060,5 +1060,35 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Record & Replay | https://developers.openai.com/codex/record-and-replay |
 | Agent Skills – Codex | https://developers.openai.com/codex/skills |
 | Build plugins | https://developers.openai.com/codex/plugins |
+
+## Daily ingest 2026-09-22 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Junie by JetBrains | https://www.jetbrains.com/help/ai-assistant/junie-agent.html |
+| Junie IDE plugin | https://junie.jetbrains.com/docs/junie-ide-plugin.html |
+| Junie CLI quickstart | https://junie.jetbrains.com/docs/junie-cli.html |
+| Junie headless mode | https://junie.jetbrains.com/docs/junie-headless.html |
+| Junie leaves Beta | https://blog.jetbrains.com/junie/2026/06/junie-coding-agent-out-of-beta/ |
+| Kiro CLI setup | https://kiro.dev/docs/cli/setup/ |
+| Kiro MCP | https://kiro.dev/docs/mcp/ |
+| Upgrading from Q CLI | https://kiro.dev/docs/upgrade-guides/migrating-from-q/ |
+| Upgrade to Kiro (AWS) | https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/upgrade-to-kiro.html |
+| Kiro steering | https://kiro.dev/docs/steering |
+| Kiro Agent Skills | https://kiro.dev/docs/skills |
+| AGENTS.md (Cascade / Devin Desktop) | https://docs.windsurf.com/windsurf/cascade/agents-md |
+| Cascade MCP configuration | https://docs.windsurf.com/windsurf/cascade/mcp |
+| Cascade memories / rules | https://docs.windsurf.com/pt-BR/windsurf/cascade/memories |
+| Cline skills | https://docs.cline.bot/customization/skills |
+| Cline rules | https://docs.cline.bot/customization/cline-rules |
+| Cline MCP | https://docs.cline.bot/mcp/mcp-overview |
+| Cline config layout | https://docs.cline.bot/getting-started/config |
+| Cline CLI reference | https://docs.cline.bot/cli/cli-reference |
+| config.yaml reference | https://docs.continue.dev/reference |
+| Continue MCP | https://docs.continue.dev/customize/deep-dives/mcp |
+| Continue rules | https://docs.continue.dev/customize/deep-dives/rules |
+| Customization overview | https://docs.continue.dev/customize/overview |
+| How Claude remembers your project | https://code.claude.com/docs/en/memory |
+| Latest stable release v0.60.0 | https://geminicli.com/docs/changelogs/latest/ |
 |
 
