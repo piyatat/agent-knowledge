@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2507,7 +2507,7 @@
     {
       "id": "mcp-skills-extension",
       "path": "practices/mcp-skills-extension.md",
-      "title": "MCP Skills extension (SEP-2640, Accepted not Final)",
+      "title": "MCP Skills extension (SEP-2640 / ext-skills)",
       "tags": [
         "mcp",
         "skills",
@@ -2515,8 +2515,8 @@
         "extensions"
       ],
       "status": "draft",
-      "updated": "2026-09-14",
-      "when_to_use": "Serving or consuming Agent Skills over MCP (skill://, skills/list) \u2014 Accepted SEP, not a released extension",
+      "updated": "2026-09-23",
+      "when_to_use": "Serving or consuming Agent Skills over MCP (skills/list, skill://) \u2014 official extension repo exists; host/SDK adoption is incomplete",
       "related": [
         "agent-skills-open-standard",
         "mcp-resources-vs-tools",
@@ -3155,7 +3155,7 @@
         "aaif"
       ],
       "status": "active",
-      "updated": "2026-09-22",
+      "updated": "2026-09-23",
       "when_to_use": "Authoring a portable AGENTS.md for multiple coding agents, or deciding filename vs CLAUDE.md / Cursor rules",
       "related": [
         "agents-md-and-rules-budget",
@@ -3167,7 +3167,12 @@
         "kiro-steering",
         "jetbrains-junie",
         "cline-agent",
-        "windsurf-cascade"
+        "windsurf-cascade",
+        "amp-agent",
+        "factory-droid",
+        "openhands-agent",
+        "opencode-agent",
+        "aider-agent"
       ]
     },
     {
@@ -5072,14 +5077,15 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-09-12",
+      "updated": "2026-09-23",
       "when_to_use": "Using the Claude Desktop Code tab, choosing Desktop vs CLI, or sending a CLI session with /desktop",
       "related": [
         "claude-code-on-the-web",
         "claude-code-remote-control",
         "claude-code-vscode",
         "claude-code-sessions",
-        "claude-code-chrome"
+        "claude-code-chrome",
+        "claude-cowork"
       ]
     },
     {
@@ -6803,6 +6809,154 @@
         "cursor-mcp-json",
         "agents-md-and-rules-budget",
         "mcp-registry-admission",
+        "agent-output-secret-scanning"
+      ]
+    },
+    {
+      "id": "openhands-agent",
+      "path": "practices/openhands-agent.md",
+      "title": "OpenHands \u2014 Agent Canvas, SDK, Cloud, MCP",
+      "tags": [
+        "openhands",
+        "mcp",
+        "agents-md",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-23",
+      "when_to_use": "Running or embedding OpenHands (Canvas, CLI, SDK, Cloud), or adding MCP / AGENTS.md for its agents",
+      "related": [
+        "agents-md-open-format",
+        "agent-skills-open-standard",
+        "mcp-streamable-http-transport",
+        "mcp-server-trust-failures",
+        "claude-agent-sdk"
+      ]
+    },
+    {
+      "id": "opencode-agent",
+      "path": "practices/opencode-agent.md",
+      "title": "OpenCode \u2014 terminal/desktop agent, MCP, skills",
+      "tags": [
+        "opencode",
+        "mcp",
+        "skills",
+        "agents-md"
+      ],
+      "status": "active",
+      "updated": "2026-09-23",
+      "when_to_use": "Installing or configuring SST OpenCode (TUI, desktop, IDE), or adding MCP / SKILL.md / AGENTS.md for it",
+      "related": [
+        "agents-md-open-format",
+        "agent-skills-open-standard",
+        "mcp-stateless-core",
+        "code-mode-tool-orchestration",
+        "zed-external-agents",
+        "permission-modes-allow-ask-deny"
+      ]
+    },
+    {
+      "id": "factory-droid",
+      "path": "practices/factory-droid.md",
+      "title": "Factory Droid \u2014 CLI, App, skills, custom droids",
+      "tags": [
+        "factory",
+        "cli",
+        "skills",
+        "agents-md"
+      ],
+      "status": "active",
+      "updated": "2026-09-23",
+      "when_to_use": "Running Factory\u2019s Droid (CLI, desktop/web App, droid exec), or authoring AGENTS.md / .factory skills, hooks, or custom droids",
+      "related": [
+        "agents-md-open-format",
+        "agent-skills-open-standard",
+        "cursor-hooks-json",
+        "claude-code-subagents",
+        "malicious-skills-supply-chain",
+        "amp-agent"
+      ]
+    },
+    {
+      "id": "amp-agent",
+      "path": "practices/amp-agent.md",
+      "title": "Amp \u2014 threads, orbs, MCP, AGENTS.md",
+      "tags": [
+        "amp",
+        "mcp",
+        "agents-md",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-23",
+      "when_to_use": "Using Sourcegraph Amp (web, macOS/iOS, CLI), or configuring Amp MCP / AGENTS.md / orbs",
+      "related": [
+        "agents-md-open-format",
+        "mcp-output-schema",
+        "code-mode-tool-orchestration",
+        "mcp-progressive-disclosure",
+        "cursor-cloud-always-on"
+      ]
+    },
+    {
+      "id": "zed-external-agents",
+      "path": "practices/zed-external-agents.md",
+      "title": "Zed External Agents \u2014 ACP Registry vs Zed Agent",
+      "tags": [
+        "zed",
+        "acp",
+        "mcp",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-23",
+      "when_to_use": "Installing Claude/Codex/OpenCode/Cursor/Copilot in Zed via ACP, or deciding Zed Agent settings vs an External Agent",
+      "related": [
+        "agent-client-protocol-acp",
+        "cursor-acp-extensions",
+        "gemini-cli-acp",
+        "opencode-agent",
+        "jetbrains-junie"
+      ]
+    },
+    {
+      "id": "claude-cowork",
+      "path": "practices/claude-cowork.md",
+      "title": "Claude Cowork \u2014 knowledge-work agent vs Code tab",
+      "tags": [
+        "claude",
+        "orchestration",
+        "browser",
+        "automations"
+      ],
+      "status": "active",
+      "updated": "2026-09-23",
+      "when_to_use": "Distinguishing Claude Cowork from Claude Code, or configuring Cowork cloud tasks, browser, or permissions",
+      "related": [
+        "claude-code-desktop",
+        "claude-code-on-the-web",
+        "prompt-injection-agent-defense",
+        "computer-use-containment",
+        "claude-code-routines"
+      ]
+    },
+    {
+      "id": "aider-agent",
+      "path": "practices/aider-agent.md",
+      "title": "Aider \u2014 terminal pair-programming agent",
+      "tags": [
+        "aider",
+        "agents-md",
+        "cli",
+        "git"
+      ],
+      "status": "active",
+      "updated": "2026-09-23",
+      "when_to_use": "Running Aider in a git repo, or loading AGENTS.md / conventions instead of a skills/MCP host",
+      "related": [
+        "agents-md-open-format",
+        "prompt-caching-for-agents",
+        "prompt-injection-agent-defense",
         "agent-output-secret-scanning"
       ]
     }

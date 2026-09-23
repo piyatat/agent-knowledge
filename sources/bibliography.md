@@ -1090,5 +1090,44 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Customization overview | https://docs.continue.dev/customize/overview |
 | How Claude remembers your project | https://code.claude.com/docs/en/memory |
 | Latest stable release v0.60.0 | https://geminicli.com/docs/changelogs/latest/ |
-|
+
+## Daily ingest 2026-09-23 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| OpenHands docs | https://docs.openhands.dev/ |
+| OpenHands MCP | https://docs.openhands.dev/openhands/usage/settings/mcp-settings |
+| OpenHands repository skills | https://docs.openhands.dev/overview/skills/repo |
+| OpenHands SDK skill architecture | https://docs.openhands.dev/sdk/arch/skill.md |
+| OpenCode intro | https://opencode.ai/docs/ |
+| OpenCode MCP servers | https://opencode.ai/v2/docs/mcp-servers/ |
+| OpenCode Agent Skills | https://opencode.ai/docs/skills/ |
+| OpenCode agents / permissions | https://opencode.ai/docs/agents/ |
+| OpenCode config | https://opencode.ai/docs/config/ |
+| Welcome to Factory | https://docs.factory.ai/ |
+| Droid CLI overview | https://docs.factory.ai/droid-cli/overview |
+| Droid CLI reference | https://docs.factory.ai/droid-cli/cli-reference |
+| Factory AGENTS.md | https://docs.factory.ai/harness/agents-md |
+| Factory Skills | https://docs.factory.ai/harness/skills |
+| Factory custom droids | https://docs.factory.ai/harness/subagents |
+| Amp manual | https://ampcode.com/manual |
+| Amp MCP | https://ampcode.com/docs/customize/mcp |
+| Amp AGENTS.md | https://ampcode.com/docs/markdown/customize/agents-md |
+| Sourcegraph MCP client integrations | https://sourcegraph.com/docs/api/mcp/client-integrations |
+| Zed External Agents | https://zed.dev/docs/ai/external-agents.html |
+| Zed Agent Settings | https://zed.dev/docs/ai/agent-settings.html |
+| ACP Registry is live | https://zed.dev/blog/acp-registry |
+| Claude Cowork product | https://claude.com/product/cowork |
+| Get started with Claude Cowork | https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork |
+| Claude Code Desktop | https://code.claude.com/docs/en/desktop |
+| Aider documentation | https://aider.chat/docs/ |
+| Aider conventions | https://aider.chat/docs/usage/conventions.html |
+| Aider YAML config | https://aider.chat/docs/config/aider_conf.html |
+| AGENTS.md | https://agents.md/ |
+| MCP 2026-07-28 specification | https://modelcontextprotocol.io/specification/2026-07-28 |
+| modelcontextprotocol/ext-skills | https://github.com/modelcontextprotocol/ext-skills |
+| SEP-2640 Skills Extension (PR) | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2640 |
+| Skills Over MCP is Final (API Evangelist) | https://apievangelist.com/2026/09/22/skills-over-mcp-is-final-and-now-it-needs-servers/ |
+| fast-agent — Skills over MCP | https://fast-agent.ai/mcp/skills-over-mcp/ |
+
 
