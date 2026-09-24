@@ -1130,4 +1130,38 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Skills Over MCP is Final (API Evangelist) | https://apievangelist.com/2026/09/22/skills-over-mcp-is-final-and-now-it-needs-servers/ |
 | fast-agent — Skills over MCP | https://fast-agent.ai/mcp/skills-over-mcp/ |
 
+## Daily ingest 2026-09-24 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Warp Agent | https://www.warp.dev/agents/warp-agent |
+| Rules for agents | https://docs.warp.dev/agents/capabilities/rules/ |
+| Skills for agents | https://docs.warp.dev/agents/capabilities/skills/ |
+| Model Context Protocol (MCP) | https://docs.warp.dev/agents/capabilities/mcp/ |
+| Customizing the Warp Agent CLI | https://docs.warp.dev/agents/cli/configuration/ |
+| Devin CLI | https://devin.ai/cli |
+| Devin CLI: Start Local, Hand Off to the Cloud | https://cognition.com/blog/devin-for-terminal |
+| Extensibility overview | https://docs.devin.ai/cli/extensibility |
+| Devin CLI plugins | https://docs.devin.ai/cli/extensibility/plugins/overview |
+| MCP overview | https://docs.devin.ai/cli/extensibility/mcp/overview |
+| MCP configuration | https://docs.devin.ai/cli/extensibility/mcp/configuration |
+| AGENTS.md (Devin) | https://docs.devin.ai/onboard-devin/agents-md |
+| Qwen Code docs | https://qwenlm.github.io/qwen-code-docs/en/ |
+| QwenLM/qwen-code | https://github.com/QwenLM/qwen-code/ |
+| Agent Skills | https://qwenlm.github.io/qwen-code-docs/en/users/features/skills/ |
+| Connect Qwen Code to tools via MCP | https://qwenlm.github.io/qwen-code-docs/en/users/features/mcp/ |
+| Memory / QWEN.md | https://qwenlm.github.io/qwen-code-docs/en/users/features/memory/ |
+| Subagents | https://qwenlm.github.io/qwen-code-docs/en/users/features/sub-agents/ |
+| Bots for the last mile: Rollouts, Security Review | https://cursor.com/blog/rollouts-and-security-reviewer |
+| Rollouts and Security Review (changelog) | https://cursor.com/changelog/rollouts-and-security-reviewer |
+| Security Agents | https://cursor.com/docs/security-agents |
+| replit.md | https://docs.replit.com/features/project-setup/replit-dot-md |
+| Agent Skills (Replit) | https://docs.replit.com/features/agent/skills |
+| Customize Replit Agent with Skills | https://replit.com/blog/custom-skills |
+| Connect via MCP | https://docs.replit.com/build/connect-via-mcp.md |
+| Agent skills (learn) | https://docs.replit.com/learn/agent-skills |
+| Warp rules (AGENTS.md) | https://docs.warp.dev/agents/capabilities/rules/ |
+| Qwen Code memory (QWEN.md + AGENTS.md) | https://qwenlm.github.io/qwen-code-docs/en/users/features/memory/ |
+| Devin CLI extensibility | https://docs.devin.ai/cli/extensibility |
+
 

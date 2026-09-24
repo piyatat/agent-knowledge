@@ -3,13 +3,13 @@ id: cursor-bugbot-review
 title: Cursor Bugbot — PR review agent
 tags: [cursor, review, ci, evals]
 status: active
-updated: 2026-09-17
+updated: 2026-09-24
 when_to_use: Wiring Cursor’s PR review agent (comments, checks, /review, Autofix) without treating it as a merge gate by default
 ---
 
 ## Summary
 
-Bugbot is a Cursor-managed review agent: it diffs PRs, comments with fixes, and publishes a CI check. Findings default to **neutral**, so requiring the check only proves a run happened — it does not block merge unless you enable fail-on-unresolved. Local **Agent Review** (`cursor-agent-review`) reviews the working tree inside Cursor and does not publish this check.
+Bugbot is a Cursor-managed review agent: it diffs PRs, comments with fixes, and publishes a CI check. Findings default to **neutral**, so requiring the check only proves a run happened — it does not block merge unless you enable fail-on-unresolved. Local **Agent Review** (`cursor-agent-review`) reviews the working tree inside Cursor and does not publish this check. **Security Review** (`cursor-security-agents`) is a separate Teams/Enterprise bot for exploitable bugs; Cursor’s 2026-09-23 launch keeps style and quality on Bugbot.
 
 ## Notes
 
@@ -22,6 +22,7 @@ Bugbot is a Cursor-managed review agent: it diffs PRs, comments with fixes, and 
 ## Sources
 
 - [Bugbot docs](https://cursor.com/docs/bugbot.md) — accessed 2026-09-17
+- [Rollouts and Security Review (changelog)](https://cursor.com/changelog/rollouts-and-security-reviewer) — accessed 2026-09-24
 - [Agent Review](https://cursor.com/docs/agent/agent-review) — accessed 2026-09-17
 - [Building a better Bugbot](https://cursor.com/blog/building-bugbot) — accessed 2026-08-22
 - [Bugbot updates (June 2026)](https://cursor.com/blog/bugbot-updates-june-2026) — accessed 2026-08-22

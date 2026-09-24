@@ -3,13 +3,13 @@ id: windsurf-cascade
 title: Windsurf / Devin Desktop Cascade — AGENTS.md, rules, MCP
 tags: [windsurf, mcp, agents-md, rules]
 status: active
-updated: 2026-09-22
-when_to_use: Configuring Cascade or Devin Desktop rules/MCP, or distinguishing legacy Cascade MCP from Devin Local
+updated: 2026-09-24
+when_to_use: Configuring Cascade or Devin Desktop rules/MCP, or distinguishing legacy Cascade MCP from Devin Local / Devin CLI
 ---
 
 ## Summary
 
-**Cascade** is the Windsurf/Devin Desktop coding agent. **AGENTS.md** (or `agents.md`) feeds the same Rules engine as `.devin/rules/` (legacy `.windsurf/rules/`): root = always-on system prompt; nested = auto-glob `dir/**`. **Devin Local** is the default agent for new tabs and uses Devin CLI config for MCP — do not assume `mcp_config.json` applies to it. Not Cursor rules (`cursor-rules-layers`).
+**Cascade** is the Windsurf/Devin Desktop coding agent. **AGENTS.md** (or `agents.md`) feeds the same Rules engine as `.devin/rules/` (legacy `.windsurf/rules/`): root = always-on system prompt; nested = auto-glob `dir/**`. **Devin Local** is the default agent for new tabs and uses **Devin CLI** config for MCP (`devin-cli`) — do not assume Cascade `mcp_config.json` applies to it. Not Cursor rules (`cursor-rules-layers`).
 
 ## Notes
 
@@ -20,5 +20,6 @@ when_to_use: Configuring Cascade or Devin Desktop rules/MCP, or distinguishing l
 ## Sources
 
 - [AGENTS.md (Cascade / Devin Desktop)](https://docs.windsurf.com/windsurf/cascade/agents-md) — accessed 2026-09-22
+- [Devin CLI extensibility](https://docs.devin.ai/cli/extensibility) — accessed 2026-09-24
 - [Cascade MCP configuration](https://docs.windsurf.com/windsurf/cascade/mcp) — accessed 2026-09-22
 - [Cascade memories / rules (pt-BR, same product)](https://docs.windsurf.com/pt-BR/windsurf/cascade/memories) — accessed 2026-09-22

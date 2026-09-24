@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1332,7 +1332,7 @@
         "cron"
       ],
       "status": "active",
-      "updated": "2026-09-18",
+      "updated": "2026-09-24",
       "when_to_use": "Configuring scheduled or event-triggered Cursor cloud agents (not a running agent\u2019s PR/Slack subscription)",
       "related": [
         "cursor-cloud-always-on",
@@ -1348,7 +1348,8 @@
         "cursor-microsoft-teams",
         "cursor-sentry",
         "cursor-pagerduty",
-        "vscode-agent-automations"
+        "vscode-agent-automations",
+        "cursor-rollouts"
       ]
     },
     {
@@ -1362,7 +1363,7 @@
         "evals"
       ],
       "status": "active",
-      "updated": "2026-09-17",
+      "updated": "2026-09-24",
       "when_to_use": "Wiring Cursor\u2019s PR review agent (comments, checks, /review, Autofix) without treating it as a merge gate by default",
       "related": [
         "cursor-automations",
@@ -2740,13 +2741,14 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-08-29",
+      "updated": "2026-09-24",
       "when_to_use": "Wiring Cursor-managed security review on PRs or a scheduled codebase scan (not Bugbot quality review)",
       "related": [
         "cursor-bugbot-review",
         "cursor-pr-routing-approval",
         "cursor-automations",
-        "human-in-the-loop-approvals"
+        "human-in-the-loop-approvals",
+        "cursor-rollouts"
       ]
     },
     {
@@ -3155,7 +3157,7 @@
         "aaif"
       ],
       "status": "active",
-      "updated": "2026-09-23",
+      "updated": "2026-09-24",
       "when_to_use": "Authoring a portable AGENTS.md for multiple coding agents, or deciding filename vs CLAUDE.md / Cursor rules",
       "related": [
         "agents-md-and-rules-budget",
@@ -3172,7 +3174,11 @@
         "factory-droid",
         "openhands-agent",
         "opencode-agent",
-        "aider-agent"
+        "aider-agent",
+        "warp-agent",
+        "devin-cli",
+        "qwen-code",
+        "replit-agent"
       ]
     },
     {
@@ -6760,14 +6766,15 @@
         "rules"
       ],
       "status": "active",
-      "updated": "2026-09-22",
-      "when_to_use": "Configuring Cascade or Devin Desktop rules/MCP, or distinguishing legacy Cascade MCP from Devin Local",
+      "updated": "2026-09-24",
+      "when_to_use": "Configuring Cascade or Devin Desktop rules/MCP, or distinguishing legacy Cascade MCP from Devin Local / Devin CLI",
       "related": [
         "agents-md-open-format",
         "cursor-mcp-json",
         "cursor-rules-layers",
         "mcp-server-trust-failures",
-        "cline-agent"
+        "cline-agent",
+        "devin-cli"
       ]
     },
     {
@@ -6957,6 +6964,111 @@
         "agents-md-open-format",
         "prompt-caching-for-agents",
         "prompt-injection-agent-defense",
+        "agent-output-secret-scanning"
+      ]
+    },
+    {
+      "id": "warp-agent",
+      "path": "practices/warp-agent.md",
+      "title": "Warp Agent \u2014 AGENTS.md, skills, MCP, CLI",
+      "tags": [
+        "warp",
+        "mcp",
+        "agents-md",
+        "skills"
+      ],
+      "status": "active",
+      "updated": "2026-09-24",
+      "when_to_use": "Configuring Warp Agent (app or CLI) rules, skills, or MCP, or migrating WARP.md / third-party skill dirs",
+      "related": [
+        "agents-md-open-format",
+        "agent-skills-open-standard",
+        "mcp-server-trust-failures",
+        "malicious-skills-supply-chain",
+        "opencode-agent"
+      ]
+    },
+    {
+      "id": "devin-cli",
+      "path": "practices/devin-cli.md",
+      "title": "Devin CLI \u2014 local agent, /handoff, MCP, plugins",
+      "tags": [
+        "devin",
+        "cli",
+        "mcp",
+        "agents-md"
+      ],
+      "status": "active",
+      "updated": "2026-09-24",
+      "when_to_use": "Running Cognition Devin in the terminal, handing a session to Devin Cloud, or configuring .devin MCP / plugins / AGENTS.md",
+      "related": [
+        "windsurf-cascade",
+        "agents-md-open-format",
+        "claude-code-plugins",
+        "cursor-cli-cloud-handoff",
+        "mcp-oauth-scopes"
+      ]
+    },
+    {
+      "id": "qwen-code",
+      "path": "practices/qwen-code.md",
+      "title": "Qwen Code \u2014 QWEN.md, skills, MCP, subagents",
+      "tags": [
+        "qwen",
+        "cli",
+        "mcp",
+        "skills"
+      ],
+      "status": "active",
+      "updated": "2026-09-24",
+      "when_to_use": "Running the Qwen Code terminal agent, or authoring QWEN.md / .qwen skills / mcpServers",
+      "related": [
+        "gemini-cli-gemini-md",
+        "gemini-cli-skills",
+        "gemini-cli-mcp",
+        "gemini-cli-subagents",
+        "agent-memory-poisoning"
+      ]
+    },
+    {
+      "id": "cursor-rollouts",
+      "path": "practices/cursor-rollouts.md",
+      "title": "Cursor Rollouts \u2014 PR-to-prod change monitors",
+      "tags": [
+        "cursor",
+        "automations",
+        "monitoring",
+        "ci"
+      ],
+      "status": "active",
+      "updated": "2026-09-24",
+      "when_to_use": "Enabling Cursor Rollouts to watch a change from PR through deploy, or distinguishing it from Bugbot / Security Review",
+      "related": [
+        "cursor-automations",
+        "cursor-security-agents",
+        "cursor-bugbot-review",
+        "cursor-origin",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "replit-agent",
+      "path": "practices/replit-agent.md",
+      "title": "Replit Agent \u2014 replit.md, skills, MCP",
+      "tags": [
+        "replit",
+        "skills",
+        "mcp",
+        "memory"
+      ],
+      "status": "active",
+      "updated": "2026-09-24",
+      "when_to_use": "Configuring Replit Agent project context, workspace skills, or MCP servers (not AGENTS.md hosts)",
+      "related": [
+        "agent-skills-open-standard",
+        "agents-md-open-format",
+        "mcp-registry-admission",
+        "malicious-skills-supply-chain",
         "agent-output-secret-scanning"
       ]
     }

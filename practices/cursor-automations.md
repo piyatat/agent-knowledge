@@ -3,7 +3,7 @@ id: cursor-automations
 title: Cursor Automations — standing rules vs subscriptions
 tags: [cursor, automations, orchestration, cron]
 status: active
-updated: 2026-09-18
+updated: 2026-09-24
 when_to_use: Configuring scheduled or event-triggered Cursor cloud agents (not a running agent’s PR/Slack subscription)
 ---
 
@@ -13,7 +13,7 @@ A **Cursor Automation** is a standing rule you save (trigger + prompt + tools + 
 
 ## Notes
 
-- Create at cursor.com/automations, Agents Window, `/automate`, or a Marketplace template. The page also lists Cursor-managed Bugbot, Security Agents, and PR Routing — those have their own notes. Any listed trigger firing starts a run. Billing is cloud-agent usage at the model’s **max** context window (no toggle). **Private / Team Visible** usage bills the creator; **Team Owned** bills the team pool and runs as the shared automations service account.
+- Create at cursor.com/automations, Agents Window, `/automate`, or a Marketplace template. The page also lists Cursor-managed Bugbot, Security Agents, PR Routing, **Rollouts** (`cursor-rollouts`), and **Security Reviewer** (`cursor-security-agents`) — those have their own notes. Any listed trigger firing starts a run. Billing is cloud-agent usage at the model’s **max** context window (no toggle). **Private / Team Visible** usage bills the creator; **Team Owned** bills the team pool and runs as the shared automations service account.
 - Repo scope: **none** (Slack/MCP/webhooks/Linear/PagerDuty only — cannot edit code or open PRs), **single repo**, or **multi-repo** environment. Source-control triggers **require** a repo. Slack/cron default to no repo unless you set one.
 - Source control (GitHub / GitLab / Bitbucket Cloud only — **not Azure DevOps**, which has Cloud Agents/Bugbot but no Automations yet; `cursor-azure-devops`): core events are draft opened, PR opened/ready, PR pushed, merged, push-to-branch, top-level PR comment. GitHub also: PR/issue label, CI check completed, issue comment, inline review comment, review submitted, review thread resolved, Actions workflow completed. GitLab adds MR label + approved (`cursor-gitlab-cloud-agents`). Bitbucket Cloud adds approved only (no labels/inline comments; Server/Data Center unsupported; `cursor-bitbucket-cloud-agents`). Fork PRs are rejected except **merged** (starts from the merge commit).
 - Other triggers: Slack (public channels — new top-level message, emoji, channel created; keyword/regex required to fire on thread replies), webhook (URL + API key after save), Linear (issue created, status changed, end of cycle), Sentry (issue created/updated/any — `cursor-sentry`), PagerDuty (triggered/acknowledged/resolved/any — `cursor-pagerduty`). Microsoft Teams is mention-only — not an Automation trigger. Sentry also has a Seer → Cloud Agent handoff that is not this trigger.
