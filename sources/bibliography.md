@@ -1164,4 +1164,40 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Qwen Code memory (QWEN.md + AGENTS.md) | https://qwenlm.github.io/qwen-code-docs/en/users/features/memory/ |
 | Devin CLI extensibility | https://docs.devin.ai/cli/extensibility |
 
+## Daily ingest 2026-09-25 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Create and manage custom agents (Trae) | https://docs.trae.ai/ide/agent |
+| Trae rules | https://docs.trae.ai/ide/rules?_lang=en |
+| Trae skills | https://docs.trae.ai/ide/skills |
+| Trae CLI memories (AGENTS.md) | https://docs.trae.cn/cli_memories |
+| Trae CLI skills | https://docs.trae.cn/cli_skills |
+| Trae CLI MCP | https://docs.trae.cn/cli_model-context-protocol |
+| Kilo docs | https://kilo.ai/docs |
+| Kilo Code CLI | https://kilo.ai/docs/code-with-ai/platforms/cli |
+| Kilo CLI command reference | https://kilo.ai/docs/code-with-ai/platforms/cli-reference |
+| Kilo skills | https://kilo.ai/docs/customize/skills |
+| The Great Roo Migration | https://kilo.ai/roo-migration |
+| Jules getting started | https://jules.google/docs/ |
+| Jules changelog | https://jules.google/docs/changelog/ |
+| Jules API types | https://jules.google/docs/api/reference/types/ |
+| @google/jules-mcp | https://www.npmjs.com/package/@google/jules-mcp |
+| Kimi Code getting started | https://www.kimi.com/code/docs/en/kimi-code-cli/guides/getting-started |
+| MoonshotAI/kimi-code | https://github.com/MoonshotAI/kimi-code |
+| Kimi agents and sub-agents | https://moonshotai.github.io/kimi-code/en/customization/agents.html |
+| Kimi Agent Skills | https://www.kimi.com/code/docs/en/kimi-code-cli/customization/skills.html |
+| Kimi MCP | https://github.com/MoonshotAI/kimi-code/blob/main/docs/en/customization/mcp.md |
+| charmbracelet/crush | https://github.com/charmbracelet/crush/ |
+| Crush quick start | https://charmbracelet-crush.mintlify.app/quickstart |
+| Crush context files | https://charmbracelet-crush.mintlify.app/guides/context-files |
+| Crush MCP configuration | https://charmbracelet-crush.mintlify.app/configuration/mcp |
+| Antigravity rules | https://antigravity.google/docs/rules/ |
+| Antigravity Agent Skills | https://antigravity.google/docs/skills/ |
+| Antigravity MCP | https://antigravity.google/docs/mcp/ |
+| MCP in Antigravity CLI | https://antigravity.google/docs/cli/mcp/ |
+| How Claude remembers your project | https://code.claude.com/docs/en/memory |
+| Claude Code changelog | https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md |
+| Skills Over MCP is Final (API Evangelist) | https://apievangelist.com/2026/09/22/skills-over-mcp-is-final-and-now-it-needs-servers/ |
+
 

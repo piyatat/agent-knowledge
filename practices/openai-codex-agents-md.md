@@ -3,7 +3,7 @@ id: openai-codex-agents-md
 title: Codex AGENTS.md discovery — override files and byte cap
 tags: [openai, agents-md, config, memory]
 status: active
-updated: 2026-09-05
+updated: 2026-09-25
 when_to_use: Authoring Codex-specific AGENTS.md layers, or debugging which instruction file won
 ---
 
@@ -17,7 +17,7 @@ Codex builds an **instruction chain once per run** (once per TUI session) from `
 - Cap: `project_doc_max_bytes` (default **32768**). Raise it or split nested files when truncated. Fallback example: `project_doc_fallback_filenames = ["TEAM_GUIDE.md", ".agents.md"]`. Names not on that list are ignored.
 - Code review: add `## Code Review Rules` in the AGENTS.md closest to the code. Keep lint/format in CI. `CODEX_HOME=$(pwd)/.codex` isolates an automation profile.
 - Verify: `codex --ask-for-approval never "Summarize the current instructions."` or `--cd subdir`. Audit with `codex -c log_dir=./.codex-log` (`codex-tui.log`) or session JSONL. There is no instruction cache — restart the run.
-- Wrong guidance: an `AGENTS.override.md` higher in the tree or under Codex home. Claude Code does **not** read `AGENTS.md` unless imported (`claude-code-memory`).
+- Wrong guidance: an `AGENTS.override.md` higher in the tree or under Codex home. Claude Code **v2.1.277+** reads `AGENTS.md` when no project `CLAUDE.md` is present (`claude-code-memory`); Codex still prefers `AGENTS.override.md` over `AGENTS.md` in the same directory.
 
 ## Sources
 
