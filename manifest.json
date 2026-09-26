@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -3157,7 +3157,7 @@
         "aaif"
       ],
       "status": "active",
-      "updated": "2026-09-25",
+      "updated": "2026-09-26",
       "when_to_use": "Authoring a portable AGENTS.md for multiple coding agents, or deciding filename vs CLAUDE.md / Cursor rules",
       "related": [
         "agents-md-and-rules-budget",
@@ -3185,7 +3185,8 @@
         "kimi-code",
         "crush-agent",
         "antigravity-cli",
-        "claude-code-memory"
+        "claude-code-memory",
+        "minimax-code"
       ]
     },
     {
@@ -4105,14 +4106,15 @@
         "prompts"
       ],
       "status": "active",
-      "updated": "2026-09-06",
+      "updated": "2026-09-26",
       "when_to_use": "Authoring .github/copilot-instructions.md, path-specific instructions, or choosing vs AGENTS.md",
       "related": [
         "github-copilot-skills",
         "github-copilot-coding-agent",
         "agents-md-open-format",
         "github-copilot-cli",
-        "github-copilot-code-review"
+        "github-copilot-code-review",
+        "github-copilot-jetbrains"
       ]
     },
     {
@@ -4148,14 +4150,15 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-09-06",
+      "updated": "2026-09-26",
       "when_to_use": "Adding SKILL.md for Copilot cloud agent / CLI / IDE, or installing skills with gh skill",
       "related": [
         "agent-skills-open-standard",
         "github-copilot-instructions",
         "github-copilot-cli",
         "malicious-skills-supply-chain",
-        "github-copilot-code-review"
+        "github-copilot-code-review",
+        "github-copilot-jetbrains"
       ]
     },
     {
@@ -5539,7 +5542,7 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-09-14",
+      "updated": "2026-09-26",
       "when_to_use": "Choosing Copilot\u2019s JetBrains plugin, AI Assistant ACP agent, or Copilot CLI in the IDE terminal",
       "related": [
         "cursor-jetbrains-acp",
@@ -5547,13 +5550,16 @@
         "github-copilot-cli",
         "github-copilot-ide-agent",
         "github-copilot-sandbox",
-        "agent-client-protocol-acp"
+        "agent-client-protocol-acp",
+        "github-copilot-otel",
+        "github-copilot-skills",
+        "github-copilot-instructions"
       ]
     },
     {
       "id": "github-copilot-sandbox",
       "path": "practices/github-copilot-sandbox.md",
-      "title": "Copilot CLI sandboxes \u2014 local MXC vs --cloud",
+      "title": "Copilot sandboxes \u2014 CLI MXC, --cloud, and app local policy",
       "tags": [
         "github",
         "sandbox",
@@ -5561,8 +5567,8 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-09-14",
-      "when_to_use": "Enabling Copilot CLI /sandbox or copilot --cloud, or contrasting them with the Actions cloud agent",
+      "updated": "2026-09-26",
+      "when_to_use": "Enabling Copilot CLI /sandbox, copilot --cloud, or Copilot-app local sandboxing \u2014 not the Actions cloud agent",
       "related": [
         "github-copilot-cli",
         "github-copilot-managed-permissions",
@@ -6175,7 +6181,7 @@
     {
       "id": "github-copilot-dev-containers",
       "path": "practices/github-copilot-dev-containers.md",
-      "title": "VS Code Agents window \u2014 local Dev Container sessions",
+      "title": "VS Code Agents window \u2014 Dev Container sessions (local and remote)",
       "tags": [
         "github",
         "sandbox",
@@ -6183,8 +6189,8 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-09-18",
-      "when_to_use": "Running a VS Code Agents window session inside a project Dev Container instead of the host toolchain",
+      "updated": "2026-09-26",
+      "when_to_use": "Running a VS Code Agents window session inside a project Dev Container on the laptop or an SSH/Tunnel/WSL host",
       "related": [
         "github-copilot-ide-agent",
         "github-copilot-sandbox",
@@ -6423,7 +6429,7 @@
     {
       "id": "vscode-external-sessions",
       "path": "practices/vscode-external-sessions.md",
-      "title": "VS Code external sessions \u2014 discover CLI/app chats and auto-cleanup",
+      "title": "VS Code sessions list \u2014 external chats, compact view, auto-cleanup",
       "tags": [
         "github",
         "vscode",
@@ -6431,8 +6437,8 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-20",
-      "when_to_use": "Opening a Copilot CLI, Copilot app, Claude Code, or Codex session inside VS Code, or auto-archiving merged sessions",
+      "updated": "2026-09-26",
+      "when_to_use": "Opening a Copilot CLI, Copilot app, Claude Code, or Codex session inside VS Code, or managing a large Agents-window session list",
       "related": [
         "vscode-agent-harnesses",
         "agent-host-protocol-ahp",
@@ -7204,6 +7210,69 @@
         "gemini-cli-skills",
         "agents-md-open-format",
         "google-jules"
+      ]
+    },
+    {
+      "id": "minimax-code",
+      "path": "practices/minimax-code.md",
+      "title": "MiniMax Code \u2014 desktop app, mcode CLI, AGENTS.md, MCP, ACP",
+      "tags": [
+        "minimax",
+        "cli",
+        "mcp",
+        "agents-md"
+      ],
+      "status": "active",
+      "updated": "2026-09-26",
+      "when_to_use": "Running MiniMax Code (desktop or mcode CLI), or authoring AGENTS.md / MCP / plugins for it",
+      "related": [
+        "agents-md-open-format",
+        "agent-client-protocol-acp",
+        "kimi-code",
+        "qwen-code",
+        "mcp-server-trust-failures"
+      ]
+    },
+    {
+      "id": "github-copilot-otel",
+      "path": "practices/github-copilot-otel.md",
+      "title": "Copilot OpenTelemetry \u2014 client traces vs Cursor export",
+      "tags": [
+        "github",
+        "observability",
+        "otel",
+        "privacy"
+      ],
+      "status": "active",
+      "updated": "2026-09-26",
+      "when_to_use": "Exporting Copilot agent traces/metrics from VS Code, CLI, JetBrains, or the Copilot app to an OTLP collector",
+      "related": [
+        "cursor-otel-export",
+        "gemini-cli-telemetry",
+        "github-copilot-managed-permissions",
+        "telemetry-redaction-genai",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "github-copilot-slack-teams",
+      "path": "practices/github-copilot-slack-teams.md",
+      "title": "Copilot cloud agent in Slack and Microsoft Teams",
+      "tags": [
+        "github",
+        "slack",
+        "orchestration",
+        "automations"
+      ],
+      "status": "active",
+      "updated": "2026-09-26",
+      "when_to_use": "Starting or steering a Copilot cloud agent from Slack or Microsoft Teams, or contrasting it with Cursor @cursor",
+      "related": [
+        "github-copilot-coding-agent",
+        "cursor-slack-cloud-agents",
+        "cursor-microsoft-teams",
+        "github-copilot-sandbox",
+        "prompt-injection-agent-defense"
       ]
     }
   ]

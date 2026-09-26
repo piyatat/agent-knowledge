@@ -1200,4 +1200,34 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude Code changelog | https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md |
 | Skills Over MCP is Final (API Evangelist) | https://apievangelist.com/2026/09/22/skills-over-mcp-is-final-and-now-it-needs-servers/ |
 
+## Daily ingest 2026-09-26 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Welcome to MiniMax Code | https://agent.minimax.io/docs/code/welcome |
+| CLI quick start | https://agent.minimax.io/docs/cli/quick-start |
+| CLI features | https://agent.minimax.io/docs/cli/features |
+| CLI configuration | https://agent.minimax.io/docs/cli/configuration |
+| Headless and CI | https://agent.minimax.io/docs/cli/automation |
+| Security and permissions | https://agent.minimax.io/docs/cli/security |
+| MCP Servers | https://agent.minimax.io/docs/code/agents/mcp |
+| Plugin Marketplace | https://agent.minimax.io/docs/code/agents/plugins |
+| OpenTelemetry for agent monitoring | https://docs.github.com/en/copilot/concepts/agents/opentelemetry |
+| Monitor agent usage with OpenTelemetry | https://code.visualstudio.com/docs/agents/guides/monitoring-agents |
+| Enterprise managed settings | https://docs.github.com/en/copilot/reference/enterprise-managed-settings-reference |
+| OpenTelemetry in the GitHub Copilot app | https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/ |
+| Visual Studio Code 1.139 | https://code.visualstudio.com/updates/v1_139 |
+| Integrating Copilot cloud agent with Slack | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-slack |
+| Updates to GitHub Copilot for Slack and Microsoft Teams | https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams/ |
+| The new GitHub Copilot experience in Slack | https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/ |
+| Shared agentic work with GitHub Copilot in Microsoft Teams | https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/ |
+| About cloud and local sandboxes for GitHub Copilot | https://docs.github.com/en/copilot/concepts/about-cloud-and-local-sandboxes |
+| Using local sandboxing | https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing |
+| Configuring local sandbox settings | https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings |
+| Local sandboxing in the GitHub Copilot app | https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/ |
+| GitHub Copilot weekly releases — September 21 | https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/ |
+| New features and improvements in Copilot for JetBrains | https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/ |
+| Adding organization custom instructions | https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-organization-instructions |
+
+
 

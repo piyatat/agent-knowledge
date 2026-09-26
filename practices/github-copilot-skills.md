@@ -3,7 +3,7 @@ id: github-copilot-skills
 title: GitHub Copilot Agent Skills — SKILL.md and gh skill
 tags: [github, skills, cli, supply-chain]
 status: active
-updated: 2026-09-06
+updated: 2026-09-26
 when_to_use: Adding SKILL.md for Copilot cloud agent / CLI / IDE, or installing skills with gh skill
 ---
 
@@ -17,11 +17,14 @@ Copilot **Agent Skills** are on-demand `SKILL.md` folders (Agent Skills open sta
 - `allowed-tools` (e.g. `shell`) pre-approves those tools. **Do not** pre-approve `shell`/`bash` for untrusted skills — that skips confirmation and is an injection/RCE path (`malicious-skills-supply-chain`). Omit it so Copilot asks.
 - `gh skill` (GitHub CLI **≥ 2.90.0**, public preview): `search`, `preview` (read before install), `install OWNER/REPO [SKILL][@TAG|@SHA]` (`--pin`, `--agent`, `--scope`), `update` / `update --all` (uses provenance in frontmatter; pinned skipped), `publish` / `--dry-run` / `--fix`. Default install is Copilot + project scope. Skills are **not** GitHub-verified.
 - Code review: prefer a review-shaped directory name (`code-review`); other `.github/skills` still auto-apply when relevant. Review reads skills from the **head** branch (`github-copilot-instructions`).
+- **Org / enterprise skills** (JetBrains plugin 1.18.0, 2026-09-22): shared skill bundles plus org-managed custom instructions now load in **local and Copilot agent** JetBrains sessions. That is broader than the older github.com how-to, which still says org *instructions* only apply to Chat / code review / cloud agent on github.com — treat JetBrains local/agent as additionally covered by the changelog (`github-copilot-jetbrains`).
 - Use instructions for short always-on standards; Skills for long, task-specific workflows (`agent-skills-open-standard`, `skills-dispatch-hygiene`). Collections: `github/awesome-copilot`, `anthropics/skills`.
 
 ## Sources
 
 - [About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) — accessed 2026-09-06
 - [Adding agent skills for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills) — accessed 2026-09-06
+- [New features and improvements in Copilot for JetBrains](https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/) — accessed 2026-09-26
 - [Copilot customization cheat sheet](https://docs.github.com/en/copilot/reference/customization-cheat-sheet) — accessed 2026-09-06
 - [Agent Skills specification](https://agentskills.io/specification) — accessed 2026-09-06
+
