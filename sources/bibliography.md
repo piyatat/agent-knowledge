@@ -1229,5 +1229,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | New features and improvements in Copilot for JetBrains | https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/ |
 | Adding organization custom instructions | https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-organization-instructions |
 
+## Daily ingest 2026-09-27 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| About GitHub Copilot Memory | https://docs.github.com/en/copilot/concepts/agents/copilot-memory |
+| Managing Copilot Memory for your personal account | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-for-yourself |
+| Managing Copilot Memory for an organization or enterprise | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-as-administrator |
+| Copilot Memory controls for deletion, scope, and CLI | https://github.blog/changelog/2026-05-26-copilot-memory-has-more-controls-for-deletion-scope-and-the-copilot-cli/ |
+| Agentic memory public preview | https://github.blog/changelog/2026-01-15-agentic-memory-for-github-copilot-is-in-public-preview/ |
+| ACP authentication | https://agentclientprotocol.com/protocol/v2/authentication |
+| Terminal Authentication RFD | https://agentclientprotocol.com/rfds/auth-methods |
+| ACP RFD updates | https://agentclientprotocol.com/rfds/updates |
+| ACP CHANGELOG | https://github.com/agentclientprotocol/agent-client-protocol/blob/main/CHANGELOG.md |
+| Voice support (VS Code) | https://code.visualstudio.com/docs/configure/accessibility/voice |
+| AI settings reference | https://code.visualstudio.com/docs/agents/reference/ai-settings |
+| Use the Agents window | https://code.visualstudio.com/docs/agents/run/agents-window |
+| Visual Studio Code 1.137 — Voice Mode | https://code.visualstudio.com/updates/v1_137 |
+| What is Amazon Bedrock AgentCore? | https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html |
+| AgentCore Gateway | https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html |
+| MCP protocol contract | https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-mcp-protocol-contract.html |
+| How AgentCore Gateway supports MCP 2026-07-28 | https://aws.amazon.com/blogs/machine-learning/how-agentcore-gateway-supports-the-mcp-2026-07-28-spec/ |
+| Get started with AgentCore CLI | https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-cli.html |
+| Claude Code settings | https://code.claude.com/docs/en/settings |
+| Monitoring usage (OpenTelemetry) | https://code.claude.com/docs/en/monitoring-usage |
+| Claude Code CHANGELOG | https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md |
+| Latest stable release v0.60.0 | https://geminicli.com/docs/changelogs/latest/ |
+
 
 

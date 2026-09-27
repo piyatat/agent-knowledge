@@ -3,7 +3,7 @@ id: claude-code-chrome
 title: Claude Code Chrome — Claude in Chrome browser tools
 tags: [claude, browser, computer-use, mcp]
 status: active
-updated: 2026-09-11
+updated: 2026-09-27
 when_to_use: Enabling claude --chrome or /chrome, or contrasting it with Cursor Browser and computer use
 ---
 
@@ -17,10 +17,11 @@ when_to_use: Enabling claude --chrome or /chrome, or contrasting it with Cursor 
 - Start: `claude --chrome` (one-time site-permission dialog) or `/chrome` → Enabled by default. VS Code needs only the extension. Always-on loads browser tools into context every session — prefer the flag if tokens matter. `/chrome` also reconnects, lists tools (`claude-in-chrome` MCP), and picks among connected browsers.
 - Claude opens new tabs in a session tab group and shares the browser’s login state. Login/CAPTCHA pages pause for you. `/clear` closes the group unless surviving work is running; `/resume` / exit keep pages that are not empty new tabs.
 - Plan mode: read-only tools (`read_page`, `get_page_text`, find, console/network read, screenshot) skip prompts; clicks, typing, navigation, GIF record, and flags like `save_to_disk` / `clear` / `createIfEmpty` prompt. Uploads (v2.1.211+): session must be allowed to `Read` the file; 10 MB total; no multi-hard-link files (common in `node_modules`).
-- Org: `deniedMcpServers` on `claude-in-chrome` hides the install prompt. Connection uses a native messaging host (`com.anthropic.claude_code_browser_extension.json`) and `bridge.claudeusercontent.com` — IP allowlists that block that host fail. Service-worker idle → `/chrome` → Reconnect.
+- Org: `deniedMcpServers` on `claude-in-chrome` hides the install prompt. An exclusive `managed-mcp.json` also blocks `claude --chrome` unless managed `allowClaudeInChromeWithManagedMcp` is on (v2.1.282+; the error names that key). Connection uses a native messaging host (`com.anthropic.claude_code_browser_extension.json`) and `bridge.claudeusercontent.com` — IP allowlists that block that host fail. Service-worker idle → `/chrome` → Reconnect.
 - Contrast: computer use drives native macOS GUIs (`claude-computer-browser-toolsets`). Pair with `computer-use-containment` if the agent can see authenticated pages (GIF recordings include whatever is on screen).
 
 ## Sources
 
 - [Use Claude Code with Chrome](https://code.claude.com/docs/en/chrome) — accessed 2026-09-11
+- [Claude Code CHANGELOG](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) — accessed 2026-09-27
 - [Computer use](https://code.claude.com/docs/en/computer-use) — accessed 2026-09-11

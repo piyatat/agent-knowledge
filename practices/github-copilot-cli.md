@@ -3,7 +3,7 @@ id: github-copilot-cli
 title: GitHub Copilot CLI — terminal agent vs cloud coding agent
 tags: [github, cli, permissions, sandbox]
 status: active
-updated: 2026-09-15
+updated: 2026-09-27
 when_to_use: Running copilot in a terminal or -p script, or contrasting it with Copilot cloud agent
 ---
 
@@ -17,7 +17,7 @@ when_to_use: Running copilot in a terminal or -p script, or contrasting it with 
 - Permissions: `--allow-tool` / `--deny-tool` (deny wins, including over `--allow-all`). `--allow-all` / `--yolo` = all tools + paths + URLs — isolated environments only; never alias it. `permissions.disableBypassPermissionsMode` suppresses those flags. Help: `copilot help permissions`.
 - Sandbox (public preview / experimental): `/sandbox enable` or `--sandbox` restricts commands/MCP, not the CLI process. `--cloud` runs the whole session in an isolated cloud sandbox (inherits cloud-agent policies). Pair `--allow-all` with a sandbox.
 - MCP lives in `~/.copilot/mcp-config.json` (`COPILOT_HOME`). GitHub MCP is preinstalled. `copilot mcp add --transport http NAME URL` or `/mcp add`. Custom instructions: `.github/copilot-instructions.md`, path-specific `.github/instructions/**/*.instructions.md`, `AGENTS.md`.
-- Context: `/usage`, `/context`, `/compact`; auto-compact near 95%. `/every` / `/after` schedule prompts. Custom agents and skills are separate notes. ACP: Copilot CLI can also be an ACP server.
+- Context: `/usage`, `/context`, `/compact`; auto-compact near 95%. `/every` / `/after` schedule prompts. Memory: `/memory on|off|show` (persists); `-p` needs `--enable-memory`. Details: `github-copilot-memory`. Custom agents and skills are separate notes. ACP: Copilot CLI can also be an ACP server.
 - **Content exclusions** (Business/Enterprise): as of 2026-09-02 the **app and CLI** honor org/repo/enterprise path policies (`github-copilot-content-exclusions`). IDE **Agent/Edit** Chat modes still do not. Do not treat exclusions as a sandbox (`github-copilot-sandbox`).
 
 ## Sources
@@ -26,3 +26,4 @@ when_to_use: Running copilot in a terminal or -p script, or contrasting it with 
 - [Using GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview) — accessed 2026-09-05
 - [Allowing and denying tool use](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools) — accessed 2026-09-05
 - [Content exclusions generally available in Copilot app and CLI](https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/) — accessed 2026-09-15
+- [Copilot Memory controls for deletion, scope, and CLI](https://github.blog/changelog/2026-05-26-copilot-memory-has-more-controls-for-deletion-scope-and-the-copilot-cli/) — accessed 2026-09-27
