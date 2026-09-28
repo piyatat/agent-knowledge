@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -762,12 +762,13 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-08-12",
+      "updated": "2026-09-28",
       "when_to_use": "Designing MCP tools that need structured user input or out-of-band auth/payment",
       "related": [
         "mcp-mrtr-input-required",
         "human-in-the-loop-approvals",
-        "mcp-oauth-scopes"
+        "mcp-oauth-scopes",
+        "acp-elicitation"
       ]
     },
     {
@@ -3223,7 +3224,7 @@
         "identity"
       ],
       "status": "draft",
-      "updated": "2026-08-31",
+      "updated": "2026-09-28",
       "when_to_use": "Planning sender-constrained OAuth for remote MCP \u2014 do not treat DPoP as part of 2026-07-28",
       "related": [
         "mcp-2026-roadmap",
@@ -3866,14 +3867,15 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-09-27",
-      "when_to_use": "Choosing user vs project vs managed settings, or debugging which file won",
+      "updated": "2026-09-28",
+      "when_to_use": "Choosing user vs project vs managed settings, restricting models, or debugging which file won",
       "related": [
         "claude-code-permissions",
         "claude-code-hooks",
         "claude-code-memory",
         "claude-code-mcp",
-        "telemetry-redaction-genai"
+        "telemetry-redaction-genai",
+        "claude-code-doctor"
       ]
     },
     {
@@ -4347,14 +4349,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-14",
-      "when_to_use": "Requesting Copilot as a PR reviewer, or contrasting it with Copilot cloud agent / Cursor Bugbot",
+      "updated": "2026-09-28",
+      "when_to_use": "Requesting Copilot as a PR reviewer, configuring personal/enterprise auto-review, or contrasting it with Copilot cloud agent / Cursor Bugbot",
       "related": [
         "github-copilot-coding-agent",
         "github-copilot-instructions",
         "github-copilot-skills",
         "github-copilot-mcp",
-        "cursor-bugbot-review"
+        "cursor-bugbot-review",
+        "cursor-security-agents"
       ]
     },
     {
@@ -5294,7 +5297,7 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-09-13",
+      "updated": "2026-09-28",
       "when_to_use": "Starting a Cursor Project for a multi-PR feature, migration, or standing \u201cgardening\u201d job instead of a single chat",
       "related": [
         "cursor-cloud-always-on",
@@ -5379,8 +5382,8 @@
         "cli"
       ],
       "status": "active",
-      "updated": "2026-09-13",
-      "when_to_use": "Debugging ignored CLAUDE.md/settings/hooks/MCP/skills, or isolating a session with --safe-mode",
+      "updated": "2026-09-28",
+      "when_to_use": "Debugging ignored CLAUDE.md/settings/hooks/MCP/skills, auditing stale prompts, or isolating a session with --safe-mode",
       "related": [
         "claude-code-settings",
         "claude-code-memory",
@@ -6338,14 +6341,16 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-19",
-      "when_to_use": "Installing Codex beside the editor, or choosing local IDE chat vs Codex cloud handoff",
+      "updated": "2026-09-28",
+      "when_to_use": "Installing Codex beside the editor, choosing Agent Host vs the Codex extension, or local IDE chat vs Codex cloud handoff",
       "related": [
         "openai-codex-sessions",
         "openai-codex-sandbox",
         "openai-codex-mcp",
         "openai-codex-cloud-environments",
-        "github-copilot-ide-agent"
+        "github-copilot-ide-agent",
+        "vscode-agent-harnesses",
+        "openai-codex-import"
       ]
     },
     {
@@ -6421,7 +6426,7 @@
         "interoperability"
       ],
       "status": "active",
-      "updated": "2026-09-20",
+      "updated": "2026-09-28",
       "when_to_use": "Choosing a VS Code Session Target, or handing a Local chat to Copilot/Claude/Codex/Cloud",
       "related": [
         "github-copilot-ide-agent",
@@ -7365,6 +7370,51 @@
         "mcp-http-gateway-headers",
         "agentgateway-aaif",
         "kiro-cli"
+      ]
+    },
+    {
+      "id": "openai-codex-import",
+      "path": "practices/openai-codex-import.md",
+      "title": "Codex /import \u2014 Claude Code, Cowork, and Cursor setup",
+      "tags": [
+        "openai",
+        "cli",
+        "migration",
+        "config"
+      ],
+      "status": "active",
+      "updated": "2026-09-28",
+      "when_to_use": "Migrating Claude Code, Claude Cowork, or Cursor instructions/MCP/skills/chats into Codex CLI or the ChatGPT desktop app",
+      "related": [
+        "openai-codex-ide",
+        "openai-codex-hooks",
+        "openai-codex-memories",
+        "openai-codex-mcp",
+        "openai-codex-skills",
+        "openai-codex-agents-md",
+        "claude-cowork",
+        "agent-memory-poisoning"
+      ]
+    },
+    {
+      "id": "acp-elicitation",
+      "path": "practices/acp-elicitation.md",
+      "title": "ACP elicitation \u2014 form vs URL on the IDE wire",
+      "tags": [
+        "acp",
+        "elicitation",
+        "security",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-09-28",
+      "when_to_use": "Implementing ACP elicitation/create in an IDE or coding agent, or contrasting it with MCP elicitation",
+      "related": [
+        "mcp-elicitation-modes",
+        "agent-client-protocol-acp",
+        "acp-v2-session-lifecycle",
+        "acp-terminal-auth",
+        "mcp-mrtr-input-required"
       ]
     }
   ]

@@ -1256,5 +1256,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude Code CHANGELOG | https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md |
 | Latest stable release v0.60.0 | https://geminicli.com/docs/changelogs/latest/ |
 
+## Daily ingest 2026-09-28 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Import from another agent | https://developers.openai.com/codex/import |
+| Developer commands — /import | https://developers.openai.com/codex/cli/reference |
+| ACP elicitation | https://agentclientprotocol.com/protocol/v2/elicitation |
+| Elicitation is stabilized | https://agentclientprotocol.com/announcements/elicitation-stabilized |
+| MCP elicitation (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation |
+| Projects (Cursor docs) | https://cursor.com/docs/agent/projects |
+| Introducing Projects | https://cursor.com/blog/projects |
+| Cursor changelog | https://cursor.com/changelog |
+| More ways to request and configure Copilot code reviews | https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/ |
+| About GitHub Copilot code review | https://docs.github.com/en/copilot/concepts/agents/code-review |
+| Claude Code CHANGELOG | https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md |
+| Choose and use an agent harness | https://code.visualstudio.com/docs/agents/run/agent-harnesses |
+| Visual Studio Code 1.138 | https://code.visualstudio.com/updates/v1_138 |
+| MCP development roadmap | https://modelcontextprotocol.io/development/roadmap |
+| SEP-1932: DPoP Profile for MCP | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/1932 |
+| typescript-sdk DPoP client PR | https://github.com/modelcontextprotocol/typescript-sdk/pull/2629 |
+| typescript-sdk DPoP server PR | https://github.com/modelcontextprotocol/typescript-sdk/pull/2630 |
+| TypeScript SDK Tier 1 Assessment | https://github.com/modelcontextprotocol/modelcontextprotocol/issues/3268 |
+
 
 
