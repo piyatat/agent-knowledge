@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2539,7 +2539,7 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-09-02",
+      "updated": "2026-09-29",
       "when_to_use": "Hosting or mirroring repos on Cursor Origin, using the origin CLI, or starting a Cloud Agent without a third-party SCM",
       "related": [
         "cursor-privacy-mode",
@@ -2547,7 +2547,8 @@
         "cursor-automations",
         "cursor-bugbot-review",
         "cursor-sdk",
-        "cursor-origin-apps"
+        "cursor-origin-apps",
+        "cursor-origin-migrations"
       ]
     },
     {
@@ -3408,13 +3409,14 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-09-02",
+      "updated": "2026-09-29",
       "when_to_use": "Connecting preview/CI apps to an Origin repo, or writing an internal Origin API app (JWT + installation tokens)",
       "related": [
         "cursor-origin",
         "cursor-cloud-always-on",
         "cursor-automations",
-        "cursor-sdk"
+        "cursor-sdk",
+        "cursor-origin-migrations"
       ]
     },
     {
@@ -3428,13 +3430,15 @@
         "transport"
       ],
       "status": "active",
-      "updated": "2026-09-02",
+      "updated": "2026-09-29",
       "when_to_use": "Embedding Codex (auth, history, approvals, streamed events) in a custom client instead of the Codex SDK or a deprecated MCP server",
       "related": [
         "openai-codex-sdk",
         "openai-agents-sdk",
         "agent-client-protocol-acp",
-        "cursor-sdk"
+        "cursor-sdk",
+        "openai-codex-ide",
+        "openai-codex-mcp"
       ]
     },
     {
@@ -3875,7 +3879,8 @@
         "claude-code-memory",
         "claude-code-mcp",
         "telemetry-redaction-genai",
-        "claude-code-doctor"
+        "claude-code-doctor",
+        "claude-code-gateway"
       ]
     },
     {
@@ -3930,15 +3935,18 @@
         "mcp"
       ],
       "status": "active",
-      "updated": "2026-09-05",
-      "when_to_use": "Authoring Copilot .agent.md profiles for CLI or cloud agent, or scoping tools/MCP per persona",
+      "updated": "2026-09-29",
+      "when_to_use": "Authoring Copilot .agent.md profiles for CLI, cloud agent, or IDE chat, or scoping tools/MCP per persona",
       "related": [
         "github-copilot-coding-agent",
         "github-copilot-cli",
         "cursor-custom-subagents",
         "claude-code-subagents",
         "github-copilot-skills",
-        "github-copilot-mcp"
+        "github-copilot-mcp",
+        "github-copilot-xcode-eclipse",
+        "github-copilot-visual-studio",
+        "github-copilot-ide-agent"
       ]
     },
     {
@@ -4635,7 +4643,7 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-09-20",
+      "updated": "2026-09-29",
       "when_to_use": "Using Copilot Chat Agent/Plan/Ask in an IDE, or choosing Agent Host vs extension-host vs Actions cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4647,7 +4655,9 @@
         "agent-host-protocol-ahp",
         "github-copilot-dev-containers",
         "vscode-agent-harnesses",
-        "vscode-external-sessions"
+        "vscode-external-sessions",
+        "github-copilot-xcode-eclipse",
+        "github-copilot-visual-studio"
       ]
     },
     {
@@ -5346,7 +5356,8 @@
         "claude-code-sandboxing",
         "claude-code-settings",
         "permission-modes-allow-ask-deny",
-        "claude-code-doctor"
+        "claude-code-doctor",
+        "claude-code-gateway"
       ]
     },
     {
@@ -6104,7 +6115,8 @@
         "claude-code-remote-control",
         "cursor-self-hosted-agents",
         "claude-code-routines",
-        "claude-code-github-action"
+        "claude-code-github-action",
+        "claude-code-gateway"
       ]
     },
     {
@@ -7415,6 +7427,71 @@
         "acp-v2-session-lifecycle",
         "acp-terminal-auth",
         "mcp-mrtr-input-required"
+      ]
+    },
+    {
+      "id": "claude-code-gateway",
+      "path": "practices/claude-code-gateway.md",
+      "title": "Claude apps gateway \u2014 SSO proxy for Bedrock, GCP, Foundry",
+      "tags": [
+        "claude",
+        "gateway",
+        "auth",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-09-29",
+      "when_to_use": "Deploying Claude apps gateway, forcing /login to a private gateway URL, or contrasting it with Bedrock/Vertex env vars or self-hosted runners",
+      "related": [
+        "claude-code-settings",
+        "claude-code-self-hosted",
+        "claude-code-auto-mode",
+        "claude-code-managed-mcp",
+        "telemetry-redaction-genai",
+        "memory-files-vs-enforcement-hooks"
+      ]
+    },
+    {
+      "id": "github-copilot-xcode-eclipse",
+      "path": "practices/github-copilot-xcode-eclipse.md",
+      "title": "Copilot in Xcode and Eclipse \u2014 agent mode vs VS Code",
+      "tags": [
+        "github",
+        "ux",
+        "mcp",
+        "interoperability"
+      ],
+      "status": "active",
+      "updated": "2026-09-29",
+      "when_to_use": "Enabling Copilot agent/chat/MCP in Xcode or Eclipse, or checking which features those IDEs still lack vs VS Code",
+      "related": [
+        "github-copilot-ide-agent",
+        "github-copilot-jetbrains",
+        "github-copilot-custom-agents",
+        "github-copilot-visual-studio",
+        "github-copilot-mcp"
+      ]
+    },
+    {
+      "id": "github-copilot-visual-studio",
+      "path": "practices/github-copilot-visual-studio.md",
+      "title": "Copilot in Visual Studio \u2014 Agent, Plan, and SDK chat",
+      "tags": [
+        "github",
+        "ux",
+        "mcp",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-09-29",
+      "when_to_use": "Using Copilot Agent/Plan/Ask in Visual Studio (2022 17.14+ or 2026), or contrasting it with VS Code Agent Host",
+      "related": [
+        "github-copilot-ide-agent",
+        "github-copilot-custom-agents",
+        "github-copilot-xcode-eclipse",
+        "github-copilot-mcp",
+        "github-copilot-coding-agent",
+        "vscode-agent-harnesses"
       ]
     }
   ]

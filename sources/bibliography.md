@@ -1279,5 +1279,25 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | typescript-sdk DPoP server PR | https://github.com/modelcontextprotocol/typescript-sdk/pull/2630 |
 | TypeScript SDK Tier 1 Assessment | https://github.com/modelcontextprotocol/modelcontextprotocol/issues/3268 |
 
+## Daily ingest 2026-09-29 (gap-fill)
 
+| Topic | URL |
+| --- | --- |
+| Run Claude Code through a gateway | https://code.claude.com/docs/en/gateways |
+| Claude apps gateway | https://code.claude.com/docs/en/claude-apps-gateway |
+| Claude apps gateway configuration | https://code.claude.com/docs/en/claude-apps-gateway-config |
+| Claude apps gateway deployment | https://code.claude.com/docs/en/claude-apps-gateway-deploy |
+| Copilot feature matrix | https://docs.github.com/en/copilot/reference/copilot-feature-matrix |
+| Installing the Copilot extension | https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-extension |
+| Asking Copilot questions in your IDE | https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide |
+| Creating custom agents in your IDE | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-custom-agents-in-your-ide |
+| Custom agents configuration | https://docs.github.com/en/copilot/reference/custom-agents-configuration |
+| Use Agent Mode (Visual Studio) | https://learn.microsoft.com/en-us/visualstudio/ide/copilot-agent-mode |
+| Get started with GitHub Copilot (Visual Studio) | https://learn.microsoft.com/en-us/visualstudio/ide/visual-studio-github-copilot-get-started |
+| Visual Studio 2026 release notes | https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes |
+| Origin API | https://cursor.com/docs/origin/api |
+| Origin API changelog | https://cursor.com/docs/api/origin/changelog |
+| Codebase settings | https://cursor.com/docs/origin/codebase-settings |
+| Pull request commands | https://cursor.com/docs/origin/cli/reference/pull-requests |
+| Codex App Server | https://developers.openai.com/codex/app-server |
 
