@@ -3,8 +3,8 @@ id: mcp-oauth-scopes
 title: MCP OAuth 2.1, CIMD, PKCE, and tool scopes
 tags: [mcp, oauth, security, auth]
 status: active
-updated: 2026-08-22
-when_to_use: Securing remote HTTP MCP servers or designing least-privilege agent tool access
+updated: 2026-09-30
+when_to_use: Securing remote HTTP MCP servers, designing least-privilege tool scopes, or adding insufficient_scope step-up
 ---
 
 ## Summary
@@ -19,6 +19,7 @@ Remote MCP should use OAuth 2.1 + PKCE as a resource server, bind tokens to the 
 - 2026-07-28 auth hardening: validate `iss` on the authorization response (RFC 9207) before redeeming a code; bind client credentials to the issuing AS; set `application_type` if still using DCR so localhost CLI redirects are not rejected.
 - CIMD is the preferred registration mechanism; DCR is deprecated and kept only for AS that cannot do CIMD. Confused-deputy risk is worse when DCR + a static third-party client ID share a consent cookie.
 - Map scopes to tool classes (read/write/admin or per-tool); re-check on each call (deny by default). Prefer short-lived access tokens + refresh rotation; log agent identity, tool, and args.
+- **Step-up**: if a token lacks the scope for this tool/resource, return HTTP **403** `insufficient_scope` **before** the handler or SSE stream (`mcp-scope-challenges`). Clients re-authorize with the advertised scope set (cap retries). TypeScript SDK 2.1.0 `scopeChallenge` / `requireScopes` is the implementable path; DPoP is a separate opt-in (`mcp-dpop-extension`).
 
 ## Sources
 
@@ -26,3 +27,4 @@ Remote MCP should use OAuth 2.1 + PKCE as a resource server, bind tokens to the 
 - [The 2026-07-28 Specification (MCP Blog)](https://blog.modelcontextprotocol.io/posts/2026-07-28/) — accessed 2026-08-22
 - [MCP OAuth 2.1 implementation (PKCE & scopes)](https://www.practical-devsecops.com/mcp-oauth-2-1-implementation/) — accessed 2026-08-09
 - [Authorization: OAuth 2.1 for HTTP MCP Servers](https://imti.co/mcp-authorization-oauth/) — accessed 2026-08-09
+- [server/scopeChallenge (TypeScript SDK)](https://ts.sdk.modelcontextprotocol.io/v2/api/@modelcontextprotocol/server/server/scopeChallenge.html) — accessed 2026-09-30

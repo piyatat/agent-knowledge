@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -334,15 +334,17 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-08-22",
-      "when_to_use": "Securing remote HTTP MCP servers or designing least-privilege agent tool access",
+      "updated": "2026-09-30",
+      "when_to_use": "Securing remote HTTP MCP servers, designing least-privilege tool scopes, or adding insufficient_scope step-up",
       "related": [
         "prompt-injection-agent-defense",
         "tools-mcp-skills-layers",
         "human-in-the-loop-approvals",
         "mcp-server-trust-failures",
         "mcp-registry-admission",
-        "mcp-authorization-discovery"
+        "mcp-authorization-discovery",
+        "mcp-scope-challenges",
+        "mcp-dpop-extension"
       ]
     },
     {
@@ -3712,7 +3714,7 @@
     {
       "id": "openai-codex-cloud-environments",
       "path": "practices/openai-codex-cloud-environments.md",
-      "title": "Codex cloud environments \u2014 setup scripts and cache",
+      "title": "Codex Cloud environments \u2014 publish, secrets, and VPN",
       "tags": [
         "openai",
         "sandbox",
@@ -3720,13 +3722,16 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-04",
-      "when_to_use": "Configuring ChatGPT Codex cloud containers, secrets, or agent internet access",
+      "updated": "2026-09-30",
+      "when_to_use": "Creating a reusable Codex Cloud environment, sharing it in a workspace, or contrasting it with local CLI sandbox",
       "related": [
         "openai-codex-sdk",
         "openai-sandbox-agents",
         "cursor-environment-json",
-        "agents-md-open-format"
+        "agents-md-open-format",
+        "openai-agents-api",
+        "openai-codex-security",
+        "openai-codex-permissions"
       ]
     },
     {
@@ -3960,8 +3965,8 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-09-27",
-      "when_to_use": "Running copilot in a terminal or -p script, or contrasting it with Copilot cloud agent",
+      "updated": "2026-09-30",
+      "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
         "github-copilot-custom-agents",
@@ -3974,7 +3979,8 @@
         "github-copilot-jetbrains",
         "github-copilot-content-exclusions",
         "github-copilot-auto-model",
-        "github-copilot-memory"
+        "github-copilot-memory",
+        "vscode-assisted-permissions"
       ]
     },
     {
@@ -4643,8 +4649,8 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-09-29",
-      "when_to_use": "Using Copilot Chat Agent/Plan/Ask in an IDE, or choosing Agent Host vs extension-host vs Actions cloud agent",
+      "updated": "2026-09-30",
+      "when_to_use": "Using Copilot Chat Agent/Plan/Ask in an IDE, choosing Agent Host vs cloud agent, or setting Assisted permissions",
       "related": [
         "github-copilot-coding-agent",
         "github-copilot-cli",
@@ -4657,7 +4663,9 @@
         "vscode-agent-harnesses",
         "vscode-external-sessions",
         "github-copilot-xcode-eclipse",
-        "github-copilot-visual-studio"
+        "github-copilot-visual-studio",
+        "vscode-assisted-permissions",
+        "vscode-agent-sandboxing"
       ]
     },
     {
@@ -5767,7 +5775,7 @@
     {
       "id": "openai-codex-security",
       "path": "practices/openai-codex-security.md",
-      "title": "Codex Security plugin \u2014 scans, diffs, and cloud review",
+      "title": "Codex Security plugin \u2014 scans, diffs, and Security Cloud",
       "tags": [
         "openai",
         "plugins",
@@ -5775,13 +5783,14 @@
         "review"
       ],
       "status": "active",
-      "updated": "2026-09-15",
-      "when_to_use": "Installing Codex Security for a local scan, a diff scan in CI, or @codex security review on GitHub",
+      "updated": "2026-09-30",
+      "when_to_use": "Installing Codex Security for a local scan, a diff scan in CI, or Codex Security Cloud on a GitHub repo",
       "related": [
         "openai-codex-plugins",
         "openai-codex-review",
         "openai-codex-auto-review",
-        "openai-codex-gitlab"
+        "openai-codex-gitlab",
+        "openai-codex-cloud-environments"
       ]
     },
     {
@@ -6087,14 +6096,18 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-18",
-      "when_to_use": "Calling POST /v1/agents/sessions for a managed Codex loop instead of openai-agents or Codex CLI",
+      "updated": "2026-09-30",
+      "when_to_use": "Calling POST /v1/agents/sessions for a managed Codex loop, hosted browser, or comparing Bedrock Managed Agents",
       "related": [
         "openai-agents-sdk",
         "openai-sandbox-agents",
         "openai-codex-sdk",
         "durable-agent-workflows",
-        "openai-codex-subagents"
+        "openai-codex-subagents",
+        "openai-computer-tool",
+        "bedrock-agentcore",
+        "openai-codex-cloud-environments",
+        "computer-use-containment"
       ]
     },
     {
@@ -6568,15 +6581,16 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-09-21",
-      "when_to_use": "Enabling chat.agent.sandbox for VS Code / Copilot Agent Host terminals, or contrasting it with MCP and Dev Container isolation",
+      "updated": "2026-09-30",
+      "when_to_use": "Enabling chat.agent.sandbox for VS Code / Copilot Agent Host terminals, or contrasting sandbox with Assisted permissions and URL approval",
       "related": [
         "vscode-mcp",
         "vscode-agent-harnesses",
         "github-copilot-sandbox",
         "cursor-sandbox-json",
         "github-copilot-dev-containers",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "vscode-assisted-permissions"
       ]
     },
     {
@@ -7492,6 +7506,71 @@
         "github-copilot-mcp",
         "github-copilot-coding-agent",
         "vscode-agent-harnesses"
+      ]
+    },
+    {
+      "id": "claude-code-projects",
+      "path": "practices/claude-code-projects.md",
+      "title": "Claude Code Projects \u2014 coordinator, threads, shared memory",
+      "tags": [
+        "claude",
+        "orchestration",
+        "subagent",
+        "memory"
+      ],
+      "status": "active",
+      "updated": "2026-09-30",
+      "when_to_use": "Starting a Claude Code Project for multi-thread cloud work, or contrasting it with Cursor Projects and CLI agent teams",
+      "related": [
+        "cursor-projects",
+        "claude-code-agent-teams",
+        "claude-code-on-the-web",
+        "claude-code-subagents",
+        "claude-code-workflows",
+        "agent-memory-poisoning"
+      ]
+    },
+    {
+      "id": "vscode-assisted-permissions",
+      "path": "practices/vscode-assisted-permissions.md",
+      "title": "VS Code Assisted permissions \u2014 LLM judge vs Allow all",
+      "tags": [
+        "vscode",
+        "permissions",
+        "approvals",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-09-30",
+      "when_to_use": "Enabling chat.assistedPermissions, choosing Assisted vs Manual vs Allow all on Agent Host, or contrasting JetBrains assisted approvals",
+      "related": [
+        "vscode-agent-sandboxing",
+        "github-copilot-ide-agent",
+        "github-copilot-jetbrains",
+        "github-copilot-managed-permissions",
+        "github-copilot-cli",
+        "prompt-injection-agent-defense",
+        "agent-host-protocol-ahp"
+      ]
+    },
+    {
+      "id": "mcp-scope-challenges",
+      "path": "practices/mcp-scope-challenges.md",
+      "title": "MCP request-time OAuth scope challenges",
+      "tags": [
+        "mcp",
+        "oauth",
+        "security",
+        "auth"
+      ],
+      "status": "active",
+      "updated": "2026-09-30",
+      "when_to_use": "Returning RFC 6750 insufficient_scope from an MCP tool/resource/prompt, or wiring TypeScript SDK scopeChallenge",
+      "related": [
+        "mcp-oauth-scopes",
+        "mcp-dpop-extension",
+        "mcp-authorization-discovery",
+        "human-in-the-loop-approvals"
       ]
     }
   ]

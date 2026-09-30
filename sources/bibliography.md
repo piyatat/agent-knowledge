@@ -1301,3 +1301,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Pull request commands | https://cursor.com/docs/origin/cli/reference/pull-requests |
 | Codex App Server | https://developers.openai.com/codex/app-server |
 
+## Daily ingest 2026-09-30 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Projects redesigned: from folder to conversation | https://claude.com/blog/projects-redesigned |
+| Claude Code relaunches Projects (The Verge) | https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects |
+| Agent teams | https://code.claude.com/docs/en/agent-teams |
+| Claude Code on the web | https://code.claude.com/docs/en/claude-code-on-the-web |
+| Manage approvals and permissions | https://code.visualstudio.com/docs/agents/run/approvals |
+| AI settings reference | https://code.visualstudio.com/docs/agents/reference/ai-settings |
+| Secure AI-assisted development in VS Code | https://code.visualstudio.com/docs/agents/run/security |
+| New features in Copilot for JetBrains | https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/ |
+| server/scopeChallenge (TypeScript SDK) | https://ts.sdk.modelcontextprotocol.io/v2/api/@modelcontextprotocol/server/server/scopeChallenge.html |
+| feat(server): add request-time OAuth scope challenges | https://github.com/modelcontextprotocol/typescript-sdk/pull/1624 |
+| MCP Authorization (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization |
+| MCP SDK 2.1.0: OAuth DPoP Tokens and Scope Challenges | https://fluidlabs.com/resources/mcp-sdk-2-1-0-oauth-dpop-scope-challenges |
+| Cloud environments | https://learn.chatgpt.com/docs/environments/cloud-environments |
+| Codex Security | https://developers.openai.com/codex/security |
+| Codex Security Cloud setup | https://developers.openai.com/codex/security/setup |
+| FAQ – Codex Security | https://developers.openai.com/codex/security/faq |
+| Rolling back changes in Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/roll-back-changes |
+| Canceling and rolling back (Copilot CLI) | https://docs.github.com/en/copilot/concepts/agents/copilot-cli/cancel-and-roll-back |
+| Computer use (Agents API) | https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use |
+| Bedrock Managed Agents | https://developers.openai.com/api/docs/guides/agents-api/bedrock-managed-agents |
+
