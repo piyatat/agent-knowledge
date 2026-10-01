@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -574,7 +574,7 @@
         "computer-use"
       ],
       "status": "active",
-      "updated": "2026-09-02",
+      "updated": "2026-10-01",
       "when_to_use": "Granting agents desktop, GUI, or browser control beyond scoped APIs",
       "related": [
         "agent-code-sandboxing",
@@ -583,7 +583,9 @@
         "openai-computer-tool",
         "claude-computer-browser-toolsets",
         "cursor-self-hosted-computer-use",
-        "cursor-browser"
+        "cursor-browser",
+        "claude-code-computer-use",
+        "github-copilot-computer-use"
       ]
     },
     {
@@ -3812,14 +3814,15 @@
         "hooks"
       ],
       "status": "active",
-      "updated": "2026-09-05",
+      "updated": "2026-10-01",
       "when_to_use": "Writing Claude Code permission rules or choosing defaultMode vs a PreToolUse hook",
       "related": [
         "permission-modes-allow-ask-deny",
         "claude-code-sandboxing",
         "claude-code-hooks",
         "claude-code-settings",
-        "claude-code-plan-mode"
+        "claude-code-plan-mode",
+        "claude-code-restricted"
       ]
     },
     {
@@ -3965,7 +3968,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-09-30",
+      "updated": "2026-10-01",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -3980,7 +3983,9 @@
         "github-copilot-content-exclusions",
         "github-copilot-auto-model",
         "github-copilot-memory",
-        "vscode-assisted-permissions"
+        "vscode-assisted-permissions",
+        "github-copilot-computer-use",
+        "github-copilot-remote-control"
       ]
     },
     {
@@ -4953,7 +4958,7 @@
         "mcp"
       ],
       "status": "active",
-      "updated": "2026-09-27",
+      "updated": "2026-10-01",
       "when_to_use": "Enabling claude --chrome or /chrome, or contrasting it with Cursor Browser and computer use",
       "related": [
         "claude-computer-browser-toolsets",
@@ -4961,7 +4966,8 @@
         "computer-use-containment",
         "playwright-mcp-containment",
         "claude-code-mcp",
-        "claude-code-managed-mcp"
+        "claude-code-managed-mcp",
+        "claude-code-computer-use"
       ]
     },
     {
@@ -5123,7 +5129,7 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-09-23",
+      "updated": "2026-10-01",
       "when_to_use": "Using the Claude Desktop Code tab, choosing Desktop vs CLI, or sending a CLI session with /desktop",
       "related": [
         "claude-code-on-the-web",
@@ -5131,7 +5137,8 @@
         "claude-code-vscode",
         "claude-code-sessions",
         "claude-code-chrome",
-        "claude-cowork"
+        "claude-cowork",
+        "claude-code-computer-use"
       ]
     },
     {
@@ -5487,14 +5494,16 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-09-13",
+      "updated": "2026-10-01",
       "when_to_use": "Shipping managed-settings.json permission rules for Copilot CLI, VS Code Agent Host, or the Copilot app",
       "related": [
         "github-copilot-hooks",
         "permission-modes-allow-ask-deny",
         "github-copilot-cli",
         "github-copilot-coding-agent",
-        "cursor-permissions-json"
+        "cursor-permissions-json",
+        "github-copilot-remote-control",
+        "github-copilot-computer-use"
       ]
     },
     {
@@ -7571,6 +7580,92 @@
         "mcp-dpop-extension",
         "mcp-authorization-discovery",
         "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "github-copilot-computer-use",
+      "path": "practices/github-copilot-computer-use.md",
+      "title": "Copilot computer use \u2014 desktop GUI from CLI and app",
+      "tags": [
+        "github",
+        "computer-use",
+        "cli",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-10-01",
+      "when_to_use": "Enabling /computer in Copilot CLI or the Copilot app, or contrasting it with Claude/Cursor computer use",
+      "related": [
+        "github-copilot-cli",
+        "computer-use-containment",
+        "github-copilot-managed-permissions",
+        "github-copilot-sandbox",
+        "claude-code-computer-use",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "claude-code-computer-use",
+      "path": "practices/claude-code-computer-use.md",
+      "title": "Claude Code computer use \u2014 desktop GUI vs Chrome",
+      "tags": [
+        "claude",
+        "computer-use",
+        "cli",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-10-01",
+      "when_to_use": "Enabling Claude Code CLI or Desktop screen control, or contrasting it with Claude in Chrome",
+      "related": [
+        "claude-code-chrome",
+        "claude-code-desktop",
+        "claude-cowork",
+        "computer-use-containment",
+        "claude-computer-browser-toolsets",
+        "github-copilot-computer-use"
+      ]
+    },
+    {
+      "id": "github-copilot-remote-control",
+      "path": "practices/github-copilot-remote-control.md",
+      "title": "Copilot CLI remote control \u2014 steer a local session from web or mobile",
+      "tags": [
+        "github",
+        "cli",
+        "session",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-10-01",
+      "when_to_use": "Enabling /remote or --remote on Copilot CLI, or contrasting it with Claude Code Remote Control",
+      "related": [
+        "github-copilot-cli",
+        "github-copilot-managed-permissions",
+        "claude-code-remote-control",
+        "github-copilot-coding-agent",
+        "cursor-ios"
+      ]
+    },
+    {
+      "id": "claude-code-restricted",
+      "path": "practices/claude-code-restricted.md",
+      "title": "Claude Code --restricted \u2014 drop shell and ignore local settings",
+      "tags": [
+        "claude",
+        "permissions",
+        "cli",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-10-01",
+      "when_to_use": "Starting claude --restricted, or choosing it versus --bare or --safe-mode",
+      "related": [
+        "claude-code-permissions",
+        "claude-code-headless",
+        "claude-code-doctor",
+        "claude-code-sandboxing",
+        "claude-code-settings"
       ]
     }
   ]

@@ -3,7 +3,7 @@ id: claude-code-chrome
 title: Claude Code Chrome — Claude in Chrome browser tools
 tags: [claude, browser, computer-use, mcp]
 status: active
-updated: 2026-09-27
+updated: 2026-10-01
 when_to_use: Enabling claude --chrome or /chrome, or contrasting it with Cursor Browser and computer use
 ---
 
@@ -18,7 +18,7 @@ when_to_use: Enabling claude --chrome or /chrome, or contrasting it with Cursor 
 - Claude opens new tabs in a session tab group and shares the browser’s login state. Login/CAPTCHA pages pause for you. `/clear` closes the group unless surviving work is running; `/resume` / exit keep pages that are not empty new tabs.
 - Plan mode: read-only tools (`read_page`, `get_page_text`, find, console/network read, screenshot) skip prompts; clicks, typing, navigation, GIF record, and flags like `save_to_disk` / `clear` / `createIfEmpty` prompt. Uploads (v2.1.211+): session must be allowed to `Read` the file; 10 MB total; no multi-hard-link files (common in `node_modules`).
 - Org: `deniedMcpServers` on `claude-in-chrome` hides the install prompt. An exclusive `managed-mcp.json` also blocks `claude --chrome` unless managed `allowClaudeInChromeWithManagedMcp` is on (v2.1.282+; the error names that key). Connection uses a native messaging host (`com.anthropic.claude_code_browser_extension.json`) and `bridge.claudeusercontent.com` — IP allowlists that block that host fail. Service-worker idle → `/chrome` → Reconnect.
-- Contrast: computer use drives native macOS GUIs (`claude-computer-browser-toolsets`). Pair with `computer-use-containment` if the agent can see authenticated pages (GIF recordings include whatever is on screen).
+- Contrast: **computer use** drives the real desktop (CLI macOS; Desktop macOS/Windows) — `claude-code-computer-use`. API toolsets are `claude-computer-browser-toolsets`. Pair with `computer-use-containment` if the agent can see authenticated pages (GIF recordings include whatever is on screen).
 
 ## Sources
 

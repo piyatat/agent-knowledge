@@ -3,13 +3,13 @@ id: computer-use-containment
 title: Computer-use and browser-agent containment
 tags: [security, sandbox, browser, computer-use]
 status: active
-updated: 2026-09-02
+updated: 2026-10-01
 when_to_use: Granting agents desktop, GUI, or browser control beyond scoped APIs
 ---
 
 ## Summary
 
-Contain computer-use agents by hard environment boundaries (VM/sandbox, filesystem mounts, egress controls) plus approval gates for high-impact actions — model training alone will not stop prompt injection through the screen. Product-specific wiring: Cursor self-hosted workers (`cursor-self-hosted-computer-use`), managed Cloud Agent artifacts (`cursor-cloud-pr-artifacts`), Claude toolsets (`claude-computer-browser-toolsets`), OpenAI computer (`openai-computer-tool`).
+Contain computer-use agents by hard environment boundaries (VM/sandbox, filesystem mounts, egress controls) plus approval gates for high-impact actions — model training alone will not stop prompt injection through the screen. Product-specific wiring: Cursor self-hosted workers (`cursor-self-hosted-computer-use`), managed Cloud Agent artifacts (`cursor-cloud-pr-artifacts`), Claude Code desktop/CLI (`claude-code-computer-use`), Copilot CLI/app (`github-copilot-computer-use`), Claude API toolsets (`claude-computer-browser-toolsets`), OpenAI computer (`openai-computer-tool`).
 
 ## Notes
 
@@ -26,3 +26,5 @@ Contain computer-use agents by hard environment boundaries (VM/sandbox, filesyst
 - [Trustworthy agents in practice (Anthropic)](https://www.anthropic.com/research/trustworthy-agents) — accessed 2026-08-10
 - [Guardrails and human review (OpenAI)](https://developers.openai.com/api/docs/guides/agents/guardrails-approvals) — accessed 2026-08-10
 - [Computer use and desktop sharing (Cursor)](https://cursor.com/docs/cloud-agent/bring-your-own-machine/computer-use) — accessed 2026-09-02
+- [Let Claude use your computer from the CLI](https://code.claude.com/docs/en/computer-use) — accessed 2026-10-01
+- [GitHub Copilot can now interact with desktop apps with computer use](https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/) — accessed 2026-10-01

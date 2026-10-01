@@ -1326,3 +1326,20 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Computer use (Agents API) | https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use |
 | Bedrock Managed Agents | https://developers.openai.com/api/docs/guides/agents-api/bedrock-managed-agents |
 
+## Daily ingest 2026-10-01 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| GitHub Copilot can now interact with desktop apps with computer use | https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/ |
+| Using GitHub Copilot CLI to interact with desktop applications | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/computer-use |
+| Using the GitHub Copilot app to interact with desktop applications | https://docs.github.com/en/copilot/how-tos/github-copilot-app/computer-use |
+| Let Claude use your computer from the CLI | https://code.claude.com/docs/en/computer-use |
+| Desktop application (Claude Code) | https://code.claude.com/docs/en/desktop |
+| Let Claude use your computer in Cowork | https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork |
+| About remote control of GitHub Copilot CLI sessions | https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-remote-control |
+| Steering a GitHub Copilot CLI session from another device | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/steer-remotely |
+| Remote control for Copilot CLI sessions now generally available | https://github.blog/changelog/2026-05-18-remote-control-for-copilot-cli-sessions-now-generally-available-on-mobile-web-and-vs-code/ |
+| v2.1.248 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.248 |
+| Choose a permission mode | https://code.claude.com/docs/en/permission-modes |
+| CLI reference (Claude Code) | https://code.claude.com/docs/en/cli-reference |
+
