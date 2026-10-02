@@ -3,7 +3,7 @@ id: github-copilot-cli
 title: GitHub Copilot CLI — terminal agent vs cloud coding agent
 tags: [github, cli, permissions, sandbox]
 status: active
-updated: 2026-10-01
+updated: 2026-10-02
 when_to_use: Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent
 ---
 
@@ -20,6 +20,7 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - MCP lives in `~/.copilot/mcp-config.json` (`COPILOT_HOME`). GitHub MCP is preinstalled. `copilot mcp add --transport http NAME URL` or `/mcp add`. Custom instructions: `.github/copilot-instructions.md`, path-specific `.github/instructions/**/*.instructions.md`, `AGENTS.md`.
 - Context: `/usage`, `/context`, `/compact`; auto-compact near 95%. `/every` / `/after` schedule prompts. Memory: `/memory on|off|show` (persists); `-p` needs `--enable-memory`. Details: `github-copilot-memory`. Custom agents and skills are separate notes. ACP: Copilot CLI can also be an ACP server.
 - Desktop GUI: `/computer on|show|off` (public preview, macOS/Windows local sessions) — `github-copilot-computer-use`. Remote steer of a **running** interactive session: `/remote on` or `copilot --remote` (not `-p`) — `github-copilot-remote-control`.
+- Parallel / scripted orchestration (often needs `/experimental on`): `/fleet` or `--fleet` for a model-chosen subagent split (`github-copilot-fleet`); coded **dynamic workflows** via chat or `copilot workflow run NAME` (`github-copilot-dynamic-workflows`). Repo-event automation that must live in git is `gh aw` (`github-agentic-workflows`), not a long-lived CLI session.
 - **Content exclusions** (Business/Enterprise): as of 2026-09-02 the **app and CLI** honor org/repo/enterprise path policies (`github-copilot-content-exclusions`). IDE **Agent/Edit** Chat modes still do not. Do not treat exclusions as a sandbox (`github-copilot-sandbox`).
 
 ## Sources
@@ -33,3 +34,5 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - [Canceling and rolling back (Copilot CLI)](https://docs.github.com/en/copilot/concepts/agents/copilot-cli/cancel-and-roll-back) — accessed 2026-09-30
 - [Using GitHub Copilot CLI to interact with desktop applications](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/computer-use) — accessed 2026-10-01
 - [Steering a GitHub Copilot CLI session from another device](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/steer-remotely) — accessed 2026-10-01
+- [Running tasks in parallel with the /fleet command](https://docs.github.com/en/copilot/concepts/agents/copilot-cli/fleet) — accessed 2026-10-02
+- [Using dynamic workflows](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-dynamic-workflows) — accessed 2026-10-02

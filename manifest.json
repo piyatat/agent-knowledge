@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -3142,8 +3142,8 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-09-21",
-      "when_to_use": "Packaging or installing Claude Code skills/hooks/MCP/LSP as a plugin instead of loose .claude/ files",
+      "updated": "2026-10-02",
+      "when_to_use": "Packaging or installing Claude Code skills/hooks/MCP/LSP/mods as a plugin instead of loose .claude/ files",
       "related": [
         "cursor-plugins",
         "agent-skills-open-standard",
@@ -3152,7 +3152,8 @@
         "claude-code-skills",
         "claude-code-plugin-eval",
         "claude-code-security",
-        "claude-code-security-guidance"
+        "claude-code-security-guidance",
+        "claude-code-mods"
       ]
     },
     {
@@ -3968,7 +3969,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-01",
+      "updated": "2026-10-02",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -3985,7 +3986,10 @@
         "github-copilot-memory",
         "vscode-assisted-permissions",
         "github-copilot-computer-use",
-        "github-copilot-remote-control"
+        "github-copilot-remote-control",
+        "github-copilot-fleet",
+        "github-copilot-dynamic-workflows",
+        "github-agentic-workflows"
       ]
     },
     {
@@ -4831,7 +4835,7 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-09-16",
+      "updated": "2026-10-02",
       "when_to_use": "Packaging or installing a Copilot plugin (CLI, cloud agent, or Copilot app), or replacing copilot plugins --kind flags",
       "related": [
         "github-copilot-cli",
@@ -4839,7 +4843,8 @@
         "github-copilot-hooks",
         "github-copilot-custom-agents",
         "malicious-skills-supply-chain",
-        "github-copilot-mcp"
+        "github-copilot-mcp",
+        "github-copilot-dynamic-workflows"
       ]
     },
     {
@@ -5517,7 +5522,7 @@
         "cron"
       ],
       "status": "active",
-      "updated": "2026-09-13",
+      "updated": "2026-10-02",
       "when_to_use": "Creating a Copilot cloud-agent automation for schedule/issue/PR events, or contrasting it with Cursor Automations",
       "related": [
         "github-copilot-coding-agent",
@@ -5525,7 +5530,9 @@
         "github-copilot-hooks",
         "prompt-injection-agent-defense",
         "github-copilot-managed-permissions",
-        "vscode-agent-automations"
+        "vscode-agent-automations",
+        "github-agentic-workflows",
+        "github-copilot-dynamic-workflows"
       ]
     },
     {
@@ -7666,6 +7673,133 @@
         "claude-code-doctor",
         "claude-code-sandboxing",
         "claude-code-settings"
+      ]
+    },
+    {
+      "id": "claude-code-mods",
+      "path": "practices/claude-code-mods.md",
+      "title": "Claude Code Mods \u2014 in-process UI, events, and tool rules",
+      "tags": [
+        "claude",
+        "plugins",
+        "hooks",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-10-02",
+      "when_to_use": "Writing or installing a Claude Code mod, enabling You should know, or contrasting mods with settings hooks",
+      "related": [
+        "claude-code-plugins",
+        "claude-code-hooks",
+        "claude-code-restricted",
+        "malicious-skills-supply-chain",
+        "claude-code-settings"
+      ]
+    },
+    {
+      "id": "github-agentic-workflows",
+      "path": "practices/github-agentic-workflows.md",
+      "title": "GitHub Agentic Workflows \u2014 markdown compiled to Actions",
+      "tags": [
+        "github",
+        "automations",
+        "ci",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-10-02",
+      "when_to_use": "Authoring a .md + .lock.yml agentic workflow with gh aw, or contrasting it with Copilot automations",
+      "related": [
+        "github-copilot-automations",
+        "github-copilot-dynamic-workflows",
+        "github-copilot-cli",
+        "github-copilot-coding-agent",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "github-copilot-dynamic-workflows",
+      "path": "practices/github-copilot-dynamic-workflows.md",
+      "title": "Copilot dynamic workflows \u2014 coded multi-agent orchestration",
+      "tags": [
+        "github",
+        "orchestration",
+        "workflows",
+        "cli"
+      ],
+      "status": "active",
+      "updated": "2026-10-02",
+      "when_to_use": "Authoring or running a Copilot CLI/app/SDK dynamic workflow, or contrasting it with /fleet or gh aw",
+      "related": [
+        "github-copilot-fleet",
+        "github-agentic-workflows",
+        "github-copilot-plugins",
+        "github-copilot-cli",
+        "claude-code-workflows"
+      ]
+    },
+    {
+      "id": "github-copilot-fleet",
+      "path": "practices/github-copilot-fleet.md",
+      "title": "Copilot /fleet \u2014 parallel subagents vs coded workflows",
+      "tags": [
+        "github",
+        "orchestration",
+        "subagent",
+        "cli"
+      ],
+      "status": "active",
+      "updated": "2026-10-02",
+      "when_to_use": "Using /fleet or --fleet on Copilot CLI, or choosing it versus a dynamic workflow",
+      "related": [
+        "github-copilot-dynamic-workflows",
+        "github-copilot-custom-agents",
+        "github-copilot-cli",
+        "claude-code-workflows",
+        "github-copilot-otel"
+      ]
+    },
+    {
+      "id": "github-spec-kit",
+      "path": "practices/github-spec-kit.md",
+      "title": "GitHub Spec Kit \u2014 spec-driven skills for any coding agent",
+      "tags": [
+        "github",
+        "skills",
+        "orchestration",
+        "planning"
+      ],
+      "status": "active",
+      "updated": "2026-10-02",
+      "when_to_use": "Installing specify-cli /speckit-* skills, or contrasting Spec Kit with Conductor or Claude workflows",
+      "related": [
+        "gemini-cli-conductor",
+        "claude-code-workflows",
+        "github-copilot-skills",
+        "github-agentic-workflows",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "cursor-continual-learning",
+      "path": "practices/cursor-continual-learning.md",
+      "title": "Cursor Continual Learning \u2014 AGENTS.md from transcripts",
+      "tags": [
+        "cursor",
+        "memory",
+        "plugins",
+        "agents-md"
+      ],
+      "status": "active",
+      "updated": "2026-10-02",
+      "when_to_use": "Installing the continual-learning plugin, or debugging noisy AGENTS.md learned-section updates",
+      "related": [
+        "agents-md-open-format",
+        "agents-md-and-rules-budget",
+        "cursor-plugins",
+        "cursor-hooks-json",
+        "agent-memory-poisoning",
+        "github-copilot-memory"
       ]
     }
   ]

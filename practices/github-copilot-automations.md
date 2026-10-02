@@ -3,7 +3,7 @@ id: github-copilot-automations
 title: Copilot cloud-agent automations — schedule and repo events
 tags: [github, automations, orchestration, cron]
 status: active
-updated: 2026-09-13
+updated: 2026-10-02
 when_to_use: Creating a Copilot cloud-agent automation for schedule/issue/PR events, or contrasting it with Cursor Automations
 ---
 
@@ -17,7 +17,7 @@ A **Copilot automation** is a saved prompt + triggers + tools + model that start
 - Triggers: hourly/daily/weekly schedule; issue created; PR opened; PR synchronized. Optional search-query filters; PR triggers can also filter by files changed. **Run now** tests without waiting. Default: ignore events from users **without write** (prompt-injection). Org/repo can opt in to untrusted authors — treat that as high risk.
 - Tools are the privilege boundary (push, labels, open PR, …). Suggest-tools is optional. One repo per automation. Issue edits can include rationale/confidence (auto-apply high-confidence). Inherits repo instructions, skills, firewall, and **repository secrets** — never put secrets in the prompt. Sessions + logs are visible to anyone with repo read; the automation record itself is **private to the creator**.
 - Billing: each run = Actions minutes + AI credits, billed to the **creator**. PRs/pushes are attributed to that user (they cannot approve their own). Actions workflows on those PRs still wait for write-access approval.
-- Contrast: Cursor Automations are standing Cloud Agent rules (multi-repo, Slack/Linear/webhooks). Copilot automations stay on one GitHub repo and GitHub events. See also GitHub Agentic Workflows if you need the definition in-repo and reviewable.
+- Contrast: Cursor Automations are standing Cloud Agent rules (multi-repo, Slack/Linear/webhooks). Copilot automations stay on one GitHub repo and GitHub events and are **not** committed. For an in-repo, reviewable definition that compiles to Actions, use **GitHub Agentic Workflows** (`github-agentic-workflows`, `gh aw`). For an in-session coded orchestration, use a Copilot **dynamic workflow** (`github-copilot-dynamic-workflows`).
 
 ## Sources
 
@@ -25,3 +25,4 @@ A **Copilot automation** is a saved prompt + triggers + tools + model that start
 - [Creating automations with Copilot cloud agent](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-automations) — accessed 2026-09-13
 - [Managing access to GitHub Copilot cloud agent](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/cloud-agent/access-management) — accessed 2026-09-13
 - [About GitHub Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) — accessed 2026-09-13
+- [About GitHub Agentic Workflows](https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows) — accessed 2026-10-02

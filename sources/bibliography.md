@@ -1343,3 +1343,27 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Choose a permission mode | https://code.claude.com/docs/en/permission-modes |
 | CLI reference (Claude Code) | https://code.claude.com/docs/en/cli-reference |
 
+## Daily ingest 2026-10-02 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Mods overview | https://code.claude.com/docs/en/plugins/mods/overview |
+| Manage mods for your organization | https://code.claude.com/docs/en/plugins/mods/admin |
+| Claude Code changelog v2.1.287 | https://github.com/anthropics/claude-code/releases/tag/v2.1.287 |
+| About GitHub Agentic Workflows | https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows |
+| Creating GitHub Agentic Workflows | https://docs.github.com/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows |
+| Develop agentic workflows in GitHub Actions | https://docs.github.com/en/actions/tutorials/develop-agentic-workflows-in-github-actions |
+| Automating tasks with Copilot CLI and GitHub Actions | https://docs.github.com/en/copilot/how-tos/copilot-cli/automate-copilot-cli/automate-with-actions |
+| Dynamic workflows in Copilot CLI and the Copilot app | https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/ |
+| Using dynamic workflows | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-dynamic-workflows |
+| GitHub Copilot CLI command reference | https://docs.github.com/en/copilot/reference/cli-command-reference |
+| Running tasks in parallel with the /fleet command | https://docs.github.com/en/copilot/concepts/agents/copilot-cli/fleet |
+| Fleet mode (Copilot SDK) | https://docs.github.com/en/copilot/how-tos/copilot-sdk/features/fleet-mode |
+| GitHub Spec Kit | https://github.github.com/spec-kit/ |
+| Spec-Driven Development Quickstart | https://github.github.com/spec-kit/quickstart.html |
+| github/spec-kit | https://github.com/github/spec-kit/ |
+| continual-learning README | https://github.com/cursor/plugins/tree/main/continual-learning |
+| agents-memory-updater | https://cursor.com/marketplace/agents/agents-memory-updater |
+| Cursor Plugins marketplace — Continual Learning | https://cursor.com/marketplace/cursor/continual-learning |
+| Rules / AGENTS.md | https://cursor.com/docs/context/rules |
+
