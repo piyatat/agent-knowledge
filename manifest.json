@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -204,7 +204,8 @@
         "tool-call-failures",
         "structured-outputs-for-agents",
         "human-in-the-loop-approvals",
-        "mcp-server-trust-failures"
+        "mcp-server-trust-failures",
+        "unicode-instruction-injection"
       ]
     },
     {
@@ -772,7 +773,8 @@
         "mcp-mrtr-input-required",
         "human-in-the-loop-approvals",
         "mcp-oauth-scopes",
-        "acp-elicitation"
+        "acp-elicitation",
+        "claude-code-elicitation"
       ]
     },
     {
@@ -1173,7 +1175,8 @@
       "related": [
         "agent-code-sandboxing",
         "mcp-progressive-disclosure",
-        "tool-search-defer-loading"
+        "tool-search-defer-loading",
+        "openclaw-agent"
       ]
     },
     {
@@ -1304,7 +1307,9 @@
         "claude-skills-api",
         "github-copilot-skills",
         "claude-code-skills",
-        "openai-codex-skills"
+        "openai-codex-skills",
+        "agent-skills-directories",
+        "mcp-skills-extension"
       ]
     },
     {
@@ -1526,7 +1531,10 @@
         "agent-memory-poisoning",
         "prompt-injection-agent-defense",
         "cursor-plugins",
-        "owasp-agentic-asi-top-10"
+        "owasp-agentic-asi-top-10",
+        "unicode-instruction-injection",
+        "agent-skills-directories",
+        "openclaw-agent"
       ]
     },
     {
@@ -2523,13 +2531,15 @@
         "extensions"
       ],
       "status": "draft",
-      "updated": "2026-09-25",
-      "when_to_use": "Serving or consuming Agent Skills over MCP (skills/list, skill://) \u2014 SEP-2640 is Final; host/SDK adoption is still incomplete",
+      "updated": "2026-10-03",
+      "when_to_use": "Serving or consuming Agent Skills over MCP (skills/list, skill://) \u2014 SEP-2640 is Final; official SDK PRs are still open",
       "related": [
         "agent-skills-open-standard",
         "mcp-resources-vs-tools",
         "malicious-skills-supply-chain",
-        "skills-dispatch-hygiene"
+        "skills-dispatch-hygiene",
+        "unicode-instruction-injection",
+        "agent-skills-directories"
       ]
     },
     {
@@ -2736,7 +2746,8 @@
         "tools-mcp-skills-layers",
         "acp-v2-session-lifecycle",
         "cursor-acp-extensions",
-        "acp-terminal-auth"
+        "acp-terminal-auth",
+        "devin-desktop-acp"
       ]
     },
     {
@@ -2868,7 +2879,7 @@
     {
       "id": "mcp-file-uploads",
       "path": "practices/mcp-file-uploads.md",
-      "title": "MCP file inputs \u2014 native pickers (SEP-2356 draft)",
+      "title": "MCP file inputs \u2014 SEP-2631 (draft) supersedes SEP-2356",
       "tags": [
         "mcp",
         "ux",
@@ -2876,13 +2887,15 @@
         "roadmap"
       ],
       "status": "draft",
-      "updated": "2026-08-29",
-      "when_to_use": "Designing an MCP tool that needs a user-selected file \u2014 do not invent a base64-in-prose contract if you can wait for SEP-2356",
+      "updated": "2026-10-03",
+      "when_to_use": "Designing an MCP tool that needs a user-selected file \u2014 do not invent a base64-in-prose contract; SEP-2631 is still draft",
       "related": [
         "mcp-elicitation-modes",
         "mcp-content-blocks",
         "mcp-2026-roadmap",
-        "mcp-apps-extension"
+        "mcp-apps-extension",
+        "mcp-stateless-core",
+        "mcp-mrtr-input-required"
       ]
     },
     {
@@ -3196,7 +3209,9 @@
         "crush-agent",
         "antigravity-cli",
         "claude-code-memory",
-        "minimax-code"
+        "minimax-code",
+        "openclaw-agent",
+        "devin-desktop-acp"
       ]
     },
     {
@@ -3563,14 +3578,15 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-09-03",
-      "when_to_use": "Authoring .claude/settings.json hooks, or choosing command/http/prompt hooks instead of CLAUDE.md advice",
+      "updated": "2026-10-03",
+      "when_to_use": "Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks instead of CLAUDE.md advice",
       "related": [
         "memory-files-vs-enforcement-hooks",
         "cursor-hooks-json",
         "claude-code-plugins",
         "permission-modes-allow-ask-deny",
-        "claude-code-security-guidance"
+        "claude-code-security-guidance",
+        "claude-code-elicitation"
       ]
     },
     {
@@ -3651,7 +3667,8 @@
         "mcp-server-trust-failures",
         "claude-code-plugins",
         "mcp-oauth-scopes",
-        "claude-code-managed-mcp"
+        "claude-code-managed-mcp",
+        "claude-code-elicitation"
       ]
     },
     {
@@ -5113,8 +5130,8 @@
         "compaction"
       ],
       "status": "active",
-      "updated": "2026-09-12",
-      "when_to_use": "Managing Claude Code context with /compact or /context, or deciding what survives compaction",
+      "updated": "2026-10-03",
+      "when_to_use": "Managing Claude Code context with /compact or /context, or selecting a 1M window vs 200K",
       "related": [
         "context-compaction",
         "claude-code-checkpointing",
@@ -6835,15 +6852,16 @@
         "rules"
       ],
       "status": "active",
-      "updated": "2026-09-24",
-      "when_to_use": "Configuring Cascade or Devin Desktop rules/MCP, or distinguishing legacy Cascade MCP from Devin Local / Devin CLI",
+      "updated": "2026-10-03",
+      "when_to_use": "Configuring Cascade or Devin Desktop rules/MCP, or distinguishing Cascade from Devin Local, CLI, Spaces, and ACP agents",
       "related": [
         "agents-md-open-format",
         "cursor-mcp-json",
         "cursor-rules-layers",
         "mcp-server-trust-failures",
         "cline-agent",
-        "devin-cli"
+        "devin-cli",
+        "devin-desktop-acp"
       ]
     },
     {
@@ -6992,7 +7010,8 @@
         "cursor-acp-extensions",
         "gemini-cli-acp",
         "opencode-agent",
-        "jetbrains-junie"
+        "jetbrains-junie",
+        "devin-desktop-acp"
       ]
     },
     {
@@ -7075,7 +7094,8 @@
         "agents-md-open-format",
         "claude-code-plugins",
         "cursor-cli-cloud-handoff",
-        "mcp-oauth-scopes"
+        "mcp-oauth-scopes",
+        "devin-desktop-acp"
       ]
     },
     {
@@ -7800,6 +7820,111 @@
         "cursor-hooks-json",
         "agent-memory-poisoning",
         "github-copilot-memory"
+      ]
+    },
+    {
+      "id": "openclaw-agent",
+      "path": "practices/openclaw-agent.md",
+      "title": "OpenClaw \u2014 Gateway, workspace files, skills, Code Mode",
+      "tags": [
+        "openclaw",
+        "cli",
+        "skills",
+        "agents-md"
+      ],
+      "status": "active",
+      "updated": "2026-10-03",
+      "when_to_use": "Installing or hardening OpenClaw (Gateway, AGENTS.md/SOUL.md, ClawHub skills), or contrasting its Code Mode with MCP code-mode",
+      "related": [
+        "agents-md-open-format",
+        "agent-skills-open-standard",
+        "malicious-skills-supply-chain",
+        "code-mode-tool-orchestration",
+        "prompt-injection-agent-defense",
+        "unicode-instruction-injection"
+      ]
+    },
+    {
+      "id": "devin-desktop-acp",
+      "path": "practices/devin-desktop-acp.md",
+      "title": "Devin Desktop \u2014 ACP host, Spaces, Agent Command Center",
+      "tags": [
+        "devin",
+        "acp",
+        "ux",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-10-03",
+      "when_to_use": "Running Codex/Claude/OpenCode/Gemini as ACP agents inside Devin Desktop, or grouping sessions into Spaces",
+      "related": [
+        "windsurf-cascade",
+        "devin-cli",
+        "agent-client-protocol-acp",
+        "zed-external-agents",
+        "cursor-acp-extensions"
+      ]
+    },
+    {
+      "id": "unicode-instruction-injection",
+      "path": "failure-modes/unicode-instruction-injection.md",
+      "title": "Hidden Unicode instruction injection in skills and tools",
+      "tags": [
+        "security",
+        "prompt-injection",
+        "skills",
+        "failure-modes"
+      ],
+      "status": "active",
+      "updated": "2026-10-03",
+      "when_to_use": "Reviewing SKILL.md, MCP tool descriptions, or plugin manifests that look clean in the UI but may hide instructions",
+      "related": [
+        "malicious-skills-supply-chain",
+        "prompt-injection-agent-defense",
+        "agent-skills-directories",
+        "lost-in-the-middle"
+      ]
+    },
+    {
+      "id": "agent-skills-directories",
+      "path": "practices/agent-skills-directories.md",
+      "title": "Agent Skills directories vs the agentskills.io spec",
+      "tags": [
+        "skills",
+        "supply-chain",
+        "discovery",
+        "marketplace"
+      ],
+      "status": "active",
+      "updated": "2026-10-03",
+      "when_to_use": "Choosing where to find SKILL.md packages, or treating a directory listing as a trust signal",
+      "related": [
+        "agent-skills-open-standard",
+        "malicious-skills-supply-chain",
+        "mcp-registry-admission",
+        "unicode-instruction-injection",
+        "openclaw-agent"
+      ]
+    },
+    {
+      "id": "claude-code-elicitation",
+      "path": "practices/claude-code-elicitation.md",
+      "title": "Claude Code MCP elicitation \u2014 form, URL, and hooks",
+      "tags": [
+        "claude",
+        "mcp",
+        "elicitation",
+        "hooks"
+      ],
+      "status": "active",
+      "updated": "2026-10-03",
+      "when_to_use": "Debugging Claude Code MCP login/approval dialogs, or auto-answering elicitation with a hook",
+      "related": [
+        "mcp-elicitation-modes",
+        "claude-code-mcp",
+        "claude-code-hooks",
+        "acp-elicitation",
+        "prompt-injection-agent-defense"
       ]
     }
   ]

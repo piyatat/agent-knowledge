@@ -1367,3 +1367,47 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Cursor Plugins marketplace — Continual Learning | https://cursor.com/marketplace/cursor/continual-learning |
 | Rules / AGENTS.md | https://cursor.com/docs/context/rules |
 
+## Daily ingest 2026-10-03 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Getting started (OpenClaw) | https://docs.openclaw.ai/start/getting-started |
+| Agent workspace (OpenClaw) | https://docs.openclaw.ai/concepts/agent-workspace |
+| Skills (OpenClaw) | https://docs.openclaw.ai/tools/skills |
+| Code Mode (OpenClaw) | https://docs.openclaw.ai/tools/code-mode |
+| openclaw agent | https://docs.openclaw.ai/cli/agent |
+| Security (OpenClaw) | https://docs.openclaw.ai/gateway/security |
+| Agent Client Protocol (Devin Desktop) | https://docs.devin.ai/desktop/acp |
+| Building a custom ACP agent | https://docs.devin.ai/desktop/acp-custom |
+| Spaces (Devin Desktop) | https://docs.devin.ai/desktop/spaces |
+| Agent Command Center | https://docs.devin.ai/desktop/agent-command-center |
+| Windsurf is now Devin Desktop | https://devin.ai/blog/windsurf-is-now-devin-desktop |
+| CSA — Hidden Unicode Instruction Injection in AI Agent Skills | https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/03/CSA_research_note_unicode_instruction_injection_ai_skills_20260310-csa-styled.pdf |
+| Snyk — ToxicSkills | https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/ |
+| SkillJect (arXiv:2602.14211) | https://arxiv.org/abs/2602.14211 |
+| Skill-Inject benchmark | https://www.skill-inject.com/ |
+| OWASP AST01 — Malicious Skills | https://owasp.org/www-project-agentic-skills-top-10/ast01.html |
+| Agent Skills specification | https://agentskills.io/specification |
+| agentskills/agentskills | https://github.com/agentskills/agentskills |
+| skills.sh | https://www.skills.sh/ |
+| AI Agent Skill Directories compared | https://agenticskills.io/ai-skills-directories |
+| Connect Claude Code to tools via MCP | https://code.claude.com/docs/en/mcp |
+| Hooks reference (Claude Code) | https://code.claude.com/docs/en/hooks |
+| Automate actions with hooks | https://code.claude.com/docs/en/hooks-guide |
+| Agent SDK hooks | https://code.claude.com/docs/en/agent-sdk/hooks |
+| Claude Code changelog v2.1.287 | https://github.com/anthropics/claude-code/releases/tag/v2.1.287 |
+| MCP elicitation (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation |
+| Explore the context window | https://code.claude.com/docs/en/context-window |
+| Model configuration (Claude Code) | https://code.claude.com/docs/en/model-config |
+| SEP-2631: File Objects and Transfer | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2631 |
+| SEP-2356: File input support | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2356 |
+| File Uploads Working Group charter | https://modelcontextprotocol.io/community/working-groups/file-uploads |
+| MCP development roadmap | https://modelcontextprotocol.io/development/roadmap |
+| MCP resources (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/server/resources |
+| MCP Skills Extension overview | https://skills.extensions.modelcontextprotocol.io/ |
+| Skills methods (stable) | https://skills.extensions.modelcontextprotocol.io/specification/stable/skills |
+| modelcontextprotocol/ext-skills | https://github.com/modelcontextprotocol/ext-skills |
+| SEP-2640 Skills Extension (PR) | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2640 |
+| SEP-2640 status / SDK tracker | https://unifiedharnessprotocol.dev/skills-over-mcp/ |
+| MCP 2026-07-28 specification | https://modelcontextprotocol.io/specification/2026-07-28 |
+
