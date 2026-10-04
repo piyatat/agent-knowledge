@@ -3,7 +3,7 @@ id: github-copilot-code-review
 title: GitHub Copilot code review — agentic PR comments
 tags: [github, review, ci, orchestration]
 status: active
-updated: 2026-09-28
+updated: 2026-10-04
 when_to_use: Requesting Copilot as a PR reviewer, configuring personal/enterprise auto-review, or contrasting it with Copilot cloud agent / Cursor Bugbot
 ---
 
@@ -13,12 +13,12 @@ when_to_use: Requesting Copilot as a PR reviewer, configuring personal/enterpris
 
 ## Notes
 
-- Trigger: Reviewers → Copilot on github.com, or REST `copilot-pull-request-reviewer[bot]`. Typical latency < 30s. Push does **not** re-review unless automatic reviews include “Review new pushes”. Re-review can repeat resolved/downvoted comments. “Fix with Copilot” hands a comment to cloud agent (new PR or same-branch commits).
+- Trigger: Reviewers → Copilot on github.com, or REST `copilot-pull-request-reviewer[bot]`. As of 2026-10-02, **REST and GraphQL** can also start a review and set **per-request effort** (Pro / Pro+ / Max / Business / Enterprise). Typical latency < 30s. Push does **not** re-review unless automatic reviews include “Review new pushes”. Re-review can repeat resolved/downvoted comments. “Fix with Copilot” hands a comment to cloud agent (new PR or same-branch commits).
 - Instructions from the **head** branch: `.github/copilot-instructions.md`, `.github/instructions/**/*.instructions.md`, root `AGENTS.md`, plus `CLAUDE.md` / `GEMINI.md` / `REVIEW.md` if present (`github-copilot-instructions`). Skills in `.github/skills` (prefer a `code-review` directory name). MCP from repo Copilot settings (GitHub + Playwright on by default); disable “Allow Copilot to use MCP tools when reviewing pull requests” to keep MCP for cloud agent only.
 - Agentic review runs on GitHub Actions. Opting out of GitHub-hosted runners requires a one-time self-hosted setup or reviews fall back to a limited mode. Comments can show skill/MCP attributions; session logs list tools used. Since 2026-09-11 the review agent can use the Copilot SDK **shell toolset** behind the agent firewall (build/test/scripts/APIs), not only file reads.
 - **Lite** effort now uses an **ensemble** of agents (vendor: more addressed high/medium findings, ~8% lower review cost in their experiment). Applying a Copilot suggestion now drafts a **smart commit message**. On rereview, Copilot **auto-resolves** its own comments that a later commit addressed — remaining open threads are the outstanding set.
 - Personal settings (GA 2026-09-23) live under profile → Copilot settings → **code review**, on **every** Copilot plan including Business and Enterprise (previously Pro/Pro+/Max only, one auto-review toggle). Independently: auto-review when you create / coauthor / leave draft; auto-review **new pushes**; auto-review **draft** PRs you create or coauthor; default effort **Lite** or **Balanced**. That default applies to requested and automatic reviews; a manual Reviewers request can still pick a different effort.
-- Enterprise admins can set one default effort (**Lite**, **Balanced**, or GitHub default) for organization-owned repos via inheritance. Org and repo settings can still override. Do not treat Copilot as a merge gate. Issue/PR text, MCP, and now shell-tool output are untrusted (`prompt-injection-agent-defense`). Contrast Cursor Security Agents (`cursor-security-agents`) for vendor-managed security review.
+- **Balanced is now the GitHub default** (change took effect 2026-09-28; announced 2026-08-28). Explicit **Lite** settings were kept. Inheritance: enterprise → org → repo → personal; each level can override. Enterprise path: AI controls → Agents → Copilot code review. Balanced uses a higher-reasoning model and more AI credits (and may use slightly more Actions minutes). Do not treat Copilot as a merge gate. Issue/PR text, MCP, and now shell-tool output are untrusted (`prompt-injection-agent-defense`). Contrast Cursor Security Agents (`cursor-security-agents`) for vendor-managed security review.
 
 ## Sources
 
@@ -28,4 +28,6 @@ when_to_use: Requesting Copilot as a PR reviewer, configuring personal/enterpris
 - [Adding agent skills for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills) — accessed 2026-09-07
 - [Auto-resolution and analysis updates in Copilot code review](https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/) — accessed 2026-09-14
 - [More ways to request and configure Copilot code reviews](https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/) — accessed 2026-09-28
-- [About GitHub Copilot code review](https://docs.github.com/en/copilot/concepts/agents/code-review) — accessed 2026-09-28
+- [About GitHub Copilot code review](https://docs.github.com/en/copilot/concepts/agents/code-review) — accessed 2026-10-04
+- [Using GitHub Copilot code review](https://docs.github.com/en/copilot/how-tos/agents/copilot-code-review/using-copilot-code-review) — accessed 2026-10-04
+- [Copilot code review: API support and new default effort level](https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/) — accessed 2026-10-04

@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1875,14 +1875,15 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-08-24",
+      "updated": "2026-10-04",
       "when_to_use": "Choosing whether a SKILL.md auto-fires, only runs via /name, or stays pinned as a Custom Mode",
       "related": [
         "skills-dispatch-hygiene",
         "agent-skills-open-standard",
         "mcp-prompts",
         "cursor-plugins",
-        "cursor-slash-commands"
+        "cursor-slash-commands",
+        "cursor-design-mode"
       ]
     },
     {
@@ -3832,7 +3833,7 @@
         "hooks"
       ],
       "status": "active",
-      "updated": "2026-10-01",
+      "updated": "2026-10-04",
       "when_to_use": "Writing Claude Code permission rules or choosing defaultMode vs a PreToolUse hook",
       "related": [
         "permission-modes-allow-ask-deny",
@@ -3840,7 +3841,8 @@
         "claude-code-hooks",
         "claude-code-settings",
         "claude-code-plan-mode",
-        "claude-code-restricted"
+        "claude-code-restricted",
+        "claude-code-mods"
       ]
     },
     {
@@ -3912,7 +3914,7 @@
     {
       "id": "openai-codex-mcp",
       "path": "practices/openai-codex-mcp.md",
-      "title": "Codex MCP \u2014 config.toml servers vs deprecated mcp-server",
+      "title": "Codex MCP \u2014 config.toml servers vs removed mcp-server",
       "tags": [
         "openai",
         "mcp",
@@ -3920,11 +3922,13 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-09-16",
-      "when_to_use": "Adding stdio or HTTP MCP to Codex, or replacing a codex mcp-server integration",
+      "updated": "2026-10-04",
+      "when_to_use": "Adding stdio or HTTP MCP to Codex, or replacing a removed codex mcp-server integration",
       "related": [
         "openai-codex-sdk",
         "openai-codex-plugins",
+        "openai-codex-app-server",
+        "openai-docs-mcp",
         "claude-code-mcp",
         "cursor-mcp-json",
         "mcp-oauth-scopes"
@@ -4389,7 +4393,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-28",
+      "updated": "2026-10-04",
       "when_to_use": "Requesting Copilot as a PR reviewer, configuring personal/enterprise auto-review, or contrasting it with Copilot cloud agent / Cursor Bugbot",
       "related": [
         "github-copilot-coding-agent",
@@ -4746,12 +4750,13 @@
         "experimental"
       ],
       "status": "active",
-      "updated": "2026-09-10",
+      "updated": "2026-10-04",
       "when_to_use": "Enabling CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS for peer sessions with a shared task list, or contrasting teams with subagents and workflows",
       "related": [
         "claude-code-subagents",
         "claude-code-workflows",
         "claude-code-agent-view",
+        "claude-code-mods",
         "subagent-context-isolation",
         "multi-agent-handoffs"
       ]
@@ -6888,7 +6893,7 @@
     {
       "id": "continue-agents",
       "path": "practices/continue-agents.md",
-      "title": "Continue \u2014 config.yaml agents, rules, MCP",
+      "title": "Continue \u2014 acquired by Cursor; leftover config.yaml",
       "tags": [
         "continue",
         "mcp",
@@ -6896,8 +6901,8 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-22",
-      "when_to_use": "Authoring Continue config.yaml / .continue/rules, or adding MCP for Agent mode",
+      "updated": "2026-10-04",
+      "when_to_use": "Encountering leftover Continue config.yaml / .continue/rules, or deciding not to start new work on Continue",
       "related": [
         "cline-agent",
         "cursor-mcp-json",
@@ -6938,7 +6943,7 @@
         "agents-md"
       ],
       "status": "active",
-      "updated": "2026-09-23",
+      "updated": "2026-10-04",
       "when_to_use": "Installing or configuring SST OpenCode (TUI, desktop, IDE), or adding MCP / SKILL.md / AGENTS.md for it",
       "related": [
         "agents-md-open-format",
@@ -6946,7 +6951,8 @@
         "mcp-stateless-core",
         "code-mode-tool-orchestration",
         "zed-external-agents",
-        "permission-modes-allow-ask-deny"
+        "permission-modes-allow-ask-deny",
+        "acp-elicitation"
       ]
     },
     {
@@ -7706,12 +7712,13 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-10-02",
+      "updated": "2026-10-04",
       "when_to_use": "Writing or installing a Claude Code mod, enabling You should know, or contrasting mods with settings hooks",
       "related": [
         "claude-code-plugins",
         "claude-code-hooks",
         "claude-code-restricted",
+        "claude-code-agent-teams",
         "malicious-skills-supply-chain",
         "claude-code-settings"
       ]
@@ -7925,6 +7932,47 @@
         "claude-code-hooks",
         "acp-elicitation",
         "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "openai-docs-mcp",
+      "path": "practices/openai-docs-mcp.md",
+      "title": "OpenAI Docs MCP \u2014 hosted developer-docs server",
+      "tags": [
+        "openai",
+        "mcp",
+        "discovery",
+        "tools"
+      ],
+      "status": "active",
+      "updated": "2026-10-04",
+      "when_to_use": "Wiring the official OpenAI documentation MCP into Codex, Cursor, VS Code, or Claude Code",
+      "related": [
+        "openai-codex-mcp",
+        "cursor-mcp-json",
+        "claude-code-mcp",
+        "github-copilot-mcp",
+        "mcp-streamable-http-transport"
+      ]
+    },
+    {
+      "id": "github-copilot-model-deprecations",
+      "path": "practices/github-copilot-model-deprecations.md",
+      "title": "Copilot model deprecations \u2014 Oct 2026 pin updates",
+      "tags": [
+        "github",
+        "models",
+        "deprecation",
+        "routing"
+      ],
+      "status": "active",
+      "updated": "2026-10-04",
+      "when_to_use": "A Copilot chat/agent/completion pin or workflow names a retired model, or an admin model policy still lists mid-October retirements",
+      "related": [
+        "github-copilot-auto-model",
+        "github-copilot-hydrafusion",
+        "github-copilot-ide-agent",
+        "cursor-router"
       ]
     }
   ]

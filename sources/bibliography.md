@@ -1411,3 +1411,25 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | SEP-2640 status / SDK tracker | https://unifiedharnessprotocol.dev/skills-over-mcp/ |
 | MCP 2026-07-28 specification | https://modelcontextprotocol.io/specification/2026-07-28 |
 
+## Daily ingest 2026-10-04 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Docs MCP | https://developers.openai.com/learn/docs-mcp |
+| Codex MCP server removal | https://learn.chatgpt.com/docs/mcp-server |
+| Codex App Server | https://developers.openai.com/codex/app-server.md |
+| Selected models in GitHub Copilot deprecated | https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated/ |
+| Upcoming deprecation of selected GitHub Copilot models in mid-October | https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october/ |
+| Copilot code review: API support and new default effort level | https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/ |
+| Using GitHub Copilot code review | https://docs.github.com/en/copilot/how-tos/agents/copilot-code-review/using-copilot-code-review |
+| About GitHub Copilot code review | https://docs.github.com/en/copilot/concepts/agents/code-review |
+| v2.1.288 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.288 |
+| v2.1.289 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.289 |
+| Agent teams | https://code.claude.com/docs/en/agent-teams |
+| Prompting agents | https://cursor.com/docs/agent/prompting |
+| Design Mode | https://cursor.com/docs/agent/design-mode |
+| Continue has joined Cursor | https://continue.dev/ |
+| continuedev/continue | https://github.com/continuedev/continue |
+| OpenCode ACP | https://opencode.ai/v2/docs/cli/acp/ |
+| OpenCode instructions (V2) | https://opencode.ai/v2/docs/instructions/ |
+
