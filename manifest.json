@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1228,7 +1228,7 @@
         "durability"
       ],
       "status": "active",
-      "updated": "2026-09-20",
+      "updated": "2026-10-05",
       "when_to_use": "Designing always-on Cursor cloud agents that wake on PRs/Slack/cron or hold a long-lived objective",
       "related": [
         "subagent-context-isolation",
@@ -1242,7 +1242,8 @@
         "cursor-origin",
         "cursor-cloud-pr-artifacts",
         "cursor-ios",
-        "cursor-skills-cloud-sync"
+        "cursor-skills-cloud-sync",
+        "cursor-message-queue"
       ]
     },
     {
@@ -1810,7 +1811,7 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-08-24",
+      "updated": "2026-10-05",
       "when_to_use": "Running the Cursor agent from a terminal, GitHub Action, or script without the editor UI",
       "related": [
         "permission-modes-allow-ask-deny",
@@ -1819,7 +1820,10 @@
         "human-in-the-loop-approvals",
         "agent-client-protocol-acp",
         "cursor-sdk",
-        "cursor-acp-extensions"
+        "cursor-acp-extensions",
+        "cursor-cli-persist",
+        "cursor-message-queue",
+        "skills-invocation-modes"
       ]
     },
     {
@@ -1917,7 +1921,7 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-09-01",
+      "updated": "2026-10-05",
       "when_to_use": "Packaging or installing rules/skills/MCP/hooks as a Cursor or Agent Plugin instead of loose files",
       "related": [
         "agent-skills-open-standard",
@@ -1928,7 +1932,8 @@
         "cursor-slash-commands",
         "cursor-custom-subagents",
         "cursor-enterprise-mcp-policy",
-        "cursor-google-workspace-plugins"
+        "cursor-google-workspace-plugins",
+        "cursor-customize"
       ]
     },
     {
@@ -3922,7 +3927,7 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-10-04",
+      "updated": "2026-10-05",
       "when_to_use": "Adding stdio or HTTP MCP to Codex, or replacing a removed codex mcp-server integration",
       "related": [
         "openai-codex-sdk",
@@ -5635,7 +5640,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-09-26",
+      "updated": "2026-10-05",
       "when_to_use": "Enabling Copilot CLI /sandbox, copilot --cloud, or Copilot-app local sandboxing \u2014 not the Actions cloud agent",
       "related": [
         "github-copilot-cli",
@@ -5643,7 +5648,8 @@
         "github-copilot-coding-agent",
         "agent-code-sandboxing",
         "openai-codex-sandbox",
-        "vscode-agent-sandboxing"
+        "vscode-agent-sandboxing",
+        "github-copilot-cli-settings"
       ]
     },
     {
@@ -7973,6 +7979,114 @@
         "github-copilot-hydrafusion",
         "github-copilot-ide-agent",
         "cursor-router"
+      ]
+    },
+    {
+      "id": "cursor-customize",
+      "path": "practices/cursor-customize.md",
+      "title": "Cursor Customize \u2014 scoped plugins, skills, and MCP",
+      "tags": [
+        "cursor",
+        "plugins",
+        "skills",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-10-05",
+      "when_to_use": "Installing or scoping plugins, skills, MCP, rules, subagents, commands, or hooks from the Customize sidebar",
+      "related": [
+        "cursor-plugins",
+        "cursor-rules-layers",
+        "cursor-slash-commands",
+        "cursor-custom-subagents",
+        "cursor-hooks-json",
+        "cursor-mcp-json",
+        "skills-invocation-modes",
+        "cursor-skills-cloud-sync"
+      ]
+    },
+    {
+      "id": "cursor-side-chats",
+      "path": "practices/cursor-side-chats.md",
+      "title": "Cursor side chats \u2014 /side and /btw tangents",
+      "tags": [
+        "cursor",
+        "session",
+        "ux",
+        "context"
+      ],
+      "status": "active",
+      "updated": "2026-10-05",
+      "when_to_use": "Opening a /side or /btw tangent without interrupting the main Cursor agent thread",
+      "related": [
+        "cursor-agents-window",
+        "cursor-agent-modes",
+        "cursor-at-mentions",
+        "cursor-message-queue",
+        "cursor-cli-headless",
+        "skills-invocation-modes"
+      ]
+    },
+    {
+      "id": "cursor-message-queue",
+      "path": "practices/cursor-message-queue.md",
+      "title": "Cursor message queue vs steer vs interrupt",
+      "tags": [
+        "cursor",
+        "orchestration",
+        "ux",
+        "session"
+      ],
+      "status": "active",
+      "updated": "2026-10-05",
+      "when_to_use": "Sending a follow-up while a Cursor agent is mid-turn \u2014 queue, steer at the next tool, or interrupt",
+      "related": [
+        "cursor-cloud-always-on",
+        "cursor-agents-window",
+        "cursor-cli-headless",
+        "cursor-side-chats",
+        "streaming-approval-resume"
+      ]
+    },
+    {
+      "id": "openai-codex-access-tokens",
+      "path": "practices/openai-codex-access-tokens.md",
+      "title": "Codex access tokens \u2014 workspace identity for local automation",
+      "tags": [
+        "openai",
+        "auth",
+        "identity",
+        "ci"
+      ],
+      "status": "active",
+      "updated": "2026-10-05",
+      "when_to_use": "Authenticating Codex CLI or app-server automation with a ChatGPT workspace token instead of a Platform API key",
+      "related": [
+        "openai-codex-exec",
+        "openai-codex-app-server",
+        "openai-codex-permissions",
+        "openai-codex-github-action",
+        "cursor-service-accounts"
+      ]
+    },
+    {
+      "id": "github-copilot-cli-settings",
+      "path": "practices/github-copilot-cli-settings.md",
+      "title": "Copilot CLI settings.json \u2014 /settings vs config.json",
+      "tags": [
+        "github",
+        "cli",
+        "config",
+        "permissions"
+      ],
+      "status": "active",
+      "updated": "2026-10-05",
+      "when_to_use": "Changing Copilot CLI user/repo/local settings, or debugging a leftover ~/.copilot/config.json",
+      "related": [
+        "github-copilot-cli",
+        "github-copilot-managed-permissions",
+        "github-copilot-sandbox",
+        "github-copilot-mcp"
       ]
     }
   ]

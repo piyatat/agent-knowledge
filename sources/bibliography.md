@@ -1433,3 +1433,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | OpenCode ACP | https://opencode.ai/v2/docs/cli/acp/ |
 | OpenCode instructions (V2) | https://opencode.ai/v2/docs/instructions/ |
 
+## Daily ingest 2026-10-05 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Customize Cursor | https://cursor.com/docs/customize-cursor |
+| Plugins | https://cursor.com/docs/plugins |
+| Agent Skills | https://cursor.com/docs/skills |
+| Cursor Agent | https://cursor.com/docs/agent/overview |
+| CLI Changelog | https://cursor.com/docs/cli/changelog |
+| Using Agent in CLI | https://cursor.com/docs/cli/using |
+| Cloud Agents and Cursor Harness Improvements (2026-08-19) | https://cursor.com/changelog/08-19-26 |
+| Cursor changelog index | https://cursor.com/changelog |
+| Access tokens | https://developers.openai.com/codex/enterprise/access-tokens |
+| Codex App Server | https://developers.openai.com/codex/app-server |
+| Command line options | https://developers.openai.com/codex/cli/reference |
+| Model Context Protocol (Codex) | https://developers.openai.com/codex/mcp |
+| Configuration Reference | https://developers.openai.com/codex/config-reference |
+| Changing settings with the /settings command | https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/change-settings |
+| GitHub Copilot CLI configuration directory | https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference |
+| GitHub Copilot CLI command reference | https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference |
+| Configuring GitHub Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/configure-copilot-cli |
+| Configuring local sandbox settings | https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| copilot-cli v1.0.92-4 | https://github.com/github/copilot-cli/releases/tag/v1.0.92-4 |
+
