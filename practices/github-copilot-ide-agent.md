@@ -3,7 +3,7 @@ id: github-copilot-ide-agent
 title: GitHub Copilot IDE agent mode vs cloud agent
 tags: [github, orchestration, ux, permissions]
 status: active
-updated: 2026-09-30
+updated: 2026-10-06
 when_to_use: Using Copilot Chat Agent/Plan/Ask in an IDE, choosing Agent Host vs cloud agent, or setting Assisted permissions
 ---
 
@@ -18,6 +18,7 @@ when_to_use: Using Copilot Chat Agent/Plan/Ask in an IDE, choosing Agent Host vs
 - Subagents: enable `runSubagent` in the tools picker (and in custom-agent `tools` frontmatter). Same model/tools as the parent; **cannot nest**; no mid-run user pauses; result returns to the main chat. Invoke automatically (description match), by name, or `#runSubagent`. Custom agents: `github-copilot-custom-agents`.
 - Spaces MCP tools work **only in Agent mode** (`github-copilot-spaces`). Cloud-agent “Delegate this task” / `/delegate` from the same Chat box starts the **remote** agent (may offer to push local changes first) — do not confuse the two buttons. Local Dev Container sessions put the host **inside** the container (`github-copilot-dev-containers`).
 - CLI `copilot` is another local surface (`github-copilot-cli`). VS Code can **discover** recent Copilot CLI / Copilot app sessions and continue them after Agent Host adopts the first message (`vscode-external-sessions`). Treat issue text and MCP results as untrusted (`prompt-injection-agent-defense`). Do not use IDE agent mode as a merge gate.
+- VS Code **1.136–1.140** (Sept 2026; changelog 2026-10-01): Agents window can schedule automations (`vscode-agent-automations`), enable **Agent Merge** on an active session (`github-copilot-agent-merge`), open a PR form from Copilot/Claude/Codex sessions, start Dev Container sessions from a local or remote folder (SSH/Tunnel/WSL), and show a hierarchical related-chats list. Eligible preview users can pick **HydraFusion** in the model picker (`github-copilot-hydrafusion`, still research preview). A follow-up into an ongoing chat no longer interrupts the active turn. Attach a GitHub issue/PR from Add Context or by pasting its URL. Continue a workspace-less quick chat by attaching a folder; continue a ChatGPT Codex conversation in VS Code without copy-paste.
 
 ## Sources
 
@@ -31,3 +32,5 @@ when_to_use: Using Copilot Chat Agent/Plan/Ask in an IDE, choosing Agent Host vs
 - [Manage agent sessions in VS Code](https://code.visualstudio.com/docs/agents/run/sessions/manage-sessions) — accessed 2026-09-20
 - [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix) — accessed 2026-09-29
 - [Manage approvals and permissions](https://code.visualstudio.com/docs/agents/run/approvals) — accessed 2026-09-30
+- [GitHub Copilot in VS Code, September 2026 releases](https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases/) — accessed 2026-10-06
+

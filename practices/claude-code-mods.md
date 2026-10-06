@@ -3,7 +3,7 @@ id: claude-code-mods
 title: Claude Code Mods — in-process UI, events, and tool rules
 tags: [claude, plugins, hooks, ux]
 status: active
-updated: 2026-10-04
+updated: 2026-10-06
 when_to_use: Writing or installing a Claude Code mod, enabling You should know, or contrasting mods with settings hooks
 ---
 
@@ -19,6 +19,8 @@ A **Claude Code mod** (v2.1.287+) is a **plugin** whose JavaScript/TypeScript ha
 - Built-ins (Installed → Built-in; `--safe-mode` / `disableAllHooks` do **not** stop them): `cc-plugin-diff` (`/diff` pane), `cc-plugin-agents-md`, `cc-plugin-sec-default` (org guard), `cc-plugin-telemetry`, `cc-plugin-plugin-authoring` (skill only). **You should know** (`cc-plugin-you-should-know@builtin`) is a side agent that posts notes above the prompt on longer tasks — **off by default**; `/plugin enable cc-plugin-you-should-know@builtin` (first-party sessions with telemetry). Source for some built-ins is in the public `mods/` tree of anthropics/claude-code.
 - Off: one plugin via `/plugin`; session `--safe-mode`; user `"disableAllHooks": true` (also kills settings hooks/status line; managed still runs). Early-access `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS` is **ignored** at any value. Org: managed `pluginConfigs["cc-plugin-sec-default@builtin"].options.allowManagedModsOnly` blocks user/`--plugin-dir`/session-written mods and leaves org-managed + built-ins. The guard (Team/Enterprise login or any managed settings) stops a user mod from rewriting managed hooks, system prompt, managed CLAUDE.md, or managed MCP tool lists. `deny` + managed `PreToolUse` still win on **Claude** tool calls; they do **not** cover the mod’s own `$.fs` / `$.process`.
 - v2.1.288+: `$.ui.selection()` returns the last fullscreen selection (and the transcript row when the selection sits in one). v2.1.289+: `agent.spawn` for plugin teammates; one agent id across plugin hook events; `$.agent.list()` reports **idle** and **waiting**. A failing `Client` now fails alone and raises `ui.fault` instead of taking down the rest of the mod. A user-installed plugin cannot rewrite descriptions of an **organization-managed** MCP server’s sign-in tools. Treat `agent.spawn` as the same trust surface as the host session (`claude-code-agent-teams`).
+- v2.1.290+: `turn.step` includes `serverToolUses` (API-run tools such as the advisor, with id/name/input/timing). `tool.check` carries `agentId` (subagent vs main) and `ceiling` (the approval an organization requires). `claude plugin validate` lists each gating hook and whether it has `.catch` (`gatingHooks` under `--json`).
+- v2.1.292+: `prompt.autocomplete` lets a mod add rows to the prompt-box autocomplete. `$.model.complete` prompt-caches when `prompt`/`system` are text blocks with `cache: true` on a block. `agent.spawn` also fires for **workflow agents** (run + index) so a mod can refuse them. A `config.set` / `state.set` / `env.set` / `agent.spawn` hook that denies **after** `next(e)` is reported as a failed hook, not a refusal. `tool.check` allow no longer skips a dialog that still needs a question or plan approval. `<system-reminder>` tags in hook output are escaped before they reach Claude.
 
 ## Sources
 
@@ -27,3 +29,4 @@ A **Claude Code mod** (v2.1.287+) is a **plugin** whose JavaScript/TypeScript ha
 - [Claude Code changelog v2.1.287](https://github.com/anthropics/claude-code/releases/tag/v2.1.287) — accessed 2026-10-02
 - [v2.1.288 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.288) — accessed 2026-10-04
 - [v2.1.289 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.289) — accessed 2026-10-04
+- [CHANGELOG.md (v2.1.290–2.1.292)](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-06

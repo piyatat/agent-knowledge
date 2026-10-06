@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1650,12 +1650,13 @@
         "ci"
       ],
       "status": "active",
-      "updated": "2026-08-23",
+      "updated": "2026-10-06",
       "when_to_use": "Speeding up or debugging Cloud Agent VM startup (clone/install vs start/terminals)",
       "related": [
         "cursor-cloud-always-on",
         "cursor-cloud-mcp-diagnostics",
-        "mcp-server-lifecycle-health"
+        "mcp-server-lifecycle-health",
+        "cursor-environment-json"
       ]
     },
     {
@@ -1823,7 +1824,8 @@
         "cursor-acp-extensions",
         "cursor-cli-persist",
         "cursor-message-queue",
-        "skills-invocation-modes"
+        "skills-invocation-modes",
+        "cursor-run-modes"
       ]
     },
     {
@@ -1848,7 +1850,7 @@
     {
       "id": "cursor-sandbox-json",
       "path": "practices/cursor-sandbox-json.md",
-      "title": "Cursor sandbox.json and Auto-review run modes",
+      "title": "Cursor sandbox.json \u2014 network, paths, and readBoundary",
       "tags": [
         "cursor",
         "sandbox",
@@ -1856,7 +1858,7 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-08-31",
+      "updated": "2026-10-06",
       "when_to_use": "Constraining local Cursor agent shell/network/filesystem (not Cloud Agent VMs)",
       "related": [
         "agent-code-sandboxing",
@@ -1865,7 +1867,8 @@
         "cursor-cli-headless",
         "cursor-ignore-files",
         "cursor-permissions-json",
-        "vscode-agent-sandboxing"
+        "vscode-agent-sandboxing",
+        "cursor-run-modes"
       ]
     },
     {
@@ -1975,7 +1978,8 @@
         "cursor-cli-headless",
         "skills-invocation-modes",
         "cursor-custom-subagents",
-        "cursor-at-mentions"
+        "cursor-at-mentions",
+        "cursor-run-modes"
       ]
     },
     {
@@ -3161,7 +3165,7 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-10-02",
+      "updated": "2026-10-06",
       "when_to_use": "Packaging or installing Claude Code skills/hooks/MCP/LSP/mods as a plugin instead of loose .claude/ files",
       "related": [
         "cursor-plugins",
@@ -3231,13 +3235,15 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-08-31",
+      "updated": "2026-10-06",
       "when_to_use": "Committing or MDM-deploying which MCP tools and shell prefixes skip approval in local Cursor",
       "related": [
         "cursor-sandbox-json",
         "permission-modes-allow-ask-deny",
         "cursor-hooks-json",
-        "cursor-mcp-json"
+        "cursor-mcp-json",
+        "cursor-run-modes",
+        "cursor-cli-headless"
       ]
     },
     {
@@ -3666,7 +3672,7 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-09-04",
+      "updated": "2026-10-06",
       "when_to_use": "Adding HTTP/stdio MCP to Claude Code, or debugging .mcp.json approvals vs Cursor mcp.json",
       "related": [
         "cursor-mcp-json",
@@ -3674,7 +3680,8 @@
         "claude-code-plugins",
         "mcp-oauth-scopes",
         "claude-code-managed-mcp",
-        "claude-code-elicitation"
+        "claude-code-elicitation",
+        "mcp-stateless-core"
       ]
     },
     {
@@ -4684,7 +4691,7 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-09-30",
+      "updated": "2026-10-06",
       "when_to_use": "Using Copilot Chat Agent/Plan/Ask in an IDE, choosing Agent Host vs cloud agent, or setting Assisted permissions",
       "related": [
         "github-copilot-coding-agent",
@@ -4700,7 +4707,10 @@
         "github-copilot-xcode-eclipse",
         "github-copilot-visual-studio",
         "vscode-assisted-permissions",
-        "vscode-agent-sandboxing"
+        "vscode-agent-sandboxing",
+        "github-copilot-agent-merge",
+        "vscode-agent-automations",
+        "github-copilot-hydrafusion"
       ]
     },
     {
@@ -5418,8 +5428,8 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-13",
-      "when_to_use": "Setting /effort or ultracode, or overriding effort on a skill/subagent",
+      "updated": "2026-10-06",
+      "when_to_use": "Setting /effort or ultracode, or overriding effort on a skill/subagent/Agent tool",
       "related": [
         "claude-code-workflows",
         "claude-code-settings",
@@ -6692,7 +6702,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-09-21",
+      "updated": "2026-10-06",
       "when_to_use": "Scripting Cursor from Node/Bun with @cursor/sdk, or replacing the local agent system prompt",
       "related": [
         "cursor-sdk",
@@ -6700,7 +6710,9 @@
         "cursor-hooks-json",
         "cursor-sandbox-json",
         "cursor-cloud-agents-api",
-        "cursor-service-accounts"
+        "cursor-service-accounts",
+        "cursor-agent-modes",
+        "cursor-run-modes"
       ]
     },
     {
@@ -7718,7 +7730,7 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-10-04",
+      "updated": "2026-10-06",
       "when_to_use": "Writing or installing a Claude Code mod, enabling You should know, or contrasting mods with settings hooks",
       "related": [
         "claude-code-plugins",
@@ -8087,6 +8099,29 @@
         "github-copilot-managed-permissions",
         "github-copilot-sandbox",
         "github-copilot-mcp"
+      ]
+    },
+    {
+      "id": "cursor-run-modes",
+      "path": "practices/cursor-run-modes.md",
+      "title": "Cursor Run Modes and Read Access",
+      "tags": [
+        "cursor",
+        "permissions",
+        "sandbox",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-10-06",
+      "when_to_use": "Choosing Auto-review vs Allowlist vs Run Everything, or restricting local agent reads to the workspace",
+      "related": [
+        "cursor-sandbox-json",
+        "cursor-permissions-json",
+        "cursor-hooks-json",
+        "cursor-cli-headless",
+        "permission-modes-allow-ask-deny",
+        "agent-guardrails-vs-approvals",
+        "vscode-agent-sandboxing"
       ]
     }
   ]

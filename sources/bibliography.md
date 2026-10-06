@@ -1458,3 +1458,26 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
 | copilot-cli v1.0.92-4 | https://github.com/github/copilot-cli/releases/tag/v1.0.92-4 |
 
+## Daily ingest 2026-10-06 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Run Modes | https://cursor.com/docs/agent/security/run-modes |
+| Agent Security | https://cursor.com/docs/agent/security |
+| permissions.json reference | https://cursor.com/docs/reference/permissions |
+| sandbox.json reference | https://cursor.com/docs/reference/sandbox.md |
+| Cloud Agent Builds | https://cursor.com/docs/cloud-agent/builds |
+| Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
+| Cursor TypeScript SDK | https://cursor.com/docs/sdk/typescript |
+| SDK Changelog | https://cursor.com/docs/sdk/changelog |
+| Prompting agents | https://cursor.com/docs/agent/prompting |
+| CHANGELOG.md (Claude Code) | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Connect Claude Code to tools via MCP | https://code.claude.com/docs/en/mcp |
+| Discover and install plugins | https://code.claude.com/docs/en/discover-plugins |
+| Plugin marketplaces | https://code.claude.com/docs/en/plugin-marketplaces |
+| Model configuration (Claude Code) | https://code.claude.com/docs/en/model-config |
+| Mods overview | https://code.claude.com/docs/en/plugins/mods/overview |
+| GitHub Copilot in VS Code, September 2026 releases | https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases/ |
+| Skills (MCP extension overview) | https://modelcontextprotocol.io/extensions/skills/overview |
+
