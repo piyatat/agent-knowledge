@@ -3,7 +3,7 @@ id: github-copilot-cli
 title: GitHub Copilot CLI — terminal agent vs cloud coding agent
 tags: [github, cli, permissions, sandbox]
 status: active
-updated: 2026-10-02
+updated: 2026-10-07
 when_to_use: Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent
 ---
 
@@ -16,8 +16,9 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - First prompt: trust this folder (session-only or remember). Tool prompts: once / rest of session / reject with optional feedback. `Shift+Tab` cycles **plan** mode. `!cmd` runs a shell without the model. `/cwd` or `/add-dir` for other trees. `--continue` resumes the last local session.
 - **Rewind** (interactive, idle, empty input): `Esc` `Esc`, `/undo`, or `/rewind`. Pick a prior user prompt (ten visible; arrow for more). **Conversation only** truncates history; **Conversation + files** also restores Copilot-tracked edits (editing tools, shell, sub-agents — Git not required) and **skips** files you changed afterward or that were too large to back up. Applied to the state **before** that prompt ran; the prompt is put back in the input to edit/resubmit. **Cannot undo.** Unavailable for remote-backed sessions, in-progress work, or before the first prompt. Resume of a pre-tracking session may offer conversation-only. Verify with `! git status` / `! git diff`. JetBrains “edit earlier message” is the IDE equivalent (`github-copilot-jetbrains`).
 - Permissions: `--allow-tool` / `--deny-tool` (deny wins, including over `--allow-all`). `--allow-all` / `--yolo` = all tools + paths + URLs — isolated environments only; never alias it. `permissions.disableBypassPermissionsMode` suppresses those flags. Help: `copilot help permissions`.
-- Sandbox (public preview / experimental): `/sandbox enable` or `--sandbox` restricts commands/MCP, not the CLI process. `--cloud` runs the whole session in an isolated cloud sandbox (inherits cloud-agent policies). Pair `--allow-all` with a sandbox.
-- MCP lives in `~/.copilot/mcp-config.json` (`COPILOT_HOME`). GitHub MCP is preinstalled. `copilot mcp add --transport http NAME URL` or `/mcp add`. Custom instructions: `.github/copilot-instructions.md`, path-specific `.github/instructions/**/*.instructions.md`, `AGENTS.md`.
+- Sandbox: CLI **1.0.93** makes `/sandbox` and `--sandbox` available to **all users** (no experimental flag). Restricts commands/MCP, not the CLI process. `--cloud` runs the whole session in an isolated cloud sandbox (inherits cloud-agent policies). Pair `--allow-all` with a sandbox (`github-copilot-sandbox`).
+- MCP lives in `~/.copilot/mcp-config.json` (`COPILOT_HOME`). GitHub MCP is preinstalled. `copilot mcp add --transport http NAME URL` or `/mcp add`. **1.0.93:** MCP config changes apply **between turns** without restarting. Custom instructions: `.github/copilot-instructions.md`, path-specific `.github/instructions/**/*.instructions.md`, `AGENTS.md`.
+- Models: `/model` or `--model`. **1.0.93** picker recommends GPT-6.1 Sol, GPT-6 Astra/Luna, Claude 5.5. **1.0.94-0** discovers a running Ollama instance in `/model` (`github-copilot-cli-local-models`). Not Copilot Auto tiers (`github-copilot-auto-model`).
 - Context: `/usage`, `/context`, `/compact`; auto-compact near 95%. `/every` / `/after` schedule prompts. Memory: `/memory on|off|show` (persists); `-p` needs `--enable-memory`. Details: `github-copilot-memory`. Custom agents and skills are separate notes. ACP: Copilot CLI can also be an ACP server.
 - Desktop GUI: `/computer on|show|off` (public preview, macOS/Windows local sessions) — `github-copilot-computer-use`. Remote steer of a **running** interactive session: `/remote on` or `copilot --remote` (not `-p`) — `github-copilot-remote-control`.
 - Parallel / scripted orchestration (often needs `/experimental on`): `/fleet` or `--fleet` for a model-chosen subagent split (`github-copilot-fleet`); coded **dynamic workflows** via chat or `copilot workflow run NAME` (`github-copilot-dynamic-workflows`). Repo-event automation that must live in git is `gh aw` (`github-agentic-workflows`), not a long-lived CLI session.
@@ -36,3 +37,5 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - [Steering a GitHub Copilot CLI session from another device](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/steer-remotely) — accessed 2026-10-01
 - [Running tasks in parallel with the /fleet command](https://docs.github.com/en/copilot/concepts/agents/copilot-cli/fleet) — accessed 2026-10-02
 - [Using dynamic workflows](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-dynamic-workflows) — accessed 2026-10-02
+- [copilot-cli changelog (1.0.93)](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-07
+- [Discover local models in GitHub Copilot CLI](https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli/) — accessed 2026-10-07

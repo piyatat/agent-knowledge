@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2889,7 +2889,7 @@
     {
       "id": "mcp-file-uploads",
       "path": "practices/mcp-file-uploads.md",
-      "title": "MCP file inputs \u2014 SEP-2631 (draft) supersedes SEP-2356",
+      "title": "MCP file inputs \u2014 Files WG replacing SEP-2631 (draft)",
       "tags": [
         "mcp",
         "ux",
@@ -2897,8 +2897,8 @@
         "roadmap"
       ],
       "status": "draft",
-      "updated": "2026-10-03",
-      "when_to_use": "Designing an MCP tool that needs a user-selected file \u2014 do not invent a base64-in-prose contract; SEP-2631 is still draft",
+      "updated": "2026-10-07",
+      "when_to_use": "Designing an MCP tool that needs a user-selected file \u2014 do not invent a base64-in-prose contract; SEP-2631 is being superseded",
       "related": [
         "mcp-elicitation-modes",
         "mcp-content-blocks",
@@ -3381,7 +3381,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-02",
+      "updated": "2026-10-07",
       "when_to_use": "Routing Cloud Agents to a named self-hosted worker fleet, scaling to zero, or keeping workspace state across idle follow-ups",
       "related": [
         "cursor-self-hosted-agents",
@@ -3547,13 +3547,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-03",
-      "when_to_use": "Launching or following up Cloud Agents over HTTPS instead of the Python SDK, CLI, or editor",
+      "updated": "2026-10-07",
+      "when_to_use": "Launching Cloud Agents over HTTPS, or scripting saved environments via /v1/environments",
       "related": [
         "cursor-sdk",
         "cursor-cloud-always-on",
         "cursor-self-hosted-pools",
-        "cursor-cloud-agent-metadata"
+        "cursor-cloud-agent-metadata",
+        "cursor-environment-json",
+        "cursor-environment-builds"
       ]
     },
     {
@@ -3715,7 +3717,7 @@
         "ops"
       ],
       "status": "active",
-      "updated": "2026-09-04",
+      "updated": "2026-10-07",
       "when_to_use": "Giving CI, Team Pools, or the Cloud Agents API a non-human Cursor identity",
       "related": [
         "cursor-cloud-agents-api",
@@ -3934,7 +3936,7 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-10-05",
+      "updated": "2026-10-07",
       "when_to_use": "Adding stdio or HTTP MCP to Codex, or replacing a removed codex mcp-server integration",
       "related": [
         "openai-codex-sdk",
@@ -4002,7 +4004,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-02",
+      "updated": "2026-10-07",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4022,7 +4024,9 @@
         "github-copilot-remote-control",
         "github-copilot-fleet",
         "github-copilot-dynamic-workflows",
-        "github-agentic-workflows"
+        "github-agentic-workflows",
+        "github-copilot-cli-local-models",
+        "github-copilot-cli-settings"
       ]
     },
     {
@@ -4629,14 +4633,15 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-09-09",
-      "when_to_use": "Entering Gemini CLI Plan mode, or customizing plan.toml / plan directory policies",
+      "updated": "2026-10-07",
+      "when_to_use": "Entering Gemini CLI Plan mode, customizing plan.toml, or running plan-then-execute in -p CI",
       "related": [
         "gemini-cli-hooks",
         "gemini-cli-settings",
         "gemini-cli-checkpointing",
         "claude-code-plan-mode",
-        "openai-codex-plan-mode"
+        "openai-codex-plan-mode",
+        "gemini-cli-headless"
       ]
     },
     {
@@ -5650,7 +5655,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-05",
+      "updated": "2026-10-07",
       "when_to_use": "Enabling Copilot CLI /sandbox, copilot --cloud, or Copilot-app local sandboxing \u2014 not the Actions cloud agent",
       "related": [
         "github-copilot-cli",
@@ -8092,7 +8097,7 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-10-05",
+      "updated": "2026-10-07",
       "when_to_use": "Changing Copilot CLI user/repo/local settings, or debugging a leftover ~/.copilot/config.json",
       "related": [
         "github-copilot-cli",
@@ -8122,6 +8127,27 @@
         "permission-modes-allow-ask-deny",
         "agent-guardrails-vs-approvals",
         "vscode-agent-sandboxing"
+      ]
+    },
+    {
+      "id": "github-copilot-cli-local-models",
+      "path": "practices/github-copilot-cli-local-models.md",
+      "title": "Copilot CLI local models \u2014 Ollama discovery vs BYOK",
+      "tags": [
+        "github",
+        "cli",
+        "models",
+        "privacy"
+      ],
+      "status": "active",
+      "updated": "2026-10-07",
+      "when_to_use": "Discovering a running Ollama model in Copilot CLI /model, or configuring BYOK / COPILOT_OFFLINE",
+      "related": [
+        "github-copilot-cli",
+        "github-copilot-auto-model",
+        "github-copilot-cli-settings",
+        "github-copilot-sandbox",
+        "cursor-privacy-mode"
       ]
     }
   ]

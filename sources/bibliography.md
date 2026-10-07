@@ -1481,3 +1481,24 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | GitHub Copilot in VS Code, September 2026 releases | https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases/ |
 | Skills (MCP extension overview) | https://modelcontextprotocol.io/extensions/skills/overview |
 
+## Daily ingest 2026-10-07 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Discover local models in GitHub Copilot CLI | https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli/ |
+| Adding LLM models to GitHub Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models |
+| About GitHub Copilot CLI | https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-copilot-cli |
+| Authenticating GitHub Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/authenticate-copilot-cli |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| Using local sandboxing | https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing |
+| Service Accounts | https://cursor.com/docs/account/enterprise/service-accounts |
+| Cloud Agents API | https://cursor.com/docs/cloud-agent/api/endpoints |
+| Cloud Agent Builds | https://cursor.com/docs/cloud-agent/builds |
+| Team Pools | https://cursor.com/docs/cloud-agent/self-hosted/pool |
+| Self-Hosted Machines | https://cursor.com/docs/cloud-agent/self-hosted |
+| Model Context Protocol (Codex) | https://developers.openai.com/codex/mcp |
+| Codex 0.161.0 | https://github.com/openai/codex/releases/tag/rust-v0.161.0 |
+| Files Working Group Meeting — October 2, 2026 | https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3412 |
+| SEP-2631: File Objects and Transfer | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2631 |
+| Gemini CLI v0.63.0 | https://geminicli.com/docs/changelogs/latest/ |
+

@@ -3,7 +3,7 @@ id: cursor-service-accounts
 title: Cursor service accounts — Enterprise automation keys
 tags: [cursor, identity, auth, ops]
 status: active
-updated: 2026-09-04
+updated: 2026-10-07
 when_to_use: Giving CI, Team Pools, or the Cloud Agents API a non-human Cursor identity
 ---
 
@@ -13,7 +13,7 @@ A Cursor **service account** is an Enterprise, seat-free identity for automation
 
 ## Notes
 
-- Create under Dashboard → Settings → API Keys → Service Accounts. The key is shown **once**. Rotate invalidates the old key immediately; archive revokes all keys and keeps the record. Name accounts by purpose (Linear bot, pool workers), not by a person.
+- Create under Dashboard → Settings → API Keys → Service Accounts. The key is shown **once**. Rotate invalidates the old key immediately. **Suspend** (pause icon) stops every key on that account without revoking them; resume (play icon) restores the same keys. **Archive** revokes all keys and keeps the record (Show Archived). Rename/description edits do not rotate keys. Name accounts by purpose (Linear bot, pool workers), not by a person.
 - Repos: the GitHub App must be connected at the **team** level. A personal GitHub install is not enough. Scope is the team App’s authorized repos.
 - API: `Authorization: Bearer` or Basic `-u KEY:` on `https://api.cursor.com`. Current create surface is `POST /v1/agents` (`cursor-cloud-agents-api`); older snippets that POST `/agents` with `repo` are v0-shaped. Private-worker pool endpoints stay on `/v0/private-workers` and **require** this key type — user/personal/team keys are rejected.
 - CLI: `export CURSOR_API_KEY=…` then `agent -p --force "…"` in CI (`cursor-cli-headless`). Browser login is the wrong path for cron/Actions.
@@ -21,6 +21,6 @@ A Cursor **service account** is an Enterprise, seat-free identity for automation
 
 ## Sources
 
-- [Service Accounts](https://cursor.com/docs/account/enterprise/service-accounts) — accessed 2026-09-04
-- [Cloud Agents API](https://cursor.com/docs/cloud-agent/api/endpoints) — accessed 2026-09-04
+- [Service Accounts](https://cursor.com/docs/account/enterprise/service-accounts) — accessed 2026-10-07
+- [Cloud Agents API](https://cursor.com/docs/cloud-agent/api/endpoints) — accessed 2026-10-07
 - [Team Pools](https://cursor.com/docs/cloud-agent/self-hosted/pool) — accessed 2026-09-04
