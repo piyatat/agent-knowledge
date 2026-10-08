@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2093,14 +2093,16 @@
         "isolation"
       ],
       "status": "active",
-      "updated": "2026-08-25",
-      "when_to_use": "Adding markdown subagents under .cursor/agents, choosing Explore/Bash/Browser vs custom, or /in-cloud handoff",
+      "updated": "2026-10-08",
+      "when_to_use": "Adding markdown subagents under .cursor/agents, choosing Explore/Bash/Browser vs custom, or /in-cloud / /autopilot handoff",
       "related": [
         "subagent-context-isolation",
         "cursor-cloud-always-on",
         "cursor-worktrees",
         "skills-invocation-modes",
-        "cursor-browser"
+        "cursor-browser",
+        "cursor-agents-window",
+        "cursor-cli-cloud-handoff"
       ]
     },
     {
@@ -3165,7 +3167,7 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-10-06",
+      "updated": "2026-10-08",
       "when_to_use": "Packaging or installing Claude Code skills/hooks/MCP/LSP/mods as a plugin instead of loose .claude/ files",
       "related": [
         "cursor-plugins",
@@ -3674,7 +3676,7 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-10-06",
+      "updated": "2026-10-08",
       "when_to_use": "Adding HTTP/stdio MCP to Claude Code, or debugging .mcp.json approvals vs Cursor mcp.json",
       "related": [
         "cursor-mcp-json",
@@ -4211,7 +4213,7 @@
     {
       "id": "github-copilot-skills",
       "path": "practices/github-copilot-skills.md",
-      "title": "GitHub Copilot Agent Skills \u2014 SKILL.md and gh skill",
+      "title": "GitHub Copilot Agent Skills \u2014 SKILL.md, copilot skill, gh skill",
       "tags": [
         "github",
         "skills",
@@ -4219,15 +4221,16 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-09-26",
-      "when_to_use": "Adding SKILL.md for Copilot cloud agent / CLI / IDE, or installing skills with gh skill",
+      "updated": "2026-10-08",
+      "when_to_use": "Adding SKILL.md for Copilot CLI / cloud agent / IDE, or installing with copilot skill / gh skill",
       "related": [
         "agent-skills-open-standard",
         "github-copilot-instructions",
         "github-copilot-cli",
         "malicious-skills-supply-chain",
         "github-copilot-code-review",
-        "github-copilot-jetbrains"
+        "github-copilot-jetbrains",
+        "github-copilot-plugins"
       ]
     },
     {
@@ -4756,7 +4759,8 @@
         "claude-code-vscode",
         "claude-code-headless",
         "claude-code-workflows",
-        "cursor-cloud-always-on"
+        "cursor-cloud-always-on",
+        "cursor-remote-control"
       ]
     },
     {
@@ -4770,7 +4774,7 @@
         "experimental"
       ],
       "status": "active",
-      "updated": "2026-10-04",
+      "updated": "2026-10-08",
       "when_to_use": "Enabling CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS for peer sessions with a shared task list, or contrasting teams with subagents and workflows",
       "related": [
         "claude-code-subagents",
@@ -5092,8 +5096,8 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-11",
-      "when_to_use": "Running parallel Codex desktop chats in Git worktrees, or using Handoff vs Create branch",
+      "updated": "2026-10-08",
+      "when_to_use": "Running parallel Codex chats in Git worktrees, using Handoff vs Create branch, or creating managed trees from the TUI",
       "related": [
         "cursor-worktrees",
         "claude-code-worktrees",
@@ -5655,8 +5659,8 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-07",
-      "when_to_use": "Enabling Copilot CLI /sandbox, copilot --cloud, or Copilot-app local sandboxing \u2014 not the Actions cloud agent",
+      "updated": "2026-10-08",
+      "when_to_use": "Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local sandboxing, or VS Code Agent Host MXC",
       "related": [
         "github-copilot-cli",
         "github-copilot-managed-permissions",
@@ -6556,14 +6560,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-20",
+      "updated": "2026-10-08",
       "when_to_use": "Starting or steering a Cloud Agent from the iPhone/iPad app, or handing a desktop session to the phone",
       "related": [
         "cursor-cloud-always-on",
         "cursor-design-mode",
         "cursor-privacy-mode",
         "cursor-self-hosted-pools",
-        "claude-code-remote-control"
+        "claude-code-remote-control",
+        "cursor-remote-control"
       ]
     },
     {
@@ -6632,7 +6637,7 @@
     {
       "id": "vscode-agent-sandboxing",
       "path": "practices/vscode-agent-sandboxing.md",
-      "title": "VS Code agent terminal sandbox \u2014 Seatbelt, bubblewrap, MXC",
+      "title": "VS Code Agent Host sandbox \u2014 unified enabled, /sandbox policy",
       "tags": [
         "vscode",
         "sandbox",
@@ -6640,8 +6645,8 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-09-30",
-      "when_to_use": "Enabling chat.agent.sandbox for VS Code / Copilot Agent Host terminals, or contrasting sandbox with Assisted permissions and URL approval",
+      "updated": "2026-10-08",
+      "when_to_use": "Enabling chat.agent.sandbox for Copilot Agent Host terminals, inspecting /sandbox policy, or contrasting with Copilot CLI MXC",
       "related": [
         "vscode-mcp",
         "vscode-agent-harnesses",
@@ -7700,7 +7705,8 @@
         "github-copilot-managed-permissions",
         "claude-code-remote-control",
         "github-copilot-coding-agent",
-        "cursor-ios"
+        "cursor-ios",
+        "cursor-remote-control"
       ]
     },
     {
@@ -8148,6 +8154,29 @@
         "github-copilot-cli-settings",
         "github-copilot-sandbox",
         "cursor-privacy-mode"
+      ]
+    },
+    {
+      "id": "cursor-remote-control",
+      "path": "practices/cursor-remote-control.md",
+      "title": "Cursor Remote Control \u2014 iOS pairing vs /remote-control handoff",
+      "tags": [
+        "cursor",
+        "ux",
+        "session",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-10-08",
+      "when_to_use": "Steering a local Cursor agent from the iOS app, or contrasting pairing with /remote-control cloud-loop handoff",
+      "related": [
+        "cursor-ios",
+        "cursor-privacy-mode",
+        "cursor-agents-window",
+        "cursor-run-modes",
+        "claude-code-remote-control",
+        "github-copilot-remote-control",
+        "cursor-self-hosted-pools"
       ]
     }
   ]

@@ -1502,3 +1502,22 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | SEP-2631: File Objects and Transfer | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2631 |
 | Gemini CLI v0.63.0 | https://geminicli.com/docs/changelogs/latest/ |
 
+## Daily ingest 2026-10-08 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Remote control for local agents (changelog) | https://cursor.com/changelog |
+| Cursor for iOS | https://cursor.com/docs/cloud-agent/mobile |
+| Cursor IDE changelog — Oct 7 2026 (3.23.23) | https://techdevnotes.com/releases/cursor-ide/20261007-020505Z-4e1ed0d5d240 |
+| Adding agent skills for GitHub Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills |
+| GitHub Copilot CLI command reference | https://docs.github.com/en/copilot/reference/cli-command-reference |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| Local sandboxing for GitHub Copilot now generally available | https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/ |
+| About cloud and local sandboxes for GitHub Copilot | https://docs.github.com/en/copilot/concepts/about-cloud-and-local-sandboxes |
+| Sandbox Copilot Agent Host sessions | https://code.visualstudio.com/docs/agents/run/agent-sandboxing |
+| Subagents | https://cursor.com/docs/subagents |
+| v2.1.295 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.295 |
+| Codex 0.162.0 | https://github.com/openai/codex/releases/tag/rust-v0.162.0 |
+| Worktrees (Codex app) | https://developers.openai.com/codex/app/worktrees |
+
+
