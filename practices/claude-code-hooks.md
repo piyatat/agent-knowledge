@@ -3,7 +3,7 @@ id: claude-code-hooks
 title: Claude Code hooks — settings.json lifecycle gates
 tags: [claude, hooks, permissions, safety]
 status: active
-updated: 2026-10-03
+updated: 2026-10-09
 when_to_use: Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks instead of CLAUDE.md advice
 ---
 
@@ -15,12 +15,14 @@ Claude Code **hooks** run at named lifecycle events (CLI, IDE, Desktop, and Clau
 
 - Locations (entries **merge**, they do not replace): `~/.claude/settings.json` (user), `.claude/settings.json` (project, committable), `.claude/settings.local.json` (gitignored), managed policy, plugin `hooks/hooks.json`, plus skill/subagent frontmatter (active only while that component runs). Same hooks fire inside subagents; input includes `agent_id` / `agent_type`.
 - Handler `type`: `command` (stdin JSON → stdout JSON), `http` (POST same JSON), `mcp_tool` (text treated as command stdout), `prompt`, `agent`. Tool events honor `matcher` (tool name, `Edit|Write`, `mcp__.*`) and optional `if` permission-rule syntax (`Bash(git *)`). `$CLAUDE_PROJECT_DIR` is the launch root. `Elicitation` / `ElicitationResult` match the **MCP server name**. Notification matchers include `elicitation_dialog` and `elicitation_url_dialog`.
-- Blocking: **exit 2** blocks even if JSON says `permissionDecision: "allow"`. On `Elicitation` / `ElicitationResult`, exit 2 denies the prompt / declines the response and **ignores** `hookSpecificOutput`. Exit 0 + `hookSpecificOutput.action` (`accept`/`decline`/`cancel`) plus optional `content` (form fields) is the structured path. Other exits are fail-open unless valid JSON supplies a decision — do not use exit 1 as a security gate. HTTP: 2xx + JSON body uses the same schema. `disableAllHooks` cannot turn off **managed** hooks unless set at the managed level; `--settings '{"disableAllHooks": true}'` wins over project/local for one run.
+- Blocking: **exit 2** blocks even if JSON says `permissionDecision: "allow"`. On `Elicitation` / `ElicitationResult`, exit 2 denies the prompt / declines the response and **ignores** `hookSpecificOutput`. Exit 0 + `hookSpecificOutput.action` (`accept`/`decline`/`cancel`) plus optional `content` (form fields) is the structured path. Other exits are fail-open unless valid JSON supplies a decision — do not use exit 1 as a security gate. HTTP: 2xx + JSON body uses the same schema. **v2.1.295+:** set `"onFailure": "block"` on a `command` or `http` hook so a hook that **cannot start, times out, or exits with a code other than 0 or 2** blocks the action (same effect as exit 2 on that event; on `PermissionRequest` it denies). Default `"continue"` is fail-open — a missing policy script lets the call through. `disableAllHooks` cannot turn off **managed** hooks unless set at the managed level; `--settings '{"disableAllHooks": true}'` wins over project/local for one run. v2.1.296: managed `PreToolUse` `"continue": false` and managed `prompt` hooks that block now refuse the call **without ending the turn**.
 - `/hooks` is **read-only**. `defaultMode: "bypassPermissions"` in project/local settings is ignored (set it in user/managed settings or `--permission-mode`). Cursor can map `PreToolUse` → `preToolUse` when third-party skills are on; keep a native `.cursor/hooks.json` for Cloud Agents.
 
 ## Sources
 
-- [Hooks reference](https://code.claude.com/docs/en/hooks.md) — accessed 2026-10-03
-- [Automate actions with hooks](https://code.claude.com/docs/en/hooks-guide) — accessed 2026-10-03
+- [Hooks reference](https://code.claude.com/docs/en/hooks) — accessed 2026-10-09
+- [Automate actions with hooks](https://code.claude.com/docs/en/hooks-guide) — accessed 2026-10-09
+- [v2.1.295](https://github.com/anthropics/claude-code/releases/tag/v2.1.295) — accessed 2026-10-09
+- [CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-09
 - [Agent SDK hooks](https://code.claude.com/docs/en/agent-sdk/hooks) — accessed 2026-10-03
 - [Claude Code memory](https://code.claude.com/docs/en/memory) — accessed 2026-08-22

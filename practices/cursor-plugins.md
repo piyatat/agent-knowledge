@@ -3,7 +3,7 @@ id: cursor-plugins
 title: Cursor plugins and team marketplaces
 tags: [cursor, plugins, skills, supply-chain]
 status: active
-updated: 2026-10-05
+updated: 2026-10-09
 when_to_use: Packaging or installing rules/skills/MCP/hooks as a Cursor or Agent Plugin instead of loose files
 ---
 
@@ -19,11 +19,14 @@ A **plugin** is a Git-distributed bundle: skills and MCP (both formats) plus, fo
 - Team marketplaces (Teams: 1, Enterprise: unlimited) import a repo from Dashboard → Plugins. GitHub is the documented import path; changelog also lists GitLab / Bitbucket / Azure DevOps imports. Modes: **Default Off** (opt-in), **Default On** (opt-out), **Required** (cannot uninstall). Access can be limited to Organization Groups (SCIM); older team-level SCIM directory groups are not auto-migrated.
 - Default team marketplace can link Team MCP servers already used by Cloud Agents (Dashboard → Integrations & MCP → Add to Team Marketplace) so IDE/CLI users can install them — linking does not auto-enable for every developer; each user may still OAuth. Removing a linked MCP plugin can delete the Team MCP server for local **and** cloud; read the confirm dialog.
 - **Canvases** are prebuilt setup templates inside a plugin (docs cite Hex and Atlassian). Open from Customize after install.
+- Cloud Agents: a **plugin slash command in a follow-up** installs that plugin for the turn even if it was not selected at start; if install fails, the agent asks you to drop the command or start a new run. Plugin-backed MCP that an admin granted still serves tools when the dashboard label differs from the plugin name or the agent runs as a deployment service account. On install/edit, plugins whose MCP config references `${env:NAME}` now prompt for each value instead of sending the placeholder. Commands that open MCP/plugins/rules/hooks settings go to **Customize**.
 - Auto Refresh (GitHub App) re-indexes at most every 10 minutes. Enterprise **Allow Local Plugin Imports** (`~/.cursor/plugins/local`) is off by default. Marketplace review ≠ runtime allowlist: plugins still obey MCP allow/block lists; blocked servers install but cannot call. Treat third-party plugins as code you chose to run. Google Workspace mail/drive plugins: `cursor-google-workspace-plugins`.
 
 ## Sources
 
-- [Cursor Plugins](https://cursor.com/docs/plugins) — accessed 2026-10-05
-- [Customize Cursor](https://cursor.com/docs/customize-cursor) — accessed 2026-10-05
+- [Cursor Plugins](https://cursor.com/docs/plugins) — accessed 2026-10-09
+- [Customize Cursor](https://cursor.com/docs/customize-cursor) — accessed 2026-10-09
+- [Cloud Agents release notes](https://cursor.com/docs/release-notes/cloud-agents) — accessed 2026-10-09
+- [Cursor IDE release notes](https://cursor.com/docs/release-notes/ide) — accessed 2026-10-09
 - [Plugins help](https://cursor.com/help/customization/plugins.md) — accessed 2026-08-24
 - [Agent Plugins standard](https://agent-plugins.org) — accessed 2026-08-24

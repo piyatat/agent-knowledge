@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1345,7 +1345,7 @@
         "cron"
       ],
       "status": "active",
-      "updated": "2026-09-24",
+      "updated": "2026-10-09",
       "when_to_use": "Configuring scheduled or event-triggered Cursor cloud agents (not a running agent\u2019s PR/Slack subscription)",
       "related": [
         "cursor-cloud-always-on",
@@ -1362,7 +1362,8 @@
         "cursor-sentry",
         "cursor-pagerduty",
         "vscode-agent-automations",
-        "cursor-rollouts"
+        "cursor-rollouts",
+        "cursor-service-accounts"
       ]
     },
     {
@@ -1924,7 +1925,7 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-10-05",
+      "updated": "2026-10-09",
       "when_to_use": "Packaging or installing rules/skills/MCP/hooks as a Cursor or Agent Plugin instead of loose files",
       "related": [
         "agent-skills-open-standard",
@@ -3594,7 +3595,7 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-10-03",
+      "updated": "2026-10-09",
       "when_to_use": "Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks instead of CLAUDE.md advice",
       "related": [
         "memory-files-vs-enforcement-hooks",
@@ -3602,7 +3603,8 @@
         "claude-code-plugins",
         "permission-modes-allow-ask-deny",
         "claude-code-security-guidance",
-        "claude-code-elicitation"
+        "claude-code-elicitation",
+        "claude-code-gateway"
       ]
     },
     {
@@ -4006,7 +4008,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-07",
+      "updated": "2026-10-09",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4028,7 +4030,9 @@
         "github-copilot-dynamic-workflows",
         "github-agentic-workflows",
         "github-copilot-cli-local-models",
-        "github-copilot-cli-settings"
+        "github-copilot-cli-settings",
+        "github-copilot-assisted-permissions",
+        "github-copilot-managed-permissions"
       ]
     },
     {
@@ -5180,7 +5184,7 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-10-01",
+      "updated": "2026-10-09",
       "when_to_use": "Using the Claude Desktop Code tab, choosing Desktop vs CLI, or sending a CLI session with /desktop",
       "related": [
         "claude-code-on-the-web",
@@ -5189,7 +5193,8 @@
         "claude-code-sessions",
         "claude-code-chrome",
         "claude-cowork",
-        "claude-code-computer-use"
+        "claude-code-computer-use",
+        "claude-code-gateway"
       ]
     },
     {
@@ -5373,7 +5378,7 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-09-28",
+      "updated": "2026-10-09",
       "when_to_use": "Starting a Cursor Project for a multi-PR feature, migration, or standing \u201cgardening\u201d job instead of a single chat",
       "related": [
         "cursor-cloud-always-on",
@@ -5545,7 +5550,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-01",
+      "updated": "2026-10-09",
       "when_to_use": "Shipping managed-settings.json permission rules for Copilot CLI, VS Code Agent Host, or the Copilot app",
       "related": [
         "github-copilot-hooks",
@@ -5554,7 +5559,9 @@
         "github-copilot-coding-agent",
         "cursor-permissions-json",
         "github-copilot-remote-control",
-        "github-copilot-computer-use"
+        "github-copilot-computer-use",
+        "github-copilot-assisted-permissions",
+        "vscode-assisted-permissions"
       ]
     },
     {
@@ -5867,7 +5874,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-16",
+      "updated": "2026-10-09",
       "when_to_use": "Connecting GitLab.com or self-hosted GitLab to Cursor Cloud Agents, Bugbot, or Automations",
       "related": [
         "cursor-github-cloud-agents",
@@ -7524,7 +7531,7 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-09-29",
+      "updated": "2026-10-09",
       "when_to_use": "Deploying Claude apps gateway, forcing /login to a private gateway URL, or contrasting it with Bedrock/Vertex env vars or self-hosted runners",
       "related": [
         "claude-code-settings",
@@ -7532,7 +7539,8 @@
         "claude-code-auto-mode",
         "claude-code-managed-mcp",
         "telemetry-redaction-genai",
-        "memory-files-vs-enforcement-hooks"
+        "memory-files-vs-enforcement-hooks",
+        "claude-code-desktop"
       ]
     },
     {
@@ -8177,6 +8185,29 @@
         "claude-code-remote-control",
         "github-copilot-remote-control",
         "cursor-self-hosted-pools"
+      ]
+    },
+    {
+      "id": "github-copilot-assisted-permissions",
+      "path": "practices/github-copilot-assisted-permissions.md",
+      "title": "Copilot CLI Assisted permissions \u2014 LLM judge vs allow-all",
+      "tags": [
+        "github",
+        "cli",
+        "permissions",
+        "approvals",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-10-09",
+      "when_to_use": "Switching Copilot CLI to /permissions assisted, or setting disableBypassPermissionsMode allow-auto-only",
+      "related": [
+        "github-copilot-cli",
+        "github-copilot-managed-permissions",
+        "vscode-assisted-permissions",
+        "github-copilot-jetbrains",
+        "github-copilot-sandbox",
+        "prompt-injection-agent-defense"
       ]
     }
   ]

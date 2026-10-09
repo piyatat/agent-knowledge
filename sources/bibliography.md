@@ -1520,4 +1520,33 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Codex 0.162.0 | https://github.com/openai/codex/releases/tag/rust-v0.162.0 |
 | Worktrees (Codex app) | https://developers.openai.com/codex/app/worktrees |
 
+## Daily ingest 2026-10-09 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| GitHub Copilot CLI command reference | https://docs.github.com/en/copilot/reference/cli-command-reference |
+| Allowing and denying tool use | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools |
+| Enterprise managed settings | https://docs.github.com/en/copilot/reference/enterprise-managed-settings-reference |
+| GitHub Copilot CLI configuration directory | https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| Authenticating GitHub Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/authenticate-copilot-cli |
+| Projects (Cursor docs) | https://cursor.com/docs/agent/projects |
+| Introducing Projects | https://cursor.com/blog/projects |
+| Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
+| Cursor changelog | https://cursor.com/changelog |
+| Hooks reference | https://code.claude.com/docs/en/hooks |
+| Automate actions with hooks | https://code.claude.com/docs/en/hooks-guide |
+| v2.1.295 | https://github.com/anthropics/claude-code/releases/tag/v2.1.295 |
+| CHANGELOG.md (Claude Code) | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
+| Run Claude Code through a gateway | https://code.claude.com/docs/en/gateways |
+| Claude apps gateway | https://code.claude.com/docs/en/claude-apps-gateway |
+| Claude apps gateway configuration | https://code.claude.com/docs/en/claude-apps-gateway-config |
+| Cursor Automations | https://cursor.com/docs/cloud-agent/automations |
+| Cursor web release notes | https://cursor.com/docs/release-notes/web |
+| GitLab (Cursor docs) | https://cursor.com/docs/integrations/gitlab |
+| Desktop application | https://code.claude.com/docs/en/desktop |
+| Cursor Plugins | https://cursor.com/docs/plugins |
+| Customize Cursor | https://cursor.com/docs/customize-cursor |
+| Cursor IDE release notes | https://cursor.com/docs/release-notes/ide |
+
 

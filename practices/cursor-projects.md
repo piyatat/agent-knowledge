@@ -3,7 +3,7 @@ id: cursor-projects
 title: Cursor Projects — coordinator, shared context, subscriptions
 tags: [cursor, orchestration, subagent, automations]
 status: active
-updated: 2026-09-28
+updated: 2026-10-09
 when_to_use: Starting a Cursor Project for a multi-PR feature, migration, or standing “gardening” job instead of a single chat
 ---
 
@@ -13,16 +13,17 @@ when_to_use: Starting a Cursor Project for a multi-PR feature, migration, or sta
 
 ## Notes
 
-- Open **Projects** in the Agents Window left-hand nav → New Project (icon + name; empty name becomes “New Project”). Workspace is a repo already available to Cloud Agents (Connect GitHub if missing). Pick the coordinator model, then Create. Docs: **not on Enterprise plans**. Also unavailable with **Privacy Mode (Legacy)** — Projects store code in the cloud while they run.
-- The coordinator stays responsive because it only delegates. Open any worker it starts to follow or talk to it. It can run more parallel workers than a laptop; when something must run on your machine, it spins up a **local** agent. Closing the laptop does not stop the Project computer.
+- Open **Projects** in the Agents Window left-hand nav → New Project (icon + name; empty name becomes “New Project”). Workspace is a repo already available to Cloud Agents (Connect GitHub if missing). Pick the coordinator model, then Create. **All paid plans, including Enterprise** (Enterprise needs Cursor **3.21.9+**). Not on Hobby (no Cloud Agents). Unavailable with **Privacy Mode (Legacy)** — Projects store code in the cloud while they run.
+- The coordinator stays responsive because it only delegates. Open any worker it starts to follow or talk to it. It can run more parallel workers than a laptop; when something must run on your machine, it spins up a **local** agent. Closing the laptop does not stop the Project computer. A coordinator can **switch a worker’s model** on the next turn when it messages that worker.
 - **Shared context** is a Project-owned file set (research, artifacts, how to test, how you prefer work). Agents append what they learn so later workers skip re-onboarding. Treat it as durable memory: untrusted Slack/PR text can poison it (`agent-memory-poisoning`).
 - **Subscriptions**: ask the coordinator to watch a Slack channel, run on a schedule, or follow PRs (open, CI, merge). After the first one, a **Listening** pill lists events (channel message, PR activity, CI on a branch, daily cron). Remove a subscription from that list. Same event-family as cloud-agent subscriptions, but scoped to the Project.
 - Best for work that outlives one chat (multi-PR features, migrations, jobs while you are away). Still review PRs; do not treat the coordinator as a merge gate. Cloud MCP / secrets / network follow Cloud Agent rules (`cursor-cloud-mcp-http-vs-stdio`, `cursor-cloud-secrets-network`).
 
 ## Sources
 
-- [Projects (Cursor docs)](https://cursor.com/docs/agent/projects) — accessed 2026-09-28
-- [Introducing Projects](https://cursor.com/blog/projects) — accessed 2026-09-28
-- [Cursor changelog](https://cursor.com/changelog) — accessed 2026-09-28
+- [Projects (Cursor docs)](https://cursor.com/docs/agent/projects) — accessed 2026-10-09
+- [Introducing Projects](https://cursor.com/blog/projects) — accessed 2026-10-09
+- [Cloud Agents release notes](https://cursor.com/docs/release-notes/cloud-agents) — accessed 2026-10-09
+- [Cursor changelog](https://cursor.com/changelog) — accessed 2026-10-09
 - [Cloud Agents](https://cursor.com/docs/cloud-agent) — accessed 2026-09-13
 - [Cloud Agent capabilities](https://cursor.com/docs/cloud-agent/capabilities) — accessed 2026-09-13
