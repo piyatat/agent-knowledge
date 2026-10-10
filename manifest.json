@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2201,13 +2201,14 @@
         "tokens"
       ],
       "status": "active",
-      "updated": "2026-08-26",
-      "when_to_use": "Deciding whether to @-attach files, diffs, terminals, or chats versus letting Agent search",
+      "updated": "2026-10-10",
+      "when_to_use": "Deciding whether to @-attach files, diffs, terminals, or chats, or to # a pull request",
       "related": [
         "cursor-ignore-files",
         "cursor-agent-modes",
         "context-compaction",
-        "cursor-slash-commands"
+        "cursor-slash-commands",
+        "cursor-remote-file-attach"
       ]
     },
     {
@@ -3638,13 +3639,15 @@
         "isolation"
       ],
       "status": "active",
-      "updated": "2026-09-04",
+      "updated": "2026-10-10",
       "when_to_use": "Authoring .claude/agents markdown, choosing Explore/Plan vs custom, or setting isolation: worktree",
       "related": [
         "cursor-custom-subagents",
         "claude-code-worktrees",
         "subagent-context-isolation",
-        "claude-code-hooks"
+        "claude-code-hooks",
+        "claude-code-context-window",
+        "claude-code-effort"
       ]
     },
     {
@@ -4008,7 +4011,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-09",
+      "updated": "2026-10-10",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -5666,7 +5669,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-08",
+      "updated": "2026-10-10",
       "when_to_use": "Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local sandboxing, or VS Code Agent Host MXC",
       "related": [
         "github-copilot-cli",
@@ -6521,7 +6524,7 @@
         "interoperability"
       ],
       "status": "active",
-      "updated": "2026-09-28",
+      "updated": "2026-10-10",
       "when_to_use": "Choosing a VS Code Session Target, or handing a Local chat to Copilot/Claude/Codex/Cloud",
       "related": [
         "github-copilot-ide-agent",
@@ -6531,7 +6534,8 @@
         "claude-code-vscode",
         "vscode-agent-sandboxing",
         "vscode-agent-automations",
-        "vscode-mcp"
+        "vscode-mcp",
+        "vscode-agent-worktree-cleanup"
       ]
     },
     {
@@ -6545,7 +6549,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-26",
+      "updated": "2026-10-10",
       "when_to_use": "Opening a Copilot CLI, Copilot app, Claude Code, or Codex session inside VS Code, or managing a large Agents-window session list",
       "related": [
         "vscode-agent-harnesses",
@@ -6553,7 +6557,9 @@
         "github-copilot-cli",
         "claude-code-cross-session",
         "github-copilot-ide-agent",
-        "vscode-agent-automations"
+        "vscode-agent-automations",
+        "vscode-agent-worktree-cleanup",
+        "openai-codex-ide"
       ]
     },
     {
@@ -8047,7 +8053,7 @@
         "context"
       ],
       "status": "active",
-      "updated": "2026-10-05",
+      "updated": "2026-10-10",
       "when_to_use": "Opening a /side or /btw tangent without interrupting the main Cursor agent thread",
       "related": [
         "cursor-agents-window",
@@ -8055,7 +8061,9 @@
         "cursor-at-mentions",
         "cursor-message-queue",
         "cursor-cli-headless",
-        "skills-invocation-modes"
+        "skills-invocation-modes",
+        "cursor-cloud-always-on",
+        "cursor-projects"
       ]
     },
     {
@@ -8131,7 +8139,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-06",
+      "updated": "2026-10-10",
       "when_to_use": "Choosing Auto-review vs Allowlist vs Run Everything, or restricting local agent reads to the workspace",
       "related": [
         "cursor-sandbox-json",
@@ -8140,7 +8148,8 @@
         "cursor-cli-headless",
         "permission-modes-allow-ask-deny",
         "agent-guardrails-vs-approvals",
-        "vscode-agent-sandboxing"
+        "vscode-agent-sandboxing",
+        "mcp-tool-annotations"
       ]
     },
     {
@@ -8208,6 +8217,48 @@
         "github-copilot-jetbrains",
         "github-copilot-sandbox",
         "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "vscode-agent-worktree-cleanup",
+      "path": "practices/vscode-agent-worktree-cleanup.md",
+      "title": "VS Code worktree cleanup \u2014 reclaim inactive agent checkouts",
+      "tags": [
+        "vscode",
+        "git",
+        "session",
+        "isolation"
+      ],
+      "status": "active",
+      "updated": "2026-10-10",
+      "when_to_use": "Reclaiming disk from VS Code agent-session worktrees, or configuring auto-cleanup after merged PRs",
+      "related": [
+        "vscode-external-sessions",
+        "vscode-agent-harnesses",
+        "vscode-agent-sandboxing",
+        "cursor-worktrees",
+        "github-copilot-sandbox"
+      ]
+    },
+    {
+      "id": "cursor-remote-file-attach",
+      "path": "practices/cursor-remote-file-attach.md",
+      "title": "Cursor remote file attach \u2014 uploads folder vs cloud folder drop",
+      "tags": [
+        "cursor",
+        "context",
+        "cloud",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-10-10",
+      "when_to_use": "Dropping local files into an SSH/WSL/dev-container or Cloud Agent prompt without polluting the workspace",
+      "related": [
+        "cursor-at-mentions",
+        "cursor-cloud-pr-artifacts",
+        "cursor-cloud-always-on",
+        "prompt-injection-agent-defense",
+        "cursor-cloud-secrets-network"
       ]
     }
   ]

@@ -1549,4 +1549,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Customize Cursor | https://cursor.com/docs/customize-cursor |
 | Cursor IDE release notes | https://cursor.com/docs/release-notes/ide |
 
+## Daily ingest 2026-10-10 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Visual Studio Code 1.141 | https://code.visualstudio.com/updates/v1_141 |
+| Manage agent sessions in VS Code | https://code.visualstudio.com/docs/agents/run/sessions/manage-sessions |
+| GitHub Copilot weekly releases — October 5 | https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5/ |
+| Agents Window release notes | https://cursor.com/docs/release-notes/agents-window |
+| Release notes (all products) | https://cursor.com/docs/release-notes |
+| Cloud Agents API | https://cursor.com/docs/cloud-agent/api/endpoints |
+| Secrets & Network | https://cursor.com/docs/cloud-agent/network-access |
+| Create custom subagents | https://code.claude.com/docs/en/sub-agents |
+| CHANGELOG.md (Claude Code) | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| copilot-cli 1.0.96-0 | https://github.com/github/copilot-cli/releases/tag/v1.0.96-0 |
+| copilot-cli 1.0.96-1 | https://github.com/github/copilot-cli/releases/tag/v1.0.96-1 |
+| copilot-cli 1.0.96-2 | https://github.com/github/copilot-cli/releases/tag/v1.0.96-2 |
+| Configuring local sandbox settings | https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings |
+| Prompting agents | https://cursor.com/docs/agent/prompting |
+| Cursor IDE release notes | https://cursor.com/docs/release-notes/ide |
+| Choose and use an agent harness | https://code.visualstudio.com/docs/agents/run/agent-harnesses |
+| Understand agent sessions and handoff | https://code.visualstudio.com/docs/agents/concepts/sessions |
+| VS Code Agent Host architecture | https://code.visualstudio.com/docs/agents/concepts/agent-host |
+
 
