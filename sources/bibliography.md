@@ -1573,4 +1573,24 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Understand agent sessions and handoff | https://code.visualstudio.com/docs/agents/concepts/sessions |
 | VS Code Agent Host architecture | https://code.visualstudio.com/docs/agents/concepts/agent-host |
 
+## Daily ingest 2026-10-11 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Compliance and Monitoring | https://cursor.com/docs/enterprise/compliance-and-monitoring |
+| Organization API | https://cursor.com/docs/account/organizations/organization-admin-api |
+| Admin API | https://cursor.com/docs/account/teams/admin-api |
+| Deployment Patterns | https://cursor.com/docs/enterprise/deployment-patterns |
+| Cursor IDE release notes | https://cursor.com/docs/release-notes/ide |
+| permissions.json reference | https://cursor.com/docs/reference/permissions |
+| Cursor Hooks | https://cursor.com/docs/hooks |
+| Cursor MCP | https://cursor.com/docs/mcp |
+| Bugbot docs | https://cursor.com/docs/bugbot |
+| Cursor web release notes | https://cursor.com/docs/release-notes/web |
+| PR Routing & Approval | https://cursor.com/docs/approval-agents |
+| Security Agents | https://cursor.com/docs/security-agents |
+| Cloud Environment Setup | https://cursor.com/docs/cloud-agent/setup |
+| Plugins (Antigravity) | https://antigravity.google/docs/plugins |
+| Radar brief — 2026-10-10 | https://www.devagentradar.com/insights/radar-brief-2026-10-10 |
+
 

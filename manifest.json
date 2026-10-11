@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1228,7 +1228,7 @@
         "durability"
       ],
       "status": "active",
-      "updated": "2026-10-05",
+      "updated": "2026-10-11",
       "when_to_use": "Designing always-on Cursor cloud agents that wake on PRs/Slack/cron or hold a long-lived objective",
       "related": [
         "subagent-context-isolation",
@@ -1243,7 +1243,8 @@
         "cursor-cloud-pr-artifacts",
         "cursor-ios",
         "cursor-skills-cloud-sync",
-        "cursor-message-queue"
+        "cursor-message-queue",
+        "cursor-environment-json"
       ]
     },
     {
@@ -1377,7 +1378,7 @@
         "evals"
       ],
       "status": "active",
-      "updated": "2026-09-24",
+      "updated": "2026-10-11",
       "when_to_use": "Wiring Cursor\u2019s PR review agent (comments, checks, /review, Autofix) without treating it as a merge gate by default",
       "related": [
         "cursor-automations",
@@ -1388,7 +1389,8 @@
         "cursor-azure-devops",
         "cursor-gitlab-cloud-agents",
         "cursor-bitbucket-cloud-agents",
-        "cursor-agent-review"
+        "cursor-agent-review",
+        "cursor-origin"
       ]
     },
     {
@@ -1951,14 +1953,15 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-08-25",
+      "updated": "2026-10-11",
       "when_to_use": "Defining .cursor/hooks.json (or ~/.cursor/hooks.json) so scripts can deny tools, format after edits, or audit cloud agent turns",
       "related": [
         "memory-files-vs-enforcement-hooks",
         "permission-modes-allow-ask-deny",
         "cursor-plugins",
         "cursor-custom-subagents",
-        "cursor-self-hosted-pools"
+        "cursor-self-hosted-pools",
+        "cursor-organization-audit-logs"
       ]
     },
     {
@@ -2158,7 +2161,7 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-08-26",
+      "updated": "2026-10-11",
       "when_to_use": "Adding or debugging .cursor/mcp.json / ~/.cursor/mcp.json (stdio, HTTP/SSE, interpolation, static OAuth)",
       "related": [
         "cursor-cloud-mcp-http-vs-stdio",
@@ -2428,7 +2431,8 @@
         "cursor-cloud-always-on",
         "cursor-self-hosted-agents",
         "cursor-ignore-files",
-        "cursor-cloud-secrets-network"
+        "cursor-cloud-secrets-network",
+        "cursor-enterprise-mdm"
       ]
     },
     {
@@ -2590,13 +2594,14 @@
         "ci"
       ],
       "status": "active",
-      "updated": "2026-08-28",
+      "updated": "2026-10-11",
       "when_to_use": "Authoring .cursor/environment.json, choosing snapshot vs Dockerfile, or splitting install from per-run services",
       "related": [
         "cursor-environment-builds",
         "cursor-cloud-secrets-network",
         "cursor-cloud-always-on",
-        "cursor-self-hosted-agents"
+        "cursor-self-hosted-agents",
+        "cursor-origin"
       ]
     },
     {
@@ -2775,14 +2780,16 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-09-24",
+      "updated": "2026-10-11",
       "when_to_use": "Wiring Cursor-managed security review on PRs or a scheduled codebase scan (not Bugbot quality review)",
       "related": [
         "cursor-bugbot-review",
         "cursor-pr-routing-approval",
         "cursor-automations",
         "human-in-the-loop-approvals",
-        "cursor-rollouts"
+        "cursor-rollouts",
+        "cursor-origin",
+        "cursor-gitlab-cloud-agents"
       ]
     },
     {
@@ -2796,13 +2803,14 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-08-29",
+      "updated": "2026-10-11",
       "when_to_use": "Auto-assigning PR reviewers or auto-approving low-risk changes without treating the agent as a full code review",
       "related": [
         "cursor-bugbot-review",
         "cursor-security-agents",
         "cursor-automations",
-        "human-in-the-loop-approvals"
+        "human-in-the-loop-approvals",
+        "cursor-origin"
       ]
     },
     {
@@ -3247,7 +3255,8 @@
         "cursor-hooks-json",
         "cursor-mcp-json",
         "cursor-run-modes",
-        "cursor-cli-headless"
+        "cursor-cli-headless",
+        "cursor-enterprise-mdm"
       ]
     },
     {
@@ -6405,7 +6414,8 @@
         "gemini-cli-telemetry",
         "agent-observability-otel",
         "telemetry-redaction-genai",
-        "cursor-grok-bot"
+        "cursor-grok-bot",
+        "cursor-organization-audit-logs"
       ]
     },
     {
@@ -7316,22 +7326,25 @@
     {
       "id": "antigravity-cli",
       "path": "practices/antigravity-cli.md",
-      "title": "Google Antigravity \u2014 AGENTS.md, skills, MCP",
+      "title": "Google Antigravity \u2014 AGENTS.md, skills, MCP, plugins",
       "tags": [
         "antigravity",
         "gemini",
         "cli",
-        "mcp"
+        "mcp",
+        "plugins"
       ],
       "status": "active",
-      "updated": "2026-09-25",
-      "when_to_use": "Configuring Antigravity (2.0 / CLI / IDE) rules, skills, or MCP instead of Gemini CLI settings.json",
+      "updated": "2026-10-11",
+      "when_to_use": "Configuring Antigravity (2.0 / CLI / IDE) rules, skills, MCP, or plugins instead of Gemini CLI settings.json",
       "related": [
         "gemini-cli-gemini-md",
         "gemini-cli-mcp",
         "gemini-cli-skills",
         "agents-md-open-format",
-        "google-jules"
+        "google-jules",
+        "agent-skills-open-standard",
+        "malicious-skills-supply-chain"
       ]
     },
     {
@@ -8259,6 +8272,47 @@
         "cursor-cloud-always-on",
         "prompt-injection-agent-defense",
         "cursor-cloud-secrets-network"
+      ]
+    },
+    {
+      "id": "cursor-organization-audit-logs",
+      "path": "practices/cursor-organization-audit-logs.md",
+      "title": "Cursor audit logs \u2014 team vs organization Admin API",
+      "tags": [
+        "cursor",
+        "audit",
+        "api",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-10-11",
+      "when_to_use": "Pulling Cursor Enterprise audit events, choosing team vs organization keys, or deciding what hooks/OTel must cover instead",
+      "related": [
+        "cursor-otel-export",
+        "cursor-service-accounts",
+        "cursor-privacy-mode",
+        "cursor-cloud-agents-api",
+        "cursor-hooks-json"
+      ]
+    },
+    {
+      "id": "cursor-enterprise-mdm",
+      "path": "practices/cursor-enterprise-mdm.md",
+      "title": "Cursor MDM policies \u2014 AllowedTeamId, WorkspaceTrust, remote Agent",
+      "tags": [
+        "cursor",
+        "governance",
+        "security",
+        "permissions"
+      ],
+      "status": "active",
+      "updated": "2026-10-11",
+      "when_to_use": "Deploying Cursor via Jamf/Intune/GPO, writing ~/.cursor/policy.json, or restricting Agent to approved remote workspaces",
+      "related": [
+        "cursor-permissions-json",
+        "cursor-privacy-mode",
+        "cursor-enterprise-mcp-policy",
+        "cursor-run-modes"
       ]
     }
   ]

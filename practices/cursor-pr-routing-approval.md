@@ -3,13 +3,13 @@ id: cursor-pr-routing-approval
 title: Cursor PR Routing & Approval — reviewers and low-risk auto-approve
 tags: [cursor, review, approvals, automations]
 status: active
-updated: 2026-08-29
+updated: 2026-10-11
 when_to_use: Auto-assigning PR reviewers or auto-approving low-risk changes without treating the agent as a full code review
 ---
 
 ## Summary
 
-**PR Routing & Approval** is a Cursor-managed Automation: it can request reviewers (ownership + commit history) and/or approve PRs that meet your criteria. It is a **router/gate**, not a substitute for review. Enable at least one primary action — Request Reviewers or Approve PR.
+**PR Routing & Approval** is a Cursor-managed Automation: it can request reviewers (ownership + commit history) and/or approve PRs that meet your criteria. It is a **router/gate**, not a substitute for review. Enable at least one primary action — Request Reviewers or Approve PR. Docs now limit repo scope to **GitHub and Origin** — remove GitLab / Bitbucket / Azure DevOps repos before save.
 
 ## Notes
 
@@ -17,11 +17,13 @@ when_to_use: Auto-assigning PR reviewers or auto-approving low-risk changes with
 - Repo policy files: for each changed path, walk the directory and ancestors for the **exact** basename `APPROVAL_POLICY.md`. `POLICY.md`, `approval_policy.md`, and `APPROVAL_POLICY.md.bak` are ignored. Closest file wins; ancestors still apply unless they conflict. Conflicts → most specific, then stricter, then no auto-approve.
 - Optional `.cursor/approval-policies/ROUTING.md` (YAML list of `product` / `boundary` / `policies`). Missing routing does **not** disable directory discovery.
 - If the PR itself changes `APPROVAL_POLICY.md`, `ROUTING.md`, or a routed policy, the agent uses the **base-branch** text (or requires a human). A PR cannot relax its own review bar.
-- Applicable policy prompts override generic criteria, risk thresholds, custom prompt, and default posture. Team members can view the automation; only admins edit it.
-- Triggers: PR opened, PR pushed/updated, PR commented (regex). Optional Slack/Teams/MCP. Do not enable Approve PR until routing-only behavior looks right.
+- Applicable policy prompts override generic criteria, risk thresholds, custom prompt, and default posture. Team plans: every member can create/edit. Enterprise: only admins edit; others can view.
+- Triggers: PR opened, PR pushed/updated, PR commented (regex). Web release notes (week of 2026-09-28): Approver Agents label-change triggers can fire on **added**, **removed**, or either, optionally limited to one label name — those settings now persist on edit. On cursor.com, automation actions use the **selected** team. If reviewer assignment is off or fails, the review says human review is needed instead of claiming reviewers were assigned.
+- Optional Slack/Teams/MCP. Do not enable Approve PR until routing-only behavior looks right.
 
 ## Sources
 
-- [PR Routing & Approval](https://cursor.com/docs/approval-agents) — accessed 2026-08-29
-- [Security Agents](https://cursor.com/docs/security-agents) — accessed 2026-08-29
+- [PR Routing & Approval](https://cursor.com/docs/approval-agents) — accessed 2026-10-11
+- [Cursor web release notes](https://cursor.com/docs/release-notes/web) — accessed 2026-10-11
+- [Security Agents](https://cursor.com/docs/security-agents) — accessed 2026-10-11
 - [Automations (help)](https://cursor.com/help/ai-features/automations) — accessed 2026-08-29
