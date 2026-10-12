@@ -1594,3 +1594,54 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Radar brief — 2026-10-10 | https://www.devagentradar.com/insights/radar-brief-2026-10-10 |
 
 
+
+## Daily ingest 2026-10-12 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Local Server Security | https://modelcontextprotocol.io/docs/draft/tutorials/security/local-server-security |
+| MCP Inspector security | https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/security |
+| MCP stdio (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/stdio |
+| OpenAI Daybreak — Trusted Access for Cyber Overview | https://help.openai.com/en/articles/20001258-openai-daybreak-trusted-access-for-cyber-overview |
+| Set up Daybreak access for your team | https://help.openai.com/en/articles/20001531-openai-daybreak-set-up-access-for-your-team |
+| Enterprise Daybreak onboarding | https://help.openai.com/en/articles/20001261-enterprise-daybreak-onboarding |
+| Use Daybreak in the Responses API | https://developers.openai.com/api/docs/guides/daybreak |
+| Daybreak troubleshooting | https://help.openai.com/en/articles/20001259-openai-daybreak-common-issues-and-troubleshooting |
+| Codex 0.161.0 | https://github.com/openai/codex/releases/tag/rust-v0.161.0 |
+| Codex 0.162.0 | https://github.com/openai/codex/releases/tag/rust-v0.162.0 |
+| SEP-2127: MCP Server Cards | https://modelcontextprotocol.io/seps/2127-mcp-server-cards |
+| SEP index | https://modelcontextprotocol.io/seps |
+| experimental-ext-server-card | https://github.com/modelcontextprotocol/experimental-ext-server-card |
+| MCP Protocol News — October 9, 2026 | https://library.mikesailab.com/news/ai-news/mcp-news/october-2026/2026-10-09/ |
+| Skills overview (MCP) | https://modelcontextprotocol.io/extensions/skills/overview |
+| Skills methods (stable) | https://skills.extensions.modelcontextprotocol.io/specification/stable/skills |
+| Skills — MCP Python SDK | https://py.sdk.modelcontextprotocol.io/advanced/skills/ |
+| modelcontextprotocol/ext-skills | https://github.com/modelcontextprotocol/ext-skills |
+| SEP-2640 Skills Extension | https://modelcontextprotocol.io/seps/2640-skills-extension |
+| About hooks for GitHub Copilot | https://docs.github.com/en/copilot/concepts/agents/hooks |
+| GitHub Copilot hooks reference | https://docs.github.com/en/copilot/reference/hooks-reference |
+| Hooks configuration | https://docs.github.com/en/copilot/reference/hooks-configuration |
+| Using hooks with Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/use-hooks |
+| copilot-cli 1.0.96 | https://github.com/github/copilot-cli/releases/tag/v1.0.96 |
+| Agent Skills – Codex | https://developers.openai.com/codex/skills |
+| Build skills | https://developers.openai.com/codex/build-skills |
+| Customization – Codex | https://developers.openai.com/codex/concepts/customization |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+| Agent Skills specification | https://agentskills.io/specification |
+| Cursor CLI MCP | https://cursor.com/docs/cli/mcp |
+| Using Agent in CLI | https://cursor.com/docs/cli/using |
+| CLI slash commands | https://cursor.com/docs/cli/reference/slash-commands |
+| CLI Changelog | https://cursor.com/docs/cli/changelog |
+| Command line options – Codex CLI | https://developers.openai.com/codex/cli/reference |
+| Codex GitHub Action | https://developers.openai.com/codex/github-action.md |
+| Slash commands in Codex CLI | https://developers.openai.com/codex/cli/slash-commands |
+| Customize Cursor | https://cursor.com/docs/customize-cursor |
+| Cursor IDE release notes | https://cursor.com/docs/release-notes/ide |
+| Plugins | https://cursor.com/docs/plugins |
+| Agent Skills | https://cursor.com/docs/skills |
+| Cursor MCP | https://cursor.com/docs/mcp |
+| Custom agents configuration | https://docs.github.com/en/copilot/reference/custom-agents-configuration |
+| Creating custom agents in your IDE | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-custom-agents-in-your-ide |
+| Creating and using custom agents for GitHub Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/create-custom-agents-for-cli |
+| Creating custom agents for Copilot cloud agent | https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents |
+| Invoking custom agents | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/invoke-custom-agents |

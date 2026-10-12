@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1283,7 +1283,8 @@
       "related": [
         "mcp-oauth-scopes",
         "prompt-injection-agent-defense",
-        "mcp-registry-admission"
+        "mcp-registry-admission",
+        "mcp-local-server-security"
       ]
     },
     {
@@ -2232,7 +2233,8 @@
         "cursor-cloud-mcp-http-vs-stdio",
         "mcp-server-discover",
         "mcp-deprecated-roots-sampling",
-        "mcp-jsonrpc-errors"
+        "mcp-jsonrpc-errors",
+        "mcp-local-server-security"
       ]
     },
     {
@@ -2548,16 +2550,17 @@
         "resources",
         "extensions"
       ],
-      "status": "draft",
-      "updated": "2026-10-03",
-      "when_to_use": "Serving or consuming Agent Skills over MCP (skills/list, skill://) \u2014 SEP-2640 is Final; official SDK PRs are still open",
+      "status": "active",
+      "updated": "2026-10-12",
+      "when_to_use": "Serving or consuming Agent Skills over MCP (skills/list, skill://) \u2014 SEP-2640 is Final; Python SDK ships Skills",
       "related": [
         "agent-skills-open-standard",
         "mcp-resources-vs-tools",
         "malicious-skills-supply-chain",
         "skills-dispatch-hygiene",
         "unicode-instruction-injection",
-        "agent-skills-directories"
+        "agent-skills-directories",
+        "mcp-local-server-security"
       ]
     },
     {
@@ -2881,7 +2884,7 @@
     {
       "id": "mcp-server-cards",
       "path": "practices/mcp-server-cards.md",
-      "title": "MCP Server Cards \u2014 discovery without connecting (SEP-2127 draft)",
+      "title": "MCP Server Cards \u2014 HTTP discovery without connecting (SEP-2127)",
       "tags": [
         "mcp",
         "discovery",
@@ -2889,13 +2892,15 @@
         "extensions"
       ],
       "status": "draft",
-      "updated": "2026-08-29",
-      "when_to_use": "Planning well-known MCP server metadata / \u201cbusiness cards\u201d \u2014 not a shipped 2026-07-28 feature",
+      "updated": "2026-10-12",
+      "when_to_use": "Publishing or fetching a static MCP Server Card before opening a transport \u2014 SEP-2127 is Final; SDKs are still experimental",
       "related": [
         "mcp-2026-roadmap",
         "mcp-registry-admission",
         "a2a-agent-card-discovery",
-        "mcp-extensions-framework"
+        "mcp-extensions-framework",
+        "mcp-server-discover",
+        "mcp-authorization-discovery"
       ]
     },
     {
@@ -3995,8 +4000,8 @@
         "mcp"
       ],
       "status": "active",
-      "updated": "2026-09-29",
-      "when_to_use": "Authoring Copilot .agent.md profiles for CLI, cloud agent, or IDE chat, or scoping tools/MCP per persona",
+      "updated": "2026-10-12",
+      "when_to_use": "Authoring Copilot .agent.md profiles for CLI, cloud agent, or IDE chat, or scoping tools/MCP/hooks per persona",
       "related": [
         "github-copilot-coding-agent",
         "github-copilot-cli",
@@ -4006,7 +4011,8 @@
         "github-copilot-mcp",
         "github-copilot-xcode-eclipse",
         "github-copilot-visual-studio",
-        "github-copilot-ide-agent"
+        "github-copilot-ide-agent",
+        "github-copilot-hooks"
       ]
     },
     {
@@ -4323,15 +4329,16 @@
         "tokens"
       ],
       "status": "active",
-      "updated": "2026-09-07",
-      "when_to_use": "Authoring or installing SKILL.md for Codex, or contrasting Codex skills with plugins",
+      "updated": "2026-10-12",
+      "when_to_use": "Authoring or installing SKILL.md for Codex, budgeting the skills list, or contrasting Codex skills with plugins",
       "related": [
         "openai-codex-plugins",
         "openai-codex-agents-md",
         "agent-skills-open-standard",
         "claude-code-skills",
         "github-copilot-skills",
-        "openai-codex-record-replay"
+        "openai-codex-record-replay",
+        "mcp-skills-extension"
       ]
     },
     {
@@ -4875,15 +4882,16 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-09-10",
-      "when_to_use": "Authoring .github/hooks JSON or ~/.copilot/hooks for Copilot CLI / cloud agent, or contrasting with Claude/Cursor/Codex hooks",
+      "updated": "2026-10-12",
+      "when_to_use": "Authoring .github/hooks JSON or ~/.copilot/hooks for Copilot CLI / cloud agent, including subagentStart matchers",
       "related": [
         "github-copilot-cli",
         "github-copilot-coding-agent",
         "github-copilot-plugins",
         "claude-code-hooks",
         "cursor-hooks-json",
-        "openai-codex-hooks"
+        "openai-codex-hooks",
+        "github-copilot-custom-agents"
       ]
     },
     {
@@ -4941,14 +4949,15 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-09-10",
+      "updated": "2026-10-12",
       "when_to_use": "Enabling, logging into, or listing MCP servers from the Cursor CLI (agent mcp / /mcp), vs editing mcp.json",
       "related": [
         "cursor-mcp-json",
         "cursor-cli-headless",
         "cursor-cloud-mcp-http-vs-stdio",
         "cursor-acp-extensions",
-        "mcp-oauth-scopes"
+        "mcp-oauth-scopes",
+        "cursor-customize"
       ]
     },
     {
@@ -5305,14 +5314,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-12",
-      "when_to_use": "Scripting Codex with codex exec / codex e, or resuming a headless exec session",
+      "updated": "2026-10-12",
+      "when_to_use": "Scripting Codex with codex exec / codex e, picking a cyber access program, or resuming a headless exec session",
       "related": [
         "openai-codex-github-action",
         "openai-codex-sessions",
         "claude-code-headless",
         "cursor-cli-headless",
-        "openai-codex-sandbox"
+        "openai-codex-sandbox",
+        "openai-codex-daybreak"
       ]
     },
     {
@@ -5505,7 +5515,8 @@
         "human-in-the-loop-approvals",
         "agent-guardrails-vs-approvals",
         "openai-codex-sessions",
-        "openai-codex-granular-approvals"
+        "openai-codex-granular-approvals",
+        "openai-codex-daybreak"
       ]
     },
     {
@@ -8042,7 +8053,7 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-10-05",
+      "updated": "2026-10-12",
       "when_to_use": "Installing or scoping plugins, skills, MCP, rules, subagents, commands, or hooks from the Customize sidebar",
       "related": [
         "cursor-plugins",
@@ -8313,6 +8324,51 @@
         "cursor-privacy-mode",
         "cursor-enterprise-mcp-policy",
         "cursor-run-modes"
+      ]
+    },
+    {
+      "id": "mcp-local-server-security",
+      "path": "practices/mcp-local-server-security.md",
+      "title": "MCP local server security \u2014 stdio is not a sandbox",
+      "tags": [
+        "mcp",
+        "security",
+        "stdio",
+        "sandbox"
+      ],
+      "status": "draft",
+      "updated": "2026-10-12",
+      "when_to_use": "Installing or reviewing a local stdio MCP server, or writing fleet policy for laptop-side MCP",
+      "related": [
+        "mcp-stdio-transport",
+        "mcp-server-trust-failures",
+        "mcp-localhost-dns-rebinding",
+        "mcp-registry-admission",
+        "vscode-mcp",
+        "cursor-mcp-json",
+        "malicious-skills-supply-chain",
+        "tool-description-hygiene"
+      ]
+    },
+    {
+      "id": "openai-codex-daybreak",
+      "path": "practices/openai-codex-daybreak.md",
+      "title": "Codex Daybreak \u2014 Trusted Access for Cyber",
+      "tags": [
+        "openai",
+        "security",
+        "cli",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-10-12",
+      "when_to_use": "Enabling Daybreak Blue/Red in Codex or the Responses API, or choosing access_programs.cyber vs standard refusals",
+      "related": [
+        "openai-codex-exec",
+        "openai-codex-auto-review",
+        "openai-codex-sandbox",
+        "openai-codex-permissions",
+        "openai-codex-security"
       ]
     }
   ]
