@@ -3,7 +3,7 @@ id: claude-code-context-window
 title: Claude Code context window — /compact, /context, /autocompact
 tags: [claude, context, tokens, compaction]
 status: active
-updated: 2026-10-03
+updated: 2026-10-13
 when_to_use: Managing Claude Code context with /compact or /context, or selecting a 1M window vs 200K
 ---
 
@@ -16,11 +16,13 @@ Claude Code’s **context window** is the session’s working memory: startup fi
 - Before you type: project-root `CLAUDE.md` / `AGENTS.md`, auto memory, MCP tool names, and skill descriptions load. Path-scoped rules and nested `CLAUDE.md` enter history only when a matching file is read. A subagent’s large reads stay in **its** window; you get a summary plus a small trailer (`claude-code-subagents`).
 - After compaction (v2.1.198+ summarizer inherits session thinking): system prompt and output style stay; project-root `CLAUDE.md`, unscoped rules, auto memory, and the plan-mode plan re-inject from disk. Invoked skill bodies re-inject (5k tokens/skill, 25k total; oldest dropped; keep critical lines at the top of `SKILL.md`). Hooks’ earlier output is summarized; `SessionStart` hooks matching source `compact` run again. Claude re-reads up to five recently modified files; >5k tokens come back as a `Referenced file` path.
 - 1M: on the Anthropic API, Fable 5.1/5, Sonnet 5.5/5, and Opus 4.7+ always use 1M (no `[1m]` variant, no extra credits for the window). Opus 4.6 / Sonnet 4.6 still need `opus[1m]` / `sonnet[1m]` and plan/credit rules. Native 1M sessions auto-compact around **967K** (`CLAUDE_CODE_AUTO_COMPACT_WINDOW`). `CLAUDE_CODE_DISABLE_1M_CONTEXT=1` hides `[1m]` rows and treats native-1M models as 200K. Behind `ANTHROPIC_BASE_URL`, Claude Code assumes the Anthropic window and cannot see a gateway’s lower cap — set `CLAUDE_CODE_AUTO_COMPACT_WINDOW=200000` if the proxy rejects >200K. `opusplan[1m]` (v2.1.265+) applies 1M to both plan and execute phases when the aliases are not already native 1M.
-- Act before auto-compact: `/compact focus on the auth bug`; `/rewind` then Summarize from/up to here; `/autocompact 500k`; `/clear` when switching unrelated work. `/context` lists which `CLAUDE.md` / memory files actually loaded.
+- Act before auto-compact: `/compact focus on the auth bug`; `/rewind` then Summarize from/up to here; `/autocompact 500k`; `/clear` when switching unrelated work. `/context` lists which `CLAUDE.md` / memory files actually loaded. v2.1.296: subagent frontmatter / `--agents` `autoCompactWindow` lets a **child** auto-compact earlier than the parent (`claude-code-subagents`). Same release: Read `allow_large` reads a text file past the usual size cap in one call when the window has room — still cheaper to keep those reads on a subagent.
+- 1M availability in current docs also lists **Haiku 5.5** with Fable / Sonnet 5+ / Opus 4.6+ / Sonnet 4.6. Compaction behavior is the same at the larger limit.
 
 ## Sources
 
-- [Explore the context window](https://code.claude.com/docs/en/context-window) — accessed 2026-10-03
+- [Explore the context window](https://code.claude.com/docs/en/context-window) — accessed 2026-10-13
+- [CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-13
 - [Model configuration](https://code.claude.com/docs/en/model-config) — accessed 2026-10-03
 - [Manage sessions](https://code.claude.com/docs/en/sessions) — accessed 2026-09-12
 - [Memory](https://code.claude.com/docs/en/memory) — accessed 2026-09-12

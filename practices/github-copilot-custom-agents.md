@@ -3,7 +3,7 @@ id: github-copilot-custom-agents
 title: GitHub Copilot custom agents — .agent.md profiles
 tags: [github, subagent, orchestration, mcp]
 status: active
-updated: 2026-10-12
+updated: 2026-10-13
 when_to_use: Authoring Copilot .agent.md profiles for CLI, cloud agent, or IDE chat, or scoping tools/MCP/hooks per persona
 ---
 
@@ -18,7 +18,7 @@ A Copilot **custom agent** is a Markdown **agent profile** (`.agent.md`) with YA
 - `tools`: omit or `["*"]` = all; `[]` = none; list aliases (`read`, `edit`, `search`, `execute`/`shell`, `agent`, `web`, `todo`) or `server/tool` / `server/*`. Unrecognized names ignored. Cloud agent: `web`/`todo` N/A; GitHub + Playwright MCP are on by default (repo-scoped / localhost).
 - Profile `mcp-servers`: YAML of the repo MCP JSON. `stdio` maps to cloud `local`. Secrets: Agents secrets/vars via `$VAR`, `${VAR}`, `${VAR:-default}`, or `${{ secrets.NAME }}`. Not used in VS Code/IDE profiles. Processing: out-of-box MCP → profile → repo settings.
 - Invoke: `/agent`, mention in the prompt, or `copilot --agent=name --prompt "…"`. Cloud: agents panel / issue assignee dropdown. Versioning is the profile’s git SHA on the branch at assign time; the PR keeps that SHA. **IDEs** (preview): Chat agents dropdown → Create an agent / Configure Agents… → Add; Xcode **Customize Agent** can set model, tools, and `handoffs`. Feature matrix: custom agents ✓ in VS Code / Visual Studio / Eclipse; **P** in JetBrains and Xcode (`github-copilot-xcode-eclipse`, `github-copilot-visual-studio`).
-- Hooks: `subagentStart` / `subagentStop` fire for user `.agent.md` profiles and for built-ins **except `general-purpose`**. `subagentStart` `matcher` is a regex on the agent name; it can prepend `additionalContext` but **cannot block** spawn (`github-copilot-hooks`). CLI **1.0.96**: skills and custom agents from `--plugin-dir` reach autocomplete and invocation.
+- Hooks: `subagentStart` / `subagentStop` fire for user `.agent.md` profiles and for built-ins **except `general-purpose`**. `subagentStart` `matcher` is a regex on the agent name; it can prepend `additionalContext` but **cannot block** spawn (`github-copilot-hooks`). CLI **1.0.97**: **agent-scoped declarative hooks** on custom agents; discovery walks **more than 100** profiles and **deeply nested** agent files; skills/custom agents from `--plugin-dir` reach autocomplete and invocation.
 
 ## Sources
 
@@ -28,4 +28,5 @@ A Copilot **custom agent** is a Markdown **agent profile** (`.agent.md`) with YA
 - [Creating custom agents for Copilot cloud agent](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents) — accessed 2026-10-12
 - [Invoking custom agents](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/invoke-custom-agents) — accessed 2026-10-12
 - [GitHub Copilot hooks reference](https://docs.github.com/en/copilot/reference/hooks-reference) — accessed 2026-10-12
+- [copilot-cli 1.0.97](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-13
 - [copilot-cli 1.0.96](https://github.com/github/copilot-cli/releases/tag/v1.0.96) — accessed 2026-10-12

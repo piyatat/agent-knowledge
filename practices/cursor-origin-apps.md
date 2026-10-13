@@ -1,29 +1,33 @@
 ---
 id: cursor-origin-apps
-title: Origin apps — Vercel, Depot, Buildkite, and the Origin API
-tags: [cursor, git, ci, hosting]
+title: Origin apps — marketplace, publish, and the Origin API
+tags: [cursor, git, ci, hosting, marketplace]
 status: active
-updated: 2026-09-29
-when_to_use: Connecting preview/CI apps to an Origin repo, or writing an internal Origin API app (JWT + installation tokens)
+updated: 2026-10-13
+when_to_use: Installing an Origin marketplace app, publishing one for review, or calling the Origin API with app JWTs
 ---
 
 ## Summary
 
-Origin **Apps** are installed at the **codebase** (`cursor.com/codebase/settings/apps`), then enabled per repository. Early beta third-party apps: **Vercel** (deploys + PR previews), **Depot** and **Buildkite** (CI on **Origin-hosted** repos only). Internal apps call `https://api.cursor.com/v1/origin` with app JWTs and short-lived installation tokens. Early beta — pin the OpenAPI spec.
+Origin **Apps** live under codebase settings (`cursor.com/codebase/settings/apps`). Install **marketplace** apps there, then enable them per repo. Create a **private** app in your namespace for the Origin API (`https://api.cursor.com/v1/origin`). **2026-10-13:** the marketplace is open to public submissions and lists 20+ partner apps. Early beta — pin the OpenAPI spec.
 
 ## Notes
 
-- Repo Settings → Apps lists what’s on that repo; **Manage Apps** opens codebase settings. Changelog: connect Vercel for PR previews that ship on merge; Depot/Buildkite can run existing GitHub Actions workflows; Buildkite also runs native pipelines. **Depot/Buildkite do not run on GitHub-mirrored repos** — those keep CI on GitHub. Vercel is also the **Publish** target for Start-from-scratch Cloud Agents (`cursor-origin`).
-- Auth: **app JWT** (metadata, installations, mint tokens, webhook recovery) then **installation access token** (`oit_…`, ≤15 min, never past the app JWT) for repo APIs, check runs, and Git HTTPS. **Create Installation User Token** (`…/user_access_tokens`, `namespace:user_tokens:write`) mints a ≤15 min token that acts as a named member (`userId` / `userEmail`); user actors may show `performedVia.app`. Never send the installation **receipt** as Bearer — store `sub` and mint. User CLI is `origin api` (`cursor-origin`).
-- 2026-09 path change: namespace grants and SSH CA endpoints live under `/v1/origin/namespaces/{namespaceSlug}` — `/owners/{ownerSlug}` was **removed**. **Add App Installation Repositories** unions `repoIds` onto an installation (does not change scopes). **Get Pull Request Mergeability** returns `mergeable` / `blocked` plus typed `blockers` (stacked PRs included). `version.potentialMergeCommit.state` is `prepared` | `merge_conflict` | `unknown`.
-- **Inbound IP allowlist** (team namespaces with the feature): `GET/PATCH …/inbound-ip-allowlist` plus entry CRUD. When `enabled` and at least one entry is on, git/API/downloads from **Cursor users** must come from listed CIDRs. App JWTs, installation tokens, installation user tokens, and service accounts are **not** restricted. Writes need a user credential with `namespace:settings:write`; you cannot lock yourself out.
-- Webhooks: verify `webhook-id` / `webhook-timestamp` / `webhook-signature` (`v1ed,`) against JWKS; reject timestamps older than ~300s. New: `repository.check_run.updated` and `repository.check_run.annotations.created`. Check runs may stay `failing` (still pending for required checks) until `completed`. Mirror cutover is `cursor-origin-migrations`.
+- Codebase Apps opens a **Marketplace** plus a **Manage** view. Install screens mark **Verified by Cursor** (listed) vs **Not verified**. A request-to-install can pick all or selected repos (install-link repo preselected); namespace owners / team admins get email on request, approval, and deny. You can cancel a pending request. **Depot / Buildkite / other CI** still run on **Origin-hosted** repos only — GitHub-mirrored repos keep CI on GitHub (`cursor-origin`). Vercel remains the **Publish** target for Start-from-scratch Cloud Agents.
+- Changelog categories (2026-10-13): Deployments (Cloudflare, Netlify, Render, Spacelift, Vercel); CI (Buildkite, CircleCI, CloudBees, Depot, EngFlow, Namespace, RWX); Code review (CodeRabbit, Greptile, Tenki); Security (Artemis, Semgrep, Socket, Upwind); Monitoring (Sentry); Project management (Linear). Listing ≠ runtime allowlist.
+- Visibility: **Private** (namespace only) → **Public** (any Origin team can install from a direct `client_id=app_01…` link; needs ≥1 default scope; **not** listed yet) → **Listed** (Cursor review). Unlist / Private hides the listing; existing installs keep working. Relisting a formerly Listed app that went Private needs a **new** submit. Marketplace install URL: `https://cursor.com/codebase/apps/install?client_id=<APP_ID>&source=app-metadata&returnTo=/codebase/settings/apps` — do **not** add `scope` or `redirect_uri` (those are partner-initiated install). Public listing pages work only after Listed.
+- Submit (namespace admin): 5–10 min demo (no sign-in: unlisted YouTube / public Drive) covering product flows, Origin install/uninstall both directions, personal **and** team, all-repos **and** selected-repos; optional site-started install, new vs existing user, repo link, scope update. Description required; slug optional (immutable once listed); tags optional. Cursor reviews every submission.
+- Auth: **app JWT** then **installation access token** (`oit_…`, ≤15 min). **Create Installation User Token** acts as a named member (`userId` / `userEmail`); actors may show `performedVia.app`. Never send the installation **receipt** as Bearer. User CLI is `origin api` (`cursor-origin`). Inbound IP allowlists apply to **people**, not apps/service accounts/agents (up to 1,000 CIDRs). Webhooks: `webhook-id` / `webhook-timestamp` / `webhook-signature` (`v1ed,`); reject stale timestamps. Mirror cutover is `cursor-origin-migrations`.
 
 ## Sources
 
+- [Origin Apps](https://cursor.com/docs/origin/apps) — accessed 2026-10-13
+- [Publish to the App Marketplace](https://cursor.com/docs/origin/apps/publish) — accessed 2026-10-13
+- [Origin App Marketplace (changelog)](https://cursor.com/changelog) — accessed 2026-10-13
+- [Origin release notes](https://cursor.com/docs/release-notes/origin) — accessed 2026-10-13
 - [Origin API](https://cursor.com/docs/origin/api) — accessed 2026-09-29
 - [Origin API changelog](https://cursor.com/docs/api/origin/changelog) — accessed 2026-09-29
 - [Codebase settings](https://cursor.com/docs/origin/codebase-settings) — accessed 2026-09-29
 - [Origin repository settings](https://cursor.com/docs/origin/settings) — accessed 2026-09-02
-- [Origin Code Hosting changelog](https://cursor.com/changelog/origin-code-hosting) — accessed 2026-09-02
+
 

@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2574,7 +2574,7 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-09-29",
+      "updated": "2026-10-13",
       "when_to_use": "Hosting or mirroring repos on Cursor Origin, using the origin CLI, or starting a Cloud Agent without a third-party SCM",
       "related": [
         "cursor-privacy-mode",
@@ -2597,7 +2597,7 @@
         "ci"
       ],
       "status": "active",
-      "updated": "2026-10-11",
+      "updated": "2026-10-13",
       "when_to_use": "Authoring .cursor/environment.json, choosing snapshot vs Dockerfile, or splitting install from per-run services",
       "related": [
         "cursor-environment-builds",
@@ -3399,13 +3399,14 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-07",
+      "updated": "2026-10-13",
       "when_to_use": "Routing Cloud Agents to a named self-hosted worker fleet, scaling to zero, or keeping workspace state across idle follow-ups",
       "related": [
         "cursor-self-hosted-agents",
         "cursor-self-hosted-integrations",
         "cursor-self-hosted-computer-use",
-        "cursor-cloud-always-on"
+        "cursor-cloud-always-on",
+        "cursor-projects"
       ]
     },
     {
@@ -3451,16 +3452,17 @@
     {
       "id": "cursor-origin-apps",
       "path": "practices/cursor-origin-apps.md",
-      "title": "Origin apps \u2014 Vercel, Depot, Buildkite, and the Origin API",
+      "title": "Origin apps \u2014 marketplace, publish, and the Origin API",
       "tags": [
         "cursor",
         "git",
         "ci",
-        "hosting"
+        "hosting",
+        "marketplace"
       ],
       "status": "active",
-      "updated": "2026-09-29",
-      "when_to_use": "Connecting preview/CI apps to an Origin repo, or writing an internal Origin API app (JWT + installation tokens)",
+      "updated": "2026-10-13",
+      "when_to_use": "Installing an Origin marketplace app, publishing one for review, or calling the Origin API with app JWTs",
       "related": [
         "cursor-origin",
         "cursor-cloud-always-on",
@@ -4000,7 +4002,7 @@
         "mcp"
       ],
       "status": "active",
-      "updated": "2026-10-12",
+      "updated": "2026-10-13",
       "when_to_use": "Authoring Copilot .agent.md profiles for CLI, cloud agent, or IDE chat, or scoping tools/MCP/hooks per persona",
       "related": [
         "github-copilot-coding-agent",
@@ -4050,7 +4052,8 @@
         "github-copilot-cli-local-models",
         "github-copilot-cli-settings",
         "github-copilot-assisted-permissions",
-        "github-copilot-managed-permissions"
+        "github-copilot-managed-permissions",
+        "github-copilot-autopilot"
       ]
     },
     {
@@ -4882,8 +4885,8 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-10-12",
-      "when_to_use": "Authoring .github/hooks JSON or ~/.copilot/hooks for Copilot CLI / cloud agent, including subagentStart matchers",
+      "updated": "2026-10-13",
+      "when_to_use": "Authoring .github/hooks JSON or ~/.copilot/hooks for Copilot CLI / cloud agent, including Autopilot and custom-agent scopes",
       "related": [
         "github-copilot-cli",
         "github-copilot-coding-agent",
@@ -4891,7 +4894,8 @@
         "claude-code-hooks",
         "cursor-hooks-json",
         "openai-codex-hooks",
-        "github-copilot-custom-agents"
+        "github-copilot-custom-agents",
+        "github-copilot-autopilot"
       ]
     },
     {
@@ -4905,7 +4909,7 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-10-02",
+      "updated": "2026-10-13",
       "when_to_use": "Packaging or installing a Copilot plugin (CLI, cloud agent, or Copilot app), or replacing copilot plugins --kind flags",
       "related": [
         "github-copilot-cli",
@@ -5184,7 +5188,7 @@
         "compaction"
       ],
       "status": "active",
-      "updated": "2026-10-03",
+      "updated": "2026-10-13",
       "when_to_use": "Managing Claude Code context with /compact or /context, or selecting a 1M window vs 200K",
       "related": [
         "context-compaction",
@@ -5400,14 +5404,15 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-10-09",
+      "updated": "2026-10-13",
       "when_to_use": "Starting a Cursor Project for a multi-PR feature, migration, or standing \u201cgardening\u201d job instead of a single chat",
       "related": [
         "cursor-cloud-always-on",
         "cursor-automations",
         "cursor-custom-subagents",
         "cursor-agents-window",
-        "agent-memory-poisoning"
+        "agent-memory-poisoning",
+        "cursor-self-hosted-pools"
       ]
     },
     {
@@ -8369,6 +8374,29 @@
         "openai-codex-sandbox",
         "openai-codex-permissions",
         "openai-codex-security"
+      ]
+    },
+    {
+      "id": "github-copilot-autopilot",
+      "path": "practices/github-copilot-autopilot.md",
+      "title": "Copilot CLI Autopilot \u2014 local multi-step vs /delegate",
+      "tags": [
+        "github",
+        "cli",
+        "permissions",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-10-13",
+      "when_to_use": "Switching Copilot CLI into Autopilot, setting --max-autopilot-continues, or choosing Autopilot vs /delegate vs --allow-all",
+      "related": [
+        "github-copilot-cli",
+        "github-copilot-coding-agent",
+        "github-copilot-assisted-permissions",
+        "github-copilot-sandbox",
+        "github-copilot-hooks",
+        "github-copilot-fleet",
+        "github-copilot-cli-settings"
       ]
     }
   ]

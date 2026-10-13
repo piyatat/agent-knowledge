@@ -1645,3 +1645,25 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Creating and using custom agents for GitHub Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/create-custom-agents-for-cli |
 | Creating custom agents for Copilot cloud agent | https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents |
 | Invoking custom agents | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/invoke-custom-agents |
+
+## Daily ingest 2026-10-13 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Allowing GitHub Copilot CLI to work autonomously | https://docs.github.com/en/copilot/concepts/agents/copilot-cli/autopilot |
+| Delegating tasks to Copilot | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/delegate-tasks-to-cca |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| Origin Apps | https://cursor.com/docs/origin/apps |
+| Publish to the App Marketplace | https://cursor.com/docs/origin/apps/publish |
+| Cursor changelog | https://cursor.com/changelog |
+| Origin release notes | https://cursor.com/docs/release-notes/origin |
+| Projects (Cursor docs) | https://cursor.com/docs/agent/projects |
+| Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
+| CLI Changelog | https://cursor.com/docs/cli/changelog |
+| Team Pools | https://cursor.com/docs/cloud-agent/self-hosted/pool |
+| Cloud Environment Setup | https://cursor.com/docs/cloud-agent/setup |
+| Explore the context window | https://code.claude.com/docs/en/context-window |
+| Claude Code CHANGELOG | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
+| GitHub Copilot hooks reference | https://docs.github.com/en/copilot/reference/hooks-reference |
+| Custom agents configuration | https://docs.github.com/en/copilot/reference/custom-agents-configuration |
+
