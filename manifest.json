@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents \u2014 curated notes with sources",
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -164,7 +164,9 @@
       "related": [
         "agents-md-and-rules-budget",
         "knowledge-corpus-pattern",
-        "memory-wiki-vs-rag"
+        "memory-wiki-vs-rag",
+        "claude-code-idle-compaction",
+        "acp-session-compaction"
       ]
     },
     {
@@ -1455,7 +1457,8 @@
         "mcp-stateless-core",
         "mcp-list-caching",
         "mcp-cancellation",
-        "mcp-progress-notifications"
+        "mcp-progress-notifications",
+        "mcp-events-extension"
       ]
     },
     {
@@ -2769,7 +2772,9 @@
         "acp-v2-session-lifecycle",
         "cursor-acp-extensions",
         "acp-terminal-auth",
-        "devin-desktop-acp"
+        "devin-desktop-acp",
+        "acp-session-notices",
+        "acp-session-compaction"
       ]
     },
     {
@@ -3002,7 +3007,9 @@
         "agent-client-protocol-acp",
         "cursor-acp-extensions",
         "a2a-vs-mcp",
-        "streaming-approval-resume"
+        "streaming-approval-resume",
+        "acp-session-notices",
+        "acp-session-compaction"
       ]
     },
     {
@@ -4028,7 +4035,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-10",
+      "updated": "2026-10-14",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4053,7 +4060,8 @@
         "github-copilot-cli-settings",
         "github-copilot-assisted-permissions",
         "github-copilot-managed-permissions",
-        "github-copilot-autopilot"
+        "github-copilot-autopilot",
+        "github-copilot-hydrafusion"
       ]
     },
     {
@@ -5017,14 +5025,15 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-09-11",
+      "updated": "2026-10-14",
       "when_to_use": "Setting up @Claude in Slack, or choosing the earlier per-user Slack app vs Claude Tag",
       "related": [
         "claude-code-on-the-web",
         "claude-code-channels",
         "claude-code-remote-control",
         "cursor-slack-cloud-agents",
-        "openai-codex-slack"
+        "openai-codex-slack",
+        "claude-code-routines"
       ]
     },
     {
@@ -5195,7 +5204,8 @@
         "claude-code-checkpointing",
         "claude-code-memory",
         "claude-code-subagents",
-        "claude-code-sessions"
+        "claude-code-sessions",
+        "claude-code-idle-compaction"
       ]
     },
     {
@@ -5578,7 +5588,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-09",
+      "updated": "2026-10-14",
       "when_to_use": "Shipping managed-settings.json permission rules for Copilot CLI, VS Code Agent Host, or the Copilot app",
       "related": [
         "github-copilot-hooks",
@@ -5589,7 +5599,8 @@
         "github-copilot-remote-control",
         "github-copilot-computer-use",
         "github-copilot-assisted-permissions",
-        "vscode-assisted-permissions"
+        "vscode-assisted-permissions",
+        "github-copilot-sandbox"
       ]
     },
     {
@@ -5648,14 +5659,15 @@
         "cost"
       ],
       "status": "active",
-      "updated": "2026-09-14",
+      "updated": "2026-10-14",
       "when_to_use": "Enabling /advisor or advisorModel, or choosing advisor vs opusplan vs a stronger /model",
       "related": [
         "claude-code-effort",
         "claude-code-subagents",
         "claude-code-plan-mode",
         "agent-cost-step-budgets",
-        "claude-code-settings"
+        "claude-code-settings",
+        "claude-code-gateway"
       ]
     },
     {
@@ -6262,13 +6274,14 @@
         "cost"
       ],
       "status": "draft",
-      "updated": "2026-09-18",
-      "when_to_use": "Trying Copilot CLI HydraFusion instead of Auto Efficiency/Balance/Intelligence",
+      "updated": "2026-10-14",
+      "when_to_use": "Trying HydraFusion or HydraFusion Max instead of Auto Efficiency/Balance/Intelligence",
       "related": [
         "github-copilot-auto-model",
         "github-copilot-cli",
         "agent-model-routing-fallback",
-        "cursor-router"
+        "cursor-router",
+        "github-copilot-model-deprecations"
       ]
     },
     {
@@ -8397,6 +8410,109 @@
         "github-copilot-hooks",
         "github-copilot-fleet",
         "github-copilot-cli-settings"
+      ]
+    },
+    {
+      "id": "claude-code-idle-compaction",
+      "path": "practices/claude-code-idle-compaction.md",
+      "title": "Claude Code idle compaction \u2014 compact before the 1h cache expires",
+      "tags": [
+        "claude",
+        "context",
+        "tokens",
+        "caching"
+      ],
+      "status": "active",
+      "updated": "2026-10-14",
+      "when_to_use": "A long Claude Code terminal session sat idle, or tuning idleCompaction / CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS",
+      "related": [
+        "claude-code-context-window",
+        "context-compaction",
+        "prompt-caching-for-agents",
+        "claude-code-sessions",
+        "acp-session-compaction"
+      ]
+    },
+    {
+      "id": "acp-session-notices",
+      "path": "practices/acp-session-notices.md",
+      "title": "ACP session notices \u2014 live advisory updates, not transcript",
+      "tags": [
+        "acp",
+        "session",
+        "ux",
+        "interoperability"
+      ],
+      "status": "active",
+      "updated": "2026-10-14",
+      "when_to_use": "Emitting or rendering ACP notice session updates, or choosing notice vs agent message vs elicitation",
+      "related": [
+        "agent-client-protocol-acp",
+        "acp-v2-session-lifecycle",
+        "acp-elicitation",
+        "acp-session-compaction"
+      ]
+    },
+    {
+      "id": "acp-session-compaction",
+      "path": "practices/acp-session-compaction.md",
+      "title": "ACP session compaction \u2014 ID-addressed timeline entities",
+      "tags": [
+        "acp",
+        "session",
+        "compaction",
+        "interoperability"
+      ],
+      "status": "active",
+      "updated": "2026-10-14",
+      "when_to_use": "Reporting or rendering ACP compaction_update / compaction_summary_chunk, or contrasting them with agent-text \u201cI compacted\u201d",
+      "related": [
+        "agent-client-protocol-acp",
+        "acp-v2-session-lifecycle",
+        "context-compaction",
+        "claude-code-context-window",
+        "claude-code-idle-compaction",
+        "acp-session-notices"
+      ]
+    },
+    {
+      "id": "openai-codex-gpt-55-retirement",
+      "path": "practices/openai-codex-gpt-55-retirement.md",
+      "title": "Codex GPT-5.5 retirement \u2014 ChatGPT sign-in vs API key",
+      "tags": [
+        "openai",
+        "models",
+        "deprecation",
+        "cli"
+      ],
+      "status": "active",
+      "updated": "2026-10-14",
+      "when_to_use": "A Codex config, custom agent, or exec script still names gpt-5.5 after the 2026-10-14 ChatGPT-sign-in retirement",
+      "related": [
+        "openai-codex-exec",
+        "openai-codex-automations",
+        "github-copilot-model-deprecations",
+        "github-copilot-hydrafusion"
+      ]
+    },
+    {
+      "id": "mcp-events-extension",
+      "path": "practices/mcp-events-extension.md",
+      "title": "MCP Events extension \u2014 SEP-3415 subscribe vs listen",
+      "tags": [
+        "mcp",
+        "extensions",
+        "webhooks",
+        "automations"
+      ],
+      "status": "draft",
+      "updated": "2026-10-14",
+      "when_to_use": "Designing MCP event subscriptions (list/subscribe/unsubscribe) or contrasting them with subscriptions/listen",
+      "related": [
+        "mcp-subscriptions-listen",
+        "mcp-extensions-framework",
+        "prompt-injection-agent-defense",
+        "mcp-stateless-core"
       ]
     }
   ]

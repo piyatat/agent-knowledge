@@ -1667,3 +1667,43 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | GitHub Copilot hooks reference | https://docs.github.com/en/copilot/reference/hooks-reference |
 | Custom agents configuration | https://docs.github.com/en/copilot/reference/custom-agents-configuration |
 
+## Daily ingest 2026-10-14 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Claude Code CHANGELOG | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
+| v2.1.299 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.299 |
+| v2.1.300 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.300 |
+| Explore the context window | https://code.claude.com/docs/en/context-window |
+| Escalate hard decisions with the advisor tool | https://code.claude.com/docs/en/advisor |
+| Claude Code in Slack | https://code.claude.com/docs/en/slack |
+| Claude Tag | https://code.claude.com/docs/en/claude-tag |
+| Use Claude Code on the web | https://code.claude.com/docs/en/claude-code-on-the-web |
+| CLI reference | https://code.claude.com/docs/en/cli-reference |
+| Model configuration | https://code.claude.com/docs/en/model-config |
+| Session Notices RFD | https://agentclientprotocol.com/rfds/session-notices |
+| Session Compaction RFD | https://agentclientprotocol.com/rfds/session-compaction |
+| RFD Updates | https://agentclientprotocol.com/rfds/updates |
+| ACP v1 initialization | https://agentclientprotocol.com/protocol/v1/initialization |
+| ACP v1 prompt turn | https://agentclientprotocol.com/protocol/v1/prompt-turn |
+| ACP v2 prompt lifecycle | https://agentclientprotocol.com/protocol/v2/prompt-lifecycle |
+| Models (ChatGPT Learn) | https://learn.chatgpt.com/docs/models |
+| Speed — Fast and Ultrafast | https://learn.chatgpt.com/docs/agent-configuration/speed |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+| Workspace model availability | https://learn.chatgpt.com/docs/enterprise/workspace-model-availability |
+| SEP-3415: Events Extension (PR) | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3415 |
+| MCP Events (OpenAI plugins) | https://developers.openai.com/plugins/build/mcp-events |
+| SEP queue | https://voting.modelcontextprotocol.io/p/seps |
+| MCP Extensions overview | https://modelcontextprotocol.io/extensions/overview |
+| HydraFusion updates and new Max option | https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option/ |
+| HydraFusion in VS Code and the GitHub Copilot app | https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/ |
+| Project HydraFusion (GitHub Blog) | https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/ |
+| About Copilot auto model selection | https://docs.github.com/en/copilot/concepts/auto-model-selection |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| copilot-cli 1.0.98 | https://github.com/github/copilot-cli/releases/tag/v1.0.98 |
+| Gemini 4 Argon in GitHub Copilot | https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot/ |
+| Enterprise managed settings enforcement updates | https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates/ |
+| Enterprise managed settings | https://docs.github.com/en/copilot/reference/enterprise-administrators/enterprise-managed-settings |
+| Enterprise managed settings reference | https://docs.github.com/en/copilot/reference/enterprise-managed-settings-reference |
+| Configuring enterprise-managed settings | https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings |
+
