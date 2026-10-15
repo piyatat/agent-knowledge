@@ -3,7 +3,7 @@ id: github-copilot-cli
 title: GitHub Copilot CLI — terminal agent vs cloud coding agent
 tags: [github, cli, permissions, sandbox]
 status: active
-updated: 2026-10-14
+updated: 2026-10-15
 when_to_use: Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent
 ---
 
@@ -13,7 +13,7 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 
 ## Notes
 
-- First prompt: trust this folder (session-only or remember). Tool prompts: once / rest of session / reject with optional feedback. `Shift+Tab` cycles **plan** mode. `!cmd` runs a shell without the model. `/cwd` or `/add-dir` for other trees. **1.0.96-0:** `/add-dir` also grants **sandbox** path access for the current session (`github-copilot-sandbox`). `--continue` resumes the last local session.
+- First prompt: trust this folder (session-only or remember). Persist via `trustedFolders` in `~/.copilot/config.json` (`github-copilot-cli-settings`). **1.0.99-1:** `--trust-folder` skips the prompt for one-off **`-p` / piped stdin** sessions (not a substitute for `--allow-all`). Tool prompts: once / rest of session / reject with optional feedback. `Shift+Tab` cycles **plan** mode. `!cmd` runs a shell without the model. `/cwd` or `/add-dir` for other trees. **1.0.96-0:** `/add-dir` also grants **sandbox** path access for the current session (`github-copilot-sandbox`). `--continue` resumes the last local session.
 - **Rewind** (interactive, idle, empty input): `Esc` `Esc`, `/undo`, or `/rewind`. Pick a prior user prompt (ten visible; arrow for more). **Conversation only** truncates history; **Conversation + files** also restores Copilot-tracked edits (editing tools, shell, sub-agents — Git not required) and **skips** files you changed afterward or that were too large to back up. Applied to the state **before** that prompt ran; the prompt is put back in the input to edit/resubmit. **Cannot undo.** Unavailable for remote-backed sessions, in-progress work, or before the first prompt. Resume of a pre-tracking session may offer conversation-only. Verify with `! git status` / `! git diff`. JetBrains “edit earlier message” is the IDE equivalent (`github-copilot-jetbrains`).
 - Permissions: `--allow-tool` / `--deny-tool` (deny wins, including over `--allow-all`). `--allow-all` / `--yolo` = all tools + paths + URLs — isolated environments only; never alias it. `/permissions [default|assisted|allow-all|show]` is the canonical mode switch (`github-copilot-assisted-permissions`). `permissions.disableBypassPermissionsMode` suppresses allow-all; `"allow-auto-only"` still permits Assisted. Help: `copilot help permissions`. **1.0.96-0:** the timeline names whether **you**, **Assisted Permissions**, **policy**, or **unattended fallback** made each permission decision. **1.0.96-1:** `/allow-all` stays available during startup while enterprise policy is still resolving.
 - Sandbox: CLI **1.0.93** makes `/sandbox` and `--sandbox` available to **all users** (no experimental flag). Restricts commands/MCP, not the CLI process. `--cloud` runs the whole session in an isolated cloud sandbox (inherits cloud-agent policies). Pair `--allow-all` with a sandbox (`github-copilot-sandbox`).
@@ -21,6 +21,7 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - Models: `/model` or `--model`. **1.0.93** picker recommends GPT-6.1 Sol, GPT-6 Astra/Luna, Claude 5.5. **1.0.94** (2026-10-08) adds Claude Haiku 5.5. **1.0.94-0** discovers a running Ollama instance (`github-copilot-cli-local-models`). **1.0.96-2:** `/model` and `/config` model IDs are **case-insensitive**. **1.0.98** (2026-10-14) adds **Gemini 4 Argon** (GA in Copilot for Pro+ / Max / Business / Enterprise; gradual rollout; provider list pricing; admin model policy). Not Copilot Auto tiers (`github-copilot-auto-model`).
 - Context: `/usage`, `/context`, `/compact`; auto-compact near 95%. **1.0.95** (2026-10-09): `--context` now applies to **new and resumed ACP sessions** instead of silently using the default or previously saved tier. `/every` / `/after` schedule prompts. Memory: `/memory on|off|show` (persists); `-p` needs `--enable-memory`. Details: `github-copilot-memory`. Custom agents and skills are separate notes. ACP: Copilot CLI can also be an ACP server. **1.0.95** uses native Microsoft Entra broker auth on macOS when available (browser fallback). **1.0.98:** expand a `/ask` answer with **Ctrl+E**, copy it with **Ctrl+Y**, reopen the last usable completed answer with `/ask` or `/btw`. Resume now continues only **active** permission requests and ignores abandoned pending-permission work. MCP `/mcp` stays synced to the active session after a split-view switch.
 - Desktop GUI: `/computer on|show|off` (public preview, macOS/Windows local sessions) — `github-copilot-computer-use`. Remote steer of a **running** interactive session: `/remote on` or `copilot --remote` (not `-p`) — `github-copilot-remote-control`.
+- **1.0.99-1:** `--trust-folder` as above; sandboxed git on github.com can use `GITHUB_TOKEN` from `credentials.envVars`; deferred tool definitions no longer trip a false context-exhaustion / rollover refusal. Custom-agent tool aliases: `github-copilot-custom-agents`. Verified plugin install links: `github-copilot-plugins`.
 - Parallel / scripted orchestration (often needs `/experimental on`): `/fleet` or `--fleet` for a model-chosen subagent split (`github-copilot-fleet`); coded **dynamic workflows** via chat or `copilot workflow run NAME` (`github-copilot-dynamic-workflows`). Repo-event automation that must live in git is `gh aw` (`github-agentic-workflows`), not a long-lived CLI session.
 - **Content exclusions** (Business/Enterprise): as of 2026-09-02 the **app and CLI** honor org/repo/enterprise path policies (`github-copilot-content-exclusions`). IDE **Agent/Edit** Chat modes still do not. Do not treat exclusions as a sandbox (`github-copilot-sandbox`).
 
@@ -39,8 +40,10 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - [Using dynamic workflows](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-dynamic-workflows) — accessed 2026-10-02
 - [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) — accessed 2026-10-09
 - [Authenticating GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/authenticate-copilot-cli) — accessed 2026-10-09
-- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-14
+- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-15
+- [copilot-cli 1.0.99-1](https://github.com/github/copilot-cli/releases/tag/v1.0.99-1) — accessed 2026-10-15
 - [copilot-cli 1.0.98](https://github.com/github/copilot-cli/releases/tag/v1.0.98) — accessed 2026-10-14
+- [Configuring GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/configure-copilot-cli) — accessed 2026-10-15
 - [Gemini 4 Argon in GitHub Copilot](https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot/) — accessed 2026-10-14
 - [copilot-cli 1.0.96-0](https://github.com/github/copilot-cli/releases/tag/v1.0.96-0) — accessed 2026-10-10
 - [copilot-cli 1.0.96-2](https://github.com/github/copilot-cli/releases/tag/v1.0.96-2) — accessed 2026-10-10

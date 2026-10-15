@@ -1707,3 +1707,26 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Enterprise managed settings reference | https://docs.github.com/en/copilot/reference/enterprise-managed-settings-reference |
 | Configuring enterprise-managed settings | https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings |
 
+
+## Daily ingest 2026-10-15 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Client-Provided System Prompt RFD | https://agentclientprotocol.com/rfds/client-system-prompt |
+| RFD Updates | https://agentclientprotocol.com/rfds/updates |
+| Environment variables (Claude Code) | https://code.claude.com/docs/en/env-vars |
+| Error reference (Claude Code) | https://code.claude.com/docs/en/errors |
+| v2.1.301 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.301 |
+| Claude Code gateway compatibility | https://code.claude.com/docs/en/llm-gateway-protocol |
+| AI Scan for pull requests | https://docs.github.com/en/code-security/concepts/code-scanning/ai-powered-security-detections |
+| AI Scan for pull requests generally available | https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available/ |
+| About autofix for code scanning | https://docs.github.com/en/code-security/concepts/code-scanning/autofix-for-code-scanning |
+| Agentic autofix for code scanning alerts general availability | https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/ |
+| Resolving code scanning alerts | https://docs.github.com/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/resolve-alerts |
+| Upcoming deprecation of selected GitHub Copilot models in mid-November | https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/ |
+| Codex 0.163.0 | https://github.com/openai/codex/releases/tag/rust-v0.163.0 |
+| copilot-cli 1.0.99-1 | https://github.com/github/copilot-cli/releases/tag/v1.0.99-1 |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| Configuring GitHub Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/configure-copilot-cli |
+| Cursor CLI changelog | https://cursor.com/docs/cli/changelog |
+| Cursor Plugins | https://cursor.com/docs/plugins |
