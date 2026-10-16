@@ -3,7 +3,7 @@ id: github-copilot-cli
 title: GitHub Copilot CLI — terminal agent vs cloud coding agent
 tags: [github, cli, permissions, sandbox]
 status: active
-updated: 2026-10-15
+updated: 2026-10-16
 when_to_use: Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent
 ---
 
@@ -22,6 +22,8 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - Context: `/usage`, `/context`, `/compact`; auto-compact near 95%. **1.0.95** (2026-10-09): `--context` now applies to **new and resumed ACP sessions** instead of silently using the default or previously saved tier. `/every` / `/after` schedule prompts. Memory: `/memory on|off|show` (persists); `-p` needs `--enable-memory`. Details: `github-copilot-memory`. Custom agents and skills are separate notes. ACP: Copilot CLI can also be an ACP server. **1.0.95** uses native Microsoft Entra broker auth on macOS when available (browser fallback). **1.0.98:** expand a `/ask` answer with **Ctrl+E**, copy it with **Ctrl+Y**, reopen the last usable completed answer with `/ask` or `/btw`. Resume now continues only **active** permission requests and ignores abandoned pending-permission work. MCP `/mcp` stays synced to the active session after a split-view switch.
 - Desktop GUI: `/computer on|show|off` (public preview, macOS/Windows local sessions) — `github-copilot-computer-use`. Remote steer of a **running** interactive session: `/remote on` or `copilot --remote` (not `-p`) — `github-copilot-remote-control`.
 - **1.0.99-1:** `--trust-folder` as above; sandboxed git on github.com can use `GITHUB_TOKEN` from `credentials.envVars`; deferred tool definitions no longer trip a false context-exhaustion / rollover refusal. Custom-agent tool aliases: `github-copilot-custom-agents`. Verified plugin install links: `github-copilot-plugins`.
+- **1.0.99-3** (pre-release, 2026-10-16): `--disable-client-telemetry` turns off CLI client telemetry uploads. Sandboxed shells explain credential-proxy cert-trust failures and can offer an approved rerun **outside** the sandbox. Plugin enable/disable/update/uninstall stay routed after inventory refresh (`github-copilot-plugins`). Reasoning-only max-token replies no longer loop — they error when no progress is made. Resume warns when a saved model is auto-replaced.
+- **1.0.100-0** (pre-release, 2026-10-16): managed plugins **re-apply activation** on an already-open session when managed policy changes. MCP tool-list hangs no longer stall the session for minutes. Gemini: array parameters with `enum` values, and earlier tool results with no readable content, no longer fail the chat. Prompt to update the sandbox proxy CA when masked hosts change (`github-copilot-sandbox`).
 - Parallel / scripted orchestration (often needs `/experimental on`): `/fleet` or `--fleet` for a model-chosen subagent split (`github-copilot-fleet`); coded **dynamic workflows** via chat or `copilot workflow run NAME` (`github-copilot-dynamic-workflows`). Repo-event automation that must live in git is `gh aw` (`github-agentic-workflows`), not a long-lived CLI session.
 - **Content exclusions** (Business/Enterprise): as of 2026-09-02 the **app and CLI** honor org/repo/enterprise path policies (`github-copilot-content-exclusions`). IDE **Agent/Edit** Chat modes still do not. Do not treat exclusions as a sandbox (`github-copilot-sandbox`).
 
@@ -40,7 +42,9 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - [Using dynamic workflows](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-dynamic-workflows) — accessed 2026-10-02
 - [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) — accessed 2026-10-09
 - [Authenticating GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/authenticate-copilot-cli) — accessed 2026-10-09
-- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-15
+- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-16
+- [copilot-cli 1.0.100-0](https://github.com/github/copilot-cli/releases/tag/v1.0.100-0) — accessed 2026-10-16
+- [copilot-cli 1.0.99-3](https://github.com/github/copilot-cli/releases/tag/v1.0.99-3) — accessed 2026-10-16
 - [copilot-cli 1.0.99-1](https://github.com/github/copilot-cli/releases/tag/v1.0.99-1) — accessed 2026-10-15
 - [copilot-cli 1.0.98](https://github.com/github/copilot-cli/releases/tag/v1.0.98) — accessed 2026-10-14
 - [Configuring GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/configure-copilot-cli) — accessed 2026-10-15

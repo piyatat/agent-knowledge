@@ -1730,3 +1730,26 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Configuring GitHub Copilot CLI | https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/configure-copilot-cli |
 | Cursor CLI changelog | https://cursor.com/docs/cli/changelog |
 | Cursor Plugins | https://cursor.com/docs/plugins |
+
+## Daily ingest 2026-10-16 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Canvases (Cursor) | https://cursor.com/docs/agent/tools/canvas |
+| Cursor changelog | https://cursor.com/changelog |
+| Agent Skills (Cursor) | https://cursor.com/docs/skills |
+| Cloud Agents API endpoints | https://cursor.com/docs/cloud-agent/api/endpoints |
+| Cloud Agents API overview | https://cursor.com/docs/cloud-agent/api/overview |
+| Cloud Agents settings | https://cursor.com/docs/cloud-agent/settings |
+| Visual Studio Code 1.142 | https://code.visualstudio.com/updates/v1_142 |
+| Choose an agent harness | https://code.visualstudio.com/docs/agents/run/agent-harnesses |
+| Get started with Claude Design | https://support.claude.com/en/articles/14604416-get-started-with-claude-design |
+| Migrate from standalone Claude Design | https://support.claude.com/en/articles/17440474-migrate-from-standalone-claude-design-to-claude |
+| Claude Design product page | https://claude.com/product/design |
+| v2.1.302 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.302 |
+| Configure auto mode | https://code.claude.com/docs/en/auto-mode-config |
+| Multi-repo support for Copilot in Slack and Teams | https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates/ |
+| copilot-cli 1.0.100-0 | https://github.com/github/copilot-cli/releases/tag/v1.0.100-0 |
+| copilot-cli 1.0.99-3 | https://github.com/github/copilot-cli/releases/tag/v1.0.99-3 |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| Claude Code CHANGELOG | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
