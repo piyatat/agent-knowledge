@@ -1753,3 +1753,30 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | copilot-cli 1.0.99-3 | https://github.com/github/copilot-cli/releases/tag/v1.0.99-3 |
 | copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
 | Claude Code CHANGELOG | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
+
+## Daily ingest 2026-10-17 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| About open source license compliance | https://docs.github.com/en/code-security/concepts/supply-chain-security/open-source-license-compliance |
+| Configuring open source license policies | https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-license-policies |
+| REST API endpoints for license compliance | https://docs.github.com/en/enterprise-cloud@latest/rest/dependency-graph/license-compliance |
+| Open source license compliance generally available | https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available/ |
+| SEP-2792: Per-Request User Language Preference | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2792 |
+| SEP-2792 vote | https://voting.modelcontextprotocol.io/polls/1368eab99def3f3839e2f863cef5ca94 |
+| TypeScript SDK reference implementation | https://github.com/modelcontextprotocol/typescript-sdk/pull/2158 |
+| MCP Spec TPM | https://plan.modelcontextprotocol.io/seps |
+| SEP-2643: Structured Authorization Denials | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2643 |
+| SEP-2848: Asynchronous Approval for Tool Calls | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2848 |
+| Test iOS apps in the simulator | https://code.claude.com/docs/en/desktop-ios-simulator |
+| Desktop application | https://code.claude.com/docs/en/desktop |
+| Let Claude use your computer from the CLI | https://code.claude.com/docs/en/computer-use |
+| Slack (Cursor docs) | https://cursor.com/docs/integrations/slack |
+| Cloud Agents settings | https://cursor.com/docs/cloud-agent/settings |
+| Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
+| Cloud Agent capabilities | https://cursor.com/docs/cloud-agent/capabilities |
+| Cloud Agents overview | https://cursor.com/docs/cloud-agent |
+| Cloud Agents API | https://cursor.com/docs/cloud-agent/api/endpoints |
+| Projects (Cursor docs) | https://cursor.com/docs/agent/projects |
+| Cursor web release notes | https://cursor.com/docs/release-notes/web |
+| copilot-cli 1.0.100-1 | https://github.com/github/copilot-cli/releases/tag/v1.0.100-1 |

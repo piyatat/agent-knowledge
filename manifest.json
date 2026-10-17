@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1638,12 +1638,14 @@
         "ops"
       ],
       "status": "active",
-      "updated": "2026-08-23",
+      "updated": "2026-10-17",
       "when_to_use": "A Cursor cloud agent must inspect its own run, sibling runs, environment, builds, or setup logs",
       "related": [
         "cursor-cloud-always-on",
         "cursor-environment-builds",
-        "cursor-automations"
+        "cursor-automations",
+        "cursor-cloud-mcp-http-vs-stdio",
+        "cursor-cloud-agents-api"
       ]
     },
     {
@@ -2622,14 +2624,16 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-08-28",
+      "updated": "2026-10-17",
       "when_to_use": "Reviewing Cloud Agent PRs via screenshots/video, taking remote desktop, or controlling GitHub Actions auto-fix",
       "related": [
         "computer-use-containment",
         "cursor-cloud-always-on",
         "cursor-bugbot-review",
         "prompt-injection-agent-defense",
-        "cursor-self-hosted-computer-use"
+        "cursor-self-hosted-computer-use",
+        "cursor-slack-cloud-agents",
+        "cursor-canvases"
       ]
     },
     {
@@ -3363,8 +3367,8 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-03",
-      "when_to_use": "Starting or steering a Cloud Agent from Slack, or configuring channel routing / privacy for @cursor",
+      "updated": "2026-10-17",
+      "when_to_use": "Starting or steering a Cloud Agent from Slack, or configuring channel routing / pool / team billing for @cursor",
       "related": [
         "cursor-cloud-always-on",
         "cursor-automations",
@@ -3373,7 +3377,8 @@
         "cursor-self-hosted-pools",
         "cursor-linear-cloud-agents",
         "cursor-github-cloud-agents",
-        "cursor-microsoft-teams"
+        "cursor-microsoft-teams",
+        "cursor-cloud-pr-artifacts"
       ]
     },
     {
@@ -4036,7 +4041,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-16",
+      "updated": "2026-10-17",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -5416,7 +5421,7 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-10-13",
+      "updated": "2026-10-17",
       "when_to_use": "Starting a Cursor Project for a multi-PR feature, migration, or standing “gardening” job instead of a single chat",
       "related": [
         "cursor-cloud-always-on",
@@ -7738,15 +7743,16 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-01",
-      "when_to_use": "Enabling Claude Code CLI or Desktop screen control, or contrasting it with Claude in Chrome",
+      "updated": "2026-10-17",
+      "when_to_use": "Enabling Claude Code CLI or Desktop screen control, or contrasting it with Claude in Chrome / the iOS Simulator pane",
       "related": [
         "claude-code-chrome",
         "claude-code-desktop",
         "claude-cowork",
         "computer-use-containment",
         "claude-computer-browser-toolsets",
-        "github-copilot-computer-use"
+        "github-copilot-computer-use",
+        "claude-code-ios-simulator"
       ]
     },
     {
@@ -8664,6 +8670,86 @@
         "claude-code-on-the-web",
         "cursor-canvases",
         "vscode-agent-canvases"
+      ]
+    },
+    {
+      "id": "github-license-compliance",
+      "path": "practices/github-license-compliance.md",
+      "title": "GitHub license compliance — rulesets plus agent package-checks",
+      "tags": [
+        "github",
+        "security",
+        "governance",
+        "ci"
+      ],
+      "status": "active",
+      "updated": "2026-10-17",
+      "when_to_use": "Blocking PRs on license policy, or having a coding agent check PURLs before adding a dependency",
+      "related": [
+        "github-copilot-coding-agent",
+        "github-code-scanning-ai-scan",
+        "github-agentic-autofix"
+      ]
+    },
+    {
+      "id": "mcp-language-preference",
+      "path": "practices/mcp-language-preference.md",
+      "title": "MCP per-request language preference — SEP-2792",
+      "tags": [
+        "mcp",
+        "transport",
+        "ux",
+        "prompts"
+      ],
+      "status": "active",
+      "updated": "2026-10-17",
+      "when_to_use": "Localizing MCP titles/elicitation UI, or mirroring Accept-Language on Streamable HTTP",
+      "related": [
+        "mcp-request-meta",
+        "mcp-stateless-core",
+        "mcp-jsonrpc-errors"
+      ]
+    },
+    {
+      "id": "mcp-structured-auth-denials",
+      "path": "practices/mcp-structured-auth-denials.md",
+      "title": "MCP structured authorization denials — SEP-2643 envelope",
+      "tags": [
+        "mcp",
+        "oauth",
+        "auth",
+        "extensions"
+      ],
+      "status": "draft",
+      "updated": "2026-10-17",
+      "when_to_use": "Returning a richer-than-403 MCP auth denial (URL approval, out-of-band task, or step-up credential)",
+      "related": [
+        "mcp-scope-challenges",
+        "mcp-oauth-scopes",
+        "mcp-elicitation-modes",
+        "mcp-tasks-extension",
+        "mcp-extensions-framework",
+        "mcp-mrtr-input-required"
+      ]
+    },
+    {
+      "id": "claude-code-ios-simulator",
+      "path": "practices/claude-code-ios-simulator.md",
+      "title": "Claude Code iOS Simulator pane — Desktop vs CLI computer use",
+      "tags": [
+        "claude",
+        "computer-use",
+        "ux",
+        "preview"
+      ],
+      "status": "active",
+      "updated": "2026-10-17",
+      "when_to_use": "Running or testing an iOS app from Claude Code Desktop, or contrasting the pane with CLI screen control",
+      "related": [
+        "claude-code-computer-use",
+        "claude-code-desktop",
+        "claude-code-chrome",
+        "claude-cowork"
       ]
     }
   ]
