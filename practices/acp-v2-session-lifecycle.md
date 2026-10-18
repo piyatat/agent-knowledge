@@ -3,7 +3,7 @@ id: acp-v2-session-lifecycle
 title: ACP v2 session and prompt lifecycle (draft)
 tags: [acp, session, orchestration, migration]
 status: draft
-updated: 2026-08-30
+updated: 2026-10-18
 when_to_use: Implementing or migrating an ACP client/agent to protocolVersion 2 session semantics
 ---
 
@@ -17,6 +17,9 @@ ACP **v2 is still draft**. The stable-looking schema (`schema/v2/schema.json`) a
 - Session methods that are **required** in v2 (no capability bit): `session/new`, `session/list`, `session/resume`, `session/close`, `session/prompt`, `session/cancel`. `session/load` is **gone** — resume with `replayFrom: { "type": "start" }` for full replay.
 - Auth: `authenticate` → `auth/login`, plus `auth/logout`. If `authMethods` is omitted or empty, clients must call neither. Modes moved to config options (`session/set_mode` removed).
 - Updates are **upserts** keyed by id: omit = unchanged, `null` = clear, value = replace, chunks append. `tool_call` create is just the first `tool_call_update`. `plan` → `plan_update`. Client `fs/*` and `terminal/*` **execution** APIs are removed; agent-owned display terminals are a separate surface. Use client-provided MCP for client-side tools.
+- **Metadata patches** (RFD added 2026-10-13): a top-level `_meta` object on an upsert **patches stored metadata by key** — omission leaves it, `null` clears the whole object, an object replaces/removes individual keys (`null` value deletes that key). Do not treat `_meta` as a wholesale replace.
+- **Diffs** (2026-10-12): every `git_patch` path, including rename/copy headers, is **absolute** with **no** `a/` or `b/` prefix; otherwise Git rules (`/dev/null`, path quoting).
+- **Prompt lifecycle:** `session/prompt` returns the inserted user message’s `messageId` without waiting for foreground work. A JSON-RPC error on `session/prompt` means the message was **not** inserted. Failures **after** insertion end foreground work with an idle `state_update` whose `stopReason` is `error` (optional JSON-RPC error object) — recorded 2026-10-01.
 - Cursor’s `agent acp` docs still describe the **v1** flow (`authenticate`, `session/load`). See `cursor-acp-extensions` for Cursor-only methods; do not assume v2 when talking to current Cursor CLI.
 
 ## Sources
@@ -24,3 +27,5 @@ ACP **v2 is still draft**. The stable-looking schema (`schema/v2/schema.json`) a
 - [ACP v2 overview](https://agentclientprotocol.com/protocol/v2/overview) — accessed 2026-08-30
 - [Migrating from ACP v1](https://agentclientprotocol.com/protocol/v2/migration) — accessed 2026-08-30
 - [ACP v2 draft announcement](https://github.com/agentclientprotocol/agent-client-protocol/blob/main/docs/announcements/acp-v2-draft.mdx) — accessed 2026-08-30
+- [ACP v2 Proposal (RFD overview)](https://agentclientprotocol.com/rfds/v2/overview) — accessed 2026-10-18
+- [ACP v2 protocol overview](https://agentclientprotocol.com/protocol/v2/overview) — accessed 2026-10-18

@@ -1780,3 +1780,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Projects (Cursor docs) | https://cursor.com/docs/agent/projects |
 | Cursor web release notes | https://cursor.com/docs/release-notes/web |
 | copilot-cli 1.0.100-1 | https://github.com/github/copilot-cli/releases/tag/v1.0.100-1 |
+
+## Daily ingest 2026-10-18 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| SEP-3392: Extension Lifecycle | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3392 |
+| MCP Core Maintainer Meeting — September 30, 2026 | https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3407 |
+| SEP-2133 — Extensions | https://modelcontextprotocol.io/seps/2133-extensions |
+| MCP Extensions overview | https://modelcontextprotocol.io/extensions/overview |
+| MCP Spec TPM | https://plan.modelcontextprotocol.io/seps |
+| SEP-2848: Asynchronous Approval for Tool Calls | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2848 |
+| SEP-2643: Structured Authorization Denials | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2643 |
+| MCP Tasks overview | https://modelcontextprotocol.io/extensions/tasks/overview |
+| Workflow dependency lockfiles | https://docs.github.com/en/actions/concepts/security/workflow-dependency-lockfiles |
+| Locking action dependencies in a repository's workflows | https://docs.github.com/en/actions/how-tos/secure-your-work/lock-workflow-dependencies |
+| Enforcing lockfiles for action dependencies | https://docs.github.com/en/enterprise-cloud@latest/actions/how-tos/administer/enforce-workflow-lockfiles |
+| GitHub Actions workflow lockfiles in public preview | https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/ |
+| SEP-2778: Adding Type Constraints to the MCP | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2778 |
+| Feature Lifecycle and Deprecation Policy | https://modelcontextprotocol.io/community/feature-lifecycle |
+| SEP-2598: Pluggable Transports | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2598 |
+| MCP stdio (2026-07-28) | https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/stdio |
+| Roadmap — Model Context Protocol | https://modelcontextprotocol.io/development/roadmap |
+| Visual Studio Code 1.143 (Insiders) | https://code.visualstudio.com/updates/v1_143 |
+| Add and manage MCP servers in VS Code | https://code.visualstudio.com/docs/agent-customization/mcp-servers |
+| Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
+| Codex 0.163.0 | https://github.com/openai/codex/releases/tag/rust-v0.163.0 |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+| ACP v2 Proposal (RFD overview) | https://agentclientprotocol.com/rfds/v2/overview |
+| ACP v2 protocol overview | https://agentclientprotocol.com/protocol/v2/overview |

@@ -3,7 +3,7 @@ id: cursor-cloud-mcp-http-vs-stdio
 title: Cursor Cloud MCP — prefer HTTP over stdio
 tags: [cursor, mcp, security, transport]
 status: active
-updated: 2026-08-23
+updated: 2026-10-18
 when_to_use: Attaching MCP servers to Cursor Cloud Agents (team or personal) and choosing HTTP vs stdio
 ---
 
@@ -18,9 +18,11 @@ On Cursor Cloud Agents, **HTTP MCP is proxied**: the VM never sees refresh token
 - HTTP (recommended): tool calls go through Cursor’s backend; server config stays off the VM. Stdio: depends on the environment image/PATH; Cursor cannot prove it works until a run starts — fix `install`/`start` if the binary is missing.
 - Built-in **Cursor Cloud MCP** (diagnostics) is a separate server and can be disabled by team admins; do not confuse it with Team MCP you attach.
 - Connecting a server still grants **every tool** on that server to the cloud agent/automation — same least-privilege rule as automations.
+- **Rate limits** (Cloud Agents week of 2026-10-05): when an MCP server rate-limits a tool, the agent **pauses that tool** for as long as the server asks, **keeps using the server’s other tools**, and is told when it can retry — it does not tight-loop (`rate-limit-backoff-tools`). Repeated **Slack** rate limits cap the wait at about a **minute**. Tool calls also recover after a server restart instead of failing; invalid-argument errors name the reason.
 
 ## Sources
 
 - [Cloud Agent capabilities — MCP tools](https://cursor.com/docs/cloud-agent/capabilities) — accessed 2026-08-23
 - [Cloud Agents overview — MCP support](https://cursor.com/docs/cloud-agent) — accessed 2026-08-23
 - [Cursor Automations](https://cursor.com/docs/cloud-agent/automations) — accessed 2026-08-23
+- [Cloud Agents release notes](https://cursor.com/docs/release-notes/cloud-agents) — accessed 2026-10-18
