@@ -1809,3 +1809,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
 | ACP v2 Proposal (RFD overview) | https://agentclientprotocol.com/rfds/v2/overview |
 | ACP v2 protocol overview | https://agentclientprotocol.com/protocol/v2/overview |
+
+## Daily ingest 2026-10-19 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Copilot model policy API for enterprise, orgs, and teams | https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams/ |
+| REST API endpoints for enterprise AI controls | https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin/ai-controls |
+| About default availability of Copilot features and models | https://docs.github.com/en/copilot/concepts/enterprise/default-availability |
+| GitHub Copilot models deprecated on October 19, 2026 | https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026/ |
+| Upcoming deprecation of selected GitHub Copilot models in mid-November | https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/ |
+| Composer predictions in Codex | https://help.openai.com/en/articles/20001601-composer-predictions-in-codex |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+| Codex app: support composer predictions with a custom model provider | https://github.com/openai/codex/issues/52910 |
+| Manage agent sessions in VS Code | https://code.visualstudio.com/docs/agents/run/sessions/manage-sessions/ |
+| Visual Studio Code 1.142 | https://code.visualstudio.com/updates/v1_142/ |
+| Understand sessions and chats | https://code.visualstudio.com/docs/agents/concepts/sessions |
+| Choose an agent harness | https://code.visualstudio.com/docs/agents/run/agent-harnesses |
+| Purpose-built model for leaked secret detection | https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/ |
+| GitHub’s model for secret detection | https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/ |
+| Secret protection must scale with software | https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/ |
+| New controls and chat improvements in Copilot for JetBrains | https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/ |
+| Client telemetry user attribution and configurable capture | https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture/ |
+| Enterprise managed settings reference | https://docs.github.com/en/copilot/reference/enterprise-managed-settings-reference |
+| Control MCP server access for your organization | https://code.claude.com/docs/en/managed-mcp |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Copilot code review: New organization billing options and controls | https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls/ |

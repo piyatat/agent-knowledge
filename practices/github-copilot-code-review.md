@@ -3,7 +3,7 @@ id: github-copilot-code-review
 title: GitHub Copilot code review — agentic PR comments
 tags: [github, review, ci, orchestration]
 status: active
-updated: 2026-10-04
+updated: 2026-10-19
 when_to_use: Requesting Copilot as a PR reviewer, configuring personal/enterprise auto-review, or contrasting it with Copilot cloud agent / Cursor Bugbot
 ---
 
@@ -18,7 +18,8 @@ when_to_use: Requesting Copilot as a PR reviewer, configuring personal/enterpris
 - Agentic review runs on GitHub Actions. Opting out of GitHub-hosted runners requires a one-time self-hosted setup or reviews fall back to a limited mode. Comments can show skill/MCP attributions; session logs list tools used. Since 2026-09-11 the review agent can use the Copilot SDK **shell toolset** behind the agent firewall (build/test/scripts/APIs), not only file reads.
 - **Lite** effort now uses an **ensemble** of agents (vendor: more addressed high/medium findings, ~8% lower review cost in their experiment). Applying a Copilot suggestion now drafts a **smart commit message**. On rereview, Copilot **auto-resolves** its own comments that a later commit addressed — remaining open threads are the outstanding set.
 - Personal settings (GA 2026-09-23) live under profile → Copilot settings → **code review**, on **every** Copilot plan including Business and Enterprise (previously Pro/Pro+/Max only, one auto-review toggle). Independently: auto-review when you create / coauthor / leave draft; auto-review **new pushes**; auto-review **draft** PRs you create or coauthor; default effort **Lite** or **Balanced**. That default applies to requested and automatic reviews; a manual Reviewers request can still pick a different effort.
-- **Balanced is now the GitHub default** (change took effect 2026-09-28; announced 2026-08-28). Explicit **Lite** settings were kept. Inheritance: enterprise → org → repo → personal; each level can override. Enterprise path: AI controls → Agents → Copilot code review. Balanced uses a higher-reasoning model and more AI credits (and may use slightly more Actions minutes). Do not treat Copilot as a merge gate. Issue/PR text, MCP, and now shell-tool output are untrusted (`prompt-injection-agent-defense`). Contrast Cursor Security Agents (`cursor-security-agents`) for vendor-managed security review.
+- **Balanced is now the GitHub default** (change took effect 2026-09-28; announced 2026-08-28). Explicit **Lite** settings were kept. Inheritance: enterprise → org → repo → personal; each level can override. Enterprise path: AI controls → Agents → Copilot code review. Balanced uses a higher-reasoning model and more AI credits (and may use slightly more Actions minutes).
+- **2026-10-08 org billing:** by default a licensed member’s review burns **their** Copilot quota (fails if exhausted). Org owners can switch **Choose how members with a Copilot license are billed** to **Organization** (repo-owning org AI Credits; paid usage must be on; optional budget) under Copilot → Policies. **Only allow Copilot code review to be triggered by authorized users** restricts requests to a license **from this org/enterprise** (blocks personal/external licenses). Org-on cannot be turned off at the repo. Do not treat Copilot as a merge gate. Issue/PR text, MCP, and shell-tool output are untrusted (`prompt-injection-agent-defense`). Classifier secret checks on `/security-review`: `github-secret-detection-model`.
 
 ## Sources
 
@@ -31,3 +32,4 @@ when_to_use: Requesting Copilot as a PR reviewer, configuring personal/enterpris
 - [About GitHub Copilot code review](https://docs.github.com/en/copilot/concepts/agents/code-review) — accessed 2026-10-04
 - [Using GitHub Copilot code review](https://docs.github.com/en/copilot/how-tos/agents/copilot-code-review/using-copilot-code-review) — accessed 2026-10-04
 - [Copilot code review: API support and new default effort level](https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/) — accessed 2026-10-04
+- [Copilot code review: New organization billing options and controls](https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls/) — accessed 2026-10-19

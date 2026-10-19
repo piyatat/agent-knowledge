@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -712,12 +712,13 @@
         "gitleaks"
       ],
       "status": "active",
-      "updated": "2026-08-10",
+      "updated": "2026-10-19",
       "when_to_use": "Agents edit repos or propose commits that might leak keys into git history",
       "related": [
         "telemetry-redaction-genai",
         "agent-code-sandboxing",
-        "human-in-the-loop-approvals"
+        "human-in-the-loop-approvals",
+        "github-secret-detection-model"
       ]
     },
     {
@@ -4454,7 +4455,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-04",
+      "updated": "2026-10-19",
       "when_to_use": "Requesting Copilot as a PR reviewer, configuring personal/enterprise auto-review, or contrasting it with Copilot cloud agent / Cursor Bugbot",
       "related": [
         "github-copilot-coding-agent",
@@ -4462,7 +4463,8 @@
         "github-copilot-skills",
         "github-copilot-mcp",
         "cursor-bugbot-review",
-        "cursor-security-agents"
+        "cursor-security-agents",
+        "github-secret-detection-model"
       ]
     },
     {
@@ -5642,7 +5644,7 @@
     {
       "id": "claude-code-managed-mcp",
       "path": "practices/claude-code-managed-mcp.md",
-      "title": "Claude Code managed MCP — managed-mcp.json vs allowlists",
+      "title": "Claude Code managed MCP — managed-mcp.json vs managedMcpServers",
       "tags": [
         "claude",
         "mcp",
@@ -5650,8 +5652,8 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-09-14",
-      "when_to_use": "Deploying a fixed MCP set for Claude Code, or locking allowedMcpServers so users cannot broaden it",
+      "updated": "2026-10-19",
+      "when_to_use": "Deploying a fixed MCP set for Claude Code, providing HTTP servers via managed settings, or locking allowedMcpServers",
       "related": [
         "claude-code-mcp",
         "claude-code-settings",
@@ -5693,7 +5695,7 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-09-26",
+      "updated": "2026-10-19",
       "when_to_use": "Choosing Copilot’s JetBrains plugin, AI Assistant ACP agent, or Copilot CLI in the IDE terminal",
       "related": [
         "cursor-jetbrains-acp",
@@ -7422,7 +7424,7 @@
         "privacy"
       ],
       "status": "active",
-      "updated": "2026-09-26",
+      "updated": "2026-10-19",
       "when_to_use": "Exporting Copilot agent traces/metrics from VS Code, CLI, JetBrains, or the Copilot app to an OTLP collector",
       "related": [
         "cursor-otel-export",
@@ -8067,14 +8069,15 @@
         "routing"
       ],
       "status": "active",
-      "updated": "2026-10-15",
+      "updated": "2026-10-19",
       "when_to_use": "A Copilot chat/agent/completion pin or workflow names a retired model, or an admin model policy still lists Oct/Nov 2026 retirements",
       "related": [
         "github-copilot-auto-model",
         "github-copilot-hydrafusion",
         "github-copilot-ide-agent",
         "cursor-router",
-        "openai-codex-gpt-55-retirement"
+        "openai-codex-gpt-55-retirement",
+        "github-copilot-model-policy-api"
       ]
     },
     {
@@ -8857,6 +8860,87 @@
         "mcp-stdio-transport",
         "mcp-extensions-framework",
         "mcp-2026-roadmap"
+      ]
+    },
+    {
+      "id": "github-copilot-model-policy-api",
+      "path": "practices/github-copilot-model-policy-api.md",
+      "title": "Copilot model policy API — enterprise, teams, apps, orgs",
+      "tags": [
+        "github",
+        "models",
+        "api",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-10-19",
+      "when_to_use": "Scripting Copilot model enablement after a deprecation, or PATCHing enterprise/org model policies instead of the UI",
+      "related": [
+        "github-copilot-model-deprecations",
+        "github-copilot-auto-model",
+        "github-copilot-hydrafusion",
+        "github-copilot-managed-permissions"
+      ]
+    },
+    {
+      "id": "openai-codex-composer-predictions",
+      "path": "practices/openai-codex-composer-predictions.md",
+      "title": "Codex composer predictions — next-message drafts in the desktop app",
+      "tags": [
+        "openai",
+        "ux",
+        "session",
+        "cli"
+      ],
+      "status": "active",
+      "updated": "2026-10-19",
+      "when_to_use": "Debugging missing Codex next-message suggestions, or turning Show predictions off in the desktop app",
+      "related": [
+        "openai-codex-sessions",
+        "openai-codex-ide",
+        "openai-codex-memories",
+        "cursor-message-queue"
+      ]
+    },
+    {
+      "id": "vscode-move-chats",
+      "path": "practices/vscode-move-chats.md",
+      "title": "VS Code move chats — folder or new worktree without losing history",
+      "tags": [
+        "vscode",
+        "git",
+        "session",
+        "isolation"
+      ],
+      "status": "active",
+      "updated": "2026-10-19",
+      "when_to_use": "Asking a VS Code Agents-window chat to continue in another folder or a new Git worktree",
+      "related": [
+        "vscode-agent-worktree-cleanup",
+        "vscode-agent-harnesses",
+        "vscode-external-sessions",
+        "vscode-agent-sandboxing",
+        "cursor-worktrees"
+      ]
+    },
+    {
+      "id": "github-secret-detection-model",
+      "path": "practices/github-secret-detection-model.md",
+      "title": "GitHub secret-detection classifier — alerts, push protection, Copilot review",
+      "tags": [
+        "github",
+        "security",
+        "secrets",
+        "review"
+      ],
+      "status": "active",
+      "updated": "2026-10-19",
+      "when_to_use": "Enabling GitHub AI secret alerts or push protection, or adding Copilot /security-review secret checks beside gitleaks",
+      "related": [
+        "agent-output-secret-scanning",
+        "github-copilot-code-review",
+        "github-agentic-autofix",
+        "github-code-scanning-ai-scan"
       ]
     }
   ]
