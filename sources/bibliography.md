@@ -1835,3 +1835,27 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Control MCP server access for your organization | https://code.claude.com/docs/en/managed-mcp |
 | Claude Code changelog | https://code.claude.com/docs/en/changelog |
 | Copilot code review: New organization billing options and controls | https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls/ |
+
+## Daily ingest 2026-10-20 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| SEP-3398: Release Cycle Updates | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3398 |
+| SEP-3398 vote | https://voting.modelcontextprotocol.io/p/v98cy36vp5 |
+| MCP Core Maintainer Meeting — September 30, 2026 | https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3407 |
+| MCP Spec TPM | https://plan.modelcontextprotocol.io/seps |
+| MCP development roadmap | https://modelcontextprotocol.io/development/roadmap |
+| Claude Managed Agents overview | https://platform.claude.com/docs/en/managed-agents/overview |
+| Secure your Managed Agents deployment | https://platform.claude.com/docs/en/managed-agents/secure-deployment |
+| Managed Agents tools | https://platform.claude.com/docs/en/managed-agents/tools |
+| Start a session | https://platform.claude.com/docs/en/managed-agents/sessions |
+| Session event stream | https://platform.claude.com/docs/en/managed-agents/events-and-streaming |
+| GitHub package firewall in public preview | https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview/ |
+| Protecting endpoints with GitHub package firewall | https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/protecting-endpoints-with-package-firewall |
+| Configure the sandboxed Bash tool | https://code.claude.com/docs/en/sandboxing |
+| v2.1.305 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.305 |
+| v2.1.304 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.304 |
+| Configure auto mode | https://code.claude.com/docs/en/auto-mode-config |
+| copilot-cli 1.0.101 | https://github.com/github/copilot-cli/releases/tag/v1.0.101 |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+

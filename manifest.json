@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1707,7 +1707,8 @@
         "mcp-oauth-scopes",
         "tool-search-defer-loading",
         "mcp-server-cards",
-        "mcp-file-uploads"
+        "mcp-file-uploads",
+        "mcp-release-cycle"
       ]
     },
     {
@@ -2655,7 +2656,8 @@
         "mcp-deprecated-roots-sampling",
         "mcp-2026-roadmap",
         "mcp-stateless-core",
-        "mcp-extensions-framework"
+        "mcp-extensions-framework",
+        "mcp-release-cycle"
       ]
     },
     {
@@ -2868,7 +2870,8 @@
         "cursor-cli-headless",
         "openai-agents-sdk",
         "claude-skills-api",
-        "claude-code-plugins"
+        "claude-code-plugins",
+        "claude-managed-agents"
       ]
     },
     {
@@ -3871,7 +3874,8 @@
         "github-copilot-skills",
         "github-copilot-code-review",
         "github-copilot-jira",
-        "github-copilot-memory"
+        "github-copilot-memory",
+        "github-package-firewall"
       ]
     },
     {
@@ -3908,7 +3912,7 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-09-05",
+      "updated": "2026-10-20",
       "when_to_use": "Enabling Claude Code /sandbox, or deciding OS isolation vs permission rules",
       "related": [
         "claude-code-permissions",
@@ -4043,7 +4047,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-17",
+      "updated": "2026-10-20",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -5470,7 +5474,7 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-10-16",
+      "updated": "2026-10-20",
       "when_to_use": "Configuring autoMode.environment / classifier rules, or debugging an auto-mode denial",
       "related": [
         "claude-code-permissions",
@@ -6253,7 +6257,8 @@
         "cursor-self-hosted-agents",
         "claude-code-routines",
         "claude-code-github-action",
-        "claude-code-gateway"
+        "claude-code-gateway",
+        "claude-managed-agents"
       ]
     },
     {
@@ -7815,7 +7820,7 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-10-06",
+      "updated": "2026-10-20",
       "when_to_use": "Writing or installing a Claude Code mod, enabling You should know, or contrasting mods with settings hooks",
       "related": [
         "claude-code-plugins",
@@ -7858,14 +7863,15 @@
         "cli"
       ],
       "status": "active",
-      "updated": "2026-10-02",
+      "updated": "2026-10-20",
       "when_to_use": "Authoring or running a Copilot CLI/app/SDK dynamic workflow, or contrasting it with /fleet or gh aw",
       "related": [
         "github-copilot-fleet",
         "github-agentic-workflows",
         "github-copilot-plugins",
         "github-copilot-cli",
-        "claude-code-workflows"
+        "claude-code-workflows",
+        "structured-outputs-for-agents"
       ]
     },
     {
@@ -8270,7 +8276,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-09",
+      "updated": "2026-10-20",
       "when_to_use": "Switching Copilot CLI to /permissions assisted, or setting disableBypassPermissionsMode allow-auto-only",
       "related": [
         "github-copilot-cli",
@@ -8278,7 +8284,8 @@
         "vscode-assisted-permissions",
         "github-copilot-jetbrains",
         "github-copilot-sandbox",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "github-copilot-cli-settings"
       ]
     },
     {
@@ -8566,7 +8573,7 @@
         "ci"
       ],
       "status": "active",
-      "updated": "2026-10-15",
+      "updated": "2026-10-20",
       "when_to_use": "A CI or -p Claude Code job dies on 429/529, or you need to cap how long unattended retry waits for a usage-limit reset",
       "related": [
         "claude-code-headless",
@@ -8941,6 +8948,69 @@
         "github-copilot-code-review",
         "github-agentic-autofix",
         "github-code-scanning-ai-scan"
+      ]
+    },
+    {
+      "id": "mcp-release-cycle",
+      "path": "practices/mcp-release-cycle.md",
+      "title": "MCP release cycle — March/September cadence (SEP-3398)",
+      "tags": [
+        "mcp",
+        "roadmap",
+        "governance",
+        "versioning"
+      ],
+      "status": "active",
+      "updated": "2026-10-20",
+      "when_to_use": "Planning SDK or server work against the next MCP spec date, or assuming a December 2026 revision still exists",
+      "related": [
+        "mcp-2026-roadmap",
+        "mcp-feature-lifecycle",
+        "mcp-extension-lifecycle",
+        "mcp-stateless-core"
+      ]
+    },
+    {
+      "id": "claude-managed-agents",
+      "path": "practices/claude-managed-agents.md",
+      "title": "Claude Managed Agents — hosted harness, sessions, vaults",
+      "tags": [
+        "claude",
+        "api",
+        "sandbox",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-10-20",
+      "when_to_use": "Calling Anthropic’s hosted agent REST/SDK instead of the Messages API or Claude Agent SDK, or running /claude-api managed-agents-secure",
+      "related": [
+        "claude-agent-sdk",
+        "claude-code-self-hosted",
+        "claude-code-sandboxing",
+        "claude-code-on-the-web",
+        "durable-agent-workflows",
+        "openai-agents-api"
+      ]
+    },
+    {
+      "id": "github-package-firewall",
+      "path": "practices/github-package-firewall.md",
+      "title": "GitHub package firewall — npm proxy for agents and CI",
+      "tags": [
+        "github",
+        "security",
+        "supply-chain",
+        "sandbox"
+      ],
+      "status": "active",
+      "updated": "2026-10-20",
+      "when_to_use": "Pointing a coding agent, Actions runner, or laptop npm at GitHub’s enterprise package firewall instead of registry.npmjs.org",
+      "related": [
+        "github-copilot-coding-agent",
+        "github-copilot-sandbox",
+        "agent-code-sandboxing",
+        "malicious-skills-supply-chain",
+        "github-actions-workflow-lockfiles"
       ]
     }
   ]

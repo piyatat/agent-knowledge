@@ -3,7 +3,7 @@ id: claude-code-mods
 title: Claude Code Mods — in-process UI, events, and tool rules
 tags: [claude, plugins, hooks, ux]
 status: active
-updated: 2026-10-06
+updated: 2026-10-20
 when_to_use: Writing or installing a Claude Code mod, enabling You should know, or contrasting mods with settings hooks
 ---
 
@@ -21,6 +21,7 @@ A **Claude Code mod** (v2.1.287+) is a **plugin** whose JavaScript/TypeScript ha
 - v2.1.288+: `$.ui.selection()` returns the last fullscreen selection (and the transcript row when the selection sits in one). v2.1.289+: `agent.spawn` for plugin teammates; one agent id across plugin hook events; `$.agent.list()` reports **idle** and **waiting**. A failing `Client` now fails alone and raises `ui.fault` instead of taking down the rest of the mod. A user-installed plugin cannot rewrite descriptions of an **organization-managed** MCP server’s sign-in tools. Treat `agent.spawn` as the same trust surface as the host session (`claude-code-agent-teams`).
 - v2.1.290+: `turn.step` includes `serverToolUses` (API-run tools such as the advisor, with id/name/input/timing). `tool.check` carries `agentId` (subagent vs main) and `ceiling` (the approval an organization requires). `claude plugin validate` lists each gating hook and whether it has `.catch` (`gatingHooks` under `--json`).
 - v2.1.292+: `prompt.autocomplete` lets a mod add rows to the prompt-box autocomplete. `$.model.complete` prompt-caches when `prompt`/`system` are text blocks with `cache: true` on a block. `agent.spawn` also fires for **workflow agents** (run + index) so a mod can refuse them. A `config.set` / `state.set` / `env.set` / `agent.spawn` hook that denies **after** `next(e)` is reported as a failed hook, not a refusal. `tool.check` allow no longer skips a dialog that still needs a question or plan approval. `<system-reminder>` tags in hook output are escaped before they reach Claude.
+- v2.1.304: `tool.check` answer `decider: "person"` — only the permission dialog or a host callback can approve; where nobody can be asked, the call is refused with the mod’s reason. `e.isReadOnly` is set on the event when the tool call is read-only. A plugin that runs first and skips one of your mod’s hooks now writes a transcript line naming the event and the plugin.
 
 ## Sources
 
@@ -30,3 +31,4 @@ A **Claude Code mod** (v2.1.287+) is a **plugin** whose JavaScript/TypeScript ha
 - [v2.1.288 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.288) — accessed 2026-10-04
 - [v2.1.289 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.289) — accessed 2026-10-04
 - [CHANGELOG.md (v2.1.290–2.1.292)](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-06
+- [v2.1.304 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.304) — accessed 2026-10-20

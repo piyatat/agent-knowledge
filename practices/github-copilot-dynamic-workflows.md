@@ -3,7 +3,7 @@ id: github-copilot-dynamic-workflows
 title: Copilot dynamic workflows — coded multi-agent orchestration
 tags: [github, orchestration, workflows, cli]
 status: active
-updated: 2026-10-02
+updated: 2026-10-20
 when_to_use: Authoring or running a Copilot CLI/app/SDK dynamic workflow, or contrasting it with /fleet or gh aw
 ---
 
@@ -18,9 +18,12 @@ A **Copilot dynamic workflow** (public preview, 2026-10-01) is a **program** ins
 - Reuse: copy the extension dir to `~/.copilot/extensions/` (personal) or `.github/extensions/` (repo; teammates load after pull). Bundle in a plugin marketplace package (`github-copilot-plugins`). Session-authored copies do **not** include run history.
 - Monitor: CLI `/workflows` (Enter details; `P` pause, `X` cancel, `R` resume; raise a limit to resume a cap-stop). App local sessions: Workflows button (Pause / Cancel / Resume with limit…). Canceled runs cannot resume; paused / limit-stopped can reuse journaled step results. OTel: `invoke_workflow` span per run/resume (`github-copilot-otel`). Set AI-credit limits on the run — recommended.
 - Use when the process must be rerunnable with stages, verification, or pause/resume (release checks, parallel file review, dual-model agreement). For a one-off parallel split, `/fleet`. For repo-event automation in Actions, `gh aw`.
+- CLI **1.0.101** (2026-10-20): dynamic-workflow **subagents** can return **native structured output** on supported models (schema-bound result, not free text). Pair with `--result-file` / `--output-format json` in `copilot workflow run`. Confirm the model actually advertises structured output before treating the JSON as a contract (`structured-outputs-for-agents`).
 
 ## Sources
 
 - [Dynamic workflows in Copilot CLI and the Copilot app](https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/) — accessed 2026-10-02
 - [Using dynamic workflows](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-dynamic-workflows) — accessed 2026-10-02
 - [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) — accessed 2026-10-02
+- [copilot-cli 1.0.101](https://github.com/github/copilot-cli/releases/tag/v1.0.101) — accessed 2026-10-20
+- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-20
