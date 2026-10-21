@@ -1859,3 +1859,26 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | copilot-cli 1.0.101 | https://github.com/github/copilot-cli/releases/tag/v1.0.101 |
 | copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
 
+## Daily ingest 2026-10-21 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens | https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens/ |
+| Authenticating with GitHub CLI | https://docs.github.com/en/github-cli/github-cli/authenticating-with-github-cli |
+| gh auth login | https://cli.github.com/manual/gh_auth_login |
+| gh config | https://cli.github.com/manual/gh_config |
+| gh auth refresh | https://cli.github.com/manual/gh_auth_refresh |
+| Compare model results (Preview) | https://code.visualstudio.com/docs/agents/run/compare-models |
+| Visual Studio Code 1.143 | https://code.visualstudio.com/updates/v1_143 |
+| Choose and use an agent harness | https://code.visualstudio.com/docs/agents/run/agent-harnesses |
+| AI language models in VS Code | https://code.visualstudio.com/docs/agent-customization/language-models |
+| MAI-Code-1.1-Flash | https://microsoft.ai/news/mai-code-1-1-flash-br-better-faster-at-a-quarter-of-the-cost/ |
+| copilot-cli 1.0.102 | https://github.com/github/copilot-cli/releases/tag/v1.0.102 |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| Observability with OpenTelemetry | https://geminicli.com/docs/cli/telemetry/ |
+| Gemini CLI settings | https://geminicli.com/docs/cli/settings/ |
+| Gemini CLI v0.65.0 | https://github.com/google-gemini/gemini-cli/releases/tag/v0.65.0 |
+| Trusted Folders | https://geminicli.com/docs/cli/trusted-folders/ |
+| enforce read-only workspace settings in untrusted folders | https://github.com/google-gemini/gemini-cli/pull/29583 |
+
+

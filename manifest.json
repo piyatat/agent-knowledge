@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -4047,7 +4047,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4074,7 +4074,8 @@
         "github-copilot-managed-permissions",
         "github-copilot-autopilot",
         "github-copilot-hydrafusion",
-        "github-copilot-plugins"
+        "github-copilot-plugins",
+        "github-cli-expiring-oauth"
       ]
     },
     {
@@ -4439,7 +4440,7 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-09-07",
+      "updated": "2026-10-21",
       "when_to_use": "Enabling Gemini folder trust, or debugging CI FatalUntrustedWorkspaceError",
       "related": [
         "gemini-cli-headless",
@@ -4931,7 +4932,7 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-10-15",
+      "updated": "2026-10-21",
       "when_to_use": "Packaging or installing a Copilot plugin (CLI, cloud agent, or Copilot app), or replacing copilot plugins --kind flags",
       "related": [
         "github-copilot-cli",
@@ -5106,7 +5107,7 @@
         "privacy"
       ],
       "status": "active",
-      "updated": "2026-09-11",
+      "updated": "2026-10-21",
       "when_to_use": "Enabling Gemini CLI OTel export, or deciding whether prompts belong in traces",
       "related": [
         "gemini-cli-settings",
@@ -5724,7 +5725,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-10",
+      "updated": "2026-10-21",
       "when_to_use": "Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local sandboxing, or VS Code Agent Host MXC",
       "related": [
         "github-copilot-cli",
@@ -5733,7 +5734,8 @@
         "agent-code-sandboxing",
         "openai-codex-sandbox",
         "vscode-agent-sandboxing",
-        "github-copilot-cli-settings"
+        "github-copilot-cli-settings",
+        "github-cli-expiring-oauth"
       ]
     },
     {
@@ -6038,14 +6040,15 @@
         "models"
       ],
       "status": "active",
-      "updated": "2026-09-16",
+      "updated": "2026-10-21",
       "when_to_use": "Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or contrasting it with Cursor Router",
       "related": [
         "cursor-router",
         "github-copilot-cli",
         "github-copilot-ide-agent",
         "github-copilot-coding-agent",
-        "agent-model-routing-fallback"
+        "agent-model-routing-fallback",
+        "vscode-on-device-models"
       ]
     },
     {
@@ -6582,7 +6585,7 @@
         "interoperability"
       ],
       "status": "active",
-      "updated": "2026-10-18",
+      "updated": "2026-10-21",
       "when_to_use": "Choosing a VS Code Session Target, or handing a Local chat to Copilot/Claude/Codex/Cloud",
       "related": [
         "github-copilot-ide-agent",
@@ -6595,7 +6598,9 @@
         "vscode-mcp",
         "vscode-agent-worktree-cleanup",
         "vscode-agent-canvases",
-        "vscode-assisted-permissions"
+        "vscode-assisted-permissions",
+        "vscode-compare-models",
+        "vscode-on-device-models"
       ]
     },
     {
@@ -9011,6 +9016,67 @@
         "agent-code-sandboxing",
         "malicious-skills-supply-chain",
         "github-actions-workflow-lockfiles"
+      ]
+    },
+    {
+      "id": "github-cli-expiring-oauth",
+      "path": "practices/github-cli-expiring-oauth.md",
+      "title": "GitHub CLI expiring OAuth — refreshable tokens (v2.103.0)",
+      "tags": [
+        "github",
+        "cli",
+        "auth",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-10-21",
+      "when_to_use": "Opting gh into --expiring OAuth, or debugging a script that cached gh auth token",
+      "related": [
+        "github-copilot-cli",
+        "github-copilot-sandbox",
+        "agent-output-secret-scanning",
+        "cursor-cli-headless"
+      ]
+    },
+    {
+      "id": "vscode-compare-models",
+      "path": "practices/vscode-compare-models.md",
+      "title": "VS Code compare models — parallel harness bake-off (Preview)",
+      "tags": [
+        "vscode",
+        "models",
+        "evals",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-10-21",
+      "when_to_use": "Running the same coding task on multiple VS Code models or harnesses, or enabling a Judge/Synthesizer",
+      "related": [
+        "vscode-agent-harnesses",
+        "vscode-agent-worktree-cleanup",
+        "vscode-agent-sandboxing",
+        "llm-judge-bias",
+        "agent-eval-harness"
+      ]
+    },
+    {
+      "id": "vscode-on-device-models",
+      "path": "practices/vscode-on-device-models.md",
+      "title": "VS Code on-device models — MAI Code 1.1 Flash via llama.cpp",
+      "tags": [
+        "vscode",
+        "models",
+        "privacy",
+        "cost"
+      ],
+      "status": "active",
+      "updated": "2026-10-21",
+      "when_to_use": "Running Copilot’s MAI Code 1.1 Flash locally in a VS Code Copilot harness, or contrasting it with BYOK Ollama",
+      "related": [
+        "vscode-agent-harnesses",
+        "github-copilot-auto-model",
+        "github-copilot-cli-local-models",
+        "prompt-injection-agent-defense"
       ]
     }
   ]
