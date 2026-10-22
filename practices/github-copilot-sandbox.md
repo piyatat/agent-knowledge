@@ -3,7 +3,7 @@ id: github-copilot-sandbox
 title: Copilot sandboxes — CLI MXC, --cloud, and app local policy
 tags: [github, sandbox, cli, security]
 status: active
-updated: 2026-10-21
+updated: 2026-10-22
 when_to_use: Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local sandboxing, or VS Code Agent Host MXC
 ---
 
@@ -21,6 +21,7 @@ when_to_use: Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local s
 - Bypass (CLI): model may ask to run **one** command unsandboxed (`sandbox.allowBypass`; default true). Pair `--allow-all` with a sandbox; never as a substitute for one. Proxy CA (CLI 1.0.91+): `copilot sandbox ca` **check / create / trust / rotate / remove**. CLI 1.0.92-4: sandboxed shells **withhold ambient `GITHUB_TOKEN`** unless you configure injection.
 - Masked env vars (Credentials tab / `sandbox.credentials.envVars`): name a variable already in the CLI process environment and list **`injectHosts`** (hostname or `*.example.com`, no scheme/path/port/`*`). The proxy supplies the real value only to those hosts; adding a host does **not** open network access to it. Git/`gh` masking is automatic when those toggles are on. **1.0.95:** `copilot config` completes `injectHosts` keys. **1.0.96-1:** interactive `/sandbox` suggests possible environment secrets and lets you add masking hosts before save. Do not also list a masked var in `--secret-env-vars` (that removes it). Windows masking needs **Allow local network**.
 - CLI **1.0.102** (2026-10-21): when the sandbox inherits host proxy settings, it now honors **`NO_PROXY` and `ALL_PROXY`** (not only `HTTP_PROXY` / `HTTPS_PROXY` from 1.0.100-1). Long-running sandboxed commands **keep running past 10 seconds** instead of dying. Pair with `github-cli-expiring-oauth` if sandboxed `gh` uses a rotating token — do not cache `gh auth token` inside the sandbox.
+- CLI **1.0.103** (2026-10-22): **ACP** sessions honor the saved `sandbox.enabled` setting and `--sandbox` / `--no-sandbox`, **including on resume** (earlier ACP hosts could ignore them). Windows **`npm.cmd`** shims get the same sandbox grants as `npm`; **`dnx`** can reuse existing .NET / NuGet grants when developer-tool access is enabled.
 
 ## Sources
 
@@ -29,7 +30,8 @@ when_to_use: Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local s
 - [Using local sandboxing](https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing) — accessed 2026-10-07
 - [Configuring local sandbox settings](https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings) — accessed 2026-10-05
 - [Sandbox Copilot Agent Host sessions](https://code.visualstudio.com/docs/agents/run/agent-sandboxing) — accessed 2026-10-08
-- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-21
+- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-22
+- [copilot-cli 1.0.103](https://github.com/github/copilot-cli/releases/tag/v1.0.103) — accessed 2026-10-22
 - [copilot-cli 1.0.102](https://github.com/github/copilot-cli/releases/tag/v1.0.102) — accessed 2026-10-21
 - [copilot-cli 1.0.96-0](https://github.com/github/copilot-cli/releases/tag/v1.0.96-0) — accessed 2026-10-10
 - [copilot-cli 1.0.96-1](https://github.com/github/copilot-cli/releases/tag/v1.0.96-1) — accessed 2026-10-10

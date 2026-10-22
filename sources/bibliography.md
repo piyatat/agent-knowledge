@@ -1881,4 +1881,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Trusted Folders | https://geminicli.com/docs/cli/trusted-folders/ |
 | enforce read-only workspace settings in untrusted folders | https://github.com/google-gemini/gemini-cli/pull/29583 |
 
+## Daily ingest 2026-10-22 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Multiagent orchestration | https://platform.claude.com/docs/en/managed-agents/multiagent-orchestration |
+| Workflow runs | https://platform.claude.com/docs/en/managed-agents/workflow-runs |
+| Session threads | https://platform.claude.com/docs/en/managed-agents/session-threads |
+| Claude Managed Agents overview | https://platform.claude.com/docs/en/managed-agents/overview |
+| Global default for Copilot features generally available | https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available/ |
+| About default availability of Copilot features and models | https://docs.github.com/en/copilot/concepts/enterprise/default-availability |
+| Industry comparisons in the Copilot impact dashboard | https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard/ |
+| Viewing the Copilot impact dashboard | https://docs.github.com/en/copilot/how-tos/administer-copilot/view-impact-dashboard |
+| GitHub Copilot usage metrics | https://docs.github.com/en/copilot/concepts/billing-and-usage/copilot-usage-metrics/copilot-metrics |
+| copilot-cli 1.0.103 | https://github.com/github/copilot-cli/releases/tag/v1.0.103 |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| GitHub Copilot CLI command reference | https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference |
+| Model Context Protocol (Cursor) | https://cursor.com/docs/mcp |
+| Model and Integration Management | https://cursor.com/docs/enterprise/model-and-integration-management |
+| Cursor web release notes | https://cursor.com/docs/release-notes/web |
+| permissions.json reference | https://cursor.com/docs/reference/permissions |
+| Code Review | https://code.claude.com/docs/en/code-review |
+| Read and request reviews on a pull request | https://code.claude.com/docs/en/code-review-pull-requests |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+
 

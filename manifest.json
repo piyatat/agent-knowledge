@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -3054,13 +3054,15 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-08-30",
+      "updated": "2026-10-22",
       "when_to_use": "Separating who may run an MCP server from how it gets installed (Teams/Enterprise)",
       "related": [
         "cursor-plugins",
         "cursor-mcp-json",
         "cursor-cloud-mcp-http-vs-stdio",
-        "mcp-registry-admission"
+        "mcp-registry-admission",
+        "cursor-customize",
+        "cursor-permissions-json"
       ]
     },
     {
@@ -4047,7 +4049,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-21",
+      "updated": "2026-10-22",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -5279,7 +5281,7 @@
         "ci"
       ],
       "status": "active",
-      "updated": "2026-09-12",
+      "updated": "2026-10-22",
       "when_to_use": "Running /code-review or ultrareview, or enabling Claude GitHub PR review",
       "related": [
         "cursor-bugbot-review",
@@ -5725,7 +5727,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-21",
+      "updated": "2026-10-22",
       "when_to_use": "Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local sandboxing, or VS Code Agent Host MXC",
       "related": [
         "github-copilot-cli",
@@ -7782,7 +7784,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-01",
+      "updated": "2026-10-22",
       "when_to_use": "Enabling /remote or --remote on Copilot CLI, or contrasting it with Claude Code Remote Control",
       "related": [
         "github-copilot-cli",
@@ -8885,13 +8887,14 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-10-19",
+      "updated": "2026-10-22",
       "when_to_use": "Scripting Copilot model enablement after a deprecation, or PATCHing enterprise/org model policies instead of the UI",
       "related": [
         "github-copilot-model-deprecations",
         "github-copilot-auto-model",
         "github-copilot-hydrafusion",
-        "github-copilot-managed-permissions"
+        "github-copilot-managed-permissions",
+        "github-copilot-feature-defaults"
       ]
     },
     {
@@ -8986,7 +8989,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-20",
+      "updated": "2026-10-22",
       "when_to_use": "Calling Anthropic’s hosted agent REST/SDK instead of the Messages API or Claude Agent SDK, or running /claude-api managed-agents-secure",
       "related": [
         "claude-agent-sdk",
@@ -8994,7 +8997,9 @@
         "claude-code-sandboxing",
         "claude-code-on-the-web",
         "durable-agent-workflows",
-        "openai-agents-api"
+        "openai-agents-api",
+        "claude-managed-agents-workflows",
+        "claude-code-workflows"
       ]
     },
     {
@@ -9077,6 +9082,67 @@
         "github-copilot-auto-model",
         "github-copilot-cli-local-models",
         "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "claude-managed-agents-workflows",
+      "path": "practices/claude-managed-agents-workflows.md",
+      "title": "Claude Managed Agents multiagent — workflows, subagents, advisor",
+      "tags": [
+        "claude",
+        "orchestration",
+        "workflows",
+        "api"
+      ],
+      "status": "active",
+      "updated": "2026-10-22",
+      "when_to_use": "Enabling multiagent_20261001 on a hosted Managed Agent, or choosing workflows vs subagents vs advisor",
+      "related": [
+        "claude-managed-agents",
+        "claude-code-workflows",
+        "github-copilot-dynamic-workflows",
+        "multi-agent-handoffs",
+        "durable-agent-workflows"
+      ]
+    },
+    {
+      "id": "github-copilot-feature-defaults",
+      "path": "practices/github-copilot-feature-defaults.md",
+      "title": "Copilot default policy for new features — Unconfigured GA rollout",
+      "tags": [
+        "github",
+        "governance",
+        "mcp",
+        "policies"
+      ],
+      "status": "active",
+      "updated": "2026-10-22",
+      "when_to_use": "An enterprise left Copilot Features & clients or MCP policies Unconfigured, or preparing for the Oct 22–26 default-policy enforcement",
+      "related": [
+        "github-copilot-model-policy-api",
+        "github-copilot-managed-permissions",
+        "github-copilot-mcp",
+        "github-copilot-auto-model"
+      ]
+    },
+    {
+      "id": "github-copilot-impact-industry",
+      "path": "practices/github-copilot-impact-industry.md",
+      "title": "Copilot impact dashboard — industry comparison (opt-in)",
+      "tags": [
+        "github",
+        "observability",
+        "governance",
+        "evals"
+      ],
+      "status": "active",
+      "updated": "2026-10-22",
+      "when_to_use": "Comparing Copilot agentic adoption/leverage to peers, or deciding whether to opt into industry benchmarks",
+      "related": [
+        "github-copilot-otel",
+        "agent-eval-harness",
+        "github-copilot-model-policy-api",
+        "github-copilot-feature-defaults"
       ]
     }
   ]
