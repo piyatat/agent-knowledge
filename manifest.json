@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -3914,7 +3914,7 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-10-20",
+      "updated": "2026-10-23",
       "when_to_use": "Enabling Claude Code /sandbox, or deciding OS isolation vs permission rules",
       "related": [
         "claude-code-permissions",
@@ -3980,8 +3980,8 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-10-07",
-      "when_to_use": "Adding stdio or HTTP MCP to Codex, or replacing a removed codex mcp-server integration",
+      "updated": "2026-10-23",
+      "when_to_use": "Adding stdio or HTTP MCP to Codex, or using Codex account grants for enterprise MCP auth",
       "related": [
         "openai-codex-sdk",
         "openai-codex-plugins",
@@ -3989,7 +3989,8 @@
         "openai-docs-mcp",
         "claude-code-mcp",
         "cursor-mcp-json",
-        "mcp-oauth-scopes"
+        "mcp-oauth-scopes",
+        "openai-codex-presets"
       ]
     },
     {
@@ -4335,14 +4336,15 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-09-14",
+      "updated": "2026-10-23",
       "when_to_use": "Setting Codex sandbox_mode / approval_policy, or contrasting them with permission profiles",
       "related": [
         "openai-codex-permissions",
         "openai-codex-cloud-environments",
         "claude-code-sandboxing",
         "gemini-cli-sandboxing",
-        "openai-codex-granular-approvals"
+        "openai-codex-granular-approvals",
+        "agent-output-secret-scanning"
       ]
     },
     {
@@ -5281,7 +5283,7 @@
         "ci"
       ],
       "status": "active",
-      "updated": "2026-10-22",
+      "updated": "2026-10-23",
       "when_to_use": "Running /code-review or ultrareview, or enabling Claude GitHub PR review",
       "related": [
         "cursor-bugbot-review",
@@ -7457,8 +7459,8 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-10-16",
-      "when_to_use": "Starting or steering a Copilot cloud agent from Slack or Microsoft Teams, or contrasting it with Cursor @cursor",
+      "updated": "2026-10-23",
+      "when_to_use": "Starting or steering a Copilot cloud agent from Slack or Microsoft Teams, or installing the consolidated GitHub Teams app",
       "related": [
         "github-copilot-coding-agent",
         "cursor-slack-cloud-agents",
@@ -7651,7 +7653,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-29",
+      "updated": "2026-10-23",
       "when_to_use": "Using Copilot Agent/Plan/Ask in Visual Studio (2022 17.14+ or 2026), or contrasting it with VS Code Agent Host",
       "related": [
         "github-copilot-ide-agent",
@@ -9136,13 +9138,76 @@
         "evals"
       ],
       "status": "active",
-      "updated": "2026-10-22",
+      "updated": "2026-10-23",
       "when_to_use": "Comparing Copilot agentic adoption/leverage to peers, or deciding whether to opt into industry benchmarks",
       "related": [
         "github-copilot-otel",
         "agent-eval-harness",
         "github-copilot-model-policy-api",
-        "github-copilot-feature-defaults"
+        "github-copilot-feature-defaults",
+        "github-copilot-usage-metrics-customizations"
+      ]
+    },
+    {
+      "id": "github-copilot-usage-metrics-customizations",
+      "path": "practices/github-copilot-usage-metrics-customizations.md",
+      "title": "Copilot usage metrics — named skills, agents, MCP, slash commands",
+      "tags": [
+        "github",
+        "observability",
+        "mcp",
+        "skills"
+      ],
+      "status": "active",
+      "updated": "2026-10-23",
+      "when_to_use": "Reading Copilot usage-metrics API arrays for internal skills, custom agents, MCP servers, slash commands, or plugins",
+      "related": [
+        "github-copilot-impact-industry",
+        "github-copilot-otel",
+        "github-copilot-skills",
+        "github-copilot-mcp",
+        "github-copilot-plugins"
+      ]
+    },
+    {
+      "id": "github-enterprise-app-installations",
+      "path": "practices/github-enterprise-app-installations.md",
+      "title": "GitHub App enterprise installations — GA permissions vs org install",
+      "tags": [
+        "github",
+        "auth",
+        "governance",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-10-23",
+      "when_to_use": "Replacing a classic enterprise PAT with a GitHub App, or installing an App on the enterprise account itself",
+      "related": [
+        "github-cli-expiring-oauth",
+        "github-package-firewall",
+        "github-copilot-model-policy-api",
+        "agent-output-secret-scanning"
+      ]
+    },
+    {
+      "id": "openai-codex-presets",
+      "path": "practices/openai-codex-presets.md",
+      "title": "Codex /presets — numbered TUI slots and inline /model",
+      "tags": [
+        "openai",
+        "cli",
+        "ux",
+        "config"
+      ],
+      "status": "active",
+      "updated": "2026-10-23",
+      "when_to_use": "Saving reusable Codex prompts or slash commands, or setting model/permissions with inline /model /permissions",
+      "related": [
+        "openai-codex-sessions",
+        "openai-codex-agents-md",
+        "openai-codex-mcp",
+        "openai-codex-permissions",
+        "vscode-agent-harnesses"
       ]
     }
   ]

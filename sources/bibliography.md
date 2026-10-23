@@ -1905,4 +1905,24 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Read and request reviews on a pull request | https://code.claude.com/docs/en/code-review-pull-requests |
 | Claude Code changelog | https://code.claude.com/docs/en/changelog |
 
+## Daily ingest 2026-10-23 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Custom skills, agents, and MCP servers in usage metrics API | https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api/ |
+| Data available in Copilot usage metrics | https://docs.github.com/en/copilot/reference/copilot-usage-metrics/copilot-usage-metrics |
+| REST API endpoints for Copilot usage metrics | https://docs.github.com/en/rest/copilot/copilot-usage-metrics |
+| Enterprise installations for GitHub Apps generally available | https://github.blog/changelog/2026-10-23-enterprise-installations-for-github-apps-generally-available/ |
+| Installing a GitHub App on your enterprise | https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/installing-a-github-app-on-your-enterprise |
+| Codex 0.164.0 | https://github.com/openai/codex/releases/tag/rust-v0.164.0 |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+| Turn notifications into code with GitHub Copilot in Teams | https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/ |
+| Integrating GitHub with Teams | https://docs.github.com/en/integrations/how-tos/teams/integrate-github-with-teams |
+| Integrating Copilot cloud agent with Teams | https://docs.github.com/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-teams |
+| Find bugs with ultrareview | https://code.claude.com/docs/en/ultrareview |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| v2.1.309 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.309 |
+| GitHub Copilot in Visual Studio — September update | https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2/ |
+
 
