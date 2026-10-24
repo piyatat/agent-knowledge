@@ -1925,4 +1925,25 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | v2.1.309 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.309 |
 | GitHub Copilot in Visual Studio — September update | https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2/ |
 
+## Daily ingest 2026-10-24 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Usage metrics API adds usage from tools like OpenCode | https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode/ |
+| Data available in Copilot usage metrics | https://docs.github.com/en/copilot/reference/copilot-usage-metrics/copilot-usage-metrics |
+| REST API endpoints for Copilot usage metrics | https://docs.github.com/en/rest/copilot/copilot-usage-metrics |
+| Tools reference — Monitor | https://code.claude.com/docs/en/tools-reference |
+| Week 15 · Monitor tool | https://code.claude.com/docs/en/whats-new/2026-w15 |
+| Run prompts on a schedule | https://code.claude.com/docs/en/scheduled-tasks |
+| Plugins reference — Monitors | https://code.claude.com/docs/en/plugins-reference |
+| Add components to a plugin | https://code.claude.com/docs/en/plugins/components |
+| v2.1.310 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.310 |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Use Claude Code on the web | https://code.claude.com/docs/en/claude-code-on-the-web |
+| copilot-cli 1.0.104-0 | https://github.com/github/copilot-cli/releases/tag/v1.0.104-0 |
+| copilot-cli 1.0.104-2 | https://github.com/github/copilot-cli/releases/tag/v1.0.104-2 |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| OpenTelemetry Export | https://cursor.com/docs/enterprise/opentelemetry-export |
+| Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
+
 

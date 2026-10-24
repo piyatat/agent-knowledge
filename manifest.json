@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -3212,7 +3212,8 @@
         "claude-code-plugin-eval",
         "claude-code-security",
         "claude-code-security-guidance",
-        "claude-code-mods"
+        "claude-code-mods",
+        "claude-code-monitor"
       ]
     },
     {
@@ -3914,7 +3915,7 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-10-23",
+      "updated": "2026-10-24",
       "when_to_use": "Enabling Claude Code /sandbox, or deciding OS isolation vs permission rules",
       "related": [
         "claude-code-permissions",
@@ -3922,7 +3923,8 @@
         "cursor-sandbox-json",
         "openai-codex-permissions",
         "openai-codex-sandbox",
-        "gemini-cli-sandboxing"
+        "gemini-cli-sandboxing",
+        "claude-code-monitor"
       ]
     },
     {
@@ -4050,7 +4052,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-22",
+      "updated": "2026-10-24",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -5089,7 +5091,7 @@
         "git"
       ],
       "status": "active",
-      "updated": "2026-09-11",
+      "updated": "2026-10-24",
       "when_to_use": "Starting or teleporting a claude.ai/code cloud session, or contrasting it with Remote Control",
       "related": [
         "claude-code-remote-control",
@@ -5326,14 +5328,15 @@
         "session"
       ],
       "status": "active",
-      "updated": "2026-09-12",
+      "updated": "2026-10-24",
       "when_to_use": "Polling in an open Claude Code session with /loop, or choosing /loop vs Desktop tasks vs cloud routines",
       "related": [
         "claude-code-routines",
         "claude-code-channels",
         "cursor-automations",
         "claude-code-sessions",
-        "durable-agent-workflows"
+        "durable-agent-workflows",
+        "claude-code-monitor"
       ]
     },
     {
@@ -6044,7 +6047,7 @@
         "models"
       ],
       "status": "active",
-      "updated": "2026-10-21",
+      "updated": "2026-10-24",
       "when_to_use": "Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or contrasting it with Cursor Router",
       "related": [
         "cursor-router",
@@ -6052,7 +6055,8 @@
         "github-copilot-ide-agent",
         "github-copilot-coding-agent",
         "agent-model-routing-fallback",
-        "vscode-on-device-models"
+        "vscode-on-device-models",
+        "github-copilot-hydrafusion"
       ]
     },
     {
@@ -6462,7 +6466,7 @@
         "privacy"
       ],
       "status": "active",
-      "updated": "2026-09-19",
+      "updated": "2026-10-24",
       "when_to_use": "Streaming Cursor usage to a team collector over OTLP/HTTP, or joining sessions without prompt content",
       "related": [
         "cursor-conversation-insights",
@@ -6470,7 +6474,8 @@
         "agent-observability-otel",
         "telemetry-redaction-genai",
         "cursor-grok-bot",
-        "cursor-organization-audit-logs"
+        "cursor-organization-audit-logs",
+        "cursor-azure-devops"
       ]
     },
     {
@@ -8285,7 +8290,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-20",
+      "updated": "2026-10-24",
       "when_to_use": "Switching Copilot CLI to /permissions assisted, or setting disableBypassPermissionsMode allow-auto-only",
       "related": [
         "github-copilot-cli",
@@ -8436,7 +8441,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-13",
+      "updated": "2026-10-24",
       "when_to_use": "Switching Copilot CLI into Autopilot, setting --max-autopilot-continues, or choosing Autopilot vs /delegate vs --allow-all",
       "related": [
         "github-copilot-cli",
@@ -9145,7 +9150,8 @@
         "agent-eval-harness",
         "github-copilot-model-policy-api",
         "github-copilot-feature-defaults",
-        "github-copilot-usage-metrics-customizations"
+        "github-copilot-usage-metrics-customizations",
+        "github-copilot-usage-metrics-clients"
       ]
     },
     {
@@ -9166,7 +9172,8 @@
         "github-copilot-otel",
         "github-copilot-skills",
         "github-copilot-mcp",
-        "github-copilot-plugins"
+        "github-copilot-plugins",
+        "github-copilot-usage-metrics-clients"
       ]
     },
     {
@@ -9208,6 +9215,49 @@
         "openai-codex-mcp",
         "openai-codex-permissions",
         "vscode-agent-harnesses"
+      ]
+    },
+    {
+      "id": "github-copilot-usage-metrics-clients",
+      "path": "practices/github-copilot-usage-metrics-clients.md",
+      "title": "Copilot usage metrics — totals_by_client (OpenCode, Claude Code, Codex)",
+      "tags": [
+        "github",
+        "observability",
+        "cli",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-10-24",
+      "when_to_use": "Reading Copilot usage-metrics totals_by_client for OpenCode, Claude Code, Codex, or other non-IDE clients",
+      "related": [
+        "github-copilot-usage-metrics-customizations",
+        "github-copilot-impact-industry",
+        "github-copilot-otel",
+        "opencode-agent",
+        "openai-codex-sdk",
+        "claude-code-headless"
+      ]
+    },
+    {
+      "id": "claude-code-monitor",
+      "path": "practices/claude-code-monitor.md",
+      "title": "Claude Code Monitor — background watch vs /loop vs plugin monitors",
+      "tags": [
+        "claude",
+        "automations",
+        "tools",
+        "session"
+      ],
+      "status": "active",
+      "updated": "2026-10-24",
+      "when_to_use": "Asking Claude Code to tail logs or watch CI without a sleep loop, or declaring plugin monitors",
+      "related": [
+        "claude-code-scheduled-tasks",
+        "claude-code-channels",
+        "claude-code-routines",
+        "claude-code-plugins",
+        "claude-code-sandboxing"
       ]
     }
   ]

@@ -3,7 +3,7 @@ id: cursor-otel-export
 title: Cursor OpenTelemetry Export — enterprise OTLP metrics and logs
 tags: [cursor, observability, otel, privacy]
 status: active
-updated: 2026-09-19
+updated: 2026-10-24
 when_to_use: Streaming Cursor usage to a team collector over OTLP/HTTP, or joining sessions without prompt content
 ---
 
@@ -15,9 +15,11 @@ when_to_use: Streaming Cursor usage to a team collector over OTLP/HTTP, or joini
 
 - Wire: OTLP/HTTP **protobuf** on `/v1/metrics` and `/v1/logs`. Enter the HTTPS **base** URL (no `/v1`); Cursor appends the paths. **gRPC and JSON are not supported.** Bearer/API-key header required. Endpoint must be on the public internet; traffic comes from a documented `/32` egress set. Test connection, then Enable (~1 minute).
 - Metrics (delta): `cursor.token.usage` (`input` / `output` / `cache_read` / `cache_creation`), `cursor.tool.calls` (builtin vs MCP), `cursor.cost.usage` (best-effort USD, **not** an invoice). Logs: `cursor.api.request` / `error` / `correction`, skill/hook/plugin events, `cursor.cloud_agent.*`, and `cursor.grok_bot.*` only after Action Recording is on (commands secret-scrubbed; browser URLs stripped of query/fragment).
+- Cloud Agent commits (week of 2026-10-12): `cursor.cloud_agent.commit` fires for each commit a Cloud Agent **pushes to GitHub** — SHA, repository URL, files changed, line counts when available, and a link back to the agent run. Related `cursor.cloud_agent.*` rows include setup, artifact, pull_request, mcp_auth_error, and review_followup. GitHub-only for the commit log; do not expect Azure DevOps / GitLab commits here (`cursor-azure-devops`).
 - Families toggle independently (`model_usage`, `tool_calls`, `skills_hooks_plugins`, `cloud_agents`, `grok_bot_agent_actions`). New families default on unless `auto_enable_new_families` is off. Scope `cursor.telemetry` `0.1.0`. Resource: `service.name=cursor`, `cursor.team.id`, optional `cursor.user.id`.
 - Delivery: metrics at-most-once (brief gaps after failure); logs at-least-once — dedupe on `cursor.event.id`. No backfill, no prompt content, no `trace_id`/`span_id`. Join sessions on log `cursor.conversation.id` (IDE/CLI chat UUID, Cloud Agent `bc-…`, or Grok Bot id). Metrics have **no** conversation id. Subagents get their own conversation id; parent rollup is not exported. Rotate credentials by editing the destination — delete drops in-flight data.
 
 ## Sources
 
-- [OpenTelemetry Export](https://cursor.com/docs/enterprise/opentelemetry-export) — accessed 2026-09-19
+- [OpenTelemetry Export](https://cursor.com/docs/enterprise/opentelemetry-export) — accessed 2026-10-24
+- [Cloud Agents release notes](https://cursor.com/docs/release-notes/cloud-agents) — accessed 2026-10-24

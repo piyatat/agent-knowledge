@@ -3,7 +3,7 @@ id: github-copilot-assisted-permissions
 title: Copilot CLI Assisted permissions — LLM judge vs allow-all
 tags: [github, cli, permissions, approvals, security]
 status: active
-updated: 2026-10-20
+updated: 2026-10-24
 when_to_use: Switching Copilot CLI to /permissions assisted, or setting disableBypassPermissionsMode allow-auto-only
 ---
 
@@ -17,6 +17,7 @@ when_to_use: Switching Copilot CLI to /permissions assisted, or setting disableB
 - Managed `permissions.disableBypassPermissionsMode`: `"disable"` suppresses `--yolo` / `--allow-all*` and `/permissions allow-all`. `"allow-auto-only"` still blocks full allow-all but **permits** `/permissions assisted`. Unrecognized values **fail closed** to `"disable"` (logged). CLI **1.0.94** also lets managed policy **disable Assisted** entirely and keep sessions in Manual Approval; startup bypass flags that policy suppresses now show a warning instead of failing silently (`github-copilot-managed-permissions`).
 - Three sources, increasing permanence: user `~/.copilot/settings.json` (machine; survives account switch), server-managed settings (account; cleared on switch), MDM plist/registry/file (device; never cleared). An MDM `"disable"` always wins.
 - **`assistedApprovalInstructions`** (CLI **1.0.101**, 2026-10-20) is a user/repo settings string that steers the judge’s confirmation decisions (`github-copilot-cli-settings`). It is guidance, not a policy gate — managed deny/ask still win. **1.0.101** also takes **extension capability** requests off the Assisted judge (explicit approval only) and explains permission-escalation causes on the prompt.
+- CLI **1.0.104-0** (pre-release, 2026-10-23): Assisted Permissions is available **without** `/experimental on`. Managed policy can still disable Assisted and keep sessions in Manual Approval.
 - Independent of **sandboxing** (`github-copilot-sandbox`). Pair with deny/ask/allow selectors when you need a hard gate the judge cannot satisfy. Do not treat Assisted as a substitute for `--allow-all` in CI — use explicit `--allow-tool` / `--deny-tool` or a sandbox.
 
 ## Sources
@@ -25,5 +26,6 @@ when_to_use: Switching Copilot CLI to /permissions assisted, or setting disableB
 - [Allowing and denying tool use](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools) — accessed 2026-10-09
 - [Enterprise managed settings](https://docs.github.com/en/copilot/reference/enterprise-managed-settings-reference) — accessed 2026-10-09
 - [GitHub Copilot CLI configuration directory](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference) — accessed 2026-10-09
-- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-20
+- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-24
+- [copilot-cli 1.0.104-0](https://github.com/github/copilot-cli/releases/tag/v1.0.104-0) — accessed 2026-10-24
 - [copilot-cli 1.0.101](https://github.com/github/copilot-cli/releases/tag/v1.0.101) — accessed 2026-10-20

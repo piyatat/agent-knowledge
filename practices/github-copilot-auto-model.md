@@ -3,7 +3,7 @@ id: github-copilot-auto-model
 title: Copilot Auto — Efficiency, Balance, and Intelligence tiers
 tags: [github, routing, cost, models]
 status: active
-updated: 2026-10-21
+updated: 2026-10-24
 when_to_use: Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or contrasting it with Cursor Router
 ---
 
@@ -17,6 +17,7 @@ when_to_use: Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or con
 - Surfaces with task optimization: GitHub.com Chat, VS Code, Copilot CLI, Copilot app, cloud agent. **Tiers themselves** are VS Code, CLI, and the Copilot app only (rolling out as of 2026-09-14). Cloud agent and github.com Chat get Auto without the three-tier UI. Hover/terminal/end-of-response shows which model ran.
 - Cache: Auto switches only at **session start or after `/compact`**, not mid-task. Third-party agents (Codex / Claude in Copilot) can also pick Auto from a short supported-model list. Do not treat Auto as a way to bypass model allowlists.
 - CLI **1.0.102** (2026-10-21): **prompt mode** (`-p` and piped stdin) honors **managed Auto** model selection — headless/scripted runs pick the enterprise/org Auto policy instead of ignoring it. Interactive `/model` Auto was already wired. VS Code on-device MAI Code can join Auto separately (`vscode-on-device-models`).
+- CLI **1.0.104-0** (pre-release, 2026-10-23): when a **saved Auto preference is no longer available**, Auto falls back to its default preference instead of failing each turn. **1.0.104-2**: a managed model named **fusion** starts sessions on Auto and applies `fusionTier` (`github-copilot-hydrafusion`). Not a pin table (`github-copilot-model-deprecations`).
 
 ## Sources
 
@@ -24,4 +25,6 @@ when_to_use: Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or con
 - [Configure cost and quality in Copilot auto model selection](https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/) — accessed 2026-09-16
 - [Cursor Router](https://cursor.com/docs/cursor-router) — accessed 2026-09-16
 - [copilot-cli 1.0.102](https://github.com/github/copilot-cli/releases/tag/v1.0.102) — accessed 2026-10-21
+- [copilot-cli 1.0.104-0](https://github.com/github/copilot-cli/releases/tag/v1.0.104-0) — accessed 2026-10-24
+- [copilot-cli 1.0.104-2](https://github.com/github/copilot-cli/releases/tag/v1.0.104-2) — accessed 2026-10-24
 
