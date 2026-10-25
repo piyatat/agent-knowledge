@@ -3,7 +3,7 @@ id: claude-code-elicitation
 title: Claude Code MCP elicitation — form, URL, and hooks
 tags: [claude, mcp, elicitation, hooks]
 status: active
-updated: 2026-10-03
+updated: 2026-10-25
 when_to_use: Debugging Claude Code MCP login/approval dialogs, or auto-answering elicitation with a hook
 ---
 
@@ -17,9 +17,12 @@ Claude Code hosts MCP **elicitation** without extra config: **form** mode shows 
 - After Claude Code 2.1.287, MCP **2025-11-25 URL prompts** (for example sign-in) are on. If a previously working server stops connecting, add `"bareElicitationCapability": true` on that `.mcp.json` entry so the client advertises elicitation the way the older server expects.
 - Hooks (`claude-code-hooks`): matcher is the **MCP server name**. `Elicitation` fires when the server asks; exit 2 or `action: decline|cancel` denies it. `hookSpecificOutput.content` can fill form fields on `accept`. `ElicitationResult` fires after the user answers and **before** the response is sent; exit 2 / decline blocks the reply. Notification types include `elicitation_dialog`, `elicitation_url_dialog`, `elicitation_complete`, `elicitation_response`. Headless / Agent SDK: only `elicitation_complete` and `elicitation_response` fire UI notifications; interactive dialogs are absent — use the hook or `canUseTool`.
 - Auto-responding a URL elicitation in CI is an approval of an **out-of-band** page. Prefer declining in `-p` / `--bare` unless the URL host is allowlisted. Treat the server-chosen URL as untrusted (`prompt-injection-agent-defense`).
+- **v2.1.310** (2026-10-23): if an MCP tool call **times out in a non-interactive session** (`-p` / Agent SDK) while that server’s elicitation is still unanswered, the error now tells Claude **no answer came — do not repeat the call**. Earlier builds could retry the same timed-out elicitation in a loop.
 
 ## Sources
 
+- [v2.1.310 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.310) — accessed 2026-10-25
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-10-25
 - [Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp) — accessed 2026-10-03
 - [Hooks reference](https://code.claude.com/docs/en/hooks) — accessed 2026-10-03
 - [Automate actions with hooks](https://code.claude.com/docs/en/hooks-guide) — accessed 2026-10-03

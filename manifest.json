@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1329,7 +1329,7 @@
         "glossary"
       ],
       "status": "active",
-      "updated": "2026-09-03",
+      "updated": "2026-10-25",
       "when_to_use": "Choosing how an agent talks to a frontend vs declaring widgets vs shipping a sandboxed MCP iframe",
       "related": [
         "a2a-vs-mcp",
@@ -1394,7 +1394,8 @@
         "cursor-gitlab-cloud-agents",
         "cursor-bitbucket-cloud-agents",
         "cursor-agent-review",
-        "cursor-origin"
+        "cursor-origin",
+        "cursor-origin-code-tours"
       ]
     },
     {
@@ -2592,7 +2593,8 @@
         "cursor-bugbot-review",
         "cursor-sdk",
         "cursor-origin-apps",
-        "cursor-origin-migrations"
+        "cursor-origin-migrations",
+        "cursor-origin-code-tours"
       ]
     },
     {
@@ -3588,7 +3590,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-16",
+      "updated": "2026-10-25",
       "when_to_use": "Launching Cloud Agents over HTTPS, or scripting saved environments via /v1/environments",
       "related": [
         "cursor-sdk",
@@ -4808,14 +4810,15 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-09-10",
+      "updated": "2026-10-25",
       "when_to_use": "Connecting claude.ai/code or the Claude mobile app to a local CLI/VS Code session, or contrasting it with Claude Code on the web",
       "related": [
         "claude-code-vscode",
         "claude-code-headless",
         "claude-code-workflows",
         "cursor-cloud-always-on",
-        "cursor-remote-control"
+        "cursor-remote-control",
+        "claude-code-on-the-web"
       ]
     },
     {
@@ -5439,7 +5442,7 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-10-17",
+      "updated": "2026-10-25",
       "when_to_use": "Starting a Cursor Project for a multi-PR feature, migration, or standing “gardening” job instead of a single chat",
       "related": [
         "cursor-cloud-always-on",
@@ -5447,7 +5450,8 @@
         "cursor-custom-subagents",
         "cursor-agents-window",
         "agent-memory-poisoning",
-        "cursor-self-hosted-pools"
+        "cursor-self-hosted-pools",
+        "cursor-remote-control"
       ]
     },
     {
@@ -6573,14 +6577,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-20",
+      "updated": "2026-10-25",
       "when_to_use": "Scheduling a Codex/ChatGPT Work task, or contrasting it with Cursor/Copilot/Claude automations",
       "related": [
         "cursor-automations",
         "github-copilot-automations",
         "claude-code-routines",
         "openai-codex-worktrees",
-        "openai-codex-sandbox"
+        "openai-codex-sandbox",
+        "openai-codex-team-tasks"
       ]
     },
     {
@@ -8047,7 +8052,7 @@
         "hooks"
       ],
       "status": "active",
-      "updated": "2026-10-03",
+      "updated": "2026-10-25",
       "when_to_use": "Debugging Claude Code MCP login/approval dialogs, or auto-answering elicitation with a hook",
       "related": [
         "mcp-elicitation-modes",
@@ -8313,7 +8318,7 @@
         "isolation"
       ],
       "status": "active",
-      "updated": "2026-10-10",
+      "updated": "2026-10-25",
       "when_to_use": "Reclaiming disk from VS Code agent-session worktrees, or configuring auto-cleanup after merged PRs",
       "related": [
         "vscode-external-sessions",
@@ -9061,7 +9066,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-21",
+      "updated": "2026-10-25",
       "when_to_use": "Running the same coding task on multiple VS Code models or harnesses, or enabling a Judge/Synthesizer",
       "related": [
         "vscode-agent-harnesses",
@@ -9258,6 +9263,49 @@
         "claude-code-routines",
         "claude-code-plugins",
         "claude-code-sandboxing"
+      ]
+    },
+    {
+      "id": "cursor-origin-code-tours",
+      "path": "practices/cursor-origin-code-tours.md",
+      "title": "Origin Code Tours — PR walkthrough next to the diff",
+      "tags": [
+        "cursor",
+        "review",
+        "git",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-10-25",
+      "when_to_use": "Opening a Cursor Origin pull-request Tour, customizing depth/files, or contrasting it with Bugbot comments",
+      "related": [
+        "cursor-origin",
+        "cursor-bugbot-review",
+        "cursor-agent-review",
+        "cursor-privacy-mode",
+        "cursor-cloud-pr-artifacts"
+      ]
+    },
+    {
+      "id": "openai-codex-team-tasks",
+      "path": "practices/openai-codex-team-tasks.md",
+      "title": "ChatGPT Team Tasks — service-account scheduled work",
+      "tags": [
+        "openai",
+        "automations",
+        "cron",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-10-25",
+      "when_to_use": "Setting up shared ChatGPT/Codex Team Tasks, workspace connections, or contrasting them with personal scheduled tasks",
+      "related": [
+        "openai-codex-automations",
+        "cursor-automations",
+        "github-copilot-automations",
+        "claude-code-routines",
+        "openai-codex-sandbox",
+        "prompt-injection-agent-defense"
       ]
     }
   ]

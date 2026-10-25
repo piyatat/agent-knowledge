@@ -1946,4 +1946,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | OpenTelemetry Export | https://cursor.com/docs/enterprise/opentelemetry-export |
 | Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
 
+## Daily ingest 2026-10-25 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Code Tours | https://cursor.com/docs/origin/code-tours |
+| Origin overview | https://cursor.com/docs/origin |
+| Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
+| Set up and manage teams and Team Tasks | https://learn.chatgpt.com/docs/enterprise/teams |
+| Creating and managing team tasks in ChatGPT | https://help.openai.com/en/articles/20001540-creating-and-managing-team-tasks-in-chatgpt |
+| Scheduled tasks | https://learn.chatgpt.com/docs/automations |
+| Scheduled tasks (Codex app) | https://developers.openai.com/codex/app/automations |
+| Workspace connections | https://learn.chatgpt.com/docs/enterprise/shared-connections |
+| What's new | https://learn.chatgpt.com/docs/whats-new |
+| Remote Control | https://code.claude.com/docs/en/remote-control |
+| Manage custom roles on Enterprise plans | https://support.claude.com/en/articles/13930452-manage-custom-roles-on-enterprise-plans |
+| Use Claude Code in the cloud | https://code.claude.com/docs/en/claude-code-on-the-web |
+| v2.1.310 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.310 |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Projects (Cursor docs) | https://cursor.com/docs/agent/projects |
+| Cloud Agents API | https://cursor.com/docs/cloud-agent/api/endpoints |
+| Cloud Agents API overview | https://cursor.com/docs/cloud-agent/api/overview |
+| Visual Studio Code 1.144 (Insiders) | https://code.visualstudio.com/updates/v1_144 |
+| A2UI home | https://a2ui.org/ |
+| AG-UI releases | https://github.com/ag-ui-protocol/ag-ui/releases |
+
 
