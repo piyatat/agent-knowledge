@@ -1971,4 +1971,31 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | A2UI home | https://a2ui.org/ |
 | AG-UI releases | https://github.com/ag-ui-protocol/ag-ui/releases |
 
+## Daily ingest 2026-10-26 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Loops | https://linear.app/docs/loops |
+| Linear Agent | https://linear.app/docs/linear-agent |
+| More ways to run and share Loops | https://linear.app/changelog/2026-10-22-slack-and-github-loops |
+| GitHub (Linear) | https://linear.app/docs/github |
+| GPT-6.1 Terra in GitHub Copilot | https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/ |
+| AI model comparison (Copilot) | https://docs.github.com/en/copilot/reference/ai-models/model-comparison |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+| Models (ChatGPT Work and Codex) | https://learn.chatgpt.com/docs/models |
+| Upcoming deprecation of selected GitHub Copilot models in mid-November | https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/ |
+| Linear (Cursor docs) | https://cursor.com/docs/integrations/linear |
+| Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
+| Team Pools | https://cursor.com/docs/cloud-agent/self-hosted/pool |
+| Self-Hosted Machines | https://cursor.com/docs/cloud-agent/self-hosted |
+| Secrets & Network | https://cursor.com/docs/cloud-agent/security-network |
+| Canvases | https://cursor.com/docs/agent/tools/canvas |
+| Cloud Environment Setup | https://cursor.com/docs/cloud-agent/setup |
+| Cloud Agent capabilities | https://cursor.com/docs/cloud-agent/capabilities |
+| Self-hosted environments | https://code.claude.com/docs/en/self-hosted-environments |
+| Self-hosted environments reference | https://code.claude.com/docs/en/self-hosted-environments-reference |
+| Deploy self-hosted environments | https://code.claude.com/docs/en/self-hosted-environments-deploy |
+| v2.1.311 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.311 |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+
 

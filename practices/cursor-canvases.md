@@ -3,7 +3,7 @@ id: cursor-canvases
 title: Cursor canvases — interactive artifacts and team share links
 tags: [cursor, ux, artifacts, sharing]
 status: active
-updated: 2026-10-16
+updated: 2026-10-26
 when_to_use: Asking Cursor for a dashboard/audit canvas, publishing a share link, or contrasting it with VS Code / Claude canvases
 ---
 
@@ -15,11 +15,12 @@ A **Cursor canvas** is an interactive React artifact that renders **beside chat*
 
 - Trigger: the agent decides a visual view fits, or you ask / use the `/canvas` skill. Cursor writes the canvas, inserts a chat card, and lists it in the workspace so you can reopen and rerun with fresh data. Open: click the card, Command Palette **Open Canvas**, or Agents Window **new tab → canvas** (`cursor-agents-window`).
 - Iterate by prompting (layout, rerun the query, revert) or by editing the source for small tweaks. Package a repeatable layout as a skill: trigger text, section/table spec, data sources (SQL / API / shell), formatting rules (`skills-dispatch-hygiene`). Personal `~/.cursor/skills/` need Sync Skills for Cloud Agents (`cursor-skills-cloud-sync`).
-- **Share** (changelog week of 2026-10-13): Publish from the canvas toolbar, then copy the link. Recipients on your **team** get a live snapshot (same layout/charts) without rerunning the agent. Dashboard **Shared Canvases** lists **your** publishes only — ask a teammate for their link. Paid plans (Premium+, Teams, Enterprise, legacy Pro/Pro+/Ultra); Free cannot create shares. Individual paid users must also belong to a team. **Legacy Privacy Mode** blocks shares because they need stored data (`cursor-privacy-mode`). Team admins can disable Shared Canvases in team settings.
+- **Share** (changelog week of 2026-10-13): Publish from the canvas toolbar, then copy the link. Recipients on your **team** get a live snapshot (same layout/charts) without rerunning the agent. Dashboard **Shared Canvases** lists **your** publishes only — ask a teammate for their link. Paid plans (Premium+, Teams, Enterprise, legacy Pro/Pro+/Ultra); Free cannot create shares. Individual paid users must also belong to a team. **Legacy Privacy Mode** blocks shares because they need stored data (`cursor-privacy-mode`). Team admins can disable Shared Canvases in team settings. Week of 2026-10-19: the share sheet can also open a canvas to **anyone at your organization** or grant access to **other teams** in the org — not only the publishing team.
 - Cloud agents produce canvases as part of their work — treat the share link as a demo artifact, not a merge gate (`cursor-cloud-pr-artifacts`). Do not paste secrets into a canvas you will publish.
 
 ## Sources
 
-- [Canvases](https://cursor.com/docs/agent/tools/canvas) — accessed 2026-10-16
+- [Canvases](https://cursor.com/docs/agent/tools/canvas) — accessed 2026-10-26
+- [Cloud Agents release notes](https://cursor.com/docs/release-notes/cloud-agents) — accessed 2026-10-26
 - [Cursor changelog — Canvases from cloud agents](https://cursor.com/changelog) — accessed 2026-10-16
-- [Agent Skills](https://cursor.com/docs/skills) — accessed 2026-10-16
+- [Agent Skills](https://cursor.com/docs/skills) — accessed 2026-10-26

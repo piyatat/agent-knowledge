@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2458,7 +2458,7 @@
         "ops"
       ],
       "status": "active",
-      "updated": "2026-08-27",
+      "updated": "2026-10-26",
       "when_to_use": "Configuring Cloud Agent env/runtime/build secrets, network modes, git IP allowlists, or signed-commit branch rules",
       "related": [
         "cursor-cloud-oidc-identity",
@@ -2498,7 +2498,7 @@
         "isolation"
       ],
       "status": "active",
-      "updated": "2026-09-02",
+      "updated": "2026-10-26",
       "when_to_use": "Deciding whether Cloud Agent tool calls stay on Cursor VMs or move to a worker you operate",
       "related": [
         "cursor-cloud-always-on",
@@ -2608,7 +2608,7 @@
         "ci"
       ],
       "status": "active",
-      "updated": "2026-10-13",
+      "updated": "2026-10-26",
       "when_to_use": "Authoring .cursor/environment.json, choosing snapshot vs Dockerfile, or splitting install from per-run services",
       "related": [
         "cursor-environment-builds",
@@ -2629,7 +2629,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-17",
+      "updated": "2026-10-26",
       "when_to_use": "Reviewing Cloud Agent PRs via screenshots/video, taking remote desktop, or controlling GitHub Actions auto-fix",
       "related": [
         "computer-use-containment",
@@ -2638,7 +2638,8 @@
         "prompt-injection-agent-defense",
         "cursor-self-hosted-computer-use",
         "cursor-slack-cloud-agents",
-        "cursor-canvases"
+        "cursor-canvases",
+        "cursor-origin"
       ]
     },
     {
@@ -3422,7 +3423,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-13",
+      "updated": "2026-10-26",
       "when_to_use": "Routing Cloud Agents to a named self-hosted worker fleet, scaling to zero, or keeping workspace state across idle follow-ups",
       "related": [
         "cursor-self-hosted-agents",
@@ -3547,14 +3548,16 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-03",
+      "updated": "2026-10-26",
       "when_to_use": "Starting or steering a Cloud Agent from Linear, or configuring repo/model hints on issues",
       "related": [
         "cursor-slack-cloud-agents",
         "cursor-automations",
         "cursor-cloud-always-on",
         "prompt-injection-agent-defense",
-        "cursor-microsoft-teams"
+        "cursor-microsoft-teams",
+        "linear-loops-agent",
+        "cursor-origin"
       ]
     },
     {
@@ -6264,7 +6267,7 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-09-18",
+      "updated": "2026-10-26",
       "when_to_use": "Running Claude Code cloud sessions on your hosts instead of Anthropic-managed environments",
       "related": [
         "claude-code-on-the-web",
@@ -8652,7 +8655,7 @@
         "sharing"
       ],
       "status": "active",
-      "updated": "2026-10-16",
+      "updated": "2026-10-26",
       "when_to_use": "Asking Cursor for a dashboard/audit canvas, publishing a share link, or contrasting it with VS Code / Claude canvases",
       "related": [
         "cursor-agents-window",
@@ -9306,6 +9309,50 @@
         "claude-code-routines",
         "openai-codex-sandbox",
         "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "linear-loops-agent",
+      "path": "practices/linear-loops-agent.md",
+      "title": "Linear Loops — scheduled and event-triggered Linear Agent",
+      "tags": [
+        "linear",
+        "automations",
+        "mcp",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-10-26",
+      "when_to_use": "Automating Linear Agent on a schedule or Slack/GitHub/issue event, or contrasting Loops with Cursor @Cursor mentions",
+      "related": [
+        "cursor-linear-cloud-agents",
+        "cursor-automations",
+        "github-copilot-automations",
+        "openai-codex-automations",
+        "prompt-injection-agent-defense",
+        "mcp-local-server-security"
+      ]
+    },
+    {
+      "id": "openai-gpt-61-terra-agents",
+      "path": "practices/openai-gpt-61-terra-agents.md",
+      "title": "GPT-6.1 Terra — everyday agent coding vs Sol",
+      "tags": [
+        "openai",
+        "github",
+        "models",
+        "computer-use"
+      ],
+      "status": "active",
+      "updated": "2026-10-26",
+      "when_to_use": "Pinning GPT-6.1 Terra in Copilot, Codex, or ChatGPT Work, or choosing it instead of GPT-6.1 Sol",
+      "related": [
+        "github-copilot-auto-model",
+        "github-copilot-model-deprecations",
+        "github-copilot-model-policy-api",
+        "openai-codex-gpt-55-retirement",
+        "openai-computer-tool",
+        "github-copilot-cli"
       ]
     }
   ]

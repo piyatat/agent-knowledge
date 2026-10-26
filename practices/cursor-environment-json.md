@@ -3,7 +3,7 @@ id: cursor-environment-json
 title: Cloud Agent environment.json — install vs start vs terminals
 tags: [cursor, ops, config, ci]
 status: active
-updated: 2026-10-13
+updated: 2026-10-26
 when_to_use: Authoring .cursor/environment.json, choosing snapshot vs Dockerfile, or splitting install from per-run services
 ---
 
@@ -20,11 +20,12 @@ Commit `.cursor/environment.json` so Cloud Agent **Builds** are reproducible. Re
 - Feature-branch `environment.json` changes: push, then start an agent **on that branch**. Cursor reuses the active Build disk, checks out the branch, and can rerun `install` when lockfiles changed. IDE 3.23+: the editor validates/autocompletes `egressAllowlist`, `egressMode`, `image`, inline `build.dockerfileContents`, `chromeExecutablePath`, and `enable_testing` instead of flagging them as unknown.
 - **JSONC** (week of 2026-10-05 / CLI **v2026.10.08**): `//` comments, block comments, and trailing commas are accepted **everywhere** the file is read, including `agent env deploy`. A commented file no longer triggers “set up your environment”; snapshot and network settings apply instead of being ignored. Invalid JSONC fails with a pointer to the parse stop.
 - Start from scratch (no SCM): paid plan + Origin; Cursor drafts an Origin repo in the background. If Origin is disabled for the team, the agent starts with no repository (`cursor-origin`). New cloud agents pick the **repo’s default environment** (not a teammate’s saved one). A fallback to the default image without setup shows a warning chip on the environment status row.
+- Week of 2026-10-19: a Cloud Agent that starts on a **single repo with no environment yet** now boots from that repo’s committed `.cursor/environment.json` (and keeps tracking it). Agents/subagents started on a **specific environment build** use that build’s recorded `environment.json` and settings, not the repo’s current file or a newer parent environment. Dashboard Builds has **Verify with Agent** next to Trigger build (when you can trigger builds and the team allows manual builds). The environment picker also lists Origin repos from other teams’ namespaces you can access.
 
 ## Sources
 
-- [Cloud Environment Setup](https://cursor.com/docs/cloud-agent/setup) — accessed 2026-10-13
-- [Cloud Agents release notes](https://cursor.com/docs/release-notes/cloud-agents) — accessed 2026-10-13
+- [Cloud Environment Setup](https://cursor.com/docs/cloud-agent/setup) — accessed 2026-10-26
+- [Cloud Agents release notes](https://cursor.com/docs/release-notes/cloud-agents) — accessed 2026-10-26
 - [CLI Changelog](https://cursor.com/docs/cli/changelog) — accessed 2026-10-13
 - [Cursor IDE release notes](https://cursor.com/docs/release-notes/ide) — accessed 2026-10-11
 - [Cursor web release notes](https://cursor.com/docs/release-notes/web) — accessed 2026-10-11

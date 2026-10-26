@@ -3,7 +3,7 @@ id: claude-code-self-hosted
 title: Claude Code self-hosted environments — org runners for cloud sessions
 tags: [claude, ops, isolation, hosting]
 status: active
-updated: 2026-09-18
+updated: 2026-10-26
 when_to_use: Running Claude Code cloud sessions on your hosts instead of Anthropic-managed environments
 ---
 
@@ -13,13 +13,15 @@ A **self-hosted environment** (public beta, Team/Enterprise, off by default) exe
 
 ## Notes
 
-- Enable **Allow self-hosted environments** on the Cloud environments admin page (needs cloud sessions on). Create an environment, copy the one-time **environment key** (365-day expiry), start `claude self-hosted-runner --environment-secret-file … --base-dir …`. Sessions started from claude.ai/code, mobile/desktop, routines, `claude --cloud` / `--environment`, and Claude Tag can route here. **Claude Security** and **Code Review** do not yet. Repos are **GitHub** only.
+- Enable **Allow self-hosted environments** on the Cloud environments admin page (needs cloud sessions on). Create an environment, copy the one-time **environment key** (365-day expiry), start `claude self-hosted-runner --environment-secret-file … --base-dir …`. Sessions started from claude.ai/code, mobile/desktop, routines, `claude --cloud` / `--environment`, and Claude Tag can route here. **Claude Security** and **Code Review** do not yet. Repos are **GitHub** only. Authoritative flags: `claude self-hosted-runner --help`.
 - A runner locks to the first session’s **owner** (user account, or the Claude Tag agent). Size the fleet by concurrent owners. Default `--drain-grace-sec 0` exits when work finishes so an orchestrator can restart with a clean disk. `--retire-at` is for signal-less host kills. ~60s missed polls requeue the session.
+- Idle slots: `--release-idle-session-min` frees a session after N minutes of post-turn inactivity (mid-turn, never-finishing background tasks, and in-tool approvals do **not** count as idle — pair with `--kill-session-after-min`). **v2.1.311** (2026-10-26): `--hold-idle-file` + `--max-hold-min` keep an idle session while the **host reports leftover processes**; use when a spawn-hook host still has children after the turn ends. A 429 / git-wrapper exit 75 on an added read-only repo no longer blocks session start (that repo is skipped).
 - Anthropic never inbound-connects. Egress is outbound HTTPS to `api.anthropic.com` (plus git/proxy hosts). Inference **cannot** go through Bedrock / Vertex Agent Platform / Foundry / a gateway. **ZDR orgs cannot use this**. Checkout and artifacts stay on your machines; prompts/tool results still go to Anthropic. Billing is the same Claude Code usage as hosted environments.
 
 ## Sources
 
-- [Self-hosted environments](https://code.claude.com/docs/en/self-hosted-environments) — accessed 2026-09-18
-- [Self-hosted environments quickstart](https://code.claude.com/docs/en/self-hosted-environments-quickstart) — accessed 2026-09-18
-- [Deploy self-hosted environments](https://code.claude.com/docs/en/self-hosted-environments-deploy) — accessed 2026-09-18
-- [Self-hosted environments reference](https://code.claude.com/docs/en/self-hosted-environments-reference) — accessed 2026-09-18
+- [Self-hosted environments](https://code.claude.com/docs/en/self-hosted-environments) — accessed 2026-10-26
+- [Self-hosted environments reference](https://code.claude.com/docs/en/self-hosted-environments-reference) — accessed 2026-10-26
+- [Deploy self-hosted environments](https://code.claude.com/docs/en/self-hosted-environments-deploy) — accessed 2026-10-26
+- [v2.1.311 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.311) — accessed 2026-10-26
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-10-26

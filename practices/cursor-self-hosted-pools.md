@@ -3,7 +3,7 @@ id: cursor-self-hosted-pools
 title: Cursor Team Pools — named routing, any-repo, hibernation
 tags: [cursor, ops, isolation, orchestration]
 status: active
-updated: 2026-10-13
+updated: 2026-10-26
 when_to_use: Routing Cloud Agents to a named self-hosted worker fleet, scaling to zero, or keeping workspace state across idle follow-ups
 ---
 
@@ -19,14 +19,15 @@ A **Team Pool** is a durable named queue: Cloud Agent sessions wait until a Self
 - Hibernation: set `workerReadyTimeoutSeconds` on the pool (API `POST /v0/private-workers/pools`; default `0` = reacquire immediately). Snapshot on idle, then on `claimed_offline` restore and start with the same `CURSOR_AGENT_WORKER_ID`.
 - Controller: `agent worker controller --spawn …` watches pending-request SSE and claims. Warm mode (`--warm-idle`) is one controller per pool. Custom controllers use `/v0/private-workers/*` (paths still say `private-workers`).
 - Triggers: Slack/GitHub `pool=<name>` or `self_hosted=true`; Linear `pool=` / `[pool=]`. GitHub only honors OWNER/COLLABORATOR for self-hosted opt-in on public repos. API: `env.type: "pool"` + `env.name`.
+- **Default pool** (week of 2026-10-19 / Team Pools docs): team admins pick a Default pool in Cloud Agents → Self-Hosted (appears once Allow Self-Hosted Machines is on). Applies to self-hosted runs that name **no** pool or machine. Order: named `pool=`/`worker=`/`machine=` → default pool if it serves the repo → another team pool that served the repo in the last 30 days → default pool if it is **any-repo** → previous routing. A default-taken run waits a limited time for that pool and **does not** fall back to My Machines. Slack team/channel default pools are separate and win for `@Cursor` mentions. Repo access checks still apply. Linux workers can also take `--connect-workspace` (`cursor-self-hosted-agents`). A dropped machine waits up to **10 minutes** to reconnect, then moves to another free pool machine.
 - CLI **v2026.10.08** any-repo + `--clone-git-repos`: tools, shells, rules, skills, and subagents run **inside the claimed checkout**, then return to the worker directory. The worker **refuses to reuse** a checkout that still has untracked rules, skills, or `AGENTS.md` from an earlier agent, and logs the blocking files. A worker that registers **more repos than allowed** now **exits** with the count, the limit, and how many folders to remove — it no longer reconnects forever. Cloud Agents week of 2026-10-05: any-repo pools also ignore leftover untracked rules/instructions; a Project worker targeted at **one named machine** uses **that machine’s** repo/folder (`cursor-projects`); targeting a **pool** for that path errors.
 - `sessionStart` / `sessionEnd` **do** run on these workers (managed Cloud Agents skip them). Prompt-based and Tab hooks still do not. stdio MCP runs on the worker; HTTP/SSE MCP stays on Cursor’s backend.
 
 ## Sources
 
-- [Team Pools](https://cursor.com/docs/cloud-agent/self-hosted/pool) — accessed 2026-10-13
-- [Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted) — accessed 2026-10-07
-- [CLI Changelog](https://cursor.com/docs/cli/changelog) — accessed 2026-10-13
-- [Cloud Agents release notes](https://cursor.com/docs/release-notes/cloud-agents) — accessed 2026-10-13
+- [Team Pools](https://cursor.com/docs/cloud-agent/self-hosted/pool) — accessed 2026-10-26
+- [Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted) — accessed 2026-10-26
+- [CLI Changelog](https://cursor.com/docs/cli/changelog) — accessed 2026-10-26
+- [Cloud Agents release notes](https://cursor.com/docs/release-notes/cloud-agents) — accessed 2026-10-26
 - [Self-hosted machines (changelog)](https://cursor.com/changelog/self-hosted-machines) — accessed 2026-09-02
 - [Cloud Agents API](https://cursor.com/docs/cloud-agent/api/endpoints) — accessed 2026-10-07
