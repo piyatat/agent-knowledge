@@ -1998,4 +1998,37 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | v2.1.311 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.311 |
 | Claude Code changelog | https://code.claude.com/docs/en/changelog |
 
+## Daily ingest 2026-10-27 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Agent SDK | https://cursor.com/docs/agent-sdk |
+| Project layout | https://cursor.com/docs/agent-sdk/reference/project-layout |
+| Deploy an Agent SDK project | https://cursor.com/docs/agent-sdk/deployment |
+| Access | https://cursor.com/docs/agent-sdk/reference/access |
+| Evals | https://cursor.com/docs/agent-sdk/evals |
+| Agent SDK CLI | https://cursor.com/docs/agent-sdk/reference/cli |
+| Agent config | https://cursor.com/docs/agent-sdk/reference/agent-config |
+| What's New in Cursor | https://cursor.com/changelog |
+| GitHub Copilot supports server-to-server authentication | https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication/ |
+| Server-to-server authentication | https://docs.github.com/en/copilot/how-tos/copilot-sdk/auth/server-to-server-tokens |
+| Authentication (Copilot SDK) | https://docs.github.com/en/copilot/how-tos/copilot-sdk/auth/authenticate |
+| Manage GitHub Apps that use your organization's Copilot | https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-app-copilot-access |
+| GitHub Copilot assisted permissions generally available | https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/ |
+| Allowing safe commands to run without manual approval | https://docs.github.com/en/copilot/concepts/customizations/allowing-safe-commands |
+| Allowing and denying tool use | https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools |
+| Working with agent sessions in the GitHub Copilot app | https://docs.github.com/en/copilot/how-tos/github-copilot-app/agent-sessions |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| copilot-cli 1.0.104 | https://github.com/github/copilot-cli/releases/tag/v1.0.104 |
+| Claude apps gateway configuration | https://code.claude.com/docs/en/claude-apps-gateway-config |
+| v2.1.312 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.312 |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| SEP-3398: Release Cycle Updates | https://modelcontextprotocol.io/seps/3398-release-cycle-updates |
+| SEP-3398 pull request | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3398 |
+| MCP Spec TPM | https://plan.modelcontextprotocol.io/releases/2 |
+| Memories (Codex) | https://developers.openai.com/codex/customization/memories |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+| Codex 0.165.0 | https://github.com/openai/codex/releases/tag/rust-v0.165.0 |
+
 

@@ -3,7 +3,7 @@ id: claude-code-gateway
 title: Claude apps gateway — SSO proxy for Bedrock, GCP, Foundry
 tags: [claude, gateway, auth, governance]
 status: active
-updated: 2026-10-09
+updated: 2026-10-27
 when_to_use: Deploying Claude apps gateway, forcing /login to a private gateway URL, or contrasting it with Bedrock/Vertex env vars or self-hosted runners
 ---
 
@@ -19,12 +19,15 @@ when_to_use: Deploying Claude apps gateway, forcing /login to a private gateway 
 - Per-IdP-group `availableModels` + managed settings; `enforceAvailableModels: true` so Default stays inside the allowlist. Optional per-upstream `models` list (v2.1.295+) restricts which models that upstream may serve, including failover; `*` is a wildcard. `timeouts.upstream_ttfb_ms` caps time-to-first-byte on Bedrock / Vertex / Foundry / other cloud upstreams before failover or 502. OTLP/HTTP telemetry goes to the gateway (not a local collector) unless policy names an endpoint. Claude Desktop uses `bootstrapUrl` → `/user/bootstrap` plus `parentSettingsBehavior: "merge"` so egress/plugin parent settings apply (`claude-code-settings`).
 - **v2.1.296:** `managed.policies[]` accepts a **`code`** key — the same settings shape as `cli`, applied in Claude Desktop’s **Code** tab. Together with `desktop`, it turns on Desktop gateway mode. A session that cannot start (including a machine not set up for the gateway’s `code` settings) now shows the reason as a reply (`claude-code-desktop`). A gateway that serves `allowedProviders` with `"gateway"` no longer locks out laptops that name that gateway in user settings.
 - One OIDC issuer per instance. Pair with `allowManaged*Only` locks if Desktop/SDK hosts can inject parent settings. Treat gateway-delivered settings as org policy, not user memory (`memory-files-vs-enforcement-hooks`).
+- **v2.1.312** (2026-10-27): `oidc.user_id_claim` identifies people by an `id_token` claim other than `sub` (example: Microsoft Entra **`oid`**). Use when the IdP’s `sub` is not the stable directory object id you want on audit headers. Unrecognized Bedrock/Vertex/Foundry/Mantle model names now get the shorter system prompt (set `CLAUDE_CODE_SIMPLE_SYSTEM_PROMPT=0` to keep the full one) and the same automatic refusal-fallback as unknown model names (`CLAUDE_CODE_DISABLE_REFUSAL_FALLBACK=1` to turn that off).
 
 ## Sources
 
 - [Run Claude Code through a gateway](https://code.claude.com/docs/en/gateways) — accessed 2026-10-09
 - [Claude apps gateway](https://code.claude.com/docs/en/claude-apps-gateway) — accessed 2026-10-09
-- [Claude apps gateway configuration](https://code.claude.com/docs/en/claude-apps-gateway-config) — accessed 2026-10-09
-- [CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-09
+- [Claude apps gateway configuration](https://code.claude.com/docs/en/claude-apps-gateway-config) — accessed 2026-10-27
+- [CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-27
+- [v2.1.312](https://github.com/anthropics/claude-code/releases/tag/v2.1.312) — accessed 2026-10-27
 - [v2.1.295](https://github.com/anthropics/claude-code/releases/tag/v2.1.295) — accessed 2026-10-09
 - [Claude apps gateway deployment](https://code.claude.com/docs/en/claude-apps-gateway-deploy) — accessed 2026-09-29
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-10-27

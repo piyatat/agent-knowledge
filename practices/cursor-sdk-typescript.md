@@ -3,13 +3,13 @@ id: cursor-sdk-typescript
 title: Cursor TypeScript SDK — @cursor/sdk local and cloud
 tags: [cursor, sdk, orchestration, sandbox]
 status: active
-updated: 2026-10-06
+updated: 2026-10-27
 when_to_use: Scripting Cursor from Node/Bun with @cursor/sdk, or replacing the local agent system prompt
 ---
 
 ## Summary
 
-**`@cursor/sdk`** (npm; Node ≥ 22.13) is the TypeScript embedding of the same Cursor agent as the IDE, CLI, and web. One `Agent.create({ local | cloud })` surface. **Local** = agent loop + disk on your machine (model still hosted). **Cloud** = Cursor VM. Not the Python package (`cursor-sdk`), not the HTTP Cloud Agents API (`cursor-cloud-agents-api`), and not the SDK Bridge (protobuf for other languages). Same `CURSOR_API_KEY` (user or service account; Team Admin keys unsupported). Spend is tagged **SDK**. From **1.0.24**, npm and PyPI ship the same version.
+**`@cursor/sdk`** (npm; Node ≥ 22.13) is the TypeScript embedding of the same Cursor agent as the IDE, CLI, and web. One `Agent.create({ local | cloud })` surface. **Local** = agent loop + disk on your machine (model still hosted). **Cloud** = Cursor VM. Not the Python package (`cursor-sdk`), not the HTTP Cloud Agents API (`cursor-cloud-agents-api`), not the SDK Bridge (protobuf for other languages), and not **Agent SDK** (`@grok/agent-sdk`, `cursor-agent-sdk`) — that is a versioned `bot/` project you deploy, not `Agent.create`. Same `CURSOR_API_KEY` (user or service account; Team Admin keys unsupported). Spend is tagged **SDK**. From **1.0.24**, npm and PyPI ship the same version.
 
 ## Notes
 
@@ -24,4 +24,5 @@ when_to_use: Scripting Cursor from Node/Bun with @cursor/sdk, or replacing the l
 - [Cursor TypeScript SDK](https://cursor.com/docs/sdk/typescript) — accessed 2026-10-06
 - [SDK Changelog](https://cursor.com/docs/sdk/changelog) — accessed 2026-10-06
 - [Cursor SDK Bridge](https://cursor.com/docs/sdk/bridge) — accessed 2026-09-21
+- [Agent SDK](https://cursor.com/docs/agent-sdk) — accessed 2026-10-27
 

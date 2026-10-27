@@ -3,13 +3,13 @@ id: cursor-automations
 title: Cursor Automations — standing rules vs subscriptions
 tags: [cursor, automations, orchestration, cron]
 status: active
-updated: 2026-10-09
+updated: 2026-10-27
 when_to_use: Configuring scheduled or event-triggered Cursor cloud agents (not a running agent’s PR/Slack subscription)
 ---
 
 ## Summary
 
-A **Cursor Automation** is a standing rule you save (trigger + prompt + tools + repo scope). A **subscription** is something a *running* cloud agent takes on (watch this PR/thread). `@cursor` mentions in Slack/Linear/GitHub/Teams start a one-shot Cloud Agent — those are not Automations (`cursor-slack-cloud-agents`, `cursor-linear-cloud-agents`, `cursor-github-cloud-agents`, `cursor-microsoft-teams`).
+A **Cursor Automation** is a standing rule you save (trigger + prompt + tools + repo scope). A **subscription** is something a *running* cloud agent takes on (watch this PR/thread). `@cursor` mentions in Slack/Linear/GitHub/Teams start a one-shot Cloud Agent — those are not Automations (`cursor-slack-cloud-agents`, `cursor-linear-cloud-agents`, `cursor-github-cloud-agents`, `cursor-microsoft-teams`). For a versioned TypeScript/`bot/` agent with evals and deploy, use Agent SDK (`cursor-agent-sdk`) instead of a dashboard Automation.
 
 ## Notes
 
@@ -22,6 +22,7 @@ A **Cursor Automation** is a standing rule you save (trigger + prompt + tools + 
 ## Sources
 
 - [Cursor Automations](https://cursor.com/docs/cloud-agent/automations) — accessed 2026-10-09
+- [Agent SDK](https://cursor.com/docs/agent-sdk) — accessed 2026-10-27
 - [Cursor web release notes](https://cursor.com/docs/release-notes/web) — accessed 2026-10-09
 - [Azure DevOps (Cursor docs)](https://cursor.com/docs/integrations/azure-devops) — accessed 2026-09-16
 - [Cloud Agents and Cursor Harness Improvements (2026-08-19)](https://cursor.com/changelog/08-19-26) — accessed 2026-08-22

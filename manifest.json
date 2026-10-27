@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1350,7 +1350,7 @@
         "cron"
       ],
       "status": "active",
-      "updated": "2026-10-09",
+      "updated": "2026-10-27",
       "when_to_use": "Configuring scheduled or event-triggered Cursor cloud agents (not a running agent’s PR/Slack subscription)",
       "related": [
         "cursor-cloud-always-on",
@@ -1368,7 +1368,8 @@
         "cursor-pagerduty",
         "vscode-agent-automations",
         "cursor-rollouts",
-        "cursor-service-accounts"
+        "cursor-service-accounts",
+        "cursor-agent-sdk"
       ]
     },
     {
@@ -4057,7 +4058,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-24",
+      "updated": "2026-10-27",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4085,7 +4086,8 @@
         "github-copilot-autopilot",
         "github-copilot-hydrafusion",
         "github-copilot-plugins",
-        "github-cli-expiring-oauth"
+        "github-cli-expiring-oauth",
+        "github-copilot-s2s-auth"
       ]
     },
     {
@@ -4967,7 +4969,7 @@
         "privacy"
       ],
       "status": "active",
-      "updated": "2026-09-10",
+      "updated": "2026-10-27",
       "when_to_use": "Enabling Codex features.memories, using /memories, or contrasting local memory files with AGENTS.md",
       "related": [
         "openai-codex-agents-md",
@@ -6807,7 +6809,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-06",
+      "updated": "2026-10-27",
       "when_to_use": "Scripting Cursor from Node/Bun with @cursor/sdk, or replacing the local agent system prompt",
       "related": [
         "cursor-sdk",
@@ -6817,7 +6819,8 @@
         "cursor-cloud-agents-api",
         "cursor-service-accounts",
         "cursor-agent-modes",
-        "cursor-run-modes"
+        "cursor-run-modes",
+        "cursor-agent-sdk"
       ]
     },
     {
@@ -7622,7 +7625,7 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-10-09",
+      "updated": "2026-10-27",
       "when_to_use": "Deploying Claude apps gateway, forcing /login to a private gateway URL, or contrasting it with Bedrock/Vertex env vars or self-hosted runners",
       "related": [
         "claude-code-settings",
@@ -7710,7 +7713,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-16",
+      "updated": "2026-10-27",
       "when_to_use": "Enabling chat.assistedPermissions, choosing Assisted vs Manual vs Allow all on Agent Host, or contrasting JetBrains assisted approvals",
       "related": [
         "vscode-agent-sandboxing",
@@ -7720,7 +7723,8 @@
         "github-copilot-cli",
         "prompt-injection-agent-defense",
         "agent-host-protocol-ahp",
-        "vscode-agent-harnesses"
+        "vscode-agent-harnesses",
+        "github-copilot-assisted-permissions"
       ]
     },
     {
@@ -8289,7 +8293,7 @@
     {
       "id": "github-copilot-assisted-permissions",
       "path": "practices/github-copilot-assisted-permissions.md",
-      "title": "Copilot CLI Assisted permissions — LLM judge vs allow-all",
+      "title": "Copilot Assisted permissions — LLM judge vs allow-all",
       "tags": [
         "github",
         "cli",
@@ -8298,8 +8302,8 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-24",
-      "when_to_use": "Switching Copilot CLI to /permissions assisted, or setting disableBypassPermissionsMode allow-auto-only",
+      "updated": "2026-10-27",
+      "when_to_use": "Switching Copilot CLI/app/VS Code to Assisted permissions, or setting --assisted-approval / defaultPermissionMode",
       "related": [
         "github-copilot-cli",
         "github-copilot-managed-permissions",
@@ -8984,7 +8988,7 @@
         "versioning"
       ],
       "status": "active",
-      "updated": "2026-10-20",
+      "updated": "2026-10-27",
       "when_to_use": "Planning SDK or server work against the next MCP spec date, or assuming a December 2026 revision still exists",
       "related": [
         "mcp-2026-roadmap",
@@ -9353,6 +9357,51 @@
         "openai-codex-gpt-55-retirement",
         "openai-computer-tool",
         "github-copilot-cli"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk",
+      "path": "practices/cursor-agent-sdk.md",
+      "title": "Cursor Agent SDK — agents as a versioned bot/ project",
+      "tags": [
+        "cursor",
+        "sdk",
+        "orchestration",
+        "evals"
+      ],
+      "status": "active",
+      "updated": "2026-10-27",
+      "when_to_use": "Defining a Cursor agent as a bot/ TypeScript project with evals, or choosing it instead of Automations or @cursor/sdk",
+      "related": [
+        "cursor-sdk-typescript",
+        "cursor-sdk",
+        "cursor-cloud-agents-api",
+        "cursor-automations",
+        "cursor-cli-headless",
+        "claude-agent-sdk",
+        "agent-eval-harness"
+      ]
+    },
+    {
+      "id": "github-copilot-s2s-auth",
+      "path": "practices/github-copilot-s2s-auth.md",
+      "title": "Copilot SDK server-to-server auth — org installation tokens",
+      "tags": [
+        "github",
+        "sdk",
+        "auth",
+        "identity"
+      ],
+      "status": "active",
+      "updated": "2026-10-27",
+      "when_to_use": "Authenticating a Copilot SDK service with a GitHub App installation token instead of a signed-in user",
+      "related": [
+        "github-copilot-cli",
+        "github-enterprise-app-installations",
+        "github-copilot-usage-metrics-clients",
+        "github-copilot-managed-permissions",
+        "github-copilot-model-policy-api",
+        "prompt-injection-agent-defense"
       ]
     }
   ]
