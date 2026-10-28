@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -4058,7 +4058,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-27",
+      "updated": "2026-10-28",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4123,7 +4123,7 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-09-20",
+      "updated": "2026-10-28",
       "when_to_use": "Adding MCP to Gemini CLI, or debugging trust / OAuth / env redaction",
       "related": [
         "gemini-cli-acp",
@@ -4134,7 +4134,8 @@
         "gemini-cli-settings",
         "gemini-cli-trusted-folders",
         "mcp-oauth-discovery-ssrf",
-        "mcp-authorization-discovery"
+        "mcp-authorization-discovery",
+        "mcp-localhost-dns-rebinding"
       ]
     },
     {
@@ -5716,7 +5717,7 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-10-19",
+      "updated": "2026-10-28",
       "when_to_use": "Choosing Copilot’s JetBrains plugin, AI Assistant ACP agent, or Copilot CLI in the IDE terminal",
       "related": [
         "cursor-jetbrains-acp",
@@ -5727,7 +5728,8 @@
         "agent-client-protocol-acp",
         "github-copilot-otel",
         "github-copilot-skills",
-        "github-copilot-instructions"
+        "github-copilot-instructions",
+        "github-copilot-hydrafusion"
       ]
     },
     {
@@ -6056,8 +6058,8 @@
         "models"
       ],
       "status": "active",
-      "updated": "2026-10-24",
-      "when_to_use": "Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or contrasting it with Cursor Router",
+      "updated": "2026-10-28",
+      "when_to_use": "Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or contrasting Auto with Copilot Fusion / Cursor Router",
       "related": [
         "cursor-router",
         "github-copilot-cli",
@@ -6305,22 +6307,25 @@
     {
       "id": "github-copilot-hydrafusion",
       "path": "practices/github-copilot-hydrafusion.md",
-      "title": "Copilot HydraFusion — research-preview multi-model workflows",
+      "title": "Copilot Fusion — Standard, High, and Max (was HydraFusion)",
       "tags": [
         "github",
         "routing",
         "models",
         "cost"
       ],
-      "status": "draft",
-      "updated": "2026-10-14",
-      "when_to_use": "Trying HydraFusion or HydraFusion Max instead of Auto Efficiency/Balance/Intelligence",
+      "status": "active",
+      "updated": "2026-10-28",
+      "when_to_use": "Choosing Copilot Fusion Standard/High/Max, or migrating from Auto or HydraFusion",
       "related": [
         "github-copilot-auto-model",
         "github-copilot-cli",
         "agent-model-routing-fallback",
         "cursor-router",
-        "github-copilot-model-deprecations"
+        "github-copilot-model-deprecations",
+        "github-copilot-cli-local-models",
+        "github-copilot-jetbrains",
+        "github-copilot-model-policy-api"
       ]
     },
     {
@@ -6809,7 +6814,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-10-27",
+      "updated": "2026-10-28",
       "when_to_use": "Scripting Cursor from Node/Bun with @cursor/sdk, or replacing the local agent system prompt",
       "related": [
         "cursor-sdk",
@@ -6820,7 +6825,8 @@
         "cursor-service-accounts",
         "cursor-agent-modes",
         "cursor-run-modes",
-        "cursor-agent-sdk"
+        "cursor-agent-sdk",
+        "cursor-local-agent-stores"
       ]
     },
     {
@@ -8257,14 +8263,16 @@
         "privacy"
       ],
       "status": "active",
-      "updated": "2026-10-07",
-      "when_to_use": "Discovering a running Ollama model in Copilot CLI /model, or configuring BYOK / COPILOT_OFFLINE",
+      "updated": "2026-10-28",
+      "when_to_use": "Discovering a running Ollama model in Copilot CLI /model, configuring BYOK / COPILOT_OFFLINE, or enabling Fusion local routing",
       "related": [
         "github-copilot-cli",
         "github-copilot-auto-model",
         "github-copilot-cli-settings",
         "github-copilot-sandbox",
-        "cursor-privacy-mode"
+        "cursor-privacy-mode",
+        "github-copilot-hydrafusion",
+        "vscode-on-device-models"
       ]
     },
     {
@@ -8802,8 +8810,8 @@
         "governance",
         "deprecation"
       ],
-      "status": "draft",
-      "updated": "2026-10-18",
+      "status": "active",
+      "updated": "2026-10-28",
       "when_to_use": "Choosing whether an MCP extension is experimental, beta, or stable, or whether a breaking change needs a new ID",
       "related": [
         "mcp-extensions-framework",
@@ -9402,6 +9410,51 @@
         "github-copilot-managed-permissions",
         "github-copilot-model-policy-api",
         "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "openai-codex-model-providers",
+      "path": "practices/openai-codex-model-providers.md",
+      "title": "Codex model_provider — OpenAI, Bedrock, Vertex, OSS",
+      "tags": [
+        "openai",
+        "models",
+        "config",
+        "cli"
+      ],
+      "status": "active",
+      "updated": "2026-10-28",
+      "when_to_use": "Setting model_provider in Codex config.toml, or routing Codex through Bedrock, Vertex AI, Ollama, or LM Studio",
+      "related": [
+        "openai-codex-exec",
+        "openai-codex-mcp",
+        "openai-codex-access-tokens",
+        "openai-codex-gpt-55-retirement",
+        "openai-gpt-61-terra-agents",
+        "openai-codex-cloud-environments",
+        "claude-code-gateway"
+      ]
+    },
+    {
+      "id": "cursor-local-agent-stores",
+      "path": "practices/cursor-local-agent-stores.md",
+      "title": "Cursor SDK local agent stores — SQLite, JSONL, custom",
+      "tags": [
+        "cursor",
+        "sdk",
+        "session",
+        "memory"
+      ],
+      "status": "active",
+      "updated": "2026-10-28",
+      "when_to_use": "Persisting local @cursor/sdk agents across process restarts, or swapping SQLite for JSONL/Postgres",
+      "related": [
+        "cursor-sdk-typescript",
+        "cursor-sdk",
+        "cursor-agent-sdk",
+        "cursor-checkpoints",
+        "jsonl-session-state-gaps",
+        "agent-session-transcript-audit"
       ]
     }
   ]

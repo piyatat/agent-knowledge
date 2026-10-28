@@ -1,26 +1,29 @@
 ---
 id: github-copilot-hydrafusion
-title: Copilot HydraFusion — research-preview multi-model workflows
+title: Copilot Fusion — Standard, High, and Max (was HydraFusion)
 tags: [github, routing, models, cost]
-status: draft
-updated: 2026-10-14
-when_to_use: Trying HydraFusion or HydraFusion Max instead of Auto Efficiency/Balance/Intelligence
+status: active
+updated: 2026-10-28
+when_to_use: Choosing Copilot Fusion Standard/High/Max, or migrating from Auto or HydraFusion
 ---
 
 ## Summary
 
-**HydraFusion** is a Copilot **research preview** that runs a **workflow** (single / cascade / critique) across several models and returns one answer. **HydraFusion Max** (2026-10-14) uses the same architecture with higher reasoning effort for harder tasks. Available in **VS Code**, the **Copilot app**, and **Copilot CLI**. Not Copilot Auto tiers (`github-copilot-auto-model`) and not Cursor Router (`cursor-router`). Names, pool, and behavior may change.
+**GitHub Copilot Fusion** (GA **2026-10-28**) is a runtime **router and orchestrator**: you pick an **effort level**, Fusion picks models and a pattern (single / cascade / critique) per prompt, then returns one answer. It combines Project **HydraFusion** multi-model workflows with Copilot **Auto** selection. Not pinning a model, not Cursor Router (`cursor-router`), and not a substitute for Auto tiers on surfaces that still expose them (`github-copilot-auto-model`). Preview names HydraFusion / HydraFusion Max migrate automatically to the matching Fusion effort.
 
 ## Notes
 
-- Enable: CLI `/update` → `/experimental on` → `/model` → HydraFusion / HydraFusion Max. App: Settings → search HydraFusion → model picker. VS Code: same picker once preview features are on. **Pro, Pro+, Business, Enterprise** with experimental/preview features; Business/Enterprise also need admin preview + model policy. Billing is **list price of every model call** in the workflow (draft, critic, revision, escalate, retry, fallback) — no separate HydraFusion fee.
-- **2026-10-14 pool**: Claude Opus 5.5, GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna (which models run depends on the workflow). Effort is no longer each model’s default: **medium** on initial drafts, **high** on review. Max spends more high-effort steps; HydraFusion stays the balanced / token-saving pick.
-- **Cascade**: cheap draft, then a **judge** that requests repair only when needed, optional escalate. **Critique**: critics now **use tools** on the workspace (not text summaries only) and can run **in parallel**. Single = one model. Review legs stay isolated; solver legs use the shared workspace and the usual permission loop. Cancel/validation failure applies **no patch**.
-- Contrast Auto: Auto chooses **one** model from a shared pool; HydraFusion may call several. Intermediate drafts stay hidden until one result returns. Preview guidance still favors first-turn, well-scoped prompts. Not a pin/deprecation table (`github-copilot-model-deprecations`).
+- Pick **Copilot Fusion** in the model picker, then an effort: **Standard** (everyday; usually one versatile model), **High** (substantial well-scoped work — complex bugs, multi-file changes), **Max** (deepest reasoning). **Fusion Fast** is not user-selectable (VS Code **inline chat** only). Hover the effort name under a reply to see which models ran. Fusion has **no** context window of its own — the UI shows a conservative value from the smallest model in the pool. Routing stays on cache boundaries / large complexity jumps.
+- Patterns (chosen per prompt, not per session): **Single** = one model. **Cascade** = cheap draft, then a judge that accepts or escalates. **Critique** = draft plus parallel critics; original model revises. Extra model calls happen only when the task warrants them. Intermediate drafts stay hidden. Fusion **does not start subagents**. If it discards a draft, workspace edits that draft already made are **not** undone — review before commit.
+- Surfaces (GA): **VS Code**, **Copilot CLI**, **Copilot app**, **JetBrains**. CLI **1.0.105** lets `/model` pick Fusion **High or Max** from a **long-context** session (1.0.104 started managed `fusion` sessions on Auto + `fusionTier`). JetBrains: Fusion **replaces Auto** on a gradual rollout (`github-copilot-jetbrains`). Research-preview HydraFusion / HydraFusion Max / Auto selections map to the corresponding Fusion effort.
+- Billing: **list price of every model call** in the workflow. No separate Fusion fee. Paid plans get **30% off** Fusion model costs **through 2026-11-30**. High/Max can cost more than Standard because they may call several models. Conversation stays on one model when possible (prompt cache); reviewers get only the context they need.
+- Policy: Fusion uses models allowed by plan + enterprise/org **model policy**. Admins can **disable a model for Fusion** without disabling it for everyone, and can set Fusion (any effort) as the managed default (`github-copilot-model-policy-api`). Missing pool → Fusion disappears from the picker. Local-model routing (Standard only, experimental): `github-copilot-cli-local-models`.
 
 ## Sources
 
+- [About GitHub Copilot Fusion](https://docs.github.com/en/copilot/concepts/models/copilot-fusion) — accessed 2026-10-28
+- [Route and orchestrate models with GitHub Copilot Fusion](https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/) — accessed 2026-10-28
+- [GitHub Copilot Fusion now supports selection of local models](https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models/) — accessed 2026-10-28
+- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-28
 - [HydraFusion updates and new Max option](https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option/) — accessed 2026-10-14
-- [HydraFusion in VS Code and the GitHub Copilot app](https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/) — accessed 2026-10-14
 - [Project HydraFusion (GitHub Blog)](https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/) — accessed 2026-09-18
-- [About Copilot auto model selection](https://docs.github.com/en/copilot/concepts/auto-model-selection) — accessed 2026-09-18

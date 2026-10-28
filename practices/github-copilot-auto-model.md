@@ -3,13 +3,13 @@ id: github-copilot-auto-model
 title: Copilot Auto — Efficiency, Balance, and Intelligence tiers
 tags: [github, routing, cost, models]
 status: active
-updated: 2026-10-24
-when_to_use: Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or contrasting it with Cursor Router
+updated: 2026-10-28
+when_to_use: Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or contrasting Auto with Copilot Fusion / Cursor Router
 ---
 
 ## Summary
 
-**Copilot Auto** with task optimization picks a model per prompt from health/availability plus task complexity. **Tiers** (2026-09-14) bias that router toward cost, mixed, or quality — they do **not** change the model pool. Not Cursor Router (`cursor-router`) and not pinning a model in the picker. JetBrains/Eclipse/Xcode/Visual Studio Auto is the older reliability/availability router **without** these tiers.
+**Copilot Auto** with task optimization picks **one** model per prompt from health/availability plus task complexity. **Tiers** (2026-09-14) bias that router toward cost, mixed, or quality — they do **not** change the model pool. **Copilot Fusion** (GA 2026-10-28) can call **several** models and replaces Auto on some surfaces (`github-copilot-hydrafusion`). Not Cursor Router (`cursor-router`) and not pinning a model in the picker. JetBrains Fusion is rolling out as the Auto replacement; Eclipse/Xcode/Visual Studio Auto is the older reliability/availability router **without** these tiers.
 
 ## Notes
 
@@ -17,7 +17,7 @@ when_to_use: Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or con
 - Surfaces with task optimization: GitHub.com Chat, VS Code, Copilot CLI, Copilot app, cloud agent. **Tiers themselves** are VS Code, CLI, and the Copilot app only (rolling out as of 2026-09-14). Cloud agent and github.com Chat get Auto without the three-tier UI. Hover/terminal/end-of-response shows which model ran.
 - Cache: Auto switches only at **session start or after `/compact`**, not mid-task. Third-party agents (Codex / Claude in Copilot) can also pick Auto from a short supported-model list. Do not treat Auto as a way to bypass model allowlists.
 - CLI **1.0.102** (2026-10-21): **prompt mode** (`-p` and piped stdin) honors **managed Auto** model selection — headless/scripted runs pick the enterprise/org Auto policy instead of ignoring it. Interactive `/model` Auto was already wired. VS Code on-device MAI Code can join Auto separately (`vscode-on-device-models`).
-- CLI **1.0.104-0** (pre-release, 2026-10-23): when a **saved Auto preference is no longer available**, Auto falls back to its default preference instead of failing each turn. **1.0.104-2**: a managed model named **fusion** starts sessions on Auto and applies `fusionTier` (`github-copilot-hydrafusion`). Not a pin table (`github-copilot-model-deprecations`).
+- CLI **1.0.104-0** (pre-release, 2026-10-23): when a **saved Auto preference is no longer available**, Auto falls back to its default preference instead of failing each turn. **1.0.104-2**: a managed model named **fusion** starts sessions on Auto and applies `fusionTier`. Research-preview Auto / HydraFusion / HydraFusion Max selections migrate to the matching **Fusion** effort (Standard / High / Max). Prefer Fusion when you want orchestration; keep Auto when the surface still exposes Efficiency/Balance/Intelligence and you want a **single** model. Not a pin table (`github-copilot-model-deprecations`).
 
 ## Sources
 
@@ -27,4 +27,7 @@ when_to_use: Choosing Copilot Auto Efficiency vs Balance vs Intelligence, or con
 - [copilot-cli 1.0.102](https://github.com/github/copilot-cli/releases/tag/v1.0.102) — accessed 2026-10-21
 - [copilot-cli 1.0.104-0](https://github.com/github/copilot-cli/releases/tag/v1.0.104-0) — accessed 2026-10-24
 - [copilot-cli 1.0.104-2](https://github.com/github/copilot-cli/releases/tag/v1.0.104-2) — accessed 2026-10-24
+- [About GitHub Copilot Fusion](https://docs.github.com/en/copilot/concepts/models/copilot-fusion) — accessed 2026-10-28
+- [Route and orchestrate models with GitHub Copilot Fusion](https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/) — accessed 2026-10-28
+- [GitHub Copilot in JetBrains Universe releases](https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases/) — accessed 2026-10-28
 

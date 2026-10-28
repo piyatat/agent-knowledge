@@ -2031,4 +2031,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
 | Codex 0.165.0 | https://github.com/openai/codex/releases/tag/rust-v0.165.0 |
 
+## Daily ingest 2026-10-28 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+| Sample Configuration | https://learn.chatgpt.com/docs/config-file/config-sample.md |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+| Codex 0.165.0 | https://github.com/openai/codex/releases/tag/rust-v0.165.0 |
+| Add a built-in Google Cloud Vertex AI provider (#56265) | https://github.com/openai/codex/commit/3fd148a20c18cfc72beb7dedfa52951b1f9c4cb1 |
+| Allow configuring GCP project and location (#56560) | https://github.com/openai/codex/commit/970111f6cb62cc02fe36a82ea7d71b37a2889c97 |
+| Cursor TypeScript SDK | https://cursor.com/docs/sdk/typescript |
+| SDK Changelog | https://cursor.com/docs/sdk/changelog |
+| About GitHub Copilot Fusion | https://docs.github.com/en/copilot/concepts/models/copilot-fusion |
+| Route and orchestrate models with GitHub Copilot Fusion | https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/ |
+| GitHub Copilot Fusion now supports selection of local models | https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models/ |
+| GitHub Copilot in JetBrains Universe releases | https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases/ |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| SEP-3392: Extension Lifecycle | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3392 |
+| SEP-3392 vote | https://voting.modelcontextprotocol.io/p/bgza4vb9ae |
+| MCP Spec TPM | https://plan.modelcontextprotocol.io/seps |
+| MCP Extensions overview | https://modelcontextprotocol.io/extensions/overview |
+| Latest stable release v0.66.0 | https://geminicli.com/docs/changelogs/latest/ |
+| MCP servers with Gemini CLI (GitHub docs) | https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md |
+| gemini-cli #29844 — allowPrivateNetwork | https://github.com/google-gemini/gemini-cli/pull/29844 |
+
 

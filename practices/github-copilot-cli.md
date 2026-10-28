@@ -3,7 +3,7 @@ id: github-copilot-cli
 title: GitHub Copilot CLI — terminal agent vs cloud coding agent
 tags: [github, cli, permissions, sandbox]
 status: active
-updated: 2026-10-27
+updated: 2026-10-28
 when_to_use: Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent
 ---
 
@@ -29,6 +29,7 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - **1.0.102** (2026-10-21): `-p` / piped stdin honor **managed Auto** (`github-copilot-auto-model`); subagents honor custom and MCP tool approvals (no duplicate prompts; inherited workflows run); plugin marketplaces accept **git-subdir** sources and long descriptions (`github-copilot-plugins`); long sandboxed commands keep running past 10s; sandboxed traffic honors `NO_PROXY` / `ALL_PROXY` when inheriting host proxy (`github-copilot-sandbox`); provider-overload cutoffs retry with backoff and show the provider message + request ID. Org plugin prep no longer blocks sending.
 - **1.0.103** (2026-10-22): ACP sessions honor saved sandbox settings and `--sandbox` / `--no-sandbox` (including resume) (`github-copilot-sandbox`); `--connect[=SESSION-ID]` joins an existing remote session/task (conflicts with `--resume` / `--continue`); `--remote-export` / `--no-remote-export` split read-only export from steer (`github-copilot-remote-control`); local MCP tool snapshots are reused across registered Git worktrees in one repo; Windows `npm.cmd` and `dnx` inherit the same sandbox grants as `npm` when developer-tool access is on; Gemini tool calls avoid 400s on nullable/enum fields; resume under mandatory managed model defaults no longer rejects saved preferences. Cloud replies keep full text after a dropped connection. Sessions browser shows the recorded title when one exists.
 - **1.0.104** (2026-10-27; pre-releases 1.0.104-0 / 1.0.104-2): Assisted Permissions no longer requires experimental mode (`github-copilot-assisted-permissions`). When a saved Auto preference is gone, Auto falls back to its default instead of failing each turn (`github-copilot-auto-model`). Managed model **fusion** starts sessions on Auto and applies `fusionTier`; interactive and SDK Autopilot keep waiting for attached background tasks instead of stopping at `COPILOT_TASK_WAIT_TIMEOUT_SECONDS` (`-p --autopilot` still honors the timeout) (`github-copilot-autopilot`). Org-attributed SDK/CI without a user: `github-copilot-s2s-auth`.
+- **1.0.105** (changelog 2026-10-27; Fusion GA 2026-10-28): `/model` can pick Copilot Fusion **High** or **Max** from a **long-context** session (`github-copilot-hydrafusion`). Fusion is GA in CLI alongside VS Code / app / JetBrains; research-preview HydraFusion names migrate to Fusion effort levels.
 - Parallel / scripted orchestration (often needs `/experimental on`): `/fleet` or `--fleet` for a model-chosen subagent split (`github-copilot-fleet`); coded **dynamic workflows** via chat or `copilot workflow run NAME` (`github-copilot-dynamic-workflows`). Repo-event automation that must live in git is `gh aw` (`github-agentic-workflows`), not a long-lived CLI session.
 - **Content exclusions** (Business/Enterprise): as of 2026-09-02 the **app and CLI** honor org/repo/enterprise path policies (`github-copilot-content-exclusions`). IDE **Agent/Edit** Chat modes still do not. Do not treat exclusions as a sandbox (`github-copilot-sandbox`).
 
@@ -47,7 +48,9 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - [Using dynamic workflows](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-dynamic-workflows) — accessed 2026-10-02
 - [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) — accessed 2026-10-09
 - [Authenticating GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/authenticate-copilot-cli) — accessed 2026-10-09
-- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-27
+- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-28
+- [About GitHub Copilot Fusion](https://docs.github.com/en/copilot/concepts/models/copilot-fusion) — accessed 2026-10-28
+- [Route and orchestrate models with GitHub Copilot Fusion](https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/) — accessed 2026-10-28
 - [copilot-cli 1.0.104](https://github.com/github/copilot-cli/releases/tag/v1.0.104) — accessed 2026-10-27
 - [copilot-cli 1.0.104-2](https://github.com/github/copilot-cli/releases/tag/v1.0.104-2) — accessed 2026-10-24
 - [copilot-cli 1.0.104-0](https://github.com/github/copilot-cli/releases/tag/v1.0.104-0) — accessed 2026-10-24
