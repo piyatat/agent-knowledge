@@ -2056,4 +2056,38 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | MCP servers with Gemini CLI (GitHub docs) | https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md |
 | gemini-cli #29844 — allowPrivateNetwork | https://github.com/google-gemini/gemini-cli/pull/29844 |
 
+## Daily ingest 2026-10-30 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Copilot connectors | https://docs.github.com/en/copilot/concepts/customizations/copilot-connectors |
+| Supported Copilot connectors | https://docs.github.com/en/copilot/reference/supported-connectors |
+| Connect your tools to Copilot without all the setup | https://github.blog/changelog/2026-10-28-connect-your-tools-to-copilot-without-all-the-setup/ |
+| Customizing the GitHub Copilot app | https://docs.github.com/en/copilot/how-tos/github-copilot-app/customize-github-copilot-app |
+| Viewing and fixing security alerts in the GitHub Copilot app | https://docs.github.com/en/copilot/how-tos/github-copilot-app/view-and-fix-security-alerts |
+| Security extension for the GitHub Copilot app | https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app/ |
+| Copilot automations | https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations |
+| Creating automations with Copilot cloud agent | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-automations |
+| Build shared workflows for your team with Copilot Automations | https://github.blog/changelog/2026-10-28-build-shared-workflows-for-your-team-with-copilot-automations/ |
+| Create and manage Copilot Automations in Visual Studio Code | https://github.blog/changelog/2026-10-28-create-and-manage-copilot-automations-in-visual-studio-code/ |
+| Create and manage agent automations | https://code.visualstudio.com/docs/agents/run/automations |
+| Visual Studio Code 1.144 | https://code.visualstudio.com/updates/v1_144 |
+| Run agent sessions in the cloud | https://code.visualstudio.com/docs/agents/run/cloud-sandbox-sessions |
+| Choose and use an agent harness | https://code.visualstudio.com/docs/agents/run/agent-harnesses |
+| GitHub Copilot in VS Code, Universe releases | https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases/ |
+| Getting pull requests ready to merge with Agent Merge | https://docs.github.com/en/copilot/how-tos/copilot-on-github/use-copilot-agents/watch-and-fix-pull-requests |
+| REST API endpoints for Agent Merge | https://docs.github.com/en/rest/pulls/agent-merge |
+| Agent Merge watches and fixes pull requests in the cloud | https://github.blog/changelog/2026-10-28-agent-merge-watches-and-fixes-pull-requests-in-the-cloud/ |
+| GitHub Agentic Workflows generally available | https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/ |
+| About GitHub Agentic Workflows | https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows |
+| Creating GitHub Agentic Workflows | https://docs.github.com/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows |
+| Your first agentic workflow | https://docs.github.com/en/copilot/how-tos/github-agentic-workflows/quickstart |
+| Develop agentic workflows in GitHub Actions | https://docs.github.com/en/actions/tutorials/develop-agentic-workflows-in-github-actions |
+| Configure permissions | https://code.claude.com/docs/en/permissions |
+| Claude Code settings | https://code.claude.com/docs/en/settings |
+| v2.1.314 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.314 |
+| CHANGELOG.md | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
+| Claude apps gateway configuration | https://code.claude.com/docs/en/claude-apps-gateway-config |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+
 

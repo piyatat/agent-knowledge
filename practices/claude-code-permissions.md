@@ -3,8 +3,8 @@ id: claude-code-permissions
 title: Claude Code permissions — allow / ask / deny vs modes
 tags: [claude, permissions, safety, hooks]
 status: active
-updated: 2026-10-04
-when_to_use: Writing Claude Code permission rules or choosing defaultMode vs a PreToolUse hook
+updated: 2026-10-30
+when_to_use: Writing Claude Code permission rules, fencing working-directory writes, or choosing defaultMode vs a PreToolUse hook
 ---
 
 ## Summary
@@ -19,13 +19,16 @@ Claude Code **permissions** are host-enforced allow / ask / deny rules plus a **
 - Permanent Bash/WebFetch “don’t ask again” writes `.claude/settings.local.json` at the **repo root** (worktree-aware since v2.1.211). File-edit approvals are session-scoped. `/permissions` applies on the next tool call in the same turn.
 - Enforcement is the host + optional PreToolUse (`claude-code-hooks`). Connector tools set to `ask` in claude.ai still prompt in `auto` / `bypassPermissions`.
 - Launch lock-down: `--restricted` / `CLAUDE_CODE_RESTRICTED=1` (v2.1.248+) drops shell/code tools and WebFetch unless `--tools`, keeps file tools in the working directory, refuses `bypassPermissions`, and ignores user/project/local settings. Auto-mode cannot approve protected-path writes. Details: `claude-code-restricted`.
+- Working-directory fences (every permission mode): `permissions.blockReadsOutsideWorkingDirectories` makes file tools refuse paths outside the working / additional directories (docs; auto mode offers to enable it on the first outside read). **v2.1.314** (2026-10-30) adds `permissions.blockWritesOutsideWorkingDirectories`: **Write, Edit, and NotebookEdit** refuse paths outside those directories. Pair the write fence with `--restricted` / `claude-code-restricted` when you also want the launch lock-down. Docs as of 2026-10-30 still document the read fence more fully than the write key — attribute write behavior to the 2.1.314 notes until the permissions page lists it.
 - v2.1.288–289 closed several **deny/ask bypasses** (do not assume older clients enforce these): env-prefix (`TZ="$HOME" rm -rf build`) and a leading bare assignment under sandbox auto-allow; a nested deny/ask on a compound command now beats a user-mod approval on managed machines; `Read` deny applies to IDE @-mentions / selections reached through a symlink; `rm` on `/` or `$HOME` inside `bash -c` / `sh -c` prompts even under `bypassPermissions` or a shell allow; `BASHPID` arithmetic assignment prompts; PreToolUse / PermissionRequest **block** the call if matcher serialization fails (fail-closed). A user mod still cannot rewrite org-managed MCP sign-in tool descriptions.
 
 ## Sources
 
-- [Configure permissions](https://code.claude.com/docs/en/permissions) — accessed 2026-09-05
-- [Claude Code settings](https://code.claude.com/docs/en/settings) — accessed 2026-09-05
+- [Configure permissions](https://code.claude.com/docs/en/permissions) — accessed 2026-10-30
+- [Claude Code settings](https://code.claude.com/docs/en/settings) — accessed 2026-10-30
 - [Choose a permission mode](https://code.claude.com/docs/en/permission-modes) — accessed 2026-10-01
+- [v2.1.314 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.314) — accessed 2026-10-30
+- [CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-30
 - [v2.1.248 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.248) — accessed 2026-10-01
 - [v2.1.288 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.288) — accessed 2026-10-04
 - [v2.1.289 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.289) — accessed 2026-10-04

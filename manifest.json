@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-28",
+  "updated": "2026-10-30",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -3898,8 +3898,8 @@
         "hooks"
       ],
       "status": "active",
-      "updated": "2026-10-04",
-      "when_to_use": "Writing Claude Code permission rules or choosing defaultMode vs a PreToolUse hook",
+      "updated": "2026-10-30",
+      "when_to_use": "Writing Claude Code permission rules, fencing working-directory writes, or choosing defaultMode vs a PreToolUse hook",
       "related": [
         "permission-modes-allow-ask-deny",
         "claude-code-sandboxing",
@@ -4267,7 +4267,8 @@
         "github-copilot-custom-agents",
         "mcp-server-trust-failures",
         "github-copilot-code-review",
-        "vscode-mcp"
+        "vscode-mcp",
+        "github-copilot-connectors"
       ]
     },
     {
@@ -4956,7 +4957,8 @@
         "github-copilot-custom-agents",
         "malicious-skills-supply-chain",
         "github-copilot-mcp",
-        "github-copilot-dynamic-workflows"
+        "github-copilot-dynamic-workflows",
+        "github-copilot-security-extension"
       ]
     },
     {
@@ -5642,7 +5644,7 @@
     {
       "id": "github-copilot-automations",
       "path": "practices/github-copilot-automations.md",
-      "title": "Copilot cloud-agent automations — schedule and repo events",
+      "title": "Copilot automations — personal vs shared cloud-agent workflows",
       "tags": [
         "github",
         "automations",
@@ -5650,8 +5652,8 @@
         "cron"
       ],
       "status": "active",
-      "updated": "2026-10-02",
-      "when_to_use": "Creating a Copilot cloud-agent automation for schedule/issue/PR events, or contrasting it with Cursor Automations",
+      "updated": "2026-10-30",
+      "when_to_use": "Creating a personal or shared Copilot automation, or contrasting it with VS Code local automations / Agentic Workflows",
       "related": [
         "github-copilot-coding-agent",
         "cursor-automations",
@@ -5660,7 +5662,9 @@
         "github-copilot-managed-permissions",
         "vscode-agent-automations",
         "github-agentic-workflows",
-        "github-copilot-dynamic-workflows"
+        "github-copilot-dynamic-workflows",
+        "github-copilot-connectors",
+        "github-copilot-agent-merge"
       ]
     },
     {
@@ -5843,7 +5847,7 @@
     {
       "id": "github-copilot-agent-merge",
       "path": "practices/github-copilot-agent-merge.md",
-      "title": "VS Code Agent Merge — drive a PR to merge-ready",
+      "title": "Agent Merge — watch a PR and fix CI or conflicts",
       "tags": [
         "github",
         "review",
@@ -5851,13 +5855,15 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-09-15",
-      "when_to_use": "Enabling Agent Merge on a VS Code agent session to clear review comments, failed checks, and merge conflicts",
+      "updated": "2026-10-30",
+      "when_to_use": "Enabling Watch and fix on a GitHub PR, or contrasting cloud Agent Merge with the VS Code / Copilot app loop",
       "related": [
         "github-copilot-ide-agent",
         "github-copilot-code-review",
         "github-copilot-coding-agent",
-        "cursor-agents-window"
+        "cursor-agents-window",
+        "github-copilot-automations",
+        "vscode-agent-harnesses"
       ]
     },
     {
@@ -6609,8 +6615,8 @@
         "interoperability"
       ],
       "status": "active",
-      "updated": "2026-10-21",
-      "when_to_use": "Choosing a VS Code Session Target, or handing a Local chat to Copilot/Claude/Codex/Cloud",
+      "updated": "2026-10-30",
+      "when_to_use": "Choosing a VS Code Session Target, starting a cloud sandbox session, or handing a Local chat to Copilot/Claude/Codex/Cloud",
       "related": [
         "github-copilot-ide-agent",
         "agent-host-protocol-ahp",
@@ -6624,7 +6630,9 @@
         "vscode-agent-canvases",
         "vscode-assisted-permissions",
         "vscode-compare-models",
-        "vscode-on-device-models"
+        "vscode-on-device-models",
+        "github-copilot-coding-agent",
+        "github-copilot-connectors"
       ]
     },
     {
@@ -6762,7 +6770,7 @@
     {
       "id": "vscode-agent-automations",
       "path": "practices/vscode-agent-automations.md",
-      "title": "VS Code agent automations — local schedule and .automation.md",
+      "title": "VS Code automations — local clock vs cloud GitHub runs",
       "tags": [
         "vscode",
         "automations",
@@ -6770,8 +6778,8 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-21",
-      "when_to_use": "Scheduling a recurring VS Code Agents-window task, or contrasting it with Cursor / Copilot / Codex automations",
+      "updated": "2026-10-30",
+      "when_to_use": "Scheduling a local Agents-window task, or creating a cloud Copilot automation from VS Code 1.144",
       "related": [
         "github-copilot-automations",
         "cursor-automations",
@@ -7631,7 +7639,7 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-10-27",
+      "updated": "2026-10-30",
       "when_to_use": "Deploying Claude apps gateway, forcing /login to a private gateway URL, or contrasting it with Bedrock/Vertex env vars or self-hosted runners",
       "related": [
         "claude-code-settings",
@@ -7874,7 +7882,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-02",
+      "updated": "2026-10-30",
       "when_to_use": "Authoring a .md + .lock.yml agentic workflow with gh aw, or contrasting it with Copilot automations",
       "related": [
         "github-copilot-automations",
@@ -8484,14 +8492,16 @@
         "caching"
       ],
       "status": "active",
-      "updated": "2026-10-14",
-      "when_to_use": "A long Claude Code terminal session sat idle, or tuning idleCompaction / CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS",
+      "updated": "2026-10-30",
+      "when_to_use": "A long Claude Code terminal, VS Code, or Desktop session sat idle, or tuning idleCompaction / CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS",
       "related": [
         "claude-code-context-window",
         "context-compaction",
         "prompt-caching-for-agents",
         "claude-code-sessions",
-        "acp-session-compaction"
+        "acp-session-compaction",
+        "claude-code-vscode",
+        "claude-code-desktop"
       ]
     },
     {
@@ -8633,7 +8643,8 @@
       "related": [
         "github-agentic-autofix",
         "github-copilot-code-review",
-        "github-copilot-coding-agent"
+        "github-copilot-coding-agent",
+        "github-copilot-security-extension"
       ]
     },
     {
@@ -8653,7 +8664,8 @@
         "github-copilot-coding-agent",
         "github-code-scanning-ai-scan",
         "github-copilot-code-review",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "github-copilot-security-extension"
       ]
     },
     {
@@ -9455,6 +9467,49 @@
         "cursor-checkpoints",
         "jsonl-session-state-gaps",
         "agent-session-transcript-audit"
+      ]
+    },
+    {
+      "id": "github-copilot-connectors",
+      "path": "practices/github-copilot-connectors.md",
+      "title": "Copilot connectors — GitHub-verified MCP, connect once",
+      "tags": [
+        "github",
+        "mcp",
+        "auth",
+        "interoperability"
+      ],
+      "status": "active",
+      "updated": "2026-10-30",
+      "when_to_use": "Connecting Slack/Figma/Sentry (or another verified service) to Copilot once, or contrasting connectors with repo MCP JSON",
+      "related": [
+        "github-copilot-mcp",
+        "github-copilot-automations",
+        "github-copilot-cli",
+        "vscode-mcp",
+        "mcp-server-trust-failures",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "github-copilot-security-extension",
+      "path": "practices/github-copilot-security-extension.md",
+      "title": "Copilot security extension — code scanning canvas in the app",
+      "tags": [
+        "github",
+        "security",
+        "review",
+        "plugins"
+      ],
+      "status": "active",
+      "updated": "2026-10-30",
+      "when_to_use": "Working code scanning alerts in the Copilot app, or choosing it vs agentic autofix / AI Scan",
+      "related": [
+        "github-agentic-autofix",
+        "github-code-scanning-ai-scan",
+        "github-copilot-plugins",
+        "github-copilot-code-review",
+        "prompt-injection-agent-defense"
       ]
     }
   ]
