@@ -3,7 +3,7 @@ id: claude-code-settings
 title: Claude Code settings.json — scopes and precedence
 tags: [claude, config, permissions, governance]
 status: active
-updated: 2026-09-28
+updated: 2026-10-31
 when_to_use: Choosing user vs project vs managed settings, restricting models, or debugging which file won
 ---
 
@@ -20,10 +20,12 @@ Claude Code **settings** are strict JSON files that change runtime behavior (mod
 - Most keys hot-reload (permissions, hooks, `apiKeyHelper`) and fire `ConfigChange`. `model` / `effortLevel` / `outputStyle` wait for `/model`, `/effort`, `/clear`, or restart. `/status` lists loaded sources; `claude doctor` lists skipped entries.
 - Broken user/project/local JSON: interactive dialog; `-p` skips the file and continues. Broken `~/.claude.json`: backup + prompt, or `-p` exits. Schema: `https://json.schemastore.org/claude-code-settings.json` (may lag the CLI).
 - Shared project `enableAllProjectMcpServers` / allow rules wait for workspace trust. Local-file allow rules apply without trust **while the file is untracked**.
+- **2026-10-31 Team / Enterprise:** settings fetched from Anthropic’s API now apply **without an approval prompt**. A stored copy that **doesn’t verify is refused** (session starts without that snapshot rather than running stale policy). Gateway `managed.policy_mode: layered` merges every matching policy instead of first-match (`claude-code-gateway`).
 
 ## Sources
 
-- [Claude Code settings](https://code.claude.com/docs/en/settings) — accessed 2026-09-27
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-10-31
+- [Claude Code settings](https://code.claude.com/docs/en/settings) — accessed 2026-10-31
 - [Monitoring usage (OpenTelemetry)](https://code.claude.com/docs/en/monitoring-usage) — accessed 2026-09-27
-- [Claude Code CHANGELOG](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) — accessed 2026-09-28
+- [Claude Code CHANGELOG](https://raw.githubusercontent.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-31
 - [Configure permissions](https://code.claude.com/docs/en/permissions) — accessed 2026-09-05

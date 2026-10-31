@@ -3,8 +3,8 @@ id: claude-code-gateway
 title: Claude apps gateway — SSO proxy for Bedrock, GCP, Foundry
 tags: [claude, gateway, auth, governance]
 status: active
-updated: 2026-10-30
-when_to_use: Deploying Claude apps gateway, forcing /login to a private gateway URL, or contrasting it with Bedrock/Vertex env vars or self-hosted runners
+updated: 2026-10-31
+when_to_use: Deploying Claude apps gateway, setting spend/group budgets, or contrasting it with Bedrock/Vertex env vars or self-hosted runners
 ---
 
 ## Summary
@@ -21,15 +21,18 @@ when_to_use: Deploying Claude apps gateway, forcing /login to a private gateway 
 - One OIDC issuer per instance. Pair with `allowManaged*Only` locks if Desktop/SDK hosts can inject parent settings. Treat gateway-delivered settings as org policy, not user memory (`memory-files-vs-enforcement-hooks`).
 - **v2.1.312** (2026-10-27): `oidc.user_id_claim` identifies people by an `id_token` claim other than `sub` (example: Microsoft Entra **`oid`**). Use when the IdP’s `sub` is not the stable directory object id you want on audit headers. Unrecognized Bedrock/Vertex/Foundry/Mantle model names now get the shorter system prompt (set `CLAUDE_CODE_SIMPLE_SYSTEM_PROMPT=0` to keep the full one) and the same automatic refusal-fallback as unknown model names (`CLAUDE_CODE_DISABLE_REFUSAL_FALLBACK=1` to turn that off).
 - **v2.1.314** (2026-10-30): optional **`groups`** list on an upstream — only developers in those IdP groups are sent to that upstream, **including failover**. Bedrock upstreams can set **`guardrail_trace`** to log **which** Amazon Bedrock guardrail filter fired, **without** the matched text (pair with the existing `guardrail` block; docs already require the same `guardrail` on every Bedrock upstream or none). Config page as of 2026-10-30 still documents `allowed_groups` / `guardrail` more fully than these two keys — attribute them to the 2.1.314 notes until the config reference lists them.
+- **2026-10-31:** spend-limits Admin API accepts **`pooled_budget`** — one **monthly** budget a group’s members **share**, **on top of** each member’s own cap. Without that flag, `rbac_group` / `organization` caps stay **per-seat** (each member inherits the amount; `admin.group_limit_mode` `min`/`max` only tie-breaks several group caps). Amounts are USD cents; period `daily|weekly|monthly`; over-cap is `429` `billing_error`. `managed.policy_mode: layered` applies **every** matching managed policy, each merged over the ones listed below it — not first-match only (deny rules still win). Bedrock **`guardrail.input_tagging`** wraps prompts in the input tags a prompt-attacks filter needs; `all_messages_and_system` also tags the system prompt (config page as of 2026-10-31 still says the gateway adds no input tags — trust the changelog). VS Code can sign in to a gateway from the **chat panel** (no terminal).
 
 ## Sources
 
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-10-31
+- [Claude apps gateway spend limits](https://code.claude.com/docs/en/claude-apps-gateway-spend-limits) — accessed 2026-10-31
 - [Run Claude Code through a gateway](https://code.claude.com/docs/en/gateways) — accessed 2026-10-09
-- [Claude apps gateway](https://code.claude.com/docs/en/claude-apps-gateway) — accessed 2026-10-09
-- [Claude apps gateway configuration](https://code.claude.com/docs/en/claude-apps-gateway-config) — accessed 2026-10-30
-- [CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-30
+- [Claude apps gateway](https://code.claude.com/docs/en/claude-apps-gateway) — accessed 2026-10-31
+- [Claude apps gateway configuration](https://code.claude.com/docs/en/claude-apps-gateway-config) — accessed 2026-10-31
+- [CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-31
 - [v2.1.314](https://github.com/anthropics/claude-code/releases/tag/v2.1.314) — accessed 2026-10-30
 - [v2.1.312](https://github.com/anthropics/claude-code/releases/tag/v2.1.312) — accessed 2026-10-27
 - [v2.1.295](https://github.com/anthropics/claude-code/releases/tag/v2.1.295) — accessed 2026-10-09
 - [Claude apps gateway deployment](https://code.claude.com/docs/en/claude-apps-gateway-deploy) — accessed 2026-09-29
-- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-10-30
+

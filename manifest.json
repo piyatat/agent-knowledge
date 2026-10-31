@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -3682,8 +3682,8 @@
         "isolation"
       ],
       "status": "active",
-      "updated": "2026-10-16",
-      "when_to_use": "Authoring .claude/agents markdown, choosing Explore/Plan vs custom, or setting isolation: worktree",
+      "updated": "2026-10-31",
+      "when_to_use": "Authoring .claude/agents markdown, setting subagent effort, or choosing isolation: worktree",
       "related": [
         "cursor-custom-subagents",
         "claude-code-worktrees",
@@ -3965,7 +3965,7 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-09-28",
+      "updated": "2026-10-31",
       "when_to_use": "Choosing user vs project vs managed settings, restricting models, or debugging which file won",
       "related": [
         "claude-code-permissions",
@@ -5102,7 +5102,7 @@
         "git"
       ],
       "status": "active",
-      "updated": "2026-10-24",
+      "updated": "2026-10-31",
       "when_to_use": "Starting or teleporting a claude.ai/code cloud session, or contrasting it with Remote Control",
       "related": [
         "claude-code-remote-control",
@@ -5110,7 +5110,8 @@
         "claude-code-slack",
         "claude-code-github-action",
         "cursor-cloud-always-on",
-        "claude-code-artifacts"
+        "claude-code-artifacts",
+        "claude-code-elicitation"
       ]
     },
     {
@@ -5383,8 +5384,8 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-10-18",
-      "when_to_use": "Resuming or forking a Codex TUI chat, steering a live turn, or continuing in the ChatGPT desktop app",
+      "updated": "2026-10-31",
+      "when_to_use": "Resuming, forking, or queueing a Codex TUI chat, or continuing in the ChatGPT desktop app",
       "related": [
         "openai-codex-exec",
         "claude-code-sessions",
@@ -5393,7 +5394,8 @@
         "openai-codex-plan-mode",
         "cursor-message-queue",
         "parallel-tool-calling",
-        "openai-codex-daybreak"
+        "openai-codex-daybreak",
+        "openai-codex-doctor"
       ]
     },
     {
@@ -5494,7 +5496,7 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-10-20",
+      "updated": "2026-10-31",
       "when_to_use": "Configuring autoMode.environment / classifier rules, or debugging an auto-mode denial",
       "related": [
         "claude-code-permissions",
@@ -5517,8 +5519,8 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-06",
-      "when_to_use": "Setting /effort or ultracode, or overriding effort on a skill/subagent/Agent tool",
+      "updated": "2026-10-31",
+      "when_to_use": "Setting /effort or ultracode, disabling ultrathink, or overriding effort on a skill/subagent",
       "related": [
         "claude-code-workflows",
         "claude-code-settings",
@@ -7639,8 +7641,8 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-10-30",
-      "when_to_use": "Deploying Claude apps gateway, forcing /login to a private gateway URL, or contrasting it with Bedrock/Vertex env vars or self-hosted runners",
+      "updated": "2026-10-31",
+      "when_to_use": "Deploying Claude apps gateway, setting spend/group budgets, or contrasting it with Bedrock/Vertex env vars or self-hosted runners",
       "related": [
         "claude-code-settings",
         "claude-code-self-hosted",
@@ -8073,14 +8075,15 @@
         "hooks"
       ],
       "status": "active",
-      "updated": "2026-10-25",
-      "when_to_use": "Debugging Claude Code MCP login/approval dialogs, or auto-answering elicitation with a hook",
+      "updated": "2026-10-31",
+      "when_to_use": "Debugging Claude Code MCP login/approval dialogs, cloud form cards, or auto-answering elicitation with a hook",
       "related": [
         "mcp-elicitation-modes",
         "claude-code-mcp",
         "claude-code-hooks",
         "acp-elicitation",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "claude-code-on-the-web"
       ]
     },
     {
@@ -9435,7 +9438,7 @@
         "cli"
       ],
       "status": "active",
-      "updated": "2026-10-28",
+      "updated": "2026-10-31",
       "when_to_use": "Setting model_provider in Codex config.toml, or routing Codex through Bedrock, Vertex AI, Ollama, or LM Studio",
       "related": [
         "openai-codex-exec",
@@ -9510,6 +9513,27 @@
         "github-copilot-plugins",
         "github-copilot-code-review",
         "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "openai-codex-doctor",
+      "path": "practices/openai-codex-doctor.md",
+      "title": "Codex doctor — local and --network-only diagnostics",
+      "tags": [
+        "openai",
+        "cli",
+        "reliability",
+        "networking"
+      ],
+      "status": "active",
+      "updated": "2026-10-31",
+      "when_to_use": "Debugging a broken Codex install, auth, or WebSocket path with codex doctor",
+      "related": [
+        "openai-codex-sessions",
+        "openai-codex-exec",
+        "claude-code-doctor",
+        "agent-session-transcript-audit",
+        "openai-codex-model-providers"
       ]
     }
   ]

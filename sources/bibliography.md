@@ -2090,4 +2090,24 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude apps gateway configuration | https://code.claude.com/docs/en/claude-apps-gateway-config |
 | Claude Code changelog | https://code.claude.com/docs/en/changelog |
 
+## Daily ingest 2026-10-31 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Model configuration | https://code.claude.com/docs/en/model-config |
+| Create custom subagents | https://code.claude.com/docs/en/sub-agents |
+| Claude Code settings | https://code.claude.com/docs/en/settings |
+| CHANGELOG.md | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
+| Claude Code CHANGELOG (raw) | https://raw.githubusercontent.com/anthropics/claude-code/blob/main/CHANGELOG.md |
+| Claude apps gateway spend limits | https://code.claude.com/docs/en/claude-apps-gateway-spend-limits |
+| Claude apps gateway | https://code.claude.com/docs/en/claude-apps-gateway |
+| Claude apps gateway configuration | https://code.claude.com/docs/en/claude-apps-gateway-config |
+| Use Claude Code on the web | https://code.claude.com/docs/en/claude-code-on-the-web |
+| Codex 0.166.0 | https://github.com/openai/codex/releases/tag/rust-v0.166.0 |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+| Command line options – Codex CLI | https://developers.openai.com/codex/cli/reference |
+| Slash commands in Codex CLI | https://developers.openai.com/codex/cli/slash-commands |
+| Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
+
 
