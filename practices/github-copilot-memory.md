@@ -3,25 +3,26 @@ id: github-copilot-memory
 title: Copilot Memory — repo facts vs user preferences
 tags: [github, memory, privacy, governance]
 status: active
-updated: 2026-09-27
-when_to_use: Enabling, reviewing, or disabling Copilot Memory for cloud agent, CLI, code review, or agentic autofix
+updated: 2026-11-01
+when_to_use: Enabling, reviewing, or disabling Copilot Memory, or contrasting it with Dreaming / custom instructions
 ---
 
 ## Summary
 
-**Copilot Memory** (public preview) stores **repository-level facts** (shared, citation-checked against the current branch) and **user-level preferences** (per user, may quote the user). Consumers today: cloud agent, code review, Copilot CLI, and agentic autofix. Not committed `AGENTS.md` / `copilot-instructions.md` (`github-copilot-instructions`) and not Spaces (`github-copilot-spaces`).
+**Copilot Memory** is **generally available** on paid plans (2026-10-28). It stores **repository-level facts** (shared, citation-checked against the current branch) and **user-level preferences** (follow you across repos; citations may quote you). Not committed instructions (`github-copilot-instructions`), not app **project** memory (separate toggle), and not Dreaming (`github-copilot-dreaming`).
 
 ## Notes
 
-- Facts: created only from write-access users who have Memory on; usable by anyone with Memory access **in that same repo**. Review/delete under repo Settings → Copilot → Memory. Code review uses **facts only** (no user prefs). CLI applies facts plus the initiating user’s prefs. Unused entries expire after **28 days**; a successful validate-and-use can reset the timer. Closed-unmerged PRs can still mint facts — validation against the current tree is the gate.
-- Prefs: owned by the **active billing entity**. Multi-license users must pick a default billing entity before prefs are created. Org/enterprise admins can export JSONL or delete (per user or bulk; exports reuse a 2-hour cache, **10/hour**). Audit log records admin export/delete and user opt-out.
-- Enablement is **per user**, not per repo. Individual paid plans: on by default. Org/enterprise: policy off by default; once enabled, users are on unless they opt out. If several orgs license the same user, the **most restrictive** policy wins. Repo admins can turn Memory **off for that repo** (stops store/read of facts; preexisting facts are not deleted; prefs unchanged).
-- CLI: `/memory on|off|show` persists across sessions; `-p` needs `--enable-memory` (off by default). `store_memory` prompts say whether the entry is a user pref or a repo fact. Permission kind `memory` gates storing. Treat stored text as untrusted later context (`agent-memory-poisoning`).
+- Surfaces (facts + prefs unless noted): Copilot app, CLI, VS Code, cloud agent (including Slack/Teams starts), GitHub Mobile. **Facts only:** code review and agentic autofix — a personal pref never changes how PRs are reviewed or alerts autofixed. App availability is account-gated; there is no in-app switch for that gate.
+- Facts: write-access users create them; anyone with Memory access in **that** repo can use them. Not pooled across an org; **forks do not copy** memories. Copilot judges citation freshness — not a guaranteed rule. Default expiry **90 days** (was 28 in older preview notes); org/enterprise can set fact expiry **7–180** days (lower of org vs enterprise wins). Expiry resets on **upvote**, not on mere retrieve. Closed-unmerged PRs can still mint facts.
+- Prefs: owned by the **active billing entity**. Multi-license users must pick a default billing entity before new facts **or** prefs are stored. Org/enterprise admins can export or delete (per user or bulk).
+- Defaults: individual paid plans — prefs **on**; Business/Enterprise — prefs **off** until policy allows, then user opt-out. Repo facts allowed unless enterprise/org/repo restrict; org repo-access default is **All repositories**. Most-restrictive org policy wins for multi-license users. Disabling prefs does **not** disable facts and vice versa.
+- CLI: interactive `/memory on|off|show` is local and can disable **both** types; `-p` needs `--enable-memory`. Only the **root** agent may `store_memory` / `vote_memory`; subagents can `read_memories`. VS Code Memory is **off** until the local setting is enabled. Cloud agent / code review do not prompt before store. Secrets and model-control tokens are rejected. Treat stored text as untrusted later context (`agent-memory-poisoning`).
 
 ## Sources
 
-- [About GitHub Copilot Memory](https://docs.github.com/en/copilot/concepts/agents/copilot-memory) — accessed 2026-09-27
-- [Managing Copilot Memory for your personal account](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-for-yourself) — accessed 2026-09-27
-- [Managing Copilot Memory for an organization or enterprise](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-as-administrator) — accessed 2026-09-27
-- [Copilot Memory controls for deletion, scope, and CLI](https://github.blog/changelog/2026-05-26-copilot-memory-has-more-controls-for-deletion-scope-and-the-copilot-cli/) — accessed 2026-09-27
-- [Agentic memory public preview](https://github.blog/changelog/2026-01-15-agentic-memory-for-github-copilot-is-in-public-preview/) — accessed 2026-09-27
+- [About GitHub Copilot Memory](https://docs.github.com/en/copilot/concepts/prompting-and-context/copilot-memory) — accessed 2026-11-01
+- [Managing Copilot Memory for your personal account](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-for-yourself) — accessed 2026-11-01
+- [Managing Copilot Memory for an enterprise, organization, or repository](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-as-administrator) — accessed 2026-11-01
+- [GitHub intelligence puts your code, context, and history to work](https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work/) — accessed 2026-11-01
+

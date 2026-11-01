@@ -2111,3 +2111,37 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Configuration Reference (Codex) | https://developers.openai.com/codex/config-reference |
 
 
+
+## Daily ingest 2026-11-01 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| About GitHub Copilot Dreaming | https://docs.github.com/en/copilot/concepts/prompting-and-context/copilot-dreaming |
+| Managing Copilot Memory for an enterprise, organization, or repository | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-as-administrator |
+| About GitHub Copilot Memory | https://docs.github.com/en/copilot/concepts/prompting-and-context/copilot-memory |
+| Managing Copilot Memory for your personal account | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-for-yourself |
+| GitHub intelligence puts your code, context, and history to work | https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work/ |
+| GitLab Duo Agent Platform | https://docs.gitlab.com/user/duo_agent_platform/ |
+| Flows | https://docs.gitlab.com/user/duo_agent_platform/flows/ |
+| GitLab Duo CLI (duo) | https://docs.gitlab.com/user/gitlab_duo_cli/ |
+| GitLab for Slack app | https://docs.gitlab.com/user/project/integrations/gitlab_slack_application/ |
+| GitLab's agent orchestration for software development | https://about.gitlab.com/blog/gitlab-agent-orchestration/ |
+| Filesystems Charter | https://modelcontextprotocol.io/community/working-groups/filesystems |
+| experimental-ext-filesystems | https://github.com/modelcontextprotocol/experimental-ext-filesystems |
+| Filesystem WG events | https://meet.modelcontextprotocol.io/2026/11/filesystem-wg-0frl2w00v56a |
+| Using LSP servers with GitHub Copilot CLI | https://docs.github.com/en/copilot/concepts/customizations/lsp-servers |
+| About local sandboxing for GitHub Copilot | https://docs.github.com/en/copilot/concepts/about-cloud-and-local-sandboxes |
+| Indexing repositories for GitHub Copilot | https://docs.github.com/en/copilot/concepts/prompting-and-context/repository-indexing |
+| Using GitHub Code Search | https://docs.github.com/en/search-github/github-code-search/using-github-code-search |
+| GitHub Copilot on GitHub.com and GitHub Mobile | https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github |
+| About cloud sandboxes for GitHub Copilot | https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/about-cloud-sandboxes |
+| Billing for cloud and local sandboxes | https://docs.github.com/en/billing/concepts/product-billing/cloud-and-local-sandboxes |
+| Work from anywhere with a new, connected Copilot cloud experience | https://github.blog/changelog/2026-10-28-work-from-anywhere-with-a-new-connected-copilot-cloud-experience/ |
+| Managing cloud sandboxes for your organization or enterprise | https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization |
+| About GitHub Copilot cloud agent | https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent |
+| Visual Studio Code 1.145 (Insiders) | https://code.visualstudio.com/updates/v1_145 |
+| Visual Studio Code 1.144 | https://code.visualstudio.com/updates/v1_144 |
+| MCP Tasks overview | https://modelcontextprotocol.io/extensions/tasks/overview |
+| SEP-2663: Tasks Extension | https://modelcontextprotocol.io/seps/2663-tasks-extension |
+| SEP-3392: Extension Lifecycle | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3392 |
+

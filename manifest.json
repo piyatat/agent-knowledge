@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -675,7 +675,8 @@
         "mcp-completions",
         "mcp-prompts",
         "mcp-resource-templates",
-        "mcp-content-blocks"
+        "mcp-content-blocks",
+        "mcp-filesystems"
       ]
     },
     {
@@ -1154,12 +1155,13 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-08-22",
+      "updated": "2026-11-01",
       "when_to_use": "MCP tools that run minutes-to-hours (CI, batch, human approval) and must not hold the HTTP request",
       "related": [
         "durable-agent-workflows",
         "mcp-stateless-core",
-        "mcp-mrtr-input-required"
+        "mcp-mrtr-input-required",
+        "mcp-extension-lifecycle"
       ]
     },
     {
@@ -3871,8 +3873,8 @@
         "agents-md"
       ],
       "status": "active",
-      "updated": "2026-09-27",
-      "when_to_use": "Assigning Copilot a background coding task on GitHub, or contrasting it with Cursor/Claude/Codex cloud agents",
+      "updated": "2026-11-01",
+      "when_to_use": "Assigning Copilot a background coding task on GitHub, or choosing Cloud sandbox vs Actions",
       "related": [
         "cursor-github-cloud-agents",
         "claude-code-github-action",
@@ -3884,7 +3886,9 @@
         "github-copilot-code-review",
         "github-copilot-jira",
         "github-copilot-memory",
-        "github-package-firewall"
+        "github-package-firewall",
+        "github-copilot-sandbox",
+        "github-copilot-code-search"
       ]
     },
     {
@@ -5749,7 +5753,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-22",
+      "updated": "2026-11-01",
       "when_to_use": "Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local sandboxing, or VS Code Agent Host MXC",
       "related": [
         "github-copilot-cli",
@@ -5759,7 +5763,8 @@
         "openai-codex-sandbox",
         "vscode-agent-sandboxing",
         "github-copilot-cli-settings",
-        "github-cli-expiring-oauth"
+        "github-cli-expiring-oauth",
+        "github-copilot-lsp"
       ]
     },
     {
@@ -7512,15 +7517,17 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-09-27",
-      "when_to_use": "Enabling, reviewing, or disabling Copilot Memory for cloud agent, CLI, code review, or agentic autofix",
+      "updated": "2026-11-01",
+      "when_to_use": "Enabling, reviewing, or disabling Copilot Memory, or contrasting it with Dreaming / custom instructions",
       "related": [
         "github-copilot-instructions",
         "github-copilot-coding-agent",
         "github-copilot-cli",
         "github-copilot-code-review",
         "github-copilot-spaces",
-        "agent-memory-poisoning"
+        "agent-memory-poisoning",
+        "github-copilot-dreaming",
+        "github-copilot-code-search"
       ]
     },
     {
@@ -8344,7 +8351,7 @@
         "isolation"
       ],
       "status": "active",
-      "updated": "2026-10-25",
+      "updated": "2026-11-01",
       "when_to_use": "Reclaiming disk from VS Code agent-session worktrees, or configuring auto-cleanup after merged PRs",
       "related": [
         "vscode-external-sessions",
@@ -9534,6 +9541,112 @@
         "claude-code-doctor",
         "agent-session-transcript-audit",
         "openai-codex-model-providers"
+      ]
+    },
+    {
+      "id": "github-copilot-dreaming",
+      "path": "practices/github-copilot-dreaming.md",
+      "title": "Copilot Dreaming — background memory and guidance refresh",
+      "tags": [
+        "github",
+        "memory",
+        "automations",
+        "privacy"
+      ],
+      "status": "active",
+      "updated": "2026-11-01",
+      "when_to_use": "Enabling Copilot Dreaming, reviewing its PRs, or contrasting it with Copilot Memory / custom instructions",
+      "related": [
+        "github-copilot-memory",
+        "github-copilot-instructions",
+        "github-copilot-code-review",
+        "github-copilot-automations",
+        "github-copilot-remote-control",
+        "github-copilot-code-search"
+      ]
+    },
+    {
+      "id": "gitlab-duo-agent-platform",
+      "path": "practices/gitlab-duo-agent-platform.md",
+      "title": "GitLab Duo Agent Platform — flows, Duo CLI, Slack",
+      "tags": [
+        "gitlab",
+        "orchestration",
+        "cli",
+        "mcp"
+      ],
+      "status": "active",
+      "updated": "2026-11-01",
+      "when_to_use": "Choosing a GitLab Duo flow, running duo / glab duo, or starting work from Slack @GitLab",
+      "related": [
+        "cursor-gitlab-cloud-agents",
+        "openai-codex-gitlab",
+        "claude-code-gitlab-ci",
+        "agents-md-open-format",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "mcp-filesystems",
+      "path": "practices/mcp-filesystems.md",
+      "title": "MCP Filesystems WG — resource writes still ideating",
+      "tags": [
+        "mcp",
+        "resources",
+        "extensions",
+        "filesystem"
+      ],
+      "status": "draft",
+      "updated": "2026-11-01",
+      "when_to_use": "Assuming MCP resources can be created/updated/deleted, or choosing a tool vs a resource mutation",
+      "related": [
+        "mcp-resources-vs-tools",
+        "mcp-file-uploads",
+        "mcp-skills-extension",
+        "mcp-list-caching",
+        "mcp-extension-lifecycle"
+      ]
+    },
+    {
+      "id": "github-copilot-lsp",
+      "path": "practices/github-copilot-lsp.md",
+      "title": "Copilot CLI LSP servers — symbol ops vs grep",
+      "tags": [
+        "github",
+        "cli",
+        "tools",
+        "quality"
+      ],
+      "status": "active",
+      "updated": "2026-11-01",
+      "when_to_use": "Adding .github/lsp.json or ~/.copilot/lsp-config.json so Copilot CLI can go-to-def / rename",
+      "related": [
+        "claude-code-lsp",
+        "github-copilot-code-search",
+        "github-copilot-plugins",
+        "github-copilot-sandbox",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "github-copilot-code-search",
+      "path": "practices/github-copilot-code-search.md",
+      "title": "Copilot code search — semantic index and /research",
+      "tags": [
+        "github",
+        "indexing",
+        "context",
+        "tools"
+      ],
+      "status": "active",
+      "updated": "2026-11-01",
+      "when_to_use": "Expecting Copilot to find code by meaning, or using /research across related GitHub repos",
+      "related": [
+        "cursor-codebase-search",
+        "github-copilot-lsp",
+        "github-copilot-memory",
+        "github-copilot-dreaming",
+        "prompt-injection-agent-defense"
       ]
     }
   ]

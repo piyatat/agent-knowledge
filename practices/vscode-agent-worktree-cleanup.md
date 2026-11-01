@@ -3,7 +3,7 @@ id: vscode-agent-worktree-cleanup
 title: VS Code worktree cleanup — reclaim inactive agent checkouts
 tags: [vscode, git, session, isolation]
 status: active
-updated: 2026-10-25
+updated: 2026-11-01
 when_to_use: Reclaiming disk from VS Code agent-session worktrees, or configuring auto-cleanup after merged PRs
 ---
 
@@ -17,12 +17,14 @@ when_to_use: Reclaiming disk from VS Code agent-session worktrees, or configurin
 - Before removal, VS Code **commits uncommitted changes to the session branch**. If it cannot preserve changes or delete the folder, the worktree stays. Restore a Done session to recreate the worktree from that branch.
 - Excluded: **active, running, needs-input, pinned, done, archived, untitled, error**, sessions newer than the filter, and worktrees whose size cannot be measured.
 - Suggestion (experimental): `chat.agentSessions.sessionStorageCleanupSuggestion.enabled` notifies in the Agents window when inactive worktrees use **≥ 5 GiB** or **20** are eligible. Dismiss hides it for the current window; **Don't Show Again** or `Chat: Disable Session Storage Cleanup Suggestions` turns it off. **1.144 Insiders** (2026-10-21): the same setting also warns when a **local worktree’s disk has < 5 GB free** and offers cleanup of recent worktrees — free-space pressure, not only accumulated unused checkouts.
+- **1.145 Insiders** (2026-10-26–28): Worktree Cleanup **persists size estimates** for unchanged idle sessions so reopen/refresh is faster; **bulk cleanup** now shows progress, keeps completed rows visible, and lets you **retry** failed removals. Still Insiders-only as of 2026-11-01 — do not assume 1.144 stable has the retry UI.
 - Automatic cleanup is still **preview** and **off** by default: `chat.agentSessions.autoMarkAsDoneMergedSessionsAfterDays` then `chat.agentSessions.autoDeleteMarkedAsDoneMergedSessionsAfterDays` (docs suggest `15`; `0` disables that stage). Eligible: not in progress, last-modified older than the threshold, ≥1 merged PR, no open related PRs. **External sessions are not eligible.** Only auto-marked sessions auto-delete. Worktrees are removed only when the branch tracks upstream with no outgoing/uncommitted changes — never force-removed. VS Code checks at startup and hourly while either setting is on.
 - Pair with the sessions list (`vscode-external-sessions`). Do not treat worktree isolation as a sandbox (`vscode-agent-sandboxing`).
 
 ## Sources
 
-- [Visual Studio Code 1.144 (Insiders)](https://code.visualstudio.com/updates/v1_144) — accessed 2026-10-25
+- [Visual Studio Code 1.145 (Insiders)](https://code.visualstudio.com/updates/v1_145) — accessed 2026-11-01
+- [Visual Studio Code 1.144](https://code.visualstudio.com/updates/v1_144) — accessed 2026-10-30
 - [Visual Studio Code 1.141](https://code.visualstudio.com/updates/v1_141) — accessed 2026-10-10
 - [Manage agent sessions in VS Code](https://code.visualstudio.com/docs/agents/run/sessions/manage-sessions) — accessed 2026-10-10
 - [GitHub Copilot weekly releases — October 5](https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5/) — accessed 2026-10-10
