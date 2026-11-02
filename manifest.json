@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1726,7 +1726,7 @@
         "transport"
       ],
       "status": "active",
-      "updated": "2026-10-18",
+      "updated": "2026-11-02",
       "when_to_use": "Attaching MCP servers to Cursor Cloud Agents (team or personal) and choosing HTTP vs stdio",
       "related": [
         "cursor-cloud-mcp-diagnostics",
@@ -1735,7 +1735,8 @@
         "playwright-mcp-containment",
         "cursor-mcp-json",
         "cursor-enterprise-mcp-policy",
-        "rate-limit-backoff-tools"
+        "rate-limit-backoff-tools",
+        "cursor-google-workspace-plugins"
       ]
     },
     {
@@ -3060,7 +3061,7 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-10-22",
+      "updated": "2026-11-02",
       "when_to_use": "Separating who may run an MCP server from how it gets installed (Teams/Enterprise)",
       "related": [
         "cursor-plugins",
@@ -5456,7 +5457,7 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-10-25",
+      "updated": "2026-11-02",
       "when_to_use": "Starting a Cursor Project for a multi-PR feature, migration, or standing “gardening” job instead of a single chat",
       "related": [
         "cursor-cloud-always-on",
@@ -5465,7 +5466,8 @@
         "cursor-agents-window",
         "agent-memory-poisoning",
         "cursor-self-hosted-pools",
-        "cursor-remote-control"
+        "cursor-remote-control",
+        "github-copilot-projects"
       ]
     },
     {
@@ -6516,13 +6518,15 @@
         "interoperability"
       ],
       "status": "active",
-      "updated": "2026-09-19",
+      "updated": "2026-11-02",
       "when_to_use": "Distinguishing AHP from ACP/MCP/A2A, or connecting a UI to a persistent agent-host process",
       "related": [
         "a2a-vs-mcp",
         "agent-client-protocol-acp",
         "github-copilot-ide-agent",
-        "github-copilot-dev-containers"
+        "github-copilot-dev-containers",
+        "vscode-agent-host",
+        "vscode-agent-harnesses"
       ]
     },
     {
@@ -6699,14 +6703,15 @@
         "privacy"
       ],
       "status": "active",
-      "updated": "2026-09-20",
+      "updated": "2026-11-02",
       "when_to_use": "Making personal Cursor skills available to Cloud Agents, or debugging why a self-hosted worker lacks a skill",
       "related": [
         "skills-invocation-modes",
         "cursor-plugins",
         "cursor-ios",
         "cursor-self-hosted-pools",
-        "malicious-skills-supply-chain"
+        "malicious-skills-supply-chain",
+        "cursor-automations"
       ]
     },
     {
@@ -9647,6 +9652,118 @@
         "github-copilot-memory",
         "github-copilot-dreaming",
         "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "github-copilot-app",
+      "path": "practices/github-copilot-app.md",
+      "title": "GitHub Copilot app — desktop agent director",
+      "tags": [
+        "github",
+        "ux",
+        "orchestration",
+        "cli"
+      ],
+      "status": "active",
+      "updated": "2026-11-02",
+      "when_to_use": "Directing Copilot from the desktop app instead of VS Code, CLI, or github.com, or contrasting it with those surfaces",
+      "related": [
+        "github-copilot-projects",
+        "github-copilot-cli",
+        "github-copilot-ide-agent",
+        "github-copilot-coding-agent",
+        "github-copilot-sandbox",
+        "github-copilot-computer-use",
+        "github-copilot-automations",
+        "vscode-agent-harnesses"
+      ]
+    },
+    {
+      "id": "github-copilot-projects",
+      "path": "practices/github-copilot-projects.md",
+      "title": "Copilot Projects — multi-repo goal in the Copilot app",
+      "tags": [
+        "github",
+        "orchestration",
+        "automations",
+        "context"
+      ],
+      "status": "active",
+      "updated": "2026-11-02",
+      "when_to_use": "Coordinating Copilot work across repos or non-repo context from the Copilot app, or contrasting it with a single session / Copilot Spaces / Cursor Projects",
+      "related": [
+        "github-copilot-app",
+        "github-copilot-spaces",
+        "github-copilot-automations",
+        "github-copilot-coding-agent",
+        "cursor-projects",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "github-actions-event-policies",
+      "path": "practices/github-actions-event-policies.md",
+      "title": "GitHub Actions execution policies — actors, events, PRT default block",
+      "tags": [
+        "github",
+        "ci",
+        "security",
+        "policies"
+      ],
+      "status": "active",
+      "updated": "2026-11-02",
+      "when_to_use": "Agents authoring pull_request_target workflows, or admins restricting who/which events may start Actions",
+      "related": [
+        "github-actions-workflow-lockfiles",
+        "github-agentic-workflows",
+        "github-copilot-coding-agent",
+        "prompt-injection-agent-defense",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "vscode-agent-host",
+      "path": "practices/vscode-agent-host.md",
+      "title": "VS Code Agent Host — process, remotes, GitHub Environments",
+      "tags": [
+        "vscode",
+        "ahp",
+        "orchestration",
+        "session"
+      ],
+      "status": "active",
+      "updated": "2026-11-02",
+      "when_to_use": "Why a VS Code agent survives closing a window, connecting SSH/tunnels/GitHub Environments, or contrasting Local vs Agent Host",
+      "related": [
+        "agent-host-protocol-ahp",
+        "vscode-agent-harnesses",
+        "github-copilot-dev-containers",
+        "github-copilot-custom-environments",
+        "github-copilot-sandbox",
+        "github-copilot-remote-control",
+        "vscode-external-sessions"
+      ]
+    },
+    {
+      "id": "github-copilot-custom-environments",
+      "path": "practices/github-copilot-custom-environments.md",
+      "title": "Copilot custom environments — copilotd on your Linux host",
+      "tags": [
+        "github",
+        "sandbox",
+        "ops",
+        "isolation"
+      ],
+      "status": "active",
+      "updated": "2026-11-02",
+      "when_to_use": "Registering your own Linux machine or codespace as a Copilot session environment instead of Actions or a cloud sandbox",
+      "related": [
+        "vscode-agent-host",
+        "github-copilot-sandbox",
+        "github-copilot-coding-agent",
+        "github-copilot-dev-containers",
+        "github-copilot-remote-control",
+        "cursor-self-hosted-agents"
       ]
     }
   ]

@@ -2145,3 +2145,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | SEP-2663: Tasks Extension | https://modelcontextprotocol.io/seps/2663-tasks-extension |
 | SEP-3392: Extension Lifecycle | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3392 |
 
+## Daily ingest 2026-11-02 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| GitHub Copilot app | https://docs.github.com/en/copilot/concepts/copilot-surfaces/github-copilot-app |
+| Getting started with the GitHub Copilot app | https://docs.github.com/en/copilot/how-tos/github-copilot-app/getting-started |
+| GitHub Copilot app, Universe releases | https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases/ |
+| Application card: GitHub Copilot Agents | https://docs.github.com/en/copilot/responsible-use/agents |
+| Working with projects in the GitHub Copilot app | https://docs.github.com/en/copilot/how-tos/github-copilot-app/working-with-projects |
+| pull_request_target blocked by default December 2 | https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2/ |
+| About Actions policies | https://docs.github.com/en/actions/concepts/about-actions-policies |
+| Governing execution of GitHub Actions workflows | https://docs.github.com/en/actions/how-tos/administer/control-workflow-execution |
+| Securely using pull_request_target | https://docs.github.com/en/actions/reference/security/securely-using-pull_request_target |
+| REST API endpoints for GitHub Actions policies | https://docs.github.com/en/rest/actions/policies |
+| Agent Host architecture | https://code.visualstudio.com/docs/agents/concepts/agent-host |
+| Run and manage remote agent sessions | https://code.visualstudio.com/docs/agents/run/remote-agent-sessions |
+| GitHub Copilot in VS Code, Universe releases | https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases/ |
+| VS Code Wrapped: GitHub Universe 2026 | https://code.visualstudio.com/blogs/2026/10/28/vscode-wrapped/ |
+| Creating a custom environment for agents | https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-a-custom-environment |
+| What is the Agent Host Protocol? | https://microsoft.github.io/agent-host-protocol/guide/what-is-ahp |
+| AHP releases (1.0.0) | https://github.com/microsoft/agent-host-protocol/releases |
+| Agent Skills (Cursor) | https://cursor.com/docs/skills |
+| Skills help | https://cursor.com/help/customization/skills |
+| Projects (Cursor docs) | https://cursor.com/docs/agent/projects |
+
