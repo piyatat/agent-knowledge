@@ -2170,3 +2170,25 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Skills help | https://cursor.com/help/customization/skills |
 | Projects (Cursor docs) | https://cursor.com/docs/agent/projects |
 
+## Daily ingest 2026-11-03 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| GitHub Copilot is now available in JetBrains Air | https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/ |
+| Copilot CLI ACP server | https://docs.github.com/en/copilot/reference/copilot-cli-reference/acp-server |
+| GitHub Copilot in IDEs | https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-in-ides |
+| ACP protocol overview | https://agentclientprotocol.com/protocol/overview |
+| Message threads | https://platform.claude.com/docs/en/build-with-claude/message-threads |
+| Make long-running agents faster with message threads | https://claude.com/resources/articles/message-threads |
+| Prompt caching (Claude) | https://platform.claude.com/docs/en/build-with-claude/prompt-caching |
+| SEP-3498: Separating Data Model from Transport Representation | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3498 |
+| SEP-3498 vote / TPM | https://voting.modelcontextprotocol.io/p/seps/3498 |
+| MCP Spec TPM | https://plan.modelcontextprotocol.io/seps |
+| Transports WG #58 | https://github.com/modelcontextprotocol/transports-wg/pull/58 |
+| Agent SDK hooks | https://code.claude.com/docs/en/agent-sdk/hooks |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| v2.1.317 | https://github.com/anthropics/claude-code/releases/tag/v2.1.317 |
+| Cursor IDE release notes | https://cursor.com/docs/release-notes/ide |
+| Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
+| Using GitHub Copilot in JetBrains IDEs | https://docs.github.com/en/copilot/concepts/agents/copilot-in-jetbrains |
+

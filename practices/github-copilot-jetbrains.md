@@ -3,13 +3,13 @@ id: github-copilot-jetbrains
 title: Copilot in JetBrains — plugin vs AI Assistant ACP vs CLI
 tags: [github, acp, interoperability, ux]
 status: active
-updated: 2026-10-28
-when_to_use: Choosing Copilot’s JetBrains plugin, AI Assistant ACP agent, or Copilot CLI in the IDE terminal
+updated: 2026-11-03
+when_to_use: Choosing Copilot’s JetBrains plugin, AI Assistant ACP agent, Copilot CLI in the IDE terminal, or JetBrains Air
 ---
 
 ## Summary
 
-JetBrains IDEs expose **three Copilot surfaces**: the **GitHub Copilot plugin** (full IDE agent), **Copilot inside JetBrains AI Assistant** over **ACP**, and **Copilot CLI** in the integrated terminal. Same Copilot subscription; different capabilities. Not Cursor-in-JetBrains (`cursor-jetbrains-acp`) and not Claude Code’s JetBrains plugin (`claude-code-jetbrains`).
+JetBrains IDEs expose **three Copilot surfaces** plus a fourth director: the **GitHub Copilot plugin** (full IDE agent), **Copilot inside JetBrains AI Assistant** over **ACP**, **Copilot CLI** in the integrated terminal, and **JetBrains Air** (`github-copilot-jetbrains-air`). Same Copilot subscription; different capabilities. Not Cursor-in-JetBrains (`cursor-jetbrains-acp`) and not Claude Code’s JetBrains plugin (`claude-code-jetbrains`).
 
 ## Notes
 
@@ -19,10 +19,12 @@ JetBrains IDEs expose **three Copilot surfaces**: the **GitHub Copilot plugin** 
 - **2026-10-28 (JetBrains Universe):** **Copilot Fusion** is in the plugin (Standard / High / Max) and **replaces Auto** on a gradual rollout (`github-copilot-hydrafusion`). **Local sandboxes** for JetBrains Copilot are **GA** (filesystem / network / credential bounds from developer or org policy — `github-copilot-sandbox`). **NES** is GA. The **Microsoft Copilot agent harness** is the default when available. Settings: default permission mode for new sessions; Copilot at the top level of IDE settings; Copilot listed ahead of Local in the agent picker; session sidebar for side-by-side sessions; hover a turn for completion / generation time and per-model tokens.
 - **AI Assistant ACP**: Copilot is a **bundled** Registry agent (no extra plugin to update). Chat/agent only — **no** completions, NES, inline chat, review, or commit-message generation. Alt+A / Cmd+Shift+A → agent picker → GitHub Copilot. Requires a valid Copilot subscription and credentials; the ACP Registry discovers it automatically. Wire protocol: Copilot CLI as an ACP server (`github-copilot-cli`).
 - **CLI in the IDE terminal**: same `copilot` binary as a standalone terminal (`github-copilot-cli`). Completions/review are not included; pair with `/sandbox` / `--cloud` (`github-copilot-sandbox`). Changelog 2026-09-08 also added a public-preview **CLI-to-IDE** handoff that can pull JetBrains selections, diagnostics, and file refs into a terminal session.
-- Pick plugin when you need editor-native completions and review. Pick ACP when the team already lives in AI Assistant and does not want a second plugin. Pick CLI for headless `-p` or sandbox policy. Do not treat any of these as a merge gate.
+- Pick plugin when you need editor-native completions and review. Pick ACP when the team already lives in AI Assistant and does not want a second plugin. Pick CLI for headless `-p` or sandbox policy. Pick **Air** when you want a task list that can run Copilot locally **or** in an Air Teams cloud VM (ACP over Copilot CLI — not GitHub’s cloud sandbox). Docs as of 2026-11-03 still list three IDE entry points; Air is a separate changelog surface. Do not treat any of these as a merge gate.
 
 ## Sources
 
+- [GitHub Copilot is now available in JetBrains Air](https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/) — accessed 2026-11-03
+- [GitHub Copilot in IDEs](https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-in-ides) — accessed 2026-11-03
 - [Using GitHub Copilot in JetBrains IDEs](https://docs.github.com/en/copilot/concepts/agents/copilot-in-jetbrains) — accessed 2026-09-14
 - [GitHub Copilot in JetBrains Universe releases](https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases/) — accessed 2026-10-28
 - [About GitHub Copilot Fusion](https://docs.github.com/en/copilot/concepts/models/copilot-fusion) — accessed 2026-10-28

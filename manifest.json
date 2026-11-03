@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1968,7 +1968,7 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-10-11",
+      "updated": "2026-11-03",
       "when_to_use": "Defining .cursor/hooks.json (or ~/.cursor/hooks.json) so scripts can deny tools, format after edits, or audit cloud agent turns",
       "related": [
         "memory-files-vs-enforcement-hooks",
@@ -2502,7 +2502,7 @@
         "isolation"
       ],
       "status": "active",
-      "updated": "2026-10-26",
+      "updated": "2026-11-03",
       "when_to_use": "Deciding whether Cloud Agent tool calls stay on Cursor VMs or move to a worker you operate",
       "related": [
         "cursor-cloud-always-on",
@@ -2868,7 +2868,7 @@
         "mcp"
       ],
       "status": "active",
-      "updated": "2026-09-01",
+      "updated": "2026-11-03",
       "when_to_use": "Embedding Claude Code’s agent loop in Python/TypeScript instead of driving the CLI or calling the Messages API yourself",
       "related": [
         "permission-modes-allow-ask-deny",
@@ -2878,7 +2878,9 @@
         "openai-agents-sdk",
         "claude-skills-api",
         "claude-code-plugins",
-        "claude-managed-agents"
+        "claude-managed-agents",
+        "claude-code-hooks",
+        "claude-message-threads"
       ]
     },
     {
@@ -3279,7 +3281,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-06",
+      "updated": "2026-11-03",
       "when_to_use": "Committing or MDM-deploying which MCP tools and shell prefixes skip approval in local Cursor",
       "related": [
         "cursor-sandbox-json",
@@ -3642,7 +3644,7 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-10-09",
+      "updated": "2026-11-03",
       "when_to_use": "Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks instead of CLAUDE.md advice",
       "related": [
         "memory-files-vs-enforcement-hooks",
@@ -3651,7 +3653,8 @@
         "permission-modes-allow-ask-deny",
         "claude-code-security-guidance",
         "claude-code-elicitation",
-        "claude-code-gateway"
+        "claude-code-gateway",
+        "claude-agent-sdk"
       ]
     },
     {
@@ -5020,14 +5023,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-11",
+      "updated": "2026-11-03",
       "when_to_use": "Creating a /schedule cloud routine, or choosing routines vs Desktop scheduled tasks vs /loop",
       "related": [
         "claude-code-channels",
         "claude-code-on-the-web",
         "claude-code-github-action",
         "cursor-automations",
-        "durable-agent-workflows"
+        "durable-agent-workflows",
+        "mcp-server-trust-failures"
       ]
     },
     {
@@ -5729,8 +5733,8 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-10-28",
-      "when_to_use": "Choosing Copilot’s JetBrains plugin, AI Assistant ACP agent, or Copilot CLI in the IDE terminal",
+      "updated": "2026-11-03",
+      "when_to_use": "Choosing Copilot’s JetBrains plugin, AI Assistant ACP agent, Copilot CLI in the IDE terminal, or JetBrains Air",
       "related": [
         "cursor-jetbrains-acp",
         "claude-code-jetbrains",
@@ -5741,7 +5745,8 @@
         "github-copilot-otel",
         "github-copilot-skills",
         "github-copilot-instructions",
-        "github-copilot-hydrafusion"
+        "github-copilot-hydrafusion",
+        "github-copilot-jetbrains-air"
       ]
     },
     {
@@ -9764,6 +9769,71 @@
         "github-copilot-dev-containers",
         "github-copilot-remote-control",
         "cursor-self-hosted-agents"
+      ]
+    },
+    {
+      "id": "github-copilot-jetbrains-air",
+      "path": "practices/github-copilot-jetbrains-air.md",
+      "title": "Copilot in JetBrains Air — ACP agent, local and Air Teams cloud",
+      "tags": [
+        "github",
+        "acp",
+        "jetbrains",
+        "sandbox"
+      ],
+      "status": "active",
+      "updated": "2026-11-03",
+      "when_to_use": "Delegating Copilot tasks from JetBrains Air (IDE or Air Teams cloud) instead of the Copilot plugin, AI Assistant, or GitHub-hosted cloud sandbox",
+      "related": [
+        "github-copilot-jetbrains",
+        "github-copilot-cli",
+        "github-copilot-sandbox",
+        "jetbrains-junie",
+        "agent-client-protocol-acp",
+        "github-copilot-coding-agent"
+      ]
+    },
+    {
+      "id": "claude-message-threads",
+      "path": "practices/claude-message-threads.md",
+      "title": "Claude Messages API message threads — send only the new turn",
+      "tags": [
+        "claude",
+        "api",
+        "caching",
+        "latency"
+      ],
+      "status": "active",
+      "updated": "2026-11-03",
+      "when_to_use": "Cutting TTFT on a long Messages API agent loop without changing token billing, or contrasting threads with prompt caching / Managed Agents sessions",
+      "related": [
+        "prompt-caching-for-agents",
+        "claude-managed-agents",
+        "claude-code-sessions",
+        "claude-agent-sdk",
+        "context-compaction"
+      ]
+    },
+    {
+      "id": "mcp-data-model-transport",
+      "path": "practices/mcp-data-model-transport.md",
+      "title": "MCP data model vs transport representation — SEP-3498 (draft)",
+      "tags": [
+        "mcp",
+        "transport",
+        "schema",
+        "sdk"
+      ],
+      "status": "draft",
+      "updated": "2026-11-03",
+      "when_to_use": "Assuming MCP JSON-RPC fields are the application types, or tracking the Transports WG split of data model from stdio/HTTP wire format",
+      "related": [
+        "mcp-pluggable-transports",
+        "mcp-stateless-core",
+        "mcp-request-meta",
+        "mcp-stdio-transport",
+        "mcp-streamable-http-transport",
+        "mcp-2026-roadmap"
       ]
     }
   ]
