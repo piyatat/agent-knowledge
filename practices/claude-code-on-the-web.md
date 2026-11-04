@@ -3,7 +3,7 @@ id: claude-code-on-the-web
 title: Claude Code on the web — --cloud, --teleport, cloud sessions
 tags: [claude, hosting, session, git]
 status: active
-updated: 2026-10-31
+updated: 2026-11-04
 when_to_use: Starting or teleporting a claude.ai/code cloud session, or contrasting it with Remote Control
 ---
 
@@ -19,11 +19,13 @@ when_to_use: Starting or teleporting a claude.ai/code cloud session, or contrast
 - Teleport: `claude --teleport` / `/teleport` / `/tp` / `/tasks` then `t`. Requires clean working tree, same repo (not a fork), pushed cloud branch, same account. Creates a **local copy** of the session — further local work does not sync back; use Remote Control to keep steering from the phone. `--resume` is local history only.
 - Cloud UI: `/compact` and `/context` work; `/clear` and `/resume` do not. Permission mode is a dropdown (persists across environment expiry). Team/Enterprise share Private vs Team (Slack-started sessions are Team). Pro/Max Private vs Public — review secrets before Public. Auto-fix needs the GitHub App on the repo.
 - **2026-10-31:** switching back to a cloud or Remote Control session shows **“Catching up…”** while undelivered messages replay. Cloud sessions get an MCP **form card** so elicitation is fill-or-decline instead of silent cancel (`claude-code-elicitation`). Enterprise members can **add and delete network secrets** on their own cloud environments (view-only before).
+- **v2.1.318** (2026-11-04): Anthropic-hosted cloud sessions offer **No repository** — start without picking a GitHub repo. Built-in Chromium is also on `google-chrome` / `CHROME_PATH` so tools other than Playwright can find it. A deleted-environment card gets a **New session** button (message box hidden). Connector search results tell Claude the directory listing is **partial**. `/mcp` in cloud sessions counts only tools the model can use.
 - Contrast: Remote Control (`claude-code-remote-control`) never leaves your disk. Channels (`claude-code-channels`) inject into a local session. Routines (`claude-code-routines`) are standing cloud configs.
 
 ## Sources
 
-- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-10-31
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-04
+- [v2.1.318](https://github.com/anthropics/claude-code/releases/tag/v2.1.318) — accessed 2026-11-04
 - [Use Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web) — accessed 2026-10-31
 - [Get started with Claude Code on the web](https://code.claude.com/docs/en/web-quickstart) — accessed 2026-09-11
 - [Remote Control](https://code.claude.com/docs/en/remote-control) — accessed 2026-09-11

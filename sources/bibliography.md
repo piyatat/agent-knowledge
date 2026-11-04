@@ -2192,3 +2192,24 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
 | Using GitHub Copilot in JetBrains IDEs | https://docs.github.com/en/copilot/concepts/agents/copilot-in-jetbrains |
 
+## Daily ingest 2026-11-04 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| GitHub Copilot is now available in Xcode’s coding assistant | https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/ |
+| Setting up coding intelligence | https://developer.apple.com/documentation/xcode/setting-up-coding-intelligence |
+| Xcode 27.3 Beta Release Notes | https://developer.apple.com/documentation/xcode-release-notes/xcode-27_3-release-notes |
+| Copilot feature matrix | https://docs.github.com/en/copilot/reference/copilot-feature-matrix |
+| BYOK and enterprise custom models in the Copilot usage API | https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api/ |
+| Bring your own key for GitHub Copilot | https://docs.github.com/en/copilot/concepts/models/bring-your-own-key |
+| Data available in Copilot usage metrics | https://docs.github.com/en/copilot/reference/copilot-usage-metrics/copilot-usage-metrics |
+| REST API endpoints for Copilot usage metrics | https://docs.github.com/en/rest/copilot/copilot-usage-metrics |
+| Visual Studio Code 1.145 | https://code.visualstudio.com/updates/v1_145 |
+| Manage and troubleshoot MCP servers | https://code.visualstudio.com/docs/agents/run/manage-mcp-servers |
+| MCP configuration reference | https://code.visualstudio.com/docs/agents/reference/mcp-configuration |
+| Create and manage agent automations | https://code.visualstudio.com/docs/agents/run/automations |
+| v2.1.318 | https://github.com/anthropics/claude-code/releases/tag/v2.1.318 |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Claude apps gateway configuration | https://code.claude.com/docs/en/claude-apps-gateway-config |
+| Control MCP server access for your organization | https://code.claude.com/docs/en/managed-mcp |
+

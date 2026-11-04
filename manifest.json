@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -5111,7 +5111,7 @@
         "git"
       ],
       "status": "active",
-      "updated": "2026-10-31",
+      "updated": "2026-11-04",
       "when_to_use": "Starting or teleporting a claude.ai/code cloud session, or contrasting it with Remote Control",
       "related": [
         "claude-code-remote-control",
@@ -5690,14 +5690,15 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-19",
+      "updated": "2026-11-04",
       "when_to_use": "Deploying a fixed MCP set for Claude Code, providing HTTP servers via managed settings, or locking allowedMcpServers",
       "related": [
         "claude-code-mcp",
         "claude-code-settings",
         "cursor-enterprise-mcp-policy",
         "mcp-server-trust-failures",
-        "mcp-oauth-scopes"
+        "mcp-oauth-scopes",
+        "vscode-mcp-managed-allowlist"
       ]
     },
     {
@@ -6631,7 +6632,7 @@
         "interoperability"
       ],
       "status": "active",
-      "updated": "2026-10-30",
+      "updated": "2026-11-04",
       "when_to_use": "Choosing a VS Code Session Target, starting a cloud sandbox session, or handing a Local chat to Copilot/Claude/Codex/Cloud",
       "related": [
         "github-copilot-ide-agent",
@@ -6795,8 +6796,8 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-30",
-      "when_to_use": "Scheduling a local Agents-window task, or creating a cloud Copilot automation from VS Code 1.144",
+      "updated": "2026-11-04",
+      "when_to_use": "Scheduling a local Agents-window task (including cron), or creating a cloud Copilot automation from VS Code 1.144+",
       "related": [
         "github-copilot-automations",
         "cursor-automations",
@@ -6825,7 +6826,8 @@
         "vscode-agent-sandboxing",
         "vscode-agent-harnesses",
         "mcp-apps-extension",
-        "mcp-oauth-scopes"
+        "mcp-oauth-scopes",
+        "vscode-mcp-managed-allowlist"
       ]
     },
     {
@@ -7658,7 +7660,7 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-10-31",
+      "updated": "2026-11-04",
       "when_to_use": "Deploying Claude apps gateway, setting spend/group budgets, or contrasting it with Bedrock/Vertex env vars or self-hosted runners",
       "related": [
         "claude-code-settings",
@@ -7688,7 +7690,8 @@
         "github-copilot-jetbrains",
         "github-copilot-custom-agents",
         "github-copilot-visual-studio",
-        "github-copilot-mcp"
+        "github-copilot-mcp",
+        "github-copilot-xcode-coding-assistant"
       ]
     },
     {
@@ -8300,7 +8303,8 @@
         "github-copilot-sandbox",
         "cursor-privacy-mode",
         "github-copilot-hydrafusion",
-        "vscode-on-device-models"
+        "vscode-on-device-models",
+        "github-copilot-usage-metrics-byok"
       ]
     },
     {
@@ -8722,14 +8726,15 @@
         "preview"
       ],
       "status": "active",
-      "updated": "2026-10-16",
-      "when_to_use": "Enabling chat.canvases.enabled, running /create-canvas, or contrasting VS Code canvases with Cursor canvases",
+      "updated": "2026-11-04",
+      "when_to_use": "Enabling chat.canvases.enabled, running /create-canvas, or using a canvas on a remote Agent Host",
       "related": [
         "vscode-agent-harnesses",
         "github-copilot-plugins",
         "cursor-canvases",
         "claude-code-design",
-        "malicious-skills-supply-chain"
+        "malicious-skills-supply-chain",
+        "vscode-agent-host"
       ]
     },
     {
@@ -9288,7 +9293,8 @@
         "github-copilot-otel",
         "opencode-agent",
         "openai-codex-sdk",
-        "claude-code-headless"
+        "claude-code-headless",
+        "github-copilot-usage-metrics-byok"
       ]
     },
     {
@@ -9737,7 +9743,7 @@
         "session"
       ],
       "status": "active",
-      "updated": "2026-11-02",
+      "updated": "2026-11-04",
       "when_to_use": "Why a VS Code agent survives closing a window, connecting SSH/tunnels/GitHub Environments, or contrasting Local vs Agent Host",
       "related": [
         "agent-host-protocol-ahp",
@@ -9746,7 +9752,8 @@
         "github-copilot-custom-environments",
         "github-copilot-sandbox",
         "github-copilot-remote-control",
-        "vscode-external-sessions"
+        "vscode-external-sessions",
+        "vscode-agent-canvases"
       ]
     },
     {
@@ -9834,6 +9841,69 @@
         "mcp-stdio-transport",
         "mcp-streamable-http-transport",
         "mcp-2026-roadmap"
+      ]
+    },
+    {
+      "id": "github-copilot-xcode-coding-assistant",
+      "path": "practices/github-copilot-xcode-coding-assistant.md",
+      "title": "Copilot in Xcode’s coding assistant — native Intelligence vs extension",
+      "tags": [
+        "github",
+        "ux",
+        "interoperability",
+        "preview"
+      ],
+      "status": "active",
+      "updated": "2026-11-04",
+      "when_to_use": "Enabling GitHub Copilot in Xcode Settings → Intelligence, or choosing native coding assistant vs the Copilot for Xcode extension",
+      "related": [
+        "github-copilot-xcode-eclipse",
+        "cursor-xcode",
+        "github-copilot-jetbrains-air",
+        "github-copilot-ide-agent",
+        "agent-client-protocol-acp"
+      ]
+    },
+    {
+      "id": "github-copilot-usage-metrics-byok",
+      "path": "practices/github-copilot-usage-metrics-byok.md",
+      "title": "Copilot usage metrics — local BYOK vs enterprise custom models",
+      "tags": [
+        "github",
+        "observability",
+        "models",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-11-04",
+      "when_to_use": "Separating Copilot-hosted usage from local BYOK or admin-configured custom models in the usage-metrics API",
+      "related": [
+        "github-copilot-usage-metrics-clients",
+        "github-copilot-usage-metrics-customizations",
+        "github-copilot-cli-local-models",
+        "github-copilot-impact-industry",
+        "github-copilot-otel"
+      ]
+    },
+    {
+      "id": "vscode-mcp-managed-allowlist",
+      "path": "practices/vscode-mcp-managed-allowlist.md",
+      "title": "VS Code managed MCP allowlist — allowedMcpServers vs registry-only",
+      "tags": [
+        "vscode",
+        "mcp",
+        "governance",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-11-04",
+      "when_to_use": "Approving MCP servers in VS Code enterprise policy without publishing them to a registry, or debugging why a registry server is blocked",
+      "related": [
+        "vscode-mcp",
+        "cursor-enterprise-mcp-policy",
+        "claude-code-managed-mcp",
+        "github-copilot-mcp",
+        "mcp-server-trust-failures"
       ]
     }
   ]
