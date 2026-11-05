@@ -3,7 +3,7 @@ id: cursor-privacy-mode
 title: Cursor Privacy Mode vs Legacy, ZDR, and Cloud Agent storage
 tags: [cursor, privacy, security, ops]
 status: active
-updated: 2026-08-27
+updated: 2026-11-05
 when_to_use: Enabling Cloud Agents under Privacy Mode, explaining ZDR vs training, or reviewing Legacy Privacy Mode blocks
 ---
 
@@ -15,7 +15,7 @@ when_to_use: Enabling Cloud Agents under Privacy Mode, explaining ZDR vs trainin
 
 - Privacy Mode on: no training by Cursor or ZDR providers. Providers may still run abuse classifiers; hits can be stored for investigation per their policies. Privacy Mode off: Cursor may store prompts/code to improve the product; some inference providers may cache inputs/outputs then delete.
 - **Legacy** Privacy Mode is unsupported for Cloud Agents (and currently for self-hosted workers that still hit cloud agent APIs). Switch to standard Privacy Mode on the dashboard. If the org forbids *any* cloud copy of source, do not enable Cloud Agents — local Agent still works.
-- Cloud Agents: isolated VMs; encrypted repo copies while the run is live. Conversation history is kept indefinitely by default (Delete Agent API removes the transcript, not snapshots). Environment snapshots expire after **90 days of inactivity** (timer resets on start/resume). Enterprise early-access: cap conversations at 90 days.
+- Cloud Agents: isolated VMs; encrypted repo copies while the run is live. Conversation history is kept indefinitely by default (Delete Agent API removes the **transcript and artifacts**, not snapshots). VM snapshots expire after **30 days of inactivity** (timer resets on start/resume; not deletable on demand). Enterprise can cap conversation retention with retention policies. Hosted Apps (`cursor-cloud-apps`) also store app code/secrets in Cursor-managed hosting — Legacy Privacy Mode still blocks Cloud Agents, so it blocks Apps.
 - Most models are ZDR. A few (e.g. **Claude Fable 5**) retain inputs/outputs for harm review, not training. With Privacy Mode, those models fail until an admin opts in on the restricted-models dashboard. Guardrail trips on Fable 5 may fall back to Opus.
 - Team enforcement: dashboard Settings → Privacy Mode, optionally lock so members cannot disable. MDM **Allowed Team IDs** stops personal-account logins on corp devices.
 - Indexing is a different flow: chunks uploaded to compute embeddings; plaintext discarded after the request. Embeddings/metadata may persist. Cloud Agents are the storage exception.
@@ -23,7 +23,8 @@ when_to_use: Enabling Cloud Agents under Privacy Mode, explaining ZDR vs trainin
 
 ## Sources
 
+- [Cloud Agent security](https://cursor.com/docs/cloud-agent/security) — accessed 2026-11-05
+- [Apps (Cloud Agents)](https://cursor.com/docs/cloud-agent/apps) — accessed 2026-11-05
 - [Privacy and Data Governance](https://cursor.com/docs/enterprise/privacy-and-data-governance) — accessed 2026-08-27
-- [Cloud Agent security](https://cursor.com/docs/cloud-agent/security) — accessed 2026-08-27
 - [Secrets & Network — Privacy Mode (Legacy) and retention](https://cursor.com/docs/cloud-agent/security-network) — accessed 2026-08-27
 - [Data Use & Privacy Overview](https://cursor.com/privacy-overview) — accessed 2026-08-27

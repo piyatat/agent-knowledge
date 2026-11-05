@@ -2213,3 +2213,25 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude apps gateway configuration | https://code.claude.com/docs/en/claude-apps-gateway-config |
 | Control MCP server access for your organization | https://code.claude.com/docs/en/managed-mcp |
 
+## Daily ingest 2026-11-05 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Apps (Cloud Agents) | https://cursor.com/docs/cloud-agent/apps |
+| Build Live Apps in Cursor (changelog) | https://cursor.com/changelog |
+| Cloud Agent security | https://cursor.com/docs/cloud-agent/security |
+| Agent Package Manager | https://microsoft.github.io/apm/ |
+| Targets matrix | https://microsoft.github.io/apm/reference/targets-matrix/ |
+| Primitives and targets | https://microsoft.github.io/apm/concepts/primitives-and-targets/ |
+| Manage dependencies | https://microsoft.github.io/apm/consumer/manage-dependencies/ |
+| Dependabot version updates support APM | https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager/ |
+| Dependabot supported ecosystems | https://docs.github.com/en/code-security/reference/supply-chain-security/supported-ecosystems-and-repositories |
+| Dependabot options reference | https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference |
+| Gemini CLI v0.67.0 | https://github.com/google-gemini/gemini-cli/releases/tag/v0.67.0 |
+| feat: models command and --list-models | https://github.com/google-gemini/gemini-cli/pull/29880 |
+| Gemini CLI cheatsheet | https://geminicli.com/docs/cli/cli-reference/ |
+| Gemini CLI hooks | https://geminicli.com/docs/hooks/ |
+| Hooks reference | https://geminicli.com/docs/hooks/reference/ |
+| Agent Skills – Codex | https://developers.openai.com/codex/skills |
+| Origin Apps | https://cursor.com/docs/origin/apps |
+

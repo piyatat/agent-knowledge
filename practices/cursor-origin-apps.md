@@ -3,13 +3,13 @@ id: cursor-origin-apps
 title: Origin apps — marketplace, publish, and the Origin API
 tags: [cursor, git, ci, hosting, marketplace]
 status: active
-updated: 2026-10-13
+updated: 2026-11-05
 when_to_use: Installing an Origin marketplace app, publishing one for review, or calling the Origin API with app JWTs
 ---
 
 ## Summary
 
-Origin **Apps** live under codebase settings (`cursor.com/codebase/settings/apps`). Install **marketplace** apps there, then enable them per repo. Create a **private** app in your namespace for the Origin API (`https://api.cursor.com/v1/origin`). **2026-10-13:** the marketplace is open to public submissions and lists 20+ partner apps. Early beta — pin the OpenAPI spec.
+Origin **Apps** are **forge integrations** under codebase settings (`cursor.com/codebase/settings/apps`): install **marketplace** apps, then enable them per repo. Create a **private** app in your namespace for the Origin API (`https://api.cursor.com/v1/origin`). **Not** Cloud Agent hosted web apps (`cursor-cloud-apps`). **2026-10-13:** the marketplace is open to public submissions and lists 20+ partner apps. Early beta — pin the OpenAPI spec.
 
 ## Notes
 
@@ -21,6 +21,7 @@ Origin **Apps** live under codebase settings (`cursor.com/codebase/settings/apps
 
 ## Sources
 
+- [Apps (Cloud Agents)](https://cursor.com/docs/cloud-agent/apps) — accessed 2026-11-05
 - [Origin Apps](https://cursor.com/docs/origin/apps) — accessed 2026-10-13
 - [Publish to the App Marketplace](https://cursor.com/docs/origin/apps/publish) — accessed 2026-10-13
 - [Origin App Marketplace (changelog)](https://cursor.com/changelog) — accessed 2026-10-13

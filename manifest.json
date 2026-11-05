@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1233,7 +1233,7 @@
         "durability"
       ],
       "status": "active",
-      "updated": "2026-10-11",
+      "updated": "2026-11-05",
       "when_to_use": "Designing always-on Cursor cloud agents that wake on PRs/Slack/cron or hold a long-lived objective",
       "related": [
         "subagent-context-isolation",
@@ -1249,7 +1249,8 @@
         "cursor-ios",
         "cursor-skills-cloud-sync",
         "cursor-message-queue",
-        "cursor-environment-json"
+        "cursor-environment-json",
+        "cursor-cloud-apps"
       ]
     },
     {
@@ -2441,14 +2442,15 @@
         "ops"
       ],
       "status": "active",
-      "updated": "2026-08-27",
+      "updated": "2026-11-05",
       "when_to_use": "Enabling Cloud Agents under Privacy Mode, explaining ZDR vs training, or reviewing Legacy Privacy Mode blocks",
       "related": [
         "cursor-cloud-always-on",
         "cursor-self-hosted-agents",
         "cursor-ignore-files",
         "cursor-cloud-secrets-network",
-        "cursor-enterprise-mdm"
+        "cursor-enterprise-mdm",
+        "cursor-cloud-apps"
       ]
     },
     {
@@ -2588,7 +2590,7 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-10-13",
+      "updated": "2026-11-05",
       "when_to_use": "Hosting or mirroring repos on Cursor Origin, using the origin CLI, or starting a Cloud Agent without a third-party SCM",
       "related": [
         "cursor-privacy-mode",
@@ -2598,7 +2600,8 @@
         "cursor-sdk",
         "cursor-origin-apps",
         "cursor-origin-migrations",
-        "cursor-origin-code-tours"
+        "cursor-origin-code-tours",
+        "cursor-cloud-apps"
       ]
     },
     {
@@ -3491,14 +3494,15 @@
         "marketplace"
       ],
       "status": "active",
-      "updated": "2026-10-13",
+      "updated": "2026-11-05",
       "when_to_use": "Installing an Origin marketplace app, publishing one for review, or calling the Origin API with app JWTs",
       "related": [
         "cursor-origin",
         "cursor-cloud-always-on",
         "cursor-automations",
         "cursor-sdk",
-        "cursor-origin-migrations"
+        "cursor-origin-migrations",
+        "cursor-cloud-apps"
       ]
     },
     {
@@ -4377,7 +4381,7 @@
         "tokens"
       ],
       "status": "active",
-      "updated": "2026-10-12",
+      "updated": "2026-11-05",
       "when_to_use": "Authoring or installing SKILL.md for Codex, budgeting the skills list, or contrasting Codex skills with plugins",
       "related": [
         "openai-codex-plugins",
@@ -4386,7 +4390,8 @@
         "claude-code-skills",
         "github-copilot-skills",
         "openai-codex-record-replay",
-        "mcp-skills-extension"
+        "mcp-skills-extension",
+        "agent-package-manager-apm"
       ]
     },
     {
@@ -4421,7 +4426,7 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-09-07",
+      "updated": "2026-11-05",
       "when_to_use": "Authoring Gemini CLI hooks in settings.json, or comparing them with Claude/Codex/Cursor hooks",
       "related": [
         "gemini-cli-settings",
@@ -4442,7 +4447,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-07",
+      "updated": "2026-11-05",
       "when_to_use": "Scripting Gemini CLI in CI, or choosing -p / --output-format vs an interactive session",
       "related": [
         "gemini-cli-trusted-folders",
@@ -6102,14 +6107,15 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-09-17",
+      "updated": "2026-11-05",
       "when_to_use": "Creating or governing Cursor Grok Bots (named teammates, shared computer, skills/routines) instead of a one-shot Cloud Agent",
       "related": [
         "computer-use-containment",
         "cursor-sandbox-json",
         "prompt-injection-agent-defense",
         "cursor-cloud-always-on",
-        "cursor-privacy-mode"
+        "cursor-privacy-mode",
+        "cursor-cloud-apps"
       ]
     },
     {
@@ -9904,6 +9910,59 @@
         "claude-code-managed-mcp",
         "github-copilot-mcp",
         "mcp-server-trust-failures"
+      ]
+    },
+    {
+      "id": "cursor-cloud-apps",
+      "path": "practices/cursor-cloud-apps.md",
+      "title": "Cursor Cloud Agent Apps — hosted web apps with Postgres and Cursor auth",
+      "tags": [
+        "cursor",
+        "hosting",
+        "security",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-11-05",
+      "when_to_use": "Asking a Cloud Agent to build, preview, or publish a live web app, or contrasting it with Origin marketplace apps and canvases",
+      "related": [
+        "cursor-origin",
+        "cursor-origin-apps",
+        "cursor-cloud-always-on",
+        "cursor-grok-bot",
+        "cursor-cloud-secrets-network",
+        "cursor-organization-audit-logs",
+        "cursor-canvases",
+        "openai-codex-sites",
+        "cursor-privacy-mode",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "agent-package-manager-apm",
+      "path": "practices/agent-package-manager-apm.md",
+      "title": "Agent Package Manager (APM) — apm.yml, lockfile, and Dependabot",
+      "tags": [
+        "skills",
+        "supply-chain",
+        "github",
+        "plugins"
+      ],
+      "status": "active",
+      "updated": "2026-11-05",
+      "when_to_use": "Declaring shared skills/prompts/MCP in apm.yml, installing across Copilot/Cursor/Claude/Codex, or enabling Dependabot for APM",
+      "related": [
+        "agent-skills-open-standard",
+        "agent-skills-directories",
+        "malicious-skills-supply-chain",
+        "github-copilot-skills",
+        "github-copilot-plugins",
+        "github-copilot-instructions",
+        "cursor-plugins",
+        "claude-code-skills",
+        "openai-codex-skills",
+        "gemini-cli-skills",
+        "mcp-registry-admission"
       ]
     }
   ]

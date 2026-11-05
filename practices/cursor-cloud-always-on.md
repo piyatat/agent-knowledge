@@ -3,13 +3,13 @@ id: cursor-cloud-always-on
 title: Cursor cloud agents — subscriptions, /goal, isolated subagents
 tags: [cursor, orchestration, subagent, durability]
 status: active
-updated: 2026-10-11
+updated: 2026-11-05
 when_to_use: Designing always-on Cursor cloud agents that wake on PRs/Slack/cron or hold a long-lived objective
 ---
 
 ## Summary
 
-Cloud agents are an event-driven harness: **subscriptions** wake one conversation on GitHub/Slack/Linear/timers, `/goal` holds an objective across loops, subagents can get **own VMs**, and steering waits until the next tool call. Origin (`cursor-origin`) can be the SCM. The same runs show up in the **iOS** inbox (`cursor-ios`). Automatic GitHub Actions retries are `cursor-cloud-pr-artifacts`, not a subscription. New Cloud picks use the **repo’s default environment**; OOM-killed shells now report the memory limit so the agent can retry smaller.
+Cloud agents are an event-driven harness: **subscriptions** wake one conversation on GitHub/Slack/Linear/timers, `/goal` holds an objective across loops, subagents can get **own VMs**, and steering waits until the next tool call. Origin (`cursor-origin`) can be the SCM. The same runs show up in the **iOS** inbox (`cursor-ios`). Automatic GitHub Actions retries are `cursor-cloud-pr-artifacts`, not a subscription. New Cloud picks use the **repo’s default environment**; OOM-killed shells now report the memory limit so the agent can retry smaller. **2026-11-05:** only a **cloud** agent can **publish hosted Apps** (`cursor-cloud-apps`); say so in the prompt. Local Agent cannot.
 
 ## Notes
 
@@ -22,6 +22,8 @@ Cloud agents are an event-driven harness: **subscriptions** wake one conversatio
 
 ## Sources
 
+- [Apps (Cloud Agents)](https://cursor.com/docs/cloud-agent/apps) — accessed 2026-11-05
+- [Build Live Apps in Cursor (changelog)](https://cursor.com/changelog) — accessed 2026-11-05
 - [Cloud Agent capabilities — Subscriptions](https://cursor.com/docs/cloud-agent/capabilities) — accessed 2026-08-28
 - [Cursor IDE release notes](https://cursor.com/docs/release-notes/ide) — accessed 2026-10-11
 - [Cursor web release notes](https://cursor.com/docs/release-notes/web) — accessed 2026-10-11

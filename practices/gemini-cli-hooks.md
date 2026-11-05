@@ -3,7 +3,7 @@ id: gemini-cli-hooks
 title: Gemini CLI hooks — settings.json lifecycle scripts
 tags: [gemini, hooks, permissions, safety]
 status: active
-updated: 2026-09-07
+updated: 2026-11-05
 when_to_use: Authoring Gemini CLI hooks in settings.json, or comparing them with Claude/Codex/Cursor hooks
 ---
 
@@ -13,14 +13,15 @@ Gemini CLI **hooks** are synchronous command scripts fired from the agent loop. 
 
 ## Notes
 
-- Merge order (high → low): project `.gemini/settings.json` → user `~/.gemini/settings.json` → system `/etc/gemini-cli/settings.json` → extension hooks. Events: `SessionStart` / `SessionEnd`, `BeforeAgent` / `AfterAgent`, `BeforeModel` / `AfterModel`, `BeforeToolSelection`, `BeforeTool` / `AfterTool`, `PreCompress`, `Notification`. Only `type: "command"` today. Timeout default **60000 ms**.
+- Merge order (high → low): project `.gemini/settings.json` → user `~/.gemini/settings.json` → system `/etc/gemini-cli/settings.json` → extension hooks. Events: `SessionStart` / `SessionEnd`, `BeforeAgent` / `AfterAgent`, `BeforeModel` / `AfterModel`, `BeforeToolSelection`, `BeforeTool` / `AfterTool`, `PreCompress`, `Notification`. Only `type: "command"` today. Timeout is **milliseconds** (default **60000**). Claude Code timeouts are **seconds** — **v0.67.0** converts Claude `timeout` values to ms when migrating hook config. Pre-0.67 migrations that copied `timeout: 600` (10 min on Claude) ran as **600 ms** on Gemini; re-check those files. Env names stay Gemini (`GEMINI_PROJECT_DIR`, …); a command that still references `CLAUDE_PROJECT_DIR` as a path token will not resolve (the env **alias** is set, but string substitution in the command is not automatic).
 - Golden rule: stdout must be **only** the final JSON object. Any extra `echo` breaks parse; CLI then **allows** and treats the whole stdout as `systemMessage`. Log on stderr. Exit **0** = parse JSON (including `{"decision":"deny"}`). Exit **2** = hard block (stderr is the reason). Other exits warn and continue.
 - Tool matchers are regex (`write_file|replace`, `mcp_<server>_<tool>`). Lifecycle matchers are exact strings (`startup`). `*` or `""` matches all. Env: `GEMINI_PROJECT_DIR`, `GEMINI_SESSION_ID`, `GEMINI_CWD`, `GEMINI_PLANS_DIR` (`CLAUDE_PROJECT_DIR` alias).
 - Project hooks are fingerprinted; a `git pull` that changes name/command re-prompts as untrusted. Manage with `/hooks panel` / `enable` / `disable`. Untrusted folders skip project hooks (`gemini-cli-trusted-folders`). Hooks run as the user — treat them as code execution (`malicious-skills-supply-chain`).
 
 ## Sources
 
-- [Gemini CLI hooks](https://geminicli.com/docs/hooks/) — accessed 2026-09-07
-- [Hooks reference](https://geminicli.com/docs/hooks/reference/) — accessed 2026-09-07
+- [Gemini CLI v0.67.0](https://github.com/google-gemini/gemini-cli/releases/tag/v0.67.0) — accessed 2026-11-05
+- [Gemini CLI hooks](https://geminicli.com/docs/hooks/) — accessed 2026-11-05
+- [Hooks reference](https://geminicli.com/docs/hooks/reference/) — accessed 2026-11-05
 - [Writing hooks for Gemini CLI](https://geminicli.com/docs/hooks/writing-hooks/) — accessed 2026-09-07
 - [Gemini CLI configuration](https://geminicli.com/docs/reference/configuration/) — accessed 2026-09-07
