@@ -3,7 +3,7 @@ id: claude-code-gateway
 title: Claude apps gateway — SSO proxy for Bedrock, GCP, Foundry
 tags: [claude, gateway, auth, governance]
 status: active
-updated: 2026-11-04
+updated: 2026-11-06
 when_to_use: Deploying Claude apps gateway, setting spend/group budgets, or contrasting it with Bedrock/Vertex env vars or self-hosted runners
 ---
 
@@ -24,10 +24,12 @@ when_to_use: Deploying Claude apps gateway, setting spend/group budgets, or cont
 - **2026-10-31:** spend-limits Admin API accepts **`pooled_budget`** — one **monthly** budget a group’s members **share**, **on top of** each member’s own cap. Without that flag, `rbac_group` / `organization` caps stay **per-seat** (each member inherits the amount; `admin.group_limit_mode` `min`/`max` only tie-breaks several group caps). Amounts are USD cents; period `daily|weekly|monthly`; over-cap is `429` `billing_error`. `managed.policy_mode: layered` applies **every** matching managed policy, each merged over the ones listed below it — not first-match only (deny rules still win). Bedrock **`guardrail.input_tagging`** wraps prompts in the input tags a prompt-attacks filter needs; `all_messages_and_system` also tags the system prompt (config page as of 2026-10-31 still says the gateway adds no input tags — trust the changelog). VS Code can sign in to a gateway from the **chat panel** (no terminal).
 - **`assume_role`:** Bedrock upstreams since **v2.1.281** call `sts:AssumeRole` on `role_arn` (optional `external_id`, `session_name: email|sub` for per-developer AWS cost attribution). **v2.1.318:** the same block is valid on **`mantle`** upstreams — an earlier gateway exits with `Unrecognized key(s) in object: 'assume_role'`. Bedrock `guardrail` / `assume_role` do **not** apply to Mantle traffic; set `assume_role` on the mantle upstream itself. Refuses to start beside `aws_bearer_token`.
 - **v2.1.317:** admin API **`GET /v1/organizations/analytics/cost`** reports past spend over a date range (total, per developer, per day, or per IdP group). Gateways with `admin:` keep a daily record of each developer’s IdP groups for `admin.identity_retention_days`.
+- **v2.1.319** (2026-11-06): `admin.pooled_conflict_rule` + `admin.pooled_priority_order` pick **which pooled group budget pays first** when a developer is in several groups. Optional `login_notice` shows an operator message on the gateway’s browser verification page **and** Claude Code’s sign-in screen. `CLAUDE_GATEWAY_LOG_FORMAT=json` emits operational logs with `severity` / `time` / `message`. `/usage` shows spend for today / this week / this month for gateway developers with **no** spend limit (needs this gateway version or later). Startup warns when another policy’s `availableModels` also allows a custom model id that one policy lists by name, and when a policy with no `desktopHome` relies on `coworkTabEnabled: false` or `chatSessionRetentionDays` (ahead of Claude Desktop’s 2026-11-10 change). Config page as of 2026-11-06 still lags these keys — attribute them to the 2.1.319 notes.
 
 ## Sources
 
-- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-04
+- [v2.1.319](https://github.com/anthropics/claude-code/releases/tag/v2.1.319) — accessed 2026-11-06
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-06
 - [v2.1.318](https://github.com/anthropics/claude-code/releases/tag/v2.1.318) — accessed 2026-11-04
 - [Claude apps gateway spend limits](https://code.claude.com/docs/en/claude-apps-gateway-spend-limits) — accessed 2026-10-31
 - [Run Claude Code through a gateway](https://code.claude.com/docs/en/gateways) — accessed 2026-10-09

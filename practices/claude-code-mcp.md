@@ -3,8 +3,8 @@ id: claude-code-mcp
 title: Claude Code MCP — scopes, .mcp.json, and OAuth
 tags: [claude, mcp, config, auth]
 status: active
-updated: 2026-10-08
-when_to_use: Adding HTTP/stdio MCP to Claude Code, or debugging .mcp.json approvals vs Cursor mcp.json
+updated: 2026-11-06
+when_to_use: Adding HTTP/stdio MCP to Claude Code, debugging .mcp.json approvals vs Cursor mcp.json, or backgrounding MCP tasks
 ---
 
 ## Summary
@@ -19,9 +19,12 @@ Claude Code MCP lives in **scopes**, not Cursor’s `.cursor/mcp.json`. `claude 
 - Remote OAuth: `/mcp` or `claude mcp login <name>`. On 401, Claude Code refreshes once. `claude -p` cannot complete OAuth — it reports tools unavailable until an interactive login. A rejected `headers.Authorization` does **not** fall back to OAuth.
 - Discovery cache (v2.1.221+): previously used HTTP/SSE servers may show `cached … connects on first use`. Force connect-at-start with `MCP_DISCOVERY_CACHE=0`. Plugin servers register as `plugin:<plugin>:<name>`. Treat untrusted MCP content as injection (`mcp-server-trust-failures`).
 - Protocol (v2.1.292+): local **stdio** connections negotiate MCP **2026-07-28** by default on every install, including Bedrock, Vertex, and Foundry. v2.1.295: **claude.ai connectors** do the same on installs that fetch no flags. `MCP_PROTOCOL_NEGOTIATION=legacy` opts out. Servers that ignore the newer check are remembered for 7 days after one slow connect and then connected the older way. Tool descriptions loaded through tool search are cut at **16,384** characters (was 2,048). A tool name longer than 128 characters is dropped with an MCP error instead of failing every request. v2.1.295 also: headless/SDK remote MCP backs off (up to 30s) after outages or tight reconnect loops; a repeating pagination cursor is not re-fetched 20 times; CSS/JS/XML MCP bytes are no longer saved as `.bin`.
+- **v2.1.319** (2026-11-06) MCP **tasks** in the terminal (`mcp-tasks-extension`): when a server returns a task handle, Claude Code **backgrounds** it immediately and delivers the result when it finishes. `CLAUDE_CODE_DISABLE_MCP_TASK_BACKGROUND` waits inside the tool call instead. Tasks work without feature-flag fetching (Bedrock, Vertex, Foundry, LLM gateways, `DISABLE_TELEMETRY`); `CLAUDE_CODE_DISABLE_MCP_TASKS=1` turns the extension off. v2.1.319 also: older-handshake servers no longer fail because Claude Code declared an extension only newer servers use; a long-running connector tool after `--resume` reports its result.
 
 ## Sources
 
+- [v2.1.319](https://github.com/anthropics/claude-code/releases/tag/v2.1.319) — accessed 2026-11-06
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-06
 - [Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp) — accessed 2026-10-06
 - [Cursor mcp.json](https://cursor.com/docs/mcp) — accessed 2026-09-04
 - [CHANGELOG.md (v2.1.292)](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-06

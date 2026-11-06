@@ -2235,3 +2235,26 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Agent Skills – Codex | https://developers.openai.com/codex/skills |
 | Origin Apps | https://cursor.com/docs/origin/apps |
 
+## Daily ingest 2026-11-06 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Voice chat | https://cursor.com/docs/agent/voice-chat |
+| Voice Chat with Agents (changelog) | https://cursor.com/changelog/voice-chat |
+| Grok Bot inference hooks | https://cursor.com/docs/grok-bot/inference-hooks |
+| Hermes Agent v0.23.0 | https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.0 |
+| Features overview | https://hermes-agent.nousresearch.com/docs/user-guide/features/overview |
+| MCP | https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp |
+| CLI interface | https://hermes-agent.nousresearch.com/docs/user-guide/cli |
+| Usage metrics API adds code review details and addressed rate | https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate/ |
+| Copilot impact dashboard adds chat and VS Code agent usage | https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage/ |
+| Data available in Copilot usage metrics | https://docs.github.com/en/copilot/reference/copilot-usage-metrics/copilot-usage-metrics |
+| REST API endpoints for Copilot usage metrics | https://docs.github.com/en/rest/copilot/copilot-usage-metrics |
+| v2.1.319 | https://github.com/anthropics/claude-code/releases/tag/v2.1.319 |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Configure permissions | https://code.claude.com/docs/en/permissions |
+| Claude Code settings | https://code.claude.com/docs/en/settings |
+| Codex 0.167.0 | https://github.com/openai/codex/releases/tag/rust-v0.167.0 |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+

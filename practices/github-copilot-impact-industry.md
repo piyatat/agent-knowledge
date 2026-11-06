@@ -3,8 +3,8 @@ id: github-copilot-impact-industry
 title: Copilot impact dashboard — industry comparison (opt-in)
 tags: [github, observability, governance, evals]
 status: active
-updated: 2026-10-23
-when_to_use: Comparing Copilot agentic adoption/leverage to peers, or deciding whether to opt into industry benchmarks
+updated: 2026-11-06
+when_to_use: Comparing Copilot agentic adoption/leverage to peers, reading chat/vscode_agent engagement, or deciding whether to opt into industry benchmarks
 ---
 
 ## Summary
@@ -17,9 +17,11 @@ The Copilot **impact dashboard** (Insights → Copilot impact) now has an **Indu
 - Policy: **Copilot metrics industry comparison**. Enable from the widget or enterprise/org Copilot policies (same setting). Opt-out hides comparisons immediately and excludes your data from the **next daily** refresh. Aggregates contain no identifying data and are deleted after **30 days**. Copilot **usage metrics** policy must already be on.
 - Who: enterprise owners, or owners of standalone orgs. Orgs inside an enterprise participate **through the enterprise**. Enterprises used only to assign Copilot Business seats **cannot** participate (leverage cannot be calculated). GHEC **data residency**: peers are **same region only**. Anyone who can view the impact dashboard can see results. Very-small-active-user tenants can view but are **not** counted in cohorts.
 - Rankings are omitted when the peer group is too small, or when **your** score cannot be computed (no active users, or everyone already agent-first/multi-agent so leverage has no non-agentic baseline). Comparisons are **dashboard-only** — not in the usage metrics API, NDJSON, or downloads. Treat leverage as a PR-throughput ratio, not a quality or cost eval. Named skill / agent / MCP adoption lives on the **usage metrics API** (`github-copilot-usage-metrics-customizations`), not this widget.
+- **2026-11-06:** Agent adoption chart adds **Copilot Chat** and the **VS Code Agents window** (nine features total). Cohort **Passive users** is renamed **Chat-first users** — still active Copilot users who have not used a qualifying feature on at least two days in 28 days, so they do not enter an adoption phase. API: `copilot_feature_engagement.totals_by_feature` gains `chat` and `vscode_agent` on enterprise/org **28-day** reports only (older periods keep the original seven). Chat/Agents-window engagement does **not** count toward adoption phases; Chat-first users remain `No Cohort` in the API; cohort sizes do not change. Engagement = used the feature on ≥2 days in 28 days; a user can appear under more than one feature. `chat` includes Copilot Chat captured by usage metrics, **including agent mode** (agent editors are also counted under chat). Access unchanged: View Copilot Metrics + usage-metrics policy.
 
 ## Sources
 
+- [Copilot impact dashboard adds chat and VS Code agent usage](https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage/) — accessed 2026-11-06
 - [Industry comparisons in the Copilot impact dashboard](https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard/) — accessed 2026-10-22
 - [Viewing the Copilot impact dashboard](https://docs.github.com/en/copilot/how-tos/administer-copilot/view-impact-dashboard) — accessed 2026-10-22
 - [GitHub Copilot usage metrics](https://docs.github.com/en/copilot/concepts/billing-and-usage/copilot-usage-metrics/copilot-metrics) — accessed 2026-10-22
