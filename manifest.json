@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2569,8 +2569,8 @@
         "extensions"
       ],
       "status": "active",
-      "updated": "2026-10-12",
-      "when_to_use": "Serving or consuming Agent Skills over MCP (skills/list, skill://) — SEP-2640 is Final; Python SDK ships Skills",
+      "updated": "2026-11-07",
+      "when_to_use": "Serving or consuming Agent Skills over MCP (skills/list, skill://) — SEP-2640 is Final; Python SDK ships Skills; VS Code Copilot is landing the host",
       "related": [
         "agent-skills-open-standard",
         "mcp-resources-vs-tools",
@@ -2578,7 +2578,9 @@
         "skills-dispatch-hygiene",
         "unicode-instruction-injection",
         "agent-skills-directories",
-        "mcp-local-server-security"
+        "mcp-local-server-security",
+        "vscode-mcp",
+        "github-copilot-skills"
       ]
     },
     {
@@ -4493,7 +4495,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-19",
+      "updated": "2026-11-07",
       "when_to_use": "Requesting Copilot as a PR reviewer, configuring personal/enterprise auto-review, or contrasting it with Copilot cloud agent / Cursor Bugbot",
       "related": [
         "github-copilot-coding-agent",
@@ -4503,7 +4505,8 @@
         "cursor-bugbot-review",
         "cursor-security-agents",
         "github-secret-detection-model",
-        "github-copilot-usage-metrics-review"
+        "github-copilot-usage-metrics-review",
+        "github-copilot-code-review-api"
       ]
     },
     {
@@ -5885,7 +5888,7 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-10-30",
+      "updated": "2026-11-07",
       "when_to_use": "Enabling Watch and fix on a GitHub PR, or contrasting cloud Agent Merge with the VS Code / Copilot app loop",
       "related": [
         "github-copilot-ide-agent",
@@ -5893,7 +5896,8 @@
         "github-copilot-coding-agent",
         "cursor-agents-window",
         "github-copilot-automations",
-        "vscode-agent-harnesses"
+        "vscode-agent-harnesses",
+        "github-copilot-app"
       ]
     },
     {
@@ -7527,14 +7531,16 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-10-23",
+      "updated": "2026-11-07",
       "when_to_use": "Starting or steering a Copilot cloud agent from Slack or Microsoft Teams, or installing the consolidated GitHub Teams app",
       "related": [
         "github-copilot-coding-agent",
         "cursor-slack-cloud-agents",
         "cursor-microsoft-teams",
         "github-copilot-sandbox",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "github-copilot-mcp",
+        "github-copilot-memory"
       ]
     },
     {
@@ -8270,13 +8276,15 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-10-07",
+      "updated": "2026-11-07",
       "when_to_use": "Changing Copilot CLI user/repo/local settings, or debugging a leftover ~/.copilot/config.json",
       "related": [
         "github-copilot-cli",
         "github-copilot-managed-permissions",
         "github-copilot-sandbox",
-        "github-copilot-mcp"
+        "github-copilot-mcp",
+        "github-copilot-plugins",
+        "github-copilot-assisted-permissions"
       ]
     },
     {
@@ -8362,7 +8370,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-27",
+      "updated": "2026-11-07",
       "when_to_use": "Switching Copilot CLI/app/VS Code to Assisted permissions, or setting --assisted-approval / defaultPermissionMode",
       "related": [
         "github-copilot-cli",
@@ -8371,7 +8379,8 @@
         "github-copilot-jetbrains",
         "github-copilot-sandbox",
         "prompt-injection-agent-defense",
-        "github-copilot-cli-settings"
+        "github-copilot-cli-settings",
+        "github-copilot-app"
       ]
     },
     {
@@ -9138,7 +9147,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-25",
+      "updated": "2026-11-07",
       "when_to_use": "Running the same coding task on multiple VS Code models or harnesses, or enabling a Judge/Synthesizer",
       "related": [
         "vscode-agent-harnesses",
@@ -9700,7 +9709,7 @@
         "cli"
       ],
       "status": "active",
-      "updated": "2026-11-02",
+      "updated": "2026-11-07",
       "when_to_use": "Directing Copilot from the desktop app instead of VS Code, CLI, or github.com, or contrasting it with those surfaces",
       "related": [
         "github-copilot-projects",
@@ -9710,7 +9719,9 @@
         "github-copilot-sandbox",
         "github-copilot-computer-use",
         "github-copilot-automations",
-        "vscode-agent-harnesses"
+        "vscode-agent-harnesses",
+        "github-copilot-agent-merge",
+        "github-copilot-assisted-permissions"
       ]
     },
     {
@@ -9907,7 +9918,8 @@
         "github-copilot-cli-local-models",
         "github-copilot-impact-industry",
         "github-copilot-otel",
-        "github-copilot-usage-metrics-review"
+        "github-copilot-usage-metrics-review",
+        "github-copilot-usage-metrics-telemetry"
       ]
     },
     {
@@ -10050,7 +10062,53 @@
         "github-copilot-usage-metrics-customizations",
         "github-copilot-usage-metrics-clients",
         "github-copilot-usage-metrics-byok",
+        "github-copilot-otel",
+        "github-copilot-usage-metrics-telemetry",
+        "github-copilot-code-review-api"
+      ]
+    },
+    {
+      "id": "github-copilot-usage-metrics-telemetry",
+      "path": "practices/github-copilot-usage-metrics-telemetry.md",
+      "title": "Copilot usage metrics — client telemetry and version gaps",
+      "tags": [
+        "github",
+        "observability",
+        "telemetry",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-11-07",
+      "when_to_use": "Diagnosing empty Copilot usage-metrics breakdowns, or reading client_telemetry_present / usage_metrics_requirements",
+      "related": [
+        "github-copilot-usage-metrics-review",
+        "github-copilot-usage-metrics-byok",
+        "github-copilot-usage-metrics-clients",
+        "github-copilot-usage-metrics-customizations",
+        "github-copilot-impact-industry",
         "github-copilot-otel"
+      ]
+    },
+    {
+      "id": "github-copilot-code-review-api",
+      "path": "practices/github-copilot-code-review-api.md",
+      "title": "Copilot code review settings API — enterprise to repo",
+      "tags": [
+        "github",
+        "review",
+        "api",
+        "governance"
+      ],
+      "status": "active",
+      "updated": "2026-11-07",
+      "when_to_use": "Reading or updating Copilot code-review enablement, effort, runner, MCP, or attribution via REST/GraphQL",
+      "related": [
+        "github-copilot-code-review",
+        "github-copilot-usage-metrics-review",
+        "github-copilot-mcp",
+        "github-copilot-skills",
+        "github-copilot-instructions",
+        "prompt-injection-agent-defense"
       ]
     }
   ]

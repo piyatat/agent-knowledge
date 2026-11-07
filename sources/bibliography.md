@@ -2258,3 +2258,22 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
 | copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
 
+## Daily ingest 2026-11-07 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Usage metrics API flags telemetry and version gaps | https://github.blog/changelog/2026-11-05-usage-metrics-api-flags-telemetry-and-version-gaps/ |
+| Data available in Copilot usage metrics | https://docs.github.com/en/copilot/reference/copilot-usage-metrics/copilot-usage-metrics |
+| GitHub Copilot usage metrics (concepts) | https://docs.github.com/en/copilot/concepts/billing-and-usage/copilot-usage-metrics/copilot-metrics |
+| REST API endpoints for Copilot usage metrics | https://docs.github.com/en/rest/copilot/copilot-usage-metrics |
+| Copilot code review: API management and review overview updates | https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/ |
+| Configuring Copilot code review with the API | https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review |
+| GraphQL API reference for Copilot | https://docs.github.com/en/graphql/reference/copilot |
+| @GitHub in Slack and Teams is generally available | https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available/ |
+| Integrating Copilot cloud agent with Teams | https://docs.github.com/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-teams |
+| Integrating Copilot cloud agent with Slack | https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-slack |
+| GitHub Copilot weekly releases — November 2 | https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2/ |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| Visual Studio Code 1.146 (Insiders) | https://code.visualstudio.com/updates/v1_146 |
+| Compare model results (Preview) | https://code.visualstudio.com/docs/agents/run/compare-models |
+
