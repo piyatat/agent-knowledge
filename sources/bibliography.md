@@ -2277,3 +2277,35 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Visual Studio Code 1.146 (Insiders) | https://code.visualstudio.com/updates/v1_146 |
 | Compare model results (Preview) | https://code.visualstudio.com/docs/agents/run/compare-models |
 
+
+## Daily ingest 2026-11-08 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Spaces | https://ampcode.com/docs/markdown/spaces |
+| Spaces (launch) | https://ampcode.com/news/spaces |
+| Agent to Agent | https://ampcode.com/docs/orbs/agent-to-agent |
+| Space (thread voice/video) | https://ampcode.com/docs/collaborate/space |
+| GitLab | https://ampcode.com/docs/gitlab |
+| GitLab Integration | https://ampcode.com/news/gitlab |
+| GitHub & Git | https://ampcode.com/docs/github |
+| Customizing Orbs | https://ampcode.com/docs/orbs/customizing |
+| Projects | https://ampcode.com/docs/projects |
+| Unified Claude in Claude Desktop on 3P | https://claude.com/docs/third-party/claude-desktop/unified-claude |
+| Configuration reference | https://claude.com/docs/third-party/claude-desktop/configuration |
+| Configuration changelog | https://claude.com/docs/third-party/claude-desktop/configuration-changelog |
+| Cowork changelog | https://claude.com/docs/cowork/changelog |
+| v2.1.319 | https://github.com/anthropics/claude-code/releases/tag/v2.1.319 |
+| Convert a Cursor Automation | https://cursor.com/docs/agent-sdk/guides/convert-automation |
+| Agent SDK | https://cursor.com/docs/agent-sdk |
+| Droid CLI reference | https://docs.factory.com/droid-cli/cli-reference |
+| Full Changelog | https://docs.factory.com/changelog/release-notes |
+| Custom Automations | https://docs.factory.com/automations/custom |
+| Workstream Automations | https://docs.factory.com/workstreams/automations |
+| Devin Desktop changelog | https://docs.devin.ai/desktop/changelog |
+| Agent Command Center | https://docs.devin.ai/desktop/agent-command-center |
+| MCP Configuration | https://docs.devin.ai/cli/extensibility/mcp/configuration |
+| v2026.11.1 | https://docs.openclaw.ai/releases/2026.11.1 |
+| openclaw 2026.11.1 | https://github.com/openclaw/openclaw/releases/tag/v2026.11.1 |
+| Use Agent Skills in VS Code | https://code.visualstudio.com/docs/agent-customization/agent-skills |
+| Visual Studio Code 1.146 (Insiders) | https://code.visualstudio.com/updates/v1_146 |

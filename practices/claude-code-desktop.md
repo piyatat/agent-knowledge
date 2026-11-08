@@ -3,13 +3,13 @@ id: claude-code-desktop
 title: Claude Code Desktop — Code tab vs CLI vs cloud
 tags: [claude, ux, orchestration, hosting]
 status: active
-updated: 2026-10-09
+updated: 2026-11-08
 when_to_use: Using the Claude Desktop Code tab, choosing Desktop vs CLI, or sending a CLI session with /desktop
 ---
 
 ## Summary
 
-The Claude **Desktop** app’s **Code** tab is a GUI on the same engine as the CLI: parallel sessions, panes (chat, diff, browser, terminal, file, plan, tasks, subagent, iOS Simulator), visual review, and Local / Cloud / SSH / WSL environments. Same `CLAUDE.md`, hooks, skills, and `settings.json` as the CLI; **separate session history**. Not Claude Code on the web (`claude-code-on-the-web`), not Remote Control (`claude-code-remote-control`), not VS Code (`claude-code-vscode`), and not **Cowork** (`claude-cowork` — knowledge-work / Dispatch).
+The Claude **Desktop** app’s **Code** tab is a GUI on the same engine as the CLI: parallel sessions, panes (chat, diff, browser, terminal, file, plan, tasks, subagent, iOS Simulator), visual review, and Local / Cloud / SSH / WSL environments. Same `CLAUDE.md`, hooks, skills, and `settings.json` as the CLI; **separate session history**. Not Claude Code on the web (`claude-code-on-the-web`), not Remote Control (`claude-code-remote-control`), not VS Code (`claude-code-vscode`), and not **Cowork** / Unified Claude (`claude-cowork`, `claude-desktop-home`). Code stays a **separate tab** when Unified Claude turns on.
 
 ## Notes
 
@@ -17,6 +17,7 @@ The Claude **Desktop** app’s **Code** tab is a GUI on the same engine as the C
 - Desktop-only: drag-and-drop panes, file attachments (images/PDFs), Browser pane (dev-server preview + external sites; clean profile, not Chrome extension logins), **computer use** (off by default; Pro/Max research preview; macOS/Windows; Linux has no computer use — `claude-code-computer-use`), **Dispatch** in the Cowork tab (Pro/Max; Team/Enterprise unsupported) which routes bugs/tests/PRs into a Code session, automatic worktrees, `/desktop` from a subscribed CLI (macOS and x64 Windows; not API-key / Bedrock / Agent Platform / Foundry).
 - Shared config: `CLAUDE.md`, `.mcp.json`, `~/.claude.json`, hooks, skills. Local Code also loads `claude_desktop_config.json` MCP (wins on name clash); standalone CLI does not — `claude mcp add-from-claude-desktop` copies them. No `-p` / `--output-format`. Agent teams stay CLI-only; Desktop uses workflows and cross-session messaging instead.
 - **Claude apps gateway (v2.1.296):** `managed.policies[]` accepts a **`code`** key — same settings shape as `cli`, applied in the Code tab. Together with `desktop`, it turns on Desktop gateway mode. If a Code session cannot start (including a machine not set up for the gateway’s `code` settings), the reason shows as a reply (`claude-code-gateway`).
+- **Unified Claude / `desktopHome` (2026-11-10):** Chat+Cowork merge does **not** absorb Code. `desktopHome: off` leaves Code (if enabled). Unset `coworkEgressAllowedHosts` no longer keeps Code-tab shell off-network on a device whose only config is a local file unless `blockReadsOutsideWorkingDirectories` is on (`claude-desktop-home`). Windows OpenSSH connections now use `ssh.exe`, not `Claude.exe`.
 
 ## Sources
 
@@ -25,3 +26,6 @@ The Claude **Desktop** app’s **Code** tab is a GUI on the same engine as the C
 - [Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web) — accessed 2026-09-12
 - [Remote Control](https://code.claude.com/docs/en/remote-control) — accessed 2026-09-12
 - [Get started with Claude Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) — accessed 2026-09-23
+- [Unified Claude in Claude Desktop on 3P](https://claude.com/docs/third-party/claude-desktop/unified-claude) — accessed 2026-11-08
+- [Configuration changelog](https://claude.com/docs/third-party/claude-desktop/configuration-changelog) — accessed 2026-11-08
+

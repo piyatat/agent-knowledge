@@ -3,7 +3,7 @@ id: openclaw-agent
 title: OpenClaw — Gateway, workspace files, skills, Code Mode
 tags: [openclaw, cli, skills, agents-md]
 status: active
-updated: 2026-10-03
+updated: 2026-11-08
 when_to_use: Installing or hardening OpenClaw (Gateway, AGENTS.md/SOUL.md, ClawHub skills), or contrasting its Code Mode with MCP code-mode
 ---
 
@@ -18,6 +18,7 @@ when_to_use: Installing or hardening OpenClaw (Gateway, AGENTS.md/SOUL.md, ClawH
 - Skills are `SKILL.md` folders. Precedence: workspace `skills/` → `.agents/skills` → `~/.agents/skills` → `~/.openclaw/skills` → workshop/bundled → `skills.load.extraDirs`. `openclaw skills install` writes workspace `skills/` (`--global` for managed). **ClawHub** is the community catalog — treat it as a marketplace (`malicious-skills-supply-chain`).
 - Code Mode (Labs) hides most tool schemas and exposes `exec`/`wait` so the model writes JS that calls the catalog. Default `"auto"`; `node:vm` is **not** a security boundary — use `quickjs` for harder isolation. Headless CI: `openclaw agent exec` (timeout 600s; exit 2 on timeout).
 - Security: one trusted operator/team per Gateway — not a multi-tenant boundary. Unknown DMs get a pairing code. Run `openclaw security audit` before exposing bind/auth. Channel messages and skill text are untrusted (`prompt-injection-agent-defense`).
+- **v2026.11.1** (2026-11-05): reliability patch (official notes: no new product surface). Failed Mac config saves no longer overwrite secrets; turning off Tailscale exposure keeps Gateway auth. Telegram/Discord/webhook turns keep reaching the agent after earlier handlers finish. `openclaw doctor` now **nonzero** when inspection is blocked, config is invalid, or required migrations are deferred (`doctor --json` scripts must handle that; unattended Doctor does not install missing plugins unless `--fix` / `--repair` / `--yes`). GitHub notes also: Claude CLI subscription accounts can expose configured models without a separate native login; `plugins.entries.anthropic.config.managedNativeTools` opts into native Agent/Workflow tools (default **off**; restricted runs keep existing tool limits).
 
 ## Sources
 
@@ -27,3 +28,5 @@ when_to_use: Installing or hardening OpenClaw (Gateway, AGENTS.md/SOUL.md, ClawH
 - [Code Mode](https://docs.openclaw.ai/tools/code-mode) — accessed 2026-10-03
 - [openclaw agent](https://docs.openclaw.ai/cli/agent) — accessed 2026-10-03
 - [Security](https://docs.openclaw.ai/gateway/security) — accessed 2026-10-03
+- [v2026.11.1](https://docs.openclaw.ai/releases/2026.11.1) — accessed 2026-11-08
+- [openclaw 2026.11.1](https://github.com/openclaw/openclaw/releases/tag/v2026.11.1) — accessed 2026-11-08

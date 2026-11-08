@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -4301,7 +4301,7 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-10-08",
+      "updated": "2026-11-08",
       "when_to_use": "Adding SKILL.md for Copilot CLI / cloud agent / IDE, or installing with copilot skill / gh skill",
       "related": [
         "agent-skills-open-standard",
@@ -4310,7 +4310,8 @@
         "malicious-skills-supply-chain",
         "github-copilot-code-review",
         "github-copilot-jetbrains",
-        "github-copilot-plugins"
+        "github-copilot-plugins",
+        "mcp-skills-extension"
       ]
     },
     {
@@ -5275,7 +5276,7 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-10-09",
+      "updated": "2026-11-08",
       "when_to_use": "Using the Claude Desktop Code tab, choosing Desktop vs CLI, or sending a CLI session with /desktop",
       "related": [
         "claude-code-on-the-web",
@@ -5285,7 +5286,8 @@
         "claude-code-chrome",
         "claude-cowork",
         "claude-code-computer-use",
-        "claude-code-gateway"
+        "claude-code-gateway",
+        "claude-desktop-home"
       ]
     },
     {
@@ -7147,7 +7149,7 @@
         "agents-md"
       ],
       "status": "active",
-      "updated": "2026-09-23",
+      "updated": "2026-11-08",
       "when_to_use": "Running Factory’s Droid (CLI, desktop/web App, droid exec), or authoring AGENTS.md / .factory skills, hooks, or custom droids",
       "related": [
         "agents-md-open-format",
@@ -7155,7 +7157,9 @@
         "cursor-hooks-json",
         "claude-code-subagents",
         "malicious-skills-supply-chain",
-        "amp-agent"
+        "amp-agent",
+        "cursor-side-chats",
+        "cursor-automations"
       ]
     },
     {
@@ -7169,14 +7173,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-23",
-      "when_to_use": "Using Sourcegraph Amp (web, macOS/iOS, CLI), or configuring Amp MCP / AGENTS.md / orbs",
+      "updated": "2026-11-08",
+      "when_to_use": "Using Sourcegraph Amp (web, macOS/iOS, CLI), or configuring Amp MCP / AGENTS.md / orbs / GitLab",
       "related": [
         "agents-md-open-format",
         "mcp-output-schema",
         "code-mode-tool-orchestration",
         "mcp-progressive-disclosure",
-        "cursor-cloud-always-on"
+        "cursor-cloud-always-on",
+        "amp-spaces"
       ]
     },
     {
@@ -7212,14 +7217,15 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-09-23",
+      "updated": "2026-11-08",
       "when_to_use": "Distinguishing Claude Cowork from Claude Code, or configuring Cowork cloud tasks, browser, or permissions",
       "related": [
         "claude-code-desktop",
         "claude-code-on-the-web",
         "prompt-injection-agent-defense",
         "computer-use-containment",
-        "claude-code-routines"
+        "claude-code-routines",
+        "claude-desktop-home"
       ]
     },
     {
@@ -7695,7 +7701,8 @@
         "claude-code-managed-mcp",
         "telemetry-redaction-genai",
         "memory-files-vs-enforcement-hooks",
-        "claude-code-desktop"
+        "claude-code-desktop",
+        "claude-desktop-home"
       ]
     },
     {
@@ -8037,7 +8044,7 @@
         "agents-md"
       ],
       "status": "active",
-      "updated": "2026-10-03",
+      "updated": "2026-11-08",
       "when_to_use": "Installing or hardening OpenClaw (Gateway, AGENTS.md/SOUL.md, ClawHub skills), or contrasting its Code Mode with MCP code-mode",
       "related": [
         "agents-md-open-format",
@@ -8059,14 +8066,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-03",
+      "updated": "2026-11-08",
       "when_to_use": "Running Codex/Claude/OpenCode/Gemini as ACP agents inside Devin Desktop, or grouping sessions into Spaces",
       "related": [
         "windsurf-cascade",
         "devin-cli",
         "agent-client-protocol-acp",
         "zed-external-agents",
-        "cursor-acp-extensions"
+        "cursor-acp-extensions",
+        "amp-spaces"
       ]
     },
     {
@@ -9449,7 +9457,7 @@
         "evals"
       ],
       "status": "active",
-      "updated": "2026-10-27",
+      "updated": "2026-11-08",
       "when_to_use": "Defining a Cursor agent as a bot/ TypeScript project with evals, or choosing it instead of Automations or @cursor/sdk",
       "related": [
         "cursor-sdk-typescript",
@@ -10109,6 +10117,47 @@
         "github-copilot-skills",
         "github-copilot-instructions",
         "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "amp-spaces",
+      "path": "practices/amp-spaces.md",
+      "title": "Amp Spaces — coordinating agent that spawns threads",
+      "tags": [
+        "amp",
+        "orchestration",
+        "multi-agent",
+        "ux"
+      ],
+      "status": "active",
+      "updated": "2026-11-08",
+      "when_to_use": "Using Amp Spaces to spawn/coordinate threads, or distinguishing them from Amp thread voice calls and Devin Desktop Spaces",
+      "related": [
+        "amp-agent",
+        "multi-agent-handoffs",
+        "cursor-projects",
+        "devin-desktop-acp",
+        "cursor-side-chats"
+      ]
+    },
+    {
+      "id": "claude-desktop-home",
+      "path": "practices/claude-desktop-home.md",
+      "title": "Claude Desktop desktopHome — Unified Claude default (2026-11-10)",
+      "tags": [
+        "claude",
+        "governance",
+        "ux",
+        "mdm"
+      ],
+      "status": "active",
+      "updated": "2026-11-08",
+      "when_to_use": "MDM/Admin Console for Claude Desktop Chat vs Cowork, or keeping Cowork off after 2026-11-10",
+      "related": [
+        "claude-code-desktop",
+        "claude-cowork",
+        "claude-code-gateway",
+        "claude-code-settings"
       ]
     }
   ]
