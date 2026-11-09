@@ -3,7 +3,7 @@ id: cursor-agent-sdk
 title: Cursor Agent SDK — agents as a versioned bot/ project
 tags: [cursor, sdk, orchestration, evals]
 status: active
-updated: 2026-11-08
+updated: 2026-11-09
 when_to_use: Defining a Cursor agent as a bot/ TypeScript project with evals, or choosing it instead of Automations or @cursor/sdk
 ---
 
@@ -19,12 +19,15 @@ when_to_use: Defining a Cursor agent as a bot/ TypeScript project with evals, or
 - Evals call the **real** agent. Guard writes. `agent-sdk eval --dir . --tag smoke` (exit 1 failed cases, 2 bad options / no match). Model turns need a Cursor credential.
 - Deploy builds a **pushed** Git ref (`agent-sdk deploy`). Uncommitted changes do not ship. Needs a team with agent hosting; a team service-account key with agent access can deploy. **Privacy Mode** works; **Privacy Mode (Legacy)** refuses deploy, hosted sessions, and evals. Redeploy replaces watched repos — repeat every `--cursor-events-repo`. Sessions, `ctx.host.kv`, and `ctx.host.files` survive replacements; other disk writes may not. First deploy prints an alias token once; rotate with `deployment rotate-token`.
 - Access (Deployed Agents): Viewer / `viewer`; Editor / `deployer`; Owner / `admin`. First deploy grants Owner to the deployer and Viewer to the team; later deploys do not change access. A CI service-account deploy grants Owner to the **person who created the account**. Self-host: `agent-sdk serve` on 127.0.0.1 behind TLS/auth, persistent `--state-root`, `--bearer-token` unless a proxy authenticates every caller; enable schedules in **one** process per project.
+- Delegate coding to Cloud Agents with the `cursor-cloud-agents` extension (`cursor-agent-sdk-cloud-agents`); ask another deployed specialist via `defineConnection({ agent })` (`cursor-agent-sdk-peers`).
 - **Convert a dashboard Automation** when you need versioned code, local `agent-sdk dev`, or deploy — not for a prompt/trigger-only edit (`cursor-automations`). `agent-sdk init --from automation:https://cursor.com/automations/<id>` copies prompt, model, and the schedules/channels/connections it can represent, then prints warnings. HTTP/SSE MCP becomes `defineConnection({ cursorAccount: true, servers: ["Linear"] })` **by name** (no URL/credentials). Slack: `agent-sdk slack create --dir . --channel-posts` for a channel watch. GitHub: simple PR/branch/repo filters survive; dashboard-only conditions become `return null` until you replace them; Cursor-account delivery is PR/comment — push/issue/CI need a GitHub App or `github forward`. Replay with `agent-sdk github replay org/repo#n --dir .`. Credentials, webhook registration, and Automation memory **never** carry over. Keep the source Automation enabled while you test; disable it before turning on the same live triggers. **Cursor-managed** Automations (Bugbot, Security, Rollouts, …) cannot convert.
 
 ## Sources
 
-- [Agent SDK](https://cursor.com/docs/agent-sdk) — accessed 2026-11-08
-- [Convert a Cursor Automation](https://cursor.com/docs/agent-sdk/guides/convert-automation) — accessed 2026-11-08
+- [Agent SDK](https://cursor.com/docs/agent-sdk) — accessed 2026-11-09
+- [Convert a Cursor Automation](https://cursor.com/docs/agent-sdk/guides/convert-automation) — accessed 2026-11-09
+- [Cloud agents](https://cursor.com/docs/agent-sdk/guides/cloud-agents) — accessed 2026-11-09
+- [Peer agents](https://cursor.com/docs/agent-sdk/guides/agent-to-agent) — accessed 2026-11-09
 - [Project layout](https://cursor.com/docs/agent-sdk/reference/project-layout) — accessed 2026-10-27
 - [Deploy an Agent SDK project](https://cursor.com/docs/agent-sdk/deployment) — accessed 2026-10-27
 - [Access](https://cursor.com/docs/agent-sdk/reference/access) — accessed 2026-10-27

@@ -3,7 +3,7 @@ id: claude-code-permissions
 title: Claude Code permissions — allow / ask / deny vs modes
 tags: [claude, permissions, safety, hooks]
 status: active
-updated: 2026-11-06
+updated: 2026-11-09
 when_to_use: Writing Claude Code permission rules, fencing working-directory writes, or choosing defaultMode vs a PreToolUse hook
 ---
 
@@ -22,11 +22,13 @@ Claude Code **permissions** are host-enforced allow / ask / deny rules plus a **
 - Working-directory fences (every permission mode): `permissions.blockReadsOutsideWorkingDirectories` makes file tools refuse paths outside the working / additional directories (docs; auto mode offers to enable it on the first outside read). **v2.1.314** (2026-10-30) adds `permissions.blockWritesOutsideWorkingDirectories`: **Write, Edit, and NotebookEdit** refuse paths outside those directories. Pair the write fence with `--restricted` / `claude-code-restricted` when you also want the launch lock-down. Docs as of 2026-10-30 still document the read fence more fully than the write key — attribute write behavior to the 2.1.314 notes until the permissions page lists it.
 - v2.1.288–289 closed several **deny/ask bypasses** (do not assume older clients enforce these): env-prefix (`TZ="$HOME" rm -rf build`) and a leading bare assignment under sandbox auto-allow; a nested deny/ask on a compound command now beats a user-mod approval on managed machines; `Read` deny applies to IDE @-mentions / selections reached through a symlink; `rm` on `/` or `$HOME` inside `bash -c` / `sh -c` prompts even under `bypassPermissions` or a shell allow; `BASHPID` arithmetic assignment prompts; PreToolUse / PermissionRequest **block** the call if matcher serialization fails (fail-closed). A user mod still cannot rewrite org-managed MCP sign-in tool descriptions.
 - **v2.1.319** (2026-11-06) `permissions.denyInsteadOfPrompting`: a tool call that would **wait on a permission prompt** is **denied** and the turn continues (terminal sessions, subagents, and teammates). Pair with `dontAsk` / `--restricted` when you want fail-closed unattended runs; this is not a sandbox (`claude-code-sandboxing`). Permissions page as of 2026-11-06 still documents modes more fully than this key — attribute it to the 2.1.319 notes until the settings page lists it.
+- **v2.1.321** (2026-11-09): `cp`/`mv` spelled by path (`/bin/cp`) get the same path checks as `cp`/`mv`. Deny rules and protected-file prompts apply to the **file a `cp`/`mv` into a directory writes**. Fixes: a read-only Bash command running **outside the sandbox with no prompt**; Bash permission checks judging a write from the **wrong folder**; `/config` showing Manual as the default when new sessions start in auto — Space on “Auto (default)” now saves **Don’t Ask**, not Plan. Mods’ own tool calls skip the permission prompt (`claude-code-mods`) — deny/org policy still apply.
 
 ## Sources
 
+- [v2.1.321](https://github.com/anthropics/claude-code/releases/tag/v2.1.321) — accessed 2026-11-09
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-09
 - [v2.1.319](https://github.com/anthropics/claude-code/releases/tag/v2.1.319) — accessed 2026-11-06
-- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-06
 - [Configure permissions](https://code.claude.com/docs/en/permissions) — accessed 2026-11-06
 - [Claude Code settings](https://code.claude.com/docs/en/settings) — accessed 2026-11-06
 - [Choose a permission mode](https://code.claude.com/docs/en/permission-modes) — accessed 2026-10-01

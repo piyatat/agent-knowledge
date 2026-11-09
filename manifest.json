@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2875,7 +2875,7 @@
         "mcp"
       ],
       "status": "active",
-      "updated": "2026-11-03",
+      "updated": "2026-11-09",
       "when_to_use": "Embedding Claude Code’s agent loop in Python/TypeScript instead of driving the CLI or calling the Messages API yourself",
       "related": [
         "permission-modes-allow-ask-deny",
@@ -2887,7 +2887,8 @@
         "claude-code-plugins",
         "claude-managed-agents",
         "claude-code-hooks",
-        "claude-message-threads"
+        "claude-message-threads",
+        "claude-code-mcp"
       ]
     },
     {
@@ -3739,7 +3740,7 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-11-06",
+      "updated": "2026-11-09",
       "when_to_use": "Adding HTTP/stdio MCP to Claude Code, or debugging .mcp.json approvals vs Cursor mcp.json",
       "related": [
         "cursor-mcp-json",
@@ -3749,7 +3750,8 @@
         "claude-code-managed-mcp",
         "claude-code-elicitation",
         "mcp-stateless-core",
-        "mcp-tasks-extension"
+        "mcp-tasks-extension",
+        "claude-code-gateway"
       ]
     },
     {
@@ -3916,7 +3918,7 @@
         "hooks"
       ],
       "status": "active",
-      "updated": "2026-11-06",
+      "updated": "2026-11-09",
       "when_to_use": "Writing Claude Code permission rules, fencing working-directory writes, or choosing defaultMode vs a PreToolUse hook",
       "related": [
         "permission-modes-allow-ask-deny",
@@ -4076,7 +4078,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-11-06",
+      "updated": "2026-11-09",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4106,7 +4108,9 @@
         "github-copilot-plugins",
         "github-cli-expiring-oauth",
         "github-copilot-s2s-auth",
-        "github-copilot-lsp"
+        "github-copilot-lsp",
+        "github-copilot-code-search",
+        "github-copilot-model-policy-api"
       ]
     },
     {
@@ -4840,7 +4844,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-25",
+      "updated": "2026-11-09",
       "when_to_use": "Connecting claude.ai/code or the Claude mobile app to a local CLI/VS Code session, or contrasting it with Claude Code on the web",
       "related": [
         "claude-code-vscode",
@@ -7181,7 +7185,8 @@
         "code-mode-tool-orchestration",
         "mcp-progressive-disclosure",
         "cursor-cloud-always-on",
-        "amp-spaces"
+        "amp-spaces",
+        "amp-portals"
       ]
     },
     {
@@ -7915,7 +7920,7 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-10-20",
+      "updated": "2026-11-09",
       "when_to_use": "Writing or installing a Claude Code mod, enabling You should know, or contrasting mods with settings hooks",
       "related": [
         "claude-code-plugins",
@@ -7923,7 +7928,8 @@
         "claude-code-restricted",
         "claude-code-agent-teams",
         "malicious-skills-supply-chain",
-        "claude-code-settings"
+        "claude-code-settings",
+        "claude-code-permissions"
       ]
     },
     {
@@ -9457,7 +9463,7 @@
         "evals"
       ],
       "status": "active",
-      "updated": "2026-11-08",
+      "updated": "2026-11-09",
       "when_to_use": "Defining a Cursor agent as a bot/ TypeScript project with evals, or choosing it instead of Automations or @cursor/sdk",
       "related": [
         "cursor-sdk-typescript",
@@ -9466,7 +9472,9 @@
         "cursor-automations",
         "cursor-cli-headless",
         "claude-agent-sdk",
-        "agent-eval-harness"
+        "agent-eval-harness",
+        "cursor-agent-sdk-cloud-agents",
+        "cursor-agent-sdk-peers"
       ]
     },
     {
@@ -10137,7 +10145,8 @@
         "multi-agent-handoffs",
         "cursor-projects",
         "devin-desktop-acp",
-        "cursor-side-chats"
+        "cursor-side-chats",
+        "amp-portals"
       ]
     },
     {
@@ -10158,6 +10167,69 @@
         "claude-cowork",
         "claude-code-gateway",
         "claude-code-settings"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-cloud-agents",
+      "path": "practices/cursor-agent-sdk-cloud-agents.md",
+      "title": "Agent SDK cursor-cloud-agents — delegate coding to Cloud Agents",
+      "tags": [
+        "cursor",
+        "sdk",
+        "orchestration",
+        "subagent"
+      ],
+      "status": "active",
+      "updated": "2026-11-09",
+      "when_to_use": "Mounting cursor-cloud-agents or the improve extension so an Agent SDK bot can launch, steer, or self-edit via Cloud Agents",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-agent-sdk-peers",
+        "cursor-cloud-agents-api",
+        "cursor-cloud-always-on",
+        "cursor-sdk"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-peers",
+      "path": "practices/cursor-agent-sdk-peers.md",
+      "title": "Agent SDK peer agents — independent specialists by slug",
+      "tags": [
+        "cursor",
+        "sdk",
+        "orchestration",
+        "multi-agent"
+      ],
+      "status": "active",
+      "updated": "2026-11-09",
+      "when_to_use": "Connecting one Agent SDK agent to another via defineConnection({ agent }), or choosing a peer instead of a subagent",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-agent-sdk-cloud-agents",
+        "subagent-context-isolation",
+        "multi-agent-handoffs",
+        "a2a-vs-mcp"
+      ]
+    },
+    {
+      "id": "amp-portals",
+      "path": "practices/amp-portals.md",
+      "title": "Amp Portals — orb previews vs runner --remote-control-portals",
+      "tags": [
+        "amp",
+        "ux",
+        "hosting",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-11-09",
+      "when_to_use": "Opening an Amp Portal tab for a dev server, declaring .amp/services.yaml, or enabling portals on a local runner",
+      "related": [
+        "amp-agent",
+        "amp-spaces",
+        "cursor-cloud-apps",
+        "cursor-browser",
+        "computer-use-containment"
       ]
     }
   ]

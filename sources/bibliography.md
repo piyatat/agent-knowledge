@@ -2309,3 +2309,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | openclaw 2026.11.1 | https://github.com/openclaw/openclaw/releases/tag/v2026.11.1 |
 | Use Agent Skills in VS Code | https://code.visualstudio.com/docs/agent-customization/agent-skills |
 | Visual Studio Code 1.146 (Insiders) | https://code.visualstudio.com/updates/v1_146 |
+
+## Daily ingest 2026-11-09 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Cloud agents | https://cursor.com/docs/agent-sdk/guides/cloud-agents |
+| Self-improvement | https://cursor.com/docs/agent-sdk/guides/improve |
+| Peer agents | https://cursor.com/docs/agent-sdk/guides/agent-to-agent |
+| MCP connections | https://cursor.com/docs/agent-sdk/reference/connections |
+| Extensions | https://cursor.com/docs/agent-sdk/reference/extensions |
+| Agent SDK | https://cursor.com/docs/agent-sdk |
+| Convert a Cursor Automation | https://cursor.com/docs/agent-sdk/guides/convert-automation |
+| Portals on Your Runner (news) | https://ampcode.com/news/runner-portals |
+| Runners | https://ampcode.com/docs/cli/runners |
+| Portals & Desktop | https://ampcode.com/docs/orbs/portals |
+| Use Your Mac as a Runner | https://ampcode.com/docs/apps/mac/runner |
+| Threads | https://ampcode.com/docs/threads |
+| v2.1.321 | https://github.com/anthropics/claude-code/releases/tag/v2.1.321 |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Remote Control | https://code.claude.com/docs/en/remote-control |
+| claude-agent-sdk-typescript v0.3.321 | https://github.com/anthropics/claude-agent-sdk-typescript/releases/tag/v0.3.321 |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| copilot-cli 1.0.108 | https://github.com/github/copilot-cli/releases/tag/v1.0.108 |
+| Claude Fable 5.2 in GitHub Copilot | https://github.blog/changelog/2026-11-09-claude-fable-5-5-in-github-copilot/ |
+| microsoft/tgrep | https://github.com/microsoft/tgrep |
+

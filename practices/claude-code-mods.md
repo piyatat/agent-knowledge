@@ -3,7 +3,7 @@ id: claude-code-mods
 title: Claude Code Mods — in-process UI, events, and tool rules
 tags: [claude, plugins, hooks, ux]
 status: active
-updated: 2026-10-20
+updated: 2026-11-09
 when_to_use: Writing or installing a Claude Code mod, enabling You should know, or contrasting mods with settings hooks
 ---
 
@@ -22,6 +22,7 @@ A **Claude Code mod** (v2.1.287+) is a **plugin** whose JavaScript/TypeScript ha
 - v2.1.290+: `turn.step` includes `serverToolUses` (API-run tools such as the advisor, with id/name/input/timing). `tool.check` carries `agentId` (subagent vs main) and `ceiling` (the approval an organization requires). `claude plugin validate` lists each gating hook and whether it has `.catch` (`gatingHooks` under `--json`).
 - v2.1.292+: `prompt.autocomplete` lets a mod add rows to the prompt-box autocomplete. `$.model.complete` prompt-caches when `prompt`/`system` are text blocks with `cache: true` on a block. `agent.spawn` also fires for **workflow agents** (run + index) so a mod can refuse them. A `config.set` / `state.set` / `env.set` / `agent.spawn` hook that denies **after** `next(e)` is reported as a failed hook, not a refusal. `tool.check` allow no longer skips a dialog that still needs a question or plan approval. `<system-reminder>` tags in hook output are escaped before they reach Claude.
 - v2.1.304: `tool.check` answer `decider: "person"` — only the permission dialog or a host callback can approve; where nobody can be asked, the call is refused with the mod’s reason. `e.isReadOnly` is set on the event when the tool call is read-only. A plugin that runs first and skips one of your mod’s hooks now writes a transcript line naming the event and the plugin.
+- **v2.1.321** (2026-11-09): mods **Claude writes** turn on **without asking** in `auto` and `bypassPermissions`, even with managed `allowUnsandboxedCommands: false` or `allowManagedDomainsOnly`, and **do not load** in `dontAsk`. A mod’s own `$.tool.call` / `$.mcp.call` raises **no permission prompt** — including under your ask rules, `dontAsk`, and `claude -p`. **Deny rules and organization policy still apply.** Headless sessions reload mods in `.claude/skills` when those files change (`CLAUDE_CODE_PLUGIN_DIR_WATCH=0` to turn that off). Pair with `claude-code-permissions`; do not treat a mod call as a user-approved tool.
 
 ## Sources
 
@@ -32,3 +33,5 @@ A **Claude Code mod** (v2.1.287+) is a **plugin** whose JavaScript/TypeScript ha
 - [v2.1.289 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.289) — accessed 2026-10-04
 - [CHANGELOG.md (v2.1.290–2.1.292)](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-06
 - [v2.1.304 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.304) — accessed 2026-10-20
+- [v2.1.321](https://github.com/anthropics/claude-code/releases/tag/v2.1.321) — accessed 2026-11-09
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-09
