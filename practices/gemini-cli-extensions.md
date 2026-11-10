@@ -3,7 +3,7 @@ id: gemini-cli-extensions
 title: Gemini CLI extensions — gemini-extension.json packages
 tags: [gemini, extensions, mcp, skills]
 status: active
-updated: 2026-09-20
+updated: 2026-11-10
 when_to_use: Packaging or installing a Gemini CLI extension instead of loose settings.json MCP or skills
 ---
 
@@ -13,7 +13,7 @@ A Gemini CLI **extension** is a directory with **`gemini-extension.json`**, load
 
 ## Notes
 
-- Manage outside interactive mode: `gemini extensions install <git-url|path>` (`--ref`, `--auto-update`, `--consent`, `--skip-settings`). `update`, `uninstall`, `enable`/`disable --scope user|workspace`, `link` (symlink for live edit), `new <path> [mcp-server|context|custom-commands]`. Interactive `/extensions list` only. Restarts apply command/skill changes.
+- Manage outside interactive mode: `gemini extensions install <git-url|path>` (`--ref`, `--auto-update`, `--consent`, `--skip-settings`). `update`, `uninstall`, `enable`/`disable --scope user|workspace`, `link` (symlink for live edit), `new <path> [mcp-server|context|custom-commands]`. **`gemini extensions validate <path>`** loads a local `gemini-extension.json`: missing referenced `contextFileName` files are errors; non-semver `version` is a warning. **v0.68.0** (2026-11-10) serializes concurrent installs with a **per-extension lock**. Interactive `/extensions list` only. Restarts apply command/skill changes.
 - Manifest: `name` (kebab, match dir), `version`, `description`. `mcpServers` same shape as settings except **`trust` is forbidden**; `${extensionPath}` / `${workspacePath}` / `${/}` substitute. Same server name in `settings.json` **wins**. `contextFileName` or a default `GEMINI.md` in the extension dir. `excludeTools` can restrict `run_shell_command(rm -rf)`. `migratedTo` auto-moves installs to a new repo.
 - Extras (not all in the manifest): `commands/*.toml` → `/deploy` or `/gcs:sync`; conflicts with user/project commands become `/ext.deploy`. `hooks/hooks.json`. `skills/**/SKILL.md`. `agents/*.md`. `policies/*.toml` (tier 2 — below user/admin, above defaults; extension `allow` / `yolo` decisions are **ignored**). Install `settings[]` (`envVar`, `sensitive`) land in a `.env` / keychain; extensions **do not** inherit the full shell env — only safe vars plus declared `envVar`s.
 - v0.60.0: loader **path/boundary** checks; **consent** when an extension changes environment; sanitizes runtime-altering env vars. Experimental explore UI: `experimental.extensionRegistry` (default false) + `experimental.extensionRegistryURI` (default `https://geminicli.com/extensions.json`).
@@ -21,6 +21,7 @@ A Gemini CLI **extension** is a directory with **`gemini-extension.json`**, load
 
 ## Sources
 
-- [Extension reference](https://geminicli.com/docs/extensions/reference/) — accessed 2026-09-20
+- [Gemini CLI v0.68.0](https://github.com/google-gemini/gemini-cli/releases/tag/v0.68.0) — accessed 2026-11-10
+- [Extension reference](https://geminicli.com/docs/extensions/reference/) — accessed 2026-11-10
+- [validate.ts (gemini-cli)](https://github.com/google-gemini/gemini-cli/blob/HEAD/packages/cli/src/commands/extensions/validate.ts) — accessed 2026-11-10
 - [Gemini CLI configuration](https://geminicli.com/docs/reference/configuration/) — accessed 2026-09-20
-- [Latest stable release v0.60.0](https://geminicli.com/docs/changelogs/latest/) — accessed 2026-09-20

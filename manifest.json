@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -145,7 +145,8 @@
         "tool-call-failures",
         "structured-outputs-for-agents",
         "agent-observability-otel",
-        "deterministic-tool-mocks"
+        "deterministic-tool-mocks",
+        "cursor-agent-sdk-hillclimbing"
       ]
     },
     {
@@ -2594,7 +2595,7 @@
         "hosting"
       ],
       "status": "active",
-      "updated": "2026-11-05",
+      "updated": "2026-11-10",
       "when_to_use": "Hosting or mirroring repos on Cursor Origin, using the origin CLI, or starting a Cloud Agent without a third-party SCM",
       "related": [
         "cursor-privacy-mode",
@@ -4078,7 +4079,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-11-09",
+      "updated": "2026-11-10",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4215,7 +4216,7 @@
         "skills"
       ],
       "status": "active",
-      "updated": "2026-09-20",
+      "updated": "2026-11-10",
       "when_to_use": "Packaging or installing a Gemini CLI extension instead of loose settings.json MCP or skills",
       "related": [
         "gemini-cli-mcp",
@@ -4438,7 +4439,7 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-11-05",
+      "updated": "2026-11-10",
       "when_to_use": "Authoring Gemini CLI hooks in settings.json, or comparing them with Claude/Codex/Cursor hooks",
       "related": [
         "gemini-cli-settings",
@@ -5784,7 +5785,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-11-06",
+      "updated": "2026-11-10",
       "when_to_use": "Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local sandboxing, or VS Code Agent Host MXC",
       "related": [
         "github-copilot-cli",
@@ -6971,7 +6972,7 @@
     {
       "id": "kiro-cli",
       "path": "practices/kiro-cli.md",
-      "title": "Kiro CLI — Amazon Q Developer CLI successor",
+      "title": "Kiro CLI — V3 default harness vs Amazon Q successor",
       "tags": [
         "kiro",
         "cli",
@@ -6979,15 +6980,17 @@
         "amazon"
       ],
       "status": "active",
-      "updated": "2026-09-22",
-      "when_to_use": "Installing or migrating to kiro-cli from Amazon Q Developer CLI, or adding MCP / custom agents under .kiro/",
+      "updated": "2026-11-10",
+      "when_to_use": "Installing kiro-cli, choosing V3 vs --v2, or migrating from Amazon Q Developer CLI / Kiro CLI 2.x",
       "related": [
         "kiro-steering",
         "kiro-skills",
         "gemini-cli-mcp",
         "claude-code-mcp",
         "tool-description-hygiene",
-        "mcp-server-trust-failures"
+        "mcp-server-trust-failures",
+        "github-copilot-sandbox",
+        "claude-code-sessions"
       ]
     },
     {
@@ -8663,14 +8666,16 @@
         "interoperability",
         "prompts"
       ],
-      "status": "draft",
-      "updated": "2026-10-15",
+      "status": "active",
+      "updated": "2026-11-10",
       "when_to_use": "Sending session-scoped system instructions over ACP, or replacing _meta / user-message persona hacks",
       "related": [
         "agent-client-protocol-acp",
         "acp-v2-session-lifecycle",
         "acp-session-notices",
-        "agents-md-open-format"
+        "agents-md-open-format",
+        "claude-agent-sdk",
+        "openai-codex-sdk"
       ]
     },
     {
@@ -9474,7 +9479,8 @@
         "claude-agent-sdk",
         "agent-eval-harness",
         "cursor-agent-sdk-cloud-agents",
-        "cursor-agent-sdk-peers"
+        "cursor-agent-sdk-peers",
+        "cursor-agent-sdk-hillclimbing"
       ]
     },
     {
@@ -9683,8 +9689,8 @@
         "quality"
       ],
       "status": "active",
-      "updated": "2026-11-01",
-      "when_to_use": "Adding .github/lsp.json or ~/.copilot/lsp-config.json so Copilot CLI can go-to-def / rename",
+      "updated": "2026-11-10",
+      "when_to_use": "Adding .github/lsp.json or ~/.copilot/lsp-config.json so Copilot CLI can go-to-def / rename, or using the Microsoft C++ LSP on MSBuild projects",
       "related": [
         "claude-code-lsp",
         "github-copilot-code-search",
@@ -10160,7 +10166,7 @@
         "mdm"
       ],
       "status": "active",
-      "updated": "2026-11-08",
+      "updated": "2026-11-10",
       "when_to_use": "MDM/Admin Console for Claude Desktop Chat vs Cowork, or keeping Cowork off after 2026-11-10",
       "related": [
         "claude-code-desktop",
@@ -10187,7 +10193,8 @@
         "cursor-agent-sdk-peers",
         "cursor-cloud-agents-api",
         "cursor-cloud-always-on",
-        "cursor-sdk"
+        "cursor-sdk",
+        "cursor-agent-sdk-hillclimbing"
       ]
     },
     {
@@ -10230,6 +10237,27 @@
         "cursor-cloud-apps",
         "cursor-browser",
         "computer-use-containment"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-hillclimbing",
+      "path": "practices/cursor-agent-sdk-hillclimbing.md",
+      "title": "Agent SDK hillclimbing — one lever, same fixtures, lock the win",
+      "tags": [
+        "cursor",
+        "sdk",
+        "evals",
+        "quality"
+      ],
+      "status": "active",
+      "updated": "2026-11-10",
+      "when_to_use": "Improving a Cursor Agent SDK bot against fixed inputs, or writing evals that lock a kept change",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-agent-sdk-cloud-agents",
+        "agent-eval-harness",
+        "llm-judge-bias",
+        "deterministic-tool-mocks"
       ]
     }
   ]

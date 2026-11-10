@@ -3,7 +3,7 @@ id: cursor-origin
 title: Cursor Origin — git forge for agents (early beta)
 tags: [cursor, git, ops, hosting]
 status: active
-updated: 2026-11-05
+updated: 2026-11-10
 when_to_use: Hosting or mirroring repos on Cursor Origin, using the origin CLI, or starting a Cloud Agent without a third-party SCM
 ---
 
@@ -17,7 +17,7 @@ when_to_use: Hosting or mirroring repos on Cursor Origin, using the origin CLI, 
 - Start from scratch (2026-08-27): pick it in the repo picker, prompt immediately; Cursor creates a background Origin repo. **Create repo** names it (private or internal) when the build looks right. Codebase tab lists it. The agent VM can port-forward into the browser (design mode). **2026-11-05:** Cloud Agent **Apps** (`cursor-cloud-apps`) publish a Cursor-hosted live URL (Postgres + Cursor sign-in) from Origin or GitHub — GitLab as a git source is coming. That is **not** the Origin marketplace (`cursor-origin-apps`). Connecting **Vercel** (or another marketplace deploy app) is still the path for Origin-hosted CI/deploy on the forge itself.
 - Origin-hosted vs mirrored: icons on the codebase list distinguish them. Mirror requires the Cursor GitHub app plus **GitHub admin** on the source. Git history/branches/tags and PRs sync both ways; **Issues and GitHub Actions/secrets do not**. Pushes to a mirrored Origin remote pass through to GitHub (source of truth). **Detach from GitHub** makes Origin standalone and stops passthrough; GitHub is unchanged.
 - CLI (`origin`, not `agent`): `curl -fsSL https://downloads.cursor.com/origin/install.sh | sh` → `~/.local/bin/origin`. `origin auth login` sets the git credential helper. `origin repo create`, `create-mirrored`, `clone`, `pr create/merge/review`, `origin api`. `CURSOR_API_KEY` skips the browser login. Agents can install the CLI and push as part of a task. `origin pr view --checks` / `--json mergeability` reads Origin’s merge preview (`cursor-origin-apps`).
-- Apps install at **codebase** settings (Marketplace + Manage) and enable per repo — see `cursor-origin-apps`. **2026-10-13:** public marketplace submissions; 20+ partner apps (CI/deploy/review/security). Depot/Buildkite-class CI still runs on **Origin-hosted** repos only; mirrored repos keep CI on GitHub. Team inbound IP allowlists apply to **people**, not apps/agents.
+- Apps install at **codebase** settings (Marketplace + Manage) and enable per repo — see `cursor-origin-apps`. **2026-10-13:** public marketplace submissions; 20+ partner apps (CI/deploy/review/security). Depot/Buildkite-class CI still runs on **Origin-hosted** repos only; mirrored repos keep CI on GitHub. Inbound IP allowlists apply to **people** (user credentials), not apps/service accounts/agents. **Cloud Agents** on the same team can still clone, push, use Origin MCP, and open raw-file / tarball / clone links they create — the exemption is **that team’s repositories only**. Concurrent allowlist edits apply one at a time. Audit log records allowlist changes. Origin API: `trustAppDeclaredIps` on the inbound allowlist (2026-11-04) admits an installation token from an egress IP range the app declared.
 
 - Do **not** mirror just for PR review comments — that is Bugbot (`cursor-bugbot-review`). Mirror when you want Origin browse, PRs, and agent workflows on that history.
 
@@ -35,5 +35,6 @@ when_to_use: Hosting or mirroring repos on Cursor Origin, using the origin CLI, 
 - [Origin repository settings](https://cursor.com/docs/origin/settings) — accessed 2026-09-02
 - [Codebase settings](https://cursor.com/docs/origin/codebase-settings) — accessed 2026-09-29
 - [Pull request commands](https://cursor.com/docs/origin/cli/reference/pull-requests) — accessed 2026-09-29
-- [Origin API changelog](https://cursor.com/docs/api/origin/changelog) — accessed 2026-09-29
+- [Origin release notes](https://cursor.com/docs/release-notes/origin) — accessed 2026-11-10
+- [Origin API changelog](https://cursor.com/docs/api/origin/changelog) — accessed 2026-11-10
 

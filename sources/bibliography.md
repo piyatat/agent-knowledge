@@ -2335,3 +2335,35 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude Fable 5.2 in GitHub Copilot | https://github.blog/changelog/2026-11-09-claude-fable-5-5-in-github-copilot/ |
 | microsoft/tgrep | https://github.com/microsoft/tgrep |
 
+## Daily ingest 2026-11-10 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Hillclimbing | https://cursor.com/docs/agent-sdk/hillclimbing |
+| Evals | https://cursor.com/docs/agent-sdk/evals |
+| Evals reference | https://cursor.com/docs/agent-sdk/reference/evals |
+| Build with a coding agent | https://cursor.com/docs/agent-sdk/building-with-agents |
+| Self-improvement | https://cursor.com/docs/agent-sdk/guides/improve |
+| Choose an agent harness | https://kiro.dev/docs/cli/agent-harness/ |
+| Upgrade from CLI 2.x | https://kiro.dev/docs/cli/v3/ |
+| V3 by Default, Classic and Desktop App Retired | https://kiro.dev/changelog/cli/3-0/ |
+| Compaction Hooks and Session Credits | https://kiro.dev/changelog/cli/3-1/ |
+| CLI commands | https://kiro.dev/docs/reference/cli-commands/ |
+| Client-provided system prompts are stabilized | https://agentclientprotocol.com/announcements/client-system-prompt-stabilized |
+| Client-Provided System Prompt RFD | https://agentclientprotocol.com/rfds/client-system-prompt |
+| ACP v2 session setup — system prompt | https://agentclientprotocol.com/protocol/v2/session-setup |
+| Rust Crate v1.16.0 | https://github.com/agentclientprotocol/agent-client-protocol/releases/tag/v1.16.0 |
+| C++ language server now auto-configures MSBuild builds | https://github.blog/changelog/2026-11-10-c-language-server-now-auto-configures-msbuild-builds/ |
+| Using LSP servers with GitHub Copilot CLI | https://docs.github.com/en/copilot/concepts/customizations/lsp-servers |
+| Gemini 4 Carbon in GitHub Copilot | https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot/ |
+| copilot-cli changelog | https://github.com/github/copilot-cli/blob/main/changelog.md |
+| Gemini CLI v0.68.0 | https://github.com/google-gemini/gemini-cli/releases/tag/v0.68.0 |
+| Extension reference | https://geminicli.com/docs/extensions/reference/ |
+| validate.ts (gemini-cli) | https://github.com/google-gemini/gemini-cli/blob/HEAD/packages/cli/src/commands/extensions/validate.ts |
+| Cowork changelog | https://claude.com/docs/cowork/changelog |
+| Unified Claude in Claude Desktop on 3P | https://claude.com/docs/third-party/claude-desktop/unified-claude |
+| Configuration changelog | https://claude.com/docs/third-party/claude-desktop/configuration-changelog |
+| Origin release notes | https://cursor.com/docs/release-notes/origin |
+| Origin API changelog | https://cursor.com/docs/api/origin/changelog |
+
+

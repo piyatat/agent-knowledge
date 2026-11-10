@@ -3,7 +3,7 @@ id: github-copilot-sandbox
 title: Copilot sandboxes — CLI MXC, --cloud, and app local policy
 tags: [github, sandbox, cli, security]
 status: active
-updated: 2026-11-06
+updated: 2026-11-10
 when_to_use: Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local sandboxing, or VS Code Agent Host MXC
 ---
 
@@ -24,6 +24,7 @@ when_to_use: Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local s
 - CLI **1.0.102** (2026-10-21): when the sandbox inherits host proxy settings, it now honors **`NO_PROXY` and `ALL_PROXY`** (not only `HTTP_PROXY` / `HTTPS_PROXY` from 1.0.100-1). Long-running sandboxed commands **keep running past 10 seconds** instead of dying. Pair with `github-cli-expiring-oauth` if sandboxed `gh` uses a rotating token — do not cache `gh auth token` inside the sandbox.
 - CLI **1.0.103** (2026-10-22): **ACP** sessions honor the saved `sandbox.enabled` setting and `--sandbox` / `--no-sandbox`, **including on resume** (earlier ACP hosts could ignore them). Windows **`npm.cmd`** shims get the same sandbox grants as `npm`; **`dnx`** can reuse existing .NET / NuGet grants when developer-tool access is enabled.
 - CLI **1.0.107** (2026-11-06): **Sandbox extensions** setting runs **extension processes inside the sandbox** (`github-copilot-plugins`). Sandboxed local MCP servers honor relative filesystem permissions from the **session directory** even with a different configured cwd, start correctly with a **relative cwd**, and can write an `npm_config_cache` when developer-tool access is on. Sandboxed grep/rg/glob report Windows launch failures instead of silent no-match. Nested Git dirs on Windows can cd/write at the repo root. Do not treat plugin-in-sandbox as a substitute for `--cloud` or the OS backend.
+- CLI **1.0.109** (2026-11-10): sandbox host **allow and deny** rules accept **IPv4 and IPv6 CIDR** (not only hostnames). Linux denied paths now also block developer-tool config files **inside** those paths. Help text: sandboxed git gets a **masked** credential the proxy swaps only at that HTTPS origin (non-GitHub hosts use your git credential helper); sandboxed traffic always reaches a configured `sandbox.userPolicy.network.proxy.url` through the built-in local proxy so proxy credentials stay out of the sandbox.
 
 ## Sources
 
@@ -32,7 +33,7 @@ when_to_use: Enabling Copilot CLI /sandbox, copilot --cloud, Copilot-app local s
 - [Using local sandboxing](https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing) — accessed 2026-10-07
 - [Configuring local sandbox settings](https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings) — accessed 2026-10-05
 - [Sandbox Copilot Agent Host sessions](https://code.visualstudio.com/docs/agents/run/agent-sandboxing) — accessed 2026-10-08
-- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-11-06
+- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-11-10
 - [copilot-cli 1.0.103](https://github.com/github/copilot-cli/releases/tag/v1.0.103) — accessed 2026-10-22
 - [copilot-cli 1.0.102](https://github.com/github/copilot-cli/releases/tag/v1.0.102) — accessed 2026-10-21
 - [copilot-cli 1.0.96-0](https://github.com/github/copilot-cli/releases/tag/v1.0.96-0) — accessed 2026-10-10
