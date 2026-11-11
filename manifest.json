@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2570,8 +2570,8 @@
         "extensions"
       ],
       "status": "active",
-      "updated": "2026-11-07",
-      "when_to_use": "Serving or consuming Agent Skills over MCP (skills/list, skill://) — SEP-2640 is Final; Python SDK ships Skills; VS Code Copilot is landing the host",
+      "updated": "2026-11-11",
+      "when_to_use": "Serving or consuming Agent Skills over MCP (skills/list, skill://) — SEP-2640 is Final; VS Code 1.146 Copilot host is Preview",
       "related": [
         "agent-skills-open-standard",
         "mcp-resources-vs-tools",
@@ -4306,8 +4306,8 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-11-08",
-      "when_to_use": "Adding SKILL.md for Copilot CLI / cloud agent / IDE, or installing with copilot skill / gh skill",
+      "updated": "2026-11-11",
+      "when_to_use": "Adding SKILL.md for Copilot CLI / cloud agent / IDE, installing with copilot skill / gh skill, or allowing MCP-served skills in VS Code",
       "related": [
         "agent-skills-open-standard",
         "github-copilot-instructions",
@@ -6659,8 +6659,8 @@
         "interoperability"
       ],
       "status": "active",
-      "updated": "2026-11-04",
-      "when_to_use": "Choosing a VS Code Session Target, starting a cloud sandbox session, or handing a Local chat to Copilot/Claude/Codex/Cloud",
+      "updated": "2026-11-11",
+      "when_to_use": "Choosing a VS Code Session Target, migrating off the deprecated Local harness before February 2027, or starting a cloud sandbox session",
       "related": [
         "github-copilot-ide-agent",
         "agent-host-protocol-ahp",
@@ -6676,7 +6676,8 @@
         "vscode-compare-models",
         "vscode-on-device-models",
         "github-copilot-coding-agent",
-        "github-copilot-connectors"
+        "github-copilot-connectors",
+        "vscode-agent-inbox"
       ]
     },
     {
@@ -6700,7 +6701,8 @@
         "github-copilot-ide-agent",
         "vscode-agent-automations",
         "vscode-agent-worktree-cleanup",
-        "openai-codex-ide"
+        "openai-codex-ide",
+        "vscode-agent-inbox"
       ]
     },
     {
@@ -6801,8 +6803,8 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-10-08",
-      "when_to_use": "Enabling chat.agent.sandbox for Copilot Agent Host terminals, inspecting /sandbox policy, or contrasting with Copilot CLI MXC",
+      "updated": "2026-11-11",
+      "when_to_use": "Enabling chat.agent.sandbox for Copilot Agent Host terminals, masking env vars for injectHosts, or inspecting /sandbox policy",
       "related": [
         "vscode-mcp",
         "vscode-agent-harnesses",
@@ -6980,8 +6982,8 @@
         "amazon"
       ],
       "status": "active",
-      "updated": "2026-11-10",
-      "when_to_use": "Installing kiro-cli, choosing V3 vs --v2, or migrating from Amazon Q Developer CLI / Kiro CLI 2.x",
+      "updated": "2026-11-11",
+      "when_to_use": "Installing kiro-cli, choosing V3 vs --v2, or signing in to a CIMD-only remote MCP server without an oauth block",
       "related": [
         "kiro-steering",
         "kiro-skills",
@@ -6990,7 +6992,8 @@
         "tool-description-hygiene",
         "mcp-server-trust-failures",
         "github-copilot-sandbox",
-        "claude-code-sessions"
+        "claude-code-sessions",
+        "mcp-oauth-scopes"
       ]
     },
     {
@@ -7790,8 +7793,8 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-27",
-      "when_to_use": "Enabling chat.assistedPermissions, choosing Assisted vs Manual vs Allow all on Agent Host, or contrasting JetBrains assisted approvals",
+      "updated": "2026-11-11",
+      "when_to_use": "Enabling chat.assistedPermissions, scoping Copilot-harness Allow Once to a host/command/path, or contrasting JetBrains assisted approvals",
       "related": [
         "vscode-agent-sandboxing",
         "github-copilot-ide-agent",
@@ -9006,7 +9009,8 @@
         "github-copilot-auto-model",
         "github-copilot-hydrafusion",
         "github-copilot-managed-permissions",
-        "github-copilot-feature-defaults"
+        "github-copilot-feature-defaults",
+        "github-copilot-seat-management"
       ]
     },
     {
@@ -9081,8 +9085,8 @@
         "versioning"
       ],
       "status": "active",
-      "updated": "2026-10-27",
-      "when_to_use": "Planning SDK or server work against the next MCP spec date, or assuming a December 2026 revision still exists",
+      "updated": "2026-11-11",
+      "when_to_use": "Planning SDK or server work against 2027-03-30, or assuming a December 2026 MCP revision still exists",
       "related": [
         "mcp-2026-roadmap",
         "mcp-feature-lifecycle",
@@ -9166,14 +9170,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-11-07",
-      "when_to_use": "Running the same coding task on multiple VS Code models or harnesses, or enabling a Judge/Synthesizer",
+      "updated": "2026-11-11",
+      "when_to_use": "Running the same coding task on multiple VS Code models or harnesses, including Copilot Fusion, or letting an agent launch a bake-off",
       "related": [
         "vscode-agent-harnesses",
         "vscode-agent-worktree-cleanup",
         "vscode-agent-sandboxing",
         "llm-judge-bias",
-        "agent-eval-harness"
+        "agent-eval-harness",
+        "github-copilot-hydrafusion"
       ]
     },
     {
@@ -9301,7 +9306,8 @@
         "github-cli-expiring-oauth",
         "github-package-firewall",
         "github-copilot-model-policy-api",
-        "agent-output-secret-scanning"
+        "agent-output-secret-scanning",
+        "github-copilot-seat-management"
       ]
     },
     {
@@ -10258,6 +10264,47 @@
         "agent-eval-harness",
         "llm-judge-bias",
         "deterministic-tool-mocks"
+      ]
+    },
+    {
+      "id": "vscode-agent-inbox",
+      "path": "practices/vscode-agent-inbox.md",
+      "title": "VS Code Inbox mode — triage sessions that need attention",
+      "tags": [
+        "vscode",
+        "session",
+        "ux",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-11-11",
+      "when_to_use": "Enabling sessions.list.inboxEnabled, snoozing Agents-window sessions, or running Fix Checks from the list",
+      "related": [
+        "vscode-agent-harnesses",
+        "vscode-external-sessions",
+        "vscode-agent-worktree-cleanup",
+        "github-copilot-agent-merge",
+        "cursor-ios"
+      ]
+    },
+    {
+      "id": "github-copilot-seat-management",
+      "path": "practices/github-copilot-seat-management.md",
+      "title": "Copilot seat APIs — enterprise GitHub Apps and license permission",
+      "tags": [
+        "github",
+        "api",
+        "governance",
+        "auth"
+      ],
+      "status": "active",
+      "updated": "2026-11-11",
+      "when_to_use": "Assigning Copilot seats from an enterprise GitHub App, or requesting Enterprise Copilot license management",
+      "related": [
+        "github-enterprise-app-installations",
+        "github-copilot-model-policy-api",
+        "github-copilot-managed-permissions",
+        "github-cli-expiring-oauth"
       ]
     }
   ]

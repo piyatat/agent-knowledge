@@ -3,8 +3,8 @@ id: vscode-assisted-permissions
 title: VS Code Assisted permissions — LLM judge vs Allow all
 tags: [vscode, permissions, approvals, security]
 status: active
-updated: 2026-10-27
-when_to_use: Enabling chat.assistedPermissions, choosing Assisted vs Manual vs Allow all on Agent Host, or contrasting JetBrains assisted approvals
+updated: 2026-11-11
+when_to_use: Enabling chat.assistedPermissions, scoping Copilot-harness Allow Once to a host/command/path, or contrasting JetBrains assisted approvals
 ---
 
 ## Summary
@@ -16,6 +16,7 @@ when_to_use: Enabling chat.assistedPermissions, choosing Assisted vs Manual vs A
 - Levels (chat input permissions picker; new sessions follow `chat.permissions.default`): **Manual** (your tool / URL / terminal rules), **Assisted** (judge), **Allow all** (no confirmation). **Autopilot** is an **agent mode**, not a level: like Allow all plus auto-answers and retries until the task looks done. Preview `chat.autopilot.advanced.enabled` delegates the “is it done?” check to a second small model.
 - Agent Host only. Copilot harness: pick **Folder isolation** — worktree sessions always use Allow all. Orgs can hide Assisted / Allow all / Autopilot by disabling global auto-approval (`ChatToolsAutoApprove`). First time you pick Assisted, a warning dialog; the judge **can be wrong** — not a security boundary (`prompt-injection-agent-defense`).
 - Independent layers: **sandboxing** still restricts terminals after Allow all (`vscode-agent-sandboxing`). Tool approval (pre vs post / “without reviewing result”), URL **request vs response** (`chat.tools.urls.autoApprove`), and `chat.tools.terminal.autoApprove` apply under Manual. `chat.tools.eligibleForAutoApproval` false forces a prompt with no auto-approve option.
+- **1.146 Copilot-harness Manual prompts** default to **Allow Once** scoped to the thing on screen, not “Allow in this Session” for any URL/command. Dropdown: terminal → suggested **prefix** (covers extra args for that prefix) or the exact command; web fetch → the **displayed host** (`https://example.com` does **not** cover `http://` or subdomains); file read/edit → the file or nearest parent Git repo (else parent folder) — read and edit are separate. **In this Session** vs **Always Allow** (persists on that Agent Host). Always Allow on the local Host writes `chat.tools.terminal.autoApprove` / `chat.tools.urls.autoApprove` (request only, not response). Remote Hosts keep their own grants; they do not copy local user settings. Local-harness sessions keep older workspace-scoped options until that harness is removed (`vscode-agent-harnesses`).
 - JetBrains 1.18 **assisted approvals** (public preview) auto-approve low-risk agent tool calls in that plugin; GitHub has not published the risk taxonomy. Copilot CLI rewind is a different control (`github-copilot-cli`). Do not combine Assisted with untrusted MCP results as if the judge were a policy engine (`github-copilot-managed-permissions`).
 - **1.142 managed modes:** `permissions.disableBypassPermissionsMode` and `permissions.disableAssistedPermissionsMode` are **independent** — admins can allow Assisted while blocking Allow all. `permissions.defaultMode` is a starting default, not a lock. If the default is unavailable or prohibited, the session starts with **manual** approval. Legacy `ChatToolsAutoApprove: false` still hides **both** Allow all and Assisted unless you set explicit mode restrictions. Assisted is **not** compatible yet with `permissions.{allow,ask,deny}` — set `"disableAssistedPermissionsMode": true` if you use those lists. Policy-driven Local → Copilot moves: `vscode-agent-harnesses`.
 - Cross-surface: CLI `/permissions assisted` and the Copilot app Tool permissions picker are the same judge idea (`github-copilot-assisted-permissions`). The judge **can be wrong** — not a security boundary.
@@ -24,7 +25,8 @@ when_to_use: Enabling chat.assistedPermissions, choosing Assisted vs Manual vs A
 
 - [GitHub Copilot assisted permissions generally available](https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/) — accessed 2026-10-27
 - [Allowing safe commands to run without manual approval](https://docs.github.com/en/copilot/concepts/customizations/allowing-safe-commands) — accessed 2026-10-27
-- [Manage approvals and permissions](https://code.visualstudio.com/docs/agents/run/approvals) — accessed 2026-09-30
+- [Manage approvals and permissions](https://code.visualstudio.com/docs/agents/run/approvals) — accessed 2026-11-11
+- [Visual Studio Code 1.146](https://code.visualstudio.com/updates/v1_146) — accessed 2026-11-11
 - [Visual Studio Code 1.142](https://code.visualstudio.com/updates/v1_142) — accessed 2026-10-16
 - [Choose an agent harness](https://code.visualstudio.com/docs/agents/run/agent-harnesses) — accessed 2026-10-16
 - [AI settings reference](https://code.visualstudio.com/docs/agents/reference/ai-settings) — accessed 2026-09-30

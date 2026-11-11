@@ -3,8 +3,8 @@ id: vscode-agent-sandboxing
 title: VS Code Agent Host sandbox — unified enabled, /sandbox policy
 tags: [vscode, sandbox, security, permissions]
 status: active
-updated: 2026-10-08
-when_to_use: Enabling chat.agent.sandbox for Copilot Agent Host terminals, inspecting /sandbox policy, or contrasting with Copilot CLI MXC
+updated: 2026-11-11
+when_to_use: Enabling chat.agent.sandbox for Copilot Agent Host terminals, masking env vars for injectHosts, or inspecting /sandbox policy
 ---
 
 ## Summary
@@ -19,10 +19,12 @@ when_to_use: Enabling chat.agent.sandbox for Copilot Agent Host terminals, inspe
 - FS: cwd is read/write. Override `chat.agent.sandbox.fileSystem.userConfiguredPaths` (`readwritePaths` / `readonlyPaths` / `deniedPaths`; deny wins). `allowDevToolAccess` (default true) grants PATH tools, toolchain dirs, and shared caches. Legacy `fileSystem.mac|linux|windows` is **ignored** by Agent Host.
 - Network: `chat.agent.sandbox.network.allowNetwork` defaults **true**; `allowLocalNetwork` defaults false; `allowedDomains` / `deniedDomains`. Windows proxy, hostname rules, or credential masking need local-network **on** (loopback listener). Org policy can lock these (`github-copilot-managed-permissions`). Managed sandbox **enforcement** is still Preview in VS Code docs.
 - Also: `mcpServers` / `lspServers` (default true — host-launched only); `credentials.authenticateGit` / `authenticateGh` (default true); `allowUnsandboxedCommands` (default true — one-shot or session bypass). Session-wide bypass drops FS **and** network until you turn sandboxing back on. Pair with a Dev Container for whole-environment isolation (`github-copilot-dev-containers`).
+- **1.146 env-var masking** (`chat.agent.sandbox.credentials.envVars`, Copilot harness): name a variable already in the process environment and list `injectHosts`. Sandboxed tools see a **placeholder**; the local proxy restores the real value only on HTTPS to those hosts (same idea as Copilot CLI `sandbox.credentials.envVars` — `github-copilot-sandbox`). Enter **names**, never secret values. Windows masking needs local-network **on**. macOS/Windows tools that trust the OS CA store also need sandbox CA trust. Empty chat input shows **(sandbox enabled)** when terminal sandboxing is on for that session.
 
 ## Sources
 
-- [Sandbox Copilot Agent Host sessions](https://code.visualstudio.com/docs/agents/run/agent-sandboxing) — accessed 2026-10-08
+- [Sandbox Copilot Agent Host sessions](https://code.visualstudio.com/docs/agents/run/agent-sandboxing) — accessed 2026-11-11
+- [Visual Studio Code 1.146](https://code.visualstudio.com/updates/v1_146) — accessed 2026-11-11
 - [Local sandboxing for GitHub Copilot now generally available](https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/) — accessed 2026-10-08
 - [Understand trust and safety for AI agents](https://code.visualstudio.com/docs/agents/concepts/trust-and-safety) — accessed 2026-09-21
 - [Manage approvals and permissions](https://code.visualstudio.com/docs/agents/run/approvals) — accessed 2026-09-30

@@ -3,8 +3,8 @@ id: vscode-compare-models
 title: VS Code compare models — parallel harness bake-off (Preview)
 tags: [vscode, models, evals, orchestration]
 status: active
-updated: 2026-11-07
-when_to_use: Running the same coding task on multiple VS Code models or harnesses, or enabling a Judge/Synthesizer
+updated: 2026-11-11
+when_to_use: Running the same coding task on multiple VS Code models or harnesses, including Copilot Fusion, or letting an agent launch a bake-off
 ---
 
 ## Summary
@@ -14,16 +14,16 @@ when_to_use: Running the same coding task on multiple VS Code models or harnesse
 ## Notes
 
 - Prerequisites: Agents window; for code comparisons, a Git repo plus an Agent Host harness that supports worktree isolation; for folderless, a harness that supports quick chats. Available models/harnesses follow credentials and enterprise policy (`vscode-agent-harnesses`). If Compare Models is missing on an eligible new session, check `sessions.chat.compareAgents.enabled`. New → pick the repo (or start a quick chat) → model picker → **Compare Models**.
-- Attempts: mix **Copilot / Claude / Codex** when those harnesses are signed in. **Auto and other routers are unavailable.** For thinking-effort models, add the same model twice with different effort. One bounded prompt; **Run N Attempts** starts them concurrently in a tiled grid. Each worktree is the **committed** tree — uncommitted edits, gitignored files, and local deps may be missing (`vscode-agent-worktree-cleanup`).
+- Attempts: mix **Copilot / Claude / Codex** when those harnesses are signed in. **Copilot Fusion** and its effort tiers are eligible for an attempt, the judge, or the synthesizer (`github-copilot-hydrafusion`). **Auto and other routers are unavailable.** For thinking-effort models, add the same model twice with different effort. One bounded prompt; **Run N Attempts** starts them concurrently in a tiled grid. Each worktree is the **committed** tree — uncommitted edits, gitignored files, and local deps may be missing (`vscode-agent-worktree-cleanup`).
 - Worktrees use **Allow all** (no tool-approval prompts). Isolation is edit separation, not a sandbox or network boundary (`vscode-agent-sandboxing`). Review permissions before you run a comparison.
 - Judge (optional): pick a judge model **before** you run. After attempts finish it writes a scorecard (recommendation, time, token usage — tokens can be **lower bounds**, not cost). Rationale and validation evidence are expandable. A judge is **not** proof of correctness (`llm-judge-bias`). Without a judge, compare manually.
-- Synthesize needs **both** a judge and a synthesizer configured up front. It opens a **new** grouped session in another worktree from the verdict + strengths; it does not mutate the recommended attempt or your original tree. Comparison never auto-merges, pushes, or opens a PR. Each attempt + judge + synthesis is separate model usage.
-- **1.146 Insiders** (2026-11-04): related comparison sessions **group** in the Agents window. **Agents** can launch a 2–10 configuration bake-off through tools, then **read** comparison results, judge evaluations, and provider-supplied conversation histories. Eligible model pickers may show a one-time Compare Models intro. Treat agent-launched compare as Insiders until 1.146 ships.
+- Synthesize needs **both** a judge and a synthesizer configured up front. **1.146:** folderless / chat-only bake-offs can also judge and synthesize — synthesis starts only when you click **Synthesize** and opens a new chat without changing the original attempts. Repository synthesis still uses another isolated worktree. Comparison never auto-merges, pushes, or opens a PR. Each attempt + judge + synthesis is separate model usage.
+- **1.146** (Experimental `sessions.chat.compareAgents.tools.enabled`, off by default; needs Compare Models on): an agent in an existing conversation can **discover models, launch a 2–10 bake-off, and read** results plus conversation references. Comparisons inherit that conversation’s workspace and permissions. **Synthesis stays a user click.** Disabling the tools leaves manual Compare Models available.
 
 ## Sources
 
-- [Visual Studio Code 1.146 (Insiders)](https://code.visualstudio.com/updates/v1_146) — accessed 2026-11-07
-- [Compare model results (Preview)](https://code.visualstudio.com/docs/agents/run/compare-models) — accessed 2026-11-07
+- [Visual Studio Code 1.146](https://code.visualstudio.com/updates/v1_146) — accessed 2026-11-11
+- [Compare model results](https://code.visualstudio.com/docs/agents/run/compare-models) — accessed 2026-11-11
 - [Visual Studio Code 1.144 (Insiders)](https://code.visualstudio.com/updates/v1_144) — accessed 2026-10-25
 - [Visual Studio Code 1.143](https://code.visualstudio.com/updates/v1_143) — accessed 2026-10-21
 - [Choose and use an agent harness](https://code.visualstudio.com/docs/agents/run/agent-harnesses) — accessed 2026-10-21

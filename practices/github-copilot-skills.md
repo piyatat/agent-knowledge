@@ -3,8 +3,8 @@ id: github-copilot-skills
 title: GitHub Copilot Agent Skills — SKILL.md, copilot skill, gh skill
 tags: [github, skills, cli, supply-chain]
 status: active
-updated: 2026-11-08
-when_to_use: Adding SKILL.md for Copilot CLI / cloud agent / IDE, or installing with copilot skill / gh skill
+updated: 2026-11-11
+when_to_use: Adding SKILL.md for Copilot CLI / cloud agent / IDE, installing with copilot skill / gh skill, or allowing MCP-served skills in VS Code
 ---
 
 ## Summary
@@ -19,7 +19,7 @@ Copilot **Agent Skills** are on-demand `SKILL.md` folders (Agent Skills open sta
 - `gh skill` (GitHub CLI **≥ 2.90.0**, public preview): `search`, `preview`, `install OWNER/REPO [SKILL][@TAG|@SHA]` (`--pin`, `--agent`, `--scope`), `update` / `update --all`, `publish`. Default install is Copilot + project scope. Skills are **not** GitHub-verified.
 - Code review: prefer a review-shaped directory name (`code-review`); other `.github/skills` still auto-apply when relevant. Review reads skills from the **head** branch (`github-copilot-instructions`). Org/enterprise skills can project via the AHP relay (fetched on invoke). JetBrains local/agent also loads org skill bundles (`github-copilot-jetbrains`).
 - Use instructions for short always-on standards; Skills for long, task-specific workflows (`agent-skills-open-standard`, `skills-dispatch-hygiene`). Collections: `github/awesome-copilot`, `anthropics/skills`.
-- **VS Code 1.146 Insiders** (2026-11-04): Copilot-harness **agent sessions** can load Agent Skills **served by MCP servers** (SEP-2640 / issue #338300). That is MCP `skills/list` transport (`mcp-skills-extension`), not a substitute for repo `.github/skills`. VS Code’s skills doc also lists Copilot CLI, Copilot app, and experimental Codex (workspace `.github/skills/` after the integration is on). Treat MCP-served skills as supply chain until 1.146 ships stable.
+- **VS Code 1.146** stable (2026-11-11, Preview): Copilot-harness sessions can load Agent Skills **served by MCP servers** (SEP-2640). Enable `chat.agentHost.mcpSkills.enabled`, add a skills-capable server, start a **new** Copilot-harness session, then allow **Allow Skills from \<server\>?** (`mcp-skills-extension`). That is MCP `skills/list` transport, not a substitute for repo `.github/skills`. VS Code’s skills doc also lists Copilot CLI, Copilot app, and experimental Codex (workspace `.github/skills/` after the integration is on). Treat MCP-served skills as supply chain (`malicious-skills-supply-chain`).
 
 ## Sources
 
@@ -29,6 +29,6 @@ Copilot **Agent Skills** are on-demand `SKILL.md` folders (Agent Skills open sta
 - [Adding agent skills for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills) — accessed 2026-09-06
 - [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-08
 - [Agent Skills specification](https://agentskills.io/specification) — accessed 2026-09-06
-- [Use Agent Skills in VS Code](https://code.visualstudio.com/docs/agent-customization/agent-skills) — accessed 2026-11-08
-- [Visual Studio Code 1.146 (Insiders)](https://code.visualstudio.com/updates/v1_146) — accessed 2026-11-08
+- [Use Agent Skills in VS Code](https://code.visualstudio.com/docs/agent-customization/agent-skills) — accessed 2026-11-11
+- [Visual Studio Code 1.146](https://code.visualstudio.com/updates/v1_146) — accessed 2026-11-11
 

@@ -2366,4 +2366,23 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Origin release notes | https://cursor.com/docs/release-notes/origin |
 | Origin API changelog | https://cursor.com/docs/api/origin/changelog |
 
+## Daily ingest 2026-11-11 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Visual Studio Code 1.146 | https://code.visualstudio.com/updates/v1_146 |
+| Organize and triage agent sessions | https://code.visualstudio.com/docs/agents/run/sessions/organize-sessions |
+| Move from the Local to the Copilot harness | https://code.visualstudio.com/docs/agents/run/move-to-copilot |
+| Choose an agent harness | https://code.visualstudio.com/docs/agents/run/agent-harnesses |
+| Use Agent Skills in VS Code | https://code.visualstudio.com/docs/agent-customization/agent-skills |
+| Compare model results | https://code.visualstudio.com/docs/agents/run/compare-models |
+| Sandbox Copilot Agent Host sessions | https://code.visualstudio.com/docs/agents/run/agent-sandboxing |
+| Manage approvals and permissions | https://code.visualstudio.com/docs/agents/run/approvals |
+| A More Predictable Release Cycle for MCP | https://blog.modelcontextprotocol.io/posts/mcp-release-cycle/ |
+| GitHub App support for Enterprise Copilot seat management | https://github.blog/changelog/2026-11-10-github-app-support-for-enterprise-copilot-seat-management/ |
+| REST API endpoints for Copilot user management | https://docs.github.com/en/enterprise-cloud@latest/rest/copilot/copilot-user-management |
+| Permissions required for GitHub Apps | https://docs.github.com/en/enterprise-cloud@latest/rest/authentication/permissions-required-for-github-apps |
+| Full-Screen Diagram Viewer and Sign-In to More MCP Servers | https://kiro.dev/changelog/cli/3-2/ |
+| MCP configuration (Kiro) | https://kiro.dev/docs/mcp/configuration/ |
+
 
