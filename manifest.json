@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -2939,7 +2939,7 @@
     {
       "id": "mcp-file-uploads",
       "path": "practices/mcp-file-uploads.md",
-      "title": "MCP file inputs — Files WG replacing SEP-2631 (draft)",
+      "title": "MCP files extension — io.modelcontextprotocol/files (experimental)",
       "tags": [
         "mcp",
         "ux",
@@ -2947,8 +2947,8 @@
         "roadmap"
       ],
       "status": "draft",
-      "updated": "2026-10-07",
-      "when_to_use": "Designing an MCP tool that needs a user-selected file — do not invent a base64-in-prose contract; SEP-2631 is being superseded",
+      "updated": "2026-11-12",
+      "when_to_use": "Designing an MCP tool that needs a user file or returns a large blob — do not invent a base64-in-prose contract; the files extension is still experimental",
       "related": [
         "mcp-elicitation-modes",
         "mcp-content-blocks",
@@ -3219,8 +3219,8 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-10-08",
-      "when_to_use": "Packaging or installing Claude Code skills/hooks/MCP/LSP/mods as a plugin instead of loose .claude/ files",
+      "updated": "2026-11-12",
+      "when_to_use": "Packaging or installing Claude Code skills/hooks/MCP/LSP/mods as a plugin, or pinning engines[\"claude-code\"] in plugin.json",
       "related": [
         "cursor-plugins",
         "agent-skills-open-standard",
@@ -6982,8 +6982,8 @@
         "amazon"
       ],
       "status": "active",
-      "updated": "2026-11-11",
-      "when_to_use": "Installing kiro-cli, choosing V3 vs --v2, or signing in to a CIMD-only remote MCP server without an oauth block",
+      "updated": "2026-11-12",
+      "when_to_use": "Installing kiro-cli, choosing V3 vs --v2, signing in to a CIMD-only remote MCP server, or setting /settings output-details",
       "related": [
         "kiro-steering",
         "kiro-skills",
@@ -7183,8 +7183,8 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-11-08",
-      "when_to_use": "Using Sourcegraph Amp (web, macOS/iOS, CLI), or configuring Amp MCP / AGENTS.md / orbs / GitLab",
+      "updated": "2026-11-12",
+      "when_to_use": "Using Sourcegraph Amp (web, macOS/iOS, CLI), configuring MCP / AGENTS.md / orbs / GitLab, or picking a model after the Dial retired",
       "related": [
         "agents-md-open-format",
         "mcp-output-schema",
@@ -7192,7 +7192,8 @@
         "mcp-progressive-disclosure",
         "cursor-cloud-always-on",
         "amp-spaces",
-        "amp-portals"
+        "amp-portals",
+        "amp-boxes"
       ]
     },
     {
@@ -10305,6 +10306,127 @@
         "github-copilot-model-policy-api",
         "github-copilot-managed-permissions",
         "github-cli-expiring-oauth"
+      ]
+    },
+    {
+      "id": "amp-boxes",
+      "path": "practices/amp-boxes.md",
+      "title": "Amp Boxes — always-on VMs for deployed apps",
+      "tags": [
+        "amp",
+        "hosting",
+        "ops",
+        "security"
+      ],
+      "status": "active",
+      "updated": "2026-11-12",
+      "when_to_use": "Deploying an Amp app with amp boxes deploy, choosing a box vs an orb or portal, or sharing a workspace box",
+      "related": [
+        "amp-agent",
+        "amp-portals",
+        "amp-spaces",
+        "cursor-cloud-apps",
+        "computer-use-containment"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-github",
+      "path": "practices/cursor-agent-sdk-github.md",
+      "title": "Agent SDK githubChannel — PR/CI wakes vs @cursor mentions",
+      "tags": [
+        "cursor",
+        "sdk",
+        "github",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-11-12",
+      "when_to_use": "Wiring githubChannel() in a Cursor Agent SDK bot, replaying a PR, or choosing it instead of @cursor Cloud Agents",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-github-cloud-agents",
+        "cursor-automations",
+        "cursor-agent-sdk-slack"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-slack",
+      "path": "practices/cursor-agent-sdk-slack.md",
+      "title": "Agent SDK slackChannel — mentions, DMs, and channel posts",
+      "tags": [
+        "cursor",
+        "sdk",
+        "slack",
+        "orchestration"
+      ],
+      "status": "active",
+      "updated": "2026-11-12",
+      "when_to_use": "Adding slackChannel() to a Cursor Agent SDK bot, running agent-sdk slack create, or choosing it instead of @cursor Slack Cloud Agents",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-slack-cloud-agents",
+        "cursor-agent-sdk-github",
+        "cursor-agent-sdk-mcp-oauth"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-mcp-oauth",
+      "path": "practices/cursor-agent-sdk-mcp-oauth.md",
+      "title": "Agent SDK host MCP OAuth — mcp oauth vs cursorAccount",
+      "tags": [
+        "cursor",
+        "sdk",
+        "mcp",
+        "auth"
+      ],
+      "status": "active",
+      "updated": "2026-11-12",
+      "when_to_use": "Authorizing a private MCP server for an Agent SDK bot with agent-sdk mcp oauth, or choosing host OAuth vs dashboard cursorAccount",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-mcp-json",
+        "mcp-oauth-scopes",
+        "cursor-agent-sdk-slack"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-otel",
+      "path": "practices/cursor-agent-sdk-otel.md",
+      "title": "Agent SDK OpenTelemetry — OTEL_* on the serve host",
+      "tags": [
+        "cursor",
+        "sdk",
+        "otel",
+        "observability"
+      ],
+      "status": "active",
+      "updated": "2026-11-12",
+      "when_to_use": "Exporting Agent SDK traces/metrics/logs to an OTLP collector, or migrating off serve({ otel })",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-otel-export",
+        "agent-observability-otel",
+        "telemetry-redaction-genai"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-schedules",
+      "path": "practices/cursor-agent-sdk-schedules.md",
+      "title": "Agent SDK schedules vs reminders — cron at deploy vs per-conversation",
+      "tags": [
+        "cursor",
+        "sdk",
+        "cron",
+        "automations"
+      ],
+      "status": "active",
+      "updated": "2026-11-12",
+      "when_to_use": "Adding bot/schedules/* or createReminder to an Agent SDK agent, or choosing them instead of a dashboard Automation",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-automations",
+        "claude-code-scheduled-tasks",
+        "cursor-agent-sdk-mcp-oauth"
       ]
     }
   ]

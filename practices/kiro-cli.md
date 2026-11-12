@@ -3,8 +3,8 @@ id: kiro-cli
 title: Kiro CLI — V3 default harness vs Amazon Q successor
 tags: [kiro, cli, mcp, amazon]
 status: active
-updated: 2026-11-11
-when_to_use: Installing kiro-cli, choosing V3 vs --v2, or signing in to a CIMD-only remote MCP server without an oauth block
+updated: 2026-11-12
+when_to_use: Installing kiro-cli, choosing V3 vs --v2, signing in to a CIMD-only remote MCP server, or setting /settings output-details
 ---
 
 ## Summary
@@ -17,6 +17,7 @@ when_to_use: Installing kiro-cli, choosing V3 vs --v2, or signing in to a CIMD-o
 - First launch after 2.x with saved sessions asks before V3 applies (Continue with V3 / Stay on V2 remind in 14 days / don’t ask). Fresh install starts V3. V3 auto-upgrades V2 agent configs unless `chat.enableAutoAgentUpgrade` is `false`. Separate session stores: V3 can resume a V2 session as a **copy**; V2 cannot open V3. `kiro-cli --v2` or `kiro-cli settings chat.agentEngine v2` to stay on V2.
 - V3-only: cloud sessions (`--cloud`, `--repo`) that keep running after disconnect; `/sandbox` for agent shell; `/autonomous on` (Default agent + sandbox first); Workflows (`chat.enableWorkflows`); Spec (`/spec new`). **3.1** (2026-11-05): V3 `PreCompact` / `PostCompact` hooks (PreCompact can refuse); session credits in `/usage` / status line.
 - **3.2.0** (2026-11-10) MCP OAuth: most servers still use **DCR** (no `oauth` block). If DCR is missing but the authorization server advertises `client_id_metadata_document_supported`, Kiro signs in with its hosted CIMD `https://kiro.dev/oauth/client-metadata.json` (redirect URIs `http://localhost/oauth/callback` and `http://127.0.0.1/oauth/callback`, **no port** — Tableau-class hosts). A configured `oauth.clientId` or `oauth.clientMetadataUrl` still wins; do not set both. Custom CIMD needs a **pinned** `oauth.redirectUri` matching the document’s `redirect_uris` (random loopback ports fail). Issuer matching is exact RFC 8414 (`mcp-oauth-scopes`, `mcp-oauth-discovery-ssrf`). CLI-only confidential clients still need `clientId`+`clientSecret` (Figma). `/mcp auth` / `cancel-auth` / `logout` for stored grants. Wide Mermaid: `Ctrl+]` or `/diagram`.
+- **3.2.1** (2026-11-11) **Output details** is GA: `/settings output-details` (also `/settings verbosity`; bare `/verbosity` opens the density picker when a preset is active). Presets: `collapsed` (one line: title/time/status), `lean` (inline args, no reasoning), `default`, `full` (everything the agent sees, no truncation), or custom rows (tool-call args, subagent steps, thinking, task list, which tool categories keep output, truncation caps). Thinking moved here from `/settings display` (`chat.showThinking`: `expanded` / `collapsed` / `off`). Session-only for Output details changes; `kiro-cli settings chat.showThinking` still applies at next start unless Output details overwrites it. Approvals always show full args / complete file-write diffs regardless of preset. Consecutive finished tool calls fold to one summary row (`Ctrl+O` expands). Also: Linux sign-in without a graphical session and with Identity Center flags; `/model fallback` kept working.
 - Breaking vs 2.x: `use_aws` gone (use MCP); Hooks move to PascalCase / `.kiro/hooks/*.json`; trust → `permissions.yaml`; sub-agent calls also need the **parent** policy; `kiro-cli doctor` → `kiro-cli diagnostic` / `kiro-cli issue`; `autocomplete` / `inline` / `translate` / `theme` / `dashboard` unavailable. `/upgrade-agent` inside a V3 session. `/checkpoint` is V2-only; V3 has `/rewind`.
 - Still: Plan `Shift+Tab`; `/guide`; custom YAML under `.kiro/agents/`; MCP in `~/.kiro/settings/mcp.json` + workspace `.kiro/settings/mcp.json`. Q → Kiro one-time copy of `~/.aws/amazonq` → `~/.kiro`; if both `.kiro` and `.amazonq` exist, **`.kiro` wins**. Steering/skills: `kiro-steering`, `kiro-skills`. Treat MCP output as untrusted (`mcp-server-trust-failures`).
 
@@ -25,6 +26,9 @@ when_to_use: Installing kiro-cli, choosing V3 vs --v2, or signing in to a CIMD-o
 - [Choose an agent harness](https://kiro.dev/docs/cli/agent-harness/) — accessed 2026-11-10
 - [Upgrade from CLI 2.x](https://kiro.dev/docs/cli/v3/) — accessed 2026-11-10
 - [V3 by Default, Classic and Desktop App Retired](https://kiro.dev/changelog/cli/3-0/) — accessed 2026-11-10
+- [Output Details and Sign-In Fixes](https://kiro.dev/changelog/cli/3-2-1/) — accessed 2026-11-12
+- [In-session settings](https://kiro.dev/docs/cli/chat/settings/) — accessed 2026-11-12
+- [Terminal UI](https://kiro.dev/docs/cli/terminal-ui/) — accessed 2026-11-12
 - [Full-Screen Diagram Viewer and Sign-In to More MCP Servers](https://kiro.dev/changelog/cli/3-2/) — accessed 2026-11-11
 - [MCP configuration](https://kiro.dev/docs/mcp/configuration/) — accessed 2026-11-11
 - [Compaction Hooks and Session Credits](https://kiro.dev/changelog/cli/3-1/) — accessed 2026-11-10

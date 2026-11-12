@@ -2385,4 +2385,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Full-Screen Diagram Viewer and Sign-In to More MCP Servers | https://kiro.dev/changelog/cli/3-2/ |
 | MCP configuration (Kiro) | https://kiro.dev/docs/mcp/configuration/ |
 
+## Daily ingest 2026-11-12 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Boxes | https://ampcode.com/docs/boxes |
+| Boxes (news) | https://ampcode.com/news/boxes |
+| Bye Bye, Dial | https://ampcode.com/news/bye-bye-dial |
+| Portals & Desktop | https://ampcode.com/docs/orbs/portals |
+| GitHub agents | https://cursor.com/docs/agent-sdk/guides/github |
+| Slack Agents | https://cursor.com/docs/agent-sdk/guides/slack |
+| Connect a private MCP server with OAuth | https://cursor.com/docs/agent-sdk/guides/mcp-oauth |
+| OpenTelemetry | https://cursor.com/docs/agent-sdk/guides/opentelemetry |
+| OpenTelemetry Export | https://cursor.com/docs/enterprise/opentelemetry-export |
+| Channels | https://cursor.com/docs/agent-sdk/reference/channels |
+| Schedules and reminders | https://cursor.com/docs/agent-sdk/reference/schedules |
+| Agent SDK | https://cursor.com/docs/agent-sdk |
+| Exploring File Uploads and Downloads in MCP | https://blog.modelcontextprotocol.io/posts/exploring-file-uploads-and-downloads-in-mcp/ |
+| experimental-ext-file-uploads | https://github.com/modelcontextprotocol/experimental-ext-file-uploads |
+| Output Details and Sign-In Fixes | https://kiro.dev/changelog/cli/3-2-1/ |
+| In-session settings | https://kiro.dev/docs/cli/chat/settings/ |
+| Terminal UI | https://kiro.dev/docs/cli/terminal-ui/ |
+| v2.1.323 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.323 |
+| CHANGELOG.md (v2.1.323) | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
+
 
