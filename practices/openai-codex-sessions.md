@@ -3,8 +3,8 @@ id: openai-codex-sessions
 title: Codex sessions — resume, fork, archive, /app
 tags: [openai, session, cli, ux]
 status: active
-updated: 2026-11-06
-when_to_use: Resuming, forking, or queueing a Codex TUI chat, opening the agent command center, or continuing in the ChatGPT desktop app
+updated: 2026-11-13
+when_to_use: Resuming, forking, or queueing a Codex TUI chat, using side-chat tabs, opening the agent command center, or continuing in the ChatGPT desktop app
 ---
 
 ## Summary
@@ -19,11 +19,13 @@ Codex **interactive sessions** persist under `$CODEX_HOME/sessions` (default `~/
 - **0.163.0** (2026-10-15): send a follow-up **while Codex is responding** to **steer immediately**; interrupting a turn also stops active Code Mode cells and nested tool calls (`cursor-message-queue` is the Cursor analogue). `/config` searches preferences across categories, applies supported settings immediately, and marks which changes need a restart. `/daemon` restarts a managed background server (warns about interrupted work, then reconnects). Independent **read-only** tools can run in parallel (skill, memory, conversation-history lookups — `parallel-tool-calling`). `/keymap` leader key defaults to **Ctrl+X**; voice mute moves to **F9**. Resume restores the thread’s permissions and network approvals (explicit overrides and current managed policy still win). `/side` returns to an existing side conversation after a thread switch; answers to pending prompts go back to the thread that asked. Daybreak default-on: `openai-codex-daybreak`.
 - **0.166.0** (2026-10-29): `codex queue --thread <SESSION> --message "…"` already queued text on a live thread; **`codex queue --resume`** now **loads an unloaded thread** after queueing so the follow-up actually runs. `--thread` is a UUID or exact name (UUID when names collide); `--remote` works; images are **not** supported. Resume/fork **keep** acknowledged approval and permission settings. Reasoning-token counters persist across resume/fork so compaction does not fire early. TUI shows clearer **safety-block** reasons plus selectable safer follow-ups. Unarchiving a parent restores spawned descendant threads. Diagnostics: `openai-codex-doctor`.
 - **0.167.0** (2026-11-06): `codex agents --no-daemon` opens the **agent command center** with an **embedded** app server (no shared background daemon). Command center and session picker mark **unread** results. Session picker can open a chat on another **connected backend** and **keeps the draft** (not during an active turn). Saved chats stay listed after a model-provider switch; if a chat cannot resume, you can still read its transcript and get an editable prompt for a new chat. Image thumbnails in the composer and clickable local image paths in the transcript (local folders; clickable paths not over SSH). Vertex wizard: `openai-codex-model-providers`. The JSON-RPC harness: `openai-codex-app-server`.
+- **0.169.0** (2026-11-13): opt-in **terminal workspace** supports **multiple side-chat tabs** (keyboard or mouse); saved local side chats reopen after restart. Search older tasks from the agent command center by **name, prompt preview, or working directory**. **Collapse turn details** in the full-screen transcript folds completed activity under each prompt (answers stay visible; tool output stays searchable). **Ctrl+S** in the terminal report editor saves a diagnostic ZIP locally even when uploads are disabled. Opt-in **Cloud connection** (macOS/Linux) can send images, pick model/effort, and archive/restore Cloud conversations from the terminal. `codex exec` keeps project config and MCP **disabled in untrusted directories** even with `--sandbox workspace-write` — pass `--trust` with `exec` or `review` to save project trust (`openai-codex-exec`). “Yes, clear context and implement” now hands the **full approved plan** to the fresh session and keeps the current session open if the handoff fails (`openai-codex-plan-mode`).
 
 ## Sources
 
+- [Codex 0.169.0](https://github.com/openai/codex/releases/tag/rust-v0.169.0) — accessed 2026-11-13
+- [ChatGPT & Codex changelog](https://learn.chatgpt.com/docs/changelog) — accessed 2026-11-13
 - [Codex 0.167.0](https://github.com/openai/codex/releases/tag/rust-v0.167.0) — accessed 2026-11-06
-- [ChatGPT & Codex changelog](https://learn.chatgpt.com/docs/changelog) — accessed 2026-11-06
 - [Codex 0.166.0](https://github.com/openai/codex/releases/tag/rust-v0.166.0) — accessed 2026-10-31
 - [Command line options – Codex CLI](https://developers.openai.com/codex/cli/reference) — accessed 2026-10-31
 - [Slash commands in Codex CLI](https://developers.openai.com/codex/cli/slash-commands) — accessed 2026-10-31

@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Lookup corpus for AI coding agents — curated notes with sources",
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1183,7 +1183,8 @@
         "agent-code-sandboxing",
         "mcp-progressive-disclosure",
         "tool-search-defer-loading",
-        "openclaw-agent"
+        "openclaw-agent",
+        "claude-code-code-mode"
       ]
     },
     {
@@ -3632,8 +3633,8 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-09-03",
-      "when_to_use": "Installing or packaging Codex/ChatGPT plugins (.codex-plugin) instead of Cursor or Claude Code plugin formats",
+      "updated": "2026-11-13",
+      "when_to_use": "Installing or packaging Codex/ChatGPT plugins (.codex-plugin or root plugin.json) instead of Cursor or Claude Code plugin formats",
       "related": [
         "openai-codex-sdk",
         "claude-code-plugins",
@@ -3641,7 +3642,8 @@
         "malicious-skills-supply-chain",
         "openai-codex-skills",
         "openai-codex-apps",
-        "openai-codex-record-replay"
+        "openai-codex-record-replay",
+        "openai-codex-sites"
       ]
     },
     {
@@ -3928,7 +3930,8 @@
         "claude-code-settings",
         "claude-code-plan-mode",
         "claude-code-restricted",
-        "claude-code-mods"
+        "claude-code-mods",
+        "claude-code-code-mode"
       ]
     },
     {
@@ -4079,7 +4082,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-11-10",
+      "updated": "2026-11-13",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4111,7 +4114,8 @@
         "github-copilot-s2s-auth",
         "github-copilot-lsp",
         "github-copilot-code-search",
-        "github-copilot-model-policy-api"
+        "github-copilot-model-policy-api",
+        "github-copilot-model-deprecations"
       ]
     },
     {
@@ -5414,8 +5418,8 @@
         "ux"
       ],
       "status": "active",
-      "updated": "2026-11-06",
-      "when_to_use": "Resuming, forking, or queueing a Codex TUI chat, or continuing in the ChatGPT desktop app",
+      "updated": "2026-11-13",
+      "when_to_use": "Resuming, forking, or queueing a Codex TUI chat, using side-chat tabs, opening the agent command center, or continuing in the ChatGPT desktop app",
       "related": [
         "openai-codex-exec",
         "claude-code-sessions",
@@ -5427,7 +5431,8 @@
         "openai-codex-daybreak",
         "openai-codex-doctor",
         "openai-codex-app-server",
-        "openai-codex-model-providers"
+        "openai-codex-model-providers",
+        "cursor-side-chats"
       ]
     },
     {
@@ -8177,7 +8182,7 @@
     {
       "id": "github-copilot-model-deprecations",
       "path": "practices/github-copilot-model-deprecations.md",
-      "title": "Copilot model deprecations — Oct/Nov 2026 pin updates",
+      "title": "Copilot model deprecations — Oct 2026 through Dec 14 pin updates",
       "tags": [
         "github",
         "models",
@@ -8185,15 +8190,16 @@
         "routing"
       ],
       "status": "active",
-      "updated": "2026-10-19",
-      "when_to_use": "A Copilot chat/agent/completion pin or workflow names a retired model, or an admin model policy still lists Oct/Nov 2026 retirements",
+      "updated": "2026-11-13",
+      "when_to_use": "A Copilot chat/agent/completion pin or workflow names a retired model, or an admin model policy still lists Oct/Nov/Dec 2026 retirements",
       "related": [
         "github-copilot-auto-model",
         "github-copilot-hydrafusion",
         "github-copilot-ide-agent",
         "cursor-router",
         "openai-codex-gpt-55-retirement",
-        "github-copilot-model-policy-api"
+        "github-copilot-model-policy-api",
+        "github-copilot-cli"
       ]
     },
     {
@@ -9487,7 +9493,11 @@
         "agent-eval-harness",
         "cursor-agent-sdk-cloud-agents",
         "cursor-agent-sdk-peers",
-        "cursor-agent-sdk-hillclimbing"
+        "cursor-agent-sdk-hillclimbing",
+        "cursor-agent-sdk-evals",
+        "cursor-agent-sdk-deploy",
+        "cursor-agent-sdk-migrate-v2",
+        "cursor-agent-sdk-debug"
       ]
     },
     {
@@ -9738,7 +9748,7 @@
         "cli"
       ],
       "status": "active",
-      "updated": "2026-11-07",
+      "updated": "2026-11-13",
       "when_to_use": "Directing Copilot from the desktop app instead of VS Code, CLI, or github.com, or contrasting it with those surfaces",
       "related": [
         "github-copilot-projects",
@@ -10264,7 +10274,8 @@
         "cursor-agent-sdk-cloud-agents",
         "agent-eval-harness",
         "llm-judge-bias",
-        "deterministic-tool-mocks"
+        "deterministic-tool-mocks",
+        "cursor-agent-sdk-evals"
       ]
     },
     {
@@ -10427,6 +10438,113 @@
         "cursor-automations",
         "claude-code-scheduled-tasks",
         "cursor-agent-sdk-mcp-oauth"
+      ]
+    },
+    {
+      "id": "claude-code-code-mode",
+      "path": "practices/claude-code-code-mode.md",
+      "title": "Claude Code Code Mode — JS REPL for batched tool calls",
+      "tags": [
+        "claude",
+        "tools",
+        "sandbox",
+        "experimental"
+      ],
+      "status": "active",
+      "updated": "2026-11-13",
+      "when_to_use": "Turning on experimental Code Mode so Claude writes JavaScript that calls tools in one step, or diagnosing why it will not start",
+      "related": [
+        "code-mode-tool-orchestration",
+        "claude-code-permissions",
+        "claude-code-sandboxing",
+        "claude-code-hooks",
+        "claude-code-auto-mode"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-evals",
+      "path": "practices/cursor-agent-sdk-evals.md",
+      "title": "Agent SDK evals — defineEval against the real agent",
+      "tags": [
+        "cursor",
+        "sdk",
+        "evals",
+        "ci"
+      ],
+      "status": "active",
+      "updated": "2026-11-13",
+      "when_to_use": "Authoring evals/*.eval.ts, asserting tools/replies/judges, or running agent-sdk eval in CI",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-agent-sdk-hillclimbing",
+        "agent-eval-harness",
+        "llm-judge-bias",
+        "deterministic-tool-mocks"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-migrate-v2",
+      "path": "practices/cursor-agent-sdk-migrate-v2.md",
+      "title": "Agent SDK migrate — early-alpha architecture v1 to v2",
+      "tags": [
+        "cursor",
+        "sdk",
+        "hosting",
+        "migration"
+      ],
+      "status": "active",
+      "updated": "2026-11-13",
+      "when_to_use": "An Agent SDK project still depends on @cursor/july, architecture v1, bot/storage.ts, or deployment get does not print architecture v2",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-agent-sdk-deploy",
+        "cursor-agent-sdk-debug",
+        "cursor-agent-sdk-peers",
+        "cursor-agent-sdk-slack"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-debug",
+      "path": "practices/cursor-agent-sdk-debug.md",
+      "title": "Agent SDK troubleshooting — playground, 401/403/409, traces",
+      "tags": [
+        "cursor",
+        "sdk",
+        "reliability",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-11-13",
+      "when_to_use": "A local Agent SDK playground is blank, a turn misbehaves, or GitHub/Slack/MCP/schedules fail with 401/403/409",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-agent-sdk-deploy",
+        "cursor-agent-sdk-github",
+        "cursor-agent-sdk-slack",
+        "cursor-agent-sdk-mcp-oauth",
+        "cursor-agent-sdk-schedules"
+      ]
+    },
+    {
+      "id": "cursor-agent-sdk-deploy",
+      "path": "practices/cursor-agent-sdk-deploy.md",
+      "title": "Agent SDK deploy — pushed Git ref to Cursor hosting or serve",
+      "tags": [
+        "cursor",
+        "sdk",
+        "hosting",
+        "ops"
+      ],
+      "status": "active",
+      "updated": "2026-11-13",
+      "when_to_use": "Running agent-sdk deploy, setting hosting.egressDomains/secretNames, rotating the alias token, or self-hosting agent-sdk serve",
+      "related": [
+        "cursor-agent-sdk",
+        "cursor-agent-sdk-migrate-v2",
+        "cursor-agent-sdk-debug",
+        "cursor-agent-sdk-peers",
+        "cursor-privacy-mode",
+        "cursor-automations"
       ]
     }
   ]

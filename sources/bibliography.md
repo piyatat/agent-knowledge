@@ -2409,4 +2409,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | v2.1.323 release notes | https://github.com/anthropics/claude-code/releases/tag/v2.1.323 |
 | CHANGELOG.md (v2.1.323) | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
 
+## Daily ingest 2026-11-13 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Run tool calls from code with Code Mode | https://code.claude.com/docs/en/code-mode |
+| v2.1.323 | https://github.com/anthropics/claude-code/releases/tag/v2.1.323 |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Evals | https://cursor.com/docs/agent-sdk/evals |
+| Evals reference | https://cursor.com/docs/agent-sdk/reference/evals |
+| Hillclimbing | https://cursor.com/docs/agent-sdk/hillclimbing |
+| Agent SDK CLI | https://cursor.com/docs/agent-sdk/reference/cli |
+| Migrate an early-alpha project to architecture v2 | https://cursor.com/docs/agent-sdk/guides/migrate |
+| Deploy an Agent SDK project | https://cursor.com/docs/agent-sdk/deployment |
+| Fix common agent problems | https://cursor.com/docs/agent-sdk/troubleshooting |
+| Agent SDK | https://cursor.com/docs/agent-sdk |
+| GitHub Enterprise Server support in the GitHub Copilot app | https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app/ |
+| Signing in to GitHub Enterprise Server in the GitHub Copilot app | https://docs.github.com/en/enterprise-server@3.22/copilot/copilot-on-ghes/sign-in-on-copilot-app |
+| Upcoming deprecation of selected GitHub Copilot models in December | https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december/ |
+| Gemini 4 Hydrogen in GitHub Copilot | https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/ |
+| Codex 0.169.0 | https://github.com/openai/codex/releases/tag/rust-v0.169.0 |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+| Plugins | https://developers.openai.com/codex/plugins |
+| Package your plugin | https://developers.openai.com/plugins/build/plugins |
+
 
