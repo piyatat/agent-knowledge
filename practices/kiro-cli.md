@@ -3,8 +3,8 @@ id: kiro-cli
 title: Kiro CLI — V3 default harness vs Amazon Q successor
 tags: [kiro, cli, mcp, amazon]
 status: active
-updated: 2026-11-12
-when_to_use: Installing kiro-cli, choosing V3 vs --v2, signing in to a CIMD-only remote MCP server, or setting /settings output-details
+updated: 2026-11-14
+when_to_use: Installing kiro-cli, choosing V3 vs --v2, or replacing an Amazon Q Developer IDE plugin before its 2027-04-30 end of support
 ---
 
 ## Summary
@@ -20,6 +20,7 @@ when_to_use: Installing kiro-cli, choosing V3 vs --v2, signing in to a CIMD-only
 - **3.2.1** (2026-11-11) **Output details** is GA: `/settings output-details` (also `/settings verbosity`; bare `/verbosity` opens the density picker when a preset is active). Presets: `collapsed` (one line: title/time/status), `lean` (inline args, no reasoning), `default`, `full` (everything the agent sees, no truncation), or custom rows (tool-call args, subagent steps, thinking, task list, which tool categories keep output, truncation caps). Thinking moved here from `/settings display` (`chat.showThinking`: `expanded` / `collapsed` / `off`). Session-only for Output details changes; `kiro-cli settings chat.showThinking` still applies at next start unless Output details overwrites it. Approvals always show full args / complete file-write diffs regardless of preset. Consecutive finished tool calls fold to one summary row (`Ctrl+O` expands). Also: Linux sign-in without a graphical session and with Identity Center flags; `/model fallback` kept working.
 - Breaking vs 2.x: `use_aws` gone (use MCP); Hooks move to PascalCase / `.kiro/hooks/*.json`; trust → `permissions.yaml`; sub-agent calls also need the **parent** policy; `kiro-cli doctor` → `kiro-cli diagnostic` / `kiro-cli issue`; `autocomplete` / `inline` / `translate` / `theme` / `dashboard` unavailable. `/upgrade-agent` inside a V3 session. `/checkpoint` is V2-only; V3 has `/rewind`.
 - Still: Plan `Shift+Tab`; `/guide`; custom YAML under `.kiro/agents/`; MCP in `~/.kiro/settings/mcp.json` + workspace `.kiro/settings/mcp.json`. Q → Kiro one-time copy of `~/.aws/amazonq` → `~/.kiro`; if both `.kiro` and `.amazonq` exist, **`.kiro` wins**. Steering/skills: `kiro-steering`, `kiro-skills`. Treat MCP output as untrusted (`mcp-server-trust-failures`).
+- **IDE plugins:** AWS ends support for **Amazon Q Developer IDE plugins on 2027-04-30**. Inline suggestions, chat, and code generation for that product move to **Kiro** (IDE or this CLI). The Q CLI entry points already are this CLI. Do not start new work on the Q IDE plugin. AWS console chat is a separate product (AWS assistant user guide, moved 2026-11-05), not `kiro-cli`.
 
 ## Sources
 
@@ -36,3 +37,4 @@ when_to_use: Installing kiro-cli, choosing V3 vs --v2, signing in to a CIMD-only
 - [Kiro CLI setup](https://kiro.dev/docs/cli/setup/) — accessed 2026-11-10
 - [Kiro MCP](https://kiro.dev/docs/mcp/) — accessed 2026-09-22
 - [Upgrading from Q CLI](https://kiro.dev/docs/upgrade-guides/migrating-from-q/) — accessed 2026-09-22
+- [Amazon Q Developer IDE plugins end of support](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-developer-ide-end-of-support.html) — accessed 2026-11-14

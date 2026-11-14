@@ -2542,4 +2542,45 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Projects (Cursor docs) | https://cursor.com/docs/agent/projects |
 | Cursor Projects is now multiplayer | https://cursor.com/blog/projects-multiplayer |
 
+## Daily ingest 2026-11-14 (directory gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Pi quickstart | https://pi.dev/docs/latest/quickstart |
+| Run Pi safely | https://pi.dev/docs/latest/security |
+| Pi providers | https://pi.dev/docs/latest/providers |
+| Pi packages | https://pi.dev/docs/latest/packages |
+| Pi command line | https://pi.dev/docs/latest/cli |
+| Pi configuration | https://pi.dev/docs/latest/configuration |
+| Pi (GitHub) | https://github.com/earendil-works/pi |
+| Grok Build overview | https://docs.x.ai/build/overview |
+| Grok Build permissions | https://docs.x.ai/build/features/permissions |
+| Grok Build sandbox | https://docs.x.ai/build/features/sandbox |
+| Grok Build skills, plugins, and marketplaces | https://docs.x.ai/build/features/skills-plugins-marketplaces |
+| Grok Build AGENTS.md | https://docs.x.ai/build/features/project-rules |
+| Grok Build headless and scripting | https://docs.x.ai/build/cli/headless-scripting |
+| Grok Build CLI reference | https://docs.x.ai/build/cli/reference |
+| Grok Build enterprise deployments | https://docs.x.ai/build/enterprise |
+| Grok Build product page | https://x.ai/build |
+| Install Qodo on GitHub | https://docs.qodo.ai/install-qodo/github |
+| Qodo git provider feature support | https://docs.qodo.ai/install-qodo/git-provider-feature-support |
+| Qodo pull request command reference | https://docs.qodo.ai/code-review/pr-command-and-interaction-reference |
+| Qodo Agentic Toolbox overview | https://docs.qodo.ai/agentic-toolbox/agentic-toolbox-overview |
+| Install the Qodo Agentic Toolbox CLI | https://docs.qodo.ai/agentic-toolbox/cli |
+| Qodo pricing and usage | https://docs.qodo.ai/pricing-and-usage |
+| Qodo Merge is now part of the platform | https://www.qodo.ai/formerly-qodo-merge/ |
+| E2B documentation | https://docs.e2b.dev/ |
+| E2B sandbox lifecycle | https://docs.e2b.dev/sandbox |
+| E2B sandbox lifetime | https://docs.e2b.dev/faq/sandbox-lifetime |
+| E2B API key | https://docs.e2b.dev/api-key |
+| E2B billing and limits | https://docs.e2b.dev/billing |
+| E2B sandbox price | https://docs.e2b.dev/faq/calculate-sandbox-price |
+| OpenAI Agents SDK on E2B | https://docs.e2b.dev/agents/openai-agents-sdk |
+| Cloudflare Agents | https://developers.cloudflare.com/agents/ |
+| Build your first Durable Agent | https://developers.cloudflare.com/agents/getting-started/quick-start/ |
+| Cloudflare Pi harness | https://developers.cloudflare.com/agents/harnesses/pi/ |
+| Cloudflare Agents limits | https://developers.cloudflare.com/agents/platform/limits/ |
+| Cloudflare Agent class | https://developers.cloudflare.com/agents/agent-class/ |
+| Amazon Q Developer IDE plugins end of support | https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-developer-ide-end-of-support.html |
+
 

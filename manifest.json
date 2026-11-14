@@ -388,7 +388,8 @@
         "human-in-the-loop-approvals",
         "tool-call-failures",
         "code-mode-tool-orchestration",
-        "cursor-sandbox-json"
+        "cursor-sandbox-json",
+        "e2b-sandboxes"
       ]
     },
     {
@@ -6435,7 +6436,8 @@
         "prompt-injection-agent-defense",
         "cursor-cloud-always-on",
         "cursor-privacy-mode",
-        "cursor-cloud-apps"
+        "cursor-cloud-apps",
+        "grok-build"
       ]
     },
     {
@@ -7321,8 +7323,8 @@
         "amazon"
       ],
       "status": "active",
-      "updated": "2026-11-12",
-      "when_to_use": "Installing kiro-cli, choosing V3 vs --v2, signing in to a CIMD-only remote MCP server, or setting /settings output-details",
+      "updated": "2026-11-14",
+      "when_to_use": "Installing kiro-cli, choosing V3 vs --v2, or replacing an Amazon Q Developer IDE plugin before its 2027-04-30 end of support",
       "related": [
         "kiro-steering",
         "kiro-skills",
@@ -11187,7 +11189,7 @@
     {
       "id": "gemini-code-assist",
       "path": "practices/gemini-code-assist.md",
-      "title": "Gemini Code Assist — IDE agent after the consumer cutoff",
+      "title": "Gemini Code Assist \u2014 IDE agent after the consumer cutoff",
       "tags": [
         "gemini",
         "google",
@@ -11209,7 +11211,7 @@
     {
       "id": "jetbrains-ai-assistant",
       "path": "practices/jetbrains-ai-assistant.md",
-      "title": "JetBrains AI Assistant — IDE chat, agents, and ACP registry",
+      "title": "JetBrains AI Assistant \u2014 IDE chat, agents, and ACP registry",
       "tags": [
         "jetbrains",
         "acp",
@@ -11233,7 +11235,7 @@
     {
       "id": "coderabbit-review",
       "path": "practices/coderabbit-review.md",
-      "title": "CodeRabbit — hosted pull-request review",
+      "title": "CodeRabbit \u2014 hosted pull-request review",
       "tags": [
         "review",
         "github",
@@ -11248,13 +11250,14 @@
         "github-copilot-code-review",
         "cursor-bugbot-review",
         "openai-codex-review",
-        "human-in-the-loop-approvals"
+        "human-in-the-loop-approvals",
+        "qodo-platform"
       ]
     },
     {
       "id": "mcp-official-registry",
       "path": "practices/mcp-official-registry.md",
-      "title": "Official MCP Registry — publish and discover server metadata",
+      "title": "Official MCP Registry \u2014 publish and discover server metadata",
       "tags": [
         "mcp",
         "discovery",
@@ -11275,7 +11278,7 @@
     {
       "id": "augment-auggie",
       "path": "practices/augment-auggie.md",
-      "title": "Auggie CLI — Augment's terminal coding agent",
+      "title": "Auggie CLI \u2014 Augment's terminal coding agent",
       "tags": [
         "augment",
         "cli",
@@ -11299,7 +11302,7 @@
     {
       "id": "augment-cosmos",
       "path": "practices/augment-cosmos.md",
-      "title": "Augment Cosmos — hosted agents, experts, and triggers",
+      "title": "Augment Cosmos \u2014 hosted agents, experts, and triggers",
       "tags": [
         "augment",
         "hosting",
@@ -11322,7 +11325,7 @@
     {
       "id": "mistral-vibe",
       "path": "practices/mistral-vibe.md",
-      "title": "Mistral Vibe Code — CLI, VS Code, web, and ACP",
+      "title": "Mistral Vibe Code \u2014 CLI, VS Code, web, and ACP",
       "tags": [
         "mistral",
         "cli",
@@ -11346,7 +11349,7 @@
     {
       "id": "greptile-review",
       "path": "practices/greptile-review.md",
-      "title": "Greptile — hosted pull-request review and local CLI",
+      "title": "Greptile \u2014 hosted pull-request review and local CLI",
       "tags": [
         "review",
         "github",
@@ -11369,7 +11372,7 @@
     {
       "id": "llms-txt",
       "path": "practices/llms-txt.md",
-      "title": "llms.txt — curated Markdown index for agents",
+      "title": "llms.txt \u2014 curated Markdown index for agents",
       "tags": [
         "docs",
         "discovery",
@@ -11385,6 +11388,119 @@
         "webmcp-browser-tools",
         "agents-md-open-format",
         "mcp-server-cards"
+      ]
+    },
+    {
+      "id": "pi-coding-agent",
+      "path": "practices/pi-coding-agent.md",
+      "title": "Pi \u2014 minimal terminal coding agent",
+      "tags": [
+        "pi",
+        "cli",
+        "skills",
+        "extensions"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Running a minimal terminal coding agent you extend with packages, or embedding the Pi SDK",
+      "related": [
+        "openclaw-agent",
+        "agents-md-open-format",
+        "agent-skills-open-standard",
+        "cloudflare-agents",
+        "prompt-injection-agent-defense",
+        "aider-agent"
+      ]
+    },
+    {
+      "id": "grok-build",
+      "path": "practices/grok-build.md",
+      "title": "Grok Build \u2014 xAI terminal coding agent",
+      "tags": [
+        "grok",
+        "cli",
+        "acp",
+        "permissions"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Running xAI's coding agent in a terminal, CI job, or ACP editor instead of Cursor Grok Bot",
+      "related": [
+        "cursor-grok-bot",
+        "agent-client-protocol-acp",
+        "agents-md-open-format",
+        "claude-code-headless",
+        "openai-codex-exec",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "qodo-platform",
+      "path": "practices/qodo-platform.md",
+      "title": "Qodo \u2014 hosted pull-request review and Agentic Toolbox",
+      "tags": [
+        "qodo",
+        "review",
+        "github",
+        "skills"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Adding Qodo review on a pull request, or giving a local coding agent Qodo skills",
+      "related": [
+        "coderabbit-review",
+        "greptile-review",
+        "github-copilot-code-review",
+        "agent-skills-open-standard",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "e2b-sandboxes",
+      "path": "practices/e2b-sandboxes.md",
+      "title": "E2B \u2014 pauseable Linux VMs for agent code",
+      "tags": [
+        "e2b",
+        "sandbox",
+        "isolation",
+        "sdk"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Running agent-generated code in an isolated Linux VM you can pause and resume",
+      "related": [
+        "agent-code-sandboxing",
+        "openai-agents-sdk",
+        "computer-use-containment",
+        "cloudflare-agents",
+        "openai-sandbox-agents"
+      ]
+    },
+    {
+      "id": "cloudflare-agents",
+      "path": "practices/cloudflare-agents.md",
+      "title": "Cloudflare Agents \u2014 durable agents on Workers",
+      "tags": [
+        "cloudflare",
+        "hosting",
+        "durable",
+        "pi"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Hosting a durable agent with SQLite state and schedules on Cloudflare",
+      "related": [
+        "pi-coding-agent",
+        "durable-agent-workflows",
+        "foundry-agent-service",
+        "bedrock-agentcore",
+        "e2b-sandboxes",
+        "prompt-injection-agent-defense"
       ]
     }
   ]

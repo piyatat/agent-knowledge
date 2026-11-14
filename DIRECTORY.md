@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (71)
+## Tools (73)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -41,7 +41,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [cursor-sdk-typescript](practices/cursor-sdk-typescript.md) | Scripting Cursor from Node/Bun with @cursor/sdk, or replacing the local agent system prompt | cursor, sdk, orchestration, sandbox | active |
 | [jetbrains-junie](practices/jetbrains-junie.md) | Using Junie inside a JetBrains IDE (AI Chat or Junie tool window), or contrasting it with Cursor / Copilot /… | jetbrains, orchestration, mcp, agents-md | active |
 | [jetbrains-junie-cli](practices/jetbrains-junie-cli.md) | Running Junie from a terminal or CI, or connecting Junie CLI to a JetBrains IDE over ACP | jetbrains, cli, ci, acp | active |
-| [kiro-cli](practices/kiro-cli.md) | Installing kiro-cli, choosing V3 vs --v2, signing in to a CIMD-only remote MCP server, or setting /settings o… | kiro, cli, mcp, amazon | active |
+| [kiro-cli](practices/kiro-cli.md) | Installing kiro-cli, choosing V3 vs --v2, or replacing an Amazon Q Developer IDE plugin before its 2027-04-30… | kiro, cli, mcp, amazon | active |
 | [windsurf-cascade](practices/windsurf-cascade.md) | Configuring Cascade or Devin Desktop rules/MCP, or distinguishing Cascade from Devin Local, CLI, Spaces, and… | windsurf, mcp, agents-md, rules | active |
 | [cline-agent](practices/cline-agent.md) | Configuring Cline (VS Code / Desktop / CLI) rules or skills, or adding MCP via cline mcp | cline, skills, mcp, agents-md | active |
 | [continue-agents](practices/continue-agents.md) | Encountering leftover Continue config.yaml / .continue/rules, or deciding not to start new work on Continue | continue, mcp, rules, orchestration | active |
@@ -81,8 +81,10 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [jetbrains-ai-assistant](practices/jetbrains-ai-assistant.md) | Choosing an agent inside a JetBrains IDE, or installing one from the ACP registry versus Junie or the Copilot… | jetbrains, acp, ux, orchestration | active |
 | [augment-auggie](practices/augment-auggie.md) | Running Augment's coding agent in a terminal, CI job, or ACP editor instead of Cosmos cloud | augment, cli, acp, permissions | active |
 | [mistral-vibe](practices/mistral-vibe.md) | Running Mistral's coding agent locally, in VS Code, over ACP, or as a GitHub sandbox session | mistral, cli, acp, skills | active |
+| [pi-coding-agent](practices/pi-coding-agent.md) | Running a minimal terminal coding agent you extend with packages, or embedding the Pi SDK | pi, cli, skills, extensions | active |
+| [grok-build](practices/grok-build.md) | Running xAI's coding agent in a terminal, CI job, or ACP editor instead of Cursor Grok Bot | grok, cli, acp, permissions | active |
 
-## Services (62)
+## Services (65)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -150,6 +152,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [mcp-official-registry](practices/mcp-official-registry.md) | Publishing or discovering a public MCP server's install metadata | mcp, discovery, supply-chain, registry | active |
 | [augment-cosmos](practices/augment-cosmos.md) | Waking an Augment agent on a PR, ticket, Slack message, or schedule in a cloud or self-hosted sandbox | augment, hosting, automations, sandbox | active |
 | [greptile-review](practices/greptile-review.md) | Adding a hosted reviewer on GitHub, GitLab, Bitbucket, or Cursor Origin, or reviewing a local branch with the… | review, github, gitlab, credits | active |
+| [qodo-platform](practices/qodo-platform.md) | Adding Qodo review on a pull request, or giving a local coding agent Qodo skills | qodo, review, github, skills | active |
+| [e2b-sandboxes](practices/e2b-sandboxes.md) | Running agent-generated code in an isolated Linux VM you can pause and resume | e2b, sandbox, isolation, sdk | active |
+| [cloudflare-agents](practices/cloudflare-agents.md) | Hosting a durable agent with SQLite state and schedules on Cloudflare | cloudflare, hosting, durable, pi | active |
 
 ## Protocols and standards (19)
 
