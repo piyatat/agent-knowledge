@@ -2482,4 +2482,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Configure the sandboxed Bash tool | https://code.claude.com/docs/en/sandboxing |
 | All settings — sandbox.autoAllowBashIfSandboxed | https://code.claude.com/docs/en/settings-reference |
 
+## Daily ingest 2026-11-14 (directory gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Gemini Code Assist consumer accounts | https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals |
+| Agent mode overview | https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode |
+| Troubleshoot access to Gemini Code Assist features | https://docs.cloud.google.com/gemini/docs/codeassist/troubleshoot |
+| Sunset of the consumer Gemini Code Assist GitHub app | https://developers.google.com/gemini-code-assist/docs/deprecations/consumer-code-review |
+| Code with Gemini Code Assist Standard and Enterprise | https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini |
+| AI Assistant in JetBrains IDEs | https://www.jetbrains.com/help/idea/ai-assistant-in-jetbrains-ides.html |
+| Agent Client Protocol (ACP) — AI Assistant | https://www.jetbrains.com/help/ai-assistant/acp.html |
+| What's the difference between Junie and AI Assistant? | https://support.jetbrains.com/hc/en-us/articles/40036414168722-What-s-the-difference-between-Junie-and-AI-Assistant |
+| Junie by JetBrains | https://www.jetbrains.com/help/ai-assistant/junie-agent.html |
+| CodeRabbit platform overview | https://docs.coderabbit.ai/platforms/overview |
+| CodeRabbit plans and pricing | https://docs.coderabbit.ai/management/plans |
+| CodeRabbit configuration V2 | https://docs.coderabbit.ai/reference/configuration |
+| CodeRabbit automatic approvals | https://docs.coderabbit.ai/pr-reviews/automatic-approvals |
+| CodeRabbit approval policies | https://docs.coderabbit.ai/pr-reviews/approval-policies |
+| CodeRabbit pull request reviews | https://docs.coderabbit.ai/overview/pull-request-review |
+| The MCP Registry | https://modelcontextprotocol.io/registry/about |
+| How to authenticate when publishing | https://modelcontextprotocol.io/registry/authentication |
+| Quickstart: publish a server | https://modelcontextprotocol.io/registry/quickstart |
+| Publishing remote servers | https://modelcontextprotocol.io/registry/remote-servers |
+| Automate publishing with GitHub Actions | https://modelcontextprotocol.io/registry/github-actions |
+| Official MCP Registry API | https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/api/official-registry-api.md |
+| Codex CLI 0.169.0 | https://github.com/openai/codex/releases/tag/rust-v0.169.0 |
+| ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
+
 

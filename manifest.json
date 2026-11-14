@@ -1280,9 +1280,10 @@
         "ops"
       ],
       "status": "active",
-      "updated": "2026-08-22",
+      "updated": "2026-11-14",
       "when_to_use": "Installing, pinning, or allowlisting MCP servers from the public registry or npx/uvx",
       "related": [
+        "mcp-official-registry",
         "mcp-server-trust-failures",
         "mcp-oauth-scopes",
         "agent-code-sandboxing"
@@ -1472,7 +1473,8 @@
         "cursor-bitbucket-cloud-agents",
         "cursor-agent-review",
         "cursor-origin",
-        "cursor-origin-code-tours"
+        "cursor-origin-code-tours",
+        "coderabbit-review"
       ]
     },
     {
@@ -4729,7 +4731,8 @@
         "cursor-security-agents",
         "github-secret-detection-model",
         "github-copilot-usage-metrics-review",
-        "github-copilot-code-review-api"
+        "github-copilot-code-review-api",
+        "coderabbit-review"
       ]
     },
     {
@@ -4919,7 +4922,8 @@
         "openai-codex-sandbox",
         "openai-codex-github-action",
         "github-copilot-code-review",
-        "cursor-bugbot-review"
+        "cursor-bugbot-review",
+        "coderabbit-review"
       ]
     },
     {
@@ -5650,7 +5654,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-12",
+      "updated": "2026-11-14",
       "when_to_use": "Scripting Codex with codex exec / codex e, picking a cyber access program, or resuming a headless exec session",
       "related": [
         "openai-codex-github-action",
@@ -6047,7 +6051,8 @@
         "github-copilot-skills",
         "github-copilot-instructions",
         "github-copilot-hydrafusion",
-        "github-copilot-jetbrains-air"
+        "github-copilot-jetbrains-air",
+        "jetbrains-ai-assistant"
       ]
     },
     {
@@ -7277,7 +7282,8 @@
         "cursor-jetbrains-acp",
         "claude-code-jetbrains",
         "agent-client-protocol-acp",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "jetbrains-ai-assistant"
       ]
     },
     {
@@ -7839,9 +7845,10 @@
         "plugins"
       ],
       "status": "active",
-      "updated": "2026-10-11",
+      "updated": "2026-11-14",
       "when_to_use": "Configuring Antigravity (2.0 / CLI / IDE) rules, skills, MCP, or plugins instead of Gemini CLI settings.json",
       "related": [
+        "gemini-code-assist",
         "gemini-cli-gemini-md",
         "gemini-cli-mcp",
         "gemini-cli-skills",
@@ -11174,6 +11181,94 @@
         "gemini-cli-remote-subagents",
         "cursor-agent-sdk-peers",
         "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "gemini-code-assist",
+      "path": "practices/gemini-code-assist.md",
+      "title": "Gemini Code Assist — IDE agent after the consumer cutoff",
+      "tags": [
+        "gemini",
+        "google",
+        "ux",
+        "deprecation"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Using Gemini inside VS Code or IntelliJ, or migrating a consumer Code Assist account after the June 2026 cutoff",
+      "related": [
+        "antigravity-cli",
+        "gemini-cli-extensions",
+        "gemini-cli-gemini-md",
+        "google-jules",
+        "google-adk"
+      ]
+    },
+    {
+      "id": "jetbrains-ai-assistant",
+      "path": "practices/jetbrains-ai-assistant.md",
+      "title": "JetBrains AI Assistant — IDE chat, agents, and ACP registry",
+      "tags": [
+        "jetbrains",
+        "acp",
+        "ux",
+        "orchestration"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Choosing an agent inside a JetBrains IDE, or installing one from the ACP registry versus Junie or the Copilot plugin",
+      "related": [
+        "jetbrains-junie",
+        "jetbrains-junie-cli",
+        "github-copilot-jetbrains",
+        "github-copilot-jetbrains-air",
+        "claude-code-jetbrains",
+        "cursor-jetbrains-acp",
+        "agent-client-protocol-acp"
+      ]
+    },
+    {
+      "id": "coderabbit-review",
+      "path": "practices/coderabbit-review.md",
+      "title": "CodeRabbit — hosted pull-request review",
+      "tags": [
+        "review",
+        "github",
+        "gitlab",
+        "ci"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Adding a hosted pull-request reviewer on GitHub, GitLab, Bitbucket, or Azure DevOps",
+      "related": [
+        "github-copilot-code-review",
+        "cursor-bugbot-review",
+        "openai-codex-review",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "mcp-official-registry",
+      "path": "practices/mcp-official-registry.md",
+      "title": "Official MCP Registry — publish and discover server metadata",
+      "tags": [
+        "mcp",
+        "discovery",
+        "supply-chain",
+        "registry"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Publishing or discovering a public MCP server's install metadata",
+      "related": [
+        "mcp-registry-admission",
+        "mcp-server-trust-failures",
+        "mcp-server-discover",
+        "malicious-skills-supply-chain"
       ]
     }
   ]

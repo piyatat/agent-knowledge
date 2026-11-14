@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (67)
+## Tools (69)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -77,8 +77,10 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [microsoft-agent-framework](practices/microsoft-agent-framework.md) | Building a .NET or Python agent after Semantic Kernel or AutoGen, or hosting one on Foundry | microsoft, sdk, orchestration, foundry | active |
 | [github-copilot-sdk](practices/github-copilot-sdk.md) | Embedding Copilot's coding agent in an app instead of spawning the CLI | github, sdk, copilot, orchestration | active |
 | [a2a-cli](practices/a2a-cli.md) | Calling an A2A agent from a shell, CI job, or coding harness without writing SDK code | a2a, cli, orchestration, interoperability | active |
+| [gemini-code-assist](practices/gemini-code-assist.md) | Using Gemini inside VS Code or IntelliJ, or migrating a consumer Code Assist account after the June 2026 cuto… | gemini, google, ux, deprecation | active |
+| [jetbrains-ai-assistant](practices/jetbrains-ai-assistant.md) | Choosing an agent inside a JetBrains IDE, or installing one from the ACP registry versus Junie or the Copilot… | jetbrains, acp, ux, orchestration | active |
 
-## Services (58)
+## Services (60)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -142,6 +144,8 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [gitlab-duo-agent-platform](practices/gitlab-duo-agent-platform.md) | Choosing a GitLab Duo flow, running duo / glab duo, or starting work from Slack @GitLab | gitlab, orchestration, cli, mcp | active |
 | [cursor-cloud-apps](practices/cursor-cloud-apps.md) | Asking a Cloud Agent to build, preview, or publish a live web app, or contrasting it with Origin marketplace… | cursor, hosting, security, ux | active |
 | [foundry-agent-service](practices/foundry-agent-service.md) | Hosting a prompt or containerized agent on Azure without running your own loop | microsoft, foundry, hosting, mcp | active |
+| [coderabbit-review](practices/coderabbit-review.md) | Adding a hosted pull-request reviewer on GitHub, GitLab, Bitbucket, or Azure DevOps | review, github, gitlab, ci | active |
+| [mcp-official-registry](practices/mcp-official-registry.md) | Publishing or discovering a public MCP server's install metadata | mcp, discovery, supply-chain, registry | active |
 
 ## Protocols and standards (18)
 

@@ -2,14 +2,15 @@
 id: antigravity-cli
 title: Google Antigravity — AGENTS.md, skills, MCP, plugins
 tags: [antigravity, gemini, cli, mcp, plugins]
+kind: tool
 status: active
-updated: 2026-10-11
+updated: 2026-11-14
 when_to_use: Configuring Antigravity (2.0 / CLI / IDE) rules, skills, MCP, or plugins instead of Gemini CLI settings.json
 ---
 
 ## Summary
 
-**Antigravity** is Google’s coding-agent surface (Antigravity 2.0, **Antigravity CLI** `agy`, Antigravity IDE). Always-on rules are **`AGENTS.md` / `GEMINI.md`** plus `.agents/rules/`. Skills are `.agents/skills/`. MCP is `mcp_config.json` with **`serverUrl`** for remotes. **Plugins** (`plugin.json`) bundle skills, agents, rules, MCP, and hooks; CLI **1.3.2+** installs them from `antigravity-plugins-official` or a local path. Successor path for some Gemini CLI accounts (`gemini-cli-gemini-md`) — do not assume `~/.gemini/settings.json` MCP keys still apply.
+**Antigravity** is Google’s coding-agent surface (Antigravity 2.0, **Antigravity CLI** `agy`, Antigravity IDE). Always-on rules are **`AGENTS.md` / `GEMINI.md`** plus `.agents/rules/`. Skills are `.agents/skills/`. MCP is `mcp_config.json` with **`serverUrl`** for remotes. **Plugins** (`plugin.json`) bundle skills, agents, rules, MCP, and hooks; CLI **1.3.2+** installs them from `antigravity-plugins-official` or a local path. Since **2026-06-18**, Gemini Code Assist IDE extensions and Gemini CLI stopped serving **individuals, Google AI Pro, and Google AI Ultra**, including **Login with Google**; those accounts migrate here (`gemini-code-assist`). Standard and Enterprise Code Assist stay on a separate schedule. Do not assume `~/.gemini/settings.json` MCP keys still apply (`gemini-cli-gemini-md`).
 
 ## Notes
 
@@ -27,3 +28,4 @@ when_to_use: Configuring Antigravity (2.0 / CLI / IDE) rules, skills, MCP, or pl
 - [MCP](https://antigravity.google/docs/mcp/) — accessed 2026-09-25
 - [MCP in Antigravity CLI](https://antigravity.google/docs/cli/mcp/) — accessed 2026-09-25
 - [Radar brief — 2026-10-10](https://www.devagentradar.com/insights/radar-brief-2026-10-10) — accessed 2026-10-11
+- [Gemini Code Assist consumer accounts](https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals) — accessed 2026-11-14
