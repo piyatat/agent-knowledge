@@ -2,8 +2,9 @@
 id: github-copilot-cli
 title: GitHub Copilot CLI — terminal agent vs cloud coding agent
 tags: [github, cli, permissions, sandbox]
+kind: tool
 status: active
-updated: 2026-11-13
+updated: 2026-11-14
 when_to_use: Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent
 ---
 
@@ -33,6 +34,7 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - **1.0.107** (2026-11-06): `/code` opens the current session in VS Code. Fusion **tier** is a `copilot config` setting (`github-copilot-hydrafusion`). `/settings` is the unified dashboard (global search across settings and local resources) for all users. Opt-in **session management tools** and `@` mentions for opted-in **local** sessions. `COPILOT_SESSION_CWD` expands LSP and local MCP configs (`github-copilot-lsp`, `github-copilot-mcp`). GPT-6.1 Terra appears under New models when the account has it. Sandbox **extensions** run extension processes inside the sandbox (`github-copilot-sandbox`). `--no-ask-user` / `askUser` only remove the `ask_user` **form** — the agent can still ask in replies. `copilot --resume` gives up task lookup after **10s** instead of hanging. `-p --plan` no longer suggests Shift+Tab.
 - **1.0.108** (2026-11-09): **`/index`** commands plus **managed shared tgrep** indexing **on by default** for eligible repositories (trigram grep for large trees; earlier CLIs already fell back to tgrep on monorepos instead of ripgrep — `github-copilot-code-search`). Semantic code search follows a **renamed** GitHub repo when the checkout still uses the old folder name. With the sandbox on, a running local MCP server **restarts after `/cd`** so it picks up the new directory’s denied paths. MCP deny rules match the name the server **advertises** (example `server(weather.lookup)`), not only the sanitized name, even with `--allow-all-tools`. `/mcp enable` honors repository settings that disable a server. `/permissions default` in Autopilot **asks again** on the next prompt. Interactive Autopilot **waits** for MCP input/consent instead of auto-declining. `sandbox.userPolicy.filesystem.enumeratePaths` is a Windows enumerate-only grant (`github-copilot-sandbox`). Path-like prompt segments (`/docs/setup.md`) no longer invoke a skill named `docs`.
 - **1.0.109** (2026-11-10): sandbox host allow/deny rules accept **IPv4/IPv6 CIDR** (`github-copilot-sandbox`). `/cd .` and `/add-dir .` keep the current git working tree instead of selecting `.git`. ACP: a `preToolUse` hook that answers **ask** now prompts the ACP client instead of denying as host policy. `copilot mcp remove` / `/mcp delete` on a **built-in** server explains how to disable it. Text after `/init` reaches the model as extra guidance. Custom agents added to `.github/agents/` during a session load without reload.
+- **1.0.110** (2026-11-12): experimental **masked password dialog** for git, ssh, and sudo prompts from agent commands (`/experimental on`). Starting in a **deleted** cwd prints recovery instead of a Node stack; `-C` still works. Invalid `mcp-config.json` no longer gets overwritten by `/mcp add|edit`. `/compact` honors the session AI-credit cap. A `postToolUse` hook that rewrites shell output again changes the Shell row and `copilot -p` print, not only the model. `--yolo` / `--allow-all` warn when bypass is disabled (including `-p`).
 - Parallel / scripted orchestration (often needs `/experimental on`): `/fleet` or `--fleet` for a model-chosen subagent split (`github-copilot-fleet`); coded **dynamic workflows** via chat or `copilot workflow run NAME` (`github-copilot-dynamic-workflows`). Repo-event automation that must live in git is `gh aw` (`github-agentic-workflows`), not a long-lived CLI session.
 - **Content exclusions** (Business/Enterprise): as of 2026-09-02 the **app and CLI** honor org/repo/enterprise path policies (`github-copilot-content-exclusions`). IDE **Agent/Edit** Chat modes still do not. Do not treat exclusions as a sandbox (`github-copilot-sandbox`).
 
@@ -51,7 +53,8 @@ when_to_use: Running copilot in a terminal or -p script, rewinding a session, or
 - [Using dynamic workflows](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-dynamic-workflows) — accessed 2026-10-02
 - [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) — accessed 2026-10-09
 - [Authenticating GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/authenticate-copilot-cli) — accessed 2026-10-09
-- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-11-10
+- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-11-14
+- [copilot-cli 1.0.110](https://github.com/github/copilot-cli/releases/tag/v1.0.110) — accessed 2026-11-14
 - [Gemini 4 Hydrogen in GitHub Copilot](https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/) — accessed 2026-11-13
 - [Gemini 4 Carbon in GitHub Copilot](https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot/) — accessed 2026-11-10
 - [copilot-cli 1.0.108](https://github.com/github/copilot-cli/releases/tag/v1.0.108) — accessed 2026-11-09

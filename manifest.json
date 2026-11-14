@@ -1,7 +1,7 @@
 {
   "name": "agent-knowledge",
   "version": "0.1.0",
-  "description": "Directory for AI agents to look up knowledge, tools and services before acting or while planning — curated notes with sources",
+  "description": "Directory for AI agents to look up knowledge, tools and services before acting or while planning \u2014 curated notes with sources",
   "updated": "2026-11-14",
   "entries": [
     {
@@ -46,7 +46,7 @@
     {
       "id": "agents-md-and-rules-budget",
       "path": "practices/agents-md-and-rules-budget.md",
-      "title": "AGENTS.md vs Cursor rules — context budget",
+      "title": "AGENTS.md vs Cursor rules \u2014 context budget",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -67,7 +67,7 @@
     {
       "id": "knowledge-corpus-pattern",
       "path": "practices/knowledge-corpus-pattern.md",
-      "title": "Knowledge corpus pattern (this repo’s job)",
+      "title": "Knowledge corpus pattern (this repo\u2019s job)",
       "kind": "knowledge",
       "tags": [
         "knowledge",
@@ -122,7 +122,7 @@
     {
       "id": "collect-from-web",
       "path": "runbooks/collect-from-web.md",
-      "title": "Runbook — collect a web note into this repo",
+      "title": "Runbook \u2014 collect a web note into this repo",
       "kind": "knowledge",
       "tags": [
         "runbook",
@@ -485,7 +485,7 @@
       ],
       "status": "active",
       "updated": "2026-08-09",
-      "when_to_use": "Spawning child agents or Task seats without leaking the parent’s full transcript",
+      "when_to_use": "Spawning child agents or Task seats without leaking the parent\u2019s full transcript",
       "related": [
         "multi-agent-handoffs",
         "context-compaction",
@@ -625,7 +625,7 @@
     {
       "id": "a2a-vs-mcp",
       "path": "glossary/a2a-vs-mcp.md",
-      "title": "A2A vs MCP vs ACP vs AHP — four different agent wires",
+      "title": "A2A vs MCP vs ACP vs AHP \u2014 four different agent wires",
       "kind": "protocol",
       "tags": [
         "a2a",
@@ -637,7 +637,7 @@
       ],
       "status": "active",
       "updated": "2026-09-19",
-      "when_to_use": "Choosing protocols for tools vs peer agents vs IDE↔agent embedding vs multi-client session hosts",
+      "when_to_use": "Choosing protocols for tools vs peer agents vs IDE\u2194agent embedding vs multi-client session hosts",
       "related": [
         "tools-mcp-skills-layers",
         "multi-agent-handoffs",
@@ -1185,7 +1185,7 @@
     {
       "id": "mcp-apps-extension",
       "path": "practices/mcp-apps-extension.md",
-      "title": "MCP Apps — sandboxed UI in the host",
+      "title": "MCP Apps \u2014 sandboxed UI in the host",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -1290,7 +1290,7 @@
     {
       "id": "cursor-cloud-always-on",
       "path": "practices/cursor-cloud-always-on.md",
-      "title": "Cursor cloud agents — subscriptions, /goal, isolated subagents",
+      "title": "Cursor cloud agents \u2014 subscriptions, /goal, isolated subagents",
       "kind": "service",
       "tags": [
         "cursor",
@@ -1415,7 +1415,7 @@
     {
       "id": "cursor-automations",
       "path": "practices/cursor-automations.md",
-      "title": "Cursor Automations — standing rules vs subscriptions",
+      "title": "Cursor Automations \u2014 standing rules vs subscriptions",
       "kind": "service",
       "tags": [
         "cursor",
@@ -1425,7 +1425,7 @@
       ],
       "status": "active",
       "updated": "2026-10-27",
-      "when_to_use": "Configuring scheduled or event-triggered Cursor cloud agents (not a running agent’s PR/Slack subscription)",
+      "when_to_use": "Configuring scheduled or event-triggered Cursor cloud agents (not a running agent\u2019s PR/Slack subscription)",
       "related": [
         "cursor-cloud-always-on",
         "cursor-bugbot-review",
@@ -1449,7 +1449,7 @@
     {
       "id": "cursor-bugbot-review",
       "path": "practices/cursor-bugbot-review.md",
-      "title": "Cursor Bugbot — PR review agent",
+      "title": "Cursor Bugbot \u2014 PR review agent",
       "kind": "service",
       "tags": [
         "cursor",
@@ -1459,7 +1459,7 @@
       ],
       "status": "active",
       "updated": "2026-10-11",
-      "when_to_use": "Wiring Cursor’s PR review agent (comments, checks, /review, Autofix) without treating it as a merge gate by default",
+      "when_to_use": "Wiring Cursor\u2019s PR review agent (comments, checks, /review, Autofix) without treating it as a merge gate by default",
       "related": [
         "cursor-automations",
         "human-in-the-loop-approvals",
@@ -1719,7 +1719,7 @@
     {
       "id": "cursor-cloud-mcp-diagnostics",
       "path": "practices/cursor-cloud-mcp-diagnostics.md",
-      "title": "Cursor Cloud MCP — run diagnostics tools",
+      "title": "Cursor Cloud MCP \u2014 run diagnostics tools",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -1783,7 +1783,7 @@
     {
       "id": "mcp-2026-roadmap",
       "path": "practices/mcp-2026-roadmap.md",
-      "title": "MCP 2026 roadmap — five priority areas",
+      "title": "MCP 2026 roadmap \u2014 five priority areas",
       "kind": "protocol",
       "tags": [
         "mcp",
@@ -1806,7 +1806,7 @@
     {
       "id": "cursor-cloud-mcp-http-vs-stdio",
       "path": "practices/cursor-cloud-mcp-http-vs-stdio.md",
-      "title": "Cursor Cloud MCP — prefer HTTP over stdio",
+      "title": "Cursor Cloud MCP \u2014 prefer HTTP over stdio",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -1873,7 +1873,7 @@
     {
       "id": "mcp-prompts",
       "path": "practices/mcp-prompts.md",
-      "title": "MCP prompts — user-controlled templates",
+      "title": "MCP prompts \u2014 user-controlled templates",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -1962,7 +1962,7 @@
     {
       "id": "cursor-sandbox-json",
       "path": "practices/cursor-sandbox-json.md",
-      "title": "Cursor sandbox.json — network, paths, and readBoundary",
+      "title": "Cursor sandbox.json \u2014 network, paths, and readBoundary",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -1987,7 +1987,7 @@
     {
       "id": "skills-invocation-modes",
       "path": "practices/skills-invocation-modes.md",
-      "title": "Skill invocation — model vs slash vs custom mode",
+      "title": "Skill invocation \u2014 model vs slash vs custom mode",
       "kind": "knowledge",
       "tags": [
         "skills",
@@ -2020,7 +2020,7 @@
       ],
       "status": "active",
       "updated": "2026-08-24",
-      "when_to_use": "Mapping agent security work to OWASP codes — ASI01–ASI10 (applications) vs AST01–AST10 (skills)",
+      "when_to_use": "Mapping agent security work to OWASP codes \u2014 ASI01\u2013ASI10 (applications) vs AST01\u2013AST10 (skills)",
       "related": [
         "malicious-skills-supply-chain",
         "prompt-injection-agent-defense",
@@ -2059,7 +2059,7 @@
     {
       "id": "cursor-hooks-json",
       "path": "practices/cursor-hooks-json.md",
-      "title": "Cursor hooks.json — observe and block the agent loop",
+      "title": "Cursor hooks.json \u2014 observe and block the agent loop",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -2105,7 +2105,7 @@
     {
       "id": "cursor-rules-layers",
       "path": "practices/cursor-rules-layers.md",
-      "title": "Cursor rules — team, project, user, AGENTS.md",
+      "title": "Cursor rules \u2014 team, project, user, AGENTS.md",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -2147,7 +2147,7 @@
     {
       "id": "mcp-cancellation",
       "path": "practices/mcp-cancellation.md",
-      "title": "MCP cancellation — close SSE vs notifications/cancelled",
+      "title": "MCP cancellation \u2014 close SSE vs notifications/cancelled",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -2277,7 +2277,7 @@
     {
       "id": "cursor-mcp-json",
       "path": "practices/cursor-mcp-json.md",
-      "title": "Cursor mcp.json — project vs global MCP config",
+      "title": "Cursor mcp.json \u2014 project vs global MCP config",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -2322,7 +2322,7 @@
     {
       "id": "cursor-at-mentions",
       "path": "practices/cursor-at-mentions.md",
-      "title": "Cursor @ mentions — attach context, do not dump folders",
+      "title": "Cursor @ mentions \u2014 attach context, do not dump folders",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -2344,7 +2344,7 @@
     {
       "id": "mcp-stdio-transport",
       "path": "practices/mcp-stdio-transport.md",
-      "title": "MCP stdio transport — stdout is protocol, stderr is logs",
+      "title": "MCP stdio transport \u2014 stdout is protocol, stderr is logs",
       "kind": "protocol",
       "tags": [
         "mcp",
@@ -2367,7 +2367,7 @@
     {
       "id": "mcp-jsonrpc-errors",
       "path": "practices/mcp-jsonrpc-errors.md",
-      "title": "MCP JSON-RPC error codes (−32020..−32022, −32602)",
+      "title": "MCP JSON-RPC error codes (\u221232020..\u221232022, \u221232602)",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -2377,7 +2377,7 @@
       ],
       "status": "active",
       "updated": "2026-08-26",
-      "when_to_use": "Mapping MCP 400s / JSON-RPC errors, or choosing a code instead of inventing −3200x",
+      "when_to_use": "Mapping MCP 400s / JSON-RPC errors, or choosing a code instead of inventing \u22123200x",
       "related": [
         "mcp-request-meta",
         "mcp-http-gateway-headers",
@@ -2410,7 +2410,7 @@
     {
       "id": "mcp-authorization-discovery",
       "path": "practices/mcp-authorization-discovery.md",
-      "title": "MCP OAuth discovery — RFC 9728 PRM and WWW-Authenticate",
+      "title": "MCP OAuth discovery \u2014 RFC 9728 PRM and WWW-Authenticate",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -2450,7 +2450,7 @@
     {
       "id": "a2a-enterprise-auth",
       "path": "practices/a2a-enterprise-auth.md",
-      "title": "A2A auth — HTTP headers, not JSON-RPC identity",
+      "title": "A2A auth \u2014 HTTP headers, not JSON-RPC identity",
       "kind": "knowledge",
       "tags": [
         "a2a",
@@ -2471,7 +2471,7 @@
     {
       "id": "mcp-content-blocks",
       "path": "practices/mcp-content-blocks.md",
-      "title": "MCP content[] blocks — text, image, audio, resource_link, resource",
+      "title": "MCP content[] blocks \u2014 text, image, audio, resource_link, resource",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -2492,7 +2492,7 @@
     {
       "id": "mcp-icons",
       "path": "practices/mcp-icons.md",
-      "title": "MCP icons — Implementation, Tool, Prompt, Resource",
+      "title": "MCP icons \u2014 Implementation, Tool, Prompt, Resource",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -2513,7 +2513,7 @@
     {
       "id": "mcp-localhost-dns-rebinding",
       "path": "failure-modes/mcp-localhost-dns-rebinding.md",
-      "title": "Local MCP HTTP — Origin/Host checks vs DNS rebinding",
+      "title": "Local MCP HTTP \u2014 Origin/Host checks vs DNS rebinding",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -2600,7 +2600,7 @@
     {
       "id": "cursor-codebase-search",
       "path": "practices/cursor-codebase-search.md",
-      "title": "Cursor Agent search — Instant Grep, embeddings, Explore",
+      "title": "Cursor Agent search \u2014 Instant Grep, embeddings, Explore",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -2621,7 +2621,7 @@
     {
       "id": "cursor-self-hosted-agents",
       "path": "practices/cursor-self-hosted-agents.md",
-      "title": "Cloud Agents — managed VM vs My Machines vs Team Pools",
+      "title": "Cloud Agents \u2014 managed VM vs My Machines vs Team Pools",
       "kind": "service",
       "tags": [
         "cursor",
@@ -2666,7 +2666,7 @@
     {
       "id": "a2a-extensions",
       "path": "practices/a2a-extensions.md",
-      "title": "A2A extensions — Agent Card URI, A2A-Extensions header",
+      "title": "A2A extensions \u2014 Agent Card URI, A2A-Extensions header",
       "kind": "protocol",
       "tags": [
         "a2a",
@@ -2697,7 +2697,7 @@
       ],
       "status": "active",
       "updated": "2026-11-11",
-      "when_to_use": "Serving or consuming Agent Skills over MCP (skills/list, skill://) — SEP-2640 is Final; VS Code 1.146 Copilot host is Preview",
+      "when_to_use": "Serving or consuming Agent Skills over MCP (skills/list, skill://) \u2014 SEP-2640 is Final; VS Code 1.146 Copilot host is Preview",
       "related": [
         "agent-skills-open-standard",
         "mcp-resources-vs-tools",
@@ -2713,7 +2713,7 @@
     {
       "id": "cursor-origin",
       "path": "practices/cursor-origin.md",
-      "title": "Cursor Origin — git forge for agents (early beta)",
+      "title": "Cursor Origin \u2014 git forge for agents (early beta)",
       "kind": "service",
       "tags": [
         "cursor",
@@ -2739,7 +2739,7 @@
     {
       "id": "cursor-environment-json",
       "path": "practices/cursor-environment-json.md",
-      "title": "Cloud Agent environment.json — install vs start vs terminals",
+      "title": "Cloud Agent environment.json \u2014 install vs start vs terminals",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -2786,7 +2786,7 @@
     {
       "id": "mcp-feature-lifecycle",
       "path": "practices/mcp-feature-lifecycle.md",
-      "title": "MCP feature lifecycle — Active, Deprecated, Removed",
+      "title": "MCP feature lifecycle \u2014 Active, Deprecated, Removed",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -2808,7 +2808,7 @@
     {
       "id": "mcp-extensions-framework",
       "path": "practices/mcp-extensions-framework.md",
-      "title": "MCP extensions framework — IDs, negotiation, official vs experimental",
+      "title": "MCP extensions framework \u2014 IDs, negotiation, official vs experimental",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -2829,7 +2829,7 @@
     {
       "id": "a2a-protocol-bindings",
       "path": "practices/a2a-protocol-bindings.md",
-      "title": "A2A protocol bindings — JSON-RPC, gRPC, HTTP+JSON, A2A-Version",
+      "title": "A2A protocol bindings \u2014 JSON-RPC, gRPC, HTTP+JSON, A2A-Version",
       "kind": "protocol",
       "tags": [
         "a2a",
@@ -2913,7 +2913,7 @@
     {
       "id": "agent-client-protocol-acp",
       "path": "glossary/agent-client-protocol-acp.md",
-      "title": "ACP — Agent Client Protocol (IDE ↔ coding agent)",
+      "title": "ACP \u2014 Agent Client Protocol (IDE \u2194 coding agent)",
       "kind": "protocol",
       "tags": [
         "acp",
@@ -2940,7 +2940,7 @@
     {
       "id": "cursor-security-agents",
       "path": "practices/cursor-security-agents.md",
-      "title": "Cursor Security Agents — reviewer vs vulnerability scanner",
+      "title": "Cursor Security Agents \u2014 reviewer vs vulnerability scanner",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -2964,7 +2964,7 @@
     {
       "id": "cursor-pr-routing-approval",
       "path": "practices/cursor-pr-routing-approval.md",
-      "title": "Cursor PR Routing & Approval — reviewers and low-risk auto-approve",
+      "title": "Cursor PR Routing & Approval \u2014 reviewers and low-risk auto-approve",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -3007,7 +3007,7 @@
     {
       "id": "claude-agent-sdk",
       "path": "practices/claude-agent-sdk.md",
-      "title": "Claude Agent SDK — Claude Code loop as a library",
+      "title": "Claude Agent SDK \u2014 Claude Code loop as a library",
       "kind": "tool",
       "tags": [
         "sdk",
@@ -3017,7 +3017,7 @@
       ],
       "status": "active",
       "updated": "2026-11-09",
-      "when_to_use": "Embedding Claude Code’s agent loop in Python/TypeScript instead of driving the CLI or calling the Messages API yourself",
+      "when_to_use": "Embedding Claude Code\u2019s agent loop in Python/TypeScript instead of driving the CLI or calling the Messages API yourself",
       "related": [
         "permission-modes-allow-ask-deny",
         "tools-mcp-skills-layers",
@@ -3035,7 +3035,7 @@
     {
       "id": "cursor-sdk",
       "path": "practices/cursor-sdk.md",
-      "title": "Cursor Python SDK — local and cloud Agent.create",
+      "title": "Cursor Python SDK \u2014 local and cloud Agent.create",
       "kind": "tool",
       "tags": [
         "cursor",
@@ -3058,7 +3058,7 @@
     {
       "id": "mcp-server-cards",
       "path": "practices/mcp-server-cards.md",
-      "title": "MCP Server Cards — HTTP discovery without connecting (SEP-2127)",
+      "title": "MCP Server Cards \u2014 HTTP discovery without connecting (SEP-2127)",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -3068,7 +3068,7 @@
       ],
       "status": "draft",
       "updated": "2026-10-12",
-      "when_to_use": "Publishing or fetching a static MCP Server Card before opening a transport — SEP-2127 is Final; SDKs are still experimental",
+      "when_to_use": "Publishing or fetching a static MCP Server Card before opening a transport \u2014 SEP-2127 is Final; SDKs are still experimental",
       "related": [
         "mcp-2026-roadmap",
         "mcp-registry-admission",
@@ -3081,7 +3081,7 @@
     {
       "id": "mcp-file-uploads",
       "path": "practices/mcp-file-uploads.md",
-      "title": "MCP files extension — io.modelcontextprotocol/files (experimental)",
+      "title": "MCP files extension \u2014 io.modelcontextprotocol/files (experimental)",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -3091,7 +3091,7 @@
       ],
       "status": "draft",
       "updated": "2026-11-12",
-      "when_to_use": "Designing an MCP tool that needs a user file or returns a large blob — do not invent a base64-in-prose contract; the files extension is still experimental",
+      "when_to_use": "Designing an MCP tool that needs a user file or returns a large blob \u2014 do not invent a base64-in-prose contract; the files extension is still experimental",
       "related": [
         "mcp-elicitation-modes",
         "mcp-content-blocks",
@@ -3104,7 +3104,7 @@
     {
       "id": "claude-skills-api",
       "path": "practices/claude-skills-api.md",
-      "title": "Claude Skills API — GA container skills vs filesystem skills",
+      "title": "Claude Skills API \u2014 GA container skills vs filesystem skills",
       "kind": "service",
       "tags": [
         "skills",
@@ -3190,7 +3190,7 @@
     {
       "id": "cursor-acp-extensions",
       "path": "practices/cursor-acp-extensions.md",
-      "title": "Cursor ACP — cursor/* extension methods and v1 session flow",
+      "title": "Cursor ACP \u2014 cursor/* extension methods and v1 session flow",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -3212,7 +3212,7 @@
     {
       "id": "cursor-enterprise-mcp-policy",
       "path": "practices/cursor-enterprise-mcp-policy.md",
-      "title": "Cursor enterprise MCP — allowlist vs marketplace distribution",
+      "title": "Cursor enterprise MCP \u2014 allowlist vs marketplace distribution",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -3235,7 +3235,7 @@
     {
       "id": "openai-agents-sdk",
       "path": "practices/openai-agents-sdk.md",
-      "title": "OpenAI Agents SDK — Agent + Runner vs Responses API",
+      "title": "OpenAI Agents SDK \u2014 Agent + Runner vs Responses API",
       "kind": "tool",
       "tags": [
         "sdk",
@@ -3258,7 +3258,7 @@
     {
       "id": "a2a-aaif-governance",
       "path": "glossary/a2a-aaif-governance.md",
-      "title": "A2A under AAIF — same foundation as MCP, not a merge",
+      "title": "A2A under AAIF \u2014 same foundation as MCP, not a merge",
       "kind": "knowledge",
       "tags": [
         "a2a",
@@ -3281,7 +3281,7 @@
     {
       "id": "webmcp-browser-tools",
       "path": "practices/webmcp-browser-tools.md",
-      "title": "WebMCP — page-declared tools for in-browser agents",
+      "title": "WebMCP \u2014 page-declared tools for in-browser agents",
       "kind": "protocol",
       "tags": [
         "webmcp",
@@ -3302,7 +3302,7 @@
     {
       "id": "nlweb-site-mcp",
       "path": "practices/nlweb-site-mcp.md",
-      "title": "NLWeb — site /ask and /mcp for agents",
+      "title": "NLWeb \u2014 site /ask and /mcp for agents",
       "kind": "service",
       "tags": [
         "nlweb",
@@ -3312,7 +3312,7 @@
       ],
       "status": "active",
       "updated": "2026-08-31",
-      "when_to_use": "Exposing a website’s catalog to agents via natural language instead of scraping HTML",
+      "when_to_use": "Exposing a website\u2019s catalog to agents via natural language instead of scraping HTML",
       "related": [
         "webmcp-browser-tools",
         "mcp-resources-vs-tools",
@@ -3323,7 +3323,7 @@
     {
       "id": "openai-codex-sdk",
       "path": "practices/openai-codex-sdk.md",
-      "title": "OpenAI Codex SDK — coding threads vs Agents SDK",
+      "title": "OpenAI Codex SDK \u2014 coding threads vs Agents SDK",
       "kind": "tool",
       "tags": [
         "sdk",
@@ -3345,7 +3345,7 @@
     {
       "id": "gemini-cli-acp",
       "path": "practices/gemini-cli-acp.md",
-      "title": "Gemini CLI ACP mode — IDE embedding over stdio",
+      "title": "Gemini CLI ACP mode \u2014 IDE embedding over stdio",
       "kind": "knowledge",
       "tags": [
         "acp",
@@ -3439,7 +3439,7 @@
     {
       "id": "cursor-permissions-json",
       "path": "practices/cursor-permissions-json.md",
-      "title": "Cursor permissions.json — MCP/terminal allowlists and Auto-review steering",
+      "title": "Cursor permissions.json \u2014 MCP/terminal allowlists and Auto-review steering",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -3463,7 +3463,7 @@
     {
       "id": "mcp-dpop-extension",
       "path": "practices/mcp-dpop-extension.md",
-      "title": "MCP DPoP — sender-constrained tokens (roadmap / SEP-1932)",
+      "title": "MCP DPoP \u2014 sender-constrained tokens (roadmap / SEP-1932)",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -3473,7 +3473,7 @@
       ],
       "status": "draft",
       "updated": "2026-09-28",
-      "when_to_use": "Planning sender-constrained OAuth for remote MCP — do not treat DPoP as part of 2026-07-28",
+      "when_to_use": "Planning sender-constrained OAuth for remote MCP \u2014 do not treat DPoP as part of 2026-07-28",
       "related": [
         "mcp-2026-roadmap",
         "mcp-oauth-scopes",
@@ -3484,7 +3484,7 @@
     {
       "id": "agentgateway-aaif",
       "path": "practices/agentgateway-aaif.md",
-      "title": "agentgateway — AAIF proxy for MCP, A2A, and LLM traffic",
+      "title": "agentgateway \u2014 AAIF proxy for MCP, A2A, and LLM traffic",
       "kind": "service",
       "tags": [
         "aaif",
@@ -3505,7 +3505,7 @@
     {
       "id": "goose-aaif-agent",
       "path": "practices/goose-aaif-agent.md",
-      "title": "goose — AAIF local agent (desktop, CLI, API)",
+      "title": "goose \u2014 AAIF local agent (desktop, CLI, API)",
       "kind": "tool",
       "tags": [
         "aaif",
@@ -3527,7 +3527,7 @@
     {
       "id": "openai-sandbox-agents",
       "path": "practices/openai-sandbox-agents.md",
-      "title": "OpenAI SandboxAgent — isolated workspace vs hosted shell",
+      "title": "OpenAI SandboxAgent \u2014 isolated workspace vs hosted shell",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -3537,7 +3537,7 @@
       ],
       "status": "draft",
       "updated": "2026-09-01",
-      "when_to_use": "An openai-agents job needs a real filesystem, shell, mounts, or resumable workspace — not only a chat turn",
+      "when_to_use": "An openai-agents job needs a real filesystem, shell, mounts, or resumable workspace \u2014 not only a chat turn",
       "related": [
         "openai-agents-sdk",
         "agent-code-sandboxing",
@@ -3548,7 +3548,7 @@
     {
       "id": "cursor-slack-cloud-agents",
       "path": "practices/cursor-slack-cloud-agents.md",
-      "title": "Cursor Slack — @cursor Cloud Agents vs subscriptions",
+      "title": "Cursor Slack \u2014 @cursor Cloud Agents vs subscriptions",
       "kind": "service",
       "tags": [
         "cursor",
@@ -3595,7 +3595,7 @@
     {
       "id": "cursor-self-hosted-pools",
       "path": "practices/cursor-self-hosted-pools.md",
-      "title": "Cursor Team Pools — named routing, any-repo, hibernation",
+      "title": "Cursor Team Pools \u2014 named routing, any-repo, hibernation",
       "kind": "service",
       "tags": [
         "cursor",
@@ -3617,7 +3617,7 @@
     {
       "id": "cursor-self-hosted-integrations",
       "path": "practices/cursor-self-hosted-integrations.md",
-      "title": "Self-Hosted Machines — partner hosts and sandbox templates",
+      "title": "Self-Hosted Machines \u2014 partner hosts and sandbox templates",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -3638,7 +3638,7 @@
     {
       "id": "cursor-self-hosted-computer-use",
       "path": "practices/cursor-self-hosted-computer-use.md",
-      "title": "Self-Hosted Machines — computer use and Linux desktop sharing",
+      "title": "Self-Hosted Machines \u2014 computer use and Linux desktop sharing",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -3659,7 +3659,7 @@
     {
       "id": "cursor-origin-apps",
       "path": "practices/cursor-origin-apps.md",
-      "title": "Origin apps — marketplace, publish, and the Origin API",
+      "title": "Origin apps \u2014 marketplace, publish, and the Origin API",
       "kind": "service",
       "tags": [
         "cursor",
@@ -3683,7 +3683,7 @@
     {
       "id": "openai-codex-app-server",
       "path": "practices/openai-codex-app-server.md",
-      "title": "Codex App Server — JSON-RPC harness vs SDK vs MCP",
+      "title": "Codex App Server \u2014 JSON-RPC harness vs SDK vs MCP",
       "kind": "tool",
       "tags": [
         "openai",
@@ -3727,7 +3727,7 @@
     {
       "id": "cursor-linear-cloud-agents",
       "path": "practices/cursor-linear-cloud-agents.md",
-      "title": "Cursor Linear — @Cursor Cloud Agents vs automations",
+      "title": "Cursor Linear \u2014 @Cursor Cloud Agents vs automations",
       "kind": "service",
       "tags": [
         "cursor",
@@ -3751,7 +3751,7 @@
     {
       "id": "cursor-github-cloud-agents",
       "path": "practices/cursor-github-cloud-agents.md",
-      "title": "Cursor GitHub — App install vs @cursor mentions",
+      "title": "Cursor GitHub \u2014 App install vs @cursor mentions",
       "kind": "service",
       "tags": [
         "cursor",
@@ -3774,7 +3774,7 @@
     {
       "id": "cursor-cloud-agents-api",
       "path": "practices/cursor-cloud-agents-api.md",
-      "title": "Cursor Cloud Agents API — durable agent plus runs",
+      "title": "Cursor Cloud Agents API \u2014 durable agent plus runs",
       "kind": "service",
       "tags": [
         "cursor",
@@ -3822,7 +3822,7 @@
     {
       "id": "claude-code-hooks",
       "path": "practices/claude-code-hooks.md",
-      "title": "Claude Code hooks — settings.json lifecycle gates",
+      "title": "Claude Code hooks \u2014 settings.json lifecycle gates",
       "kind": "tool",
       "tags": [
         "claude",
@@ -3847,7 +3847,7 @@
     {
       "id": "claude-code-github-action",
       "path": "practices/claude-code-github-action.md",
-      "title": "Claude Code GitHub Action — @claude in workflows",
+      "title": "Claude Code GitHub Action \u2014 @claude in workflows",
       "kind": "tool",
       "tags": [
         "claude",
@@ -3868,7 +3868,7 @@
     {
       "id": "claude-code-subagents",
       "path": "practices/claude-code-subagents.md",
-      "title": "Claude Code subagents — .claude/agents vs built-ins",
+      "title": "Claude Code subagents \u2014 .claude/agents vs built-ins",
       "kind": "tool",
       "tags": [
         "claude",
@@ -3891,7 +3891,7 @@
     {
       "id": "claude-code-memory",
       "path": "practices/claude-code-memory.md",
-      "title": "Claude Code memory — CLAUDE.md vs auto MEMORY.md",
+      "title": "Claude Code memory \u2014 CLAUDE.md vs auto MEMORY.md",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -3912,7 +3912,7 @@
     {
       "id": "claude-code-mcp",
       "path": "practices/claude-code-mcp.md",
-      "title": "Claude Code MCP — scopes, .mcp.json, and OAuth",
+      "title": "Claude Code MCP \u2014 scopes, .mcp.json, and OAuth",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -3938,7 +3938,7 @@
     {
       "id": "claude-code-worktrees",
       "path": "practices/claude-code-worktrees.md",
-      "title": "Claude Code worktrees — --worktree vs isolation",
+      "title": "Claude Code worktrees \u2014 --worktree vs isolation",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -3959,7 +3959,7 @@
     {
       "id": "cursor-service-accounts",
       "path": "practices/cursor-service-accounts.md",
-      "title": "Cursor service accounts — Enterprise automation keys",
+      "title": "Cursor service accounts \u2014 Enterprise automation keys",
       "kind": "service",
       "tags": [
         "cursor",
@@ -3980,7 +3980,7 @@
     {
       "id": "cursor-cloud-agent-webhooks",
       "path": "practices/cursor-cloud-agent-webhooks.md",
-      "title": "Cursor Cloud Agent webhooks — v0 statusChange",
+      "title": "Cursor Cloud Agent webhooks \u2014 v0 statusChange",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -4001,7 +4001,7 @@
     {
       "id": "openai-codex-cloud-environments",
       "path": "practices/openai-codex-cloud-environments.md",
-      "title": "Codex Cloud environments — publish, secrets, and VPN",
+      "title": "Codex Cloud environments \u2014 publish, secrets, and VPN",
       "kind": "service",
       "tags": [
         "openai",
@@ -4025,7 +4025,7 @@
     {
       "id": "openai-codex-permissions",
       "path": "practices/openai-codex-permissions.md",
-      "title": "Codex permission profiles — filesystem and network",
+      "title": "Codex permission profiles \u2014 filesystem and network",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -4047,7 +4047,7 @@
     {
       "id": "openai-codex-github-action",
       "path": "practices/openai-codex-github-action.md",
-      "title": "Codex GitHub Action — openai/codex-action@v1",
+      "title": "Codex GitHub Action \u2014 openai/codex-action@v1",
       "kind": "tool",
       "tags": [
         "openai",
@@ -4068,7 +4068,7 @@
     {
       "id": "github-copilot-coding-agent",
       "path": "practices/github-copilot-coding-agent.md",
-      "title": "GitHub Copilot cloud agent — Actions-hosted coding",
+      "title": "GitHub Copilot cloud agent \u2014 Actions-hosted coding",
       "kind": "service",
       "tags": [
         "github",
@@ -4098,7 +4098,7 @@
     {
       "id": "claude-code-permissions",
       "path": "practices/claude-code-permissions.md",
-      "title": "Claude Code permissions — allow / ask / deny vs modes",
+      "title": "Claude Code permissions \u2014 allow / ask / deny vs modes",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -4123,7 +4123,7 @@
     {
       "id": "claude-code-sandboxing",
       "path": "practices/claude-code-sandboxing.md",
-      "title": "Claude Code sandbox — OS isolation for Bash",
+      "title": "Claude Code sandbox \u2014 OS isolation for Bash",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -4147,7 +4147,7 @@
     {
       "id": "claude-code-headless",
       "path": "practices/claude-code-headless.md",
-      "title": "Claude Code headless — claude -p and --bare",
+      "title": "Claude Code headless \u2014 claude -p and --bare",
       "kind": "tool",
       "tags": [
         "claude",
@@ -4169,7 +4169,7 @@
     {
       "id": "claude-code-settings",
       "path": "practices/claude-code-settings.md",
-      "title": "Claude Code settings.json — scopes and precedence",
+      "title": "Claude Code settings.json \u2014 scopes and precedence",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -4193,7 +4193,7 @@
     {
       "id": "openai-codex-mcp",
       "path": "practices/openai-codex-mcp.md",
-      "title": "Codex MCP — config.toml servers vs removed mcp-server",
+      "title": "Codex MCP \u2014 config.toml servers vs removed mcp-server",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -4218,7 +4218,7 @@
     {
       "id": "openai-codex-agents-md",
       "path": "practices/openai-codex-agents-md.md",
-      "title": "Codex AGENTS.md discovery — override files and byte cap",
+      "title": "Codex AGENTS.md discovery \u2014 override files and byte cap",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -4239,7 +4239,7 @@
     {
       "id": "github-copilot-custom-agents",
       "path": "practices/github-copilot-custom-agents.md",
-      "title": "GitHub Copilot custom agents — .agent.md profiles",
+      "title": "GitHub Copilot custom agents \u2014 .agent.md profiles",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -4266,7 +4266,7 @@
     {
       "id": "github-copilot-cli",
       "path": "practices/github-copilot-cli.md",
-      "title": "GitHub Copilot CLI — terminal agent vs cloud coding agent",
+      "title": "GitHub Copilot CLI \u2014 terminal agent vs cloud coding agent",
       "kind": "tool",
       "tags": [
         "github",
@@ -4275,7 +4275,7 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-11-13",
+      "updated": "2026-11-14",
       "when_to_use": "Running copilot in a terminal or -p script, rewinding a session, or contrasting it with Copilot cloud agent",
       "related": [
         "github-copilot-coding-agent",
@@ -4314,7 +4314,7 @@
     {
       "id": "gemini-cli-skills",
       "path": "practices/gemini-cli-skills.md",
-      "title": "Gemini CLI Agent Skills — activate_skill and discovery tiers",
+      "title": "Gemini CLI Agent Skills \u2014 activate_skill and discovery tiers",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -4337,7 +4337,7 @@
     {
       "id": "gemini-cli-mcp",
       "path": "practices/gemini-cli-mcp.md",
-      "title": "Gemini CLI MCP — settings.json servers and OAuth",
+      "title": "Gemini CLI MCP \u2014 settings.json servers and OAuth",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -4364,7 +4364,7 @@
     {
       "id": "gemini-cli-gemini-md",
       "path": "practices/gemini-cli-gemini-md.md",
-      "title": "Gemini CLI GEMINI.md — hierarchical context files",
+      "title": "Gemini CLI GEMINI.md \u2014 hierarchical context files",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -4386,7 +4386,7 @@
     {
       "id": "gemini-cli-sandboxing",
       "path": "practices/gemini-cli-sandboxing.md",
-      "title": "Gemini CLI sandbox — Seatbelt, Docker, gVisor, LXC",
+      "title": "Gemini CLI sandbox \u2014 Seatbelt, Docker, gVisor, LXC",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -4409,7 +4409,7 @@
     {
       "id": "gemini-cli-extensions",
       "path": "practices/gemini-cli-extensions.md",
-      "title": "Gemini CLI extensions — gemini-extension.json packages",
+      "title": "Gemini CLI extensions \u2014 gemini-extension.json packages",
       "kind": "tool",
       "tags": [
         "gemini",
@@ -4431,7 +4431,7 @@
     {
       "id": "gemini-cli-settings",
       "path": "practices/gemini-cli-settings.md",
-      "title": "Gemini CLI settings.json — scopes and system overrides",
+      "title": "Gemini CLI settings.json \u2014 scopes and system overrides",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -4455,7 +4455,7 @@
     {
       "id": "github-copilot-instructions",
       "path": "practices/github-copilot-instructions.md",
-      "title": "GitHub Copilot custom instructions — copilot-instructions.md vs AGENTS.md",
+      "title": "GitHub Copilot custom instructions \u2014 copilot-instructions.md vs AGENTS.md",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -4479,7 +4479,7 @@
     {
       "id": "github-copilot-mcp",
       "path": "practices/github-copilot-mcp.md",
-      "title": "GitHub Copilot MCP — repo settings vs CLI mcp-config.json",
+      "title": "GitHub Copilot MCP \u2014 repo settings vs CLI mcp-config.json",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -4503,7 +4503,7 @@
     {
       "id": "github-copilot-skills",
       "path": "practices/github-copilot-skills.md",
-      "title": "GitHub Copilot Agent Skills — SKILL.md, copilot skill, gh skill",
+      "title": "GitHub Copilot Agent Skills \u2014 SKILL.md, copilot skill, gh skill",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -4528,7 +4528,7 @@
     {
       "id": "claude-code-checkpointing",
       "path": "practices/claude-code-checkpointing.md",
-      "title": "Claude Code checkpointing — /rewind file snapshots",
+      "title": "Claude Code checkpointing \u2014 /rewind file snapshots",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -4550,7 +4550,7 @@
     {
       "id": "cursor-jetbrains-acp",
       "path": "practices/cursor-jetbrains-acp.md",
-      "title": "Cursor in JetBrains — ACP Registry agent",
+      "title": "Cursor in JetBrains \u2014 ACP Registry agent",
       "kind": "tool",
       "tags": [
         "cursor",
@@ -4560,7 +4560,7 @@
       ],
       "status": "active",
       "updated": "2026-09-06",
-      "when_to_use": "Running Cursor’s agent inside IntelliJ/PyCharm/WebStorm instead of the Cursor editor",
+      "when_to_use": "Running Cursor\u2019s agent inside IntelliJ/PyCharm/WebStorm instead of the Cursor editor",
       "related": [
         "cursor-acp-extensions",
         "agent-client-protocol-acp",
@@ -4572,7 +4572,7 @@
     {
       "id": "openai-codex-sandbox",
       "path": "practices/openai-codex-sandbox.md",
-      "title": "Codex sandbox — workspace-write vs approvals",
+      "title": "Codex sandbox \u2014 workspace-write vs approvals",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -4595,7 +4595,7 @@
     {
       "id": "openai-codex-skills",
       "path": "practices/openai-codex-skills.md",
-      "title": "Codex Agent Skills — SKILL.md discovery and invocation",
+      "title": "Codex Agent Skills \u2014 SKILL.md discovery and invocation",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -4620,7 +4620,7 @@
     {
       "id": "openai-codex-hooks",
       "path": "practices/openai-codex-hooks.md",
-      "title": "Codex hooks — hooks.json lifecycle gates",
+      "title": "Codex hooks \u2014 hooks.json lifecycle gates",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -4642,7 +4642,7 @@
     {
       "id": "gemini-cli-hooks",
       "path": "practices/gemini-cli-hooks.md",
-      "title": "Gemini CLI hooks — settings.json lifecycle scripts",
+      "title": "Gemini CLI hooks \u2014 settings.json lifecycle scripts",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -4664,7 +4664,7 @@
     {
       "id": "gemini-cli-headless",
       "path": "practices/gemini-cli-headless.md",
-      "title": "Gemini CLI headless — -p scripts and JSON output",
+      "title": "Gemini CLI headless \u2014 -p scripts and JSON output",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -4686,7 +4686,7 @@
     {
       "id": "gemini-cli-trusted-folders",
       "path": "practices/gemini-cli-trusted-folders.md",
-      "title": "Gemini CLI trusted folders — workspace safe mode",
+      "title": "Gemini CLI trusted folders \u2014 workspace safe mode",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -4707,7 +4707,7 @@
     {
       "id": "github-copilot-code-review",
       "path": "practices/github-copilot-code-review.md",
-      "title": "GitHub Copilot code review — agentic PR comments",
+      "title": "GitHub Copilot code review \u2014 agentic PR comments",
       "kind": "service",
       "tags": [
         "github",
@@ -4733,7 +4733,7 @@
     {
       "id": "claude-code-skills",
       "path": "practices/claude-code-skills.md",
-      "title": "Claude Code skills — SKILL.md vs .claude/commands",
+      "title": "Claude Code skills \u2014 SKILL.md vs .claude/commands",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -4755,7 +4755,7 @@
     {
       "id": "claude-code-plan-mode",
       "path": "practices/claude-code-plan-mode.md",
-      "title": "Claude Code plan mode — research then approve",
+      "title": "Claude Code plan mode \u2014 research then approve",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -4776,7 +4776,7 @@
     {
       "id": "cursor-browser",
       "path": "practices/cursor-browser.md",
-      "title": "Cursor Agent browser — native MCP webview",
+      "title": "Cursor Agent browser \u2014 native MCP webview",
       "kind": "tool",
       "tags": [
         "cursor",
@@ -4797,7 +4797,7 @@
     {
       "id": "cursor-checkpoints",
       "path": "practices/cursor-checkpoints.md",
-      "title": "Cursor Agent checkpoints — local file snapshots",
+      "title": "Cursor Agent checkpoints \u2014 local file snapshots",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -4818,7 +4818,7 @@
     {
       "id": "claude-code-output-styles",
       "path": "practices/claude-code-output-styles.md",
-      "title": "Claude Code output styles — role, tone, and format",
+      "title": "Claude Code output styles \u2014 role, tone, and format",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -4839,7 +4839,7 @@
     {
       "id": "claude-code-statusline",
       "path": "practices/claude-code-statusline.md",
-      "title": "Claude Code status line — local stdin JSON bar",
+      "title": "Claude Code status line \u2014 local stdin JSON bar",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -4859,7 +4859,7 @@
     {
       "id": "claude-code-lsp",
       "path": "practices/claude-code-lsp.md",
-      "title": "Claude Code LSP — language-server code intelligence",
+      "title": "Claude Code LSP \u2014 language-server code intelligence",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -4889,7 +4889,7 @@
         "interoperability"
       ],
       "status": "active",
-      "updated": "2026-09-09",
+      "updated": "2026-11-14",
       "when_to_use": "Installing Claude Code in VS Code/Cursor/Open VSX, or deciding extension panel vs terminal CLI",
       "related": [
         "claude-code-headless",
@@ -4902,7 +4902,7 @@
     {
       "id": "openai-codex-review",
       "path": "practices/openai-codex-review.md",
-      "title": "Codex /review — working-tree review without edits",
+      "title": "Codex /review \u2014 working-tree review without edits",
       "kind": "service",
       "tags": [
         "openai",
@@ -4923,7 +4923,7 @@
     {
       "id": "openai-codex-plan-mode",
       "path": "practices/openai-codex-plan-mode.md",
-      "title": "Codex /plan vs /goal — plan then durable objective",
+      "title": "Codex /plan vs /goal \u2014 plan then durable objective",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -4945,7 +4945,7 @@
     {
       "id": "gemini-cli-plan-mode",
       "path": "practices/gemini-cli-plan-mode.md",
-      "title": "Gemini CLI plan mode — read-only then approve",
+      "title": "Gemini CLI plan mode \u2014 read-only then approve",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -4968,7 +4968,7 @@
     {
       "id": "gemini-cli-checkpointing",
       "path": "practices/gemini-cli-checkpointing.md",
-      "title": "Gemini CLI checkpointing — shadow-git /restore",
+      "title": "Gemini CLI checkpointing \u2014 shadow-git /restore",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -4989,7 +4989,7 @@
     {
       "id": "github-copilot-spaces",
       "path": "practices/github-copilot-spaces.md",
-      "title": "GitHub Copilot Spaces — curated grounded context",
+      "title": "GitHub Copilot Spaces \u2014 curated grounded context",
       "kind": "service",
       "tags": [
         "github",
@@ -5045,7 +5045,7 @@
     {
       "id": "claude-code-workflows",
       "path": "practices/claude-code-workflows.md",
-      "title": "Claude Code dynamic workflows — scripted subagent fan-out",
+      "title": "Claude Code dynamic workflows \u2014 scripted subagent fan-out",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5067,7 +5067,7 @@
     {
       "id": "claude-code-remote-control",
       "path": "practices/claude-code-remote-control.md",
-      "title": "Claude Code Remote Control — steer a local session from phone or browser",
+      "title": "Claude Code Remote Control \u2014 steer a local session from phone or browser",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5090,7 +5090,7 @@
     {
       "id": "claude-code-agent-teams",
       "path": "practices/claude-code-agent-teams.md",
-      "title": "Claude Code agent teams — lead, teammates, mailbox",
+      "title": "Claude Code agent teams \u2014 lead, teammates, mailbox",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5113,7 +5113,7 @@
     {
       "id": "claude-code-agent-view",
       "path": "practices/claude-code-agent-view.md",
-      "title": "Claude Code agent view — claude agents dispatcher",
+      "title": "Claude Code agent view \u2014 claude agents dispatcher",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5135,7 +5135,7 @@
     {
       "id": "gemini-cli-auto-memory",
       "path": "practices/gemini-cli-auto-memory.md",
-      "title": "Gemini CLI Auto Memory — inbox patches and drafted skills",
+      "title": "Gemini CLI Auto Memory \u2014 inbox patches and drafted skills",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -5157,7 +5157,7 @@
     {
       "id": "gemini-cli-conductor",
       "path": "practices/gemini-cli-conductor.md",
-      "title": "Gemini CLI Conductor — spec/plan tracks in-repo",
+      "title": "Gemini CLI Conductor \u2014 spec/plan tracks in-repo",
       "kind": "tool",
       "tags": [
         "gemini",
@@ -5179,7 +5179,7 @@
     {
       "id": "github-copilot-hooks",
       "path": "practices/github-copilot-hooks.md",
-      "title": "GitHub Copilot hooks — CLI and cloud-agent lifecycle scripts",
+      "title": "GitHub Copilot hooks \u2014 CLI and cloud-agent lifecycle scripts",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -5204,7 +5204,7 @@
     {
       "id": "github-copilot-plugins",
       "path": "practices/github-copilot-plugins.md",
-      "title": "GitHub Copilot plugins — plugin.json, marketplaces, Agent Plugins 1.0",
+      "title": "GitHub Copilot plugins \u2014 plugin.json, marketplaces, Agent Plugins 1.0",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -5229,7 +5229,7 @@
     {
       "id": "openai-codex-memories",
       "path": "practices/openai-codex-memories.md",
-      "title": "Codex local memories — ~/.codex/memories vs AGENTS.md",
+      "title": "Codex local memories \u2014 ~/.codex/memories vs AGENTS.md",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -5251,7 +5251,7 @@
     {
       "id": "cursor-cli-mcp",
       "path": "practices/cursor-cli-mcp.md",
-      "title": "Cursor CLI MCP — agent mcp and /mcp",
+      "title": "Cursor CLI MCP \u2014 agent mcp and /mcp",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -5274,7 +5274,7 @@
     {
       "id": "claude-code-routines",
       "path": "practices/claude-code-routines.md",
-      "title": "Claude Code routines — cloud schedule, API, and GitHub triggers",
+      "title": "Claude Code routines \u2014 cloud schedule, API, and GitHub triggers",
       "kind": "service",
       "tags": [
         "claude",
@@ -5297,7 +5297,7 @@
     {
       "id": "claude-code-channels",
       "path": "practices/claude-code-channels.md",
-      "title": "Claude Code channels — push events into a running local session",
+      "title": "Claude Code channels \u2014 push events into a running local session",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5319,7 +5319,7 @@
     {
       "id": "claude-code-slack",
       "path": "practices/claude-code-slack.md",
-      "title": "Claude Code in Slack — @Claude web sessions vs Claude Tag",
+      "title": "Claude Code in Slack \u2014 @Claude web sessions vs Claude Tag",
       "kind": "service",
       "tags": [
         "claude",
@@ -5342,7 +5342,7 @@
     {
       "id": "claude-code-chrome",
       "path": "practices/claude-code-chrome.md",
-      "title": "Claude Code Chrome — Claude in Chrome browser tools",
+      "title": "Claude Code Chrome \u2014 Claude in Chrome browser tools",
       "kind": "tool",
       "tags": [
         "claude",
@@ -5366,7 +5366,7 @@
     {
       "id": "claude-code-on-the-web",
       "path": "practices/claude-code-on-the-web.md",
-      "title": "Claude Code on the web — --cloud, --teleport, cloud sessions",
+      "title": "Claude Code on the web \u2014 --cloud, --teleport, cloud sessions",
       "kind": "service",
       "tags": [
         "claude",
@@ -5390,7 +5390,7 @@
     {
       "id": "gemini-cli-telemetry",
       "path": "practices/gemini-cli-telemetry.md",
-      "title": "Gemini CLI telemetry — OpenTelemetry logs, metrics, traces",
+      "title": "Gemini CLI telemetry \u2014 OpenTelemetry logs, metrics, traces",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -5412,7 +5412,7 @@
     {
       "id": "gemini-cli-sessions",
       "path": "practices/gemini-cli-sessions.md",
-      "title": "Gemini CLI sessions — --resume, retention, and /resume",
+      "title": "Gemini CLI sessions \u2014 --resume, retention, and /resume",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -5434,7 +5434,7 @@
     {
       "id": "openai-codex-worktrees",
       "path": "practices/openai-codex-worktrees.md",
-      "title": "Codex worktrees — Local vs Handoff vs managed checkouts",
+      "title": "Codex worktrees \u2014 Local vs Handoff vs managed checkouts",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -5456,7 +5456,7 @@
     {
       "id": "openai-codex-slack",
       "path": "practices/openai-codex-slack.md",
-      "title": "Codex in Slack and Linear — @Codex cloud chats from chat/issues",
+      "title": "Codex in Slack and Linear \u2014 @Codex cloud chats from chat/issues",
       "kind": "service",
       "tags": [
         "openai",
@@ -5478,7 +5478,7 @@
     {
       "id": "cursor-design-mode",
       "path": "practices/cursor-design-mode.md",
-      "title": "Cursor Design Mode — visual prompts in the Agents Window browser",
+      "title": "Cursor Design Mode \u2014 visual prompts in the Agents Window browser",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -5500,7 +5500,7 @@
     {
       "id": "claude-code-context-window",
       "path": "practices/claude-code-context-window.md",
-      "title": "Claude Code context window — /compact, /context, /autocompact",
+      "title": "Claude Code context window \u2014 /compact, /context, /autocompact",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5523,7 +5523,7 @@
     {
       "id": "claude-code-desktop",
       "path": "practices/claude-code-desktop.md",
-      "title": "Claude Code Desktop — Code tab vs CLI vs cloud",
+      "title": "Claude Code Desktop \u2014 Code tab vs CLI vs cloud",
       "kind": "tool",
       "tags": [
         "claude",
@@ -5549,7 +5549,7 @@
     {
       "id": "claude-code-sessions",
       "path": "practices/claude-code-sessions.md",
-      "title": "Claude Code sessions — --resume, --continue, /branch",
+      "title": "Claude Code sessions \u2014 --resume, --continue, /branch",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5571,7 +5571,7 @@
     {
       "id": "claude-code-code-review",
       "path": "practices/claude-code-code-review.md",
-      "title": "Claude Code review — /code-review, ultrareview, GitHub App",
+      "title": "Claude Code review \u2014 /code-review, ultrareview, GitHub App",
       "kind": "service",
       "tags": [
         "claude",
@@ -5595,7 +5595,7 @@
     {
       "id": "claude-code-jetbrains",
       "path": "practices/claude-code-jetbrains.md",
-      "title": "Claude Code in JetBrains — plugin plus hidden ide MCP",
+      "title": "Claude Code in JetBrains \u2014 plugin plus hidden ide MCP",
       "kind": "tool",
       "tags": [
         "claude",
@@ -5616,7 +5616,7 @@
     {
       "id": "claude-code-scheduled-tasks",
       "path": "practices/claude-code-scheduled-tasks.md",
-      "title": "Claude Code /loop — session-scoped cron vs routines",
+      "title": "Claude Code /loop \u2014 session-scoped cron vs routines",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5639,7 +5639,7 @@
     {
       "id": "openai-codex-exec",
       "path": "practices/openai-codex-exec.md",
-      "title": "Codex exec — non-interactive CLI and exec resume",
+      "title": "Codex exec \u2014 non-interactive CLI and exec resume",
       "kind": "tool",
       "tags": [
         "openai",
@@ -5662,7 +5662,7 @@
     {
       "id": "openai-codex-sessions",
       "path": "practices/openai-codex-sessions.md",
-      "title": "Codex sessions — resume, fork, archive, /app",
+      "title": "Codex sessions \u2014 resume, fork, archive, /app",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -5691,7 +5691,7 @@
     {
       "id": "gemini-cli-policy-engine",
       "path": "practices/gemini-cli-policy-engine.md",
-      "title": "Gemini CLI policy engine — TOML allow/deny/ask",
+      "title": "Gemini CLI policy engine \u2014 TOML allow/deny/ask",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -5713,7 +5713,7 @@
     {
       "id": "cursor-cli-cloud-handoff",
       "path": "practices/cursor-cli-cloud-handoff.md",
-      "title": "Cursor CLI cloud handoff — & transfer vs /in-cloud",
+      "title": "Cursor CLI cloud handoff \u2014 & transfer vs /in-cloud",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -5736,7 +5736,7 @@
     {
       "id": "cursor-projects",
       "path": "practices/cursor-projects.md",
-      "title": "Cursor Projects — coordinator, shared context, subscriptions",
+      "title": "Cursor Projects \u2014 coordinator, shared context, subscriptions",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -5746,7 +5746,7 @@
       ],
       "status": "active",
       "updated": "2026-11-02",
-      "when_to_use": "Starting a Cursor Project for a multi-PR feature, migration, or standing “gardening” job instead of a single chat",
+      "when_to_use": "Starting a Cursor Project for a multi-PR feature, migration, or standing \u201cgardening\u201d job instead of a single chat",
       "related": [
         "cursor-cloud-always-on",
         "cursor-automations",
@@ -5761,7 +5761,7 @@
     {
       "id": "cursor-agents-window",
       "path": "practices/cursor-agents-window.md",
-      "title": "Cursor Agents Window — parallel agents vs the editor",
+      "title": "Cursor Agents Window \u2014 parallel agents vs the editor",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -5784,7 +5784,7 @@
     {
       "id": "claude-code-auto-mode",
       "path": "practices/claude-code-auto-mode.md",
-      "title": "Claude Code auto mode — classifier after deny/ask",
+      "title": "Claude Code auto mode \u2014 classifier after deny/ask",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5808,7 +5808,7 @@
     {
       "id": "claude-code-effort",
       "path": "practices/claude-code-effort.md",
-      "title": "Claude Code effort — /effort, ultracode, skill frontmatter",
+      "title": "Claude Code effort \u2014 /effort, ultracode, skill frontmatter",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5831,7 +5831,7 @@
     {
       "id": "claude-code-doctor",
       "path": "practices/claude-code-doctor.md",
-      "title": "Claude Code /doctor — what loaded vs safe-mode",
+      "title": "Claude Code /doctor \u2014 what loaded vs safe-mode",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5853,7 +5853,7 @@
     {
       "id": "openai-codex-auto-review",
       "path": "practices/openai-codex-auto-review.md",
-      "title": "Codex auto-review — Guardian reviewer at the sandbox edge",
+      "title": "Codex auto-review \u2014 Guardian reviewer at the sandbox edge",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -5877,7 +5877,7 @@
     {
       "id": "gemini-cli-subagents",
       "path": "practices/gemini-cli-subagents.md",
-      "title": "Gemini CLI subagents — @name, .gemini/agents, browser_agent",
+      "title": "Gemini CLI subagents \u2014 @name, .gemini/agents, browser_agent",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -5900,7 +5900,7 @@
     {
       "id": "gemini-cli-rewind",
       "path": "practices/gemini-cli-rewind.md",
-      "title": "Gemini CLI /rewind — conversation vs code revert",
+      "title": "Gemini CLI /rewind \u2014 conversation vs code revert",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -5922,7 +5922,7 @@
     {
       "id": "github-copilot-managed-permissions",
       "path": "practices/github-copilot-managed-permissions.md",
-      "title": "Copilot enterprise managed permissions — deny/ask/allow",
+      "title": "Copilot enterprise managed permissions \u2014 deny/ask/allow",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -5949,7 +5949,7 @@
     {
       "id": "github-copilot-automations",
       "path": "practices/github-copilot-automations.md",
-      "title": "Copilot automations — personal vs shared cloud-agent workflows",
+      "title": "Copilot automations \u2014 personal vs shared cloud-agent workflows",
       "kind": "service",
       "tags": [
         "github",
@@ -5976,7 +5976,7 @@
     {
       "id": "claude-code-managed-mcp",
       "path": "practices/claude-code-managed-mcp.md",
-      "title": "Claude Code managed MCP — managed-mcp.json vs managedMcpServers",
+      "title": "Claude Code managed MCP \u2014 managed-mcp.json vs managedMcpServers",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -5999,7 +5999,7 @@
     {
       "id": "claude-code-advisor",
       "path": "practices/claude-code-advisor.md",
-      "title": "Claude Code advisor — second-model consult at decision points",
+      "title": "Claude Code advisor \u2014 second-model consult at decision points",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -6022,7 +6022,7 @@
     {
       "id": "github-copilot-jetbrains",
       "path": "practices/github-copilot-jetbrains.md",
-      "title": "Copilot in JetBrains — plugin vs AI Assistant ACP vs CLI",
+      "title": "Copilot in JetBrains \u2014 plugin vs AI Assistant ACP vs CLI",
       "kind": "tool",
       "tags": [
         "github",
@@ -6032,7 +6032,7 @@
       ],
       "status": "active",
       "updated": "2026-11-03",
-      "when_to_use": "Choosing Copilot’s JetBrains plugin, AI Assistant ACP agent, Copilot CLI in the IDE terminal, or JetBrains Air",
+      "when_to_use": "Choosing Copilot\u2019s JetBrains plugin, AI Assistant ACP agent, Copilot CLI in the IDE terminal, or JetBrains Air",
       "related": [
         "cursor-jetbrains-acp",
         "claude-code-jetbrains",
@@ -6050,7 +6050,7 @@
     {
       "id": "github-copilot-sandbox",
       "path": "practices/github-copilot-sandbox.md",
-      "title": "Copilot sandboxes — CLI MXC, --cloud, and app local policy",
+      "title": "Copilot sandboxes \u2014 CLI MXC, --cloud, and app local policy",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -6077,7 +6077,7 @@
     {
       "id": "openai-codex-granular-approvals",
       "path": "practices/openai-codex-granular-approvals.md",
-      "title": "Codex granular approval_policy — per-category prompt gates",
+      "title": "Codex granular approval_policy \u2014 per-category prompt gates",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -6099,7 +6099,7 @@
     {
       "id": "openai-codex-apps",
       "path": "practices/openai-codex-apps.md",
-      "title": "Codex apps — ChatGPT connectors via /apps and $app-slug",
+      "title": "Codex apps \u2014 ChatGPT connectors via /apps and $app-slug",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -6121,7 +6121,7 @@
     {
       "id": "cursor-router",
       "path": "practices/cursor-router.md",
-      "title": "Cursor Router — Auto Cost, Balance, and Intelligence",
+      "title": "Cursor Router \u2014 Auto Cost, Balance, and Intelligence",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -6143,7 +6143,7 @@
     {
       "id": "openai-codex-gitlab",
       "path": "practices/openai-codex-gitlab.md",
-      "title": "Codex GitLab — @codex review and cloud MR tasks",
+      "title": "Codex GitLab \u2014 @codex review and cloud MR tasks",
       "kind": "service",
       "tags": [
         "openai",
@@ -6165,7 +6165,7 @@
     {
       "id": "github-copilot-agent-merge",
       "path": "practices/github-copilot-agent-merge.md",
-      "title": "Agent Merge — watch a PR and fix CI or conflicts",
+      "title": "Agent Merge \u2014 watch a PR and fix CI or conflicts",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -6189,7 +6189,7 @@
     {
       "id": "github-copilot-content-exclusions",
       "path": "practices/github-copilot-content-exclusions.md",
-      "title": "Copilot content exclusions — policy vs agent mode",
+      "title": "Copilot content exclusions \u2014 policy vs agent mode",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -6210,7 +6210,7 @@
     {
       "id": "gemini-cli-remote-subagents",
       "path": "practices/gemini-cli-remote-subagents.md",
-      "title": "Gemini CLI remote subagents — A2A cards and auth",
+      "title": "Gemini CLI remote subagents \u2014 A2A cards and auth",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -6231,7 +6231,7 @@
     {
       "id": "claude-code-plugin-eval",
       "path": "practices/claude-code-plugin-eval.md",
-      "title": "Claude Code plugin eval — scored cases and CI gates",
+      "title": "Claude Code plugin eval \u2014 scored cases and CI gates",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -6252,7 +6252,7 @@
     {
       "id": "openai-codex-security",
       "path": "practices/openai-codex-security.md",
-      "title": "Codex Security plugin — scans, diffs, and Security Cloud",
+      "title": "Codex Security plugin \u2014 scans, diffs, and Security Cloud",
       "kind": "service",
       "tags": [
         "openai",
@@ -6274,7 +6274,7 @@
     {
       "id": "cursor-gitlab-cloud-agents",
       "path": "practices/cursor-gitlab-cloud-agents.md",
-      "title": "Cursor GitLab — Cloud Agents and Bugbot (Premium+)",
+      "title": "Cursor GitLab \u2014 Cloud Agents and Bugbot (Premium+)",
       "kind": "service",
       "tags": [
         "cursor",
@@ -6296,7 +6296,7 @@
     {
       "id": "cursor-microsoft-teams",
       "path": "practices/cursor-microsoft-teams.md",
-      "title": "Cursor Microsoft Teams — @Cursor Cloud Agents",
+      "title": "Cursor Microsoft Teams \u2014 @Cursor Cloud Agents",
       "kind": "service",
       "tags": [
         "cursor",
@@ -6318,7 +6318,7 @@
     {
       "id": "cursor-bitbucket-cloud-agents",
       "path": "practices/cursor-bitbucket-cloud-agents.md",
-      "title": "Cursor Bitbucket — Cloud vs Data Center identities",
+      "title": "Cursor Bitbucket \u2014 Cloud vs Data Center identities",
       "kind": "service",
       "tags": [
         "cursor",
@@ -6340,7 +6340,7 @@
     {
       "id": "cursor-azure-devops",
       "path": "practices/cursor-azure-devops.md",
-      "title": "Cursor Azure DevOps — Cloud Agents and Bugbot (public beta)",
+      "title": "Cursor Azure DevOps \u2014 Cloud Agents and Bugbot (public beta)",
       "kind": "service",
       "tags": [
         "cursor",
@@ -6362,7 +6362,7 @@
     {
       "id": "github-copilot-jira",
       "path": "practices/github-copilot-jira.md",
-      "title": "Copilot cloud agent from Jira — assign, @mention, automation",
+      "title": "Copilot cloud agent from Jira \u2014 assign, @mention, automation",
       "kind": "service",
       "tags": [
         "github",
@@ -6385,7 +6385,7 @@
     {
       "id": "github-copilot-auto-model",
       "path": "practices/github-copilot-auto-model.md",
-      "title": "Copilot Auto — Efficiency, Balance, and Intelligence tiers",
+      "title": "Copilot Auto \u2014 Efficiency, Balance, and Intelligence tiers",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -6409,7 +6409,7 @@
     {
       "id": "cursor-grok-bot",
       "path": "practices/cursor-grok-bot.md",
-      "title": "Cursor Grok Bot — named Bots on a shared cloud computer",
+      "title": "Cursor Grok Bot \u2014 named Bots on a shared cloud computer",
       "kind": "service",
       "tags": [
         "cursor",
@@ -6432,7 +6432,7 @@
     {
       "id": "cursor-jira",
       "path": "practices/cursor-jira.md",
-      "title": "Cursor Jira — assign or @Cursor Cloud Agents",
+      "title": "Cursor Jira \u2014 assign or @Cursor Cloud Agents",
       "kind": "service",
       "tags": [
         "cursor",
@@ -6454,7 +6454,7 @@
     {
       "id": "cursor-notion",
       "path": "practices/cursor-notion.md",
-      "title": "Cursor in Notion — agents from specs and task boards",
+      "title": "Cursor in Notion \u2014 agents from specs and task boards",
       "kind": "service",
       "tags": [
         "cursor",
@@ -6486,7 +6486,7 @@
       ],
       "status": "active",
       "updated": "2026-09-17",
-      "when_to_use": "Letting Cursor’s agent build, test, or preview an Xcode project via Apple’s MCP tools",
+      "when_to_use": "Letting Cursor\u2019s agent build, test, or preview an Xcode project via Apple\u2019s MCP tools",
       "related": [
         "cursor-mcp-json",
         "cursor-cli-mcp",
@@ -6497,7 +6497,7 @@
     {
       "id": "cursor-agent-review",
       "path": "practices/cursor-agent-review.md",
-      "title": "Cursor Agent Review — local working-tree review",
+      "title": "Cursor Agent Review \u2014 local working-tree review",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -6519,7 +6519,7 @@
     {
       "id": "claude-code-gitlab-ci",
       "path": "practices/claude-code-gitlab-ci.md",
-      "title": "Claude Code GitLab CI/CD — @claude jobs and MRs",
+      "title": "Claude Code GitLab CI/CD \u2014 @claude jobs and MRs",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -6541,7 +6541,7 @@
     {
       "id": "openai-codex-sites",
       "path": "practices/openai-codex-sites.md",
-      "title": "ChatGPT Sites — hosted web apps from Codex/ChatGPT",
+      "title": "ChatGPT Sites \u2014 hosted web apps from Codex/ChatGPT",
       "kind": "service",
       "tags": [
         "openai",
@@ -6562,7 +6562,7 @@
     {
       "id": "gemini-cli-custom-commands",
       "path": "practices/gemini-cli-custom-commands.md",
-      "title": "Gemini CLI custom commands — TOML slash prompts",
+      "title": "Gemini CLI custom commands \u2014 TOML slash prompts",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -6583,7 +6583,7 @@
     {
       "id": "openai-agents-api",
       "path": "practices/openai-agents-api.md",
-      "title": "OpenAI Agents API — hosted Codex harness sessions",
+      "title": "OpenAI Agents API \u2014 hosted Codex harness sessions",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -6609,7 +6609,7 @@
     {
       "id": "claude-code-self-hosted",
       "path": "practices/claude-code-self-hosted.md",
-      "title": "Claude Code self-hosted environments — org runners for cloud sessions",
+      "title": "Claude Code self-hosted environments \u2014 org runners for cloud sessions",
       "kind": "service",
       "tags": [
         "claude",
@@ -6633,7 +6633,7 @@
     {
       "id": "openai-codex-subagents",
       "path": "practices/openai-codex-subagents.md",
-      "title": "Codex subagents — parallel threads and custom agent TOML",
+      "title": "Codex subagents \u2014 parallel threads and custom agent TOML",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -6655,7 +6655,7 @@
     {
       "id": "github-copilot-hydrafusion",
       "path": "practices/github-copilot-hydrafusion.md",
-      "title": "Copilot Fusion — Standard, High, and Max (was HydraFusion)",
+      "title": "Copilot Fusion \u2014 Standard, High, and Max (was HydraFusion)",
       "kind": "service",
       "tags": [
         "github",
@@ -6680,7 +6680,7 @@
     {
       "id": "cursor-sentry",
       "path": "practices/cursor-sentry.md",
-      "title": "Cursor × Sentry — Seer handoff and Automation issue triggers",
+      "title": "Cursor \u00d7 Sentry \u2014 Seer handoff and Automation issue triggers",
       "kind": "service",
       "tags": [
         "cursor",
@@ -6702,7 +6702,7 @@
     {
       "id": "github-copilot-sentry",
       "path": "practices/github-copilot-sentry.md",
-      "title": "Copilot × Sentry — Seer send-to-agent and Copilot-app canvas",
+      "title": "Copilot \u00d7 Sentry \u2014 Seer send-to-agent and Copilot-app canvas",
       "kind": "service",
       "tags": [
         "github",
@@ -6723,7 +6723,7 @@
     {
       "id": "github-copilot-dev-containers",
       "path": "practices/github-copilot-dev-containers.md",
-      "title": "VS Code Agents window — Dev Container sessions (local and remote)",
+      "title": "VS Code Agents window \u2014 Dev Container sessions (local and remote)",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -6744,7 +6744,7 @@
     {
       "id": "cursor-pagerduty",
       "path": "practices/cursor-pagerduty.md",
-      "title": "Cursor Automations — PagerDuty incident triggers",
+      "title": "Cursor Automations \u2014 PagerDuty incident triggers",
       "kind": "service",
       "tags": [
         "cursor",
@@ -6766,7 +6766,7 @@
     {
       "id": "cursor-cli-persist",
       "path": "practices/cursor-cli-persist.md",
-      "title": "Cursor CLI persist — detach and reattach a running agent",
+      "title": "Cursor CLI persist \u2014 detach and reattach a running agent",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -6787,7 +6787,7 @@
     {
       "id": "cursor-origin-migrations",
       "path": "practices/cursor-origin-migrations.md",
-      "title": "Origin Migration API — GitHub mirror transitions",
+      "title": "Origin Migration API \u2014 GitHub mirror transitions",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -6797,7 +6797,7 @@
       ],
       "status": "active",
       "updated": "2026-09-19",
-      "when_to_use": "Scripting a GitHub ↔ Origin mirror cutover, detach, or forced inbound adoption",
+      "when_to_use": "Scripting a GitHub \u2194 Origin mirror cutover, detach, or forced inbound adoption",
       "related": [
         "cursor-origin",
         "cursor-origin-apps",
@@ -6807,7 +6807,7 @@
     {
       "id": "cursor-conversation-insights",
       "path": "practices/cursor-conversation-insights.md",
-      "title": "Cursor Conversation Insights — on-device work classifiers",
+      "title": "Cursor Conversation Insights \u2014 on-device work classifiers",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -6828,7 +6828,7 @@
     {
       "id": "cursor-otel-export",
       "path": "practices/cursor-otel-export.md",
-      "title": "Cursor OpenTelemetry Export — enterprise OTLP metrics and logs",
+      "title": "Cursor OpenTelemetry Export \u2014 enterprise OTLP metrics and logs",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -6852,7 +6852,7 @@
     {
       "id": "agent-host-protocol-ahp",
       "path": "glossary/agent-host-protocol-ahp.md",
-      "title": "AHP — Agent Host Protocol (sessions server ↔ clients)",
+      "title": "AHP \u2014 Agent Host Protocol (sessions server \u2194 clients)",
       "kind": "protocol",
       "tags": [
         "ahp",
@@ -6875,7 +6875,7 @@
     {
       "id": "openai-codex-ide",
       "path": "practices/openai-codex-ide.md",
-      "title": "Codex IDE extension — VS Code, Cursor, JetBrains, Xcode",
+      "title": "Codex IDE extension \u2014 VS Code, Cursor, JetBrains, Xcode",
       "kind": "tool",
       "tags": [
         "openai",
@@ -6899,7 +6899,7 @@
     {
       "id": "claude-code-cross-session",
       "path": "practices/claude-code-cross-session.md",
-      "title": "Claude Code cross-session messaging — ListAgents and SendMessage",
+      "title": "Claude Code cross-session messaging \u2014 ListAgents and SendMessage",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -6921,7 +6921,7 @@
     {
       "id": "gemini-cli-evals",
       "path": "practices/gemini-cli-evals.md",
-      "title": "Gemini CLI behavioral evals — EDK tool-call assertions",
+      "title": "Gemini CLI behavioral evals \u2014 EDK tool-call assertions",
       "kind": "knowledge",
       "tags": [
         "gemini",
@@ -6942,7 +6942,7 @@
     {
       "id": "openai-codex-automations",
       "path": "practices/openai-codex-automations.md",
-      "title": "Codex scheduled tasks — time and Gmail/Slack/GitHub events",
+      "title": "Codex scheduled tasks \u2014 time and Gmail/Slack/GitHub events",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -6965,7 +6965,7 @@
     {
       "id": "vscode-agent-harnesses",
       "path": "practices/vscode-agent-harnesses.md",
-      "title": "VS Code session targets — Local, Copilot, Claude, Codex, Cloud",
+      "title": "VS Code session targets \u2014 Local, Copilot, Claude, Codex, Cloud",
       "kind": "tool",
       "tags": [
         "github",
@@ -6998,7 +6998,7 @@
     {
       "id": "vscode-external-sessions",
       "path": "practices/vscode-external-sessions.md",
-      "title": "VS Code sessions list — external chats, compact view, auto-cleanup",
+      "title": "VS Code sessions list \u2014 external chats, compact view, auto-cleanup",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -7024,7 +7024,7 @@
     {
       "id": "cursor-ios",
       "path": "practices/cursor-ios.md",
-      "title": "Cursor for iOS — cloud inbox and Remote Control",
+      "title": "Cursor for iOS \u2014 cloud inbox and Remote Control",
       "kind": "tool",
       "tags": [
         "cursor",
@@ -7048,7 +7048,7 @@
     {
       "id": "cursor-skills-cloud-sync",
       "path": "practices/cursor-skills-cloud-sync.md",
-      "title": "Cursor Sync Skills — personal ~/.cursor/skills on Cloud Agents",
+      "title": "Cursor Sync Skills \u2014 personal ~/.cursor/skills on Cloud Agents",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -7071,7 +7071,7 @@
     {
       "id": "claude-code-security",
       "path": "practices/claude-code-security.md",
-      "title": "Claude Security plugin — multi-agent scan and reviewed patches",
+      "title": "Claude Security plugin \u2014 multi-agent scan and reviewed patches",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -7093,7 +7093,7 @@
     {
       "id": "claude-code-security-guidance",
       "path": "practices/claude-code-security-guidance.md",
-      "title": "Claude security-guidance plugin — in-session edit and commit review",
+      "title": "Claude security-guidance plugin \u2014 in-session edit and commit review",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -7115,7 +7115,7 @@
     {
       "id": "vscode-agent-sandboxing",
       "path": "practices/vscode-agent-sandboxing.md",
-      "title": "VS Code Agent Host sandbox — unified enabled, /sandbox policy",
+      "title": "VS Code Agent Host sandbox \u2014 unified enabled, /sandbox policy",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -7139,7 +7139,7 @@
     {
       "id": "vscode-agent-automations",
       "path": "practices/vscode-agent-automations.md",
-      "title": "VS Code automations — local clock vs cloud GitHub runs",
+      "title": "VS Code automations \u2014 local clock vs cloud GitHub runs",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -7162,7 +7162,7 @@
     {
       "id": "vscode-mcp",
       "path": "practices/vscode-mcp.md",
-      "title": "VS Code MCP — mcp.json, Agent Host files, and stdio sandbox",
+      "title": "VS Code MCP \u2014 mcp.json, Agent Host files, and stdio sandbox",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -7186,7 +7186,7 @@
     {
       "id": "cursor-sdk-typescript",
       "path": "practices/cursor-sdk-typescript.md",
-      "title": "Cursor TypeScript SDK — @cursor/sdk local and cloud",
+      "title": "Cursor TypeScript SDK \u2014 @cursor/sdk local and cloud",
       "kind": "tool",
       "tags": [
         "cursor",
@@ -7213,7 +7213,7 @@
     {
       "id": "claude-code-artifacts",
       "path": "practices/claude-code-artifacts.md",
-      "title": "Claude Code artifacts — live claude.ai pages from a session",
+      "title": "Claude Code artifacts \u2014 live claude.ai pages from a session",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -7235,7 +7235,7 @@
     {
       "id": "openai-codex-record-replay",
       "path": "practices/openai-codex-record-replay.md",
-      "title": "Codex Record & Replay — demonstrate a Mac workflow into a skill",
+      "title": "Codex Record & Replay \u2014 demonstrate a Mac workflow into a skill",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -7257,7 +7257,7 @@
     {
       "id": "jetbrains-junie",
       "path": "practices/jetbrains-junie.md",
-      "title": "JetBrains Junie — IDE coding agent in AI Chat",
+      "title": "JetBrains Junie \u2014 IDE coding agent in AI Chat",
       "kind": "tool",
       "tags": [
         "jetbrains",
@@ -7280,7 +7280,7 @@
     {
       "id": "jetbrains-junie-cli",
       "path": "practices/jetbrains-junie-cli.md",
-      "title": "Junie CLI — terminal agent, headless CI, ACP",
+      "title": "Junie CLI \u2014 terminal agent, headless CI, ACP",
       "kind": "tool",
       "tags": [
         "jetbrains",
@@ -7302,7 +7302,7 @@
     {
       "id": "kiro-cli",
       "path": "practices/kiro-cli.md",
-      "title": "Kiro CLI — V3 default harness vs Amazon Q successor",
+      "title": "Kiro CLI \u2014 V3 default harness vs Amazon Q successor",
       "kind": "tool",
       "tags": [
         "kiro",
@@ -7328,7 +7328,7 @@
     {
       "id": "kiro-steering",
       "path": "practices/kiro-steering.md",
-      "title": "Kiro steering — .kiro/steering vs AGENTS.md",
+      "title": "Kiro steering \u2014 .kiro/steering vs AGENTS.md",
       "kind": "knowledge",
       "tags": [
         "kiro",
@@ -7350,7 +7350,7 @@
     {
       "id": "kiro-skills",
       "path": "practices/kiro-skills.md",
-      "title": "Kiro Agent Skills — SKILL.md under .kiro/skills",
+      "title": "Kiro Agent Skills \u2014 SKILL.md under .kiro/skills",
       "kind": "knowledge",
       "tags": [
         "kiro",
@@ -7372,7 +7372,7 @@
     {
       "id": "windsurf-cascade",
       "path": "practices/windsurf-cascade.md",
-      "title": "Windsurf / Devin Desktop Cascade — AGENTS.md, rules, MCP",
+      "title": "Windsurf / Devin Desktop Cascade \u2014 AGENTS.md, rules, MCP",
       "kind": "tool",
       "tags": [
         "windsurf",
@@ -7396,7 +7396,7 @@
     {
       "id": "cline-agent",
       "path": "practices/cline-agent.md",
-      "title": "Cline — rules, skills, MCP, and CLI",
+      "title": "Cline \u2014 rules, skills, MCP, and CLI",
       "kind": "tool",
       "tags": [
         "cline",
@@ -7418,7 +7418,7 @@
     {
       "id": "continue-agents",
       "path": "practices/continue-agents.md",
-      "title": "Continue — acquired by Cursor; leftover config.yaml",
+      "title": "Continue \u2014 acquired by Cursor; leftover config.yaml",
       "kind": "tool",
       "tags": [
         "continue",
@@ -7440,7 +7440,7 @@
     {
       "id": "openhands-agent",
       "path": "practices/openhands-agent.md",
-      "title": "OpenHands — Agent Canvas, SDK, Cloud, MCP",
+      "title": "OpenHands \u2014 Agent Canvas, SDK, Cloud, MCP",
       "kind": "tool",
       "tags": [
         "openhands",
@@ -7462,7 +7462,7 @@
     {
       "id": "opencode-agent",
       "path": "practices/opencode-agent.md",
-      "title": "OpenCode — terminal/desktop agent, MCP, skills",
+      "title": "OpenCode \u2014 terminal/desktop agent, MCP, skills",
       "kind": "tool",
       "tags": [
         "opencode",
@@ -7487,7 +7487,7 @@
     {
       "id": "factory-droid",
       "path": "practices/factory-droid.md",
-      "title": "Factory Droid — CLI, App, skills, custom droids",
+      "title": "Factory Droid \u2014 CLI, App, skills, custom droids",
       "kind": "tool",
       "tags": [
         "factory",
@@ -7497,7 +7497,7 @@
       ],
       "status": "active",
       "updated": "2026-11-08",
-      "when_to_use": "Running Factory’s Droid (CLI, desktop/web App, droid exec), or authoring AGENTS.md / .factory skills, hooks, or custom droids",
+      "when_to_use": "Running Factory\u2019s Droid (CLI, desktop/web App, droid exec), or authoring AGENTS.md / .factory skills, hooks, or custom droids",
       "related": [
         "agents-md-open-format",
         "agent-skills-open-standard",
@@ -7512,7 +7512,7 @@
     {
       "id": "amp-agent",
       "path": "practices/amp-agent.md",
-      "title": "Amp — threads, orbs, MCP, AGENTS.md",
+      "title": "Amp \u2014 threads, orbs, MCP, AGENTS.md",
       "kind": "tool",
       "tags": [
         "amp",
@@ -7537,7 +7537,7 @@
     {
       "id": "zed-external-agents",
       "path": "practices/zed-external-agents.md",
-      "title": "Zed External Agents — ACP Registry vs Zed Agent",
+      "title": "Zed External Agents \u2014 ACP Registry vs Zed Agent",
       "kind": "tool",
       "tags": [
         "zed",
@@ -7560,7 +7560,7 @@
     {
       "id": "claude-cowork",
       "path": "practices/claude-cowork.md",
-      "title": "Claude Cowork — knowledge-work agent vs Code tab",
+      "title": "Claude Cowork \u2014 knowledge-work agent vs Code tab",
       "kind": "tool",
       "tags": [
         "claude",
@@ -7583,7 +7583,7 @@
     {
       "id": "aider-agent",
       "path": "practices/aider-agent.md",
-      "title": "Aider — terminal pair-programming agent",
+      "title": "Aider \u2014 terminal pair-programming agent",
       "kind": "tool",
       "tags": [
         "aider",
@@ -7604,7 +7604,7 @@
     {
       "id": "warp-agent",
       "path": "practices/warp-agent.md",
-      "title": "Warp Agent — AGENTS.md, skills, MCP, CLI",
+      "title": "Warp Agent \u2014 AGENTS.md, skills, MCP, CLI",
       "kind": "tool",
       "tags": [
         "warp",
@@ -7626,7 +7626,7 @@
     {
       "id": "devin-cli",
       "path": "practices/devin-cli.md",
-      "title": "Devin CLI — local agent, /handoff, MCP, plugins",
+      "title": "Devin CLI \u2014 local agent, /handoff, MCP, plugins",
       "kind": "tool",
       "tags": [
         "devin",
@@ -7649,7 +7649,7 @@
     {
       "id": "qwen-code",
       "path": "practices/qwen-code.md",
-      "title": "Qwen Code — QWEN.md, skills, MCP, subagents",
+      "title": "Qwen Code \u2014 QWEN.md, skills, MCP, subagents",
       "kind": "tool",
       "tags": [
         "qwen",
@@ -7671,7 +7671,7 @@
     {
       "id": "cursor-rollouts",
       "path": "practices/cursor-rollouts.md",
-      "title": "Cursor Rollouts — PR-to-prod change monitors",
+      "title": "Cursor Rollouts \u2014 PR-to-prod change monitors",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -7693,7 +7693,7 @@
     {
       "id": "replit-agent",
       "path": "practices/replit-agent.md",
-      "title": "Replit Agent — replit.md, skills, MCP",
+      "title": "Replit Agent \u2014 replit.md, skills, MCP",
       "kind": "tool",
       "tags": [
         "replit",
@@ -7715,7 +7715,7 @@
     {
       "id": "trae-agent",
       "path": "practices/trae-agent.md",
-      "title": "Trae — IDE, traecli, AGENTS.md, skills, MCP",
+      "title": "Trae \u2014 IDE, traecli, AGENTS.md, skills, MCP",
       "kind": "tool",
       "tags": [
         "trae",
@@ -7737,7 +7737,7 @@
     {
       "id": "kilo-code",
       "path": "practices/kilo-code.md",
-      "title": "Kilo Code — kilo.jsonc, skills, MCP, Roo migration",
+      "title": "Kilo Code \u2014 kilo.jsonc, skills, MCP, Roo migration",
       "kind": "tool",
       "tags": [
         "kilo",
@@ -7759,7 +7759,7 @@
     {
       "id": "google-jules",
       "path": "practices/google-jules.md",
-      "title": "Google Jules — async GitHub agent, AGENTS.md, vetted MCP",
+      "title": "Google Jules \u2014 async GitHub agent, AGENTS.md, vetted MCP",
       "kind": "service",
       "tags": [
         "jules",
@@ -7781,7 +7781,7 @@
     {
       "id": "kimi-code",
       "path": "practices/kimi-code.md",
-      "title": "Kimi Code CLI — AGENTS.md, skills, MCP, ACP",
+      "title": "Kimi Code CLI \u2014 AGENTS.md, skills, MCP, ACP",
       "kind": "tool",
       "tags": [
         "kimi",
@@ -7803,7 +7803,7 @@
     {
       "id": "crush-agent",
       "path": "practices/crush-agent.md",
-      "title": "Crush — Charm terminal agent, context files, MCP",
+      "title": "Crush \u2014 Charm terminal agent, context files, MCP",
       "kind": "tool",
       "tags": [
         "crush",
@@ -7826,7 +7826,7 @@
     {
       "id": "antigravity-cli",
       "path": "practices/antigravity-cli.md",
-      "title": "Google Antigravity — AGENTS.md, skills, MCP, plugins",
+      "title": "Google Antigravity \u2014 AGENTS.md, skills, MCP, plugins",
       "kind": "tool",
       "tags": [
         "antigravity",
@@ -7851,7 +7851,7 @@
     {
       "id": "minimax-code",
       "path": "practices/minimax-code.md",
-      "title": "MiniMax Code — desktop app, mcode CLI, AGENTS.md, MCP, ACP",
+      "title": "MiniMax Code \u2014 desktop app, mcode CLI, AGENTS.md, MCP, ACP",
       "kind": "tool",
       "tags": [
         "minimax",
@@ -7873,7 +7873,7 @@
     {
       "id": "github-copilot-otel",
       "path": "practices/github-copilot-otel.md",
-      "title": "Copilot OpenTelemetry — client traces vs Cursor export",
+      "title": "Copilot OpenTelemetry \u2014 client traces vs Cursor export",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -7919,7 +7919,7 @@
     {
       "id": "github-copilot-memory",
       "path": "practices/github-copilot-memory.md",
-      "title": "Copilot Memory — repo facts vs user preferences",
+      "title": "Copilot Memory \u2014 repo facts vs user preferences",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -7944,7 +7944,7 @@
     {
       "id": "acp-terminal-auth",
       "path": "practices/acp-terminal-auth.md",
-      "title": "ACP terminal authentication — out-of-band login",
+      "title": "ACP terminal authentication \u2014 out-of-band login",
       "kind": "knowledge",
       "tags": [
         "acp",
@@ -7987,7 +7987,7 @@
     {
       "id": "bedrock-agentcore",
       "path": "practices/bedrock-agentcore.md",
-      "title": "Amazon Bedrock AgentCore — Runtime, Gateway, MCP",
+      "title": "Amazon Bedrock AgentCore \u2014 Runtime, Gateway, MCP",
       "kind": "service",
       "tags": [
         "amazon",
@@ -8010,7 +8010,7 @@
     {
       "id": "openai-codex-import",
       "path": "practices/openai-codex-import.md",
-      "title": "Codex /import — Claude Code, Cowork, and Cursor setup",
+      "title": "Codex /import \u2014 Claude Code, Cowork, and Cursor setup",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -8035,7 +8035,7 @@
     {
       "id": "acp-elicitation",
       "path": "practices/acp-elicitation.md",
-      "title": "ACP elicitation — form vs URL on the IDE wire",
+      "title": "ACP elicitation \u2014 form vs URL on the IDE wire",
       "kind": "knowledge",
       "tags": [
         "acp",
@@ -8057,7 +8057,7 @@
     {
       "id": "claude-code-gateway",
       "path": "practices/claude-code-gateway.md",
-      "title": "Claude apps gateway — SSO proxy for Bedrock, GCP, Foundry",
+      "title": "Claude apps gateway \u2014 SSO proxy for Bedrock, GCP, Foundry",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -8082,7 +8082,7 @@
     {
       "id": "github-copilot-xcode-eclipse",
       "path": "practices/github-copilot-xcode-eclipse.md",
-      "title": "Copilot in Xcode and Eclipse — agent mode vs VS Code",
+      "title": "Copilot in Xcode and Eclipse \u2014 agent mode vs VS Code",
       "kind": "tool",
       "tags": [
         "github",
@@ -8105,7 +8105,7 @@
     {
       "id": "github-copilot-visual-studio",
       "path": "practices/github-copilot-visual-studio.md",
-      "title": "Copilot in Visual Studio — Agent, Plan, and SDK chat",
+      "title": "Copilot in Visual Studio \u2014 Agent, Plan, and SDK chat",
       "kind": "tool",
       "tags": [
         "github",
@@ -8128,7 +8128,7 @@
     {
       "id": "claude-code-projects",
       "path": "practices/claude-code-projects.md",
-      "title": "Claude Code Projects — coordinator, threads, shared memory",
+      "title": "Claude Code Projects \u2014 coordinator, threads, shared memory",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -8151,7 +8151,7 @@
     {
       "id": "vscode-assisted-permissions",
       "path": "practices/vscode-assisted-permissions.md",
-      "title": "VS Code Assisted permissions — LLM judge vs Allow all",
+      "title": "VS Code Assisted permissions \u2014 LLM judge vs Allow all",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -8198,7 +8198,7 @@
     {
       "id": "github-copilot-computer-use",
       "path": "practices/github-copilot-computer-use.md",
-      "title": "Copilot computer use — desktop GUI from CLI and app",
+      "title": "Copilot computer use \u2014 desktop GUI from CLI and app",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -8221,7 +8221,7 @@
     {
       "id": "claude-code-computer-use",
       "path": "practices/claude-code-computer-use.md",
-      "title": "Claude Code computer use — desktop GUI vs Chrome",
+      "title": "Claude Code computer use \u2014 desktop GUI vs Chrome",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -8245,7 +8245,7 @@
     {
       "id": "github-copilot-remote-control",
       "path": "practices/github-copilot-remote-control.md",
-      "title": "Copilot CLI remote control — steer a local session from web or mobile",
+      "title": "Copilot CLI remote control \u2014 steer a local session from web or mobile",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -8268,7 +8268,7 @@
     {
       "id": "claude-code-restricted",
       "path": "practices/claude-code-restricted.md",
-      "title": "Claude Code --restricted — drop shell and ignore local settings",
+      "title": "Claude Code --restricted \u2014 drop shell and ignore local settings",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -8290,7 +8290,7 @@
     {
       "id": "claude-code-mods",
       "path": "practices/claude-code-mods.md",
-      "title": "Claude Code Mods — in-process UI, events, and tool rules",
+      "title": "Claude Code Mods \u2014 in-process UI, events, and tool rules",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -8314,7 +8314,7 @@
     {
       "id": "github-agentic-workflows",
       "path": "practices/github-agentic-workflows.md",
-      "title": "GitHub Agentic Workflows — markdown compiled to Actions",
+      "title": "GitHub Agentic Workflows \u2014 markdown compiled to Actions",
       "kind": "service",
       "tags": [
         "github",
@@ -8336,7 +8336,7 @@
     {
       "id": "github-copilot-dynamic-workflows",
       "path": "practices/github-copilot-dynamic-workflows.md",
-      "title": "Copilot dynamic workflows — coded multi-agent orchestration",
+      "title": "Copilot dynamic workflows \u2014 coded multi-agent orchestration",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -8359,7 +8359,7 @@
     {
       "id": "github-copilot-fleet",
       "path": "practices/github-copilot-fleet.md",
-      "title": "Copilot /fleet — parallel subagents vs coded workflows",
+      "title": "Copilot /fleet \u2014 parallel subagents vs coded workflows",
       "kind": "service",
       "tags": [
         "github",
@@ -8381,7 +8381,7 @@
     {
       "id": "github-spec-kit",
       "path": "practices/github-spec-kit.md",
-      "title": "GitHub Spec Kit — spec-driven skills for any coding agent",
+      "title": "GitHub Spec Kit \u2014 spec-driven skills for any coding agent",
       "kind": "tool",
       "tags": [
         "github",
@@ -8403,7 +8403,7 @@
     {
       "id": "cursor-continual-learning",
       "path": "practices/cursor-continual-learning.md",
-      "title": "Cursor Continual Learning — AGENTS.md from transcripts",
+      "title": "Cursor Continual Learning \u2014 AGENTS.md from transcripts",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -8426,7 +8426,7 @@
     {
       "id": "openclaw-agent",
       "path": "practices/openclaw-agent.md",
-      "title": "OpenClaw — Gateway, workspace files, skills, Code Mode",
+      "title": "OpenClaw \u2014 Gateway, workspace files, skills, Code Mode",
       "kind": "tool",
       "tags": [
         "openclaw",
@@ -8449,7 +8449,7 @@
     {
       "id": "devin-desktop-acp",
       "path": "practices/devin-desktop-acp.md",
-      "title": "Devin Desktop — ACP host, Spaces, Agent Command Center",
+      "title": "Devin Desktop \u2014 ACP host, Spaces, Agent Command Center",
       "kind": "knowledge",
       "tags": [
         "devin",
@@ -8515,7 +8515,7 @@
     {
       "id": "claude-code-elicitation",
       "path": "practices/claude-code-elicitation.md",
-      "title": "Claude Code MCP elicitation — form, URL, and hooks",
+      "title": "Claude Code MCP elicitation \u2014 form, URL, and hooks",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -8538,7 +8538,7 @@
     {
       "id": "openai-docs-mcp",
       "path": "practices/openai-docs-mcp.md",
-      "title": "OpenAI Docs MCP — hosted developer-docs server",
+      "title": "OpenAI Docs MCP \u2014 hosted developer-docs server",
       "kind": "service",
       "tags": [
         "openai",
@@ -8560,7 +8560,7 @@
     {
       "id": "github-copilot-model-deprecations",
       "path": "practices/github-copilot-model-deprecations.md",
-      "title": "Copilot model deprecations — Oct 2026 through Dec 14 pin updates",
+      "title": "Copilot model deprecations \u2014 Oct 2026 through Dec 14 pin updates",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -8584,7 +8584,7 @@
     {
       "id": "cursor-customize",
       "path": "practices/cursor-customize.md",
-      "title": "Cursor Customize — scoped plugins, skills, and MCP",
+      "title": "Cursor Customize \u2014 scoped plugins, skills, and MCP",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -8609,7 +8609,7 @@
     {
       "id": "cursor-side-chats",
       "path": "practices/cursor-side-chats.md",
-      "title": "Cursor side chats — /side and /btw tangents",
+      "title": "Cursor side chats \u2014 /side and /btw tangents",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -8644,7 +8644,7 @@
       ],
       "status": "active",
       "updated": "2026-10-05",
-      "when_to_use": "Sending a follow-up while a Cursor agent is mid-turn — queue, steer at the next tool, or interrupt",
+      "when_to_use": "Sending a follow-up while a Cursor agent is mid-turn \u2014 queue, steer at the next tool, or interrupt",
       "related": [
         "cursor-cloud-always-on",
         "cursor-agents-window",
@@ -8656,7 +8656,7 @@
     {
       "id": "openai-codex-access-tokens",
       "path": "practices/openai-codex-access-tokens.md",
-      "title": "Codex access tokens — workspace identity for local automation",
+      "title": "Codex access tokens \u2014 workspace identity for local automation",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -8678,7 +8678,7 @@
     {
       "id": "github-copilot-cli-settings",
       "path": "practices/github-copilot-cli-settings.md",
-      "title": "Copilot CLI settings.json — /settings vs config.json",
+      "title": "Copilot CLI settings.json \u2014 /settings vs config.json",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -8726,7 +8726,7 @@
     {
       "id": "github-copilot-cli-local-models",
       "path": "practices/github-copilot-cli-local-models.md",
-      "title": "Copilot CLI local models — Ollama discovery vs BYOK",
+      "title": "Copilot CLI local models \u2014 Ollama discovery vs BYOK",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -8751,7 +8751,7 @@
     {
       "id": "cursor-remote-control",
       "path": "practices/cursor-remote-control.md",
-      "title": "Cursor Remote Control — iOS pairing vs /remote-control handoff",
+      "title": "Cursor Remote Control \u2014 iOS pairing vs /remote-control handoff",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -8775,7 +8775,7 @@
     {
       "id": "github-copilot-assisted-permissions",
       "path": "practices/github-copilot-assisted-permissions.md",
-      "title": "Copilot Assisted permissions — LLM judge vs allow-all",
+      "title": "Copilot Assisted permissions \u2014 LLM judge vs allow-all",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -8801,7 +8801,7 @@
     {
       "id": "vscode-agent-worktree-cleanup",
       "path": "practices/vscode-agent-worktree-cleanup.md",
-      "title": "VS Code worktree cleanup — reclaim inactive agent checkouts",
+      "title": "VS Code worktree cleanup \u2014 reclaim inactive agent checkouts",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -8823,7 +8823,7 @@
     {
       "id": "cursor-remote-file-attach",
       "path": "practices/cursor-remote-file-attach.md",
-      "title": "Cursor remote file attach — uploads folder vs cloud folder drop",
+      "title": "Cursor remote file attach \u2014 uploads folder vs cloud folder drop",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -8845,7 +8845,7 @@
     {
       "id": "cursor-organization-audit-logs",
       "path": "practices/cursor-organization-audit-logs.md",
-      "title": "Cursor audit logs — team vs organization Admin API",
+      "title": "Cursor audit logs \u2014 team vs organization Admin API",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -8867,7 +8867,7 @@
     {
       "id": "cursor-enterprise-mdm",
       "path": "practices/cursor-enterprise-mdm.md",
-      "title": "Cursor MDM policies — AllowedTeamId, WorkspaceTrust, remote Agent",
+      "title": "Cursor MDM policies \u2014 AllowedTeamId, WorkspaceTrust, remote Agent",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -8888,7 +8888,7 @@
     {
       "id": "mcp-local-server-security",
       "path": "practices/mcp-local-server-security.md",
-      "title": "MCP local server security — stdio is not a sandbox",
+      "title": "MCP local server security \u2014 stdio is not a sandbox",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -8913,7 +8913,7 @@
     {
       "id": "openai-codex-daybreak",
       "path": "practices/openai-codex-daybreak.md",
-      "title": "Codex Daybreak — Trusted Access for Cyber",
+      "title": "Codex Daybreak \u2014 Trusted Access for Cyber",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -8935,7 +8935,7 @@
     {
       "id": "github-copilot-autopilot",
       "path": "practices/github-copilot-autopilot.md",
-      "title": "Copilot CLI Autopilot — local multi-step vs /delegate",
+      "title": "Copilot CLI Autopilot \u2014 local multi-step vs /delegate",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -8959,7 +8959,7 @@
     {
       "id": "claude-code-idle-compaction",
       "path": "practices/claude-code-idle-compaction.md",
-      "title": "Claude Code idle compaction — compact before the 1h cache expires",
+      "title": "Claude Code idle compaction \u2014 compact before the 1h cache expires",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -8983,7 +8983,7 @@
     {
       "id": "acp-session-notices",
       "path": "practices/acp-session-notices.md",
-      "title": "ACP session notices — live advisory updates, not transcript",
+      "title": "ACP session notices \u2014 live advisory updates, not transcript",
       "kind": "knowledge",
       "tags": [
         "acp",
@@ -9004,7 +9004,7 @@
     {
       "id": "acp-session-compaction",
       "path": "practices/acp-session-compaction.md",
-      "title": "ACP session compaction — ID-addressed timeline entities",
+      "title": "ACP session compaction \u2014 ID-addressed timeline entities",
       "kind": "knowledge",
       "tags": [
         "acp",
@@ -9014,7 +9014,7 @@
       ],
       "status": "active",
       "updated": "2026-10-14",
-      "when_to_use": "Reporting or rendering ACP compaction_update / compaction_summary_chunk, or contrasting them with agent-text “I compacted”",
+      "when_to_use": "Reporting or rendering ACP compaction_update / compaction_summary_chunk, or contrasting them with agent-text \u201cI compacted\u201d",
       "related": [
         "agent-client-protocol-acp",
         "acp-v2-session-lifecycle",
@@ -9027,7 +9027,7 @@
     {
       "id": "openai-codex-gpt-55-retirement",
       "path": "practices/openai-codex-gpt-55-retirement.md",
-      "title": "Codex GPT-5.5 retirement — ChatGPT sign-in vs API key",
+      "title": "Codex GPT-5.5 retirement \u2014 ChatGPT sign-in vs API key",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -9048,7 +9048,7 @@
     {
       "id": "mcp-events-extension",
       "path": "practices/mcp-events-extension.md",
-      "title": "MCP Events extension — SEP-3415 subscribe vs listen",
+      "title": "MCP Events extension \u2014 SEP-3415 subscribe vs listen",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -9069,7 +9069,7 @@
     {
       "id": "acp-client-system-prompt",
       "path": "practices/acp-client-system-prompt.md",
-      "title": "ACP client-provided system prompt — append vs override",
+      "title": "ACP client-provided system prompt \u2014 append vs override",
       "kind": "knowledge",
       "tags": [
         "acp",
@@ -9092,7 +9092,7 @@
     {
       "id": "claude-code-retry-watchdog",
       "path": "practices/claude-code-retry-watchdog.md",
-      "title": "Claude Code retry watchdog — unattended 429/529 waits",
+      "title": "Claude Code retry watchdog \u2014 unattended 429/529 waits",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -9114,7 +9114,7 @@
     {
       "id": "github-code-scanning-ai-scan",
       "path": "practices/github-code-scanning-ai-scan.md",
-      "title": "GitHub AI Scan — PR findings for languages CodeQL skips",
+      "title": "GitHub AI Scan \u2014 PR diffs and on-demand repo backlog",
       "kind": "service",
       "tags": [
         "github",
@@ -9123,8 +9123,8 @@
         "ci"
       ],
       "status": "active",
-      "updated": "2026-10-15",
-      "when_to_use": "Enabling AI Scan on pull requests, budgeting Code Security AI Credits, or contrasting it with CodeQL / agentic autofix",
+      "updated": "2026-11-14",
+      "when_to_use": "Enabling AI Scan on PRs or a repo backlog, budgeting Code Security AI Credits, or PATCHing repository_scan",
       "related": [
         "github-agentic-autofix",
         "github-copilot-code-review",
@@ -9135,7 +9135,7 @@
     {
       "id": "github-agentic-autofix",
       "path": "practices/github-agentic-autofix.md",
-      "title": "GitHub agentic autofix — assign CodeQL alerts to Copilot",
+      "title": "GitHub agentic autofix \u2014 assign CodeQL alerts to Copilot",
       "kind": "service",
       "tags": [
         "github",
@@ -9157,7 +9157,7 @@
     {
       "id": "cursor-canvases",
       "path": "practices/cursor-canvases.md",
-      "title": "Cursor canvases — interactive artifacts and team share links",
+      "title": "Cursor canvases \u2014 interactive artifacts and team share links",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -9181,7 +9181,7 @@
     {
       "id": "vscode-agent-canvases",
       "path": "practices/vscode-agent-canvases.md",
-      "title": "VS Code canvases — Copilot-harness extensions beside chat",
+      "title": "VS Code canvases \u2014 Copilot-harness extensions beside chat",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -9204,7 +9204,7 @@
     {
       "id": "claude-code-design",
       "path": "practices/claude-code-design.md",
-      "title": "Claude Design — /design, /design-sync, standalone shutdown",
+      "title": "Claude Design \u2014 /design, /design-sync, standalone shutdown",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -9225,7 +9225,7 @@
     {
       "id": "github-license-compliance",
       "path": "practices/github-license-compliance.md",
-      "title": "GitHub license compliance — rulesets plus agent package-checks",
+      "title": "GitHub license compliance \u2014 rulesets plus agent package-checks",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -9245,7 +9245,7 @@
     {
       "id": "mcp-language-preference",
       "path": "practices/mcp-language-preference.md",
-      "title": "MCP per-request language preference — SEP-2792",
+      "title": "MCP per-request language preference \u2014 SEP-2792",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -9265,7 +9265,7 @@
     {
       "id": "mcp-structured-auth-denials",
       "path": "practices/mcp-structured-auth-denials.md",
-      "title": "MCP structured authorization denials — SEP-2643 envelope",
+      "title": "MCP structured authorization denials \u2014 SEP-2643 envelope",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -9288,7 +9288,7 @@
     {
       "id": "claude-code-ios-simulator",
       "path": "practices/claude-code-ios-simulator.md",
-      "title": "Claude Code iOS Simulator pane — Desktop vs CLI computer use",
+      "title": "Claude Code iOS Simulator pane \u2014 Desktop vs CLI computer use",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -9309,7 +9309,7 @@
     {
       "id": "mcp-extension-lifecycle",
       "path": "practices/mcp-extension-lifecycle.md",
-      "title": "MCP extension lifecycle — Experimental, Beta, Stable (SEP-3392)",
+      "title": "MCP extension lifecycle \u2014 Experimental, Beta, Stable (SEP-3392)",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -9332,7 +9332,7 @@
     {
       "id": "mcp-async-tool-approval",
       "path": "practices/mcp-async-tool-approval.md",
-      "title": "MCP async tool approval — SEP-2848 task handle, not a bearer grant",
+      "title": "MCP async tool approval \u2014 SEP-2848 task handle, not a bearer grant",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -9354,7 +9354,7 @@
     {
       "id": "github-actions-workflow-lockfiles",
       "path": "practices/github-actions-workflow-lockfiles.md",
-      "title": "GitHub Actions workflow lockfiles — pin uses: to reviewed commits",
+      "title": "GitHub Actions workflow lockfiles \u2014 pin uses: to reviewed commits",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -9375,7 +9375,7 @@
     {
       "id": "mcp-type-constraints",
       "path": "practices/mcp-type-constraints.md",
-      "title": "MCP schema type constraints — SEP-2778 size and format limits",
+      "title": "MCP schema type constraints \u2014 SEP-2778 size and format limits",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -9396,7 +9396,7 @@
     {
       "id": "mcp-pluggable-transports",
       "path": "practices/mcp-pluggable-transports.md",
-      "title": "MCP pluggable transports — SDK interface, not more core wires (SEP-2598)",
+      "title": "MCP pluggable transports \u2014 SDK interface, not more core wires (SEP-2598)",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -9417,7 +9417,7 @@
     {
       "id": "github-copilot-model-policy-api",
       "path": "practices/github-copilot-model-policy-api.md",
-      "title": "Copilot model policy API — enterprise, teams, apps, orgs",
+      "title": "Copilot model policy API \u2014 enterprise, teams, apps, orgs",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -9440,7 +9440,7 @@
     {
       "id": "openai-codex-composer-predictions",
       "path": "practices/openai-codex-composer-predictions.md",
-      "title": "Codex composer predictions — next-message drafts in the desktop app",
+      "title": "Codex composer predictions \u2014 next-message drafts in the desktop app",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -9461,7 +9461,7 @@
     {
       "id": "vscode-move-chats",
       "path": "practices/vscode-move-chats.md",
-      "title": "VS Code move chats — folder or new worktree without losing history",
+      "title": "VS Code move chats \u2014 folder or new worktree without losing history",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -9483,7 +9483,7 @@
     {
       "id": "github-secret-detection-model",
       "path": "practices/github-secret-detection-model.md",
-      "title": "GitHub secret-detection classifier — alerts, push protection, Copilot review",
+      "title": "GitHub secret-detection classifier \u2014 alerts, push protection, Copilot review",
       "kind": "service",
       "tags": [
         "github",
@@ -9504,7 +9504,7 @@
     {
       "id": "mcp-release-cycle",
       "path": "practices/mcp-release-cycle.md",
-      "title": "MCP release cycle — March/September cadence (SEP-3398)",
+      "title": "MCP release cycle \u2014 March/September cadence (SEP-3398)",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -9525,7 +9525,7 @@
     {
       "id": "claude-managed-agents",
       "path": "practices/claude-managed-agents.md",
-      "title": "Claude Managed Agents — hosted harness, sessions, vaults",
+      "title": "Claude Managed Agents \u2014 hosted harness, sessions, vaults",
       "kind": "service",
       "tags": [
         "claude",
@@ -9535,7 +9535,7 @@
       ],
       "status": "active",
       "updated": "2026-10-22",
-      "when_to_use": "Calling Anthropic’s hosted agent REST/SDK instead of the Messages API or Claude Agent SDK, or running /claude-api managed-agents-secure",
+      "when_to_use": "Calling Anthropic\u2019s hosted agent REST/SDK instead of the Messages API or Claude Agent SDK, or running /claude-api managed-agents-secure",
       "related": [
         "claude-agent-sdk",
         "claude-code-self-hosted",
@@ -9550,7 +9550,7 @@
     {
       "id": "github-package-firewall",
       "path": "practices/github-package-firewall.md",
-      "title": "GitHub package firewall — npm proxy for agents and CI",
+      "title": "GitHub package firewall \u2014 npm proxy for agents and CI",
       "kind": "service",
       "tags": [
         "github",
@@ -9560,7 +9560,7 @@
       ],
       "status": "active",
       "updated": "2026-10-20",
-      "when_to_use": "Pointing a coding agent, Actions runner, or laptop npm at GitHub’s enterprise package firewall instead of registry.npmjs.org",
+      "when_to_use": "Pointing a coding agent, Actions runner, or laptop npm at GitHub\u2019s enterprise package firewall instead of registry.npmjs.org",
       "related": [
         "github-copilot-coding-agent",
         "github-copilot-sandbox",
@@ -9572,7 +9572,7 @@
     {
       "id": "github-cli-expiring-oauth",
       "path": "practices/github-cli-expiring-oauth.md",
-      "title": "GitHub CLI expiring OAuth — refreshable tokens (v2.103.0)",
+      "title": "GitHub CLI expiring OAuth \u2014 refreshable tokens (v2.103.0)",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -9593,7 +9593,7 @@
     {
       "id": "vscode-compare-models",
       "path": "practices/vscode-compare-models.md",
-      "title": "VS Code compare models — parallel harness bake-off (Preview)",
+      "title": "VS Code compare models \u2014 parallel harness bake-off (Preview)",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -9616,7 +9616,7 @@
     {
       "id": "vscode-on-device-models",
       "path": "practices/vscode-on-device-models.md",
-      "title": "VS Code on-device models — MAI Code 1.1 Flash via llama.cpp",
+      "title": "VS Code on-device models \u2014 MAI Code 1.1 Flash via llama.cpp",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -9626,7 +9626,7 @@
       ],
       "status": "active",
       "updated": "2026-10-21",
-      "when_to_use": "Running Copilot’s MAI Code 1.1 Flash locally in a VS Code Copilot harness, or contrasting it with BYOK Ollama",
+      "when_to_use": "Running Copilot\u2019s MAI Code 1.1 Flash locally in a VS Code Copilot harness, or contrasting it with BYOK Ollama",
       "related": [
         "vscode-agent-harnesses",
         "github-copilot-auto-model",
@@ -9637,7 +9637,7 @@
     {
       "id": "claude-managed-agents-workflows",
       "path": "practices/claude-managed-agents-workflows.md",
-      "title": "Claude Managed Agents multiagent — workflows, subagents, advisor",
+      "title": "Claude Managed Agents multiagent \u2014 workflows, subagents, advisor",
       "kind": "service",
       "tags": [
         "claude",
@@ -9659,7 +9659,7 @@
     {
       "id": "github-copilot-feature-defaults",
       "path": "practices/github-copilot-feature-defaults.md",
-      "title": "Copilot default policy for new features — Unconfigured GA rollout",
+      "title": "Copilot default policy for new features \u2014 Unconfigured GA rollout",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -9669,7 +9669,7 @@
       ],
       "status": "active",
       "updated": "2026-10-22",
-      "when_to_use": "An enterprise left Copilot Features & clients or MCP policies Unconfigured, or preparing for the Oct 22–26 default-policy enforcement",
+      "when_to_use": "An enterprise left Copilot Features & clients or MCP policies Unconfigured, or preparing for the Oct 22\u201326 default-policy enforcement",
       "related": [
         "github-copilot-model-policy-api",
         "github-copilot-managed-permissions",
@@ -9680,7 +9680,7 @@
     {
       "id": "github-copilot-impact-industry",
       "path": "practices/github-copilot-impact-industry.md",
-      "title": "Copilot impact dashboard — industry comparison (opt-in)",
+      "title": "Copilot impact dashboard \u2014 industry comparison (opt-in)",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -9705,7 +9705,7 @@
     {
       "id": "github-copilot-usage-metrics-customizations",
       "path": "practices/github-copilot-usage-metrics-customizations.md",
-      "title": "Copilot usage metrics — named skills, agents, MCP, slash commands",
+      "title": "Copilot usage metrics \u2014 named skills, agents, MCP, slash commands",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -9729,7 +9729,7 @@
     {
       "id": "github-enterprise-app-installations",
       "path": "practices/github-enterprise-app-installations.md",
-      "title": "GitHub App enterprise installations — GA permissions vs org install",
+      "title": "GitHub App enterprise installations \u2014 GA permissions vs org install",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -9751,7 +9751,7 @@
     {
       "id": "openai-codex-presets",
       "path": "practices/openai-codex-presets.md",
-      "title": "Codex /presets — numbered TUI slots and inline /model",
+      "title": "Codex /presets \u2014 numbered TUI slots and inline /model",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -9773,7 +9773,7 @@
     {
       "id": "github-copilot-usage-metrics-clients",
       "path": "practices/github-copilot-usage-metrics-clients.md",
-      "title": "Copilot usage metrics — totals_by_client (OpenCode, Claude Code, Codex)",
+      "title": "Copilot usage metrics \u2014 totals_by_client (OpenCode, Claude Code, Codex)",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -9798,7 +9798,7 @@
     {
       "id": "claude-code-monitor",
       "path": "practices/claude-code-monitor.md",
-      "title": "Claude Code Monitor — background watch vs /loop vs plugin monitors",
+      "title": "Claude Code Monitor \u2014 background watch vs /loop vs plugin monitors",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -9820,7 +9820,7 @@
     {
       "id": "cursor-origin-code-tours",
       "path": "practices/cursor-origin-code-tours.md",
-      "title": "Origin Code Tours — PR walkthrough next to the diff",
+      "title": "Origin Code Tours \u2014 PR walkthrough next to the diff",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -9842,7 +9842,7 @@
     {
       "id": "openai-codex-team-tasks",
       "path": "practices/openai-codex-team-tasks.md",
-      "title": "ChatGPT Team Tasks — service-account scheduled work",
+      "title": "ChatGPT Team Tasks \u2014 service-account scheduled work",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -9865,7 +9865,7 @@
     {
       "id": "linear-loops-agent",
       "path": "practices/linear-loops-agent.md",
-      "title": "Linear Loops — scheduled and event-triggered Linear Agent",
+      "title": "Linear Loops \u2014 scheduled and event-triggered Linear Agent",
       "kind": "service",
       "tags": [
         "linear",
@@ -9888,7 +9888,7 @@
     {
       "id": "openai-gpt-61-terra-agents",
       "path": "practices/openai-gpt-61-terra-agents.md",
-      "title": "GPT-6.1 Terra — everyday agent coding vs Sol",
+      "title": "GPT-6.1 Terra \u2014 everyday agent coding vs Sol",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -9911,7 +9911,7 @@
     {
       "id": "cursor-agent-sdk",
       "path": "practices/cursor-agent-sdk.md",
-      "title": "Cursor Agent SDK — agents as a versioned bot/ project",
+      "title": "Cursor Agent SDK \u2014 agents as a versioned bot/ project",
       "kind": "tool",
       "tags": [
         "cursor",
@@ -9942,7 +9942,7 @@
     {
       "id": "github-copilot-s2s-auth",
       "path": "practices/github-copilot-s2s-auth.md",
-      "title": "Copilot SDK server-to-server auth — org installation tokens",
+      "title": "Copilot SDK server-to-server auth \u2014 org installation tokens",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -9965,7 +9965,7 @@
     {
       "id": "openai-codex-model-providers",
       "path": "practices/openai-codex-model-providers.md",
-      "title": "Codex model_provider — OpenAI, Bedrock, Vertex, OSS",
+      "title": "Codex model_provider \u2014 OpenAI, Bedrock, Vertex, OSS",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -9989,7 +9989,7 @@
     {
       "id": "cursor-local-agent-stores",
       "path": "practices/cursor-local-agent-stores.md",
-      "title": "Cursor SDK local agent stores — SQLite, JSONL, custom",
+      "title": "Cursor SDK local agent stores \u2014 SQLite, JSONL, custom",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10012,7 +10012,7 @@
     {
       "id": "github-copilot-connectors",
       "path": "practices/github-copilot-connectors.md",
-      "title": "Copilot connectors — GitHub-verified MCP, connect once",
+      "title": "Copilot connectors \u2014 GitHub-verified MCP, connect once",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10035,7 +10035,7 @@
     {
       "id": "github-copilot-security-extension",
       "path": "practices/github-copilot-security-extension.md",
-      "title": "Copilot security extension — code scanning canvas in the app",
+      "title": "Copilot security extension \u2014 code scanning canvas in the app",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10057,7 +10057,7 @@
     {
       "id": "openai-codex-doctor",
       "path": "practices/openai-codex-doctor.md",
-      "title": "Codex doctor — local and --network-only diagnostics",
+      "title": "Codex doctor \u2014 local and --network-only diagnostics",
       "kind": "knowledge",
       "tags": [
         "openai",
@@ -10079,7 +10079,7 @@
     {
       "id": "github-copilot-dreaming",
       "path": "practices/github-copilot-dreaming.md",
-      "title": "Copilot Dreaming — background memory and guidance refresh",
+      "title": "Copilot Dreaming \u2014 background memory and guidance refresh",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10102,7 +10102,7 @@
     {
       "id": "gitlab-duo-agent-platform",
       "path": "practices/gitlab-duo-agent-platform.md",
-      "title": "GitLab Duo Agent Platform — flows, Duo CLI, Slack",
+      "title": "GitLab Duo Agent Platform \u2014 flows, Duo CLI, Slack",
       "kind": "service",
       "tags": [
         "gitlab",
@@ -10124,7 +10124,7 @@
     {
       "id": "mcp-filesystems",
       "path": "practices/mcp-filesystems.md",
-      "title": "MCP Filesystems WG — resource writes still ideating",
+      "title": "MCP Filesystems WG \u2014 resource writes still ideating",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -10146,7 +10146,7 @@
     {
       "id": "github-copilot-lsp",
       "path": "practices/github-copilot-lsp.md",
-      "title": "Copilot CLI LSP servers — symbol ops vs grep",
+      "title": "Copilot CLI LSP servers \u2014 symbol ops vs grep",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10168,7 +10168,7 @@
     {
       "id": "github-copilot-code-search",
       "path": "practices/github-copilot-code-search.md",
-      "title": "Copilot code search — semantic index and /research",
+      "title": "Copilot code search \u2014 semantic index and /research",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10190,7 +10190,7 @@
     {
       "id": "github-copilot-app",
       "path": "practices/github-copilot-app.md",
-      "title": "GitHub Copilot app — desktop agent director",
+      "title": "GitHub Copilot app \u2014 desktop agent director",
       "kind": "tool",
       "tags": [
         "github",
@@ -10217,7 +10217,7 @@
     {
       "id": "github-copilot-projects",
       "path": "practices/github-copilot-projects.md",
-      "title": "Copilot Projects — multi-repo goal in the Copilot app",
+      "title": "Copilot Projects \u2014 multi-repo goal in the Copilot app",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10240,7 +10240,7 @@
     {
       "id": "github-actions-event-policies",
       "path": "practices/github-actions-event-policies.md",
-      "title": "GitHub Actions execution policies — actors, events, PRT default block",
+      "title": "GitHub Actions execution policies \u2014 actors, events, PRT default block",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10262,7 +10262,7 @@
     {
       "id": "vscode-agent-host",
       "path": "practices/vscode-agent-host.md",
-      "title": "VS Code Agent Host — process, remotes, GitHub Environments",
+      "title": "VS Code Agent Host \u2014 process, remotes, GitHub Environments",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -10287,7 +10287,7 @@
     {
       "id": "github-copilot-custom-environments",
       "path": "practices/github-copilot-custom-environments.md",
-      "title": "Copilot custom environments — copilotd on your Linux host",
+      "title": "Copilot custom environments \u2014 copilotd on your Linux host",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10310,7 +10310,7 @@
     {
       "id": "github-copilot-jetbrains-air",
       "path": "practices/github-copilot-jetbrains-air.md",
-      "title": "Copilot in JetBrains Air — ACP agent, local and Air Teams cloud",
+      "title": "Copilot in JetBrains Air \u2014 ACP agent, local and Air Teams cloud",
       "kind": "tool",
       "tags": [
         "github",
@@ -10333,7 +10333,7 @@
     {
       "id": "claude-message-threads",
       "path": "practices/claude-message-threads.md",
-      "title": "Claude Messages API message threads — send only the new turn",
+      "title": "Claude Messages API message threads \u2014 send only the new turn",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -10355,7 +10355,7 @@
     {
       "id": "mcp-data-model-transport",
       "path": "practices/mcp-data-model-transport.md",
-      "title": "MCP data model vs transport representation — SEP-3498 (draft)",
+      "title": "MCP data model vs transport representation \u2014 SEP-3498 (draft)",
       "kind": "knowledge",
       "tags": [
         "mcp",
@@ -10378,7 +10378,7 @@
     {
       "id": "github-copilot-xcode-coding-assistant",
       "path": "practices/github-copilot-xcode-coding-assistant.md",
-      "title": "Copilot in Xcode’s coding assistant — native Intelligence vs extension",
+      "title": "Copilot in Xcode\u2019s coding assistant \u2014 native Intelligence vs extension",
       "kind": "tool",
       "tags": [
         "github",
@@ -10388,7 +10388,7 @@
       ],
       "status": "active",
       "updated": "2026-11-04",
-      "when_to_use": "Enabling GitHub Copilot in Xcode Settings → Intelligence, or choosing native coding assistant vs the Copilot for Xcode extension",
+      "when_to_use": "Enabling GitHub Copilot in Xcode Settings \u2192 Intelligence, or choosing native coding assistant vs the Copilot for Xcode extension",
       "related": [
         "github-copilot-xcode-eclipse",
         "cursor-xcode",
@@ -10400,7 +10400,7 @@
     {
       "id": "github-copilot-usage-metrics-byok",
       "path": "practices/github-copilot-usage-metrics-byok.md",
-      "title": "Copilot usage metrics — local BYOK vs enterprise custom models",
+      "title": "Copilot usage metrics \u2014 local BYOK vs enterprise custom models",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10424,7 +10424,7 @@
     {
       "id": "vscode-mcp-managed-allowlist",
       "path": "practices/vscode-mcp-managed-allowlist.md",
-      "title": "VS Code managed MCP allowlist — allowedMcpServers vs registry-only",
+      "title": "VS Code managed MCP allowlist \u2014 allowedMcpServers vs registry-only",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -10446,7 +10446,7 @@
     {
       "id": "cursor-cloud-apps",
       "path": "practices/cursor-cloud-apps.md",
-      "title": "Cursor Cloud Agent Apps — hosted web apps with Postgres and Cursor auth",
+      "title": "Cursor Cloud Agent Apps \u2014 hosted web apps with Postgres and Cursor auth",
       "kind": "service",
       "tags": [
         "cursor",
@@ -10473,7 +10473,7 @@
     {
       "id": "agent-package-manager-apm",
       "path": "practices/agent-package-manager-apm.md",
-      "title": "Agent Package Manager (APM) — apm.yml, lockfile, and Dependabot",
+      "title": "Agent Package Manager (APM) \u2014 apm.yml, lockfile, and Dependabot",
       "kind": "tool",
       "tags": [
         "skills",
@@ -10501,7 +10501,7 @@
     {
       "id": "cursor-voice-chat",
       "path": "practices/cursor-voice-chat.md",
-      "title": "Cursor voice chat — Grok Voice vs dictation",
+      "title": "Cursor voice chat \u2014 Grok Voice vs dictation",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10525,7 +10525,7 @@
     {
       "id": "hermes-agent",
       "path": "practices/hermes-agent.md",
-      "title": "Hermes Agent — gateway-owned sessions, MCP, skills",
+      "title": "Hermes Agent \u2014 gateway-owned sessions, MCP, skills",
       "kind": "tool",
       "tags": [
         "hermes",
@@ -10550,7 +10550,7 @@
     {
       "id": "github-copilot-usage-metrics-review",
       "path": "practices/github-copilot-usage-metrics-review.md",
-      "title": "Copilot usage metrics — code review addressed rate",
+      "title": "Copilot usage metrics \u2014 code review addressed rate",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10575,7 +10575,7 @@
     {
       "id": "github-copilot-usage-metrics-telemetry",
       "path": "practices/github-copilot-usage-metrics-telemetry.md",
-      "title": "Copilot usage metrics — client telemetry and version gaps",
+      "title": "Copilot usage metrics \u2014 client telemetry and version gaps",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10598,7 +10598,7 @@
     {
       "id": "github-copilot-code-review-api",
       "path": "practices/github-copilot-code-review-api.md",
-      "title": "Copilot code review settings API — enterprise to repo",
+      "title": "Copilot code review settings API \u2014 enterprise to repo",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10621,7 +10621,7 @@
     {
       "id": "amp-spaces",
       "path": "practices/amp-spaces.md",
-      "title": "Amp Spaces — coordinating agent that spawns threads",
+      "title": "Amp Spaces \u2014 coordinating agent that spawns threads",
       "kind": "knowledge",
       "tags": [
         "amp",
@@ -10644,7 +10644,7 @@
     {
       "id": "claude-desktop-home",
       "path": "practices/claude-desktop-home.md",
-      "title": "Claude Desktop desktopHome — Unified Claude default (2026-11-10)",
+      "title": "Claude Desktop desktopHome \u2014 Unified Claude default (2026-11-10)",
       "kind": "tool",
       "tags": [
         "claude",
@@ -10665,7 +10665,7 @@
     {
       "id": "cursor-agent-sdk-cloud-agents",
       "path": "practices/cursor-agent-sdk-cloud-agents.md",
-      "title": "Agent SDK cursor-cloud-agents — delegate coding to Cloud Agents",
+      "title": "Agent SDK cursor-cloud-agents \u2014 delegate coding to Cloud Agents",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10688,7 +10688,7 @@
     {
       "id": "cursor-agent-sdk-peers",
       "path": "practices/cursor-agent-sdk-peers.md",
-      "title": "Agent SDK peer agents — independent specialists by slug",
+      "title": "Agent SDK peer agents \u2014 independent specialists by slug",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10710,7 +10710,7 @@
     {
       "id": "amp-portals",
       "path": "practices/amp-portals.md",
-      "title": "Amp Portals — orb previews vs runner --remote-control-portals",
+      "title": "Amp Portals \u2014 orb previews vs runner --remote-control-portals",
       "kind": "knowledge",
       "tags": [
         "amp",
@@ -10732,7 +10732,7 @@
     {
       "id": "cursor-agent-sdk-hillclimbing",
       "path": "practices/cursor-agent-sdk-hillclimbing.md",
-      "title": "Agent SDK hillclimbing — one lever, same fixtures, lock the win",
+      "title": "Agent SDK hillclimbing \u2014 one lever, same fixtures, lock the win",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10755,7 +10755,7 @@
     {
       "id": "vscode-agent-inbox",
       "path": "practices/vscode-agent-inbox.md",
-      "title": "VS Code Inbox mode — triage sessions that need attention",
+      "title": "VS Code Inbox mode \u2014 triage sessions that need attention",
       "kind": "knowledge",
       "tags": [
         "vscode",
@@ -10777,7 +10777,7 @@
     {
       "id": "github-copilot-seat-management",
       "path": "practices/github-copilot-seat-management.md",
-      "title": "Copilot seat APIs — enterprise GitHub Apps and license permission",
+      "title": "Copilot seat APIs \u2014 enterprise GitHub Apps and license permission",
       "kind": "knowledge",
       "tags": [
         "github",
@@ -10798,7 +10798,7 @@
     {
       "id": "amp-boxes",
       "path": "practices/amp-boxes.md",
-      "title": "Amp Boxes — always-on VMs for deployed apps",
+      "title": "Amp Boxes \u2014 always-on VMs for deployed apps",
       "kind": "knowledge",
       "tags": [
         "amp",
@@ -10820,7 +10820,7 @@
     {
       "id": "cursor-agent-sdk-github",
       "path": "practices/cursor-agent-sdk-github.md",
-      "title": "Agent SDK githubChannel — PR/CI wakes vs @cursor mentions",
+      "title": "Agent SDK githubChannel \u2014 PR/CI wakes vs @cursor mentions",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10841,7 +10841,7 @@
     {
       "id": "cursor-agent-sdk-slack",
       "path": "practices/cursor-agent-sdk-slack.md",
-      "title": "Agent SDK slackChannel — mentions, DMs, and channel posts",
+      "title": "Agent SDK slackChannel \u2014 mentions, DMs, and channel posts",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10862,7 +10862,7 @@
     {
       "id": "cursor-agent-sdk-mcp-oauth",
       "path": "practices/cursor-agent-sdk-mcp-oauth.md",
-      "title": "Agent SDK host MCP OAuth — mcp oauth vs cursorAccount",
+      "title": "Agent SDK host MCP OAuth \u2014 mcp oauth vs cursorAccount",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10883,7 +10883,7 @@
     {
       "id": "cursor-agent-sdk-otel",
       "path": "practices/cursor-agent-sdk-otel.md",
-      "title": "Agent SDK OpenTelemetry — OTEL_* on the serve host",
+      "title": "Agent SDK OpenTelemetry \u2014 OTEL_* on the serve host",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10904,7 +10904,7 @@
     {
       "id": "cursor-agent-sdk-schedules",
       "path": "practices/cursor-agent-sdk-schedules.md",
-      "title": "Agent SDK schedules vs reminders — cron at deploy vs per-conversation",
+      "title": "Agent SDK schedules vs reminders \u2014 cron at deploy vs per-conversation",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10925,7 +10925,7 @@
     {
       "id": "claude-code-code-mode",
       "path": "practices/claude-code-code-mode.md",
-      "title": "Claude Code Code Mode — JS REPL for batched tool calls",
+      "title": "Claude Code Code Mode \u2014 JS REPL for batched tool calls",
       "kind": "knowledge",
       "tags": [
         "claude",
@@ -10947,7 +10947,7 @@
     {
       "id": "cursor-agent-sdk-evals",
       "path": "practices/cursor-agent-sdk-evals.md",
-      "title": "Agent SDK evals — defineEval against the real agent",
+      "title": "Agent SDK evals \u2014 defineEval against the real agent",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10969,7 +10969,7 @@
     {
       "id": "cursor-agent-sdk-migrate-v2",
       "path": "practices/cursor-agent-sdk-migrate-v2.md",
-      "title": "Agent SDK migrate — early-alpha architecture v1 to v2",
+      "title": "Agent SDK migrate \u2014 early-alpha architecture v1 to v2",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -10991,7 +10991,7 @@
     {
       "id": "cursor-agent-sdk-debug",
       "path": "practices/cursor-agent-sdk-debug.md",
-      "title": "Agent SDK troubleshooting — playground, 401/403/409, traces",
+      "title": "Agent SDK troubleshooting \u2014 playground, 401/403/409, traces",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -11014,7 +11014,7 @@
     {
       "id": "cursor-agent-sdk-deploy",
       "path": "practices/cursor-agent-sdk-deploy.md",
-      "title": "Agent SDK deploy — pushed Git ref to Cursor hosting or serve",
+      "title": "Agent SDK deploy \u2014 pushed Git ref to Cursor hosting or serve",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -11037,7 +11037,7 @@
     {
       "id": "preflight-lookup",
       "path": "runbooks/preflight-lookup.md",
-      "title": "Runbook — pre-flight lookup before acting or planning",
+      "title": "Runbook \u2014 pre-flight lookup before acting or planning",
       "kind": "knowledge",
       "tags": [
         "runbook",
@@ -11054,6 +11054,74 @@
         "tools-mcp-skills-layers",
         "collect-from-web",
         "tool-search-defer-loading"
+      ]
+    },
+    {
+      "id": "google-adk",
+      "path": "practices/google-adk.md",
+      "title": "Google Agent Development Kit (ADK)",
+      "tags": [
+        "google",
+        "sdk",
+        "orchestration",
+        "gemini"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Building a production Gemini or Google Cloud agent in code instead of Gemini CLI or Jules",
+      "related": [
+        "google-jules",
+        "gemini-cli-gemini-md",
+        "antigravity-cli",
+        "openai-agents-sdk",
+        "claude-agent-sdk",
+        "microsoft-agent-framework"
+      ]
+    },
+    {
+      "id": "microsoft-agent-framework",
+      "path": "practices/microsoft-agent-framework.md",
+      "title": "Microsoft Agent Framework \u2014 .NET / Python successor to SK and AutoGen",
+      "tags": [
+        "microsoft",
+        "sdk",
+        "orchestration",
+        "foundry"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Building a .NET or Python agent after Semantic Kernel or AutoGen, or hosting one on Foundry",
+      "related": [
+        "openai-agents-sdk",
+        "claude-agent-sdk",
+        "foundry-agent-service",
+        "google-adk",
+        "multi-agent-handoffs",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "foundry-agent-service",
+      "path": "practices/foundry-agent-service.md",
+      "title": "Microsoft Foundry Agent Service \u2014 hosted prompt and container agents",
+      "tags": [
+        "microsoft",
+        "foundry",
+        "hosting",
+        "mcp"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Hosting a prompt or containerized agent on Azure without running your own loop",
+      "related": [
+        "microsoft-agent-framework",
+        "bedrock-agentcore",
+        "openai-agents-api",
+        "claude-managed-agents",
+        "prompt-injection-agent-defense"
       ]
     }
   ]

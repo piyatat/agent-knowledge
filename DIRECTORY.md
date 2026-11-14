@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (63)
+## Tools (65)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -73,8 +73,10 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [agent-package-manager-apm](practices/agent-package-manager-apm.md) | Declaring shared skills/prompts/MCP in apm.yml, installing across Copilot/Cursor/Claude/Codex, or enabling De… | skills, supply-chain, github, plugins | active |
 | [hermes-agent](practices/hermes-agent.md) | Installing Nous Hermes Agent, attaching MCP/skills, or contrasting its single-gateway sessions with Cursor/Cl… | hermes, cli, mcp, skills | active |
 | [claude-desktop-home](practices/claude-desktop-home.md) | MDM/Admin Console for Claude Desktop Chat vs Cowork, or keeping Cowork off after 2026-11-10 | claude, governance, ux, mdm | active |
+| [google-adk](practices/google-adk.md) | Building a production Gemini or Google Cloud agent in code instead of Gemini CLI or Jules | google, sdk, orchestration, gemini | active |
+| [microsoft-agent-framework](practices/microsoft-agent-framework.md) | Building a .NET or Python agent after Semantic Kernel or AutoGen, or hosting one on Foundry | microsoft, sdk, orchestration, foundry | active |
 
-## Services (57)
+## Services (58)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -128,7 +130,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [github-agentic-workflows](practices/github-agentic-workflows.md) | Authoring a .md + .lock.yml agentic workflow with gh aw, or contrasting it with Copilot automations | github, automations, ci, orchestration | active |
 | [github-copilot-fleet](practices/github-copilot-fleet.md) | Using /fleet or --fleet on Copilot CLI, or choosing it versus a dynamic workflow | github, orchestration, subagent, cli | active |
 | [openai-docs-mcp](practices/openai-docs-mcp.md) | Wiring the official OpenAI documentation MCP into Codex, Cursor, VS Code, or Claude Code | openai, mcp, discovery, tools | active |
-| [github-code-scanning-ai-scan](practices/github-code-scanning-ai-scan.md) | Enabling AI Scan on pull requests, budgeting Code Security AI Credits, or contrasting it with CodeQL / agenti… | github, security, review, ci | active |
+| [github-code-scanning-ai-scan](practices/github-code-scanning-ai-scan.md) | Enabling AI Scan on PRs or a repo backlog, budgeting Code Security AI Credits, or PATCHing repository_scan | github, security, review, ci | active |
 | [github-agentic-autofix](practices/github-agentic-autofix.md) | Assigning code scanning alerts to Copilot, enabling the Agentic autofix policy, or choosing it vs Copilot Aut… | github, security, orchestration, review | active |
 | [github-secret-detection-model](practices/github-secret-detection-model.md) | Enabling GitHub AI secret alerts or push protection, or adding Copilot /security-review secret checks beside… | github, security, secrets, review | active |
 | [claude-managed-agents](practices/claude-managed-agents.md) | Calling Anthropic’s hosted agent REST/SDK instead of the Messages API or Claude Agent SDK, or running /claude… | claude, api, sandbox, orchestration | active |
@@ -137,6 +139,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [linear-loops-agent](practices/linear-loops-agent.md) | Automating Linear Agent on a schedule or Slack/GitHub/issue event, or contrasting Loops with Cursor @Cursor m… | linear, automations, mcp, orchestration | active |
 | [gitlab-duo-agent-platform](practices/gitlab-duo-agent-platform.md) | Choosing a GitLab Duo flow, running duo / glab duo, or starting work from Slack @GitLab | gitlab, orchestration, cli, mcp | active |
 | [cursor-cloud-apps](practices/cursor-cloud-apps.md) | Asking a Cloud Agent to build, preview, or publish a live web app, or contrasting it with Origin marketplace… | cursor, hosting, security, ux | active |
+| [foundry-agent-service](practices/foundry-agent-service.md) | Hosting a prompt or containerized agent on Azure without running your own loop | microsoft, foundry, hosting, mcp | active |
 
 ## Protocols and standards (18)
 

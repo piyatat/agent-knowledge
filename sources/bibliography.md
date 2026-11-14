@@ -2433,4 +2433,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Plugins | https://developers.openai.com/codex/plugins |
 | Package your plugin | https://developers.openai.com/plugins/build/plugins |
 
+## Daily ingest 2026-11-14 (gap-fill)
+
+| Topic | URL |
+| --- | --- |
+| Agent Development Kit | https://adk.dev/ |
+| Python Quickstart | https://adk.dev/get-started/python/ |
+| Installation | https://adk.dev/get-started/installation/ |
+| AI Models for ADK agents | https://adk.dev/agents/models/ |
+| Google Gemini models for ADK agents | https://adk.dev/agents/models/google-gemini/ |
+| ADK 2.0 | https://github.com/google/adk-docs/blob/main/docs/2.0/index.md |
+| Agent Framework documentation | https://learn.microsoft.com/en-us/agent-framework/ |
+| Microsoft Agent Framework Overview | https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview |
+| Microsoft Agent Framework Version 1.0 | https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/ |
+| python-1.26.0 | https://github.com/microsoft/agent-framework/releases/tag/python-1.26.0 |
+| dotnet-1.28.0 | https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.28.0 |
+| What is Microsoft Foundry Agent Service? | https://learn.microsoft.com/en-us/azure/foundry/agents/overview |
+| Set up your environment for Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/agents/environment-setup |
+| Hosted agents in Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/hosted-agents |
+| Prompt agents in Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/prompt-agents |
+| AI Scan for a repository's backlog | https://docs.github.com/en/code-security/concepts/code-scanning/ai-scan-for-repositories |
+| AI Scan for repositories in public preview | https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview/ |
+| Manage AI Scan for repositories using the REST API | https://github.blog/changelog/2026-11-13-manage-ai-scan-for-repositories-using-the-rest-api/ |
+| REST API endpoints for code scanning | https://docs.github.com/en/rest/code-scanning/code-scanning?apiVersion=2026-03-10 |
+| Use Claude Code in VS Code | https://code.claude.com/docs/en/vs-code |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| v2.1.325 | https://github.com/anthropics/claude-code/releases/tag/v2.1.325 |
+| copilot-cli 1.0.110 | https://github.com/github/copilot-cli/releases/tag/v1.0.110 |
+
 
