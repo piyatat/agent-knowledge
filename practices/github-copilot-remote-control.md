@@ -3,7 +3,7 @@ id: github-copilot-remote-control
 title: Copilot CLI remote control — steer a local session from web or mobile
 tags: [github, cli, session, security]
 status: active
-updated: 2026-10-22
+updated: 2026-11-14
 when_to_use: Enabling /remote or --remote on Copilot CLI, or contrasting it with Claude Code Remote Control
 ---
 
@@ -13,7 +13,7 @@ when_to_use: Enabling /remote or --remote on Copilot CLI, or contrasting it with
 
 ## Notes
 
-- Enable: `/remote on` (status / redisplay with `/remote`; off with `/remote off`), start with `copilot --remote`, or set `"remoteSessions": true` in `~/.copilot/settings.json`. `--remote` / `--no-remote` beat the file. **1.0.103** (2026-10-22) also documents `--remote-export` (read-only export to github.com / Mobile; does **not** enable steer) and `--no-remote-export` (turns export **and** remote control off), plus `--connect[=SESSION-ID]` to attach to an existing remote session or task (conflicts with `--resume` / `--continue`). The 1.0.103 changelog calls these the clearer hosting/connection flags and retires **legacy** `--remote` / `--no-remote` **startup** flags — current command-reference still lists `--remote` / `--no-remote` for steer; prefer `/remote` and `--connect` when joining an already-exported session. JetBrains: Tools → GitHub Copilot → Chat → Enable Copilot CLI Remote. Resume of a remote-enabled session (`--continue` / `--resume`) re-enables remote control.
+- Enable: `/remote on` (status / redisplay with `/remote`; off with `/remote off`), start with `copilot --remote`, or set `"remoteSessions": true` in `~/.copilot/settings.json`. `--remote` / `--no-remote` beat the file. **1.0.103** (2026-10-22) also documents `--remote-export` (read-only export to github.com / Mobile; does **not** enable steer) and `--no-remote-export` (turns export **and** remote control off), plus `--connect[=SESSION-ID]` to attach to an existing remote session or task (conflicts with `--resume` / `--continue`). The 1.0.103 changelog calls these the clearer hosting/connection flags and retires **legacy** `--remote` / `--no-remote` **startup** flags — current command-reference still lists `--remote` / `--no-remote` for steer; prefer `/remote` and `--connect` when joining an already-exported session. **1.0.111** (2026-11-13): `--host-allow-session-creation` lets remote clients **create** sessions on this CLI host for **one launch** without writing saved settings (not a persistent policy). **1.0.111** also: sessions started with `/new` or the Sessions tab can be controlled from GitHub when remote sessions are enabled. JetBrains: Tools → GitHub Copilot → Chat → Enable Copilot CLI Remote. Resume of a remote-enabled session (`--continue` / `--resume`) re-enables remote control.
 - Interactive only — not `-p` / `--prompt`. The host must stay awake and online. `/keep-alive on|off|busy|30m|8h|1d` (bare number = minutes). Both the local TTY and the remote UI are live; the **first** answer to a prompt wins.
 - Remote can approve/deny tool, path, and URL permissions; answer questions; accept/reject plans; send new prompts; switch modes; cancel current work. **Slash commands** (e.g. `/allow-all`) are not available remotely.
 - Listing: GitHub-hosted repo → that repo’s Agents tab **and** github.com/copilot/agents. Non-GitHub or no-repo sessions appear only on the agents page as “no repository.” Unresolvable remotes disable remote control (“Remote session disabled”). Sessions are **user-specific**. QR: `/remote` then `Ctrl+O` (empty input).
@@ -26,3 +26,5 @@ when_to_use: Enabling /remote or --remote on Copilot CLI, or contrasting it with
 - [Remote control for Copilot CLI sessions now generally available](https://github.blog/changelog/2026-05-18-remote-control-for-copilot-cli-sessions-now-generally-available-on-mobile-web-and-vs-code/) — accessed 2026-10-01
 - [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference) — accessed 2026-10-22
 - [copilot-cli 1.0.103](https://github.com/github/copilot-cli/releases/tag/v1.0.103) — accessed 2026-10-22
+- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-11-14
+- [copilot-cli 1.0.111](https://github.com/github/copilot-cli/releases/tag/v1.0.111) — accessed 2026-11-14

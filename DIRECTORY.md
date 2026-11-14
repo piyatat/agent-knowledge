@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (65)
+## Tools (67)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -75,6 +75,8 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [claude-desktop-home](practices/claude-desktop-home.md) | MDM/Admin Console for Claude Desktop Chat vs Cowork, or keeping Cowork off after 2026-11-10 | claude, governance, ux, mdm | active |
 | [google-adk](practices/google-adk.md) | Building a production Gemini or Google Cloud agent in code instead of Gemini CLI or Jules | google, sdk, orchestration, gemini | active |
 | [microsoft-agent-framework](practices/microsoft-agent-framework.md) | Building a .NET or Python agent after Semantic Kernel or AutoGen, or hosting one on Foundry | microsoft, sdk, orchestration, foundry | active |
+| [github-copilot-sdk](practices/github-copilot-sdk.md) | Embedding Copilot's coding agent in an app instead of spawning the CLI | github, sdk, copilot, orchestration | active |
+| [a2a-cli](practices/a2a-cli.md) | Calling an A2A agent from a shell, CI job, or coding harness without writing SDK code | a2a, cli, orchestration, interoperability | active |
 
 ## Services (58)
 

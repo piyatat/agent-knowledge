@@ -3,7 +3,7 @@ id: claude-code-plugins
 title: Claude Code plugins and marketplaces
 tags: [plugins, skills, claude, supply-chain]
 status: active
-updated: 2026-11-12
+updated: 2026-11-14
 when_to_use: Packaging or installing Claude Code skills/hooks/MCP/LSP/mods as a plugin, or pinning engines["claude-code"] in plugin.json
 ---
 
@@ -21,6 +21,7 @@ A **Claude Code plugin** is a directory (optional `.claude-plugin/plugin.json`) 
 - Hooks from a plugin **stack** with the user’s hooks; neither replaces the other. Treat third-party marketplaces like `malicious-skills-supply-chain`. Cursor’s team marketplace is a different trust root (`cursor-plugins`).
 - **Mods** (`claude-code-mods`): in-process JS/TS handlers that can draw UI and rewrite tool calls. `claude plugin validate` then also lists `hooks:` / `calls:`. `disableAllHooks` or org `allowManagedModsOnly` can stop the mod while leaving the rest of the plugin loaded.
 - **v2.1.323** (2026-11-12): `engines["claude-code"]` in `plugin.json` is a version range. Plugins **outside** that range are not installed, updated, or loaded; install/update pick the **newest version that fits**. `claude plugin validate` type-checks a plugin’s TypeScript hooks module (each finding is a warning; `--strict` fails) and lists the `$` nouns a mod’s `engine.create` hook adds, withholds, or replaces. `claude plugin install --json` includes `unsetOptionCount` (how many `userConfig` options are still unset).
+- **v2.1.325** (2026-11-13): plugin MCP bundles (`.mcpb`, `.dxt`) unpack under the **plugins directory**, not `.mcpb-cache` inside the plugin folder (read-only plugin trees load; a URL-fetched bundle downloads again once). Plugins from a remote marketplace that managed settings declare/enable/`prependPlugins`/`appendPlugins` count as the **organization’s**; `pluginDigests` is **deprecated and ignored**. `claude plugin validate` reports unsafe paths/links; nested `.claude/skills` in `--plugin-dir` plugins no longer load from a session started **above** them. Marketplace `ref` may be a full commit id (older clients cannot clone that pin).
 
 ## Sources
 
@@ -33,3 +34,5 @@ A **Claude Code plugin** is a directory (optional `.claude-plugin/plugin.json`) 
 - [v2.1.295 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.295) — accessed 2026-10-08
 - [v2.1.323 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.323) — accessed 2026-11-12
 - [CHANGELOG.md (v2.1.323)](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-11-12
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-14
+- [v2.1.325 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.325) — accessed 2026-11-14

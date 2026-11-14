@@ -2460,5 +2460,26 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude Code changelog | https://code.claude.com/docs/en/changelog |
 | v2.1.325 | https://github.com/anthropics/claude-code/releases/tag/v2.1.325 |
 | copilot-cli 1.0.110 | https://github.com/github/copilot-cli/releases/tag/v1.0.110 |
+| copilot-cli 1.0.111 | https://github.com/github/copilot-cli/releases/tag/v1.0.111 |
+| copilot-cli 1.0.112 | https://github.com/github/copilot-cli/releases/tag/v1.0.112 |
+| Copilot SDK is now generally available | https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/ |
+| Build your first Copilot-powered app | https://docs.github.com/en/copilot/get-started/sdk-quickstart |
+| Authentication (Copilot SDK) | https://docs.github.com/en/copilot/how-tos/copilot-sdk/auth/authenticate |
+| Using MCP servers with the GitHub Copilot SDK | https://docs.github.com/en/copilot/how-tos/copilot-sdk/features/mcp |
+| Server-to-server authentication | https://docs.github.com/en/copilot/how-tos/copilot-sdk/auth/server-to-server-tokens |
+| github/copilot-sdk | https://github.com/github/copilot-sdk |
+| Meet the A2A CLI | https://a2a-protocol.org/latest/blog/2026/10/01/introducing-a2a-cli/ |
+| a2aproject/a2a-cli README | https://github.com/a2aproject/a2a-cli |
+| a2a-cli SKILL.md | https://raw.githubusercontent.com/a2aproject/a2a-cli/main/skills/a2a-cli/SKILL.md |
+| A2A Protocol | https://a2a-protocol.org/latest/ |
+| A2A Protocol Specification | https://a2a-protocol.org/latest/specification/ |
+| A2A protocol roadmap | https://a2a-protocol.org/latest/roadmap/ |
+| A New Chapter for A2A: Joining the Agentic AI Foundation | https://a2a-protocol.org/latest/blog/2026/08/27/a-new-chapter-for-a2a-joining-the-agentic-ai-foundation/ |
+| SEP-3415: Events Extension (PR) | https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3415 |
+| MCP Spec TPM — SEPs | https://plan.modelcontextprotocol.io/seps |
+| Gemini CLI v0.68.0 | https://github.com/google-gemini/gemini-cli/releases/tag/v0.68.0 |
+| Gemini CLI changelogs | https://github.com/google-gemini/gemini-cli/blob/main/docs/changelogs/index.md |
+| Configure the sandboxed Bash tool | https://code.claude.com/docs/en/sandboxing |
+| All settings — sandbox.autoAllowBashIfSandboxed | https://code.claude.com/docs/en/settings-reference |
 
 

@@ -3,7 +3,7 @@ id: github-copilot-managed-permissions
 title: Copilot enterprise managed permissions — deny/ask/allow
 tags: [github, permissions, governance, security]
 status: active
-updated: 2026-10-14
+updated: 2026-11-14
 when_to_use: Shipping managed-settings.json permission rules for Copilot CLI, VS Code Agent Host, or the Copilot app
 ---
 
@@ -14,7 +14,7 @@ when_to_use: Shipping managed-settings.json permission rules for Copilot CLI, VS
 ## Notes
 
 - Deploy `managed-settings.json` three ways: **server-managed** (default; review/audit; includes cloud agent), **MDM** (device groups; local clients), **file-based** (containers/Codespaces; local). Precedence: MDM → server → file → user. `sandbox` and `permissions.deny|ask|allow` compose **most restrictive** across sources.
-- Selectors: `Shell(git push *)` (prefix; `Bash(...)` alias; `PowerShell(...)` case-insensitive); `Read`/`Edit` (`Write` alias) with `//` FS root, `/` workspace, `~/` home, `./` cwd, globs; `Domain(*.example.com)` (HTTPS default, case-insensitive host). Precedence deny → ask → allow. If any managed source defines a permission rule **or** an allow list, unmatched supported ops default to **ask**.
+- Selectors: `Shell(git push *)` (prefix; `Bash(...)` alias; `PowerShell(...)` case-insensitive). Copilot CLI **1.0.111** (2026-11-13) also matches enterprise-managed `Shell`/`Bash`/`PowerShell` rules as **regular expressions** — a glob-only rule still works; a regex that was previously literal may now match more than intended, so review managed files after 1.0.111. `Read`/`Edit` (`Write` alias) with `//` FS root, `/` workspace, `~/` home, `./` cwd, globs; `Domain(*.example.com)` (HTTPS default, case-insensitive host). Precedence deny → ask → allow. If any managed source defines a permission rule **or** an allow list, unmatched supported ops default to **ask**.
 - `ask` is fresh every time — not satisfied by bypass, auto-approve, hooks, or a prior grant. `allow` lists **intersect** across sources that declare one. `permissions.disableBypassPermissionsMode`: `"disable"` blocks CLI `--yolo` / `--allow-all*` / `/permissions allow-all`, VS Code `chat.tools.global.autoApprove`, and the app “Allow all.” `"allow-auto-only"` still blocks full allow-all but **permits** CLI `/permissions assisted` (`github-copilot-assisted-permissions`). Unrecognized values **fail closed** to `"disable"` (logged). CLI **1.0.94** can also disable Assisted entirely and keep sessions in Manual Approval.
 - Also in the same file: `model`, plugin/marketplace locks, OTel `telemetry` (do not put collector secrets in git), `remoteControl` (SSO-only or disable remote of sessions hosted on that device — `github-copilot-remote-control`), `allowedMcpServers` / `deniedMcpServers` (intersection allowlists), `sandbox` (CLI: users may tighten, not loosen). Team overrides use `{ "overridable": … }` on listed keys. Managed policy can disable **computer use**; a user’s `/computer on` cannot override (`github-copilot-computer-use`).
 - **`forceRemoteSettingsRefresh`** (2026-10-13): `true` requires a **fresh** server-managed fetch at startup in Copilot CLI, VS Code, and the Copilot app. Cached policy cannot satisfy it. Failed refresh **fails closed** (CLI/app: skip the 1h cache and 24h stale fallback; unconfirmed policy blocks non-default MCP, bypass-permissions, and policy-gated plugin mutations. VS Code: Copilot features blocked until refresh succeeds). Users need network at start. MDM/file-based can require freshness **before first sign-in**; a server-managed value starts requiring it on **later** startups after the client has received it once. Leave unset for the normal cache during blips.
@@ -28,5 +28,6 @@ when_to_use: Shipping managed-settings.json permission rules for Copilot CLI, VS
 - [Enterprise managed settings reference](https://docs.github.com/en/copilot/reference/enterprise-managed-settings-reference) — accessed 2026-10-09
 - [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) — accessed 2026-10-09
 - [GitHub Copilot CLI configuration directory](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference) — accessed 2026-10-09
-- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-10-14
+- [copilot-cli changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) — accessed 2026-11-14
+- [copilot-cli 1.0.111](https://github.com/github/copilot-cli/releases/tag/v1.0.111) — accessed 2026-11-14
 - [Configuring enterprise-managed settings](https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings) — accessed 2026-09-13

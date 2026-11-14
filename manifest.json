@@ -1134,14 +1134,15 @@
         "mcp"
       ],
       "status": "active",
-      "updated": "2026-08-15",
+      "updated": "2026-11-14",
       "when_to_use": "Delegating work to peer agents via Agent2Agent instead of stuffing everything into one tool loop",
       "related": [
         "a2a-vs-mcp",
         "multi-agent-handoffs",
         "subagent-context-isolation",
         "a2a-agent-card-discovery",
-        "a2a-streaming-async"
+        "a2a-streaming-async",
+        "a2a-cli"
       ]
     },
     {
@@ -3375,7 +3376,7 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-11-12",
+      "updated": "2026-11-14",
       "when_to_use": "Packaging or installing Claude Code skills/hooks/MCP/LSP/mods as a plugin, or pinning engines[\"claude-code\"] in plugin.json",
       "related": [
         "cursor-plugins",
@@ -4132,7 +4133,7 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-10-24",
+      "updated": "2026-11-14",
       "when_to_use": "Enabling Claude Code /sandbox, or deciding OS isolation vs permission rules",
       "related": [
         "claude-code-permissions",
@@ -4308,7 +4309,8 @@
         "github-copilot-lsp",
         "github-copilot-code-search",
         "github-copilot-model-policy-api",
-        "github-copilot-model-deprecations"
+        "github-copilot-model-deprecations",
+        "github-copilot-sdk"
       ]
     },
     {
@@ -4395,7 +4397,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-09-22",
+      "updated": "2026-11-14",
       "when_to_use": "Enabling Gemini CLI --sandbox, or choosing Docker vs Seatbelt vs gVisor isolation",
       "related": [
         "gemini-cli-settings",
@@ -5625,7 +5627,7 @@
         "session"
       ],
       "status": "active",
-      "updated": "2026-10-24",
+      "updated": "2026-11-14",
       "when_to_use": "Polling in an open Claude Code session with /loop, or choosing /loop vs Desktop tasks vs cloud routines",
       "related": [
         "claude-code-routines",
@@ -5931,7 +5933,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-14",
+      "updated": "2026-11-14",
       "when_to_use": "Shipping managed-settings.json permission rules for Copilot CLI, VS Code Agent Host, or the Copilot app",
       "related": [
         "github-copilot-hooks",
@@ -5943,7 +5945,8 @@
         "github-copilot-computer-use",
         "github-copilot-assisted-permissions",
         "vscode-assisted-permissions",
-        "github-copilot-sandbox"
+        "github-copilot-sandbox",
+        "github-copilot-sdk"
       ]
     },
     {
@@ -8254,7 +8257,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-22",
+      "updated": "2026-11-14",
       "when_to_use": "Enabling /remote or --remote on Copilot CLI, or contrasting it with Claude Code Remote Control",
       "related": [
         "github-copilot-cli",
@@ -9057,7 +9060,7 @@
         "automations"
       ],
       "status": "draft",
-      "updated": "2026-10-14",
+      "updated": "2026-11-14",
       "when_to_use": "Designing MCP event subscriptions (list/subscribe/unsubscribe) or contrasting them with subscriptions/listen",
       "related": [
         "mcp-subscriptions-listen",
@@ -9959,7 +9962,8 @@
         "github-copilot-usage-metrics-clients",
         "github-copilot-managed-permissions",
         "github-copilot-model-policy-api",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "github-copilot-sdk"
       ]
     },
     {
@@ -11121,6 +11125,54 @@
         "bedrock-agentcore",
         "openai-agents-api",
         "claude-managed-agents",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "github-copilot-sdk",
+      "path": "practices/github-copilot-sdk.md",
+      "title": "GitHub Copilot SDK \u2014 embed the CLI agent runtime",
+      "tags": [
+        "github",
+        "sdk",
+        "copilot",
+        "orchestration"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Embedding Copilot's coding agent in an app instead of spawning the CLI",
+      "related": [
+        "github-copilot-cli",
+        "github-copilot-managed-permissions",
+        "github-copilot-sandbox",
+        "github-copilot-mcp",
+        "github-copilot-fleet",
+        "github-copilot-s2s-auth",
+        "cursor-agent-sdk",
+        "claude-agent-sdk"
+      ]
+    },
+    {
+      "id": "a2a-cli",
+      "path": "practices/a2a-cli.md",
+      "title": "A2A CLI \u2014 official a2a client for cards, send, tasks",
+      "tags": [
+        "a2a",
+        "cli",
+        "orchestration",
+        "interoperability"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Calling an A2A agent from a shell, CI job, or coding harness without writing SDK code",
+      "related": [
+        "agent-to-agent-a2a-protocol",
+        "a2a-agent-card-discovery",
+        "a2a-streaming-async",
+        "gemini-cli-remote-subagents",
+        "cursor-agent-sdk-peers",
         "prompt-injection-agent-defense"
       ]
     }
