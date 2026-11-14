@@ -29,6 +29,8 @@ const EXEMPT_BASENAMES = new Set([
   "bibliography.md",
 ]);
 
+const KINDS = new Set(["knowledge", "tool", "service", "protocol"]);
+
 const errors = [];
 const warnings = [];
 
@@ -142,6 +144,13 @@ for (const entry of entries) {
       fail(`Manifest entry ${entry.id} missing required field: ${field}`);
     }
   }
+  if (!("kind" in entry)) {
+    warn(`Manifest entry ${entry.id} has no kind (defaults to knowledge)`);
+  } else if (!KINDS.has(entry.kind)) {
+    fail(
+      `Manifest entry ${entry.id}: kind must be one of ${[...KINDS].join(", ")} (got "${entry.kind}")`,
+    );
+  }
   if ("related" in entry && !Array.isArray(entry.related)) {
     fail(`Manifest entry ${entry.id}: related must be an array`);
   }
@@ -166,6 +175,11 @@ for (const entry of entries) {
   if (fm.status && entry.status && fm.status !== entry.status) {
     fail(
       `Status mismatch for ${entry.id}: manifest="${entry.status}" frontmatter="${fm.status}"`,
+    );
+  }
+  if (fm.kind && entry.kind && fm.kind !== entry.kind) {
+    fail(
+      `Kind mismatch for ${entry.id}: manifest="${entry.kind}" frontmatter="${fm.kind}"`,
     );
   }
   if (fm.updated && entry.updated && fm.updated !== entry.updated) {

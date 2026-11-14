@@ -38,6 +38,7 @@ const lines = [
   `| --- | --- |`,
   `| id | \`${entry.id}\` |`,
   `| path | \`${entry.path ?? ""}\` |`,
+  `| kind | ${entry.kind ?? "knowledge"} |`,
   `| status | ${entry.status ?? ""} |`,
   `| updated | ${entry.updated ?? ""} |`,
   `| tags | ${tags} |`,

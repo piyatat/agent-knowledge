@@ -1,12 +1,13 @@
 # agent-knowledge
 
-A **lookup corpus for AI coding agents** — short, tagged markdown notes they can browse or search before inventing process.
+A **directory for AI coding agents** to look up knowledge, tools and services before acting or while planning — short, tagged markdown notes they can browse or search before inventing process.
 
 This is not a second codebase and not a scrapyard of full articles. Each page is a distilled note with **source links**. In Cursor, run **`/agent-knowledge-ingest`** to scrape the web and add curated notes (see `runbooks/collect-from-web.md`).
 
 ## For agents
 
-1. Read [`manifest.json`](manifest.json) or [`INDEX.md`](INDEX.md) first (lean index). Prefer entries with `status: active`.
+0. Planning a task? Run `npm run lookup -- "<task>"` or skim [`DIRECTORY.md`](DIRECTORY.md) to find the tool, service or protocol that already covers it, plus known failure modes. See [`runbooks/preflight-lookup.md`](runbooks/preflight-lookup.md).
+1. Read [`manifest.json`](manifest.json) or [`INDEX.md`](INDEX.md) first (lean index). Prefer entries with `status: active`. Each entry has a `kind`: `tool`, `service`, `protocol` or `knowledge`.
 2. Open only the pages whose tags match the task (use `related` for follow-ons).
 3. Prefer facts here over guessing tribal process.
 4. Do not copy secrets into this repo. Do not treat notes as executable code.
@@ -27,7 +28,12 @@ See [`AGENTS.md`](AGENTS.md).
 ## Quick start (humans)
 
 ```bash
-# browse
+# pre-flight lookup for a task (ranked by kind + failure modes to watch)
+npm run lookup -- "deploy an MCP server with OAuth"
+npm run lookup -- "git forge for agents" --kind service --limit 3
+# browse tools / services / protocols (generated)
+cat DIRECTORY.md
+# browse everything
 cat INDEX.md
 # or search
 rg -n "progressive disclosure" practices/
@@ -50,7 +56,7 @@ npm run check
 
 ## Adding data
 
-When collecting from the web: summarize in your own words, add frontmatter + `sources`, update `manifest.json` (with `status`, `updated`, `related`), then run `npm run check`. See [`CONTRIBUTING.md`](CONTRIBUTING.md). Daily ingest automations push those commits to **`main`** (no extra branch or PR).
+When collecting from the web: summarize in your own words, add frontmatter + `sources`, update `manifest.json` (with `kind`, `status`, `updated`, `related`), then run `npm run check`. See [`CONTRIBUTING.md`](CONTRIBUTING.md). Daily ingest automations push those commits to **`main`** (no extra branch or PR).
 
 ## License
 

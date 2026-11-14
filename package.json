@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "private": true,
-  "description": "Lookup corpus for AI coding agents — curated notes with sources",
+  "description": "Directory for AI coding agents — look up knowledge, tools and services before acting; curated notes with sources",
   "type": "module",
   "scripts": {
     "index": "node scripts/generate-index.mjs",
@@ -14,6 +14,8 @@
     "list": "node scripts/list-entries.mjs",
     "count": "node scripts/count-entries.mjs",
     "count:tags": "node scripts/count-entries.mjs --by-tag",
-    "check": "npm run validate && npm run index"
+    "directory": "node scripts/generate-directory.mjs",
+    "lookup": "node scripts/lookup.mjs",
+    "check": "npm run validate && npm run index && npm run directory"
   }
 }
