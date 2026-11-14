@@ -1,10 +1,11 @@
 ---
 id: cursor-projects
-title: Cursor Projects — coordinator, shared context, subscriptions
+title: Cursor Projects — coordinator, multiplayer, shared context
+kind: knowledge
 tags: [cursor, orchestration, subagent, automations]
 status: active
-updated: 2026-11-02
-when_to_use: Starting a Cursor Project for a multi-PR feature, migration, or standing “gardening” job instead of a single chat
+updated: 2026-11-14
+when_to_use: Starting a Cursor Project for multi-PR work, or inviting teammates into a shared Project with their own coordinators
 ---
 
 ## Summary
@@ -23,11 +24,14 @@ when_to_use: Starting a Cursor Project for a multi-PR feature, migration, or sta
 - **Task tracker** (week of 2026-10-19): the coordinator links each worker-reported PR to the right task, unlinks finished workers, and closes Queued/parent tasks once other work delivered them. A parent task with no PR/agent of its own **follows its most active subtask** (In Progress → For Review → Queued) and goes done when every subtask is done. Workers and child coordinators may **read** the tracker, not write it. New workers get a **short topic name** (what the work is about), not a role or PR number.
 - Cloud Agents, including Project workers, now **open PRs ready for review** unless you or the task ask for a draft. A **Never open PRs as drafts** switch in codebase Pull requests settings keeps that even when a draft is requested.
 - A coordinator can list environments/repos and start a worker **where the code lives**, including a repo the Project does not own — first use of a new machine/pool/environment still asks unless **Automatically allow Projects to place their work** is on. Contrast Copilot app Projects (`github-copilot-projects`): those coordinate Copilot sessions, not Cursor Cloud Agent workers.
+- **Multiplayer** (docs, announced 2026-11-10): invite teammates from the Project header. Sharing needs a **team** account and Cursor **3.26.13+**. Each member gets their own chat, coordinator, and workers; that chat **runs and bills as them**. They share the task board and one Project store at `/cursor/stores/self` (Context). Each person’s agents also mount a **personal** store at `/cursor/stores/user` that teammates never see. A coordinator may offer to copy approved preference entries into Project rules. Someone on a personal account or another team cannot join. Joining also needs access to the Project repo, and is unavailable with Privacy Mode (Legacy), on a self-hosted machine, or on an archived Project. The owner and members can invite; **Copy link** works only for people already in the Project, and **Reset Share Link** invalidates older copies. Leave from the sidebar menu; the owner can Remove someone else.
+- Cross-member messages go to the other coordinator and are labeled **untrusted agent input**, not a request from that person’s user. The reply is produced in a side chat, **Chat with {name}'s agent**, which answers from your chat’s knowledge and cannot be messaged by you. It does not share secrets, credentials, or tokens, can read the task board but not change it, and cannot ask you questions, request access, connect source control, or manage routines. Your chat gets a note on its next turn (`prompt-injection-agent-defense`).
 - Best for work that outlives one chat (multi-PR features, migrations, jobs while you are away). Still review PRs; do not treat the coordinator as a merge gate. Cloud MCP / secrets / network follow Cloud Agent rules (`cursor-cloud-mcp-http-vs-stdio`, `cursor-cloud-secrets-network`).
 
 ## Sources
 
-- [Projects (Cursor docs)](https://cursor.com/docs/agent/projects) — accessed 2026-11-02
+- [Projects (Cursor docs)](https://cursor.com/docs/agent/projects) — accessed 2026-11-14
+- [Cursor Projects is now multiplayer](https://cursor.com/blog/projects-multiplayer) — accessed 2026-11-14
 - [Cloud Agents release notes](https://cursor.com/docs/release-notes/cloud-agents) — accessed 2026-11-02
 - [Cloud Agents settings](https://cursor.com/docs/cloud-agent/settings) — accessed 2026-10-17
 - [Cursor web release notes](https://cursor.com/docs/release-notes/web) — accessed 2026-10-17

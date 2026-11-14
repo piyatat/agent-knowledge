@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (69)
+## Tools (71)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -79,8 +79,10 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [a2a-cli](practices/a2a-cli.md) | Calling an A2A agent from a shell, CI job, or coding harness without writing SDK code | a2a, cli, orchestration, interoperability | active |
 | [gemini-code-assist](practices/gemini-code-assist.md) | Using Gemini inside VS Code or IntelliJ, or migrating a consumer Code Assist account after the June 2026 cuto… | gemini, google, ux, deprecation | active |
 | [jetbrains-ai-assistant](practices/jetbrains-ai-assistant.md) | Choosing an agent inside a JetBrains IDE, or installing one from the ACP registry versus Junie or the Copilot… | jetbrains, acp, ux, orchestration | active |
+| [augment-auggie](practices/augment-auggie.md) | Running Augment's coding agent in a terminal, CI job, or ACP editor instead of Cosmos cloud | augment, cli, acp, permissions | active |
+| [mistral-vibe](practices/mistral-vibe.md) | Running Mistral's coding agent locally, in VS Code, over ACP, or as a GitHub sandbox session | mistral, cli, acp, skills | active |
 
-## Services (60)
+## Services (62)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -146,8 +148,10 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [foundry-agent-service](practices/foundry-agent-service.md) | Hosting a prompt or containerized agent on Azure without running your own loop | microsoft, foundry, hosting, mcp | active |
 | [coderabbit-review](practices/coderabbit-review.md) | Adding a hosted pull-request reviewer on GitHub, GitLab, Bitbucket, or Azure DevOps | review, github, gitlab, ci | active |
 | [mcp-official-registry](practices/mcp-official-registry.md) | Publishing or discovering a public MCP server's install metadata | mcp, discovery, supply-chain, registry | active |
+| [augment-cosmos](practices/augment-cosmos.md) | Waking an Augment agent on a PR, ticket, Slack message, or schedule in a cloud or self-hosted sandbox | augment, hosting, automations, sandbox | active |
+| [greptile-review](practices/greptile-review.md) | Adding a hosted reviewer on GitHub, GitLab, Bitbucket, or Cursor Origin, or reviewing a local branch with the… | review, github, gitlab, credits | active |
 
-## Protocols and standards (18)
+## Protocols and standards (19)
 
 Open specs agents and tools use to talk to each other.
 
@@ -171,3 +175,4 @@ Open specs agents and tools use to talk to each other.
 | [webmcp-browser-tools](practices/webmcp-browser-tools.md) | A website should expose structured tools to a browser agent instead of relying on DOM scraping | webmcp, mcp, browser, tools | draft |
 | [agents-md-open-format](practices/agents-md-open-format.md) | Authoring a portable AGENTS.md for multiple coding agents, or deciding filename vs CLAUDE.md / Cursor rules | agents-md, standards, interoperability, aaif | active |
 | [agent-host-protocol-ahp](glossary/agent-host-protocol-ahp.md) | Distinguishing AHP from ACP/MCP/A2A, or connecting a UI to a persistent agent-host process | ahp, glossary, orchestration, interoperability | active |
+| [llms-txt](practices/llms-txt.md) | Publishing a site index agents can fetch before scraping HTML, or choosing which llms.txt covers a path | docs, discovery, markdown, agents | active |

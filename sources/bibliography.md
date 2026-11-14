@@ -2510,4 +2510,36 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Codex CLI 0.169.0 | https://github.com/openai/codex/releases/tag/rust-v0.169.0 |
 | ChatGPT & Codex changelog | https://learn.chatgpt.com/docs/changelog |
 
+## Daily ingest 2026-11-14 (Augment, Vibe, Greptile, llms.txt)
+
+| Topic | URL |
+| --- | --- |
+| Introducing Auggie CLI | https://docs.augmentcode.com/cli/overview |
+| Install Auggie CLI | https://docs.augmentcode.com/cli/setup-auggie/install-auggie-cli |
+| Login and authentication | https://docs.augmentcode.com/cli/setup-auggie/authentication |
+| CLI flags and options | https://docs.augmentcode.com/cli/reference |
+| Rules and guidelines | https://docs.augmentcode.com/cli/rules |
+| Tool permissions | https://docs.augmentcode.com/cli/permissions |
+| Token-based pricing | https://docs.augmentcode.com/models/token-based-pricing |
+| What is Augment Cosmos? | https://docs.augmentcode.com/cosmos/getting-started |
+| Cosmos environments | https://docs.augmentcode.com/cosmos/environments/overview |
+| Cloud environments | https://docs.augmentcode.com/cosmos/environments/cloud |
+| Introduction | https://docs.augmentcode.com/introduction |
+| Choose CLI, VS Code, or web sessions | https://docs.mistral.ai/vibe/code/choose-cli-vscode-web-sessions |
+| Install and setup | https://docs.mistral.ai/vibe/code/cli/install-setup |
+| API keys and profiles | https://docs.mistral.ai/vibe/code/cli/api-keys-profiles |
+| Safety, approvals, and permissions | https://docs.mistral.ai/vibe/code/safety-approvals-permissions |
+| Skills | https://docs.mistral.ai/vibe/code/cli/skills |
+| MCP servers | https://docs.mistral.ai/vibe/code/cli/mcp-servers |
+| Code providers | https://www.greptile.com/docs/integrations/code-providers |
+| 5-minute quickstart | https://www.greptile.com/docs/quickstart |
+| CLI onboarding | https://www.greptile.com/docs/code-review/cli-onboarding |
+| Greptile CLI | https://www.greptile.com/docs/code-review/greptile-cli |
+| Review tiers | https://www.greptile.com/docs/code-review/review-tiers |
+| Billing | https://www.greptile.com/docs/account/billing-seats |
+| Auto-approve PRs | https://www.greptile.com/docs/code-review/auto-approve-prs |
+| The /llms.txt file, v2 | https://llmstxt.org/ |
+| Projects (Cursor docs) | https://cursor.com/docs/agent/projects |
+| Cursor Projects is now multiplayer | https://cursor.com/blog/projects-multiplayer |
+
 

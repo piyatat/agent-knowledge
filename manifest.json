@@ -5742,7 +5742,7 @@
     {
       "id": "cursor-projects",
       "path": "practices/cursor-projects.md",
-      "title": "Cursor Projects \u2014 coordinator, shared context, subscriptions",
+      "title": "Cursor Projects \u2014 coordinator, multiplayer, shared context",
       "kind": "knowledge",
       "tags": [
         "cursor",
@@ -5751,8 +5751,8 @@
         "automations"
       ],
       "status": "active",
-      "updated": "2026-11-02",
-      "when_to_use": "Starting a Cursor Project for a multi-PR feature, migration, or standing \u201cgardening\u201d job instead of a single chat",
+      "updated": "2026-11-14",
+      "when_to_use": "Starting a Cursor Project for multi-PR work, or inviting teammates into a shared Project with their own coordinators",
       "related": [
         "cursor-cloud-always-on",
         "cursor-automations",
@@ -5761,7 +5761,8 @@
         "agent-memory-poisoning",
         "cursor-self-hosted-pools",
         "cursor-remote-control",
-        "github-copilot-projects"
+        "github-copilot-projects",
+        "prompt-injection-agent-defense"
       ]
     },
     {
@@ -11269,6 +11270,121 @@
         "mcp-server-trust-failures",
         "mcp-server-discover",
         "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "augment-auggie",
+      "path": "practices/augment-auggie.md",
+      "title": "Auggie CLI — Augment's terminal coding agent",
+      "tags": [
+        "augment",
+        "cli",
+        "acp",
+        "permissions"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Running Augment's coding agent in a terminal, CI job, or ACP editor instead of Cosmos cloud",
+      "related": [
+        "augment-cosmos",
+        "agent-client-protocol-acp",
+        "agents-md-open-format",
+        "claude-code-headless",
+        "openai-codex-exec",
+        "cursor-cli-headless",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "augment-cosmos",
+      "path": "practices/augment-cosmos.md",
+      "title": "Augment Cosmos — hosted agents, experts, and triggers",
+      "tags": [
+        "augment",
+        "hosting",
+        "automations",
+        "sandbox"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Waking an Augment agent on a PR, ticket, Slack message, or schedule in a cloud or self-hosted sandbox",
+      "related": [
+        "augment-auggie",
+        "cursor-cloud-always-on",
+        "cursor-automations",
+        "github-copilot-coding-agent",
+        "openai-codex-cloud-environments",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "mistral-vibe",
+      "path": "practices/mistral-vibe.md",
+      "title": "Mistral Vibe Code — CLI, VS Code, web, and ACP",
+      "tags": [
+        "mistral",
+        "cli",
+        "acp",
+        "skills"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Running Mistral's coding agent locally, in VS Code, over ACP, or as a GitHub sandbox session",
+      "related": [
+        "agent-client-protocol-acp",
+        "agent-skills-open-standard",
+        "jetbrains-ai-assistant",
+        "claude-code-headless",
+        "openai-codex-exec",
+        "augment-auggie",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "greptile-review",
+      "path": "practices/greptile-review.md",
+      "title": "Greptile — hosted pull-request review and local CLI",
+      "tags": [
+        "review",
+        "github",
+        "gitlab",
+        "credits"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Adding a hosted reviewer on GitHub, GitLab, Bitbucket, or Cursor Origin, or reviewing a local branch with the Greptile CLI",
+      "related": [
+        "coderabbit-review",
+        "github-copilot-code-review",
+        "cursor-bugbot-review",
+        "openai-codex-review",
+        "cursor-origin",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "llms-txt",
+      "path": "practices/llms-txt.md",
+      "title": "llms.txt — curated Markdown index for agents",
+      "tags": [
+        "docs",
+        "discovery",
+        "markdown",
+        "agents"
+      ],
+      "kind": "protocol",
+      "status": "active",
+      "updated": "2026-11-14",
+      "when_to_use": "Publishing a site index agents can fetch before scraping HTML, or choosing which llms.txt covers a path",
+      "related": [
+        "nlweb-site-mcp",
+        "webmcp-browser-tools",
+        "agents-md-open-format",
+        "mcp-server-cards"
       ]
     }
   ]
