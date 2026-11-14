@@ -508,7 +508,7 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 
 | id | kind | path | status | updated | when_to_use | related |
 | --- | --- | --- | --- | --- | --- | --- |
-| collect-from-web | knowledge | `runbooks/collect-from-web.md` | active | 2026-08-22 | User asks to scrape/collect information into agent-knowledge | knowledge-corpus-pattern |
+| collect-from-web | knowledge | `runbooks/collect-from-web.md` | active | 2026-11-14 | User asks to scrape/collect information into agent-knowledge | knowledge-corpus-pattern |
 | preflight-lookup | knowledge | `runbooks/preflight-lookup.md` | active | 2026-11-14 | Starting a task or planning a move and you need to know which tool, service, protocol or known pitfall already applies before choosing an approach | knowledge-corpus-pattern, tools-mcp-skills-layers, collect-from-web, tool-search-defer-loading |
 
 ## Decisions
