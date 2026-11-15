@@ -10,7 +10,7 @@ when_to_use: Building a Python or TypeScript agent as an explicit graph that can
 
 ## Summary
 
-**LangGraph** (MIT) is the LangChain library for an agent as a graph: nodes, conditional edges, and a checkpointer that snapshots state per `thread_id`. Install Python with `pip install -U langgraph` (it includes `langgraph-checkpoint`) or JavaScript with `@langchain/langgraph`. Model calls need that provider’s API key. It is the graph runtime, not Pydantic AI (`pydantic-ai`), Strands (`strands-agents`), or Mastra (`mastra`). Hosting is a separate product: LangSmith Agent Server checkpoints for you.
+**LangGraph** (MIT) is the LangChain library for an agent as a graph: nodes, conditional edges, and a checkpointer that snapshots state per `thread_id`. Install Python with `pip install -U langgraph` (it includes `langgraph-checkpoint`) or JavaScript with `@langchain/langgraph`. Model calls need that provider’s API key. It is the graph runtime, not Pydantic AI (`pydantic-ai`), Strands (`strands-agents`), or Mastra (`mastra`). Hosting is LangSmith Agent Server (`langsmith-agent-server`); that product checkpoints for you.
 
 ## Notes
 

@@ -2639,5 +2639,21 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | OpenTelemetry GenAI semantic conventions README | https://github.com/open-telemetry/semantic-conventions-genai/blob/main/README.md |
 | OpenTelemetry GenAI attribute registry (moved) | https://opentelemetry.io/docs/specs/semconv/registry/attributes/gen-ai/ |
 | Inside the LLM Call: GenAI Observability with OpenTelemetry | https://opentelemetry.io/blog/2026/genai-observability/ |
+| UCP specification overview (2026-08-25) | https://ucp.dev/2026-08-25/specification/overview/ |
+| UCP release v2026-08-25 | https://github.com/Universal-Commerce-Protocol/ucp/releases/tag/v2026-08-25 |
+| UCP Apache-2.0 license | https://raw.githubusercontent.com/Universal-Commerce-Protocol/ucp/main/LICENSE |
+| Get started with UCP on Google | https://developers.google.com/merchant/ucp |
+| Create a UCP profile (Google) | https://developers.google.com/merchant/ucp/implementation/2026-04-08/publish-profile |
+| LangSmith Agent Server | https://docs.langchain.com/langsmith/deployment |
+| Deploy other frameworks to LangSmith Agent Server | https://docs.langchain.com/langsmith/deploy-other-frameworks |
+| LangSmith account and API key | https://docs.langchain.com/langsmith/create-account-api-key |
+| CrewAI introduction | https://docs.crewai.com/en/introduction |
+| CrewAI installation | https://docs.crewai.com/en/installation |
+| CrewAI LLMs | https://docs.crewai.com/en/concepts/llms |
+| smolagents | https://huggingface.co/docs/smolagents/index |
+| smolagents secure code execution | https://huggingface.co/docs/smolagents/tutorials/secure_code_execution |
+| What is Browserbase? | https://docs.browserbase.com/introduction/what-is-browserbase |
+| Create a Browserbase session | https://docs.browserbase.com/fundamentals/create-browser-session |
+| Browserbase pricing | https://www.browserbase.com/pricing |
 
 

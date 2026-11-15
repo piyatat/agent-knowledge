@@ -5522,7 +5522,7 @@
         "compaction"
       ],
       "status": "active",
-      "updated": "2026-10-13",
+      "updated": "2026-11-15",
       "when_to_use": "Managing Claude Code context with /compact or /context, or selecting a 1M window vs 200K",
       "related": [
         "context-compaction",
@@ -10954,7 +10954,7 @@
         "experimental"
       ],
       "status": "active",
-      "updated": "2026-11-13",
+      "updated": "2026-11-15",
       "when_to_use": "Turning on experimental Code Mode so Claude writes JavaScript that calls tools in one step, or diagnosing why it will not start",
       "related": [
         "code-mode-tool-orchestration",
@@ -11650,7 +11650,8 @@
         "strands-agents",
         "google-adk",
         "openai-agents-sdk",
-        "durable-agent-workflows"
+        "durable-agent-workflows",
+        "langsmith-agent-server"
       ]
     },
     {
@@ -11716,7 +11717,116 @@
       "related": [
         "x402-payments",
         "agent-to-agent-a2a-protocol",
-        "google-adk"
+        "google-adk",
+        "ucp-commerce"
+      ]
+    },
+    {
+      "id": "ucp-commerce",
+      "path": "practices/ucp-commerce.md",
+      "title": "UCP — Universal Commerce Protocol",
+      "tags": [
+        "ucp",
+        "commerce",
+        "checkout",
+        "discovery"
+      ],
+      "kind": "protocol",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Letting an agent discover a merchant and check out over UCP instead of scraping a storefront",
+      "related": [
+        "ap2-payments",
+        "x402-payments",
+        "agent-to-agent-a2a-protocol"
+      ]
+    },
+    {
+      "id": "langsmith-agent-server",
+      "path": "practices/langsmith-agent-server.md",
+      "title": "LangSmith Agent Server — hosted agent runtime",
+      "tags": [
+        "langsmith",
+        "hosting",
+        "orchestration",
+        "durability"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Hosting a LangGraph or other framework agent with durable threads, separate from LangSmith tracing",
+      "related": [
+        "langgraph",
+        "crewai",
+        "google-adk",
+        "strands-agents",
+        "claude-agent-sdk",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "crewai",
+      "path": "practices/crewai.md",
+      "title": "CrewAI — Python crews and flows",
+      "tags": [
+        "crewai",
+        "sdk",
+        "orchestration",
+        "python"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Building a Python multi-agent crew with Flows, or scaffolding one with the crewai CLI",
+      "related": [
+        "langgraph",
+        "langsmith-agent-server",
+        "mastra",
+        "google-adk",
+        "openai-agents-sdk"
+      ]
+    },
+    {
+      "id": "smolagents",
+      "path": "practices/smolagents.md",
+      "title": "smolagents — Hugging Face code agents",
+      "tags": [
+        "smolagents",
+        "sdk",
+        "sandbox",
+        "python"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Running a small Python agent that acts by writing code, or sandboxing that code off the host",
+      "related": [
+        "e2b-sandboxes",
+        "modal-sandboxes",
+        "code-mode-tool-orchestration",
+        "claude-code-code-mode",
+        "pydantic-ai"
+      ]
+    },
+    {
+      "id": "browserbase",
+      "path": "practices/browserbase.md",
+      "title": "Browserbase — hosted browsers for agents",
+      "tags": [
+        "browserbase",
+        "browser",
+        "sandbox",
+        "stagehand"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Giving an agent a hosted browser, or using Search and Fetch before opening a full session",
+      "related": [
+        "playwright-mcp-containment",
+        "computer-use-containment",
+        "cursor-browser",
+        "claude-code-chrome"
       ]
     }
   ]

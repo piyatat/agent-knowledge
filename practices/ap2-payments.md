@@ -10,7 +10,7 @@ when_to_use: Authorizing an agent to buy from a merchant with signed checkout an
 
 ## Summary
 
-The **Agent Payments Protocol (AP2) v0.2** (Apache-2.0, `google-agentic-commerce/AP2`) is how a user authorizes an agent to complete a purchase. It defines roles and signed **mandates**; catalog and checkout APIs stay in a commerce protocol. The spec says it is built to work with the **Universal Commerce Protocol (UCP)**. It is not x402 (`x402-payments`), which pays for an HTTP or MCP call, and not A2A task delegation (`agent-to-agent-a2a-protocol`). Samples use Google ADK (`google-adk`); the protocol does not require it.
+The **Agent Payments Protocol (AP2) v0.2** (Apache-2.0, `google-agentic-commerce/AP2`) is how a user authorizes an agent to complete a purchase. It defines roles and signed **mandates**; catalog and checkout APIs stay in a commerce protocol. The spec says it is built to work with the **Universal Commerce Protocol** (`ucp-commerce`). It is not x402 (`x402-payments`), which pays for an HTTP or MCP call, and not A2A task delegation (`agent-to-agent-a2a-protocol`). Samples use Google ADK (`google-adk`); the protocol does not require it.
 
 ## Notes
 

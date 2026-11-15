@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (77)
+## Tools (79)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -87,8 +87,10 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [pydantic-ai](practices/pydantic-ai.md) | Building a typed Python agent with Pydantic AI, including MCP tools and approval gates | pydantic, sdk, orchestration, mcp | active |
 | [langgraph](practices/langgraph.md) | Building a Python or TypeScript agent as an explicit graph that can pause, resume, and survive a crash | langgraph, sdk, orchestration, durability | active |
 | [mastra](practices/mastra.md) | Building a TypeScript agent with tools, approval gates, and workflows in one framework | mastra, sdk, orchestration, mcp | active |
+| [crewai](practices/crewai.md) | Building a Python multi-agent crew with Flows, or scaffolding one with the crewai CLI | crewai, sdk, orchestration, python | active |
+| [smolagents](practices/smolagents.md) | Running a small Python agent that acts by writing code, or sandboxing that code off the host | smolagents, sdk, sandbox, python | active |
 
-## Services (68)
+## Services (70)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -162,8 +164,10 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [daytona-sandboxes](practices/daytona-sandboxes.md) | Running agent code in a Daytona sandbox (container, VM, GPU, or macOS) you can stop, pause, or archive | daytona, sandbox, isolation, sdk | active |
 | [vercel-sandbox](practices/vercel-sandbox.md) | Running untrusted or agent-generated code in a Vercel Firecracker microVM with Active CPU billing | vercel, sandbox, isolation, sdk | active |
 | [modal-sandboxes](practices/modal-sandboxes.md) | Running agent-generated or user code in a Modal container that can burst CPU and memory | modal, sandbox, isolation, sdk | active |
+| [langsmith-agent-server](practices/langsmith-agent-server.md) | Hosting a LangGraph or other framework agent with durable threads, separate from LangSmith tracing | langsmith, hosting, orchestration, durability | active |
+| [browserbase](practices/browserbase.md) | Giving an agent a hosted browser, or using Search and Fetch before opening a full session | browserbase, browser, sandbox, stagehand | active |
 
-## Protocols and standards (21)
+## Protocols and standards (22)
 
 Open specs agents and tools use to talk to each other.
 
@@ -190,3 +194,4 @@ Open specs agents and tools use to talk to each other.
 | [llms-txt](practices/llms-txt.md) | Publishing a site index agents can fetch before scraping HTML, or choosing which llms.txt covers a path | docs, discovery, markdown, agents | active |
 | [x402-payments](practices/x402-payments.md) | Letting an agent pay for an HTTP, MCP, or A2A resource with the x402 payment-required flow | x402, payments, http, mcp | active |
 | [ap2-payments](practices/ap2-payments.md) | Authorizing an agent to buy from a merchant with signed checkout and payment mandates | ap2, payments, commerce, authorization | active |
+| [ucp-commerce](practices/ucp-commerce.md) | Letting an agent discover a merchant and check out over UCP instead of scraping a storefront | ucp, commerce, checkout, discovery | active |
