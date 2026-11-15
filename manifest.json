@@ -638,14 +638,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-19",
-      "when_to_use": "Choosing protocols for tools vs peer agents vs IDE↔agent embedding vs multi-client session hosts",
+      "updated": "2026-11-15",
+      "when_to_use": "Choosing protocols for tools vs peer agents vs IDE↔agent embedding vs multi-client session hosts, including which ACP is meant",
       "related": [
         "tools-mcp-skills-layers",
         "multi-agent-handoffs",
         "mcp-oauth-scopes",
         "agent-client-protocol-acp",
         "a2a-aaif-governance",
+        "agent-to-agent-a2a-protocol",
         "agent-host-protocol-ahp"
       ]
     },
@@ -2929,8 +2930,8 @@
         "interoperability"
       ],
       "status": "active",
-      "updated": "2026-09-27",
-      "when_to_use": "Connecting a coding agent to an IDE (or exposing Cursor via agent acp) versus MCP tools or A2A peers",
+      "updated": "2026-11-15",
+      "when_to_use": "Connecting a coding agent to an IDE via Agent Client Protocol, or confirming this is not IBM's archived Agent Communication Protocol",
       "related": [
         "a2a-vs-mcp",
         "cursor-cli-headless",
@@ -11827,6 +11828,94 @@
         "computer-use-containment",
         "cursor-browser",
         "claude-code-chrome"
+      ]
+    },
+    {
+      "id": "letta-code",
+      "path": "practices/letta-code.md",
+      "title": "Letta Code — memory-backed coding CLI",
+      "tags": ["letta", "cli", "memory", "skills"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Running a terminal coding agent that keeps memory across machines, or calling Letta agents from another MCP client",
+      "related": [
+        "agent-skills-open-standard",
+        "claude-code-memory",
+        "malicious-skills-supply-chain",
+        "hermes-agent",
+        "openclaw-agent",
+        "pydantic-ai"
+      ]
+    },
+    {
+      "id": "fastmcp",
+      "path": "practices/fastmcp.md",
+      "title": "FastMCP — Python framework for MCP servers",
+      "tags": ["fastmcp", "mcp", "sdk", "python"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Building a Python MCP server or client that must speak the 2026-07-28 revision and older clients",
+      "related": [
+        "mcp-stateless-core",
+        "mcp-skills-extension",
+        "mcp-official-registry",
+        "mcp-stdio-transport",
+        "mcp-inspector",
+        "pydantic-ai"
+      ]
+    },
+    {
+      "id": "mcp-inspector",
+      "path": "practices/mcp-inspector.md",
+      "title": "MCP Inspector — debug MCP servers from shell or browser",
+      "tags": ["mcp", "inspector", "cli", "security"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Debugging an MCP server from a shell, CI job, or browser, including tool lists and skill checks",
+      "related": [
+        "mcp-local-server-security",
+        "mcp-stdio-transport",
+        "mcp-skills-extension",
+        "mcp-apps-extension",
+        "fastmcp"
+      ]
+    },
+    {
+      "id": "graphite-agent",
+      "path": "practices/graphite-agent.md",
+      "title": "Graphite Agent — GitHub PR review and stacking",
+      "tags": ["graphite", "review", "github", "stacking"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Adding a hosted GitHub pull-request reviewer that also stacks PRs, or starting a Cursor Cloud Agent from Graphite",
+      "related": [
+        "coderabbit-review",
+        "greptile-review",
+        "qodo-platform",
+        "github-copilot-code-review",
+        "cursor-github-cloud-agents",
+        "cursor-privacy-mode"
+      ]
+    },
+    {
+      "id": "rovo-dev-cli",
+      "path": "practices/rovo-dev-cli.md",
+      "title": "Rovo Dev CLI — Atlassian terminal coding agent",
+      "tags": ["rovo", "atlassian", "cli", "jira"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Running a terminal coding agent against Jira, Confluence, and Bitbucket on a paid Rovo Dev subscription",
+      "related": [
+        "cursor-jira",
+        "github-copilot-jira",
+        "agent-skills-open-standard",
+        "gitlab-duo-agent-platform",
+        "malicious-skills-supply-chain"
       ]
     }
   ]

@@ -3,8 +3,8 @@ id: a2a-vs-mcp
 title: A2A vs MCP vs ACP vs AHP — four different agent wires
 tags: [a2a, mcp, acp, ahp, glossary, orchestration]
 status: active
-updated: 2026-09-19
-when_to_use: Choosing protocols for tools vs peer agents vs IDE↔agent embedding vs multi-client session hosts
+updated: 2026-11-15
+when_to_use: Choosing protocols for tools vs peer agents vs IDE↔agent embedding vs multi-client session hosts, including which ACP is meant
 ---
 
 ## Summary
@@ -15,7 +15,7 @@ when_to_use: Choosing protocols for tools vs peer agents vs IDE↔agent embeddin
 
 - MCP: model/tool primitives (`tools`, `resources`, `prompts`); typically one agent + many integrations.
 - A2A: agent cards for discovery, JSON-RPC / gRPC / HTTP+JSON, task lifecycle (submit → work → complete), streaming/push for long jobs.
-- ACP: JSON-RPC over stdio (HTTP draft) between editor and agent — `initialize`, `session/prompt`, client-side fs/terminal/permissions. Cursor CLI: `agent acp`. See `agent-client-protocol-acp`.
+- ACP: JSON-RPC over stdio (HTTP draft) between editor and agent — `initialize`, `session/prompt`, client-side fs/terminal/permissions. Cursor CLI: `agent acp`. See `agent-client-protocol-acp`. This ACP is **Agent Client Protocol**. IBM’s **Agent Communication Protocol** (BeeAI, `i-am-bee/acp`) merged into A2A in August 2025; that repo is archived. Do not implement it for new peers (`a2a-aaif-governance`, `agent-to-agent-a2a-protocol`).
 - AHP: JSON-RPC (WebSocket remotely) between a persistent host and viewers. Channels + snapshots + reducers; the agent can keep running with no client. VS Code Agent Host is the first-party implementation (`agent-host-protocol-ahp`).
 - Use MCP when the agent must call APIs, files, or DBs; A2A when one agent should **delegate to another agent** without sharing internals; ACP when a host app should drive a coding agent the user already chose; AHP when several UIs must share one live session.
 - Common production shape: Agents window speaks AHP to the host; an adapter inside the host may still speak ACP to a CLI agent; that agent uses MCP for tools; orchestrators speak A2A to peer specialists.
@@ -28,5 +28,7 @@ when_to_use: Choosing protocols for tools vs peer agents vs IDE↔agent embeddin
 - [MCP server concepts](https://modelcontextprotocol.io/docs/learn/server-concepts) — accessed 2026-08-10
 - [ACP protocol overview](https://agentclientprotocol.com/protocol/overview) — accessed 2026-08-29
 - [ACP v2 transports](https://agentclientprotocol.com/protocol/v2/transports) — accessed 2026-08-29
+- [ACP joins A2A (LF AI & Data)](https://lfaidata.foundation/communityblog/2025/08/29/acp-joins-forces-with-a2a-under-the-linux-foundations-lf-ai-data/) — accessed 2026-11-15
+- [i-am-bee/acp (archived)](https://github.com/i-am-bee/ACP) — accessed 2026-11-15
 - [What is the Agent Host Protocol?](https://microsoft.github.io/agent-host-protocol/guide/what-is-ahp) — accessed 2026-09-19
 - [VS Code Agent Host architecture](https://code.visualstudio.com/docs/agents/concepts/agent-host) — accessed 2026-09-19

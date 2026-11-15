@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (79)
+## Tools (83)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -89,8 +89,12 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [mastra](practices/mastra.md) | Building a TypeScript agent with tools, approval gates, and workflows in one framework | mastra, sdk, orchestration, mcp | active |
 | [crewai](practices/crewai.md) | Building a Python multi-agent crew with Flows, or scaffolding one with the crewai CLI | crewai, sdk, orchestration, python | active |
 | [smolagents](practices/smolagents.md) | Running a small Python agent that acts by writing code, or sandboxing that code off the host | smolagents, sdk, sandbox, python | active |
+| [letta-code](practices/letta-code.md) | Running a terminal coding agent that keeps memory across machines, or calling Letta agents from another MCP c… | letta, cli, memory, skills | active |
+| [fastmcp](practices/fastmcp.md) | Building a Python MCP server or client that must speak the 2026-07-28 revision and older clients | fastmcp, mcp, sdk, python | active |
+| [mcp-inspector](practices/mcp-inspector.md) | Debugging an MCP server from a shell, CI job, or browser, including tool lists and skill checks | mcp, inspector, cli, security | active |
+| [rovo-dev-cli](practices/rovo-dev-cli.md) | Running a terminal coding agent against Jira, Confluence, and Bitbucket on a paid Rovo Dev subscription | rovo, atlassian, cli, jira | active |
 
-## Services (70)
+## Services (71)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -166,6 +170,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [modal-sandboxes](practices/modal-sandboxes.md) | Running agent-generated or user code in a Modal container that can burst CPU and memory | modal, sandbox, isolation, sdk | active |
 | [langsmith-agent-server](practices/langsmith-agent-server.md) | Hosting a LangGraph or other framework agent with durable threads, separate from LangSmith tracing | langsmith, hosting, orchestration, durability | active |
 | [browserbase](practices/browserbase.md) | Giving an agent a hosted browser, or using Search and Fetch before opening a full session | browserbase, browser, sandbox, stagehand | active |
+| [graphite-agent](practices/graphite-agent.md) | Adding a hosted GitHub pull-request reviewer that also stacks PRs, or starting a Cursor Cloud Agent from Grap… | graphite, review, github, stacking | active |
 
 ## Protocols and standards (22)
 
@@ -173,7 +178,7 @@ Open specs agents and tools use to talk to each other.
 
 | id | use when | tags | status |
 | --- | --- | --- | --- |
-| [a2a-vs-mcp](glossary/a2a-vs-mcp.md) | Choosing protocols for tools vs peer agents vs IDE↔agent embedding vs multi-client session hosts | a2a, mcp, acp, ahp | active |
+| [a2a-vs-mcp](glossary/a2a-vs-mcp.md) | Choosing protocols for tools vs peer agents vs IDE↔agent embedding vs multi-client session hosts, including w… | a2a, mcp, acp, ahp | active |
 | [mcp-stateless-core](practices/mcp-stateless-core.md) | Upgrading MCP servers/clients to the 2026-07-28 revision or debugging session breakage | mcp, stateless, transport, migration | active |
 | [mcp-streamable-http-transport](practices/mcp-streamable-http-transport.md) | Choosing or migrating MCP remote transport away from legacy HTTP+SSE | mcp, transport, stateless | active |
 | [agent-to-agent-a2a-protocol](practices/agent-to-agent-a2a-protocol.md) | Delegating work to peer agents via Agent2Agent instead of stuffing everything into one tool loop | a2a, orchestration, mcp | active |
@@ -186,7 +191,7 @@ Open specs agents and tools use to talk to each other.
 | [a2a-task-lifecycle](practices/a2a-task-lifecycle.md) | Implementing A2A SendMessage results (Message vs Task) or continuing work after a terminal task | a2a, orchestration, durability, ux | active |
 | [a2a-extensions](practices/a2a-extensions.md) | Declaring or opting into an A2A extension (new RPC methods, profiles, or metadata) without forking core types | a2a, extensions, discovery, security | active |
 | [a2a-protocol-bindings](practices/a2a-protocol-bindings.md) | Choosing JSON-RPC vs gRPC vs REST for an A2A agent, or implementing A2A-Version / supportedInterfaces | a2a, transport, versioning, interoperability | active |
-| [agent-client-protocol-acp](glossary/agent-client-protocol-acp.md) | Connecting a coding agent to an IDE (or exposing Cursor via agent acp) versus MCP tools or A2A peers | acp, glossary, orchestration, interoperability | active |
+| [agent-client-protocol-acp](glossary/agent-client-protocol-acp.md) | Connecting a coding agent to an IDE via Agent Client Protocol, or confirming this is not IBM's archived Agent… | acp, glossary, orchestration, interoperability | active |
 | [acp-v2-session-lifecycle](practices/acp-v2-session-lifecycle.md) | Implementing or migrating an ACP client/agent to protocolVersion 2 session semantics | acp, session, orchestration, migration | draft |
 | [webmcp-browser-tools](practices/webmcp-browser-tools.md) | A website should expose structured tools to a browser agent instead of relying on DOM scraping | webmcp, mcp, browser, tools | draft |
 | [agents-md-open-format](practices/agents-md-open-format.md) | Authoring a portable AGENTS.md for multiple coding agents, or deciding filename vs CLAUDE.md / Cursor rules | agents-md, standards, interoperability, aaif | active |

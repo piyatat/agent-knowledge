@@ -2655,5 +2655,37 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | What is Browserbase? | https://docs.browserbase.com/introduction/what-is-browserbase |
 | Create a Browserbase session | https://docs.browserbase.com/fundamentals/create-browser-session |
 | Browserbase pricing | https://www.browserbase.com/pricing |
+| Letta Code CLI | https://docs.letta.com/platform/cli/index.md |
+| Letta Code CLI reference | https://docs.letta.com/platform/cli/reference/index.md |
+| Letta Code headless mode | https://docs.letta.com/platform/cli/headless/index.md |
+| Letta Code configuration | https://docs.letta.com/reference/settings/index.md |
+| Letta Code permissions | https://docs.letta.com/configuration/permissions/index.md |
+| Letta Code skills | https://docs.letta.com/configuration/skills/index.md |
+| Letta pricing | https://docs.letta.com/pricing/index.md |
+| Hosted Letta MCP server | https://docs.letta.com/platform/hosted-mcp/index.md |
+| FastMCP welcome | https://gofastmcp.com/docs/getting-started/welcome |
+| FastMCP installation | https://gofastmcp.com/docs/getting-started/installation |
+| What's New in FastMCP 4 | https://gofastmcp.com/docs/getting-started/whats-new |
+| The FastMCP server | https://gofastmcp.com/docs/servers/server |
+| FastMCP authentication | https://gofastmcp.com/docs/servers/auth/authentication |
+| FastMCP updates | https://gofastmcp.com/docs/updates |
+| MCP Inspector | https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector |
+| MCP Inspector CLI client | https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/cli |
+| MCP Inspector web client | https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/web |
+| MCP Inspector security | https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/security |
+| Graphite AI Reviews | https://graphite.com/docs/ai-reviews |
+| Graphite AI reviews setup | https://graphite.com/docs/ai-reviews-setup |
+| Graphite billing and plans | https://graphite.com/docs/billing-plans |
+| Graphite pricing FAQ | https://graphite.com/docs/pricing-faq |
+| Graphite GitHub App auth | https://graphite.com/docs/authenticate-with-github-app |
+| Graphite Agents | https://graphite.com/docs/agents |
+| Use Rovo Dev CLI | https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/ |
+| Install and run Rovo Dev CLI | https://support.atlassian.com/rovo/docs/install-and-run-rovo-dev-cli-on-your-device/ |
+| Rovo Dev CLI commands | https://support.atlassian.com/rovo/docs/rovo-dev-cli-commands/ |
+| Use tools in Rovo Dev CLI | https://support.atlassian.com/rovo/docs/use-tools-in-rovo-dev-cli/ |
+| Extend Rovo Dev CLI with Agent Skills | https://support.atlassian.com/rovo/docs/extend-rovo-dev-cli-with-agent-skills/ |
+| Switch models in Rovo Dev CLI | https://support.atlassian.com/rovo/docs/switch-between-large-language-models-in-rovo-dev-cli/ |
+| ACP joins A2A (LF AI & Data) | https://lfaidata.foundation/communityblog/2025/08/29/acp-joins-forces-with-a2a-under-the-linux-foundations-lf-ai-data/ |
+| i-am-bee/acp (archived) | https://github.com/i-am-bee/ACP |
 
 
