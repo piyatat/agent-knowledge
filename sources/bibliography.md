@@ -2611,5 +2611,33 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | How x402 works | https://docs.cdp.coinbase.com/x402/core-concepts/how-it-works |
 | ACP v2 overview | https://agentclientprotocol.com/protocol/v2/overview |
 | ACP v2 session setup | https://agentclientprotocol.com/protocol/v2/session-setup |
+| LangGraph quickstart (Python) | https://docs.langchain.com/oss/python/langgraph/quickstart |
+| LangGraph quickstart (JavaScript) | https://docs.langchain.com/oss/javascript/langgraph/quickstart |
+| LangGraph checkpointers | https://docs.langchain.com/oss/python/langgraph/checkpointers |
+| LangGraph interrupts | https://docs.langchain.com/oss/python/langgraph/interrupts |
+| LangGraph license | https://github.com/langchain-ai/langgraph/blob/main/LICENSE |
+| Mastra get started | https://mastra.ai/docs/getting-started/installation |
+| Mastra human-in-the-loop | https://mastra.ai/docs/agents/human-in-the-loop |
+| Mastra MCP | https://mastra.ai/docs/connections/mcp |
+| Mastra built-in MCP server | https://mastra.ai/docs/server/mcp |
+| Mastra workflows | https://mastra.ai/docs/workflows/overview |
+| Mastra LICENSE.md | https://github.com/mastra-ai/mastra/blob/main/LICENSE.md |
+| @mastra/core README | https://github.com/mastra-ai/mastra/blob/main/packages/core/README.md |
+| Mastra Enterprise Edition license | https://github.com/mastra-ai/mastra/blob/HEAD/ee/LICENSE |
+| Modal Sandboxes | https://modal.com/docs/guide/sandboxes |
+| Modal sandbox resources and pricing | https://modal.com/docs/guide/sandbox-resources |
+| Modal sandbox snapshots | https://modal.com/docs/guide/sandbox-snapshots |
+| Modal sandbox networking | https://modal.com/docs/guide/sandbox-networking |
+| modal token CLI | https://modal.com/docs/reference/cli/token |
+| Modal Sandboxes product page | https://modal.com/products/sandboxes |
+| AP2 repository README | https://github.com/google-agentic-commerce/AP2/blob/main/README.md |
+| Agentic Payment Protocol v0.2 | https://github.com/google-agentic-commerce/AP2/blob/main/docs/ap2/specification.md |
+| AP2 flows | https://github.com/google-agentic-commerce/AP2/blob/main/docs/ap2/flows.md |
+| AP2 Checkout Mandate | https://github.com/google-agentic-commerce/AP2/blob/main/docs/ap2/checkout_mandate.md |
+| AP2 Payment Mandate | https://github.com/google-agentic-commerce/AP2/blob/main/docs/ap2/payment_mandate.md |
+| OpenTelemetry GenAI span conventions | https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-spans.md |
+| OpenTelemetry GenAI semantic conventions README | https://github.com/open-telemetry/semantic-conventions-genai/blob/main/README.md |
+| OpenTelemetry GenAI attribute registry (moved) | https://opentelemetry.io/docs/specs/semconv/registry/attributes/gen-ai/ |
+| Inside the LLM Call: GenAI Observability with OpenTelemetry | https://opentelemetry.io/blog/2026/genai-observability/ |
 
 
