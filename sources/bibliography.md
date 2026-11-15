@@ -2583,4 +2583,33 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Cloudflare Agent class | https://developers.cloudflare.com/agents/agent-class/ |
 | Amazon Q Developer IDE plugins end of support | https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-developer-ide-end-of-support.html |
 
+## Daily ingest 2026-11-15
+
+| Topic | URL |
+| --- | --- |
+| Daytona sandboxes | https://www.daytona.io/docs/en/sandboxes/ |
+| Daytona quickstart | https://www.daytona.com/docs/quickstart |
+| Daytona pricing | https://www.daytona.com/pricing |
+| Daytona billing | https://www.daytona.com/docs/billing |
+| Daytona MCP server | https://www.daytona.com/docs/mcp |
+| Vercel Sandbox | https://vercel.com/docs/sandbox |
+| Vercel Sandbox pricing and quotas | https://vercel.com/docs/sandbox/pricing |
+| Vercel Sandbox JS SDK | https://vercel.com/docs/sandbox/sdk-reference |
+| Vercel Sandbox Python SDK | https://vercel.com/docs/sandbox/python-sdk-reference |
+| Strands get started | https://strandsagents.com/docs/user-guide/sdk/quickstart/overview/ |
+| Strands Python quickstart | https://strandsagents.com/docs/user-guide/sdk/quickstart/python/ |
+| Strands harness SDK | https://github.com/strands-agents/harness-sdk |
+| Pydantic AI installation | https://pydantic.dev/docs/ai/install/ |
+| Pydantic AI agents | https://pydantic.dev/docs/ai/agents/ |
+| Pydantic AI function tools | https://pydantic.dev/docs/ai/tools/ |
+| Pydantic AI deferred tools | https://pydantic.dev/docs/ai/deferred-tools/ |
+| Pydantic AI MCP overview | https://pydantic.dev/docs/ai/mcp/overview |
+| Pydantic AI MCP client | https://pydantic.dev/docs/ai/mcp/client |
+| x402 protocol specification v2 | https://github.com/coinbase/x402/blob/main/specs/x402-specification-v2.md |
+| x402 HTTP transport v2 | https://github.com/coinbase/x402/blob/main/specs/transports-v2/http.md |
+| coinbase/x402 | https://github.com/coinbase/x402/ |
+| How x402 works | https://docs.cdp.coinbase.com/x402/core-concepts/how-it-works |
+| ACP v2 overview | https://agentclientprotocol.com/protocol/v2/overview |
+| ACP v2 session setup | https://agentclientprotocol.com/protocol/v2/session-setup |
+
 

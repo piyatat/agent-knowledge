@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (73)
+## Tools (75)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -83,8 +83,10 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [mistral-vibe](practices/mistral-vibe.md) | Running Mistral's coding agent locally, in VS Code, over ACP, or as a GitHub sandbox session | mistral, cli, acp, skills | active |
 | [pi-coding-agent](practices/pi-coding-agent.md) | Running a minimal terminal coding agent you extend with packages, or embedding the Pi SDK | pi, cli, skills, extensions | active |
 | [grok-build](practices/grok-build.md) | Running xAI's coding agent in a terminal, CI job, or ACP editor instead of Cursor Grok Bot | grok, cli, acp, permissions | active |
+| [strands-agents](practices/strands-agents.md) | Building a Python or TypeScript agent loop with Strands instead of Google ADK or a hand-rolled Bedrock loop | strands, sdk, orchestration, amazon | active |
+| [pydantic-ai](practices/pydantic-ai.md) | Building a typed Python agent with Pydantic AI, including MCP tools and approval gates | pydantic, sdk, orchestration, mcp | active |
 
-## Services (65)
+## Services (67)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -155,8 +157,10 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [qodo-platform](practices/qodo-platform.md) | Adding Qodo review on a pull request, or giving a local coding agent Qodo skills | qodo, review, github, skills | active |
 | [e2b-sandboxes](practices/e2b-sandboxes.md) | Running agent-generated code in an isolated Linux VM you can pause and resume | e2b, sandbox, isolation, sdk | active |
 | [cloudflare-agents](practices/cloudflare-agents.md) | Hosting a durable agent with SQLite state and schedules on Cloudflare | cloudflare, hosting, durable, pi | active |
+| [daytona-sandboxes](practices/daytona-sandboxes.md) | Running agent code in a Daytona sandbox (container, VM, GPU, or macOS) you can stop, pause, or archive | daytona, sandbox, isolation, sdk | active |
+| [vercel-sandbox](practices/vercel-sandbox.md) | Running untrusted or agent-generated code in a Vercel Firecracker microVM with Active CPU billing | vercel, sandbox, isolation, sdk | active |
 
-## Protocols and standards (19)
+## Protocols and standards (20)
 
 Open specs agents and tools use to talk to each other.
 
@@ -181,3 +185,4 @@ Open specs agents and tools use to talk to each other.
 | [agents-md-open-format](practices/agents-md-open-format.md) | Authoring a portable AGENTS.md for multiple coding agents, or deciding filename vs CLAUDE.md / Cursor rules | agents-md, standards, interoperability, aaif | active |
 | [agent-host-protocol-ahp](glossary/agent-host-protocol-ahp.md) | Distinguishing AHP from ACP/MCP/A2A, or connecting a UI to a persistent agent-host process | ahp, glossary, orchestration, interoperability | active |
 | [llms-txt](practices/llms-txt.md) | Publishing a site index agents can fetch before scraping HTML, or choosing which llms.txt covers a path | docs, discovery, markdown, agents | active |
+| [x402-payments](practices/x402-payments.md) | Letting an agent pay for an HTTP, MCP, or A2A resource with the x402 payment-required flow | x402, payments, http, mcp | active |

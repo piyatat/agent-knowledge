@@ -3180,7 +3180,7 @@
         "migration"
       ],
       "status": "draft",
-      "updated": "2026-10-18",
+      "updated": "2026-11-15",
       "when_to_use": "Implementing or migrating an ACP client/agent to protocolVersion 2 session semantics",
       "related": [
         "agent-client-protocol-acp",
@@ -11082,7 +11082,7 @@
       ],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-14",
+      "updated": "2026-11-15",
       "when_to_use": "Building a production Gemini or Google Cloud agent in code instead of Gemini CLI or Jules",
       "related": [
         "google-jules",
@@ -11090,7 +11090,9 @@
         "antigravity-cli",
         "openai-agents-sdk",
         "claude-agent-sdk",
-        "microsoft-agent-framework"
+        "microsoft-agent-framework",
+        "strands-agents",
+        "pydantic-ai"
       ]
     },
     {
@@ -11470,14 +11472,16 @@
       ],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-14",
+      "updated": "2026-11-15",
       "when_to_use": "Running agent-generated code in an isolated Linux VM you can pause and resume",
       "related": [
         "agent-code-sandboxing",
         "openai-agents-sdk",
         "computer-use-containment",
         "cloudflare-agents",
-        "openai-sandbox-agents"
+        "openai-sandbox-agents",
+        "daytona-sandboxes",
+        "vercel-sandbox"
       ]
     },
     {
@@ -11500,6 +11504,112 @@
         "foundry-agent-service",
         "bedrock-agentcore",
         "e2b-sandboxes",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "daytona-sandboxes",
+      "path": "practices/daytona-sandboxes.md",
+      "title": "Daytona — sandboxes for agent computers",
+      "tags": [
+        "daytona",
+        "sandbox",
+        "isolation",
+        "sdk"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Running agent code in a Daytona sandbox (container, VM, GPU, or macOS) you can stop, pause, or archive",
+      "related": [
+        "e2b-sandboxes",
+        "vercel-sandbox",
+        "agent-code-sandboxing",
+        "computer-use-containment"
+      ]
+    },
+    {
+      "id": "vercel-sandbox",
+      "path": "practices/vercel-sandbox.md",
+      "title": "Vercel Sandbox — Firecracker microVMs for agent code",
+      "tags": [
+        "vercel",
+        "sandbox",
+        "isolation",
+        "sdk"
+      ],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Running untrusted or agent-generated code in a Vercel Firecracker microVM with Active CPU billing",
+      "related": [
+        "e2b-sandboxes",
+        "daytona-sandboxes",
+        "cloudflare-agents",
+        "agent-code-sandboxing"
+      ]
+    },
+    {
+      "id": "strands-agents",
+      "path": "practices/strands-agents.md",
+      "title": "Strands Agents — in-process Python and TypeScript harness",
+      "tags": [
+        "strands",
+        "sdk",
+        "orchestration",
+        "amazon"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Building a Python or TypeScript agent loop with Strands instead of Google ADK or a hand-rolled Bedrock loop",
+      "related": [
+        "google-adk",
+        "microsoft-agent-framework",
+        "bedrock-agentcore",
+        "pydantic-ai",
+        "openai-agents-sdk"
+      ]
+    },
+    {
+      "id": "pydantic-ai",
+      "path": "practices/pydantic-ai.md",
+      "title": "Pydantic AI — typed Python agent framework",
+      "tags": [
+        "pydantic",
+        "sdk",
+        "orchestration",
+        "mcp"
+      ],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Building a typed Python agent with Pydantic AI, including MCP tools and approval gates",
+      "related": [
+        "strands-agents",
+        "google-adk",
+        "openai-agents-sdk",
+        "microsoft-agent-framework",
+        "ag-ui-vs-a2ui"
+      ]
+    },
+    {
+      "id": "x402-payments",
+      "path": "practices/x402-payments.md",
+      "title": "x402 — HTTP 402 payments for agents",
+      "tags": [
+        "x402",
+        "payments",
+        "http",
+        "mcp"
+      ],
+      "kind": "protocol",
+      "status": "active",
+      "updated": "2026-11-15",
+      "when_to_use": "Letting an agent pay for an HTTP, MCP, or A2A resource with the x402 payment-required flow",
+      "related": [
+        "agent-to-agent-a2a-protocol",
+        "mcp-streamable-http-transport",
         "prompt-injection-agent-defense"
       ]
     }
