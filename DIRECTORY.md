@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (93)
+## Tools (95)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -103,8 +103,10 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [mcp-official-sdks](practices/mcp-official-sdks.md) | Implementing an MCP server or client with the official TypeScript or Python SDK instead of FastMCP | mcp, sdk, typescript, python | active |
 | [litellm-proxy](practices/litellm-proxy.md) | Running your own OpenAI-compatible model gateway with budgets and virtual keys instead of calling OpenRouter | litellm, gateway, models, mcp | active |
 | [promptfoo](practices/promptfoo.md) | Regression-testing prompts and agents in CI, or red-teaming an agent endpoint with promptfoo | promptfoo, evals, red-team, ci | active |
+| [chrome-devtools-mcp](practices/chrome-devtools-mcp.md) | Letting a coding agent inspect a live Chrome page, record a performance trace, or read the console | chrome, mcp, browser, debugging | active |
+| [inspect-ai](practices/inspect-ai.md) | Writing a Python eval that runs a tool-using agent, or scoring Claude Code or Codex inside a sandbox | inspect, evals, sandbox, python | active |
 
-## Services (74)
+## Services (77)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -184,6 +186,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [gemini-agent-runtime](practices/gemini-agent-runtime.md) | Deploying an ADK, LangGraph, or containerized agent on Google Cloud without running the server yourself | google, hosting, gemini, a2a | active |
 | [openrouter](practices/openrouter.md) | Routing an agent through many model providers with one OpenAI-compatible key, or failing over when a provider… | openrouter, routing, models, api | active |
 | [langfuse](practices/langfuse.md) | Tracing agent runs or scoring them in Langfuse Cloud or a self-hosted Langfuse instead of a raw collector | langfuse, observability, otel, evals | active |
+| [context7](practices/context7.md) | Fetching current library documentation into a coding agent instead of relying on training data | context7, mcp, docs, discovery | active |
+| [github-mcp-server](practices/github-mcp-server.md) | Giving a coding agent GitHub issues, pull requests, and repository tools through GitHub's hosted MCP server | github, mcp, git, auth | active |
+| [braintrust](practices/braintrust.md) | Tracing agent runs and scoring experiments in Braintrust instead of a self-hosted collector | braintrust, evals, observability, tracing | active |
 
 ## Protocols and standards (22)
 

@@ -2758,5 +2758,34 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Promptfoo red team configuration | https://www.promptfoo.dev/docs/red-team/configuration/ |
 | Promptfoo red team agents | https://www.promptfoo.dev/docs/red-team/agents/ |
 | Codex subagents | https://developers.openai.com/codex/subagents |
+| Run tool calls from code with Code Mode | https://code.claude.com/docs/en/code-mode |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Claude Code v2.1.326 | https://github.com/anthropics/claude-code/releases/tag/v2.1.326 |
+| Context7 API guide | https://context7.com/docs/api-guide |
+| Context7 plans and pricing | https://context7.com/docs/plans-pricing |
+| Context7 for Cursor | https://context7.com/docs/clients/cursor |
+| Context7 MCP clients | https://context7.com/docs/resources/all-clients |
+| Context7 data safety | https://context7.com/docs/security/data-safety |
+| Context7 get API usage | https://context7.com/docs/api-reference/usage/get-api-usage |
+| Setting up the GitHub MCP Server | https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/set-up-the-github-mcp-server |
+| Remote GitHub MCP Server | https://github.com/github/github-mcp-server/blob/main/docs/remote-server.md |
+| GitHub MCP server README | https://github.com/github/github-mcp-server |
+| GitHub MCP host integration | https://github.com/github/github-mcp-server/blob/main/docs/host-integration.md |
+| Get started with Chrome DevTools for agents | https://developer.chrome.com/docs/devtools/agents/get-started |
+| chrome-devtools-mcp README | https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md |
+| Chrome DevTools MCP configuration | https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/configuration.md |
+| Chrome DevTools MCP changelog | https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/CHANGELOG.md |
+| Get started with Braintrust | https://docs.braintrust.dev/ |
+| Braintrust plans and limits | https://docs.braintrust.dev/plans-and-limits |
+| Braintrust authentication | https://docs.braintrust.dev/admin/authentication |
+| Braintrust evaluation quickstart | https://docs.braintrust.dev/evaluation-quickstart |
+| Braintrust CLI quickstart | https://docs.braintrust.dev/reference/cli/quickstart |
+| Braintrust remote evals and sandboxes | https://docs.braintrust.dev/evaluate/remote-evals |
+| Braintrust Python install | https://docs.braintrust.dev/sdks/python/install-and-instrument |
+| Inspect | https://inspect.aisi.org.uk/ |
+| Inspect using agents | https://inspect.aisi.org.uk/agents.html |
+| Inspect Deep Agent | https://inspect.aisi.org.uk/deepagent.html |
+| Inspect agent bridge | https://inspect.aisi.org.uk/agent-bridge.html |
+| Inspect tutorial | https://inspect.aisi.org.uk/tutorial |
 
 

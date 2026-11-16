@@ -5117,13 +5117,14 @@
         "experimental"
       ],
       "status": "active",
-      "updated": "2026-10-08",
+      "updated": "2026-11-16",
       "when_to_use": "Enabling CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS for peer sessions with a shared task list, or contrasting teams with subagents and workflows",
       "related": [
         "claude-code-subagents",
         "claude-code-workflows",
         "claude-code-agent-view",
         "claude-code-mods",
+        "claude-code-code-mode",
         "subagent-context-isolation",
         "multi-agent-handoffs"
       ]
@@ -10962,14 +10963,15 @@
         "experimental"
       ],
       "status": "active",
-      "updated": "2026-11-15",
+      "updated": "2026-11-16",
       "when_to_use": "Turning on experimental Code Mode so Claude writes JavaScript that calls tools in one step, or diagnosing why it will not start",
       "related": [
         "code-mode-tool-orchestration",
         "claude-code-permissions",
         "claude-code-sandboxing",
         "claude-code-hooks",
-        "claude-code-auto-mode"
+        "claude-code-auto-mode",
+        "claude-code-agent-teams"
       ]
     },
     {
@@ -12179,6 +12181,110 @@
         "mcp-stateless-core",
         "fastmcp",
         "mcp-stdio-transport"
+      ]
+    },
+    {
+      "id": "context7",
+      "path": "practices/context7.md",
+      "title": "Context7 — current library docs for agents",
+      "tags": ["context7", "mcp", "docs", "discovery"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Fetching current library documentation into a coding agent instead of relying on training data",
+      "related": [
+        "llms-txt",
+        "openai-docs-mcp",
+        "prompt-injection-agent-defense",
+        "cursor-cloud-mcp-http-vs-stdio",
+        "mcp-official-registry"
+      ]
+    },
+    {
+      "id": "github-mcp-server",
+      "path": "practices/github-mcp-server.md",
+      "title": "GitHub MCP server — hosted GitHub tools for agents",
+      "tags": ["github", "mcp", "git", "auth"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Giving a coding agent GitHub issues, pull requests, and repository tools through GitHub's hosted MCP server",
+      "related": [
+        "github-copilot-coding-agent",
+        "github-copilot-spaces",
+        "mcp-server-trust-failures",
+        "mcp-local-server-security",
+        "mcp-official-registry"
+      ]
+    },
+    {
+      "id": "chrome-devtools-mcp",
+      "path": "practices/chrome-devtools-mcp.md",
+      "title": "Chrome DevTools MCP — live Chrome for coding agents",
+      "tags": ["chrome", "mcp", "browser", "debugging"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Letting a coding agent inspect a live Chrome page, record a performance trace, or read the console",
+      "related": [
+        "chrome-devtools-mcp-profile",
+        "playwright-mcp",
+        "playwright-mcp-containment",
+        "cursor-browser",
+        "browserbase",
+        "stagehand",
+        "gemini-cli-subagents",
+        "webmcp-browser-tools"
+      ]
+    },
+    {
+      "id": "chrome-devtools-mcp-profile",
+      "path": "failure-modes/chrome-devtools-mcp-profile.md",
+      "title": "Chrome DevTools MCP reuses a signed-in browser",
+      "tags": ["chrome", "mcp", "browser", "security"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "A coding agent can read cookies or act as you because Chrome DevTools MCP reused a profile or attached to your browser",
+      "related": [
+        "chrome-devtools-mcp",
+        "playwright-mcp-containment",
+        "computer-use-containment",
+        "mcp-local-server-security"
+      ]
+    },
+    {
+      "id": "braintrust",
+      "path": "practices/braintrust.md",
+      "title": "Braintrust — traces, evals, and Loop",
+      "tags": ["braintrust", "evals", "observability", "tracing"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Tracing agent runs and scoring experiments in Braintrust instead of a self-hosted collector",
+      "related": [
+        "langfuse",
+        "promptfoo",
+        "inspect-ai",
+        "agent-observability-otel",
+        "cursor-agent-sdk-evals"
+      ]
+    },
+    {
+      "id": "inspect-ai",
+      "path": "practices/inspect-ai.md",
+      "title": "Inspect — Python evals for agents and models",
+      "tags": ["inspect", "evals", "sandbox", "python"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Writing a Python eval that runs a tool-using agent, or scoring Claude Code or Codex inside a sandbox",
+      "related": [
+        "braintrust",
+        "promptfoo",
+        "agent-eval-harness",
+        "e2b-sandboxes",
+        "cursor-agent-sdk-evals"
       ]
     }
   ]

@@ -3,7 +3,7 @@ id: claude-code-agent-teams
 title: Claude Code agent teams — lead, teammates, mailbox
 tags: [claude, multi-agent, orchestration, experimental]
 status: active
-updated: 2026-10-08
+updated: 2026-11-16
 when_to_use: Enabling CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS for peer sessions with a shared task list, or contrasting teams with subagents and workflows
 ---
 
@@ -20,6 +20,7 @@ when_to_use: Enabling CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS for peer sessions wit
 - Named teammate from a **subagent / plugin definition**: `tools` (plus `SendMessage` and Task tools in-process), `model`, in-process `disallowedTools` / `effort`, and body (appended in-process; replaces the default prompt in split-pane). `skills` are **not** applied as a full teammate load; v2.1.295 **subagents** preload at most **32** skills from the `skills` field (each once) — a subagent with the Skill tool can still invoke the rest. In-process teammates ignore `mcpServers`. v2.1.288 fixed plugin-defined agents spawning with defaults instead of that prompt/tools/effort. v2.1.289: mods can `agent.spawn` teammates (`claude-code-mods`).
 - v2.1.295: in-process teammates no longer fail their **first `SendMessage`** until tool search loads the tool. Forked skills invoked from Workflow subagents now deliver results to the invoking agent, not the main conversation. Relayed “approval” in `SendMessage` is still untrusted by the auto-mode classifier.
 - Token cost scales with teammate count; start with 3–5 and partition files to avoid overwrite races. Hooks: `TeammateIdle`, `TaskCreated`, `TaskCompleted` — exit 2 sends feedback / blocks.
+- **Code Mode (v2.1.326, 2026-11-16):** both experiments can be on. In-process teammates run in Code Mode; split-pane teammates start without it. A startup line that Code Mode cannot be used with agent teams yet means the binary is older than 2.1.326 (`claude-code-code-mode`).
 
 ## Sources
 
@@ -28,3 +29,5 @@ when_to_use: Enabling CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS for peer sessions wit
 - [v2.1.288 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.288) — accessed 2026-10-04
 - [v2.1.289 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.289) — accessed 2026-10-04
 - [v2.1.295 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.295) — accessed 2026-10-08
+- [Run tool calls from code with Code Mode](https://code.claude.com/docs/en/code-mode) — accessed 2026-11-16
+- [v2.1.326](https://github.com/anthropics/claude-code/releases/tag/v2.1.326) — accessed 2026-11-16
