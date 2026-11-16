@@ -4,7 +4,7 @@ title: FastMCP — Python framework for MCP servers
 kind: tool
 tags: [fastmcp, mcp, sdk, python]
 status: active
-updated: 2026-11-15
+updated: 2026-11-16
 when_to_use: Building a Python MCP server or client that must speak the 2026-07-28 revision and older clients
 ---
 
@@ -19,7 +19,7 @@ when_to_use: Building a Python MCP server or client that must speak the 2026-07-
 - **Skills (4.2, experimental).** A `Skill` is a name, description, instructions, and files. `SkillCatalogProvider` or `SkillsDirectoryProvider` serves them as ordinary resources. Clients that speak the experimental Skills extension also get `skills/list` with a hashed manifest. `Client.read_skill()` checks size and digest; `to_directory()` installs into an agent skills folder. Client support is uneven. Older `experimental_skills=True` imports warn and are on a removal path toward 4.3 — use `fastmcp.skills.provider`.
 - **Auth.** Applies to **HTTP and SSE only**. Stdio inherits the local user. Default is `auth=None`: an HTTP endpoint accepts unauthenticated calls, and components without their own checks are open to anyone who can reach the port. A gateway in front does not count unless you also block direct access. Patterns: `JWTVerifier` (resource server), `RemoteAuthProvider` when the IdP supports dynamic client registration, `OAuthProxy` (GitHub, Google, Azure, and other non-DCR providers), `MultiAuth` (3.1.0+) for more than one issuer, and a full `OAuthProvider` only if you must be the authorization server. Load client secrets from the environment.
 - **Upgrading.** Most FastMCP 3 servers run on 4 without changes. From MCP SDK v1’s high-level server, the usual change is the import (`from fastmcp import FastMCP`) rather than rewriting onto SDK v2’s `MCPServer`. A `pip` upgrade from FastMCP 3.2 or earlier to 3.3+ can leave a half-removed install (`ModuleNotFoundError`); `uv` is unaffected. Reinstall with `pip install --force-reinstall fastmcp` if that happens. Cyclopts can pull docutils via old rich-rst; a fresh install resolves rich-rst 2. If a license scan flags docutils, upgrade `cyclopts` and `rich-rst`.
-- **Alternatives.** The official MCP Python SDK when you want the reference server and not this framework. Pydantic AI (`pydantic-ai`) when the agent loop is the product and MCP is one tool source. Publish install metadata in the official registry (`mcp-official-registry`) either way.
+- **Alternatives.** The official MCP Python SDK (`mcp-official-sdks`) when you want the reference `MCPServer` and not this framework. Pydantic AI (`pydantic-ai`) when the agent loop is the product and MCP is one tool source. Publish install metadata in the official registry (`mcp-official-registry`) either way.
 - **Caveats.** Do not deploy HTTP with `auth=None` on a reachable network. Do not treat 4.2 skills as stable wire for every client. Do not float the minor version in production.
 
 ## Sources

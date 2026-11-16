@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (90)
+## Tools (93)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -100,8 +100,11 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [browser-use](practices/browser-use.md) | Driving a browser from Python or a coding agent with browser-use 1.0 instead of Stagehand or Playwright MCP | browser-use, browser, python, cdp | active |
 | [vercel-ai-sdk](practices/vercel-ai-sdk.md) | Building a TypeScript tool-calling agent with the Vercel AI SDK instead of Mastra or LangGraph | vercel, sdk, typescript, orchestration | active |
 | [playwright-mcp](practices/playwright-mcp.md) | Giving a coding agent a local browser through @playwright/mcp instead of Stagehand or a hosted browser | playwright, mcp, browser, cli | active |
+| [mcp-official-sdks](practices/mcp-official-sdks.md) | Implementing an MCP server or client with the official TypeScript or Python SDK instead of FastMCP | mcp, sdk, typescript, python | active |
+| [litellm-proxy](practices/litellm-proxy.md) | Running your own OpenAI-compatible model gateway with budgets and virtual keys instead of calling OpenRouter | litellm, gateway, models, mcp | active |
+| [promptfoo](practices/promptfoo.md) | Regression-testing prompts and agents in CI, or red-teaming an agent endpoint with promptfoo | promptfoo, evals, red-team, ci | active |
 
-## Services (73)
+## Services (74)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -180,6 +183,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [graphite-agent](practices/graphite-agent.md) | Adding a hosted GitHub pull-request reviewer that also stacks PRs, or starting a Cursor Cloud Agent from Grap… | graphite, review, github, stacking | active |
 | [gemini-agent-runtime](practices/gemini-agent-runtime.md) | Deploying an ADK, LangGraph, or containerized agent on Google Cloud without running the server yourself | google, hosting, gemini, a2a | active |
 | [openrouter](practices/openrouter.md) | Routing an agent through many model providers with one OpenAI-compatible key, or failing over when a provider… | openrouter, routing, models, api | active |
+| [langfuse](practices/langfuse.md) | Tracing agent runs or scoring them in Langfuse Cloud or a self-hosted Langfuse instead of a raw collector | langfuse, observability, otel, evals | active |
 
 ## Protocols and standards (22)
 

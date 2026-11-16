@@ -2741,5 +2741,22 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Codex 0.167.2 | https://github.com/openai/codex/releases/tag/rust-v0.167.2 |
 | Codex 0.168.0 | https://github.com/openai/codex/releases/tag/rust-v0.168.0 |
 | Codex 0.169.0 | https://github.com/openai/codex/releases/tag/rust-v0.169.0 |
+| MCP TypeScript SDK v2 | https://ts.sdk.modelcontextprotocol.io/v2/ |
+| typescript-sdk repository | https://github.com/modelcontextprotocol/typescript-sdk |
+| MCP TypeScript SDK v1 | https://ts.sdk.modelcontextprotocol.io/ |
+| MCP Python SDK | https://py.sdk.modelcontextprotocol.io/ |
+| MCP Python SDK installation | https://py.sdk.modelcontextprotocol.io/get-started/installation/ |
+| Langfuse get started with tracing | https://langfuse.com/docs/observability/get-started |
+| Langfuse SDKs | https://langfuse.com/docs/observability/sdk/overview |
+| Langfuse OpenTelemetry | https://langfuse.com/integrations/native/opentelemetry |
+| LiteLLM proxy CLI quick start | https://docs.litellm.ai/docs/proxy/quick_start |
+| LiteLLM virtual keys | https://docs.litellm.ai/docs/proxy/virtual_keys |
+| LiteLLM grant MCP access | https://docs.litellm.ai/docs/mcp_grant_access |
+| LiteLLM MCP configuration reference | https://docs.litellm.ai/docs/mcp_config_reference |
+| Promptfoo getting started | https://www.promptfoo.dev/docs/getting-started/ |
+| Promptfoo CI/CD | https://www.promptfoo.dev/docs/integrations/ci-cd/ |
+| Promptfoo red team configuration | https://www.promptfoo.dev/docs/red-team/configuration/ |
+| Promptfoo red team agents | https://www.promptfoo.dev/docs/red-team/agents/ |
+| Codex subagents | https://developers.openai.com/codex/subagents |
 
 

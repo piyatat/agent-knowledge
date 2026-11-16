@@ -6664,8 +6664,8 @@
         "isolation"
       ],
       "status": "active",
-      "updated": "2026-09-18",
-      "when_to_use": "Delegating Codex/ChatGPT Work work to parallel subagents, or authoring ~/.codex/agents TOML",
+      "updated": "2026-11-16",
+      "when_to_use": "Delegating Codex or ChatGPT Work to parallel subagents, or authoring .codex/agents TOML",
       "related": [
         "openai-codex-sessions",
         "claude-code-subagents",
@@ -11866,9 +11866,10 @@
       "tags": ["fastmcp", "mcp", "sdk", "python"],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-15",
+      "updated": "2026-11-16",
       "when_to_use": "Building a Python MCP server or client that must speak the 2026-07-28 revision and older clients",
       "related": [
+        "mcp-official-sdks",
         "mcp-stateless-core",
         "mcp-skills-extension",
         "mcp-official-registry",
@@ -12070,6 +12071,7 @@
       "updated": "2026-11-16",
       "when_to_use": "Routing an agent through many model providers with one OpenAI-compatible key, or failing over when a provider errors",
       "related": [
+        "litellm-proxy",
         "openai-codex-model-providers",
         "ollama",
         "vercel-ai-sdk",
@@ -12093,6 +12095,90 @@
         "browserbase",
         "cursor-browser",
         "claude-code-chrome"
+      ]
+    },
+    {
+      "id": "mcp-official-sdks",
+      "path": "practices/mcp-official-sdks.md",
+      "title": "Official MCP SDKs — TypeScript v2 and Python v2",
+      "tags": ["mcp", "sdk", "typescript", "python"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Implementing an MCP server or client with the official TypeScript or Python SDK instead of FastMCP",
+      "related": [
+        "fastmcp",
+        "mcp-inspector",
+        "mcp-stateless-core",
+        "mcp-official-registry",
+        "mcp-sdk-v1-spec-mismatch",
+        "pydantic-ai"
+      ]
+    },
+    {
+      "id": "langfuse",
+      "path": "practices/langfuse.md",
+      "title": "Langfuse — traces, prompts, and scores",
+      "tags": ["langfuse", "observability", "otel", "evals"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Tracing agent runs or scoring them in Langfuse Cloud or a self-hosted Langfuse instead of a raw collector",
+      "related": [
+        "agent-observability-otel",
+        "langsmith-agent-server",
+        "promptfoo",
+        "telemetry-redaction-genai"
+      ]
+    },
+    {
+      "id": "litellm-proxy",
+      "path": "practices/litellm-proxy.md",
+      "title": "LiteLLM proxy — self-hosted model gateway",
+      "tags": ["litellm", "gateway", "models", "mcp"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Running your own OpenAI-compatible model gateway with budgets and virtual keys instead of calling OpenRouter",
+      "related": [
+        "openrouter",
+        "ollama",
+        "agentgateway-aaif",
+        "openai-codex-model-providers",
+        "mcp-official-registry"
+      ]
+    },
+    {
+      "id": "promptfoo",
+      "path": "practices/promptfoo.md",
+      "title": "Promptfoo — prompt evals and agent red teams",
+      "tags": ["promptfoo", "evals", "red-team", "ci"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Regression-testing prompts and agents in CI, or red-teaming an agent endpoint with promptfoo",
+      "related": [
+        "langfuse",
+        "cursor-agent-sdk-evals",
+        "gemini-cli-evals",
+        "ollama",
+        "agent-observability-otel"
+      ]
+    },
+    {
+      "id": "mcp-sdk-v1-spec-mismatch",
+      "path": "failure-modes/mcp-sdk-v1-spec-mismatch.md",
+      "title": "MCP SDK v1 against a 2026-07-28 peer",
+      "tags": ["mcp", "sdk", "migration", "failure-modes"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "An MCP server or client built from the v1 package fails to handshake with a 2026-07-28 peer",
+      "related": [
+        "mcp-official-sdks",
+        "mcp-stateless-core",
+        "fastmcp",
+        "mcp-stdio-transport"
       ]
     }
   ]
