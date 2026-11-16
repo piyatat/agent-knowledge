@@ -1584,12 +1584,15 @@
         "sandbox"
       ],
       "status": "active",
-      "updated": "2026-08-22",
+      "updated": "2026-11-16",
       "when_to_use": "Connecting @playwright/mcp (or similar browser MCP) to a coding agent",
       "related": [
+        "playwright-mcp",
         "computer-use-containment",
         "mcp-registry-admission",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "browser-use",
+        "stagehand"
       ]
     },
     {
@@ -9996,7 +9999,7 @@
         "cli"
       ],
       "status": "active",
-      "updated": "2026-10-31",
+      "updated": "2026-11-16",
       "when_to_use": "Setting model_provider in Codex config.toml, or routing Codex through Bedrock, Vertex AI, Ollama, or LM Studio",
       "related": [
         "openai-codex-exec",
@@ -10005,7 +10008,10 @@
         "openai-codex-gpt-55-retirement",
         "openai-gpt-61-terra-agents",
         "openai-codex-cloud-environments",
-        "claude-code-gateway"
+        "openai-codex-app-server",
+        "claude-code-gateway",
+        "ollama",
+        "openrouter"
       ]
     },
     {
@@ -11934,7 +11940,9 @@
       "when_to_use": "Driving a browser from agent code with act, extract, and observe, locally or on Browserbase",
       "related": [
         "browserbase",
+        "playwright-mcp",
         "playwright-mcp-containment",
+        "browser-use",
         "webmcp-browser-tools",
         "cursor-browser",
         "claude-code-chrome"
@@ -11995,6 +12003,96 @@
         "google-adk",
         "gemini-agent-runtime",
         "durable-agent-workflows"
+      ]
+    },
+    {
+      "id": "ollama",
+      "path": "practices/ollama.md",
+      "title": "Ollama — local model server and cloud API",
+      "tags": ["ollama", "models", "cli", "local"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Running a local model server for Codex --oss, Copilot BYOK, or an agent SDK, or calling Ollama cloud without a local install",
+      "related": [
+        "openai-codex-model-providers",
+        "openai-codex-exec",
+        "github-copilot-cli-local-models",
+        "goose-aaif-agent",
+        "strands-agents",
+        "vscode-on-device-models",
+        "openrouter"
+      ]
+    },
+    {
+      "id": "browser-use",
+      "path": "practices/browser-use.md",
+      "title": "browser-use 1.0 — Python browser agent and CLI",
+      "tags": ["browser-use", "browser", "python", "cdp"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Driving a browser from Python or a coding agent with browser-use 1.0 instead of Stagehand or Playwright MCP",
+      "related": [
+        "stagehand",
+        "browserbase",
+        "playwright-mcp",
+        "playwright-mcp-containment",
+        "pydantic-ai",
+        "webmcp-browser-tools"
+      ]
+    },
+    {
+      "id": "vercel-ai-sdk",
+      "path": "practices/vercel-ai-sdk.md",
+      "title": "Vercel AI SDK — ToolLoopAgent and harnesses",
+      "tags": ["vercel", "sdk", "typescript", "orchestration"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Building a TypeScript tool-calling agent with the Vercel AI SDK instead of Mastra or LangGraph",
+      "related": [
+        "mastra",
+        "langgraph",
+        "vercel-sandbox",
+        "pydantic-ai",
+        "openrouter",
+        "agent-code-sandboxing"
+      ]
+    },
+    {
+      "id": "openrouter",
+      "path": "practices/openrouter.md",
+      "title": "OpenRouter — one API across model providers",
+      "tags": ["openrouter", "routing", "models", "api"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Routing an agent through many model providers with one OpenAI-compatible key, or failing over when a provider errors",
+      "related": [
+        "openai-codex-model-providers",
+        "ollama",
+        "vercel-ai-sdk",
+        "github-copilot-hydrafusion",
+        "agent-model-routing-fallback"
+      ]
+    },
+    {
+      "id": "playwright-mcp",
+      "path": "practices/playwright-mcp.md",
+      "title": "Playwright MCP — browser tools for coding agents",
+      "tags": ["playwright", "mcp", "browser", "cli"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Giving a coding agent a local browser through @playwright/mcp instead of Stagehand or a hosted browser",
+      "related": [
+        "playwright-mcp-containment",
+        "stagehand",
+        "browser-use",
+        "browserbase",
+        "cursor-browser",
+        "claude-code-chrome"
       ]
     }
   ]

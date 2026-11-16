@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (86)
+## Tools (90)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -96,8 +96,12 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [stagehand](practices/stagehand.md) | Driving a browser from agent code with act, extract, and observe, locally or on Browserbase | stagehand, browser, sdk, cdp | active |
 | [semgrep-guardian](practices/semgrep-guardian.md) | Scanning code a coding agent just wrote, or triaging Semgrep findings from the editor over MCP | semgrep, security, mcp, plugins | active |
 | [llamaindex-workflows](practices/llamaindex-workflows.md) | Building a Python agent as typed events and steps instead of a LangGraph or a hand-rolled loop | llamaindex, sdk, orchestration, python | active |
+| [ollama](practices/ollama.md) | Running a local model server for Codex --oss, Copilot BYOK, or an agent SDK, or calling Ollama cloud without… | ollama, models, cli, local | active |
+| [browser-use](practices/browser-use.md) | Driving a browser from Python or a coding agent with browser-use 1.0 instead of Stagehand or Playwright MCP | browser-use, browser, python, cdp | active |
+| [vercel-ai-sdk](practices/vercel-ai-sdk.md) | Building a TypeScript tool-calling agent with the Vercel AI SDK instead of Mastra or LangGraph | vercel, sdk, typescript, orchestration | active |
+| [playwright-mcp](practices/playwright-mcp.md) | Giving a coding agent a local browser through @playwright/mcp instead of Stagehand or a hosted browser | playwright, mcp, browser, cli | active |
 
-## Services (72)
+## Services (73)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -175,6 +179,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [browserbase](practices/browserbase.md) | Giving an agent a hosted browser, or using Search and Fetch before opening a full session | browserbase, browser, sandbox, stagehand | active |
 | [graphite-agent](practices/graphite-agent.md) | Adding a hosted GitHub pull-request reviewer that also stacks PRs, or starting a Cursor Cloud Agent from Grap… | graphite, review, github, stacking | active |
 | [gemini-agent-runtime](practices/gemini-agent-runtime.md) | Deploying an ADK, LangGraph, or containerized agent on Google Cloud without running the server yourself | google, hosting, gemini, a2a | active |
+| [openrouter](practices/openrouter.md) | Routing an agent through many model providers with one OpenAI-compatible key, or failing over when a provider… | openrouter, routing, models, api | active |
 
 ## Protocols and standards (22)
 

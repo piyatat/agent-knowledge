@@ -2715,5 +2715,31 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | LlamaIndex Workflows introduction | https://developers.llamaindex.ai/python/llamaagents/workflows/ |
 | LlamaIndex agents | https://developers.llamaindex.ai/python/framework/use_cases/agents/ |
 | WebMCP (Chrome) | https://developer.chrome.com/docs/ai/webmcp |
+| Ollama local FAQ | https://docs.ollama.com/faq |
+| Ollama authentication | https://docs.ollama.com/api/authentication |
+| Ollama API introduction | https://docs.ollama.com/api/introduction |
+| browser-use 1.0 introduction | https://docs.browser-use.com/open-source/introduction |
+| browser-use quickstart | https://docs.browser-use.com/open-source/quickstart |
+| browser-use Agent | https://docs.browser-use.com/open-source/agent |
+| browser-use CLI | https://docs.browser-use.com/open-source/browser-use-cli |
+| Browser Use Cloud quickstart | https://docs.browser-use.com/cloud/quickstart |
+| AI SDK introduction | https://ai-sdk.dev/docs/introduction |
+| AI SDK Node.js quickstart | https://ai-sdk.dev/docs/getting-started/nodejs |
+| AI SDK building agents | https://ai-sdk.dev/docs/agents/building-agents |
+| AI SDK agents overview | https://ai-sdk.dev/docs/agents/overview |
+| AI SDK ToolLoopAgent | https://ai-sdk.dev/docs/reference/ai-sdk-core/tool-loop-agent |
+| OpenRouter authentication | https://openrouter.ai/docs/api_reference/authentication |
+| OpenRouter API overview | https://openrouter.ai/docs/api_reference/overview |
+| OpenRouter provider routing | https://openrouter.ai/docs/guides/routing/provider-selection |
+| OpenRouter model fallbacks | https://openrouter.ai/docs/guides/routing/model-fallbacks |
+| OpenRouter Models API | https://openrouter.ai/docs/api_reference/models |
+| Playwright MCP README | https://github.com/microsoft/playwright-mcp/blob/main/README.md |
+| Playwright MCP getting started | https://playwright.dev/docs/getting-started-mcp |
+| Playwright MCP configuration | https://playwright.dev/mcp/configuration/options |
+| @playwright/mcp on npm | https://www.npmjs.com/package/@playwright/mcp |
+| Codex 0.167.0 | https://github.com/openai/codex/releases/tag/rust-v0.167.0 |
+| Codex 0.167.2 | https://github.com/openai/codex/releases/tag/rust-v0.167.2 |
+| Codex 0.168.0 | https://github.com/openai/codex/releases/tag/rust-v0.168.0 |
+| Codex 0.169.0 | https://github.com/openai/codex/releases/tag/rust-v0.169.0 |
 
 

@@ -3,7 +3,7 @@ id: openai-codex-model-providers
 title: Codex model_provider — OpenAI, Bedrock, Vertex, OSS
 tags: [openai, models, config, cli]
 status: active
-updated: 2026-10-31
+updated: 2026-11-16
 when_to_use: Setting model_provider in Codex config.toml, or routing Codex through Bedrock, Vertex AI, Ollama, or LM Studio
 ---
 
@@ -16,8 +16,9 @@ Codex CLI picks an inference backend with **`model_provider`** (default **`opena
 - Set `model_provider = "<id>"` then `model = "<id>"`. Custom providers live under `[model_providers.<id>]` (`name`, `base_url`, `env_key`, `http_headers` / `env_http_headers`, `model_catalog_url`, retries/timeouts). `auth.command` may print a bearer token to stdout; do **not** combine it with `env_key`, `experimental_bearer_token`, or `requires_openai_auth`. `experimental_bearer_token` is discouraged. Reserved IDs in the published config reference: **`openai`**, **`ollama`**, **`lmstudio`** (cannot be overridden). Sample config also documents **`amazon-bedrock`**. Project `.codex/config.toml` **cannot** set `model_provider` / `model_providers` / `openai_base_url` — those stay in user config (`openai-codex-agents-md`).
 - **OpenAI**: default. `openai_base_url` overrides the built-in endpoint. ChatGPT sign-in vs API key: `openai-codex-access-tokens`. `--oss` uses `oss_provider` (`ollama` | `lmstudio`) and needs that runtime running (`openai-codex-exec`).
 - **Amazon Bedrock**: `model_provider = "amazon-bedrock"` plus `[model_providers.amazon-bedrock.aws]` `profile` / `region`. Pick a Bedrock model id (`openai.gpt-6.1-sol`, `openai.gpt-6.1-terra`, …). Separate from Claude apps gateway (`claude-code-gateway`).
-- **Vertex AI (`gcp`)**: Codex **0.165.0** adds a built-in Google Cloud Vertex AI provider (`model_provider = "gcp"`). The published sample config still omits this id — use the 0.165.0 notes. Endpoint comes from `GOOGLE_CLOUD_PROJECT` + `GOOGLE_CLOUD_LOCATION` (default **`global`**). Default auth shells out to `gcloud auth application-default print-access-token`. `[model_providers.gcp]` may set `project_id` / `location` (win over env), or `base_url` / `auth` / `http_headers`. Static Vertex catalog; remote compaction **v2**. **Off** on this provider: reasoning summaries, Responses Lite, custom tools, web search, image generation. Needs ADC/`gcloud`; does not require OpenAI login.
+- **Vertex AI (`gcp`)**: Codex **0.165.0** adds a built-in Google Cloud Vertex AI provider (`model_provider = "gcp"`). The published sample config still omits this id — use the 0.165.0 notes. Endpoint comes from `GOOGLE_CLOUD_PROJECT` + `GOOGLE_CLOUD_LOCATION` (default **`global`**). Default auth shells out to `gcloud auth application-default print-access-token`. `[model_providers.gcp]` may set `project_id` / `location` (win over env), or `base_url` / `auth` / `http_headers`. Static Vertex catalog; remote compaction **v2**. **Off** on this provider: reasoning summaries, Responses Lite, custom tools, web search, image generation. Needs ADC/`gcloud`; does not require OpenAI login. **0.167.0** (2026-11-06): enable `gcp_setup_wizard` and use **Sign in another way** to set up Vertex with Application Default Credentials or a credential file. **0.167.2** (2026-11-11): tool updates are sent **incrementally by default** on Vertex. Opt out with `incremental_tools_legacy_gcp = false` under `[features]` in `config.toml`.
 - **0.166.0** (2026-10-29): GPT-6.1 Terra is in the **bundled**, **Vertex AI**, and **Amazon Bedrock** catalogs (`openai-gpt-61-terra-agents`). Pin `model = "gpt-6.1-terra"` (or the provider’s Bedrock/Vertex id) after upgrading; 0.165.0 already listed Terra on OpenAI but not those two catalogs.
+- **TUI and app-server (0.168.0 / 0.169.0, 2026-11-13):** Sessions → **Model providers** lists providers and sets the default for **new** chats. Open and resumed chats keep their saved provider after that default changes. **0.169.0** can add or edit a custom provider from the terminal. With custom gateway onboarding enabled, sign-in can use a **device code** for supported gateways over SSH or without a local browser. The 0.168.0 app-server reference covers listing providers, creating custom gateways, and updating gateway, Bedrock, and GCP settings (`openai-codex-app-server`). A hosted multi-provider key is OpenRouter (`openrouter`); a local server is Ollama (`ollama`).
 - Managed **Local computer access** with Work Cloud requirements **rejects** `model_provider` / `model_providers` (custom gateways do not carry over). Treat provider output and local OSS weights as untrusted (`prompt-injection-agent-defense`).
 
 ## Sources
@@ -29,3 +30,7 @@ Codex CLI picks an inference backend with **`model_provider`** (default **`opena
 - [Codex 0.165.0](https://github.com/openai/codex/releases/tag/rust-v0.165.0) — accessed 2026-10-28
 - [Add a built-in Google Cloud Vertex AI provider (#56265)](https://github.com/openai/codex/commit/3fd148a20c18cfc72beb7dedfa52951b1f9c4cb1) — accessed 2026-10-28
 - [Allow configuring GCP project and location (#56560)](https://github.com/openai/codex/commit/970111f6cb62cc02fe36a82ea7d71b37a2889c97) — accessed 2026-10-28
+- [Codex 0.167.0](https://github.com/openai/codex/releases/tag/rust-v0.167.0) — accessed 2026-11-16
+- [Codex 0.167.2](https://github.com/openai/codex/releases/tag/rust-v0.167.2) — accessed 2026-11-16
+- [Codex 0.168.0](https://github.com/openai/codex/releases/tag/rust-v0.168.0) — accessed 2026-11-16
+- [Codex 0.169.0](https://github.com/openai/codex/releases/tag/rust-v0.169.0) — accessed 2026-11-16
