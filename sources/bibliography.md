@@ -2688,4 +2688,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | ACP joins A2A (LF AI & Data) | https://lfaidata.foundation/communityblog/2025/08/29/acp-joins-forces-with-a2a-under-the-linux-foundations-lf-ai-data/ |
 | i-am-bee/acp (archived) | https://github.com/i-am-bee/ACP |
 
+## Daily ingest 2026-11-16
+
+| Topic | URL |
+| --- | --- |
+| Stagehand v4 installation | https://docs.stagehand.dev/v4/first-steps/installation |
+| Stagehand v4 quickstart | https://docs.stagehand.dev/v4/first-steps/quickstart |
+| Stagehand v4 browser configuration | https://docs.stagehand.dev/v4/configuration/browser |
+| Stagehand migrate v3 to v4 | https://docs.stagehand.dev/v4/migrations/v3 |
+| Stagehand migrate Playwright to v4 | https://docs.stagehand.dev/v4/migrations/playwright |
+| Deploying Stagehand | https://docs.stagehand.dev/v4/best-practices/deployments |
+| Stagehand WebMCP | https://docs.stagehand.dev/v4/basics/webmcp |
+| browserbase/stagehand | https://github.com/browserbase/stagehand |
+| Agent Runtime | https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/runtime |
+| Deploy an agent on Agent Runtime | https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/deploy-an-agent |
+| Scale your agents | https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale |
+| Gemini Enterprise Agent Platform pricing | https://cloud.google.com/products/gemini-enterprise-agent-platform/pricing |
+| Semgrep Guardian | https://docs.semgrep.dev/semgrep-guardian/overview |
+| Semgrep Guardian quickstart | https://docs.semgrep.dev/semgrep-guardian/quickstart |
+| Choose your Guardian setup | https://docs.semgrep.dev/semgrep-guardian/choose-your-setup |
+| Guardian on Cursor | https://docs.semgrep.dev/semgrep-guardian/ide-setup/cursor |
+| Install the Semgrep CLI for Guardian | https://docs.semgrep.dev/semgrep-guardian/install-cli |
+| Guardian enterprise deployment | https://docs.semgrep.dev/semgrep-guardian/enterprise-deployment |
+| Semgrep MCP (beta) | https://docs.semgrep.dev/mcp/overview |
+| Semgrep MCP authentication | https://docs.semgrep.dev/mcp/authentication |
+| LlamaIndex Workflows introduction | https://developers.llamaindex.ai/python/llamaagents/workflows/ |
+| LlamaIndex agents | https://developers.llamaindex.ai/python/framework/use_cases/agents/ |
+| WebMCP (Chrome) | https://developer.chrome.com/docs/ai/webmcp |
+
 

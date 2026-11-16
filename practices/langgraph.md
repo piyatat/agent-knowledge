@@ -4,7 +4,7 @@ title: LangGraph — checkpointed agent graphs
 kind: tool
 tags: [langgraph, sdk, orchestration, durability]
 status: active
-updated: 2026-11-15
+updated: 2026-11-16
 when_to_use: Building a Python or TypeScript agent as an explicit graph that can pause, resume, and survive a crash
 ---
 
@@ -19,7 +19,7 @@ when_to_use: Building a Python or TypeScript agent as an explicit graph that can
 - **Where state lives.** `InMemorySaver` is RAM and disappears on process restart. Install `langgraph-checkpoint-sqlite` for a local file, or `langgraph-checkpoint-postgres` / `langgraph-checkpoint-mongodb` for production. Async graphs need the async saver (`AsyncPostgresSaver`, and so on). On Agent Server you do not configure a saver yourself.
 - **Durability** on `invoke` / `stream`: `"exit"` writes only when the run ends (a crash mid-run leaves **no** thread); `"async"` writes during the next step and can lose a checkpoint if the process dies first; `"sync"` commits before the next step. Nodes that already finished in a failed super-step are stored as pending writes and are not re-run.
 - **Auth and tracing.** The graph itself has no login. Set the model provider key (the quickstart uses `ANTHROPIC_API_KEY`). Optional LangSmith traces need `LANGSMITH_TRACING=true` and `LANGSMITH_API_KEY`. Current docs are also on MCP at `https://docs.langchain.com/mcp` and `https://reference.langchain.com/mcp`.
-- **Alternatives.** Pydantic AI when you want a typed Python tool loop with deferred approvals. Mastra when the app is TypeScript and workflows live in the same package. Google ADK (`google-adk`) when the deploy target is Gemini Enterprise Agent Engine.
+- **Alternatives.** Pydantic AI when you want a typed Python tool loop with deferred approvals. Mastra when the app is TypeScript and workflows live in the same package. LlamaIndex Workflows (`llamaindex-workflows`) when the control flow should be typed events instead of a graph. Google ADK (`google-adk`) when the deploy target is Gemini Enterprise Agent Runtime (`gemini-agent-runtime`).
 - **Caveats.** `InMemorySaver` looks durable until the process restarts. `"exit"` cannot recover a crash. An `interrupt()` placed after a side effect (a charge, a send, a file write) repeats that side effect on resume. A missing `thread_id` silently skips persistence.
 
 ## Sources
@@ -29,3 +29,4 @@ when_to_use: Building a Python or TypeScript agent as an explicit graph that can
 - [Checkpointers](https://docs.langchain.com/oss/python/langgraph/checkpointers) — accessed 2026-11-15
 - [Interrupts](https://docs.langchain.com/oss/python/langgraph/interrupts) — accessed 2026-11-15
 - [LangGraph license](https://github.com/langchain-ai/langgraph/blob/main/LICENSE) — accessed 2026-11-15
+- [Agent Runtime](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/runtime) — accessed 2026-11-16

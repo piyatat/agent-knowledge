@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Directory for AI agents to look up knowledge, tools and services before acting or while planning — curated notes with sources",
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -3300,13 +3300,14 @@
         "tools"
       ],
       "status": "draft",
-      "updated": "2026-08-31",
+      "updated": "2026-11-16",
       "when_to_use": "A website should expose structured tools to a browser agent instead of relying on DOM scraping",
       "related": [
         "nlweb-site-mcp",
         "computer-use-containment",
         "mcp-apps-extension",
-        "ag-ui-vs-a2ui"
+        "ag-ui-vs-a2ui",
+        "stagehand"
       ]
     },
     {
@@ -11089,7 +11090,7 @@
       ],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-15",
+      "updated": "2026-11-16",
       "when_to_use": "Building a production Gemini or Google Cloud agent in code instead of Gemini CLI or Jules",
       "related": [
         "google-jules",
@@ -11102,7 +11103,8 @@
         "pydantic-ai",
         "langgraph",
         "mastra",
-        "ap2-payments"
+        "ap2-payments",
+        "gemini-agent-runtime"
       ]
     },
     {
@@ -11643,7 +11645,7 @@
       ],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-15",
+      "updated": "2026-11-16",
       "when_to_use": "Building a Python or TypeScript agent as an explicit graph that can pause, resume, and survive a crash",
       "related": [
         "pydantic-ai",
@@ -11652,7 +11654,9 @@
         "google-adk",
         "openai-agents-sdk",
         "durable-agent-workflows",
-        "langsmith-agent-server"
+        "langsmith-agent-server",
+        "llamaindex-workflows",
+        "gemini-agent-runtime"
       ]
     },
     {
@@ -11821,13 +11825,14 @@
       ],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-15",
+      "updated": "2026-11-16",
       "when_to_use": "Giving an agent a hosted browser, or using Search and Fetch before opening a full session",
       "related": [
         "playwright-mcp-containment",
         "computer-use-containment",
         "cursor-browser",
-        "claude-code-chrome"
+        "claude-code-chrome",
+        "stagehand"
       ]
     },
     {
@@ -11916,6 +11921,80 @@
         "agent-skills-open-standard",
         "gitlab-duo-agent-platform",
         "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "stagehand",
+      "path": "practices/stagehand.md",
+      "title": "Stagehand v4 — browser SDK for agents",
+      "tags": ["stagehand", "browser", "sdk", "cdp"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Driving a browser from agent code with act, extract, and observe, locally or on Browserbase",
+      "related": [
+        "browserbase",
+        "playwright-mcp-containment",
+        "webmcp-browser-tools",
+        "cursor-browser",
+        "claude-code-chrome"
+      ]
+    },
+    {
+      "id": "gemini-agent-runtime",
+      "path": "practices/gemini-agent-runtime.md",
+      "title": "Gemini Enterprise Agent Runtime — hosted agent deploy",
+      "tags": ["google", "hosting", "gemini", "a2a"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Deploying an ADK, LangGraph, or containerized agent on Google Cloud without running the server yourself",
+      "related": [
+        "google-adk",
+        "google-jules",
+        "langgraph",
+        "llamaindex-workflows",
+        "langsmith-agent-server",
+        "foundry-agent-service",
+        "bedrock-agentcore",
+        "agent-to-agent-a2a-protocol"
+      ]
+    },
+    {
+      "id": "semgrep-guardian",
+      "path": "practices/semgrep-guardian.md",
+      "title": "Semgrep Guardian — scan agent-written code",
+      "tags": ["semgrep", "security", "mcp", "plugins"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Scanning code a coding agent just wrote, or triaging Semgrep findings from the editor over MCP",
+      "related": [
+        "github-code-scanning-ai-scan",
+        "github-copilot-code-review",
+        "claude-code-plugins",
+        "openai-codex-plugins",
+        "github-copilot-plugins",
+        "cursor-plugins",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "llamaindex-workflows",
+      "path": "practices/llamaindex-workflows.md",
+      "title": "LlamaIndex Workflows — event-step agent flows",
+      "tags": ["llamaindex", "sdk", "orchestration", "python"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-16",
+      "when_to_use": "Building a Python agent as typed events and steps instead of a LangGraph or a hand-rolled loop",
+      "related": [
+        "langgraph",
+        "pydantic-ai",
+        "mastra",
+        "google-adk",
+        "gemini-agent-runtime",
+        "durable-agent-workflows"
       ]
     }
   ]

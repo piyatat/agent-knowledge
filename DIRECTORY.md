@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (83)
+## Tools (86)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -93,8 +93,11 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [fastmcp](practices/fastmcp.md) | Building a Python MCP server or client that must speak the 2026-07-28 revision and older clients | fastmcp, mcp, sdk, python | active |
 | [mcp-inspector](practices/mcp-inspector.md) | Debugging an MCP server from a shell, CI job, or browser, including tool lists and skill checks | mcp, inspector, cli, security | active |
 | [rovo-dev-cli](practices/rovo-dev-cli.md) | Running a terminal coding agent against Jira, Confluence, and Bitbucket on a paid Rovo Dev subscription | rovo, atlassian, cli, jira | active |
+| [stagehand](practices/stagehand.md) | Driving a browser from agent code with act, extract, and observe, locally or on Browserbase | stagehand, browser, sdk, cdp | active |
+| [semgrep-guardian](practices/semgrep-guardian.md) | Scanning code a coding agent just wrote, or triaging Semgrep findings from the editor over MCP | semgrep, security, mcp, plugins | active |
+| [llamaindex-workflows](practices/llamaindex-workflows.md) | Building a Python agent as typed events and steps instead of a LangGraph or a hand-rolled loop | llamaindex, sdk, orchestration, python | active |
 
-## Services (71)
+## Services (72)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -171,6 +174,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [langsmith-agent-server](practices/langsmith-agent-server.md) | Hosting a LangGraph or other framework agent with durable threads, separate from LangSmith tracing | langsmith, hosting, orchestration, durability | active |
 | [browserbase](practices/browserbase.md) | Giving an agent a hosted browser, or using Search and Fetch before opening a full session | browserbase, browser, sandbox, stagehand | active |
 | [graphite-agent](practices/graphite-agent.md) | Adding a hosted GitHub pull-request reviewer that also stacks PRs, or starting a Cursor Cloud Agent from Grap… | graphite, review, github, stacking | active |
+| [gemini-agent-runtime](practices/gemini-agent-runtime.md) | Deploying an ADK, LangGraph, or containerized agent on Google Cloud without running the server yourself | google, hosting, gemini, a2a | active |
 
 ## Protocols and standards (22)
 
