@@ -2841,5 +2841,26 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | a2a-python pyproject.toml | https://github.com/a2aproject/a2a-python/blob/main/pyproject.toml |
 | Claude Code v2.1.326 | https://github.com/anthropics/claude-code/releases/tag/v2.1.326 |
 | Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Tavily MCP | https://docs.tavily.com/documentation/mcp |
+| Try Tavily without an API key | https://docs.tavily.com/documentation/keyless |
+| Tavily credits and pricing | https://docs.tavily.com/documentation/api-credits |
+| Tavily pricing | https://www.tavily.com/pricing |
+| Inngest durable agents | https://www.inngest.com/docs/durable-execution/durable-agents |
+| Inngest durable execution limits | https://www.inngest.com/docs/durable-execution/limits |
+| Inngest pricing | https://www.inngest.com/pricing |
+| Inngest signing keys | https://www.inngest.com/docs/platform/signing-keys |
+| Inngest TypeScript environment variables | https://www.inngest.com/docs/sdk/environment-variables |
+| Inngest Python environment variables | https://www.inngest.com/docs/reference/python/overview/env-vars |
+| DeepEval introduction | https://deepeval.com/docs/introduction |
+| DeepEval getting started | https://deepeval.com/docs/getting-started |
+| DeepEval MCP evaluation quickstart | https://deepeval.com/docs/getting-started-mcp |
+| confident-ai/deepeval | https://github.com/confident-ai/deepeval |
+| snyk/agent-scan README | https://github.com/snyk/agent-scan/blob/main/README.md |
+| Snyk Agent Scan releases | https://github.com/snyk/agent-scan/releases |
+| Start Phoenix | https://arize.com/docs/phoenix/get-started |
+| Phoenix self-hosting | https://arize.com/docs/phoenix/self-hosting |
+| Phoenix 21 authentication by default | https://arize.com/docs/phoenix/release-notes/11-2026/11-02-2026-authentication-by-default-and-decision-annotations |
+| arize-phoenix on PyPI | https://pypi.org/project/arize-phoenix/ |
+| Arize Phoenix | https://arize.com/phoenix/ |
 
 

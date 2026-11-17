@@ -662,7 +662,7 @@
         "approvals"
       ],
       "status": "active",
-      "updated": "2026-08-10",
+      "updated": "2026-11-17",
       "when_to_use": "Agent loops must survive crashes, timeouts, or hours-long human approvals",
       "related": [
         "human-in-the-loop-approvals",
@@ -670,7 +670,9 @@
         "agent-observability-otel",
         "mcp-tasks-extension",
         "langgraph",
-        "mastra"
+        "mastra",
+        "inngest",
+        "inngest-agent-replay"
       ]
     },
     {
@@ -12501,6 +12503,160 @@
         "a2a-enterprise-auth",
         "a2a-signed-agent-cards",
         "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "tavily",
+      "path": "practices/tavily.md",
+      "title": "Tavily — search, extract, and research API for agents",
+      "tags": ["tavily", "mcp", "search", "web"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Giving an agent ranked web search and URL extracts, or a keyed crawl and research run",
+      "links": {
+        "get": "https://app.tavily.com/home",
+        "docs": "https://docs.tavily.com/documentation/mcp",
+        "home": "https://www.tavily.com/"
+      },
+      "related": [
+        "exa",
+        "firecrawl",
+        "tavily-mcp-keyless",
+        "context7",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "tavily-mcp-keyless",
+      "path": "failure-modes/tavily-mcp-keyless.md",
+      "title": "Tavily keyless MCP only searches and still asks you to sign in",
+      "tags": ["tavily", "mcp", "auth", "reliability"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "A Tavily MCP client prompts for login, or crawl, map, and research tools never appear",
+      "related": ["tavily", "exa-mcp-keyless", "mcp-oauth-scopes", "prompt-injection-agent-defense"]
+    },
+    {
+      "id": "inngest",
+      "path": "practices/inngest.md",
+      "title": "Inngest — durable steps for agent loops",
+      "tags": ["inngest", "durability", "orchestration", "workflows"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Running an agent loop that must retry one tool call, wait days for approval, and resume after a crash",
+      "links": {
+        "get": "https://app.inngest.com/sign-up",
+        "docs": "https://www.inngest.com/docs/durable-execution/durable-agents",
+        "home": "https://www.inngest.com/"
+      },
+      "related": [
+        "durable-agent-workflows",
+        "inngest-agent-replay",
+        "langgraph",
+        "mastra",
+        "vercel-ai-sdk",
+        "cloudflare-agents",
+        "human-in-the-loop-approvals",
+        "agent-retry-idempotency"
+      ]
+    },
+    {
+      "id": "inngest-agent-replay",
+      "path": "failure-modes/inngest-agent-replay.md",
+      "title": "Inngest replays agent code outside steps and can repeat a tool",
+      "tags": ["inngest", "durability", "replay", "idempotency"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "A resumed Inngest agent takes a new path, double-sends a write, or dies on run state size",
+      "related": ["inngest", "durable-agent-workflows", "agent-retry-idempotency"]
+    },
+    {
+      "id": "deepeval",
+      "path": "practices/deepeval.md",
+      "title": "DeepEval — Pytest-style evals for agents and MCP",
+      "tags": ["deepeval", "evals", "mcp", "python"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Unit-testing an agent, RAG pipeline, or MCP client in Pytest or Vitest before production traces",
+      "links": {
+        "get": "https://deepeval.com/docs/getting-started",
+        "docs": "https://deepeval.com/docs/introduction",
+        "home": "https://deepeval.com/"
+      },
+      "related": [
+        "promptfoo",
+        "inspect-ai",
+        "braintrust",
+        "langfuse",
+        "llm-judge-bias",
+        "agent-eval-harness"
+      ]
+    },
+    {
+      "id": "snyk-agent-scan",
+      "path": "practices/snyk-agent-scan.md",
+      "title": "Snyk Agent Scan — inventory MCP servers, agents, and skills",
+      "tags": ["snyk", "security", "mcp", "skills"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Inventorying local coding-agent MCP servers and skills for prompt injection before trusting them",
+      "links": {
+        "get": "https://github.com/snyk/agent-scan/releases",
+        "docs": "https://github.com/snyk/agent-scan/blob/main/README.md",
+        "home": "https://github.com/snyk/agent-scan"
+      },
+      "related": [
+        "snyk-studio",
+        "snyk-agent-scan-executes",
+        "semgrep-guardian",
+        "malicious-skills-supply-chain",
+        "mcp-local-server-security",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "snyk-agent-scan-executes",
+      "path": "failure-modes/snyk-agent-scan-executes.md",
+      "title": "Snyk Agent Scan starts MCP servers to read their tools",
+      "tags": ["snyk", "mcp", "security", "supply-chain"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Running Agent Scan on an untrusted mcp.json, or a CI scan that never prompts",
+      "related": [
+        "snyk-agent-scan",
+        "mcp-local-server-security",
+        "mcp-localhost-dns-rebinding",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "arize-phoenix",
+      "path": "practices/arize-phoenix.md",
+      "title": "Phoenix — self-hosted OpenTelemetry traces and evals",
+      "tags": ["phoenix", "observability", "otel", "evals"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Tracing and scoring an agent on a Phoenix instance you run, including an air-gapped host",
+      "links": {
+        "get": "https://arize.com/docs/phoenix/get-started",
+        "docs": "https://arize.com/docs/phoenix",
+        "home": "https://arize.com/phoenix/"
+      },
+      "related": [
+        "langfuse",
+        "braintrust",
+        "agent-observability-otel",
+        "promptfoo",
+        "inspect-ai",
+        "llm-judge-bias"
       ]
     }
   ]

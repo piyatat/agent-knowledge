@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. The `get` column points to the official page to install or sign up; whether and how to proceed is the user's call. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (101)
+## Tools (104)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -111,8 +111,11 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [dspy](practices/dspy.md) | Building a Python LM program as signatures and modules, then compiling it against a metric | — | dspy, sdk, python, optimization | active |
 | [snyk-studio](practices/snyk-studio.md) | Scanning code and dependencies from Claude, Cursor, Codex, or Copilot with the local Snyk CLI | — | snyk, security, mcp, hooks | active |
 | [a2a-python-sdk](practices/a2a-python-sdk.md) | Embedding an Agent2Agent client or server in Python instead of shelling out to the a2a CLI | — | a2a, sdk, python, orchestration | active |
+| [deepeval](practices/deepeval.md) | Unit-testing an agent, RAG pipeline, or MCP client in Pytest or Vitest before production traces | [link](https://deepeval.com/docs/getting-started) | deepeval, evals, mcp, python | active |
+| [snyk-agent-scan](practices/snyk-agent-scan.md) | Inventorying local coding-agent MCP servers and skills for prompt injection before trusting them | [link](https://github.com/snyk/agent-scan/releases) | snyk, security, mcp, skills | active |
+| [arize-phoenix](practices/arize-phoenix.md) | Tracing and scoring an agent on a Phoenix instance you run, including an air-gapped host | [link](https://arize.com/docs/phoenix/get-started) | phoenix, observability, otel, evals | active |
 
-## Services (80)
+## Services (82)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -198,6 +201,8 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [composio](practices/composio.md) | Giving an agent authenticated GitHub, Gmail, Slack, or other app tools without writing each OAuth flow | — | composio, mcp, auth, tools | active |
 | [firecrawl](practices/firecrawl.md) | Turning a URL or a search into markdown for an agent, or driving a page after the scrape | — | firecrawl, mcp, web, scrape | active |
 | [exa](practices/exa.md) | Giving an agent token-efficient web search, page contents, or an async research run | — | exa, mcp, search, web | active |
+| [tavily](practices/tavily.md) | Giving an agent ranked web search and URL extracts, or a keyed crawl and research run | [link](https://app.tavily.com/home) | tavily, mcp, search, web | active |
+| [inngest](practices/inngest.md) | Running an agent loop that must retry one tool call, wait days for approval, and resume after a crash | [link](https://app.inngest.com/sign-up) | inngest, durability, orchestration, workflows | active |
 
 ## Protocols and standards (22)
 

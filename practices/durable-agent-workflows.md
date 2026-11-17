@@ -3,7 +3,7 @@ id: durable-agent-workflows
 title: Durable agent workflows and checkpointed steps
 tags: [workflows, durability, reliability, approvals]
 status: active
-updated: 2026-08-10
+updated: 2026-11-17
 when_to_use: Agent loops must survive crashes, timeouts, or hours-long human approvals
 ---
 
@@ -19,9 +19,11 @@ Run long agent loops inside a durable workflow runtime so each tool call is a ch
 - Keep cross-step context **serializable** (IDs, configs); recreate DB clients and SDK handles inside the step.
 - Pair with stream reconnect (`runId`) so chat UIs survive network drops without restarting the agent.
 - Observability comes free when each tool call is a visible step with inputs/outputs/retries.
+- Inngest is one hosted runtime for this pattern (`inngest`): each model call and tool call is a step, and clocks, randomness, and external calls stay inside the step so a resume replays the same path (`inngest-agent-replay`).
 
 ## Sources
 
 - [WorkflowAgent (AI SDK)](https://ai-sdk.dev/docs/agents/workflow-agent) — accessed 2026-08-10
 - [What is WorkflowAgent? (Vercel KB)](https://vercel.com/kb/guide/what-is-workflowagent) — accessed 2026-08-10
 - [Agent approval workflow stack guide](https://vercel.com/kb/guide/agent-approval-workflow-stack-guide) — accessed 2026-08-10
+- [Durable agents (Inngest)](https://www.inngest.com/docs/durable-execution/durable-agents) — accessed 2026-11-17
