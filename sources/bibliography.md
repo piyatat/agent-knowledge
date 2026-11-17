@@ -2819,5 +2819,27 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Enterprise managed settings | https://docs.github.com/en/copilot/reference/enterprise-administrators/enterprise-managed-settings |
 | Managing plugin marketplaces and plugins | https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/manage-plugin-marketplaces-and-plugins |
 | GitHub Copilot models deprecated on November 16, 2026 | https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026/ |
+| Firecrawl introduction | https://docs.firecrawl.dev/ |
+| Firecrawl MCP | https://docs.firecrawl.dev/mcp-server |
+| Firecrawl scrape | https://docs.firecrawl.dev/features/scrape |
+| Firecrawl rate limits | https://docs.firecrawl.dev/rate-limits |
+| Firecrawl pricing | https://www.firecrawl.dev/pricing |
+| Firecrawl agent | https://docs.firecrawl.dev/features/agent |
+| Start building with Exa | https://exa.ai/docs/index.md |
+| Exa MCP | https://exa.ai/docs/get-started/exa-mcp.md |
+| Exa pricing | https://exa.ai/docs/admin/pricing.md |
+| Exa docs index | https://exa.ai/docs/llms.txt |
+| DSPy | https://dspy.ai/current/ |
+| Setting up DSPy | https://dspy.ai/current/getting-started/installation/ |
+| Your first DSPy program | https://dspy.ai/current/getting-started/first-program/ |
+| dspy.configure | https://dspy.ai/current/api/utils/configure/ |
+| Getting started with Snyk Studio | https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/getting-started-with-snyk-studio |
+| A2A Python SDK | https://a2aproject.github.io/a2a-python/ |
+| a2a-sdk on PyPI | https://pypi.org/project/a2a-sdk/ |
+| A2A Python SDK reference | https://a2a-protocol.org/latest/sdk/python/api/ |
+| A2A agent skills and Agent Card | https://a2a-protocol.org/latest/tutorials/python/3-agent-skills-and-card/ |
+| a2a-python pyproject.toml | https://github.com/a2aproject/a2a-python/blob/main/pyproject.toml |
+| Claude Code v2.1.326 | https://github.com/anthropics/claude-code/releases/tag/v2.1.326 |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
 
 

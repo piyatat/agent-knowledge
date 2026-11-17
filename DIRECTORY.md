@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (98)
+## Tools (101)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -108,8 +108,11 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [docker-mcp-toolkit](practices/docker-mcp-toolkit.md) | Running catalog MCP servers in containers and sharing one gateway across coding agents | docker, mcp, gateway, security | active |
 | [serena](practices/serena.md) | Giving a coding agent symbol-level search and edit over MCP instead of only grep and line edits | serena, mcp, lsp, editing | active |
 | [agno](practices/agno.md) | Building a Python agent, team, or workflow and serving it as an API or MCP server you host | agno, sdk, python, orchestration | active |
+| [dspy](practices/dspy.md) | Building a Python LM program as signatures and modules, then compiling it against a metric | dspy, sdk, python, optimization | active |
+| [snyk-studio](practices/snyk-studio.md) | Scanning code and dependencies from Claude, Cursor, Codex, or Copilot with the local Snyk CLI | snyk, security, mcp, hooks | active |
+| [a2a-python-sdk](practices/a2a-python-sdk.md) | Embedding an Agent2Agent client or server in Python instead of shelling out to the a2a CLI | a2a, sdk, python, orchestration | active |
 
-## Services (78)
+## Services (80)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -193,6 +196,8 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [github-mcp-server](practices/github-mcp-server.md) | Giving a coding agent GitHub issues, pull requests, and repository tools through GitHub's hosted MCP server | github, mcp, git, auth | active |
 | [braintrust](practices/braintrust.md) | Tracing agent runs and scoring experiments in Braintrust instead of a self-hosted collector | braintrust, evals, observability, tracing | active |
 | [composio](practices/composio.md) | Giving an agent authenticated GitHub, Gmail, Slack, or other app tools without writing each OAuth flow | composio, mcp, auth, tools | active |
+| [firecrawl](practices/firecrawl.md) | Turning a URL or a search into markdown for an agent, or driving a page after the scrape | firecrawl, mcp, web, scrape | active |
+| [exa](practices/exa.md) | Giving an agent token-efficient web search, page contents, or an async research run | exa, mcp, search, web | active |
 
 ## Protocols and standards (22)
 

@@ -4,7 +4,7 @@ title: A2A CLI — official a2a client for cards, send, tasks
 kind: tool
 tags: [a2a, cli, orchestration, interoperability]
 status: active
-updated: 2026-11-14
+updated: 2026-11-17
 when_to_use: Calling an A2A agent from a shell, CI job, or coding harness without writing SDK code
 ---
 
@@ -18,7 +18,7 @@ when_to_use: Calling an A2A agent from a shell, CI job, or coding harness withou
 - **Access path:** `a2a card get <url>`; `a2a send -a <host|card-url|path|urn> "…"`. `--stream` for live events; `--async` then `a2a task get … --wait`. `-e` + one `--transport rest|jsonrpc|grpc` skips the card. Coding agents: `npx skills add https://github.com/a2aproject/a2a-cli --skill a2a-cli` (skill does **not** install the binary). Claude Code plugin: `/plugin marketplace add a2aproject/agent-plugins` then `/plugin install a2a-cli@a2a-plugins`.
 - **Auth:** `--auth "Bearer <token>"` (shorthand for `--svc-param Authorization=…`). Prefer `A2ACLI_AUTH` or `~/.config/a2a-cli/.env` over argv. Extra headers: `--svc-param k=v`. `--tenant` on every request. `--extended` card fetch may need auth. Never commit tokens.
 - **Limits:** default request timeout **30s** (`--timeout`). Experimental AI Catalog lookup (`a2a catalog add|search`, `-a urn:…`). JSON/JSONL (`-o json|jsonl`) and documented exit codes for CI. Config precedence: flag > env `A2ACLI_*` > local `.env` > `~/.config/a2a-cli/config.yaml` > global `.env`. Inspect with `a2a config show`.
-- **Alternatives:** language SDKs (Python/Go/JS/Java/.NET/Rust) when you need an in-process client; Gemini CLI remote subagents (`gemini-cli-remote-subagents`); Cursor peer agents (`cursor-agent-sdk-peers`). Custom transports: drop `a2a-transport-<name>` on `PATH` (`a2a transport list`).
+- **Alternatives:** the Python SDK (`a2a-python-sdk`) when the client or server lives in-process; other language SDKs (Go/JS/Java/.NET/Rust) the same way. Gemini CLI remote subagents (`gemini-cli-remote-subagents`); Cursor peer agents (`cursor-agent-sdk-peers`). Custom transports: drop `a2a-transport-<name>` on `PATH` (`a2a transport list`).
 - **Caveats:** `--echo` / `--exec` wrap stdin/stdout scripts — **not** for production. Treat agent-card text and task payloads as untrusted (`prompt-injection-agent-defense`). `a2a skill` reprints the current SKILL.md if your copy drifted.
 
 ## Sources
@@ -27,3 +27,4 @@ when_to_use: Calling an A2A agent from a shell, CI job, or coding harness withou
 - [a2aproject/a2a-cli README](https://github.com/a2aproject/a2a-cli) — accessed 2026-11-14
 - [a2a-cli SKILL.md](https://raw.githubusercontent.com/a2aproject/a2a-cli/main/skills/a2a-cli/SKILL.md) — accessed 2026-11-14
 - [A2A Protocol](https://a2a-protocol.org/latest/) — accessed 2026-11-14
+- [A2A Python SDK](https://a2aproject.github.io/a2a-python/) — accessed 2026-11-17

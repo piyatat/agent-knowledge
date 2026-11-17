@@ -4193,7 +4193,7 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-10-31",
+      "updated": "2026-11-17",
       "when_to_use": "Choosing user vs project vs managed settings, restricting models, or debugging which file won",
       "related": [
         "claude-code-permissions",
@@ -6006,7 +6006,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-11-04",
+      "updated": "2026-11-17",
       "when_to_use": "Deploying a fixed MCP set for Claude Code, providing HTTP servers via managed settings, or locking allowedMcpServers",
       "related": [
         "claude-code-mcp",
@@ -11197,10 +11197,11 @@
       ],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-14",
+      "updated": "2026-11-17",
       "when_to_use": "Calling an A2A agent from a shell, CI job, or coding harness without writing SDK code",
       "related": [
         "agent-to-agent-a2a-protocol",
+        "a2a-python-sdk",
         "a2a-agent-card-discovery",
         "a2a-streaming-async",
         "gemini-cli-remote-subagents",
@@ -12393,6 +12394,113 @@
         "github-copilot-skills",
         "github-copilot-hooks",
         "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "firecrawl",
+      "path": "practices/firecrawl.md",
+      "title": "Firecrawl — hosted web context for agents",
+      "tags": ["firecrawl", "mcp", "web", "scrape"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Turning a URL or a search into markdown for an agent, or driving a page after the scrape",
+      "related": [
+        "exa",
+        "browserbase",
+        "stagehand",
+        "playwright-mcp",
+        "prompt-injection-agent-defense",
+        "x402-payments"
+      ]
+    },
+    {
+      "id": "exa",
+      "path": "practices/exa.md",
+      "title": "Exa — web search and research API for agents",
+      "tags": ["exa", "mcp", "search", "web"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Giving an agent token-efficient web search, page contents, or an async research run",
+      "related": [
+        "firecrawl",
+        "exa-mcp-keyless",
+        "context7",
+        "openai-docs-mcp",
+        "x402-payments",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "exa-mcp-keyless",
+      "path": "failure-modes/exa-mcp-keyless.md",
+      "title": "Exa MCP keyless mode drops Agent and rejects some networks",
+      "tags": ["exa", "mcp", "auth", "reliability"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Hosted Exa MCP searches, then agent_run is missing or the client gets 403 or 429",
+      "related": [
+        "exa",
+        "mcp-oauth-scopes",
+        "x402-payments",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "dspy",
+      "path": "practices/dspy.md",
+      "title": "DSPy — program LM calls as typed Python modules",
+      "tags": ["dspy", "sdk", "python", "optimization"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Building a Python LM program as signatures and modules, then compiling it against a metric",
+      "related": [
+        "pydantic-ai",
+        "langgraph",
+        "litellm-proxy",
+        "ollama",
+        "structured-outputs-for-agents",
+        "llm-judge-bias"
+      ]
+    },
+    {
+      "id": "snyk-studio",
+      "path": "practices/snyk-studio.md",
+      "title": "Snyk Studio — local scan hooks and MCP for coding agents",
+      "tags": ["snyk", "security", "mcp", "hooks"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Scanning code and dependencies from Claude, Cursor, Codex, or Copilot with the local Snyk CLI",
+      "related": [
+        "semgrep-guardian",
+        "github-code-scanning-ai-scan",
+        "claude-code-hooks",
+        "mcp-stdio-transport",
+        "gemini-code-assist",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "a2a-python-sdk",
+      "path": "practices/a2a-python-sdk.md",
+      "title": "A2A Python SDK — in-process Agent2Agent client and server",
+      "tags": ["a2a", "sdk", "python", "orchestration"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Embedding an Agent2Agent client or server in Python instead of shelling out to the a2a CLI",
+      "related": [
+        "a2a-cli",
+        "agent-to-agent-a2a-protocol",
+        "a2a-agent-card-discovery",
+        "a2a-protocol-bindings",
+        "a2a-enterprise-auth",
+        "a2a-signed-agent-cards",
+        "prompt-injection-agent-defense"
       ]
     }
   ]

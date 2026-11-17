@@ -3,7 +3,7 @@ id: claude-code-managed-mcp
 title: Claude Code managed MCP — managed-mcp.json vs managedMcpServers
 tags: [claude, mcp, governance, security]
 status: active
-updated: 2026-11-04
+updated: 2026-11-17
 when_to_use: Deploying a fixed MCP set for Claude Code, providing HTTP servers via managed settings, or locking allowedMcpServers
 ---
 
@@ -19,11 +19,13 @@ when_to_use: Deploying a fixed MCP set for Claude Code, providing HTTP servers v
 - Allow/deny: `serverUrl` / `serverCommand` / `serverName` (`serverName` is **not** a security control). Deny always wins. **v2.1.259+:** `allowedMcpServers` governs **user-added** servers; org `managed-mcp.json` entries **without** `${VAR}` skip the allowlist (they used to be filtered). Use `deniedMcpServers` to keep a managed server off after upgrade. `managedMcpServers` entries also skip the allowlist.
 - **v2.1.318:** `deniedMcpServers` **URL** entries also block **Anthropic-provided** servers whose **upstream URL** matches, plus **connectors** in cloud sessions and on self-hosted runners (the session is given the connector’s own URL). Otherwise deny a connector by **`serverName`**. Prefer `serverUrl` when the display name can grow a ` (N)` suffix.
 - `allowClaudeInChromeWithManagedMcp` (v2.1.282+, device-local managed settings only) restores Claude in Chrome beside an exclusive map. Pair with `mcp-server-trust-failures`.
+- **v2.1.326** (2026-11-16): a `managed-mcp.json` added **during** a session may apply at the next check, and Claude Code explains why servers stop loading. Restart open sessions for the file to apply in full.
 
 ## Sources
 
 - [Control MCP server access for your organization](https://code.claude.com/docs/en/managed-mcp) — accessed 2026-10-19
 - [Deploy managed settings](https://code.claude.com/docs/en/managed-settings) — accessed 2026-10-19
 - [Server-managed settings](https://code.claude.com/docs/en/server-managed-settings) — accessed 2026-10-19
-- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-04
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-17
 - [v2.1.318](https://github.com/anthropics/claude-code/releases/tag/v2.1.318) — accessed 2026-11-04
+- [v2.1.326](https://github.com/anthropics/claude-code/releases/tag/v2.1.326) — accessed 2026-11-17
