@@ -3,7 +3,7 @@ id: claude-agent-sdk
 title: Claude Agent SDK — Claude Code loop as a library
 tags: [sdk, orchestration, permissions, mcp]
 status: active
-updated: 2026-11-09
+updated: 2026-11-17
 when_to_use: Embedding Claude Code’s agent loop in Python/TypeScript instead of driving the CLI or calling the Messages API yourself
 ---
 
@@ -21,6 +21,7 @@ The **Claude Agent SDK** (`query()` / `ClaudeSDKClient`) is Claude Code’s tool
 - **SDK hook `onFailure`:** matcher default is `"continue"` (fail-open: a thrown/invalid callback logs `hook_callback_failed` and the action proceeds). Set `onFailure: "block"` (Python `on_failure="block"`) so a failed callback **blocks** — TS Agent SDK **v0.3.317+**, Python **v0.2.177+**, Claude Code **2.1.317+**. Returning nothing also counts as failure under `"block"`. Ignored on `Stop` / `SubagentStop` / `TaskCompleted` / `TeammateIdle`. If any matcher is not `"continue"`, the SDK holds the first prompt until `initialize` reports `hook_on_failure_supported` and refuses to start on older CLIs (`does not honor`). Details: `claude-code-hooks`.
 - **SDK plugins** (not the CLI marketplace installer): `options.plugins` / `ClaudeAgentOptions(plugins=…)` takes `{ type: "local", path }` only — relative to cwd or absolute; no `~` expansion. Path is the plugin **root** (parent of `skills/`, `agents/`, `hooks/`, `commands/`, or `.claude-plugin/`). Manifest `.claude-plugin/plugin.json` is optional (auto-discover). Skills/commands are namespaced `/plugin-name:skill-name`. Check `message.plugins` / `skills` / `slash_commands` on the init `system` message; missing paths are skipped silently. Marketplace installs still work if you pass `~/.claude/plugins/…` as a local path. Authoring stays in `claude-code-plugins`.
 - **TypeScript v0.3.321** (parity with Claude Code **2.1.321**): `canUseTool` no longer gets the **app’s** PreToolUse `ask` reason when another hook also asked; a PreToolUse `ask` is not dropped when another hook’s `defer` finishes first and cannot be honored; one `undefined` entry in `hooks` no longer drops **every** hook. `setMcpServers` with an in-process server of the same name no longer closes a folder `.mcp.json` / local-scope server in `SpareProcess.claim()` sessions. `reloadSkills()` / `reloadPlugins()` / `system/init` keep project skills that a worktree lacks. An SDK MCP server named `claude-in-chrome` follows the org **Claude in Chrome** policy (not connected where the policy denies it). Queued subagent reports in auto mode share one model call.
+- **TypeScript v0.3.326** (parity with Claude Code **2.1.326**, 2026-11-16): `mcpServersDelivery: 'initialize'` sends `mcpServers` on the initialize request instead of Claude Code’s command line, and needs the bundled Claude Code or newer. Today’s default is still `'argv'`. That path is deprecated; a later release defaults to `'initialize'`. An app on an older Claude Code must upgrade the binary or set `'argv'`. A `managed_mcp_arrived` notice fires when `managed-mcp.json` appears mid-session and your own MCP servers stop loading (`claude-code-managed-mcp`). JSON-RPC ids for requests to an SDK MCP server are strings. `rewindFiles()` on macOS, Linux, and WSL can leave files in place when the sandbox is on and reports them as skipped. `canUseTool` still receives the raw tool `input`; only the `description` string has secrets masked.
 
 ## Sources
 
@@ -32,3 +33,4 @@ The **Claude Agent SDK** (`query()` / `ClaudeSDKClient`) is Claude Code’s tool
 - [Claude Code changelog (2.1.317)](https://code.claude.com/docs/en/changelog) — accessed 2026-11-03
 - [claude-agent-sdk-typescript v0.3.321](https://github.com/anthropics/claude-agent-sdk-typescript/releases/tag/v0.3.321) — accessed 2026-11-09
 - [v2.1.321](https://github.com/anthropics/claude-code/releases/tag/v2.1.321) — accessed 2026-11-09
+- [claude-agent-sdk-typescript v0.3.326](https://github.com/anthropics/claude-agent-sdk-typescript/releases/tag/v0.3.326) — accessed 2026-11-17

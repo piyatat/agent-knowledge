@@ -2889,5 +2889,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Move from the Mistral Agents API | https://docs.mistral.ai/studio/agents/getting-started/from-agents-api |
 | Mistral agents deploy | https://docs.mistral.ai/studio/agents/learn/where-it-runs/deploy |
 | Create a Mistral organization | https://docs.mistral.ai/getting-started/quickstarts/admin/create-organization |
+| Sourcegraph MCP server | https://sourcegraph.com/docs/api/mcp |
+| Sourcegraph MCP authentication | https://sourcegraph.com/docs/api/mcp/authentication |
+| Every Sourcegraph MCP tool, on the default endpoint | https://sourcegraph.com/changelog/mcp-every-tool-by-default |
+| Sourcegraph pricing | https://sourcegraph.com/pricing |
+| Sourcegraph getting started | https://sourcegraph.com/docs/getting-started |
+| Sourcegraph Cloud | https://sourcegraph.com/docs/cloud |
+| LiveKit Agents introduction | https://docs.livekit.io/agents/ |
+| LiveKit voice AI quickstart | https://docs.livekit.io/agents/start/voice-ai/ |
+| LiveKit pricing | https://livekit.com/pricing |
+| livekit/agents | https://github.com/livekit/agents |
+| Zep pricing | https://www.getzep.com/pricing/ |
+| Zep install SDKs | https://help.getzep.com/install-sdks |
+| Zep memory security | https://help.getzep.com/memory-security |
+| Zep Context MCP server | https://help.getzep.com/context-mcp-server |
+| Zep Context MCP authentication | https://help.getzep.com/context-mcp-server/authentication |
+| Zep LiveKit integration | https://help.getzep.com/livekit-memory |
+| Introducing GPT-6.2 Astra and Sol | https://openai.com/index/introducing-gpt-6-2-astra-sol |
+| Using GPT-6.2 | https://developers.openai.com/api/docs/guides/latest-model |
+| GPT-6.2 Astra | https://developers.openai.com/api/docs/models/gpt-6.2-astra |
+| GPT-6.2 Sol | https://developers.openai.com/api/docs/models/gpt-6.2-sol |
+| OpenAI API changelog | https://developers.openai.com/api/docs/changelog |
+| Claude Agent SDK TypeScript v0.3.326 | https://github.com/anthropics/claude-agent-sdk-typescript/releases/tag/v0.3.326 |
+| Claude Agent SDK overview | https://code.claude.com/docs/en/agent-sdk/overview |
 
 

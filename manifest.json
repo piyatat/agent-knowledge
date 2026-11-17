@@ -3029,8 +3029,13 @@
         "mcp"
       ],
       "status": "active",
-      "updated": "2026-11-09",
+      "updated": "2026-11-17",
       "when_to_use": "Embedding Claude Code’s agent loop in Python/TypeScript instead of driving the CLI or calling the Messages API yourself",
+      "links": {
+        "get": "https://code.claude.com/docs/en/agent-sdk/overview",
+        "docs": "https://code.claude.com/docs/en/agent-sdk/overview",
+        "home": "https://github.com/anthropics/claude-agent-sdk-typescript"
+      },
       "related": [
         "permission-modes-allow-ask-deny",
         "tools-mcp-skills-layers",
@@ -3042,7 +3047,8 @@
         "claude-managed-agents",
         "claude-code-hooks",
         "claude-message-threads",
-        "claude-code-mcp"
+        "claude-code-mcp",
+        "claude-code-managed-mcp"
       ]
     },
     {
@@ -7557,7 +7563,8 @@
         "cursor-cloud-always-on",
         "amp-spaces",
         "amp-portals",
-        "amp-boxes"
+        "amp-boxes",
+        "sourcegraph"
       ]
     },
     {
@@ -12771,6 +12778,126 @@
         "durable-agent-workflows",
         "human-in-the-loop-approvals"
       ]
+    },
+    {
+      "id": "sourcegraph",
+      "path": "practices/sourcegraph.md",
+      "title": "Sourcegraph — code search and MCP for agents",
+      "tags": ["sourcegraph", "mcp", "search", "code"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Letting a coding agent search and navigate a private multi-repo codebase through Sourcegraph MCP",
+      "links": {
+        "get": "https://sourcegraph.com/contact",
+        "docs": "https://sourcegraph.com/docs/api/mcp",
+        "home": "https://sourcegraph.com/"
+      },
+      "related": [
+        "sourcegraph-mcp-default-tools",
+        "amp-agent",
+        "serena",
+        "github-copilot-code-search",
+        "cursor-codebase-search",
+        "mcp-oauth-scopes",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "sourcegraph-mcp-default-tools",
+      "path": "failure-modes/sourcegraph-mcp-default-tools.md",
+      "title": "Sourcegraph MCP docs and the default tool list disagree",
+      "tags": ["sourcegraph", "mcp", "search", "reliability"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "A Sourcegraph MCP client cannot start Deep Search, or it starts one you did not budget for",
+      "related": ["sourcegraph", "mcp-oauth-scopes", "prompt-injection-agent-defense"]
+    },
+    {
+      "id": "livekit-agents",
+      "path": "practices/livekit-agents.md",
+      "title": "LiveKit Agents — realtime voice, video, and phone agents",
+      "tags": ["livekit", "voice", "realtime", "sdk"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Building a Python or Node agent that joins a live audio, video, or phone room",
+      "links": {
+        "get": "https://docs.livekit.io/agents/start/voice-ai/",
+        "docs": "https://docs.livekit.io/agents/",
+        "home": "https://livekit.com/"
+      },
+      "related": [
+        "zep",
+        "zep-memory-as-instructions",
+        "mem0",
+        "browserbase",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "zep",
+      "path": "practices/zep.md",
+      "title": "Zep — temporal context graph for agent memory",
+      "tags": ["zep", "memory", "mcp", "graph"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Storing and retrieving a user’s facts across agent sessions, including a voice agent",
+      "links": {
+        "get": "https://app.getzep.com/",
+        "docs": "https://help.getzep.com/install-sdks",
+        "home": "https://www.getzep.com/"
+      },
+      "related": [
+        "zep-memory-as-instructions",
+        "mem0",
+        "letta-code",
+        "livekit-agents",
+        "agent-memory-poisoning",
+        "memory-wiki-vs-rag"
+      ]
+    },
+    {
+      "id": "zep-memory-as-instructions",
+      "path": "failure-modes/zep-memory-as-instructions.md",
+      "title": "Zep memory placed in the system prompt becomes an instruction",
+      "tags": ["zep", "memory", "prompt-injection", "security"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "An agent inserts a Zep context block into the system or developer message, or a voice wrapper does that for you",
+      "related": ["zep", "agent-memory-poisoning", "prompt-injection-agent-defense", "livekit-agents"]
+    },
+    {
+      "id": "openai-gpt-62-astra-sol",
+      "path": "practices/openai-gpt-62-astra-sol.md",
+      "title": "GPT-6.2 Astra and Sol — Work, Codex, and the API",
+      "tags": ["openai", "models", "codex", "tools"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Pinning gpt-6.2-astra or gpt-6.2-sol, or moving a tool-calling app onto GPT-6.2",
+      "related": [
+        "gpt-62-responses-only-tools",
+        "openai-gpt-61-terra-agents",
+        "openai-codex-daybreak",
+        "openai-codex-model-providers",
+        "openai-agents-sdk",
+        "github-copilot-model-deprecations"
+      ]
+    },
+    {
+      "id": "gpt-62-responses-only-tools",
+      "path": "failure-modes/gpt-62-responses-only-tools.md",
+      "title": "GPT-6.2 tool calls fail on Chat Completions and on effort none",
+      "tags": ["openai", "tools", "responses", "models"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "A GPT-6.2 request returns no tool call, rejects reasoning effort, or forgets earlier reasoning after a prompt edit",
+      "related": ["openai-gpt-62-astra-sol", "openai-agents-sdk", "openai-codex-model-providers"]
     }
   ]
 }

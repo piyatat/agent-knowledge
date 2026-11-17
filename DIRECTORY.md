@@ -4,14 +4,14 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. The `get` column points to the official page to install or sign up; whether and how to proceed is the user's call. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (106)
+## Tools (107)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
 | id | use when | get | tags | status |
 | --- | --- | --- | --- | --- |
 | [cursor-cli-headless](practices/cursor-cli-headless.md) | Running the Cursor agent from a terminal, GitHub Action, or script without the editor UI | — | cursor, cli, ci, permissions | active |
-| [claude-agent-sdk](practices/claude-agent-sdk.md) | Embedding Claude Code’s agent loop in Python/TypeScript instead of driving the CLI or calling the Messages AP… | — | sdk, orchestration, permissions, mcp | active |
+| [claude-agent-sdk](practices/claude-agent-sdk.md) | Embedding Claude Code’s agent loop in Python/TypeScript instead of driving the CLI or calling the Messages AP… | [link](https://code.claude.com/docs/en/agent-sdk/overview) | sdk, orchestration, permissions, mcp | active |
 | [cursor-sdk](practices/cursor-sdk.md) | Scripting the same Cursor agent from Python (local cwd or Cloud VM) instead of the CLI or editor | — | cursor, sdk, cli, orchestration | active |
 | [openai-agents-sdk](practices/openai-agents-sdk.md) | Choosing openai-agents (Python/JS) instead of owning the Responses API loop yourself | — | sdk, orchestration, handoff, tools | active |
 | [openai-codex-sdk](practices/openai-codex-sdk.md) | Driving Codex CLI/app-server from TypeScript or Python instead of openai-agents or a raw Responses loop | — | sdk, openai, orchestration, sandbox | active |
@@ -116,8 +116,9 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [arize-phoenix](practices/arize-phoenix.md) | Tracing and scoring an agent on a Phoenix instance you run, including an air-gapped host | [link](https://arize.com/docs/phoenix/get-started) | phoenix, observability, otel, evals | active |
 | [vllm](practices/vllm.md) | Serving an open model with an OpenAI-compatible API for agents on a GPU host you control | [link](https://docs.vllm.ai/en/stable/getting_started/installation/) | vllm, models, serving, openai | active |
 | [mistral-agents-sdk](practices/mistral-agents-sdk.md) | Building a Python agent that runs locally, on your servers, or hosted by Mistral, with sessions that survive… | [link](https://docs.mistral.ai/studio/agents/getting-started/quickstart) | mistral, sdk, python, orchestration | active |
+| [livekit-agents](practices/livekit-agents.md) | Building a Python or Node agent that joins a live audio, video, or phone room | [link](https://docs.livekit.io/agents/start/voice-ai/) | livekit, voice, realtime, sdk | active |
 
-## Services (84)
+## Services (86)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -207,6 +208,8 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [inngest](practices/inngest.md) | Running an agent loop that must retry one tool call, wait days for approval, and resume after a crash | [link](https://app.inngest.com/sign-up) | inngest, durability, orchestration, workflows | active |
 | [mem0](practices/mem0.md) | Giving an agent durable facts about a user across sessions without running your own vector store | [link](https://app.mem0.ai/) | mem0, memory, mcp, sdk | active |
 | [portkey](practices/portkey.md) | Routing an agent's model calls through one gateway with fallbacks, budgets, and a shared MCP front door | [link](https://app.portkey.ai/) | portkey, gateway, mcp, observability | active |
+| [sourcegraph](practices/sourcegraph.md) | Letting a coding agent search and navigate a private multi-repo codebase through Sourcegraph MCP | [link](https://sourcegraph.com/contact) | sourcegraph, mcp, search, code | active |
+| [zep](practices/zep.md) | Storing and retrieving a user’s facts across agent sessions, including a voice agent | [link](https://app.getzep.com/) | zep, memory, mcp, graph | active |
 
 ## Protocols and standards (22)
 
