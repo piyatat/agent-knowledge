@@ -40,6 +40,16 @@ when_to_use: One line — when an agent should open this page
 - `protocol` — open spec or standard.
 - `knowledge` — practices, failure modes, glossary, runbooks, decisions (default).
 
+## Where to get it (`links`)
+
+Tool and service entries may carry `links` in `manifest.json` — official https URLs only, no install commands or instructions:
+
+```json
+"links": { "get": "https://…install-or-signup-page", "docs": "https://…", "home": "https://…" }
+```
+
+`get` = where a person installs the tool or signs up for the service. The repo only points there; the user decides whether and how to proceed. Do not paste install scripts or setup steps into notes.
+
 Write `when_to_use` as the task an agent would be planning ("Hosting repos for agents without GitHub"), since `npm run lookup` and `DIRECTORY.md` surface it.
 
 ## Scripts

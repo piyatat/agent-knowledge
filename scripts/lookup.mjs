@@ -149,9 +149,22 @@ const result = {
   watch_out_for: warnings.map(toHit),
 };
 
+function sourceUrls(entry, max = 2) {
+  const p = join(root, entry.path ?? "");
+  if (!existsSync(p)) return [];
+  const m = readFileSync(p, "utf8").match(/## Sources\n([\s\S]*?)(?=\n## |\n*$)/);
+  if (!m) return [];
+  const urls = [...m[1].matchAll(/\]\((https?:\/\/[^)\s]+)\)/g)].map((x) => x[1]);
+  return [...new Set(urls)].slice(0, max);
+}
+
 function toHit(r) {
   const e = r.entry;
+  const links = e.links ?? {};
+  const hasLinks = Object.keys(links).length > 0;
   return {
+    links: hasLinks ? links : undefined,
+    source_urls: hasLinks ? undefined : sourceUrls(e),
     id: e.id,
     kind: kindOf(e),
     path: e.path,
@@ -182,6 +195,12 @@ const render = (h) => {
   out.push(`- \`${h.id}\` — ${h.title} [${h.status}, ${h.updated}]`);
   out.push(`  open: \`${h.path}\``);
   if (h.when_to_use) out.push(`  use when: ${h.when_to_use}`);
+  if (h.links) {
+    const parts = ["get", "docs", "home"].filter((k) => h.links[k]).map((k) => `${k}: ${h.links[k]}`);
+    out.push(`  ${parts.join(" | ")}`);
+  } else if (h.source_urls?.length) {
+    out.push(`  sources: ${h.source_urls.join(" | ")}`);
+  }
   if (h.related.length) {
     const known = h.related.filter((r) => byId.has(r)).slice(0, 4);
     if (known.length) out.push(`  related: ${known.join(", ")}`);

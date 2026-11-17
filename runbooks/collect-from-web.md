@@ -27,7 +27,7 @@ If the harness already checked out a throwaway branch, fast-forward `main` to th
 2. WebSearch + WebFetch primary sources (prefer docs, RFCs, primary blogs).
 3. Write a **summary note** under `practices/`, `failure-modes/`, `glossary/`, or `runbooks/` using the CONTRIBUTING template.
 4. Add URLs to the note’s `## Sources` and append `sources/bibliography.md`.
-5. Update `manifest.json` (include `kind`, `status`, `updated`, `related`; write `when_to_use` as the task an agent would be planning), then run `npm run check`.
+5. For `tool` / `service` entries add `links.get` (official install or sign-up page) and optionally `links.docs` / `links.home` — https URLs only, no commands (see CONTRIBUTING.md). Update `manifest.json` (include `kind`, `status`, `updated`, `related`; write `when_to_use` as the task an agent would be planning), then run `npm run check`.
 6. Do **not** paste full copyrighted pages; quote sparingly if at all.
 7. For interactive collection: commit/push only if the user asks. For scheduled ingest: always push `origin/main` after `npm run check` passes (unless `no-push` / `dry-run`).
 

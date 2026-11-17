@@ -11077,7 +11077,7 @@
         "services"
       ],
       "status": "active",
-      "updated": "2026-11-14",
+      "updated": "2026-11-17",
       "when_to_use": "Starting a task or planning a move and you need to know which tool, service, protocol or known pitfall already applies before choosing an approach",
       "related": [
         "knowledge-corpus-pattern",

@@ -31,6 +31,8 @@ const EXEMPT_BASENAMES = new Set([
 
 const KINDS = new Set(["knowledge", "tool", "service", "protocol"]);
 
+const LINK_KEYS = new Set(["get", "docs", "home"]);
+
 const errors = [];
 const warnings = [];
 
@@ -150,6 +152,20 @@ for (const entry of entries) {
     fail(
       `Manifest entry ${entry.id}: kind must be one of ${[...KINDS].join(", ")} (got "${entry.kind}")`,
     );
+  }
+  if ("links" in entry) {
+    const links = entry.links;
+    if (!links || typeof links !== "object" || Array.isArray(links)) {
+      fail(`Manifest entry ${entry.id}: links must be an object`);
+    } else {
+      for (const [key, url] of Object.entries(links)) {
+        if (!LINK_KEYS.has(key)) {
+          fail(`Manifest entry ${entry.id}: unknown links key "${key}" (use ${[...LINK_KEYS].join(", ")})`);
+        } else if (typeof url !== "string" || !/^https:\/\/[^\s]+$/.test(url)) {
+          fail(`Manifest entry ${entry.id}: links.${key} must be an https URL`);
+        }
+      }
+    }
   }
   if ("related" in entry && !Array.isArray(entry.related)) {
     fail(`Manifest entry ${entry.id}: related must be an array`);

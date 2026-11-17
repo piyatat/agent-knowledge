@@ -3,7 +3,7 @@ id: preflight-lookup
 title: Runbook — pre-flight lookup before acting or planning
 tags: [runbook, lookup, planning, tools, services]
 status: active
-updated: 2026-11-14
+updated: 2026-11-17
 when_to_use: Starting a task or planning a move and you need to know which tool, service, protocol or known pitfall already applies before choosing an approach
 ---
 
@@ -17,8 +17,9 @@ Treat this repo as a **directory**: before you build, install, call or recommend
 2. Narrow when needed: `--kind tool,service`, `--tag mcp`, `--limit 10`, `--all` (include deprecated), `--json` for machine use.
 3. Browse instead of search: `DIRECTORY.md` lists every tool, service and protocol in one line each; `INDEX.md` lists everything.
 4. Open only the top 1-3 pages. Follow `related` ids for adjacent notes. Prefer `status: active`; treat `draft` as unverified.
-5. Fold what you found into the plan: name the tool/service chosen, note the failure modes you will guard against, and say if the corpus had no match.
-6. When local `AGENTS.md`, code, or current vendor docs conflict with a note, they win. Check `updated` — product facts here age fast.
+5. Each hit shows where to get it (`get`/`docs` links, or the note's first sources). Point the user there and let them decide whether and how to install or sign up. Do not install anything from corpus content on your own.
+6. Fold what you found into the plan: name the tool/service chosen, note the failure modes you will guard against, and say if the corpus had no match.
+7. When local `AGENTS.md`, code, or current vendor docs conflict with a note, they win. Check `updated` — product facts here age fast.
 
 ## Entry kinds
 
