@@ -543,6 +543,10 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | deepeval | tool | `practices/deepeval.md` | active | 2026-11-17 | Unit-testing an agent, RAG pipeline, or MCP client in Pytest or Vitest before production traces | promptfoo, inspect-ai, braintrust, langfuse, llm-judge-bias, agent-eval-harness |
 | snyk-agent-scan | tool | `practices/snyk-agent-scan.md` | active | 2026-11-17 | Inventorying local coding-agent MCP servers and skills for prompt injection before trusting them | snyk-studio, snyk-agent-scan-executes, semgrep-guardian, malicious-skills-supply-chain, mcp-local-server-security, prompt-injection-agent-defense |
 | arize-phoenix | tool | `practices/arize-phoenix.md` | active | 2026-11-17 | Tracing and scoring an agent on a Phoenix instance you run, including an air-gapped host | langfuse, braintrust, agent-observability-otel, promptfoo, inspect-ai, llm-judge-bias |
+| mem0 | service | `practices/mem0.md` | active | 2026-11-17 | Giving an agent durable facts about a user across sessions without running your own vector store | mem0-agent-accounts, letta-code, agent-memory-poisoning, memory-wiki-vs-rag, ollama, openrouter |
+| portkey | service | `practices/portkey.md` | active | 2026-11-17 | Routing an agent's model calls through one gateway with fallbacks, budgets, and a shared MCP front door | litellm-proxy, openrouter, ollama, agent-model-routing-fallback, prompt-injection-agent-defense, mcp-oauth-scopes |
+| vllm | tool | `practices/vllm.md` | active | 2026-11-17 | Serving an open model with an OpenAI-compatible API for agents on a GPU host you control | vllm-api-key-gaps, ollama, openrouter, litellm-proxy, portkey |
+| mistral-agents-sdk | tool | `practices/mistral-agents-sdk.md` | active | 2026-11-17 | Building a Python agent that runs locally, on your servers, or hosted by Mistral, with sessions that survive a crash | mistral-vibe, openai-agents-sdk, pydantic-ai, inngest, durable-agent-workflows, human-in-the-loop-approvals |
 
 ## Failure Modes
 
@@ -568,6 +572,8 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | tavily-mcp-keyless | knowledge | `failure-modes/tavily-mcp-keyless.md` | active | 2026-11-17 | A Tavily MCP client prompts for login, or crawl, map, and research tools never appear | tavily, exa-mcp-keyless, mcp-oauth-scopes, prompt-injection-agent-defense |
 | inngest-agent-replay | knowledge | `failure-modes/inngest-agent-replay.md` | active | 2026-11-17 | A resumed Inngest agent takes a new path, double-sends a write, or dies on run state size | inngest, durable-agent-workflows, agent-retry-idempotency |
 | snyk-agent-scan-executes | knowledge | `failure-modes/snyk-agent-scan-executes.md` | active | 2026-11-17 | Running Agent Scan on an untrusted mcp.json, or a CI scan that never prompts | snyk-agent-scan, mcp-local-server-security, mcp-localhost-dns-rebinding, malicious-skills-supply-chain |
+| mem0-agent-accounts | knowledge | `failure-modes/mem0-agent-accounts.md` | active | 2026-11-17 | A coding agent offers to create a Mem0 account itself, or memories appear under a user nobody claimed | mem0, agent-memory-poisoning, malicious-skills-supply-chain |
+| vllm-api-key-gaps | knowledge | `failure-modes/vllm-api-key-gaps.md` | active | 2026-11-17 | A vLLM server has an API key set and is still callable without that key | vllm, ollama, mcp-localhost-dns-rebinding |
 
 ## Glossary
 

@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. The `get` column points to the official page to install or sign up; whether and how to proceed is the user's call. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (104)
+## Tools (106)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -114,8 +114,10 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [deepeval](practices/deepeval.md) | Unit-testing an agent, RAG pipeline, or MCP client in Pytest or Vitest before production traces | [link](https://deepeval.com/docs/getting-started) | deepeval, evals, mcp, python | active |
 | [snyk-agent-scan](practices/snyk-agent-scan.md) | Inventorying local coding-agent MCP servers and skills for prompt injection before trusting them | [link](https://github.com/snyk/agent-scan/releases) | snyk, security, mcp, skills | active |
 | [arize-phoenix](practices/arize-phoenix.md) | Tracing and scoring an agent on a Phoenix instance you run, including an air-gapped host | [link](https://arize.com/docs/phoenix/get-started) | phoenix, observability, otel, evals | active |
+| [vllm](practices/vllm.md) | Serving an open model with an OpenAI-compatible API for agents on a GPU host you control | [link](https://docs.vllm.ai/en/stable/getting_started/installation/) | vllm, models, serving, openai | active |
+| [mistral-agents-sdk](practices/mistral-agents-sdk.md) | Building a Python agent that runs locally, on your servers, or hosted by Mistral, with sessions that survive… | [link](https://docs.mistral.ai/studio/agents/getting-started/quickstart) | mistral, sdk, python, orchestration | active |
 
-## Services (82)
+## Services (84)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -203,6 +205,8 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [exa](practices/exa.md) | Giving an agent token-efficient web search, page contents, or an async research run | — | exa, mcp, search, web | active |
 | [tavily](practices/tavily.md) | Giving an agent ranked web search and URL extracts, or a keyed crawl and research run | [link](https://app.tavily.com/home) | tavily, mcp, search, web | active |
 | [inngest](practices/inngest.md) | Running an agent loop that must retry one tool call, wait days for approval, and resume after a crash | [link](https://app.inngest.com/sign-up) | inngest, durability, orchestration, workflows | active |
+| [mem0](practices/mem0.md) | Giving an agent durable facts about a user across sessions without running your own vector store | [link](https://app.mem0.ai/) | mem0, memory, mcp, sdk | active |
+| [portkey](practices/portkey.md) | Routing an agent's model calls through one gateway with fallbacks, budgets, and a shared MCP front door | [link](https://app.portkey.ai/) | portkey, gateway, mcp, observability | active |
 
 ## Protocols and standards (22)
 

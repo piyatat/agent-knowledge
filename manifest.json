@@ -12658,6 +12658,119 @@
         "inspect-ai",
         "llm-judge-bias"
       ]
+    },
+    {
+      "id": "mem0",
+      "path": "practices/mem0.md",
+      "title": "Mem0 — hosted and self-hosted memory for agents",
+      "tags": ["mem0", "memory", "mcp", "sdk"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Giving an agent durable facts about a user across sessions without running your own vector store",
+      "links": {
+        "get": "https://app.mem0.ai/",
+        "docs": "https://docs.mem0.ai/platform/quickstart",
+        "home": "https://mem0.ai/"
+      },
+      "related": [
+        "mem0-agent-accounts",
+        "letta-code",
+        "agent-memory-poisoning",
+        "memory-wiki-vs-rag",
+        "ollama",
+        "openrouter"
+      ]
+    },
+    {
+      "id": "mem0-agent-accounts",
+      "path": "failure-modes/mem0-agent-accounts.md",
+      "title": "Mem0 agent signup creates an unowned account on the machine",
+      "tags": ["mem0", "auth", "memory", "security"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "A coding agent offers to create a Mem0 account itself, or memories appear under a user nobody claimed",
+      "related": ["mem0", "agent-memory-poisoning", "malicious-skills-supply-chain"]
+    },
+    {
+      "id": "portkey",
+      "path": "practices/portkey.md",
+      "title": "Portkey — model gateway, guardrails, and MCP proxy",
+      "tags": ["portkey", "gateway", "mcp", "observability"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Routing an agent's model calls through one gateway with fallbacks, budgets, and a shared MCP front door",
+      "links": {
+        "get": "https://app.portkey.ai/",
+        "docs": "https://portkey.ai/docs/product/ai-gateway",
+        "home": "https://portkey.ai/"
+      },
+      "related": [
+        "litellm-proxy",
+        "openrouter",
+        "ollama",
+        "agent-model-routing-fallback",
+        "prompt-injection-agent-defense",
+        "mcp-oauth-scopes"
+      ]
+    },
+    {
+      "id": "vllm",
+      "path": "practices/vllm.md",
+      "title": "vLLM — OpenAI-compatible model server",
+      "tags": ["vllm", "models", "serving", "openai"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Serving an open model with an OpenAI-compatible API for agents on a GPU host you control",
+      "links": {
+        "get": "https://docs.vllm.ai/en/stable/getting_started/installation/",
+        "docs": "https://docs.vllm.ai/en/stable/serving/online_serving/openai_compatible_server/",
+        "home": "https://github.com/vllm-project/vllm"
+      },
+      "related": [
+        "vllm-api-key-gaps",
+        "ollama",
+        "openrouter",
+        "litellm-proxy",
+        "portkey"
+      ]
+    },
+    {
+      "id": "vllm-api-key-gaps",
+      "path": "failure-modes/vllm-api-key-gaps.md",
+      "title": "vLLM's API key leaves inference and control routes open",
+      "tags": ["vllm", "auth", "security", "serving"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "A vLLM server has an API key set and is still callable without that key",
+      "related": ["vllm", "ollama", "mcp-localhost-dns-rebinding"]
+    },
+    {
+      "id": "mistral-agents-sdk",
+      "path": "practices/mistral-agents-sdk.md",
+      "title": "Mistral Agents SDK — Python harness and Studio deploy",
+      "tags": ["mistral", "sdk", "python", "orchestration"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Building a Python agent that runs locally, on your servers, or hosted by Mistral, with sessions that survive a crash",
+      "links": {
+        "get": "https://docs.mistral.ai/studio/agents/getting-started/quickstart",
+        "docs": "https://docs.mistral.ai/studio/agents/overview",
+        "home": "https://mistral.ai/"
+      },
+      "related": [
+        "mistral-vibe",
+        "openai-agents-sdk",
+        "pydantic-ai",
+        "inngest",
+        "durable-agent-workflows",
+        "human-in-the-loop-approvals"
+      ]
     }
   ]
 }

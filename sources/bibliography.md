@@ -2862,5 +2862,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Phoenix 21 authentication by default | https://arize.com/docs/phoenix/release-notes/11-2026/11-02-2026-authentication-by-default-and-decision-annotations |
 | arize-phoenix on PyPI | https://pypi.org/project/arize-phoenix/ |
 | Arize Phoenix | https://arize.com/phoenix/ |
+| Mem0 introduction | https://docs.mem0.ai/introduction |
+| Mem0 platform overview | https://docs.mem0.ai/platform/overview |
+| Mem0 platform vs open source | https://docs.mem0.ai/platform/platform-vs-oss |
+| Mem0 open source overview | https://docs.mem0.ai/open-source/overview |
+| Mem0 platform quickstart | https://docs.mem0.ai/platform/quickstart |
+| Mem0 API reference | https://docs.mem0.ai/api-reference |
+| Mem0 MCP | https://docs.mem0.ai/platform/mem0-mcp |
+| Mem0 pricing FAQ | https://docs.mem0.ai/platform/pricing |
+| Mem0 delete memory | https://docs.mem0.ai/core-concepts/memory-operations/delete |
+| Sign up for Mem0 as an agent | https://docs.mem0.ai/platform/agent-signup |
+| Portkey | https://portkey.ai/ |
+| Prisma AIRS AI Gateway general availability | https://www.paloaltonetworks.com/blog/2026/07/announcing-general-availability-of-prisma-airs-ai-gateway/ |
+| Portkey AI Gateway | https://portkey.ai/docs/product/ai-gateway |
+| Getting started with Portkey AI Gateway | https://portkey.ai/docs/guides/getting-started/getting-started-with-ai-gateway |
+| Portkey virtual keys | https://portkey.ai/docs/product/ai-gateway/virtual-keys |
+| Portkey MCP Gateway | https://portkey.ai/docs/product/mcp-gateway |
+| Portkey pricing | https://portkey.ai/pricing |
+| vLLM quickstart | https://docs.vllm.ai/en/stable/getting_started/quickstart/ |
+| vLLM installation | https://docs.vllm.ai/en/stable/getting_started/installation/ |
+| vLLM OpenAI-compatible server | https://docs.vllm.ai/en/stable/serving/online_serving/openai_compatible_server/ |
+| vLLM security | https://docs.vllm.ai/en/stable/usage/security/ |
+| vLLM Docker | https://docs.vllm.ai/en/stable/deployment/docker/ |
+| Mistral Managed Agents | https://docs.mistral.ai/studio/agents/overview |
+| Mistral Agents SDK quickstart | https://docs.mistral.ai/studio/agents/getting-started/quickstart |
+| Move from the Mistral Agents API | https://docs.mistral.ai/studio/agents/getting-started/from-agents-api |
+| Mistral agents deploy | https://docs.mistral.ai/studio/agents/learn/where-it-runs/deploy |
+| Create a Mistral organization | https://docs.mistral.ai/getting-started/quickstarts/admin/create-organization |
 
 
