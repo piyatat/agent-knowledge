@@ -2788,4 +2788,36 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Inspect agent bridge | https://inspect.aisi.org.uk/agent-bridge.html |
 | Inspect tutorial | https://inspect.aisi.org.uk/tutorial |
 
+## Daily ingest 2026-11-17
+
+| Topic | URL |
+| --- | --- |
+| Docker MCP Catalog and Toolkit | https://docs.docker.com/ai/mcp-catalog-and-toolkit/ |
+| Docker MCP Toolkit | https://docs.docker.com/ai/mcp-catalog-and-toolkit/toolkit/ |
+| Use MCP Toolkit from the CLI | https://docs.docker.com/ai/mcp-catalog-and-toolkit/cli/ |
+| MCP Profiles | https://docs.docker.com/ai/mcp-catalog-and-toolkit/profiles/ |
+| MCP Toolkit FAQs | https://docs.docker.com/ai/mcp-catalog-and-toolkit/faqs/ |
+| Dynamic MCP | https://docs.docker.com/ai/mcp-catalog-and-toolkit/dynamic-mcp/ |
+| Build and operate AI agents (Composio) | https://docs.composio.dev/docs |
+| Using sessions via MCP | https://docs.composio.dev/docs/sessions-via-mcp |
+| Configuring sessions | https://docs.composio.dev/docs/configuring-sessions |
+| Composio toolkits | https://docs.composio.dev/docs/toolkits |
+| Composio platform pricing | https://composio.dev/pricing/platform |
+| About Serena | https://oraios.github.io/serena/01-about/000_intro.html |
+| Serena installation | https://oraios.github.io/serena/02-usage/010_installation.html |
+| Running Serena | https://oraios.github.io/serena/02-usage/020_running.html |
+| Connecting your MCP client (Serena) | https://oraios.github.io/serena/02-usage/030_clients.html |
+| Serena project workflow | https://oraios.github.io/serena/02-usage/040_workflow.html |
+| Serena security considerations | https://oraios.github.io/serena/02-usage/070_security.html |
+| Welcome to Agno | https://docs.agno.com/ |
+| Agno SDK | https://docs.agno.com/sdk/introduction |
+| AgentOS as MCP server | https://docs.agno.com/agent-os/mcp/mcp |
+| Agno security and auth | https://docs.agno.com/features/security-and-auth |
+| Agno self-hosted authorization | https://docs.agno.com/agent-os/security/authorization/self-hosted |
+| Phidata repository (archived) | https://github.com/agno-agi/phidata |
+| Control where GitHub Copilot customizations come from | https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from/ |
+| Enterprise managed settings | https://docs.github.com/en/copilot/reference/enterprise-administrators/enterprise-managed-settings |
+| Managing plugin marketplaces and plugins | https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/manage-plugin-marketplaces-and-plugins |
+| GitHub Copilot models deprecated on November 16, 2026 | https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026/ |
+
 

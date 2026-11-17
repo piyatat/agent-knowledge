@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Directory for AI agents to look up knowledge, tools and services before acting or while planning — curated notes with sources",
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -8594,7 +8594,7 @@
         "routing"
       ],
       "status": "active",
-      "updated": "2026-11-13",
+      "updated": "2026-11-17",
       "when_to_use": "A Copilot chat/agent/completion pin or workflow names a retired model, or an admin model policy still lists Oct/Nov/Dec 2026 retirements",
       "related": [
         "github-copilot-auto-model",
@@ -12285,6 +12285,114 @@
         "agent-eval-harness",
         "e2b-sandboxes",
         "cursor-agent-sdk-evals"
+      ]
+    },
+    {
+      "id": "docker-mcp-toolkit",
+      "path": "practices/docker-mcp-toolkit.md",
+      "title": "Docker MCP Toolkit — containerized MCP gateway",
+      "tags": ["docker", "mcp", "gateway", "security"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Running catalog MCP servers in containers and sharing one gateway across coding agents",
+      "related": [
+        "docker-mcp-dynamic-tools",
+        "mcp-official-registry",
+        "mcp-stdio-transport",
+        "mcp-local-server-security",
+        "playwright-mcp",
+        "github-mcp-server"
+      ]
+    },
+    {
+      "id": "docker-mcp-dynamic-tools",
+      "path": "failure-modes/docker-mcp-dynamic-tools.md",
+      "title": "Docker MCP gateway lets the agent add catalog servers",
+      "tags": ["docker", "mcp", "supply-chain", "security"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "A coding agent connected to Docker MCP Toolkit can install extra catalog servers mid-chat",
+      "related": [
+        "docker-mcp-toolkit",
+        "mcp-local-server-security",
+        "malicious-skills-supply-chain",
+        "code-mode-tool-orchestration"
+      ]
+    },
+    {
+      "id": "composio",
+      "path": "practices/composio.md",
+      "title": "Composio — hosted app tools for agents",
+      "tags": ["composio", "mcp", "auth", "tools"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Giving an agent authenticated GitHub, Gmail, Slack, or other app tools without writing each OAuth flow",
+      "related": [
+        "github-mcp-server",
+        "docker-mcp-toolkit",
+        "mcp-oauth-scopes",
+        "cursor-cloud-mcp-http-vs-stdio",
+        "openai-agents-sdk",
+        "claude-agent-sdk",
+        "vercel-ai-sdk",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "serena",
+      "path": "practices/serena.md",
+      "title": "Serena — symbol-level tools for coding agents",
+      "tags": ["serena", "mcp", "lsp", "editing"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Giving a coding agent symbol-level search and edit over MCP instead of only grep and line edits",
+      "related": [
+        "claude-code-lsp",
+        "github-copilot-lsp",
+        "jetbrains-ai-assistant",
+        "mcp-stdio-transport",
+        "mcp-local-server-security"
+      ]
+    },
+    {
+      "id": "agno",
+      "path": "practices/agno.md",
+      "title": "Agno — Python agent SDK and AgentOS",
+      "tags": ["agno", "sdk", "python", "orchestration"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Building a Python agent, team, or workflow and serving it as an API or MCP server you host",
+      "related": [
+        "pydantic-ai",
+        "langgraph",
+        "mastra",
+        "claude-agent-sdk",
+        "openai-codex-sdk",
+        "microsoft-agent-framework",
+        "malicious-skills-supply-chain"
+      ]
+    },
+    {
+      "id": "github-copilot-plugin-only-customizations",
+      "path": "practices/github-copilot-plugin-only-customizations.md",
+      "title": "Copilot plugin-only customizations — enterprise managed setting",
+      "tags": ["github", "plugins", "governance", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-17",
+      "when_to_use": "Requiring Copilot skills, agents, hooks, MCP, or executable extensions to come from plugins or managed settings",
+      "related": [
+        "github-copilot-plugins",
+        "github-copilot-managed-permissions",
+        "github-copilot-mcp",
+        "github-copilot-skills",
+        "github-copilot-hooks",
+        "malicious-skills-supply-chain"
       ]
     }
   ]

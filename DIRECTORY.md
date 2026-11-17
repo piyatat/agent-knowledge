@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (95)
+## Tools (98)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -105,8 +105,11 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [promptfoo](practices/promptfoo.md) | Regression-testing prompts and agents in CI, or red-teaming an agent endpoint with promptfoo | promptfoo, evals, red-team, ci | active |
 | [chrome-devtools-mcp](practices/chrome-devtools-mcp.md) | Letting a coding agent inspect a live Chrome page, record a performance trace, or read the console | chrome, mcp, browser, debugging | active |
 | [inspect-ai](practices/inspect-ai.md) | Writing a Python eval that runs a tool-using agent, or scoring Claude Code or Codex inside a sandbox | inspect, evals, sandbox, python | active |
+| [docker-mcp-toolkit](practices/docker-mcp-toolkit.md) | Running catalog MCP servers in containers and sharing one gateway across coding agents | docker, mcp, gateway, security | active |
+| [serena](practices/serena.md) | Giving a coding agent symbol-level search and edit over MCP instead of only grep and line edits | serena, mcp, lsp, editing | active |
+| [agno](practices/agno.md) | Building a Python agent, team, or workflow and serving it as an API or MCP server you host | agno, sdk, python, orchestration | active |
 
-## Services (77)
+## Services (78)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -189,6 +192,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [context7](practices/context7.md) | Fetching current library documentation into a coding agent instead of relying on training data | context7, mcp, docs, discovery | active |
 | [github-mcp-server](practices/github-mcp-server.md) | Giving a coding agent GitHub issues, pull requests, and repository tools through GitHub's hosted MCP server | github, mcp, git, auth | active |
 | [braintrust](practices/braintrust.md) | Tracing agent runs and scoring experiments in Braintrust instead of a self-hosted collector | braintrust, evals, observability, tracing | active |
+| [composio](practices/composio.md) | Giving an agent authenticated GitHub, Gmail, Slack, or other app tools without writing each OAuth flow | composio, mcp, auth, tools | active |
 
 ## Protocols and standards (22)
 
