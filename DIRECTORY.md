@@ -79,7 +79,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [a2a-cli](practices/a2a-cli.md) | Calling an A2A agent from a shell, CI job, or coding harness without writing SDK code | — | a2a, cli, orchestration, interoperability | active |
 | [gemini-code-assist](practices/gemini-code-assist.md) | Using Gemini inside VS Code or IntelliJ, or migrating a consumer Code Assist account after the June 2026 cuto… | — | gemini, google, ux, deprecation | active |
 | [jetbrains-ai-assistant](practices/jetbrains-ai-assistant.md) | Choosing an agent inside a JetBrains IDE, or installing one from the ACP registry versus Junie or the Copilot… | — | jetbrains, acp, ux, orchestration | active |
-| [augment-auggie](practices/augment-auggie.md) | Running Augment's coding agent in a terminal, CI job, or ACP editor instead of Cosmos cloud | — | augment, cli, acp, permissions | active |
+| [augment-auggie](practices/augment-auggie.md) | Running Augment's coding agent in a terminal, CI job, or ACP editor instead of Cosmos cloud | [link](https://docs.augmentcode.com/cli/setup-auggie/install-auggie-cli) | augment, cli, acp, permissions | active |
 | [mistral-vibe](practices/mistral-vibe.md) | Running Mistral's coding agent locally, in VS Code, over ACP, or as a GitHub sandbox session | — | mistral, cli, acp, skills | active |
 | [pi-coding-agent](practices/pi-coding-agent.md) | Running a minimal terminal coding agent you extend with packages, or embedding the Pi SDK | — | pi, cli, skills, extensions | active |
 | [grok-build](practices/grok-build.md) | Running xAI's coding agent in a terminal, CI job, or ACP editor instead of Cursor Grok Bot | — | grok, cli, acp, permissions | active |
@@ -90,7 +90,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [crewai](practices/crewai.md) | Building a Python multi-agent crew with Flows, or scaffolding one with the crewai CLI | — | crewai, sdk, orchestration, python | active |
 | [smolagents](practices/smolagents.md) | Running a small Python agent that acts by writing code, or sandboxing that code off the host | — | smolagents, sdk, sandbox, python | active |
 | [letta-code](practices/letta-code.md) | Running a terminal coding agent that keeps memory across machines, or calling Letta agents from another MCP c… | — | letta, cli, memory, skills | active |
-| [fastmcp](practices/fastmcp.md) | Building a Python MCP server or client that must speak the 2026-07-28 revision and older clients | — | fastmcp, mcp, sdk, python | active |
+| [fastmcp](practices/fastmcp.md) | Building a Python MCP server or client that must speak the 2026-07-28 revision and older clients | [link](https://gofastmcp.com/docs/getting-started/installation) | fastmcp, mcp, sdk, python | active |
 | [mcp-inspector](practices/mcp-inspector.md) | Debugging an MCP server from a shell, CI job, or browser, including tool lists and skill checks | — | mcp, inspector, cli, security | active |
 | [rovo-dev-cli](practices/rovo-dev-cli.md) | Running a terminal coding agent against Jira, Confluence, and Bitbucket on a paid Rovo Dev subscription | — | rovo, atlassian, cli, jira | active |
 | [stagehand](practices/stagehand.md) | Driving a browser from agent code with act, extract, and observe, locally or on Browserbase | — | stagehand, browser, sdk, cdp | active |
@@ -118,7 +118,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [mistral-agents-sdk](practices/mistral-agents-sdk.md) | Building a Python agent that runs locally, on your servers, or hosted by Mistral, with sessions that survive… | [link](https://docs.mistral.ai/studio/agents/getting-started/quickstart) | mistral, sdk, python, orchestration | active |
 | [livekit-agents](practices/livekit-agents.md) | Building a Python or Node agent that joins a live audio, video, or phone room | [link](https://docs.livekit.io/agents/start/voice-ai/) | livekit, voice, realtime, sdk | active |
 
-## Services (90)
+## Services (93)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -214,6 +214,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [groq-cloud](practices/groq-cloud.md) | Calling a fast OpenAI-compatible inference API, including server-side tool use, from an agent | [link](https://console.groq.com/login) | groq, models, inference, tools | active |
 | [elevenlabs-agents](practices/elevenlabs-agents.md) | Building a hosted voice or phone agent, or managing those agents from another MCP client | [link](https://elevenlabs.io/app/sign-up) | elevenlabs, voice, agents, mcp | active |
 | [trigger-dev](practices/trigger-dev.md) | Running a TypeScript agent that must survive a deploy, wait for approval, and resume after a crash | [link](https://cloud.trigger.dev/login) | trigger, durability, orchestration, typescript | active |
+| [temporal](practices/temporal.md) | Running an agent loop that must survive a worker crash and wait days for approval | [link](https://cloud.temporal.io/) | temporal, durability, orchestration, workflows | active |
+| [vercel-ai-gateway](practices/vercel-ai-gateway.md) | Routing an agent's model calls through Vercel with one key, budgets, and provider failover | [link](https://vercel.com/signup) | vercel, gateway, routing, models | active |
+| [cloudflare-ai-gateway](practices/cloudflare-ai-gateway.md) | Proxying Workers AI or a third-party model through Cloudflare with logs, cache, or one bill | [link](https://dash.cloudflare.com/sign-up) | cloudflare, gateway, routing, models | active |
 
 ## Protocols and standards (22)
 

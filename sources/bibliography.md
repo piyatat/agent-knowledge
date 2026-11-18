@@ -2941,5 +2941,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Trigger.dev pricing | https://trigger.dev/pricing |
 | Trigger.dev deployment | https://trigger.dev/docs/deployment/overview |
 | Trigger.dev AI agents | https://trigger.dev/docs/ai-chat/overview |
+| Temporal durable AI | https://docs.temporal.io/ai |
+| Temporal Cloud get started | https://docs.temporal.io/cloud/get-started |
+| Temporal Cloud pricing | https://docs.temporal.io/cloud/pricing |
+| Temporal Cloud Actions | https://docs.temporal.io/evaluate/cloud/actions |
+| Temporal Cloud API keys | https://docs.temporal.io/cloud/api-keys |
+| Temporal Cloud namespaces | https://docs.temporal.io/cloud/namespaces |
+| Temporal design patterns | https://docs.temporal.io/design-patterns |
+| Temporal OpenAI Agents integration | https://docs.temporal.io/develop/python/integrations/openai-agents |
+| Vercel AI Gateway | https://vercel.com/docs/ai-gateway |
+| Vercel AI Gateway pricing | https://vercel.com/docs/ai-gateway/pricing |
+| Vercel AI Gateway authentication and BYOK | https://vercel.com/docs/ai-gateway/authentication-and-byok |
+| Vercel AI Gateway FAQ | https://vercel.com/docs/ai-gateway/faq |
+| Cloudflare AI Gateway | https://developers.cloudflare.com/ai-gateway/ |
+| Cloudflare AI Gateway getting started | https://developers.cloudflare.com/ai-gateway/get-started/ |
+| Cloudflare AI Gateway pricing | https://developers.cloudflare.com/ai-gateway/reference/pricing/ |
+| Cloudflare AI Gateway limits | https://developers.cloudflare.com/ai-gateway/reference/limits/ |
+| Cloudflare AI Gateway unified billing | https://developers.cloudflare.com/ai-gateway/features/unified-billing/ |
+| Cloudflare AI Gateway caching | https://developers.cloudflare.com/ai-gateway/features/caching/ |
+| Cloudflare MCP servers | https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/ |
+| cloudflare/mcp-server-cloudflare | https://github.com/cloudflare/mcp-server-cloudflare |
+| Auggie CLI 1.2.0 release notes | https://www.augmentcode.com/changelog/auggie-cli-1-2-0-release-notes |
+| Auggie CLI overview | https://docs.augmentcode.com/cli/overview |
+| FastMCP updates | https://gofastmcp.com/docs/updates |
+| FastMCP installation | https://gofastmcp.com/docs/getting-started/installation |
 
 

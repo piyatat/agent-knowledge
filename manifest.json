@@ -662,7 +662,7 @@
         "approvals"
       ],
       "status": "active",
-      "updated": "2026-11-17",
+      "updated": "2026-11-18",
       "when_to_use": "Agent loops must survive crashes, timeouts, or hours-long human approvals",
       "related": [
         "human-in-the-loop-approvals",
@@ -672,7 +672,9 @@
         "langgraph",
         "mastra",
         "inngest",
-        "inngest-agent-replay"
+        "inngest-agent-replay",
+        "temporal",
+        "temporal-workflow-io"
       ]
     },
     {
@@ -1127,7 +1129,10 @@
       "related": [
         "agent-cost-step-budgets",
         "agent-retry-idempotency",
-        "rate-limit-backoff-tools"
+        "rate-limit-backoff-tools",
+        "vercel-ai-gateway",
+        "cloudflare-ai-gateway",
+        "openrouter"
       ]
     },
     {
@@ -11319,10 +11324,16 @@
       ],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-14",
+      "updated": "2026-11-18",
       "when_to_use": "Running Augment's coding agent in a terminal, CI job, or ACP editor instead of Cosmos cloud",
+      "links": {
+        "get": "https://docs.augmentcode.com/cli/setup-auggie/install-auggie-cli",
+        "docs": "https://docs.augmentcode.com/cli/overview",
+        "home": "https://www.augmentcode.com/"
+      },
       "related": [
         "augment-cosmos",
+        "pi-coding-agent",
         "agent-client-protocol-acp",
         "agents-md-open-format",
         "claude-code-headless",
@@ -11531,6 +11542,7 @@
       "when_to_use": "Hosting a durable agent with SQLite state and schedules on Cloudflare",
       "related": [
         "pi-coding-agent",
+        "cloudflare-ai-gateway",
         "durable-agent-workflows",
         "foundry-agent-service",
         "bedrock-agentcore",
@@ -11878,8 +11890,13 @@
       "tags": ["fastmcp", "mcp", "sdk", "python"],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-16",
+      "updated": "2026-11-18",
       "when_to_use": "Building a Python MCP server or client that must speak the 2026-07-28 revision and older clients",
+      "links": {
+        "get": "https://gofastmcp.com/docs/getting-started/installation",
+        "docs": "https://gofastmcp.com/docs/getting-started/welcome",
+        "home": "https://gofastmcp.com/"
+      },
       "related": [
         "mcp-official-sdks",
         "mcp-stateless-core",
@@ -12068,6 +12085,7 @@
         "mastra",
         "langgraph",
         "vercel-sandbox",
+        "vercel-ai-gateway",
         "pydantic-ai",
         "openrouter",
         "agent-code-sandboxing"
@@ -13034,6 +13052,118 @@
       "updated": "2026-11-18",
       "when_to_use": "A Trigger.dev deploy, retry, or replay does not run the code you just shipped",
       "related": ["trigger-dev", "inngest-agent-replay", "durable-agent-workflows", "agent-retry-idempotency"]
+    },
+    {
+      "id": "temporal",
+      "path": "practices/temporal.md",
+      "title": "Temporal — durable workflows for agent loops",
+      "tags": ["temporal", "durability", "orchestration", "workflows"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Running an agent loop that must survive a worker crash and wait days for approval",
+      "links": {
+        "get": "https://cloud.temporal.io/",
+        "docs": "https://docs.temporal.io/ai",
+        "home": "https://temporal.io/"
+      },
+      "related": [
+        "temporal-workflow-io",
+        "inngest",
+        "inngest-agent-replay",
+        "trigger-dev",
+        "trigger-dev-version-lock",
+        "durable-agent-workflows",
+        "langgraph",
+        "vercel-ai-sdk",
+        "openai-agents-sdk",
+        "human-in-the-loop-approvals",
+        "cloudflare-agents"
+      ]
+    },
+    {
+      "id": "temporal-workflow-io",
+      "path": "failure-modes/temporal-workflow-io.md",
+      "title": "An OpenAI Agents tool on Temporal runs in the Workflow unless it is an Activity",
+      "tags": ["temporal", "replay", "tools", "determinism"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "A Temporal agent calls a tool that does I/O, or a replay repeats a model call",
+      "related": ["temporal", "openai-agents-sdk", "durable-agent-workflows", "inngest-agent-replay", "agent-retry-idempotency"]
+    },
+    {
+      "id": "vercel-ai-gateway",
+      "path": "practices/vercel-ai-gateway.md",
+      "title": "Vercel AI Gateway — one key across model providers",
+      "tags": ["vercel", "gateway", "routing", "models"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Routing an agent's model calls through Vercel with one key, budgets, and provider failover",
+      "links": {
+        "get": "https://vercel.com/signup",
+        "docs": "https://vercel.com/docs/ai-gateway",
+        "home": "https://vercel.com/ai-gateway"
+      },
+      "related": [
+        "vercel-ai-gateway-credits",
+        "vercel-ai-sdk",
+        "openrouter",
+        "helicone",
+        "helicone-billing-order",
+        "portkey",
+        "litellm-proxy",
+        "cloudflare-ai-gateway",
+        "agent-model-routing-fallback"
+      ]
+    },
+    {
+      "id": "vercel-ai-gateway-credits",
+      "path": "failure-modes/vercel-ai-gateway-credits.md",
+      "title": "Buying Vercel AI Gateway credits ends the free monthly credit",
+      "tags": ["vercel", "billing", "gateway", "byok"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "A Vercel AI Gateway purchase, budget, or BYOK key does not cap spend the way you expect",
+      "related": ["vercel-ai-gateway", "vercel-ai-sdk", "openrouter", "helicone-billing-order", "agent-model-routing-fallback"]
+    },
+    {
+      "id": "cloudflare-ai-gateway",
+      "path": "practices/cloudflare-ai-gateway.md",
+      "title": "Cloudflare AI Gateway — logs, cache, and unified model billing",
+      "tags": ["cloudflare", "gateway", "routing", "models"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Proxying Workers AI or a third-party model through Cloudflare with logs, cache, or one bill",
+      "links": {
+        "get": "https://dash.cloudflare.com/sign-up",
+        "docs": "https://developers.cloudflare.com/ai-gateway/",
+        "home": "https://www.cloudflare.com/products/ai-gateway/"
+      },
+      "related": [
+        "cloudflare-ai-gateway-billing",
+        "cloudflare-agents",
+        "vercel-ai-gateway",
+        "openrouter",
+        "helicone",
+        "portkey",
+        "x402-payments",
+        "agent-model-routing-fallback"
+      ]
+    },
+    {
+      "id": "cloudflare-ai-gateway-billing",
+      "path": "failure-modes/cloudflare-ai-gateway-billing.md",
+      "title": "A Cloudflare AI Gateway call can spend Unified Billing when the provider key is missed",
+      "tags": ["cloudflare", "billing", "gateway", "byok"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "An AI Gateway call bills Cloudflare credits, or zero data retention still leaves prompts in logs",
+      "related": ["cloudflare-ai-gateway", "cloudflare-agents", "vercel-ai-gateway-credits", "x402-payments", "prompt-injection-agent-defense"]
     }
   ]
 }

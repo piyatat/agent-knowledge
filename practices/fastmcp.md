@@ -4,7 +4,7 @@ title: FastMCP — Python framework for MCP servers
 kind: tool
 tags: [fastmcp, mcp, sdk, python]
 status: active
-updated: 2026-11-16
+updated: 2026-11-18
 when_to_use: Building a Python MCP server or client that must speak the 2026-07-28 revision and older clients
 ---
 
@@ -14,7 +14,7 @@ when_to_use: Building a Python MCP server or client that must speak the 2026-07-
 
 ## Notes
 
-- **Install.** `uv add fastmcp` or `pip install fastmcp`. Background tasks are an extra: `pip install "fastmcp[tasks]"`. Check with `fastmcp version`. The install doc’s sample output still prints FastMCP 4.0.0; that is an illustration. **4.2.0** (2026-11-13) is the skills release on the updates page. Pin an **exact** version (`fastmcp==4.2.0`). The project warns that **minor** versions can break when the protocol moves, so `fastmcp>=4.0.0` is not a safe production pin. A same-team TypeScript counterpart exists; this note is the Python package.
+- **Install.** `uv add fastmcp` or `pip install fastmcp`. Background tasks are an extra: `pip install "fastmcp[tasks]"`. Check with `fastmcp version`. The install doc’s sample output still prints FastMCP 4.0.0; that is an illustration. **4.2.0** (2026-11-13) added experimental skills. **4.2.1** (2026-11-17) is the security patch on that line: JWTs are rejected before `nbf`, `required_scopes` survive a custom verifier, pre-registered OAuth clients can be pinned to an issuer, and the OAuth proxy hardens consent, metadata forwarding, and upstream claims. It also raises the `opentelemetry-api` floor past a traceparent ReDoS. If that environment also has `opentelemetry-sdk`, upgrade it in the same step. `require_authorization_consent="remember"` asks for consent once more per client after the upgrade. Pin an **exact** version (`fastmcp==4.2.1`). The project warns that **minor** versions can break when the protocol moves, so `fastmcp>=4.0.0` is not a safe production pin. A same-team TypeScript counterpart exists; this note is the Python package.
 - **What you run.** `mcp.run()` defaults to **stdio** (local clients spawn the process). **HTTP** is Streamable HTTP. **SSE** is the legacy web transport and is deprecated. Decorators such as `@mcp.tool()` are unchanged from the FastMCP 3 surface for most servers. FastMCP 4 adds interactive follow-up tools, `add_extension()`, `Depends` / `CallArgument` (kept out of the tool schema), and `ClientGroup`.
 - **Skills (4.2, experimental).** A `Skill` is a name, description, instructions, and files. `SkillCatalogProvider` or `SkillsDirectoryProvider` serves them as ordinary resources. Clients that speak the experimental Skills extension also get `skills/list` with a hashed manifest. `Client.read_skill()` checks size and digest; `to_directory()` installs into an agent skills folder. Client support is uneven. Older `experimental_skills=True` imports warn and are on a removal path toward 4.3 — use `fastmcp.skills.provider`.
 - **Auth.** Applies to **HTTP and SSE only**. Stdio inherits the local user. Default is `auth=None`: an HTTP endpoint accepts unauthenticated calls, and components without their own checks are open to anyone who can reach the port. A gateway in front does not count unless you also block direct access. Patterns: `JWTVerifier` (resource server), `RemoteAuthProvider` when the IdP supports dynamic client registration, `OAuthProxy` (GitHub, Google, Azure, and other non-DCR providers), `MultiAuth` (3.1.0+) for more than one issuer, and a full `OAuthProvider` only if you must be the authorization server. Load client secrets from the environment.
@@ -29,4 +29,4 @@ when_to_use: Building a Python MCP server or client that must speak the 2026-07-
 - [What's New in FastMCP 4](https://gofastmcp.com/docs/getting-started/whats-new) — accessed 2026-11-15
 - [The FastMCP server](https://gofastmcp.com/docs/servers/server) — accessed 2026-11-15
 - [Authentication](https://gofastmcp.com/docs/servers/auth/authentication) — accessed 2026-11-15
-- [FastMCP updates](https://gofastmcp.com/docs/updates) — accessed 2026-11-15
+- [FastMCP updates](https://gofastmcp.com/docs/updates) — accessed 2026-11-18
