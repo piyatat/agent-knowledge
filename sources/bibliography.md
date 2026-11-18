@@ -2913,4 +2913,33 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude Agent SDK TypeScript v0.3.326 | https://github.com/anthropics/claude-agent-sdk-typescript/releases/tag/v0.3.326 |
 | Claude Agent SDK overview | https://code.claude.com/docs/en/agent-sdk/overview |
 
+## Daily ingest 2026-11-18
+
+| Topic | URL |
+| --- | --- |
+| Helicone quickstart | https://docs.helicone.ai/getting-started/quick-start |
+| Helicone AI Gateway overview | https://docs.helicone.ai/gateway/overview |
+| Helicone provider routing | https://docs.helicone.ai/gateway/provider-routing |
+| Helicone error handling and fallback | https://docs.helicone.ai/gateway/concepts/error-handling |
+| Helicone pricing | https://www.helicone.ai/pricing |
+| Helicone manual self-hosting | https://docs.helicone.ai/getting-started/self-host/manual |
+| Helicone platform overview | https://docs.helicone.ai/getting-started/platform-overview |
+| GroqCloud overview | https://console.groq.com/docs/overview |
+| Groq supported models | https://console.groq.com/docs/models |
+| Groq quickstart | https://console.groq.com/docs/quickstart |
+| Groq tool use | https://console.groq.com/docs/tool-use |
+| Groq billing FAQs | https://console.groq.com/docs/billing-faqs |
+| Groq spend limits | https://console.groq.com/docs/spend-limits |
+| Groq Flex processing | https://console.groq.com/docs/flex-processing |
+| Groq model deprecation | https://console.groq.com/docs/deprecations |
+| Groq rate limits | https://console.groq.com/docs/rate-limits |
+| ElevenAgents overview | https://elevenlabs.io/docs/eleven-agents/overview |
+| ElevenAgents pricing | https://elevenlabs.io/pricing/agents |
+| ElevenAgents MCP tools | https://elevenlabs.io/docs/eleven-agents/customization/tools/mcp |
+| ElevenLabs hosted MCP server | https://elevenlabs.io/docs/eleven-agents/operate/hosted-mcp |
+| Trigger.dev introduction | https://trigger.dev/docs/introduction |
+| Trigger.dev pricing | https://trigger.dev/pricing |
+| Trigger.dev deployment | https://trigger.dev/docs/deployment/overview |
+| Trigger.dev AI agents | https://trigger.dev/docs/ai-chat/overview |
+
 

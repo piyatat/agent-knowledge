@@ -551,6 +551,10 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | livekit-agents | tool | `practices/livekit-agents.md` | active | 2026-11-17 | Building a Python or Node agent that joins a live audio, video, or phone room | zep, zep-memory-as-instructions, mem0, browserbase, prompt-injection-agent-defense |
 | zep | service | `practices/zep.md` | active | 2026-11-17 | Storing and retrieving a user’s facts across agent sessions, including a voice agent | zep-memory-as-instructions, mem0, letta-code, livekit-agents, agent-memory-poisoning, memory-wiki-vs-rag |
 | openai-gpt-62-astra-sol | knowledge | `practices/openai-gpt-62-astra-sol.md` | active | 2026-11-17 | Pinning gpt-6.2-astra or gpt-6.2-sol, or moving a tool-calling app onto GPT-6.2 | gpt-62-responses-only-tools, openai-gpt-61-terra-agents, openai-codex-daybreak, openai-codex-model-providers, openai-agents-sdk, github-copilot-model-deprecations |
+| helicone | service | `practices/helicone.md` | active | 2026-11-18 | Routing an agent's model calls through one OpenAI-compatible gateway that also logs every request | helicone-billing-order, openrouter, portkey, litellm-proxy, langfuse, agent-model-routing-fallback |
+| groq-cloud | service | `practices/groq-cloud.md` | active | 2026-11-18 | Calling a fast OpenAI-compatible inference API, including server-side tool use, from an agent | groq-retired-model-ids, openrouter, helicone, vllm, ollama, openai-codex-model-providers |
+| elevenlabs-agents | service | `practices/elevenlabs-agents.md` | active | 2026-11-18 | Building a hosted voice or phone agent, or managing those agents from another MCP client | elevenlabs-mcp-workspace, livekit-agents, zep, prompt-injection-agent-defense |
+| trigger-dev | service | `practices/trigger-dev.md` | active | 2026-11-18 | Running a TypeScript agent that must survive a deploy, wait for approval, and resume after a crash | trigger-dev-version-lock, inngest, inngest-agent-replay, vercel-ai-sdk, durable-agent-workflows, langgraph, cloudflare-agents, human-in-the-loop-approvals |
 
 ## Failure Modes
 
@@ -581,6 +585,10 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | sourcegraph-mcp-default-tools | knowledge | `failure-modes/sourcegraph-mcp-default-tools.md` | active | 2026-11-17 | A Sourcegraph MCP client cannot start Deep Search, or it starts one you did not budget for | sourcegraph, mcp-oauth-scopes, prompt-injection-agent-defense |
 | zep-memory-as-instructions | knowledge | `failure-modes/zep-memory-as-instructions.md` | active | 2026-11-17 | An agent inserts a Zep context block into the system or developer message, or a voice wrapper does that for you | zep, agent-memory-poisoning, prompt-injection-agent-defense, livekit-agents |
 | gpt-62-responses-only-tools | knowledge | `failure-modes/gpt-62-responses-only-tools.md` | active | 2026-11-17 | A GPT-6.2 request returns no tool call, rejects reasoning effort, or forgets earlier reasoning after a prompt edit | openai-gpt-62-astra-sol, openai-agents-sdk, openai-codex-model-providers |
+| helicone-billing-order | knowledge | `failure-modes/helicone-billing-order.md` | active | 2026-11-18 | A Helicone gateway request is billed to the wrong account, or a 429 is not the provider rate limit you think it is | helicone, openrouter, agent-model-routing-fallback |
+| groq-retired-model-ids | knowledge | `failure-modes/groq-retired-model-ids.md` | active | 2026-11-18 | A Groq sample or old model id returns an error, or two Groq docs disagree on the developer rate limit | groq-cloud, openai-codex-model-providers, github-copilot-model-deprecations |
+| elevenlabs-mcp-workspace | knowledge | `failure-modes/elevenlabs-mcp-workspace.md` | active | 2026-11-18 | Enabling MCP for one ElevenAgents agent, or connecting the hosted MCP server from a residency workspace | elevenlabs-agents, mcp-oauth-scopes, prompt-injection-agent-defense |
+| trigger-dev-version-lock | knowledge | `failure-modes/trigger-dev-version-lock.md` | active | 2026-11-18 | A Trigger.dev deploy, retry, or replay does not run the code you just shipped | trigger-dev, inngest-agent-replay, durable-agent-workflows, agent-retry-idempotency |
 
 ## Glossary
 

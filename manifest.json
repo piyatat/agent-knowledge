@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Directory for AI agents to look up knowledge, tools and services before acting or while planning — curated notes with sources",
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -12898,6 +12898,142 @@
       "updated": "2026-11-17",
       "when_to_use": "A GPT-6.2 request returns no tool call, rejects reasoning effort, or forgets earlier reasoning after a prompt edit",
       "related": ["openai-gpt-62-astra-sol", "openai-agents-sdk", "openai-codex-model-providers"]
+    },
+    {
+      "id": "helicone",
+      "path": "practices/helicone.md",
+      "title": "Helicone — AI gateway and request logs",
+      "tags": ["helicone", "gateway", "observability", "models"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Routing an agent's model calls through one OpenAI-compatible gateway that also logs every request",
+      "links": {
+        "get": "https://us.helicone.ai/signup",
+        "docs": "https://docs.helicone.ai/getting-started/quick-start",
+        "home": "https://www.helicone.ai/"
+      },
+      "related": [
+        "helicone-billing-order",
+        "openrouter",
+        "portkey",
+        "litellm-proxy",
+        "langfuse",
+        "agent-model-routing-fallback"
+      ]
+    },
+    {
+      "id": "helicone-billing-order",
+      "path": "failure-modes/helicone-billing-order.md",
+      "title": "Helicone docs disagree on which key pays, and a 429 may be an empty wallet",
+      "tags": ["helicone", "billing", "gateway", "reliability"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "A Helicone gateway request is billed to the wrong account, or a 429 is not the provider rate limit you think it is",
+      "related": ["helicone", "openrouter", "agent-model-routing-fallback"]
+    },
+    {
+      "id": "groq-cloud",
+      "path": "practices/groq-cloud.md",
+      "title": "GroqCloud — fast OpenAI-compatible inference",
+      "tags": ["groq", "models", "inference", "tools"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Calling a fast OpenAI-compatible inference API, including server-side tool use, from an agent",
+      "links": {
+        "get": "https://console.groq.com/login",
+        "docs": "https://console.groq.com/docs/overview",
+        "home": "https://groq.com/"
+      },
+      "related": [
+        "groq-retired-model-ids",
+        "openrouter",
+        "helicone",
+        "vllm",
+        "ollama",
+        "openai-codex-model-providers"
+      ]
+    },
+    {
+      "id": "groq-retired-model-ids",
+      "path": "failure-modes/groq-retired-model-ids.md",
+      "title": "Groq quickstart model ids already fail, and the rate-limit tables disagree",
+      "tags": ["groq", "models", "deprecation", "rate-limits"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "A Groq sample or old model id returns an error, or two Groq docs disagree on the developer rate limit",
+      "related": ["groq-cloud", "openai-codex-model-providers", "github-copilot-model-deprecations"]
+    },
+    {
+      "id": "elevenlabs-agents",
+      "path": "practices/elevenlabs-agents.md",
+      "title": "ElevenAgents — hosted voice and phone agents",
+      "tags": ["elevenlabs", "voice", "agents", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Building a hosted voice or phone agent, or managing those agents from another MCP client",
+      "links": {
+        "get": "https://elevenlabs.io/app/sign-up",
+        "docs": "https://elevenlabs.io/docs/eleven-agents/overview",
+        "home": "https://elevenlabs.io/"
+      },
+      "related": [
+        "elevenlabs-mcp-workspace",
+        "livekit-agents",
+        "zep",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "elevenlabs-mcp-workspace",
+      "path": "failure-modes/elevenlabs-mcp-workspace.md",
+      "title": "ElevenAgents MCP is a workspace switch, and hosted edits publish immediately",
+      "tags": ["elevenlabs", "mcp", "permissions", "privacy"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Enabling MCP for one ElevenAgents agent, or connecting the hosted MCP server from a residency workspace",
+      "related": ["elevenlabs-agents", "mcp-oauth-scopes", "prompt-injection-agent-defense"]
+    },
+    {
+      "id": "trigger-dev",
+      "path": "practices/trigger-dev.md",
+      "title": "Trigger.dev — durable TypeScript tasks and chat agents",
+      "tags": ["trigger", "durability", "orchestration", "typescript"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Running a TypeScript agent that must survive a deploy, wait for approval, and resume after a crash",
+      "links": {
+        "get": "https://cloud.trigger.dev/login",
+        "docs": "https://trigger.dev/docs/introduction",
+        "home": "https://trigger.dev/"
+      },
+      "related": [
+        "trigger-dev-version-lock",
+        "inngest",
+        "inngest-agent-replay",
+        "vercel-ai-sdk",
+        "durable-agent-workflows",
+        "langgraph",
+        "cloudflare-agents",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "trigger-dev-version-lock",
+      "path": "failure-modes/trigger-dev-version-lock.md",
+      "title": "A Trigger.dev deploy does not move runs that already started",
+      "tags": ["trigger", "deployment", "durability", "versioning"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "A Trigger.dev deploy, retry, or replay does not run the code you just shipped",
+      "related": ["trigger-dev", "inngest-agent-replay", "durable-agent-workflows", "agent-retry-idempotency"]
     }
   ]
 }

@@ -118,7 +118,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [mistral-agents-sdk](practices/mistral-agents-sdk.md) | Building a Python agent that runs locally, on your servers, or hosted by Mistral, with sessions that survive… | [link](https://docs.mistral.ai/studio/agents/getting-started/quickstart) | mistral, sdk, python, orchestration | active |
 | [livekit-agents](practices/livekit-agents.md) | Building a Python or Node agent that joins a live audio, video, or phone room | [link](https://docs.livekit.io/agents/start/voice-ai/) | livekit, voice, realtime, sdk | active |
 
-## Services (86)
+## Services (90)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -210,6 +210,10 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [portkey](practices/portkey.md) | Routing an agent's model calls through one gateway with fallbacks, budgets, and a shared MCP front door | [link](https://app.portkey.ai/) | portkey, gateway, mcp, observability | active |
 | [sourcegraph](practices/sourcegraph.md) | Letting a coding agent search and navigate a private multi-repo codebase through Sourcegraph MCP | [link](https://sourcegraph.com/contact) | sourcegraph, mcp, search, code | active |
 | [zep](practices/zep.md) | Storing and retrieving a user’s facts across agent sessions, including a voice agent | [link](https://app.getzep.com/) | zep, memory, mcp, graph | active |
+| [helicone](practices/helicone.md) | Routing an agent's model calls through one OpenAI-compatible gateway that also logs every request | [link](https://us.helicone.ai/signup) | helicone, gateway, observability, models | active |
+| [groq-cloud](practices/groq-cloud.md) | Calling a fast OpenAI-compatible inference API, including server-side tool use, from an agent | [link](https://console.groq.com/login) | groq, models, inference, tools | active |
+| [elevenlabs-agents](practices/elevenlabs-agents.md) | Building a hosted voice or phone agent, or managing those agents from another MCP client | [link](https://elevenlabs.io/app/sign-up) | elevenlabs, voice, agents, mcp | active |
+| [trigger-dev](practices/trigger-dev.md) | Running a TypeScript agent that must survive a deploy, wait for approval, and resume after a crash | [link](https://cloud.trigger.dev/login) | trigger, durability, orchestration, typescript | active |
 
 ## Protocols and standards (22)
 
