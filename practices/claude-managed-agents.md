@@ -1,15 +1,16 @@
 ---
 id: claude-managed-agents
 title: Claude Managed Agents — hosted harness, sessions, vaults
+kind: service
 tags: [claude, api, sandbox, orchestration]
 status: active
-updated: 2026-10-22
+updated: 2026-11-18
 when_to_use: Calling Anthropic’s hosted agent REST/SDK instead of the Messages API or Claude Agent SDK, or running /claude-api managed-agents-secure
 ---
 
 ## Summary
 
-**Claude Managed Agents** (beta, header `managed-agents-2026-04-01`) is Anthropic’s **hosted harness**: you define an agent, an environment, and a session; the platform runs tools, compaction, and a sandbox. It is not the Messages API (you own the loop), not the Claude Agent SDK (`claude-agent-sdk`), and not Claude Code cloud sessions (`claude-code-on-the-web`). Stateful by design — **not** Zero Data Retention or HIPAA BAA. Multiagent (`multiagent_20261001`) is a separate note (`claude-managed-agents-workflows`).
+**Claude Managed Agents** (beta, header `managed-agents-2026-04-01`) is Anthropic’s **hosted harness**: you define an agent, an environment, and a session; the platform runs tools, compaction, and a sandbox. It is separate from the Messages API (you own the loop), the Claude Agent SDK (`claude-agent-sdk`), and Claude Code cloud sessions (`claude-code-on-the-web`). The hosted service is stateful by design and is outside Zero Data Retention and HIPAA BAA. Multiagent (`multiagent_20261001`) is a separate note (`claude-managed-agents-workflows`).
 
 ## Notes
 
@@ -18,6 +19,7 @@ when_to_use: Calling Anthropic’s hosted agent REST/SDK instead of the Messages
 - Security guide (check with Claude Code **`/claude-api managed-agents-secure`** — read-only): prefer cloud unless tools must run on your hosts; set `networking.type: limited` + `allowed_hosts` on every create (omitting `networking` can yield `unrestricted`); keep vault credentials in request headers and scoped hosts; allowlist `web_fetch` / `web_search` domains; `permission_policy` `auto` for reversible sandbox tools, `always_ask` when you cannot undo; no `always_allow` write/shell tool on an agent that reads untrusted input; set a session `budget`. Self-hosted: you own isolation; env-var vault credentials are not supported; web tools still run on Anthropic.
 - **Multiagent** (`type: multiagent_20261001`): subagents + background workflow runs + optional advisor. Defaults enable subagents/workflows. Details, limits, and `workflow_run.*` events: `claude-managed-agents-workflows`. Not Claude Code `.claude/workflows` scripts.
 - Author with `ant apply` (version-controlled agent/environment YAML) or `client.beta.{agents,environments,sessions,vaults,deployments}.*`. MCP tunnels and dreaming are a narrower research preview. Delete sessions and uploaded files when you no longer need them.
+- **Self-hosted service (2026-11-12).** Three placements: cloud sandboxes (Anthropic hosts sandboxes, service, and model), self-hosted sandboxes (you host sandboxes; Anthropic hosts the service), and self-hosted Managed Agents (you host sandboxes and the service; the model stays at Anthropic or a provider you choose, including Bedrock, Google-managed Claude on Google Cloud, Foundry, or your gateway). Access is requested from the account team. The server API matches the hosted service except for the gaps in `claude-managed-agents-self-hosted-gaps`. Nothing, including session history, is copied from the hosted service. This is separate from Claude Code self-hosted runners (`claude-code-self-hosted`).
 
 ## Sources
 
@@ -28,3 +30,5 @@ when_to_use: Calling Anthropic’s hosted agent REST/SDK instead of the Messages
 - [Session event stream](https://platform.claude.com/docs/en/managed-agents/events-and-streaming) — accessed 2026-10-20
 - [Multiagent orchestration](https://platform.claude.com/docs/en/managed-agents/multiagent-orchestration) — accessed 2026-10-22
 - [v2.1.304 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.304) — accessed 2026-10-20
+- [Self-hosted Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/self-hosted) — accessed 2026-11-18
+- [Claude Platform release notes](https://platform.claude.com/docs/en/release-notes/overview) — accessed 2026-11-18

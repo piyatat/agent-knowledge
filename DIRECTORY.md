@@ -118,7 +118,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [mistral-agents-sdk](practices/mistral-agents-sdk.md) | Building a Python agent that runs locally, on your servers, or hosted by Mistral, with sessions that survive… | [link](https://docs.mistral.ai/studio/agents/getting-started/quickstart) | mistral, sdk, python, orchestration | active |
 | [livekit-agents](practices/livekit-agents.md) | Building a Python or Node agent that joins a live audio, video, or phone room | [link](https://docs.livekit.io/agents/start/voice-ai/) | livekit, voice, realtime, sdk | active |
 
-## Services (93)
+## Services (96)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -175,7 +175,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [github-code-scanning-ai-scan](practices/github-code-scanning-ai-scan.md) | Enabling AI Scan on PRs or a repo backlog, budgeting Code Security AI Credits, or PATCHing repository_scan | — | github, security, review, ci | active |
 | [github-agentic-autofix](practices/github-agentic-autofix.md) | Assigning code scanning alerts to Copilot, enabling the Agentic autofix policy, or choosing it vs Copilot Aut… | — | github, security, orchestration, review | active |
 | [github-secret-detection-model](practices/github-secret-detection-model.md) | Enabling GitHub AI secret alerts or push protection, or adding Copilot /security-review secret checks beside… | — | github, security, secrets, review | active |
-| [claude-managed-agents](practices/claude-managed-agents.md) | Calling Anthropic’s hosted agent REST/SDK instead of the Messages API or Claude Agent SDK, or running /claude… | — | claude, api, sandbox, orchestration | active |
+| [claude-managed-agents](practices/claude-managed-agents.md) | Calling Anthropic’s hosted agent REST/SDK instead of the Messages API or Claude Agent SDK, or running /claude… | [link](https://platform.claude.com/) | claude, api, sandbox, orchestration | active |
 | [github-package-firewall](practices/github-package-firewall.md) | Pointing a coding agent, Actions runner, or laptop npm at GitHub’s enterprise package firewall instead of reg… | — | github, security, supply-chain, sandbox | active |
 | [claude-managed-agents-workflows](practices/claude-managed-agents-workflows.md) | Enabling multiagent_20261001 on a hosted Managed Agent, or choosing workflows vs subagents vs advisor | — | claude, orchestration, workflows, api | active |
 | [linear-loops-agent](practices/linear-loops-agent.md) | Automating Linear Agent on a schedule or Slack/GitHub/issue event, or contrasting Loops with Cursor @Cursor m… | — | linear, automations, mcp, orchestration | active |
@@ -217,6 +217,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [temporal](practices/temporal.md) | Running an agent loop that must survive a worker crash and wait days for approval | [link](https://cloud.temporal.io/) | temporal, durability, orchestration, workflows | active |
 | [vercel-ai-gateway](practices/vercel-ai-gateway.md) | Routing an agent's model calls through Vercel with one key, budgets, and provider failover | [link](https://vercel.com/signup) | vercel, gateway, routing, models | active |
 | [cloudflare-ai-gateway](practices/cloudflare-ai-gateway.md) | Proxying Workers AI or a third-party model through Cloudflare with logs, cache, or one bill | [link](https://dash.cloudflare.com/sign-up) | cloudflare, gateway, routing, models | active |
+| [perplexity-agent-api](practices/perplexity-agent-api.md) | Giving an agent a cited web answer, or calling several model providers through one Perplexity key | [link](https://console.perplexity.ai) | perplexity, search, agents, models | active |
+| [cerebras-inference](practices/cerebras-inference.md) | Calling a fast OpenAI-compatible chat API for gpt-oss-120b or Qwen 3.8 27B | [link](https://cloud.cerebras.ai/) | cerebras, models, inference, openai | active |
+| [fireworks-nexus](practices/fireworks-nexus.md) | Routing Claude Code, Codex, Cursor, or Copilot through Nexus Auto instead of one provider key | [link](https://nexus.fireworks.ai/) | fireworks, routing, models, coding | active |
 
 ## Protocols and standards (22)
 

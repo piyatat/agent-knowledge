@@ -9573,8 +9573,13 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-10-22",
+      "updated": "2026-11-18",
       "when_to_use": "Calling Anthropic’s hosted agent REST/SDK instead of the Messages API or Claude Agent SDK, or running /claude-api managed-agents-secure",
+      "links": {
+        "get": "https://platform.claude.com/",
+        "docs": "https://platform.claude.com/docs/en/managed-agents/overview",
+        "home": "https://www.anthropic.com/"
+      },
       "related": [
         "claude-agent-sdk",
         "claude-code-self-hosted",
@@ -9583,7 +9588,8 @@
         "durable-agent-workflows",
         "openai-agents-api",
         "claude-managed-agents-workflows",
-        "claude-code-workflows"
+        "claude-code-workflows",
+        "claude-managed-agents-self-hosted-gaps"
       ]
     },
     {
@@ -13164,6 +13170,131 @@
       "updated": "2026-11-18",
       "when_to_use": "An AI Gateway call bills Cloudflare credits, or zero data retention still leaves prompts in logs",
       "related": ["cloudflare-ai-gateway", "cloudflare-agents", "vercel-ai-gateway-credits", "x402-payments", "prompt-injection-agent-defense"]
+    },
+    {
+      "id": "perplexity-agent-api",
+      "path": "practices/perplexity-agent-api.md",
+      "title": "Perplexity Agent API — grounded research and multi-provider models",
+      "tags": ["perplexity", "search", "agents", "models"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Giving an agent a cited web answer, or calling several model providers through one Perplexity key",
+      "links": {
+        "get": "https://console.perplexity.ai",
+        "docs": "https://docs.perplexity.ai/docs/agent-api/quickstart",
+        "home": "https://www.perplexity.ai/"
+      },
+      "related": [
+        "perplexity-agent-search-opt-in",
+        "exa",
+        "tavily",
+        "firecrawl",
+        "openrouter",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "perplexity-agent-search-opt-in",
+      "path": "failure-modes/perplexity-agent-search-opt-in.md",
+      "title": "A Perplexity Agent API model call does not search, and signup credit does not unlock it",
+      "tags": ["perplexity", "search", "migration", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "A Perplexity Agent API answer has no citations, tools set to an empty list did not stop search, or signup credit is rejected",
+      "related": ["perplexity-agent-api", "exa", "tavily", "prompt-injection-agent-defense"]
+    },
+    {
+      "id": "cerebras-inference",
+      "path": "practices/cerebras-inference.md",
+      "title": "Cerebras Inference — fast OpenAI-compatible shared models",
+      "tags": ["cerebras", "models", "inference", "openai"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Calling a fast OpenAI-compatible chat API for gpt-oss-120b or Qwen 3.8 27B",
+      "links": {
+        "get": "https://cloud.cerebras.ai/",
+        "docs": "https://inference-docs.cerebras.ai/quickstart",
+        "home": "https://www.cerebras.ai/"
+      },
+      "related": [
+        "cerebras-retired-model-ids",
+        "groq-cloud",
+        "openrouter",
+        "vllm",
+        "fireworks-nexus",
+        "openai-codex-model-providers"
+      ]
+    },
+    {
+      "id": "cerebras-retired-model-ids",
+      "path": "failure-modes/cerebras-retired-model-ids.md",
+      "title": "Cerebras replacement ids were removed, and reasoning_effort none does not stop GPT OSS",
+      "tags": ["cerebras", "models", "deprecation", "reasoning"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "A Cerebras model id from an old guide 404s, or reasoning_effort none still returns thinking tokens",
+      "related": ["cerebras-inference", "groq-retired-model-ids", "groq-cloud", "tool-call-failures"]
+    },
+    {
+      "id": "fireworks-nexus",
+      "path": "practices/fireworks-nexus.md",
+      "title": "Fireworks Nexus — route a coding agent across open and closed models",
+      "tags": ["fireworks", "routing", "models", "coding"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Routing Claude Code, Codex, Cursor, or Copilot through Nexus Auto instead of one provider key",
+      "links": {
+        "get": "https://nexus.fireworks.ai/",
+        "docs": "https://docs.fireworks.ai/nexus/quickstart",
+        "home": "https://fireworks.ai/"
+      },
+      "related": [
+        "fireworks-nexus-auto-billing",
+        "cerebras-inference",
+        "groq-cloud",
+        "openrouter",
+        "openai-codex-model-providers",
+        "claude-code-headless",
+        "agent-model-routing-fallback"
+      ]
+    },
+    {
+      "id": "fireworks-nexus-auto-billing",
+      "path": "failure-modes/fireworks-nexus-auto-billing.md",
+      "title": "Nexus Auto bills closed models to your provider, and a platform key is not a Nexus plan",
+      "tags": ["fireworks", "billing", "routing", "accounts"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "A Nexus Auto turn billed the wrong account, firerouter 404s, or a Fireworks platform key cannot connect a harness",
+      "related": [
+        "fireworks-nexus",
+        "openai-codex-model-providers",
+        "agent-model-routing-fallback",
+        "openrouter",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "claude-managed-agents-self-hosted-gaps",
+      "path": "failure-modes/claude-managed-agents-self-hosted-gaps.md",
+      "title": "A self-hosted Managed Agents server rejects hosted features and drops URL images silently",
+      "tags": ["claude", "hosting", "sandbox", "migration"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Moving a Claude Managed Agents app onto a server you host, or debugging a 400, a 404, or an image the model never saw",
+      "related": [
+        "claude-managed-agents",
+        "claude-managed-agents-workflows",
+        "claude-code-self-hosted",
+        "claude-agent-sdk"
+      ]
     }
   ]
 }

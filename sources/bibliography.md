@@ -2965,5 +2965,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Auggie CLI overview | https://docs.augmentcode.com/cli/overview |
 | FastMCP updates | https://gofastmcp.com/docs/updates |
 | FastMCP installation | https://gofastmcp.com/docs/getting-started/installation |
+| Perplexity Agent API quickstart | https://docs.perplexity.ai/docs/agent-api/quickstart |
+| Perplexity Agent API effort levels | https://docs.perplexity.ai/docs/agent-api/effort |
+| Perplexity API pricing | https://docs.perplexity.ai/docs/getting-started/pricing |
+| Perplexity projects and billing | https://docs.perplexity.ai/docs/getting-started/projects |
+| Perplexity rate limits and usage tiers | https://docs.perplexity.ai/docs/admin/rate-limits-usage-tiers |
+| Perplexity API platform overview | https://docs.perplexity.ai/docs/getting-started/overview |
+| How to migrate from Sonar | https://docs.perplexity.ai/docs/agent-api/migrate-from-sonar/how-to |
+| Sonar request mapping (vendor skill) | https://github.com/perplexityai/api-platform-developers/blob/main/skills/migrate-sonar-to-agent-api/references/request-mapping.md |
+| Cerebras Inference quickstart | https://inference-docs.cerebras.ai/quickstart |
+| Cerebras model catalog | https://inference-docs.cerebras.ai/models/overview |
+| Cerebras OpenAI GPT OSS | https://inference-docs.cerebras.ai/models/openai-oss |
+| Cerebras Qwen 3.8 27B | https://inference-docs.cerebras.ai/models/qwen-3.8-27b |
+| Cerebras rate limits | https://inference-docs.cerebras.ai/support/rate-limits |
+| Cerebras reasoning | https://inference-docs.cerebras.ai/capabilities/reasoning |
+| Cerebras OpenAI compatibility | https://inference-docs.cerebras.ai/resources/openai |
+| Cerebras authentication | https://inference-docs.cerebras.ai/api-reference/authentication |
+| Cerebras deprecations | https://inference-docs.cerebras.ai/support/deprecation |
+| Fireworks Nexus quickstart | https://docs.fireworks.ai/nexus/quickstart |
+| Fireworks Nexus Auto | https://docs.fireworks.ai/nexus/auto |
+| Fireworks Nexus plans and accounts | https://docs.fireworks.ai/nexus/plans |
+| Fireworks Nexus data security | https://docs.fireworks.ai/nexus/data-security |
+| Self-hosted Claude Managed Agents | https://platform.claude.com/docs/en/managed-agents/self-hosted |
+| Differences from the hosted Managed Agents service | https://platform.claude.com/docs/en/managed-agents/self-hosted/differences |
+| Claude Platform release notes | https://platform.claude.com/docs/en/release-notes/overview |
 
 
