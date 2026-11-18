@@ -118,7 +118,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [mistral-agents-sdk](practices/mistral-agents-sdk.md) | Building a Python agent that runs locally, on your servers, or hosted by Mistral, with sessions that survive… | [link](https://docs.mistral.ai/studio/agents/getting-started/quickstart) | mistral, sdk, python, orchestration | active |
 | [livekit-agents](practices/livekit-agents.md) | Building a Python or Node agent that joins a live audio, video, or phone room | [link](https://docs.livekit.io/agents/start/voice-ai/) | livekit, voice, realtime, sdk | active |
 
-## Services (96)
+## Services (99)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -220,6 +220,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [perplexity-agent-api](practices/perplexity-agent-api.md) | Giving an agent a cited web answer, or calling several model providers through one Perplexity key | [link](https://console.perplexity.ai) | perplexity, search, agents, models | active |
 | [cerebras-inference](practices/cerebras-inference.md) | Calling a fast OpenAI-compatible chat API for gpt-oss-120b or Qwen 3.8 27B | [link](https://cloud.cerebras.ai/) | cerebras, models, inference, openai | active |
 | [fireworks-nexus](practices/fireworks-nexus.md) | Routing Claude Code, Codex, Cursor, or Copilot through Nexus Auto instead of one provider key | [link](https://nexus.fireworks.ai/) | fireworks, routing, models, coding | active |
+| [together-ai](practices/together-ai.md) | Calling open models from an agent through an OpenAI-compatible API, including tools and a US-only endpoint | [link](https://api.together.ai/signin) | together, models, inference, tools | active |
+| [together-link](practices/together-link.md) | Driving Claude Code, Codex, OpenCode, or Pi through Together-hosted models instead of one provider key | [link](https://docs.together.ai/docs/togetherlink) | together, routing, models, coding | active |
+| [hatchet](practices/hatchet.md) | Running an agent loop as durable tasks on workers you operate, in Hatchet Cloud or on an engine you host | [link](https://cloud.hatchet.run/auth/register) | hatchet, durability, orchestration, workflows | active |
 
 ## Protocols and standards (22)
 

@@ -12576,7 +12576,7 @@
       "tags": ["inngest", "durability", "orchestration", "workflows"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-17",
+      "updated": "2026-11-18",
       "when_to_use": "Running an agent loop that must retry one tool call, wait days for approval, and resume after a crash",
       "links": {
         "get": "https://app.inngest.com/sign-up",
@@ -12591,7 +12591,9 @@
         "vercel-ai-sdk",
         "cloudflare-agents",
         "human-in-the-loop-approvals",
-        "agent-retry-idempotency"
+        "agent-retry-idempotency",
+        "hatchet",
+        "hatchet-durable-side-effects"
       ]
     },
     {
@@ -12977,7 +12979,8 @@
         "helicone",
         "vllm",
         "ollama",
-        "openai-codex-model-providers"
+        "openai-codex-model-providers",
+        "together-ai"
       ]
     },
     {
@@ -13045,7 +13048,9 @@
         "durable-agent-workflows",
         "langgraph",
         "cloudflare-agents",
-        "human-in-the-loop-approvals"
+        "human-in-the-loop-approvals",
+        "hatchet",
+        "hatchet-durable-side-effects"
       ]
     },
     {
@@ -13084,7 +13089,9 @@
         "vercel-ai-sdk",
         "openai-agents-sdk",
         "human-in-the-loop-approvals",
-        "cloudflare-agents"
+        "cloudflare-agents",
+        "hatchet",
+        "hatchet-durable-side-effects"
       ]
     },
     {
@@ -13260,7 +13267,9 @@
         "openrouter",
         "openai-codex-model-providers",
         "claude-code-headless",
-        "agent-model-routing-fallback"
+        "agent-model-routing-fallback",
+        "together-link",
+        "together-ai"
       ]
     },
     {
@@ -13294,6 +13303,137 @@
         "claude-managed-agents-workflows",
         "claude-code-self-hosted",
         "claude-agent-sdk"
+      ]
+    },
+    {
+      "id": "together-ai",
+      "path": "practices/together-ai.md",
+      "title": "Together AI — OpenAI-compatible inference for open models",
+      "tags": ["together", "models", "inference", "tools"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Calling open models from an agent through an OpenAI-compatible API, including tools and a US-only endpoint",
+      "links": {
+        "get": "https://api.together.ai/signin",
+        "docs": "https://docs.together.ai/docs/quickstart",
+        "home": "https://www.together.ai/"
+      },
+      "related": [
+        "together-prepaid-and-compat",
+        "together-link",
+        "groq-cloud",
+        "cerebras-inference",
+        "openrouter",
+        "fireworks-nexus",
+        "vllm",
+        "ollama"
+      ]
+    },
+    {
+      "id": "together-prepaid-and-compat",
+      "path": "failure-modes/together-prepaid-and-compat.md",
+      "title": "Together stays locked until $15, and OpenAI clients still 404 on several routes",
+      "tags": ["together", "billing", "openai", "deprecation"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "A Together request 404s, bills past zero, or an OpenAI sample fails on the Together base URL",
+      "related": [
+        "together-ai",
+        "together-link",
+        "together-link-beta-routing",
+        "groq-retired-model-ids",
+        "cerebras-retired-model-ids",
+        "openrouter"
+      ]
+    },
+    {
+      "id": "together-link",
+      "path": "practices/together-link.md",
+      "title": "Together Link — launch a coding agent on Together models",
+      "tags": ["together", "routing", "models", "coding"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Driving Claude Code, Codex, OpenCode, or Pi through Together-hosted models instead of one provider key",
+      "links": {
+        "get": "https://docs.together.ai/docs/togetherlink",
+        "docs": "https://docs.together.ai/docs/togetherlink",
+        "home": "https://www.together.ai/"
+      },
+      "related": [
+        "together-link-beta-routing",
+        "together-ai",
+        "together-prepaid-and-compat",
+        "fireworks-nexus",
+        "fireworks-nexus-auto-billing",
+        "claude-code-headless",
+        "openai-codex-exec",
+        "opencode-agent",
+        "pi-coding-agent"
+      ]
+    },
+    {
+      "id": "together-link-beta-routing",
+      "path": "failure-modes/together-link-beta-routing.md",
+      "title": "Together Link ignores a late --model flag, and a hard Claude turn bills Anthropic",
+      "tags": ["together", "routing", "billing", "beta"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "A Together Link session billed Anthropic, ignored a model flag, or hung in a headless Claude Code run",
+      "related": [
+        "together-link",
+        "together-ai",
+        "together-prepaid-and-compat",
+        "fireworks-nexus-auto-billing",
+        "claude-code-headless"
+      ]
+    },
+    {
+      "id": "hatchet",
+      "path": "practices/hatchet.md",
+      "title": "Hatchet — durable tasks on workers you run",
+      "tags": ["hatchet", "durability", "orchestration", "workflows"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "Running an agent loop as durable tasks on workers you operate, in Hatchet Cloud or on an engine you host",
+      "links": {
+        "get": "https://cloud.hatchet.run/auth/register",
+        "docs": "https://docs.hatchet.run/v1/quickstart",
+        "home": "https://hatchet.run/"
+      },
+      "related": [
+        "hatchet-durable-side-effects",
+        "temporal",
+        "temporal-workflow-io",
+        "inngest",
+        "inngest-agent-replay",
+        "trigger-dev",
+        "trigger-dev-version-lock",
+        "durable-agent-workflows",
+        "langgraph",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "hatchet-durable-side-effects",
+      "path": "failure-modes/hatchet-durable-side-effects.md",
+      "title": "A Hatchet durable task replays its body, and the free cap drops new runs",
+      "tags": ["hatchet", "replay", "durability", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-18",
+      "when_to_use": "A Hatchet durable task sent a duplicate write, or a new run was rejected after the daily or queue cap",
+      "related": [
+        "hatchet",
+        "temporal-workflow-io",
+        "inngest-agent-replay",
+        "trigger-dev-version-lock",
+        "agent-retry-idempotency",
+        "durable-agent-workflows"
       ]
     }
   ]

@@ -2990,4 +2990,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Differences from the hosted Managed Agents service | https://platform.claude.com/docs/en/managed-agents/self-hosted/differences |
 | Claude Platform release notes | https://platform.claude.com/docs/en/release-notes/overview |
 
+## Daily ingest 2026-11-18 (Together AI, Together Link, Hatchet)
+
+| Topic | URL |
+| --- | --- |
+| Together AI quickstart | https://docs.together.ai/docs/quickstart |
+| Together AI OpenAI compatibility | https://docs.together.ai/docs/inference/openai-compatibility |
+| Together AI authentication | https://docs.together.ai/docs/api-keys-authentication |
+| Together AI account management | https://docs.together.ai/docs/account-management |
+| Together AI credits | https://docs.together.ai/docs/billing-credits |
+| Together AI pricing | https://www.together.ai/pricing |
+| Together AI function calling | https://docs.together.ai/docs/inference/function-calling |
+| Together AI spend controls | https://docs.together.ai/docs/billing-spend-controls |
+| Together AI geo-specific inference | https://docs.together.ai/docs/serverless/geo-specific-inference |
+| Together AI rate limits | https://docs.together.ai/docs/serverless/rate-limits |
+| Together AI deprecations | https://docs.together.ai/docs/deprecations |
+| Together Link | https://docs.together.ai/docs/togetherlink |
+| Hatchet Cloud quickstart | https://docs.hatchet.run/v1/quickstart |
+| Hatchet Cloud vs OSS | https://docs.hatchet.run/v1/cloud-vs-oss |
+| Hatchet API tokens | https://docs.hatchet.run/v1/api-tokens |
+| Hatchet pricing | https://hatchet.run/pricing |
+| Hatchet region availability | https://docs.hatchet.run/v1/region-availability |
+| Hatchet durable tasks | https://docs.hatchet.run/v1/durable-tasks |
+| Hatchet task eviction | https://docs.hatchet.run/v1/task-eviction |
+
 
