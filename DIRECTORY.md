@@ -120,7 +120,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [dbos](practices/dbos.md) | Checkpointing an agent loop in Postgres you operate, with optional Conductor recovery across workers | [link](https://docs.dbos.dev/quickstart) | dbos, durability, orchestration, postgres | active |
 | [pipecat](practices/pipecat.md) | Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud | [link](https://docs.pipecat.ai/pipecat/get-started/introduction) | pipecat, voice, realtime, cloud | active |
 
-## Services (106)
+## Services (109)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -232,6 +232,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [deepseek-api](practices/deepseek-api.md) | Calling DeepSeek from an agent with an OpenAI-compatible key, including tools and web search | [link](https://platform.deepseek.com/sign_up) | deepseek, models, tools, search | active |
 | [qdrant-cloud](practices/qdrant-cloud.md) | Storing and querying vectors for an agent on Qdrant Cloud, or moving an open-source Qdrant server there | [link](https://cloud.qdrant.io/) | qdrant, vectors, memory, search | active |
 | [brave-search-api](practices/brave-search-api.md) | Giving an agent web search or extracted page context from Brave’s index, with an API key or a per-request pay… | [link](https://api-dashboard.search.brave.com/register) | brave, search, web, x402 | active |
+| [pinecone](practices/pinecone.md) | Storing text or vectors for an agent and searching them by meaning or by exact terms | [link](https://app.pinecone.io/) | pinecone, vectors, search, memory | active |
+| [cohere](practices/cohere.md) | Embedding passages and reranking retrieved chunks before they go into an agent's context | [link](https://dashboard.cohere.com/api-keys) | cohere, embeddings, rerank, retrieval | active |
+| [n8n](practices/n8n.md) | Running an open-ended agent or a tool-calling workflow on n8n Cloud or a self-hosted n8n instance | [link](https://app.n8n.cloud/register) | n8n, workflows, agents, mcp | active |
 
 ## Protocols and standards (22)
 

@@ -3099,4 +3099,31 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude Code hooks | https://code.claude.com/docs/en/hooks |
 | Claude Code product | https://claude.com/product/claude-code |
 
+## Daily ingest 2026-11-19 (Pinecone, Cohere, n8n, Claude Agent SDK 0.3.328)
+
+| Topic | URL |
+| --- | --- |
+| Pinecone quickstart | https://docs.pinecone.io/guides/get-started/quickstart |
+| Understand Pinecone cost | https://docs.pinecone.io/guides/cost/understand-cost |
+| Pinecone API authentication | https://docs.pinecone.io/reference/api/authentication |
+| Pinecone manage API keys | https://docs.pinecone.io/admin/projects/manage-api-keys |
+| Pinecone pricing | https://www.pinecone.io/pricing/ |
+| Pinecone console | https://app.pinecone.io/ |
+| Cohere API keys and rate limits | https://docs.cohere.com/docs/rate-limits |
+| How Cohere pricing works | https://docs.cohere.com/docs/how-does-cohere-pricing-work |
+| Cohere pricing | https://cohere.com/pricing |
+| Introduction to Cohere embeddings | https://docs.cohere.com/docs/embeddings |
+| Cohere Embed API (v2) | https://docs.cohere.com/reference/embed |
+| Cohere Rerank API (v2) | https://docs.cohere.com/reference/rerank |
+| Cohere API keys | https://dashboard.cohere.com/api-keys |
+| n8n build and manage agents | https://docs.n8n.io/build/build-and-manage-agents |
+| n8n AI Agent node | https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent |
+| n8n MCP servers | https://docs.n8n.io/build/integrate-ai/mcp-servers |
+| Choose how to use n8n | https://docs.n8n.io/choose-how-to-use-n8n |
+| n8n compare editions | https://docs.n8n.io/deploy/host-n8n/community-edition-features |
+| n8n pricing | https://n8n.io/pricing/ |
+| Create an n8n Cloud account | https://app.n8n.cloud/register |
+| n8n create and edit credentials | https://docs.n8n.io/build/understand-workflows/create-and-edit-credentials |
+| Claude Agent SDK TypeScript v0.3.328 | https://github.com/anthropics/claude-agent-sdk-typescript/releases/tag/v0.3.328 |
+
 

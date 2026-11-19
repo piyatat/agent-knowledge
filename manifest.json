@@ -3062,7 +3062,8 @@
         "claude-message-threads",
         "claude-code-mcp",
         "claude-code-managed-mcp",
-        "claude-agent-sdk-rejected-options"
+        "claude-agent-sdk-rejected-options",
+        "claude-agent-sdk-deferred-resume"
       ]
     },
     {
@@ -13853,6 +13854,133 @@
         "x402-payments",
         "exa",
         "tavily"
+      ]
+    },
+    {
+      "id": "pinecone",
+      "path": "practices/pinecone.md",
+      "title": "Pinecone — managed search for agent retrieval",
+      "tags": ["pinecone", "vectors", "search", "memory"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Storing text or vectors for an agent and searching them by meaning or by exact terms",
+      "links": {
+        "get": "https://app.pinecone.io/",
+        "docs": "https://docs.pinecone.io/guides/get-started/quickstart",
+        "home": "https://www.pinecone.io/"
+      },
+      "related": [
+        "pinecone-read-cap-and-index-lag",
+        "qdrant-cloud",
+        "cohere",
+        "mem0",
+        "zep"
+      ]
+    },
+    {
+      "id": "pinecone-read-cap-and-index-lag",
+      "path": "failure-modes/pinecone-read-cap-and-index-lag.md",
+      "title": "A Pinecone Starter or Builder read returns 429, or a search misses documents still indexing",
+      "tags": ["pinecone", "billing", "search", "limits"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "A Pinecone query starts returning 429, or a search right after upsert comes back empty",
+      "related": [
+        "pinecone",
+        "qdrant-cloud",
+        "cohere"
+      ]
+    },
+    {
+      "id": "cohere",
+      "path": "practices/cohere.md",
+      "title": "Cohere — embed and rerank API for agent retrieval",
+      "tags": ["cohere", "embeddings", "rerank", "retrieval"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Embedding passages and reranking retrieved chunks before they go into an agent's context",
+      "links": {
+        "get": "https://dashboard.cohere.com/api-keys",
+        "docs": "https://docs.cohere.com/docs/embeddings",
+        "home": "https://cohere.com/"
+      },
+      "related": [
+        "cohere-trial-keys-and-input-type",
+        "pinecone",
+        "qdrant-cloud",
+        "mem0"
+      ]
+    },
+    {
+      "id": "cohere-trial-keys-and-input-type",
+      "path": "failure-modes/cohere-trial-keys-and-input-type.md",
+      "title": "A Cohere trial key stops after 1,000 calls, or search embeddings share one input_type",
+      "tags": ["cohere", "billing", "embeddings", "rerank"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Cohere calls start failing after a quiet month of testing, or semantic search ranks the wrong passages",
+      "related": [
+        "cohere",
+        "pinecone",
+        "qdrant-cloud"
+      ]
+    },
+    {
+      "id": "n8n",
+      "path": "practices/n8n.md",
+      "title": "n8n — hosted or self-hosted workflows with agents",
+      "tags": ["n8n", "workflows", "agents", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Running an open-ended agent or a tool-calling workflow on n8n Cloud or a self-hosted n8n instance",
+      "links": {
+        "get": "https://app.n8n.cloud/register",
+        "docs": "https://docs.n8n.io/build/build-and-manage-agents",
+        "home": "https://n8n.io/"
+      },
+      "related": [
+        "n8n-agent-draft-and-queue",
+        "inngest",
+        "temporal",
+        "trigger-dev",
+        "vercel-workflows",
+        "cloudflare-workflows"
+      ]
+    },
+    {
+      "id": "n8n-agent-draft-and-queue",
+      "path": "failure-modes/n8n-agent-draft-and-queue.md",
+      "title": "An n8n chat still runs the last published agent, or queue mode drops channels",
+      "tags": ["n8n", "agents", "publishing", "queue"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "An n8n agent ignores an edit that Preview already shows, or a channel agent fails on a queue-mode instance",
+      "related": [
+        "n8n",
+        "inngest",
+        "temporal",
+        "trigger-dev"
+      ]
+    },
+    {
+      "id": "claude-agent-sdk-deferred-resume",
+      "path": "failure-modes/claude-agent-sdk-deferred-resume.md",
+      "title": "Claude Agent SDK resume reruns a hook-deferred tool unless an env flag is set",
+      "tags": ["claude", "sdk", "hooks", "permissions"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "A resumed Claude Agent SDK session runs a tool a hook had deferred, or a rewritten shell command leaves the sandbox",
+      "related": [
+        "claude-agent-sdk",
+        "claude-agent-sdk-rejected-options",
+        "claude-code-hooks"
       ]
     }
   ]
