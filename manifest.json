@@ -662,7 +662,7 @@
         "approvals"
       ],
       "status": "active",
-      "updated": "2026-11-18",
+      "updated": "2026-11-19",
       "when_to_use": "Agent loops must survive crashes, timeouts, or hours-long human approvals",
       "related": [
         "human-in-the-loop-approvals",
@@ -674,7 +674,11 @@
         "inngest",
         "inngest-agent-replay",
         "temporal",
-        "temporal-workflow-io"
+        "temporal-workflow-io",
+        "restate",
+        "restate-agent-journal",
+        "dbos",
+        "dbos-step-replay"
       ]
     },
     {
@@ -13434,6 +13438,134 @@
         "trigger-dev-version-lock",
         "agent-retry-idempotency",
         "durable-agent-workflows"
+      ]
+    },
+    {
+      "id": "restate",
+      "path": "practices/restate.md",
+      "title": "Restate — durable agent steps on a journaled runtime",
+      "tags": ["restate", "durability", "orchestration", "workflows"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Running an agent loop on Restate so each model call and tool call survives a crash",
+      "links": {
+        "get": "https://cloud.restate.dev/",
+        "docs": "https://docs.restate.dev/cloud/getting-started",
+        "home": "https://restate.dev/"
+      },
+      "related": [
+        "restate-agent-journal",
+        "dbos",
+        "dbos-step-replay",
+        "temporal",
+        "temporal-workflow-io",
+        "hatchet",
+        "inngest",
+        "trigger-dev",
+        "durable-agent-workflows",
+        "vercel-ai-sdk"
+      ]
+    },
+    {
+      "id": "restate-agent-journal",
+      "path": "failure-modes/restate-agent-journal.md",
+      "title": "A Restate agent journal breaks on parallel tools, streams, and swallowed errors",
+      "tags": ["restate", "replay", "durability", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "A Restate agent double-called a tool, sent a suspension error to the model, or exhausted the monthly action allotment",
+      "related": [
+        "restate",
+        "dbos-step-replay",
+        "temporal-workflow-io",
+        "hatchet-durable-side-effects",
+        "inngest-agent-replay",
+        "durable-agent-workflows",
+        "agent-retry-idempotency"
+      ]
+    },
+    {
+      "id": "dbos",
+      "path": "practices/dbos.md",
+      "title": "DBOS — agent checkpoints in Postgres you operate",
+      "tags": ["dbos", "durability", "orchestration", "postgres"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Checkpointing an agent loop in Postgres you operate, with optional Conductor recovery across workers",
+      "links": {
+        "get": "https://docs.dbos.dev/quickstart",
+        "docs": "https://docs.dbos.dev/ai/ai-quickstart",
+        "home": "https://www.dbos.dev/"
+      },
+      "related": [
+        "dbos-step-replay",
+        "restate",
+        "restate-agent-journal",
+        "temporal",
+        "hatchet",
+        "inngest",
+        "vercel-ai-sdk",
+        "pydantic-ai",
+        "durable-agent-workflows"
+      ]
+    },
+    {
+      "id": "dbos-step-replay",
+      "path": "failure-modes/dbos-step-replay.md",
+      "title": "DBOS reruns agent work that is not a step, and a second worker waits on Conductor",
+      "tags": ["dbos", "replay", "durability", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "A DBOS agent repeated a tool after a restart, or another worker never picked up the crashed run",
+      "related": [
+        "dbos",
+        "restate-agent-journal",
+        "temporal-workflow-io",
+        "hatchet-durable-side-effects",
+        "durable-agent-workflows",
+        "agent-retry-idempotency"
+      ]
+    },
+    {
+      "id": "pipecat",
+      "path": "practices/pipecat.md",
+      "title": "Pipecat — Python voice pipelines and Pipecat Cloud",
+      "tags": ["pipecat", "voice", "realtime", "cloud"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud",
+      "links": {
+        "get": "https://docs.pipecat.ai/pipecat/get-started/introduction",
+        "docs": "https://docs.pipecat.ai/pipecat-cloud/introduction",
+        "home": "https://www.pipecat.ai/"
+      },
+      "related": [
+        "pipecat-cloud-reserved-minutes",
+        "livekit-agents",
+        "elevenlabs-agents",
+        "e2b-sandboxes",
+        "vercel-sandbox"
+      ]
+    },
+    {
+      "id": "pipecat-cloud-reserved-minutes",
+      "path": "failure-modes/pipecat-cloud-reserved-minutes.md",
+      "title": "A Pipecat Cloud warm instance bills all day, and a stuck pipeline keeps the active minute",
+      "tags": ["pipecat", "billing", "voice", "scaling"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "A Pipecat Cloud deploy billed overnight with no calls, or a session never stopped accruing active minutes",
+      "related": [
+        "pipecat",
+        "livekit-agents",
+        "elevenlabs-agents",
+        "vercel-ai-gateway-credits"
       ]
     }
   ]

@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. The `get` column points to the official page to install or sign up; whether and how to proceed is the user's call. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (107)
+## Tools (109)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -117,8 +117,10 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [vllm](practices/vllm.md) | Serving an open model with an OpenAI-compatible API for agents on a GPU host you control | [link](https://docs.vllm.ai/en/stable/getting_started/installation/) | vllm, models, serving, openai | active |
 | [mistral-agents-sdk](practices/mistral-agents-sdk.md) | Building a Python agent that runs locally, on your servers, or hosted by Mistral, with sessions that survive… | [link](https://docs.mistral.ai/studio/agents/getting-started/quickstart) | mistral, sdk, python, orchestration | active |
 | [livekit-agents](practices/livekit-agents.md) | Building a Python or Node agent that joins a live audio, video, or phone room | [link](https://docs.livekit.io/agents/start/voice-ai/) | livekit, voice, realtime, sdk | active |
+| [dbos](practices/dbos.md) | Checkpointing an agent loop in Postgres you operate, with optional Conductor recovery across workers | [link](https://docs.dbos.dev/quickstart) | dbos, durability, orchestration, postgres | active |
+| [pipecat](practices/pipecat.md) | Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud | [link](https://docs.pipecat.ai/pipecat/get-started/introduction) | pipecat, voice, realtime, cloud | active |
 
-## Services (99)
+## Services (100)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -223,6 +225,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [together-ai](practices/together-ai.md) | Calling open models from an agent through an OpenAI-compatible API, including tools and a US-only endpoint | [link](https://api.together.ai/signin) | together, models, inference, tools | active |
 | [together-link](practices/together-link.md) | Driving Claude Code, Codex, OpenCode, or Pi through Together-hosted models instead of one provider key | [link](https://docs.together.ai/docs/togetherlink) | together, routing, models, coding | active |
 | [hatchet](practices/hatchet.md) | Running an agent loop as durable tasks on workers you operate, in Hatchet Cloud or on an engine you host | [link](https://cloud.hatchet.run/auth/register) | hatchet, durability, orchestration, workflows | active |
+| [restate](practices/restate.md) | Running an agent loop on Restate so each model call and tool call survives a crash | [link](https://cloud.restate.dev/) | restate, durability, orchestration, workflows | active |
 
 ## Protocols and standards (22)
 

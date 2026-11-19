@@ -3014,4 +3014,31 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Hatchet durable tasks | https://docs.hatchet.run/v1/durable-tasks |
 | Hatchet task eviction | https://docs.hatchet.run/v1/task-eviction |
 
+## Daily ingest 2026-11-19 (Restate, DBOS, Pipecat)
+
+| Topic | URL |
+| --- | --- |
+| Restate durable agents | https://docs.restate.dev/ai/patterns/durable-agents |
+| Restate agent SDK integration guide | https://docs.restate.dev/ai/sdk-integrations/integration-guide |
+| Restate Cloud getting started | https://docs.restate.dev/cloud/getting-started |
+| Choose how to run Restate | https://docs.restate.dev/hosting/overview |
+| Restate pricing | https://restate.dev/pricing |
+| Restate Cloud | https://restate.dev/cloud |
+| Restate Cloud public launch | https://restate.dev/blog/announcing-restate-cloud-public |
+| DBOS AI quickstart | https://docs.dbos.dev/ai/ai-quickstart |
+| DBOS architecture | https://docs.dbos.dev/architecture |
+| DBOS quickstart | https://docs.dbos.dev/quickstart |
+| DBOS Vercel AI SDK integration | https://docs.dbos.dev/integrations/vercel-ai |
+| DBOS Conductor overview | https://docs.dbos.dev/conductor/overview |
+| Self-hosting DBOS Conductor | https://docs.dbos.dev/conductor/self-hosting/hosting-conductor |
+| DBOS pricing | https://www.dbos.dev/dbos-pricing |
+| DBOS Console | https://console.dbos.dev/ |
+| Introduction to Pipecat | https://docs.pipecat.ai/pipecat/get-started/introduction |
+| Pipecat quickstart | https://docs.pipecat.ai/pipecat/get-started/quickstart |
+| Pipecat Cloud introduction | https://docs.pipecat.ai/pipecat-cloud/introduction |
+| Pipecat Cloud accounts | https://docs.pipecat.ai/pipecat-cloud/fundamentals/accounts-and-organizations |
+| Pipecat Cloud scaling | https://docs.pipecat.ai/pipecat-cloud/fundamentals/scaling |
+| Pipecat Cloud pricing | https://www.daily.co/pricing/pipecat-cloud |
+| Pipecat Cloud | https://pipecat.daily.co |
+
 
