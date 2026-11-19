@@ -3071,4 +3071,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | xAI tools overview | https://docs.x.ai/developers/tools/overview |
 | xAI API security FAQ | https://docs.x.ai/developers/faq/security |
 
+## Daily ingest 2026-11-19 (DeepSeek API, Qdrant Cloud, Brave Search API, Claude Code 2.1.328)
+
+| Topic | URL |
+| --- | --- |
+| DeepSeek first API call | https://api-docs.deepseek.com/ |
+| DeepSeek models and pricing | https://api-docs.deepseek.com/quick_start/pricing |
+| DeepSeek rate limit and isolation | https://api-docs.deepseek.com/quick_start/rate_limit |
+| DeepSeek thinking mode | https://api-docs.deepseek.com/guides/thinking_mode |
+| DeepSeek Search and Fetch | https://api-docs.deepseek.com/guides/search |
+| DeepSeek platform signup | https://platform.deepseek.com/sign_up |
+| DeepSeek home | https://www.deepseek.com/ |
+| Qdrant Cloud getting started | https://qdrant.tech/documentation/cloud-getting-started/ |
+| Qdrant database authentication | https://qdrant.tech/documentation/cloud/authentication/ |
+| Qdrant Cloud pricing | https://qdrant.tech/pricing/ |
+| Qdrant Cloud console | https://cloud.qdrant.io/ |
+| Brave Search API | https://brave.com/search/api/ |
+| Brave Search API account | https://api-dashboard.search.brave.com/register |
+| Brave Search API quickstart | https://api-dashboard.search.brave.com/documentation/quickstart |
+| Brave Search API authentication | https://api-dashboard.search.brave.com/documentation/guides/authentication |
+| Brave Search API rate limiting | https://api-dashboard.search.brave.com/documentation/guides/rate-limiting |
+| Brave Search API help | https://api-dashboard.search.brave.com/documentation/resources/help-feedback |
+| Brave Search API agent payments | https://api-dashboard.search.brave.com/documentation/guides/agent-payments |
+| Brave Search payment proxy | https://search.agent.s.brave.app/llms.txt |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Claude Code setup | https://code.claude.com/docs/en/setup |
+| Claude Code hooks | https://code.claude.com/docs/en/hooks |
+| Claude Code product | https://claude.com/product/claude-code |
+
 

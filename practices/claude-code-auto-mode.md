@@ -2,8 +2,9 @@
 id: claude-code-auto-mode
 title: Claude Code auto mode — classifier after deny/ask
 tags: [claude, permissions, safety, governance]
+kind: knowledge
 status: active
-updated: 2026-10-31
+updated: 2026-11-19
 when_to_use: Configuring autoMode.environment / classifier rules, or debugging an auto-mode denial
 ---
 
@@ -19,10 +20,11 @@ when_to_use: Configuring autoMode.environment / classifier rules, or debugging a
 - Extra lists: `hard_deny` (unconditional), `soft_deny` (user intent / `allow` can clear), `allow` (soft exceptions). Omitting `"$defaults"` drops built-in rules for that section (including force-push / `curl | bash` / exfil). **2026-10-31:** an `autoMode.allow` list **without** `"$defaults"` no longer removes the built-in rule on **scheduled-task prompts** — those prompts keep the stock allow exception. `classifyAllShell: true` (v2.1.193+) sends every Bash/PowerShell command through the classifier.
 - Inspect: `claude auto-mode defaults|config|critique|reset`. `/auto-mode-setup` drafts `autoMode.environment` (and sometimes rules) from the project + recent **commands** (never your messages) into `~/.claude/settings.json`. **v2.1.304** also on Bedrock, Vertex, Foundry, Claude apps gateway, and telemetry-disabled sessions. Pro/Max/Team: v2.1.228+ (native Windows v2.1.233+); Enterprise / Console API key: v2.1.283+. Not on cloud sessions. Accept/discard the whole draft. `/permissions` → Auto mode tab (v2.1.246+) edits user rules. Recently denied → `r` retries. Conversation “don’t push” is lost on compaction; use ask/deny for a durable gate.
 - v2.1.302: `CLAUDE_CODE_AUTO_MODE_MODEL` picks the model for the **client-side** classifier only — it does **not** change server-side auto mode. Server-side classifier: a conversation too long for the safety check is now **compacted** instead of denying every checked tool call. `claude -p` and Agent SDK sessions with **no** permission mode start in **`default`** on third-party providers (fresh install / telemetry off); pass `--permission-mode auto` to keep auto (`claude-code-headless`).
+- **v2.1.328 (2026-11-19):** interactive sessions on **Opus 4.6** and **Sonnet 4.6** with no permission mode start in auto mode on Amazon Bedrock, Google Cloud’s Agent Platform, Microsoft Foundry, and the Claude apps gateway. Plan mode and Bash prompts on those models use and offer auto mode there. `disableAutoMode` turns both off. Outside Claude Desktop, auto mode failed every turn when `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS` was set behind a gateway that rejects betas on those same providers. That failure is fixed in this release. Headless and SDK sessions are still the `default` case in the bullet above unless you pass a permission mode.
 
 ## Sources
 
-- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-10-31
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-19
 - [Configure auto mode](https://code.claude.com/docs/en/auto-mode-config) — accessed 2026-10-20
 - [v2.1.304 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.304) — accessed 2026-10-20
 - [Configure permissions](https://code.claude.com/docs/en/permissions) — accessed 2026-09-13

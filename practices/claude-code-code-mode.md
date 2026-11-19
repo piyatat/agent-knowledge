@@ -2,8 +2,9 @@
 id: claude-code-code-mode
 title: Claude Code Code Mode — JS REPL for batched tool calls
 tags: [claude, tools, sandbox, experimental]
+kind: knowledge
 status: active
-updated: 2026-11-16
+updated: 2026-11-19
 when_to_use: Turning on experimental Code Mode so Claude writes JavaScript that calls tools in one step, or diagnosing why it will not start
 ---
 
@@ -19,12 +20,13 @@ when_to_use: Turning on experimental Code Mode so Claude writes JavaScript that 
 - Resume only in the terminal **with Code Mode still on**. Sessions started without it stay without it. You cannot move a Code Mode session to Desktop, background it, or `/fork` a background copy.
 - Permissions: each tool call still hits deny/ask rules and `PreToolUse`. In **auto**, the classifier reviews the **script**, not each call, and does not see runtime values — keep rules/hooks for paths you must control. Inspect the script with a `PreToolUse` matcher on **`REPL`** (`tool_input.code`). Waiting code stops at **10 minutes**; background code (start in auto or `bypassPermissions`) can run up to **two hours**. A denied Bash pattern can still be rewritten — pair with `claude-code-sandboxing`.
 - **v2.1.325** (2026-11-13): a Code Mode script follows `EnterWorktree` and no longer writes `~` paths into the project. `/mcp` no longer shows a server as connected after its sign-in expired. Text typed with Yes on a permission or plan dialog is delivered. Resuming a session that ended mid-script waits for the next prompt.
-- Troubleshooting: `/status` and the “isn’t available” line name the reason (`it isn't open to your account yet`, OTel on, `--restricted` without `REPL`, agent teams on a build older than v2.1.326, …). A `PreToolUse` hook that fails or times out **refuses** the call from Claude’s code; set `"onFailure": "continue"` to let it through. Background code output can be blocked by a `UserPromptSubmit` hook — don’t block when `source` is `poll_event`.
+- **v2.1.328 (2026-11-19):** Code Mode no longer runs `UserPromptSubmit` hooks, managed ones included, on a script’s output. To redact that output, use a `PostToolUse` hook with `updatedToolOutput`. Auto and bypass-permissions modes also dropped a 0.75 second pause after most scripts.
+- Troubleshooting: `/status` and the “isn’t available” line name the reason (`it isn't open to your account yet`, OTel on, `--restricted` without `REPL`, agent teams on a build older than v2.1.326, …). A `PreToolUse` hook that fails or times out **refuses** the call from Claude’s code; set `"onFailure": "continue"` to let it through.
 
 ## Sources
 
 - [Run tool calls from code with Code Mode](https://code.claude.com/docs/en/code-mode) — accessed 2026-11-16
 - [v2.1.323](https://github.com/anthropics/claude-code/releases/tag/v2.1.323) — accessed 2026-11-13
 - [v2.1.325](https://github.com/anthropics/claude-code/releases/tag/v2.1.325) — accessed 2026-11-15
-- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-16
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-19
 - [v2.1.326](https://github.com/anthropics/claude-code/releases/tag/v2.1.326) — accessed 2026-11-16

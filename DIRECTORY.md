@@ -18,7 +18,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [claude-code-plugins](practices/claude-code-plugins.md) | Packaging or installing Claude Code skills/hooks/MCP/LSP/mods as a plugin, or pinning engines["claude-code"]… | — | plugins, skills, claude, supply-chain | active |
 | [goose-aaif-agent](practices/goose-aaif-agent.md) | Choosing or embedding the AAIF-hosted local agent (goose) versus Cursor/Claude Code/Codex | — | aaif, goose, mcp, acp | active |
 | [openai-codex-app-server](practices/openai-codex-app-server.md) | Embedding Codex (auth, history, approvals, streamed events) in a custom client instead of the Codex SDK or a… | — | openai, sdk, orchestration, transport | active |
-| [claude-code-hooks](practices/claude-code-hooks.md) | Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks… | — | claude, hooks, permissions, safety | active |
+| [claude-code-hooks](practices/claude-code-hooks.md) | Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks… | [link](https://code.claude.com/docs/en/setup) | claude, hooks, permissions, safety | active |
 | [claude-code-github-action](practices/claude-code-github-action.md) | Wiring anthropics/claude-code-action so @claude (or a prompt) runs Claude Code inside GitHub Actions | — | claude, github, ci, orchestration | active |
 | [claude-code-subagents](practices/claude-code-subagents.md) | Authoring .claude/agents markdown, setting subagent effort, or choosing isolation: worktree | — | claude, subagent, orchestration, isolation | active |
 | [openai-codex-github-action](practices/openai-codex-github-action.md) | Running Codex via codex exec in GitHub Actions instead of Claude Code or Cursor CLI | — | openai, github, ci, permissions | active |
@@ -120,7 +120,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [dbos](practices/dbos.md) | Checkpointing an agent loop in Postgres you operate, with optional Conductor recovery across workers | [link](https://docs.dbos.dev/quickstart) | dbos, durability, orchestration, postgres | active |
 | [pipecat](practices/pipecat.md) | Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud | [link](https://docs.pipecat.ai/pipecat/get-started/introduction) | pipecat, voice, realtime, cloud | active |
 
-## Services (103)
+## Services (106)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -229,6 +229,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [vercel-workflows](practices/vercel-workflows.md) | Running an agent loop on Vercel that must retry one step, wait for approval, and resume after a deploy | [link](https://vercel.com/signup) | vercel, durability, orchestration, workflows | active |
 | [cloudflare-workflows](practices/cloudflare-workflows.md) | Running a multi-step agent on Workers that must retry a step and wait days for an approval event | [link](https://dash.cloudflare.com/sign-up) | cloudflare, durability, orchestration, workflows | active |
 | [xai-api](practices/xai-api.md) | Calling Grok from an agent with an API key, including web search or a stateful Responses thread | [link](https://console.x.ai) | xai, grok, models, tools | active |
+| [deepseek-api](practices/deepseek-api.md) | Calling DeepSeek from an agent with an OpenAI-compatible key, including tools and web search | [link](https://platform.deepseek.com/sign_up) | deepseek, models, tools, search | active |
+| [qdrant-cloud](practices/qdrant-cloud.md) | Storing and querying vectors for an agent on Qdrant Cloud, or moving an open-source Qdrant server there | [link](https://cloud.qdrant.io/) | qdrant, vectors, memory, search | active |
+| [brave-search-api](practices/brave-search-api.md) | Giving an agent web search or extracted page context from Brave’s index, with an API key or a per-request pay… | [link](https://api-dashboard.search.brave.com/register) | brave, search, web, x402 | active |
 
 ## Protocols and standards (22)
 

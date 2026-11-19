@@ -3868,8 +3868,13 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-11-03",
+      "updated": "2026-11-19",
       "when_to_use": "Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks instead of CLAUDE.md advice",
+      "links": {
+        "get": "https://code.claude.com/docs/en/setup",
+        "docs": "https://code.claude.com/docs/en/hooks",
+        "home": "https://claude.com/product/claude-code"
+      },
       "related": [
         "memory-files-vs-enforcement-hooks",
         "cursor-hooks-json",
@@ -5835,7 +5840,7 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-10-31",
+      "updated": "2026-11-19",
       "when_to_use": "Configuring autoMode.environment / classifier rules, or debugging an auto-mode denial",
       "related": [
         "claude-code-permissions",
@@ -10992,7 +10997,7 @@
         "experimental"
       ],
       "status": "active",
-      "updated": "2026-11-16",
+      "updated": "2026-11-19",
       "when_to_use": "Turning on experimental Code Mode so Claude writes JavaScript that calls tools in one step, or diagnosing why it will not start",
       "related": [
         "code-mode-tool-orchestration",
@@ -13730,6 +13735,124 @@
         "claude-code-hooks",
         "claude-code-mcp",
         "mcp-sdk-v1-spec-mismatch"
+      ]
+    },
+    {
+      "id": "deepseek-api",
+      "path": "practices/deepseek-api.md",
+      "title": "DeepSeek API — OpenAI-compatible models, tools, and search",
+      "tags": ["deepseek", "models", "tools", "search"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Calling DeepSeek from an agent with an OpenAI-compatible key, including tools and web search",
+      "links": {
+        "get": "https://platform.deepseek.com/sign_up",
+        "docs": "https://api-docs.deepseek.com/",
+        "home": "https://www.deepseek.com/"
+      },
+      "related": [
+        "deepseek-reasoning-and-peak",
+        "groq-cloud",
+        "cerebras-inference",
+        "together-ai",
+        "xai-api",
+        "openrouter",
+        "brave-search-api",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "id": "deepseek-reasoning-and-peak",
+      "path": "failure-modes/deepseek-reasoning-and-peak.md",
+      "title": "A DeepSeek tool loop drops reasoning, or the call bills peak and search tokens",
+      "tags": ["deepseek", "tools", "billing", "reasoning"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "A DeepSeek tool call returns 400, sampling settings do nothing, or the bill is twice the off-peak rate",
+      "related": [
+        "deepseek-api",
+        "prompt-caching-for-agents",
+        "agent-retry-idempotency",
+        "together-prepaid-and-compat",
+        "xai-responses-retention"
+      ]
+    },
+    {
+      "id": "qdrant-cloud",
+      "path": "practices/qdrant-cloud.md",
+      "title": "Qdrant Cloud — managed vector search for agent memory",
+      "tags": ["qdrant", "vectors", "memory", "search"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Storing and querying vectors for an agent on Qdrant Cloud, or moving an open-source Qdrant server there",
+      "links": {
+        "get": "https://cloud.qdrant.io/",
+        "docs": "https://qdrant.tech/documentation/cloud-getting-started/",
+        "home": "https://qdrant.tech/"
+      },
+      "related": [
+        "qdrant-cloud-idle-keys",
+        "mem0",
+        "zep"
+      ]
+    },
+    {
+      "id": "qdrant-cloud-idle-keys",
+      "path": "failure-modes/qdrant-cloud-idle-keys.md",
+      "title": "A Qdrant Cloud free cluster is deleted after idle weeks, or a database key returns 403",
+      "tags": ["qdrant", "billing", "auth", "retention"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "A Qdrant Cloud cluster vanished after a quiet week, or the first request with a new database key is 403",
+      "related": [
+        "qdrant-cloud",
+        "mem0",
+        "zep"
+      ]
+    },
+    {
+      "id": "brave-search-api",
+      "path": "practices/brave-search-api.md",
+      "title": "Brave Search API — web search and LLM context for agents",
+      "tags": ["brave", "search", "web", "x402"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Giving an agent web search or extracted page context from Brave’s index, with an API key or a per-request payment",
+      "links": {
+        "get": "https://api-dashboard.search.brave.com/register",
+        "docs": "https://api-dashboard.search.brave.com/documentation/quickstart",
+        "home": "https://brave.com/search/api/"
+      },
+      "related": [
+        "brave-search-prepaid-pause",
+        "exa",
+        "tavily",
+        "firecrawl",
+        "perplexity-agent-api",
+        "x402-payments",
+        "deepseek-api"
+      ]
+    },
+    {
+      "id": "brave-search-prepaid-pause",
+      "path": "failure-modes/brave-search-prepaid-pause.md",
+      "title": "A Brave Search call pauses at a zero balance, or an x402 payment hits an endpoint that is not for sale",
+      "tags": ["brave", "billing", "x402", "retention"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Brave Search starts rejecting calls after the credits run out, or a pay-per-request search returns 404 instead of 402",
+      "related": [
+        "brave-search-api",
+        "x402-payments",
+        "exa",
+        "tavily"
       ]
     }
   ]
