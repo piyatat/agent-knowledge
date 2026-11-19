@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Directory for AI agents to look up knowledge, tools and services before acting or while planning — curated notes with sources",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -678,7 +678,11 @@
         "restate",
         "restate-agent-journal",
         "dbos",
-        "dbos-step-replay"
+        "dbos-step-replay",
+        "vercel-workflows",
+        "vercel-workflow-serialization",
+        "cloudflare-workflows",
+        "cloudflare-workflow-event-timeout"
       ]
     },
     {
@@ -3038,7 +3042,7 @@
         "mcp"
       ],
       "status": "active",
-      "updated": "2026-11-17",
+      "updated": "2026-11-19",
       "when_to_use": "Embedding Claude Code’s agent loop in Python/TypeScript instead of driving the CLI or calling the Messages API yourself",
       "links": {
         "get": "https://code.claude.com/docs/en/agent-sdk/overview",
@@ -3057,7 +3061,8 @@
         "claude-code-hooks",
         "claude-message-threads",
         "claude-code-mcp",
-        "claude-code-managed-mcp"
+        "claude-code-managed-mcp",
+        "claude-agent-sdk-rejected-options"
       ]
     },
     {
@@ -11187,7 +11192,7 @@
     {
       "id": "github-copilot-sdk",
       "path": "practices/github-copilot-sdk.md",
-      "title": "GitHub Copilot SDK — embed the CLI agent runtime",
+      "title": "Microsoft Copilot SDK — embed the Copilot harness",
       "tags": [
         "github",
         "sdk",
@@ -11196,9 +11201,15 @@
       ],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-14",
-      "when_to_use": "Embedding Copilot's coding agent in an app instead of spawning the CLI",
+      "updated": "2026-11-19",
+      "when_to_use": "Embedding the Copilot harness in an app, including one runtime for many sessions, instead of spawning the CLI",
+      "links": {
+        "get": "https://github.com/microsoft/copilot-sdk",
+        "docs": "https://docs.github.com/en/copilot/how-tos/copilot-sdk/setup/multi-tenancy",
+        "home": "https://github.com/microsoft/copilot-sdk"
+      },
       "related": [
+        "copilot-sdk-shared-grants",
         "github-copilot-cli",
         "github-copilot-managed-permissions",
         "github-copilot-sandbox",
@@ -11206,7 +11217,8 @@
         "github-copilot-fleet",
         "github-copilot-s2s-auth",
         "cursor-agent-sdk",
-        "claude-agent-sdk"
+        "claude-agent-sdk",
+        "foundry-agent-service"
       ]
     },
     {
@@ -13566,6 +13578,158 @@
         "livekit-agents",
         "elevenlabs-agents",
         "vercel-ai-gateway-credits"
+      ]
+    },
+    {
+      "id": "vercel-workflows",
+      "path": "practices/vercel-workflows.md",
+      "title": "Vercel Workflows — durable steps that pause and resume",
+      "tags": ["vercel", "durability", "orchestration", "workflows"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Running an agent loop on Vercel that must retry one step, wait for approval, and resume after a deploy",
+      "links": {
+        "get": "https://vercel.com/signup",
+        "docs": "https://vercel.com/docs/workflows",
+        "home": "https://workflow-sdk.dev"
+      },
+      "related": [
+        "vercel-workflow-serialization",
+        "vercel-ai-sdk",
+        "cloudflare-workflows",
+        "inngest",
+        "temporal",
+        "durable-agent-workflows",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "vercel-workflow-serialization",
+      "path": "failure-modes/vercel-workflow-serialization.md",
+      "title": "A Vercel Workflow dies on a non-serializable value or on the Node event cap",
+      "tags": ["vercel", "replay", "serialization", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "A Vercel Workflow run fails with SerializationError or MAX_EVENTS_EXCEEDED, or a model call inside the workflow function never retries",
+      "related": [
+        "vercel-workflows",
+        "durable-agent-workflows",
+        "inngest-agent-replay",
+        "temporal-workflow-io",
+        "restate-agent-journal"
+      ]
+    },
+    {
+      "id": "cloudflare-workflows",
+      "path": "practices/cloudflare-workflows.md",
+      "title": "Cloudflare Workflows — durable steps on Workers",
+      "tags": ["cloudflare", "durability", "orchestration", "workflows"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Running a multi-step agent on Workers that must retry a step and wait days for an approval event",
+      "links": {
+        "get": "https://dash.cloudflare.com/sign-up",
+        "docs": "https://developers.cloudflare.com/workflows/",
+        "home": "https://developers.cloudflare.com/workflows/"
+      },
+      "related": [
+        "cloudflare-workflow-event-timeout",
+        "cloudflare-agents",
+        "cloudflare-ai-gateway",
+        "vercel-workflows",
+        "durable-agent-workflows",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "cloudflare-workflow-event-timeout",
+      "path": "failure-modes/cloudflare-workflow-event-timeout.md",
+      "title": "A Cloudflare Workflow wait times out as a hard failure, then queues on resume",
+      "tags": ["cloudflare", "approvals", "durability", "limits"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "A Cloudflare Workflow died waiting for approval, or a woken instance stayed queued instead of continuing",
+      "related": [
+        "cloudflare-workflows",
+        "vercel-workflow-serialization",
+        "durable-agent-workflows",
+        "human-in-the-loop-approvals"
+      ]
+    },
+    {
+      "id": "xai-api",
+      "path": "practices/xai-api.md",
+      "title": "xAI API — Grok models, tools, and the Responses API",
+      "tags": ["xai", "grok", "models", "tools"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "Calling Grok from an agent with an API key, including web search or a stateful Responses thread",
+      "links": {
+        "get": "https://console.x.ai",
+        "docs": "https://docs.x.ai/developers/quickstart",
+        "home": "https://docs.x.ai"
+      },
+      "related": [
+        "xai-responses-retention",
+        "grok-build",
+        "cursor-grok-bot",
+        "groq-cloud",
+        "cerebras-inference",
+        "together-ai",
+        "vercel-ai-sdk"
+      ]
+    },
+    {
+      "id": "xai-responses-retention",
+      "path": "failure-modes/xai-responses-retention.md",
+      "title": "xAI stores Responses for 30 days, and Zero Data Retention turns that thread off",
+      "tags": ["xai", "retention", "privacy", "tools"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "An xAI Responses follow-up lost its thread after 30 days, or store:false or Zero Data Retention broke a stateful call",
+      "related": [
+        "xai-api",
+        "grok-build",
+        "telemetry-redaction-genai",
+        "prompt-caching-for-agents"
+      ]
+    },
+    {
+      "id": "copilot-sdk-shared-grants",
+      "path": "failure-modes/copilot-sdk-shared-grants.md",
+      "title": "A shared Copilot SDK runtime leaks tools, tokens, or remembered approvals",
+      "tags": ["copilot", "tenancy", "permissions", "sandbox"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "A multi-tenant Copilot SDK server reused another user's tools, filesystem, or remembered approvals",
+      "related": [
+        "github-copilot-sdk",
+        "github-copilot-managed-permissions",
+        "github-copilot-sandbox",
+        "prompt-injection-agent-defense"
+      ]
+    },
+    {
+      "id": "claude-agent-sdk-rejected-options",
+      "path": "failure-modes/claude-agent-sdk-rejected-options.md",
+      "title": "Claude Agent SDK 0.3.327 rejects unsendable options and non-array hooks",
+      "tags": ["claude", "sdk", "hooks", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-19",
+      "when_to_use": "query(), startup(), or prewarm() refuses an option, or a hook matcher that used to be a Set is now rejected",
+      "related": [
+        "claude-agent-sdk",
+        "claude-code-hooks",
+        "claude-code-mcp",
+        "mcp-sdk-v1-spec-mismatch"
       ]
     }
   ]

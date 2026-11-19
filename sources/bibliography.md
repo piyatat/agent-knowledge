@@ -3041,4 +3041,34 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Pipecat Cloud pricing | https://www.daily.co/pricing/pipecat-cloud |
 | Pipecat Cloud | https://pipecat.daily.co |
 
+## Daily ingest 2026-11-19 (Copilot SDK 2.0, Vercel Workflows, Cloudflare Workflows, xAI API)
+
+| Topic | URL |
+| --- | --- |
+| GitHub Copilot SDK is becoming Microsoft Copilot SDK | https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk/ |
+| microsoft/copilot-sdk | https://github.com/microsoft/copilot-sdk |
+| Introducing the Microsoft Copilot SDK 2.0 | https://commandline.microsoft.com/microsoft-copilot-sdk-2-0-github/ |
+| Copilot SDK multi-tenancy | https://docs.github.com/en/copilot/how-tos/copilot-sdk/setup/multi-tenancy |
+| Copilot SDK quickstart | https://docs.github.com/en/copilot/get-started/sdk-quickstart |
+| Claude Agent SDK TypeScript v0.3.327 | https://github.com/anthropics/claude-agent-sdk-typescript/releases/tag/v0.3.327 |
+| Vercel Workflows | https://vercel.com/docs/workflows |
+| Vercel Workflows pricing | https://vercel.com/docs/workflows/pricing |
+| Vercel Workflows data retention | https://vercel.com/docs/workflows/retention |
+| Workflow SDK getting started | https://workflow-sdk.dev/docs/getting-started |
+| Workflow SDK serialization | https://workflow-sdk.dev/docs/foundations/serialization |
+| Workflow SDK serialization-failed | https://workflow-sdk.dev/docs/errors/serialization-failed |
+| Cloudflare Workflows | https://developers.cloudflare.com/workflows/ |
+| Cloudflare Workflows getting started | https://developers.cloudflare.com/workflows/get-started/guide/ |
+| Cloudflare Workflows Workers API | https://developers.cloudflare.com/workflows/build/workers-api/ |
+| Cloudflare Workflows events | https://developers.cloudflare.com/workflows/build/events-and-parameters/ |
+| Cloudflare Workflows limits | https://developers.cloudflare.com/workflows/reference/limits/ |
+| Cloudflare Workflows concurrency | https://developers.cloudflare.com/workflows/build/concurrency-limits/ |
+| Cloudflare Workflows pricing | https://developers.cloudflare.com/workflows/reference/pricing/ |
+| xAI API quickstart | https://docs.x.ai/developers/quickstart |
+| xAI API pricing | https://docs.x.ai/developers/pricing |
+| xAI API rate limits | https://docs.x.ai/developers/rate-limits |
+| xAI generate text | https://docs.x.ai/developers/model-capabilities/text/generate-text |
+| xAI tools overview | https://docs.x.ai/developers/tools/overview |
+| xAI API security FAQ | https://docs.x.ai/developers/faq/security |
+
 

@@ -23,6 +23,8 @@ Run long agent loops inside a durable workflow runtime so each tool call is a ch
 - Temporal (`temporal`) is another: the Workflow holds the loop, and model calls and other I/O run as Activities so a replay does not call them again (`temporal-workflow-io`).
 - Restate (`restate`) journals each model call and tool step on a server you run or on Restate Cloud. Parallel tool calls and a streamed response inside a step break that journal (`restate-agent-journal`).
 - DBOS (`dbos`) checkpoints the same loop in Postgres you operate (SQLite for a single Python process). A model or tool call that is not a step runs again on recovery, and a second worker picks up a crashed run only when Conductor is connected (`dbos-step-replay`).
+- Vercel Workflows (`vercel-workflows`) runs `"use workflow"` / `"use step"` on Vercel Functions and Queues. The workflow function cannot call Node, the network, or `Date.now()`; a value that will not serialize fails the run without a retry (`vercel-workflow-serialization`).
+- Cloudflare Workflows (`cloudflare-workflows`) is the Workers step primitive. A `waitForEvent` timeout fails the instance unless you catch it, and a waiting instance does not hold a concurrency slot (`cloudflare-workflow-event-timeout`).
 
 ## Sources
 
@@ -33,3 +35,7 @@ Run long agent loops inside a durable workflow runtime so each tool call is a ch
 - [Durable AI (Temporal)](https://docs.temporal.io/ai) — accessed 2026-11-18
 - [Durable agents (Restate)](https://docs.restate.dev/ai/patterns/durable-agents) — accessed 2026-11-19
 - [DBOS AI quickstart](https://docs.dbos.dev/ai/ai-quickstart) — accessed 2026-11-19
+- [Vercel Workflows](https://vercel.com/docs/workflows) — accessed 2026-11-19
+- [Serialization (Workflow SDK)](https://workflow-sdk.dev/docs/foundations/serialization) — accessed 2026-11-19
+- [Cloudflare Workflows](https://developers.cloudflare.com/workflows/) — accessed 2026-11-19
+- [Cloudflare Workflows events](https://developers.cloudflare.com/workflows/build/events-and-parameters/) — accessed 2026-11-19

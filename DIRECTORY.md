@@ -75,7 +75,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [claude-desktop-home](practices/claude-desktop-home.md) | MDM/Admin Console for Claude Desktop Chat vs Cowork, or keeping Cowork off after 2026-11-10 | — | claude, governance, ux, mdm | active |
 | [google-adk](practices/google-adk.md) | Building a production Gemini or Google Cloud agent in code instead of Gemini CLI or Jules | — | google, sdk, orchestration, gemini | active |
 | [microsoft-agent-framework](practices/microsoft-agent-framework.md) | Building a .NET or Python agent after Semantic Kernel or AutoGen, or hosting one on Foundry | — | microsoft, sdk, orchestration, foundry | active |
-| [github-copilot-sdk](practices/github-copilot-sdk.md) | Embedding Copilot's coding agent in an app instead of spawning the CLI | — | github, sdk, copilot, orchestration | active |
+| [github-copilot-sdk](practices/github-copilot-sdk.md) | Embedding the Copilot harness in an app, including one runtime for many sessions, instead of spawning the CLI | [link](https://github.com/microsoft/copilot-sdk) | github, sdk, copilot, orchestration | active |
 | [a2a-cli](practices/a2a-cli.md) | Calling an A2A agent from a shell, CI job, or coding harness without writing SDK code | — | a2a, cli, orchestration, interoperability | active |
 | [gemini-code-assist](practices/gemini-code-assist.md) | Using Gemini inside VS Code or IntelliJ, or migrating a consumer Code Assist account after the June 2026 cuto… | — | gemini, google, ux, deprecation | active |
 | [jetbrains-ai-assistant](practices/jetbrains-ai-assistant.md) | Choosing an agent inside a JetBrains IDE, or installing one from the ACP registry versus Junie or the Copilot… | — | jetbrains, acp, ux, orchestration | active |
@@ -120,7 +120,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [dbos](practices/dbos.md) | Checkpointing an agent loop in Postgres you operate, with optional Conductor recovery across workers | [link](https://docs.dbos.dev/quickstart) | dbos, durability, orchestration, postgres | active |
 | [pipecat](practices/pipecat.md) | Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud | [link](https://docs.pipecat.ai/pipecat/get-started/introduction) | pipecat, voice, realtime, cloud | active |
 
-## Services (100)
+## Services (103)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -226,6 +226,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [together-link](practices/together-link.md) | Driving Claude Code, Codex, OpenCode, or Pi through Together-hosted models instead of one provider key | [link](https://docs.together.ai/docs/togetherlink) | together, routing, models, coding | active |
 | [hatchet](practices/hatchet.md) | Running an agent loop as durable tasks on workers you operate, in Hatchet Cloud or on an engine you host | [link](https://cloud.hatchet.run/auth/register) | hatchet, durability, orchestration, workflows | active |
 | [restate](practices/restate.md) | Running an agent loop on Restate so each model call and tool call survives a crash | [link](https://cloud.restate.dev/) | restate, durability, orchestration, workflows | active |
+| [vercel-workflows](practices/vercel-workflows.md) | Running an agent loop on Vercel that must retry one step, wait for approval, and resume after a deploy | [link](https://vercel.com/signup) | vercel, durability, orchestration, workflows | active |
+| [cloudflare-workflows](practices/cloudflare-workflows.md) | Running a multi-step agent on Workers that must retry a step and wait days for an approval event | [link](https://dash.cloudflare.com/sign-up) | cloudflare, durability, orchestration, workflows | active |
+| [xai-api](practices/xai-api.md) | Calling Grok from an agent with an API key, including web search or a stateful Responses thread | [link](https://console.x.ai) | xai, grok, models, tools | active |
 
 ## Protocols and standards (22)
 
