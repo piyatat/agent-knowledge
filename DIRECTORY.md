@@ -120,7 +120,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [dbos](practices/dbos.md) | Checkpointing an agent loop in Postgres you operate, with optional Conductor recovery across workers | [link](https://docs.dbos.dev/quickstart) | dbos, durability, orchestration, postgres | active |
 | [pipecat](practices/pipecat.md) | Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud | [link](https://docs.pipecat.ai/pipecat/get-started/introduction) | pipecat, voice, realtime, cloud | active |
 
-## Services (112)
+## Services (114)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -170,7 +170,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [cursor-pagerduty](practices/cursor-pagerduty.md) | Starting a Cursor Automation from PagerDuty incident events (not a mention-based Cloud Agent) | — | cursor, automations, orchestration, ops | active |
 | [google-jules](practices/google-jules.md) | Deciding not to start a Jules task after the 2026-11-11 read-only cutoff, or exporting history before the 202… | [link](https://jules.google/) | jules, google, mcp, agents-md | active |
 | [github-copilot-slack-teams](practices/github-copilot-slack-teams.md) | Starting or steering a Copilot cloud agent from Slack or Microsoft Teams, or installing the consolidated GitH… | — | github, slack, orchestration, automations | active |
-| [bedrock-agentcore](practices/bedrock-agentcore.md) | Deploying agents or MCP servers on AgentCore, or enabling Gateway for MCP 2026-07-28 | — | amazon, mcp, hosting, orchestration | active |
+| [bedrock-agentcore](practices/bedrock-agentcore.md) | Deploying an agent or MCP server on AgentCore, or choosing Runtime V2 instead of the default V1 microVM | [link](https://console.aws.amazon.com/bedrock-agentcore/home) | amazon, mcp, hosting, orchestration | active |
 | [github-agentic-workflows](practices/github-agentic-workflows.md) | Authoring a .md + .lock.yml agentic workflow with gh aw, or contrasting it with Copilot automations | — | github, automations, ci, orchestration | active |
 | [github-copilot-fleet](practices/github-copilot-fleet.md) | Using /fleet or --fleet on Copilot CLI, or choosing it versus a dynamic workflow | — | github, orchestration, subagent, cli | active |
 | [openai-docs-mcp](practices/openai-docs-mcp.md) | Wiring the official OpenAI documentation MCP into Codex, Cursor, VS Code, or Claude Code | — | openai, mcp, discovery, tools | active |
@@ -238,6 +238,8 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [weaviate](practices/weaviate.md) | Storing vectors for an agent on Weaviate Cloud, or asking the Query Agent over those collections | [link](https://console.weaviate.cloud/) | weaviate, vectors, search, mcp | active |
 | [voyage-ai](practices/voyage-ai.md) | Embedding passages or reranking chunks with Voyage before they go into an agent's context | [link](https://dash.voyageai.com/) | voyage, embeddings, rerank, retrieval | active |
 | [chroma-cloud](practices/chroma-cloud.md) | Storing and searching embeddings on hosted Chroma instead of a local Chroma database | [link](https://www.trychroma.com/signup) | chroma, vectors, search, retrieval | active |
+| [zilliz-cloud](practices/zilliz-cloud.md) | Storing vectors for an agent on managed Milvus, including a free cluster or pay-per-operation serverless sear… | [link](https://cloud.zilliz.com/signup) | zilliz, milvus, vectors, search | active |
+| [turbopuffer](practices/turbopuffer.md) | Storing agent documents in namespaces and querying them by vector or attribute without operating a database | [link](https://turbopuffer.com/join) | turbopuffer, vectors, search, retrieval | active |
 
 ## Protocols and standards (22)
 

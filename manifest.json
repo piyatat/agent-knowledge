@@ -8057,9 +8057,15 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-09-27",
-      "when_to_use": "Deploying agents or MCP servers on AgentCore, or enabling Gateway for MCP 2026-07-28",
+      "updated": "2026-11-20",
+      "when_to_use": "Deploying an agent or MCP server on AgentCore, or choosing Runtime V2 instead of the default V1 microVM",
+      "links": {
+        "get": "https://console.aws.amazon.com/bedrock-agentcore/home",
+        "docs": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+        "home": "https://aws.amazon.com/bedrock/agentcore/"
+      },
       "related": [
+        "agentcore-runtime-v2-billing",
         "mcp-stateless-core",
         "mcp-mrtr-input-required",
         "mcp-elicitation-modes",
@@ -12933,10 +12939,11 @@
       "tags": ["openai", "models", "codex", "tools"],
       "kind": "knowledge",
       "status": "active",
-      "updated": "2026-11-17",
+      "updated": "2026-11-20",
       "when_to_use": "Pinning gpt-6.2-astra or gpt-6.2-sol, or moving a tool-calling app onto GPT-6.2",
       "related": [
         "gpt-62-responses-only-tools",
+        "gpt-62-background-and-instructions",
         "openai-gpt-61-terra-agents",
         "openai-codex-daybreak",
         "openai-codex-model-providers",
@@ -12951,9 +12958,9 @@
       "tags": ["openai", "tools", "responses", "models"],
       "kind": "knowledge",
       "status": "active",
-      "updated": "2026-11-17",
+      "updated": "2026-11-20",
       "when_to_use": "A GPT-6.2 request returns no tool call, rejects reasoning effort, or forgets earlier reasoning after a prompt edit",
-      "related": ["openai-gpt-62-astra-sol", "openai-agents-sdk", "openai-codex-model-providers"]
+      "related": ["openai-gpt-62-astra-sol", "gpt-62-background-and-instructions", "openai-agents-sdk", "openai-codex-model-providers"]
     },
     {
       "id": "helicone",
@@ -13806,7 +13813,9 @@
       "related": [
         "qdrant-cloud-idle-keys",
         "mem0",
-        "zep"
+        "zep",
+        "zilliz-cloud",
+        "turbopuffer"
       ]
     },
     {
@@ -13883,7 +13892,9 @@
         "qdrant-cloud",
         "cohere",
         "mem0",
-        "zep"
+        "zep",
+        "zilliz-cloud",
+        "turbopuffer"
       ]
     },
     {
@@ -14010,7 +14021,9 @@
         "pinecone",
         "qdrant-cloud",
         "chroma-cloud",
-        "voyage-ai"
+        "voyage-ai",
+        "zilliz-cloud",
+        "turbopuffer"
       ]
     },
     {
@@ -14086,7 +14099,9 @@
         "pinecone",
         "qdrant-cloud",
         "weaviate",
-        "voyage-ai"
+        "voyage-ai",
+        "zilliz-cloud",
+        "turbopuffer"
       ]
     },
     {
@@ -14133,6 +14148,115 @@
         "claude-code-code-mode",
         "claude-code-hooks",
         "claude-code-permissions"
+      ]
+    },
+    {
+      "id": "zilliz-cloud",
+      "path": "practices/zilliz-cloud.md",
+      "title": "Zilliz Cloud — managed Milvus for agent retrieval",
+      "tags": ["zilliz", "milvus", "vectors", "search"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Storing vectors for an agent on managed Milvus, including a free cluster or pay-per-operation serverless search",
+      "links": {
+        "get": "https://cloud.zilliz.com/signup",
+        "docs": "https://docs.zilliz.com/docs/free-and-serverless-clusters",
+        "home": "https://zilliz.com/cloud"
+      },
+      "related": [
+        "zilliz-serverless-vcu-floor",
+        "pinecone",
+        "qdrant-cloud",
+        "weaviate",
+        "chroma-cloud",
+        "turbopuffer"
+      ]
+    },
+    {
+      "id": "zilliz-serverless-vcu-floor",
+      "path": "failure-modes/zilliz-serverless-vcu-floor.md",
+      "title": "A Zilliz serverless search bills a 6 vCU floor, or a trial cluster is deleted",
+      "tags": ["zilliz", "billing", "limits", "search"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "A Zilliz Cloud search costs more than the rows scanned, a batched query is rejected, or a trial cluster disappears after the credits expire",
+      "related": [
+        "zilliz-cloud",
+        "pinecone",
+        "qdrant-cloud",
+        "turbopuffer"
+      ]
+    },
+    {
+      "id": "turbopuffer",
+      "path": "practices/turbopuffer.md",
+      "title": "turbopuffer — namespace search for vectors and filters",
+      "tags": ["turbopuffer", "vectors", "search", "retrieval"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Storing agent documents in namespaces and querying them by vector or attribute without operating a database",
+      "links": {
+        "get": "https://turbopuffer.com/join",
+        "docs": "https://turbopuffer.com/docs/quickstart",
+        "home": "https://turbopuffer.com/"
+      },
+      "related": [
+        "turbopuffer-query-and-write-floor",
+        "zilliz-cloud",
+        "pinecone",
+        "qdrant-cloud",
+        "weaviate",
+        "voyage-ai"
+      ]
+    },
+    {
+      "id": "turbopuffer-query-and-write-floor",
+      "path": "failure-modes/turbopuffer-query-and-write-floor.md",
+      "title": "A small turbopuffer query bills 1.28 GB, or a tiny write bills 10 KB",
+      "tags": ["turbopuffer", "billing", "search", "limits"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "An agent’s turbopuffer memory lookup costs like a large scan, or many single-row writes cost far more than their bytes",
+      "related": [
+        "turbopuffer",
+        "zilliz-cloud",
+        "pinecone",
+        "qdrant-cloud"
+      ]
+    },
+    {
+      "id": "agentcore-runtime-v2-billing",
+      "path": "failure-modes/agentcore-runtime-v2-billing.md",
+      "title": "AgentCore Runtime V2 bills idle memory, or create stays in progress",
+      "tags": ["amazon", "agentcore", "billing", "hosting"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "An AgentCore session costs more than the model wait suggested, a V2 runtime never becomes ready, or a committed baseline bills while the agent is idle",
+      "related": [
+        "bedrock-agentcore",
+        "e2b-sandboxes",
+        "modal-sandboxes",
+        "foundry-agent-service"
+      ]
+    },
+    {
+      "id": "gpt-62-background-and-instructions",
+      "path": "failure-modes/gpt-62-background-and-instructions.md",
+      "title": "GPT-6.2 instructions miss the cache, or a background window stores the prompt",
+      "tags": ["openai", "responses", "billing", "caching"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "A GPT-6.2 agent pays full price for a long run, misses a cached prefix, or a background response retains data under Zero Data Retention",
+      "related": [
+        "openai-gpt-62-astra-sol",
+        "gpt-62-responses-only-tools",
+        "prompt-caching-for-agents"
       ]
     }
   ]

@@ -3155,4 +3155,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Cursor sandbox.json reference | https://cursor.com/docs/reference/sandbox |
 | Cursor CLI changelog | https://cursor.com/docs/cli/changelog |
 
+## Daily ingest 2026-11-20 (Zilliz Cloud, turbopuffer, AgentCore V2, GPT-6.2 background)
+
+| Topic | URL |
+| --- | --- |
+| Create a Zilliz Cloud account | https://docs.zilliz.com/docs/register-with-zilliz-cloud |
+| Zilliz Cloud sign-up | https://cloud.zilliz.com/signup |
+| Free and Serverless clusters | https://docs.zilliz.com/docs/free-and-serverless-clusters |
+| Serverless cluster cost | https://docs.zilliz.com/docs/serverless-cluster-cost |
+| Zilliz Cloud limits | https://docs.zilliz.com/docs/limits |
+| Zilliz API keys | https://docs.zilliz.com/docs/manage-api-keys |
+| Zilliz Cloud | https://zilliz.com/cloud |
+| Sign up for turbopuffer | https://turbopuffer.com/join |
+| turbopuffer | https://turbopuffer.com/ |
+| turbopuffer quickstart | https://turbopuffer.com/docs/quickstart |
+| turbopuffer regions | https://turbopuffer.com/docs/regions |
+| turbopuffer list namespaces | https://turbopuffer.com/docs/namespaces |
+| turbopuffer BYOC operations | https://turbopuffer.com/docs/byoc/operations |
+| turbopuffer pricing | https://turbopuffer.com/pricing |
+| turbopuffer pricing changelog | https://turbopuffer.com/docs/pricing-log |
+| AgentCore microVMs | https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-how-it-works.html |
+| AgentCore pricing | https://aws.amazon.com/bedrock/agentcore/pricing/ |
+| Amazon Bedrock AgentCore | https://aws.amazon.com/bedrock/agentcore/ |
+| AgentCore console | https://console.aws.amazon.com/bedrock-agentcore/home |
+| OpenAI background mode | https://developers.openai.com/api/docs/guides/background |
+| Using GPT-6.2 | https://developers.openai.com/api/docs/guides/latest-model |
+| OpenAI API changelog | https://developers.openai.com/api/docs/changelog |
+| OpenAI API pricing | https://developers.openai.com/api/docs/pricing |
+
 
