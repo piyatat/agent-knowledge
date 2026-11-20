@@ -3126,4 +3126,33 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | n8n create and edit credentials | https://docs.n8n.io/build/understand-workflows/create-and-edit-credentials |
 | Claude Agent SDK TypeScript v0.3.328 | https://github.com/anthropics/claude-agent-sdk-typescript/releases/tag/v0.3.328 |
 
+## Daily ingest 2026-11-20 (Weaviate, Voyage, Chroma Cloud, Jules turndown, Code Mode 2.1.329)
+
+| Topic | URL |
+| --- | --- |
+| Weaviate Cloud create account | https://docs.weaviate.io/cloud/platform/create-account |
+| Weaviate Cloud create a cluster | https://docs.weaviate.io/cloud/manage-clusters/create |
+| Connect to Weaviate Cloud | https://docs.weaviate.io/cloud/manage-clusters/connect |
+| Weaviate pricing | https://weaviate.io/pricing |
+| Weaviate Query Agent | https://docs.weaviate.io/cloud/tools/query-agent |
+| Weaviate Cloud console | https://console.weaviate.cloud/ |
+| Voyage text embeddings | https://docs.voyageai.com/docs/embeddings |
+| Voyage pricing | https://docs.voyageai.com/docs/pricing |
+| Voyage rate limits | https://docs.voyageai.com/docs/rate-limits |
+| Voyage API key | https://docs.voyageai.com/docs/api-key-and-installation |
+| Voyage FAQ | https://docs.voyageai.com/docs/faq |
+| Voyage | https://www.voyageai.com/ |
+| Voyage dashboard | https://dash.voyageai.com/ |
+| Chroma Cloud | https://docs.trychroma.com/cloud/getting-started |
+| Chroma Cloud pricing | https://docs.trychroma.com/cloud/pricing |
+| Chroma CLI login | https://docs.trychroma.com/docs/cli/login |
+| Chroma GitHub sync | https://docs.trychroma.com/cloud/sync/github |
+| Chroma signup | https://www.trychroma.com/signup |
+| Jules turndown | https://jules.google/docs/changelog/2026-10-29/ |
+| Jules changelog | https://jules.google/docs/changelog/ |
+| Jules | https://jules.google/ |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Cursor sandbox.json reference | https://cursor.com/docs/reference/sandbox |
+| Cursor CLI changelog | https://cursor.com/docs/cli/changelog |
+
 

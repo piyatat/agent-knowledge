@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Directory for AI agents to look up knowledge, tools and services before acting or while planning — curated notes with sources",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -1997,7 +1997,7 @@
         "permissions"
       ],
       "status": "active",
-      "updated": "2026-10-06",
+      "updated": "2026-11-20",
       "when_to_use": "Constraining local Cursor agent shell/network/filesystem (not Cloud Agent VMs)",
       "related": [
         "agent-code-sandboxing",
@@ -3439,7 +3439,7 @@
         "aaif"
       ],
       "status": "active",
-      "updated": "2026-09-26",
+      "updated": "2026-11-20",
       "when_to_use": "Authoring a portable AGENTS.md for multiple coding agents, or deciding filename vs CLAUDE.md / Cursor rules",
       "related": [
         "agents-md-and-rules-budget",
@@ -3869,7 +3869,7 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-11-19",
+      "updated": "2026-11-20",
       "when_to_use": "Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks instead of CLAUDE.md advice",
       "links": {
         "get": "https://code.claude.com/docs/en/setup",
@@ -3884,7 +3884,8 @@
         "claude-code-security-guidance",
         "claude-code-elicitation",
         "claude-code-gateway",
-        "claude-agent-sdk"
+        "claude-agent-sdk",
+        "claude-code-mode-hook-fail-open"
       ]
     },
     {
@@ -7812,7 +7813,7 @@
     {
       "id": "google-jules",
       "path": "practices/google-jules.md",
-      "title": "Google Jules — async GitHub agent, AGENTS.md, vetted MCP",
+      "title": "Google Jules — read-only until the 2026-12-31 shutdown",
       "kind": "service",
       "tags": [
         "jules",
@@ -7821,9 +7822,15 @@
         "agents-md"
       ],
       "status": "active",
-      "updated": "2026-09-25",
-      "when_to_use": "Starting a Jules GitHub task, authoring root AGENTS.md for Jules, or calling the Jules API / MCP toolkit",
+      "updated": "2026-11-20",
+      "when_to_use": "Deciding not to start a Jules task after the 2026-11-11 read-only cutoff, or exporting history before the 2026-12-31 shutdown",
+      "links": {
+        "get": "https://jules.google/",
+        "docs": "https://jules.google/docs/",
+        "home": "https://jules.google/"
+      },
       "related": [
+        "jules-read-only-turndown",
         "agents-md-open-format",
         "antigravity-cli",
         "gemini-cli-gemini-md",
@@ -10998,7 +11005,7 @@
         "experimental"
       ],
       "status": "active",
-      "updated": "2026-11-19",
+      "updated": "2026-11-20",
       "when_to_use": "Turning on experimental Code Mode so Claude writes JavaScript that calls tools in one step, or diagnosing why it will not start",
       "related": [
         "code-mode-tool-orchestration",
@@ -11006,7 +11013,8 @@
         "claude-code-sandboxing",
         "claude-code-hooks",
         "claude-code-auto-mode",
-        "claude-code-agent-teams"
+        "claude-code-agent-teams",
+        "claude-code-mode-hook-fail-open"
       ]
     },
     {
@@ -13981,6 +13989,150 @@
         "claude-agent-sdk",
         "claude-agent-sdk-rejected-options",
         "claude-code-hooks"
+      ]
+    },
+    {
+      "id": "weaviate",
+      "path": "practices/weaviate.md",
+      "title": "Weaviate Cloud — managed vector database and Query Agent",
+      "tags": ["weaviate", "vectors", "search", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Storing vectors for an agent on Weaviate Cloud, or asking the Query Agent over those collections",
+      "links": {
+        "get": "https://console.weaviate.cloud/",
+        "docs": "https://docs.weaviate.io/cloud/manage-clusters/create",
+        "home": "https://weaviate.io/"
+      },
+      "related": [
+        "weaviate-free-idle-and-mcp-write",
+        "pinecone",
+        "qdrant-cloud",
+        "chroma-cloud",
+        "voyage-ai"
+      ]
+    },
+    {
+      "id": "weaviate-free-idle-and-mcp-write",
+      "path": "failure-modes/weaviate-free-idle-and-mcp-write.md",
+      "title": "A free Weaviate cluster disappears after idle time, or its MCP server can write",
+      "tags": ["weaviate", "mcp", "limits", "search"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "A Weaviate Cloud cluster stops answering after a quiet week, gRPC fails after an update, or an agent can insert objects through MCP",
+      "related": [
+        "weaviate",
+        "pinecone",
+        "qdrant-cloud",
+        "mcp-server-trust-failures"
+      ]
+    },
+    {
+      "id": "voyage-ai",
+      "path": "practices/voyage-ai.md",
+      "title": "Voyage AI — embedding and rerank API for retrieval",
+      "tags": ["voyage", "embeddings", "rerank", "retrieval"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Embedding passages or reranking chunks with Voyage before they go into an agent's context",
+      "links": {
+        "get": "https://dash.voyageai.com/",
+        "docs": "https://docs.voyageai.com/docs/embeddings",
+        "home": "https://www.voyageai.com/"
+      },
+      "related": [
+        "voyage-embed-mismatch-and-batch",
+        "cohere",
+        "pinecone",
+        "weaviate",
+        "chroma-cloud"
+      ]
+    },
+    {
+      "id": "voyage-embed-mismatch-and-batch",
+      "path": "failure-modes/voyage-embed-mismatch-and-batch.md",
+      "title": "Voyage search misses passages that were truncated, or a batch bill ignores free tokens",
+      "tags": ["voyage", "embeddings", "billing", "retrieval"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Voyage retrieval ranks the wrong chunks, or a batch embed job bills before the free tokens are used",
+      "related": [
+        "voyage-ai",
+        "cohere",
+        "cohere-trial-keys-and-input-type",
+        "pinecone"
+      ]
+    },
+    {
+      "id": "chroma-cloud",
+      "path": "practices/chroma-cloud.md",
+      "title": "Chroma Cloud — managed Chroma search",
+      "tags": ["chroma", "vectors", "search", "retrieval"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Storing and searching embeddings on hosted Chroma instead of a local Chroma database",
+      "links": {
+        "get": "https://www.trychroma.com/signup",
+        "docs": "https://docs.trychroma.com/cloud/getting-started",
+        "home": "https://www.trychroma.com/"
+      },
+      "related": [
+        "chroma-cloud-query-billing",
+        "pinecone",
+        "qdrant-cloud",
+        "weaviate",
+        "voyage-ai"
+      ]
+    },
+    {
+      "id": "chroma-cloud-query-billing",
+      "path": "failure-modes/chroma-cloud-query-billing.md",
+      "title": "A Chroma Cloud text filter multiplies the read bill, or an EU database lacks Sync",
+      "tags": ["chroma", "billing", "search", "regions"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "A Chroma Cloud query costs more than the vector search suggested, or Sync and the CLI are missing on an EU database",
+      "related": [
+        "chroma-cloud",
+        "pinecone",
+        "weaviate",
+        "qdrant-cloud"
+      ]
+    },
+    {
+      "id": "jules-read-only-turndown",
+      "path": "failure-modes/jules-read-only-turndown.md",
+      "title": "A Jules session will not start after the read-only cutoff",
+      "tags": ["jules", "google", "shutdown", "export"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "A Jules session, API call, or MCP task fails to start, or an agent is about to send new work to Jules",
+      "related": [
+        "google-jules",
+        "antigravity-cli",
+        "gemini-cli-gemini-md"
+      ]
+    },
+    {
+      "id": "claude-code-mode-hook-fail-open",
+      "path": "failure-modes/claude-code-mode-hook-fail-open.md",
+      "title": "A Claude Code PreToolUse error no longer stops a Code Mode tool call",
+      "tags": ["claude", "hooks", "code-mode", "permissions"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "A PreToolUse hook that used to block Code Mode now lets the tool call through, or Code Mode stays off because tracing is on",
+      "related": [
+        "claude-code-code-mode",
+        "claude-code-hooks",
+        "claude-code-permissions"
       ]
     }
   ]

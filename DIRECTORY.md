@@ -120,7 +120,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [dbos](practices/dbos.md) | Checkpointing an agent loop in Postgres you operate, with optional Conductor recovery across workers | [link](https://docs.dbos.dev/quickstart) | dbos, durability, orchestration, postgres | active |
 | [pipecat](practices/pipecat.md) | Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud | [link](https://docs.pipecat.ai/pipecat/get-started/introduction) | pipecat, voice, realtime, cloud | active |
 
-## Services (109)
+## Services (112)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -168,7 +168,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [cursor-sentry](practices/cursor-sentry.md) | Starting a Cursor Cloud Agent from a Sentry issue, or wiring Sentry triggers on an Automation | — | cursor, automations, orchestration, ops | active |
 | [github-copilot-sentry](practices/github-copilot-sentry.md) | Sending a Sentry Seer RCA to Copilot cloud agent, or fixing crashes from the Copilot app Sentry canvas | — | github, automations, orchestration, ops | active |
 | [cursor-pagerduty](practices/cursor-pagerduty.md) | Starting a Cursor Automation from PagerDuty incident events (not a mention-based Cloud Agent) | — | cursor, automations, orchestration, ops | active |
-| [google-jules](practices/google-jules.md) | Starting a Jules GitHub task, authoring root AGENTS.md for Jules, or calling the Jules API / MCP toolkit | — | jules, google, mcp, agents-md | active |
+| [google-jules](practices/google-jules.md) | Deciding not to start a Jules task after the 2026-11-11 read-only cutoff, or exporting history before the 202… | [link](https://jules.google/) | jules, google, mcp, agents-md | active |
 | [github-copilot-slack-teams](practices/github-copilot-slack-teams.md) | Starting or steering a Copilot cloud agent from Slack or Microsoft Teams, or installing the consolidated GitH… | — | github, slack, orchestration, automations | active |
 | [bedrock-agentcore](practices/bedrock-agentcore.md) | Deploying agents or MCP servers on AgentCore, or enabling Gateway for MCP 2026-07-28 | — | amazon, mcp, hosting, orchestration | active |
 | [github-agentic-workflows](practices/github-agentic-workflows.md) | Authoring a .md + .lock.yml agentic workflow with gh aw, or contrasting it with Copilot automations | — | github, automations, ci, orchestration | active |
@@ -235,6 +235,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [pinecone](practices/pinecone.md) | Storing text or vectors for an agent and searching them by meaning or by exact terms | [link](https://app.pinecone.io/) | pinecone, vectors, search, memory | active |
 | [cohere](practices/cohere.md) | Embedding passages and reranking retrieved chunks before they go into an agent's context | [link](https://dashboard.cohere.com/api-keys) | cohere, embeddings, rerank, retrieval | active |
 | [n8n](practices/n8n.md) | Running an open-ended agent or a tool-calling workflow on n8n Cloud or a self-hosted n8n instance | [link](https://app.n8n.cloud/register) | n8n, workflows, agents, mcp | active |
+| [weaviate](practices/weaviate.md) | Storing vectors for an agent on Weaviate Cloud, or asking the Query Agent over those collections | [link](https://console.weaviate.cloud/) | weaviate, vectors, search, mcp | active |
+| [voyage-ai](practices/voyage-ai.md) | Embedding passages or reranking chunks with Voyage before they go into an agent's context | [link](https://dash.voyageai.com/) | voyage, embeddings, rerank, retrieval | active |
+| [chroma-cloud](practices/chroma-cloud.md) | Storing and searching embeddings on hosted Chroma instead of a local Chroma database | [link](https://www.trychroma.com/signup) | chroma, vectors, search, retrieval | active |
 
 ## Protocols and standards (22)
 
