@@ -4,8 +4,8 @@ title: Codex exec — non-interactive CLI and exec resume
 tags: [openai, cli, ci, orchestration]
 kind: tool
 status: active
-updated: 2026-11-14
-when_to_use: Scripting Codex with codex exec / codex e, picking a cyber access program, or resuming a headless exec session
+updated: 2026-11-20
+when_to_use: Scripting Codex with codex exec / codex e, running that turn on an existing app server, or resuming a headless session
 ---
 
 ## Summary
@@ -19,6 +19,7 @@ when_to_use: Scripting Codex with codex exec / codex e, picking a cyber access p
 - **Untrusted directories (0.169.0, 2026-11-13):** `codex exec` keeps **project configuration and MCP servers disabled** even when you pass `--sandbox workspace-write`. Pass **`--trust`** on `codex exec` or `codex review` to save project trust for that directory. Without it, a CI checkout that was never trusted silently drops repo MCP and project config (`openai-codex-sessions`).
 - Daybreak / cyber (0.161.0+): `codex exec --cyber-access-program <value>` (TypeScript SDK `cyberAccessProgram`) selects the Responses `access_programs.cyber` program for that turn (`standard`, `daybreak_blue`, `daybreak_red`). The flag does **not** require TUI `--enable cli_daybreak` and does **not** persist the Daybreak toggle. Still needs org/project approval and an eligible model (`openai-codex-daybreak`).
 - `codex exec resume [SESSION_ID]` continues a **headless** thread; `--last` is cwd-scoped unless `--all`. Optional follow-up prompt. Images: `--image` / `-i` (repeatable, comma lists). `--oss` needs a running Ollama. Do not confuse with `codex execpolicy` (preview rule checker).
+- **Remote app server (0.171.0, 2026-11-20):** `codex exec --remote ADDR` runs the noninteractive turn on an existing app server and uses that server’s configuration and credentials. It can start a thread or resume one by UUID, with human-readable or JSON output. `--remote-auth-token-env ENV_VAR` names the variable that holds the WebSocket bearer token. Both flags are global, so they may appear before or after `exec`. Conflicting remote endpoints are rejected, as are unsupported agent-configuration overrides and a thread that is already active. If the server disconnects before the turn finishes, the command errors. The same release puts **GPT-6.2 Sol** and Astra in the model catalog and selects Sol by default (`openai-gpt-62-astra-sol`). TUI `/rc` and `/remote` manage local remote control and show a device pairing code; that is separate from `--remote`.
 
 ## Sources
 
@@ -28,4 +29,7 @@ when_to_use: Scripting Codex with codex exec / codex e, picking a cyber access p
 - [Codex 0.161.0](https://github.com/openai/codex/releases/tag/rust-v0.161.0) — accessed 2026-10-12
 - [Use Daybreak in the Responses API](https://developers.openai.com/api/docs/guides/daybreak) — accessed 2026-10-12
 - [Codex CLI 0.169.0](https://github.com/openai/codex/releases/tag/rust-v0.169.0) — accessed 2026-11-14
-- [ChatGPT & Codex changelog](https://learn.chatgpt.com/docs/changelog) — accessed 2026-11-14
+- [ChatGPT & Codex changelog](https://learn.chatgpt.com/docs/changelog) — accessed 2026-11-20
+- [Codex CLI 0.171.0](https://github.com/openai/codex/releases/tag/rust-v0.171.0) — accessed 2026-11-20
+- [Support remote app servers in codex exec](https://github.com/openai/codex/pull/61707) — accessed 2026-11-20
+- [codex exec CLI flags (0.171.0)](https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/exec/src/cli.rs) — accessed 2026-11-20

@@ -2796,7 +2796,7 @@
         "security"
       ],
       "status": "active",
-      "updated": "2026-10-26",
+      "updated": "2026-11-20",
       "when_to_use": "Reviewing Cloud Agent PRs via screenshots/video, taking remote desktop, or controlling GitHub Actions auto-fix",
       "related": [
         "computer-use-containment",
@@ -5696,11 +5696,18 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-11-14",
-      "when_to_use": "Scripting Codex with codex exec / codex e, picking a cyber access program, or resuming a headless exec session",
+      "updated": "2026-11-20",
+      "when_to_use": "Scripting Codex with codex exec / codex e, running that turn on an existing app server, or resuming a headless session",
+      "links": {
+        "get": "https://developers.openai.com/codex/cli",
+        "docs": "https://developers.openai.com/codex/cli/reference",
+        "home": "https://developers.openai.com/codex"
+      },
       "related": [
         "openai-codex-github-action",
         "openai-codex-sessions",
+        "openai-codex-app-server",
+        "openai-gpt-62-astra-sol",
         "claude-code-headless",
         "cursor-cli-headless",
         "openai-codex-sandbox",
@@ -14257,6 +14264,123 @@
         "openai-gpt-62-astra-sol",
         "gpt-62-responses-only-tools",
         "prompt-caching-for-agents"
+      ]
+    },
+    {
+      "id": "parallel-search",
+      "path": "practices/parallel-search.md",
+      "title": "Parallel — web search and research APIs for agents",
+      "tags": ["parallel", "search", "mcp", "web"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Giving an agent web excerpts, a page fetch, or a researched answer from Parallel",
+      "links": {
+        "get": "https://platform.parallel.ai",
+        "docs": "https://docs.parallel.ai/search/search-quickstart",
+        "home": "https://parallel.ai/"
+      },
+      "related": [
+        "parallel-search-default-mode",
+        "exa",
+        "tavily",
+        "brave-search-api",
+        "perplexity-agent-api",
+        "firecrawl"
+      ]
+    },
+    {
+      "id": "parallel-search-default-mode",
+      "path": "failure-modes/parallel-search-default-mode.md",
+      "title": "A Parallel search bills advanced mode, or the v1 body returns 422",
+      "tags": ["parallel", "search", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "A Parallel search costs five times the fast rate, returns 422, or the EU host rejects the mode",
+      "related": [
+        "parallel-search",
+        "exa",
+        "tavily",
+        "brave-search-api"
+      ]
+    },
+    {
+      "id": "huggingface-inference-providers",
+      "path": "practices/huggingface-inference-providers.md",
+      "title": "Hugging Face Inference Providers — one token for many model hosts",
+      "tags": ["huggingface", "routing", "models", "inference"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Calling open models from an agent through one Hugging Face token, with failover across hosts",
+      "links": {
+        "get": "https://huggingface.co/join",
+        "docs": "https://huggingface.co/docs/inference-providers/index",
+        "home": "https://huggingface.co/"
+      },
+      "related": [
+        "huggingface-inference-bill-to",
+        "openrouter",
+        "together-ai",
+        "groq-cloud",
+        "cerebras-inference",
+        "vllm"
+      ]
+    },
+    {
+      "id": "huggingface-inference-bill-to",
+      "path": "failure-modes/huggingface-inference-bill-to.md",
+      "title": "A Hugging Face inference call misses org credits, or a free token has none",
+      "tags": ["huggingface", "billing", "routing", "auth"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "An Inference Providers call fails on a free token, bills the user, or ignores a Team credit pool",
+      "related": [
+        "huggingface-inference-providers",
+        "openrouter",
+        "together-ai",
+        "vllm"
+      ]
+    },
+    {
+      "id": "lancedb",
+      "path": "practices/lancedb.md",
+      "title": "LanceDB — embedded tables, or an Enterprise deployment",
+      "tags": ["lancedb", "vectors", "embedded", "retrieval"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Storing vectors and source rows inside an agent process, or connecting that SDK to LanceDB Enterprise",
+      "links": {
+        "get": "https://docs.lancedb.com/oss/v0-41-0/quickstart",
+        "docs": "https://docs.lancedb.com/enterprise/v1-12-0/enterprise",
+        "home": "https://www.lancedb.com/"
+      },
+      "related": [
+        "lancedb-avx2-import",
+        "pinecone",
+        "turbopuffer",
+        "qdrant-cloud",
+        "zilliz-cloud",
+        "chroma-cloud"
+      ]
+    },
+    {
+      "id": "lancedb-avx2-import",
+      "path": "failure-modes/lancedb-avx2-import.md",
+      "title": "import lancedb crashes on older CPUs, or SQL is missing on Embedded",
+      "tags": ["lancedb", "install", "limits", "enterprise"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "A LanceDB import dies with Illegal instruction, or an embedded table has no SQL or Functions API",
+      "related": [
+        "lancedb",
+        "pinecone",
+        "turbopuffer",
+        "qdrant-cloud"
       ]
     }
   ]

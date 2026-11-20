@@ -3183,4 +3183,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | OpenAI API changelog | https://developers.openai.com/api/docs/changelog |
 | OpenAI API pricing | https://developers.openai.com/api/docs/pricing |
 
+## Daily ingest 2026-11-20 (Parallel, Hugging Face Inference Providers, LanceDB, Codex 0.171.0)
+
+| Topic | URL |
+| --- | --- |
+| Parallel get started | https://platform.parallel.ai |
+| Parallel | https://parallel.ai/ |
+| Parallel pricing | https://parallel.ai/pricing |
+| Parallel Search quickstart | https://docs.parallel.ai/search/search-quickstart |
+| Parallel Search modes | https://docs.parallel.ai/search/modes |
+| Parallel Search best practices | https://docs.parallel.ai/search/best-practices |
+| Parallel API pricing | https://docs.parallel.ai/getting-started/pricing |
+| Parallel rate limits | https://docs.parallel.ai/getting-started/rate-limits |
+| Parallel MCP server | https://docs.parallel.ai/integrations/mcp/quickstart |
+| Join Hugging Face | https://huggingface.co/join |
+| Hugging Face | https://huggingface.co/ |
+| Hugging Face Inference Providers | https://huggingface.co/docs/inference-providers/index |
+| Hugging Face Inference Providers pricing | https://huggingface.co/docs/inference-providers/pricing |
+| LanceDB Embedded quickstart 0.41.0 | https://docs.lancedb.com/oss/v0-41-0/quickstart |
+| LanceDB Enterprise | https://docs.lancedb.com/enterprise/v1-12-0/enterprise |
+| LanceDB | https://www.lancedb.com/ |
+| Codex CLI 0.171.0 | https://github.com/openai/codex/releases/tag/rust-v0.171.0 |
+| Codex exec remote app server | https://github.com/openai/codex/pull/61707 |
+| Codex exec CLI flags 0.171.0 | https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/exec/src/cli.rs |
+| Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
+
 

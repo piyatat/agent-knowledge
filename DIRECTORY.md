@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. The `get` column points to the official page to install or sign up; whether and how to proceed is the user's call. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (109)
+## Tools (110)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -32,7 +32,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [claude-code-chrome](practices/claude-code-chrome.md) | Enabling claude --chrome or /chrome, or contrasting it with Cursor Browser and computer use | — | claude, browser, computer-use, mcp | active |
 | [claude-code-desktop](practices/claude-code-desktop.md) | Using the Claude Desktop Code tab, choosing Desktop vs CLI, or sending a CLI session with /desktop | — | claude, ux, orchestration, hosting | active |
 | [claude-code-jetbrains](practices/claude-code-jetbrains.md) | Installing Claude Code in IntelliJ/PyCharm/WebStorm, or allowlisting the hidden ide MCP tools | — | claude, acp, interoperability, ux | active |
-| [openai-codex-exec](practices/openai-codex-exec.md) | Scripting Codex with codex exec / codex e, picking a cyber access program, or resuming a headless exec session | — | openai, cli, ci, orchestration | active |
+| [openai-codex-exec](practices/openai-codex-exec.md) | Scripting Codex with codex exec / codex e, running that turn on an existing app server, or resuming a headles… | [link](https://developers.openai.com/codex/cli) | openai, cli, ci, orchestration | active |
 | [github-copilot-jetbrains](practices/github-copilot-jetbrains.md) | Choosing Copilot’s JetBrains plugin, AI Assistant ACP agent, Copilot CLI in the IDE terminal, or JetBrains Air | — | github, acp, interoperability, ux | active |
 | [cursor-xcode](practices/cursor-xcode.md) | Letting Cursor’s agent build, test, or preview an Xcode project via Apple’s MCP tools | — | cursor, mcp, cli, interoperability | active |
 | [openai-codex-ide](practices/openai-codex-ide.md) | Installing Codex beside the editor, choosing Agent Host vs the Codex extension, or local IDE chat vs Codex cl… | — | openai, ux, cli, orchestration | active |
@@ -119,8 +119,9 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [livekit-agents](practices/livekit-agents.md) | Building a Python or Node agent that joins a live audio, video, or phone room | [link](https://docs.livekit.io/agents/start/voice-ai/) | livekit, voice, realtime, sdk | active |
 | [dbos](practices/dbos.md) | Checkpointing an agent loop in Postgres you operate, with optional Conductor recovery across workers | [link](https://docs.dbos.dev/quickstart) | dbos, durability, orchestration, postgres | active |
 | [pipecat](practices/pipecat.md) | Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud | [link](https://docs.pipecat.ai/pipecat/get-started/introduction) | pipecat, voice, realtime, cloud | active |
+| [lancedb](practices/lancedb.md) | Storing vectors and source rows inside an agent process, or connecting that SDK to LanceDB Enterprise | [link](https://docs.lancedb.com/oss/v0-41-0/quickstart) | lancedb, vectors, embedded, retrieval | active |
 
-## Services (114)
+## Services (116)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -240,6 +241,8 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [chroma-cloud](practices/chroma-cloud.md) | Storing and searching embeddings on hosted Chroma instead of a local Chroma database | [link](https://www.trychroma.com/signup) | chroma, vectors, search, retrieval | active |
 | [zilliz-cloud](practices/zilliz-cloud.md) | Storing vectors for an agent on managed Milvus, including a free cluster or pay-per-operation serverless sear… | [link](https://cloud.zilliz.com/signup) | zilliz, milvus, vectors, search | active |
 | [turbopuffer](practices/turbopuffer.md) | Storing agent documents in namespaces and querying them by vector or attribute without operating a database | [link](https://turbopuffer.com/join) | turbopuffer, vectors, search, retrieval | active |
+| [parallel-search](practices/parallel-search.md) | Giving an agent web excerpts, a page fetch, or a researched answer from Parallel | [link](https://platform.parallel.ai) | parallel, search, mcp, web | active |
+| [huggingface-inference-providers](practices/huggingface-inference-providers.md) | Calling open models from an agent through one Hugging Face token, with failover across hosts | [link](https://huggingface.co/join) | huggingface, routing, models, inference | active |
 
 ## Protocols and standards (22)
 
