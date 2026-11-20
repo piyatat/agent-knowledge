@@ -9587,7 +9587,7 @@
         "versioning"
       ],
       "status": "active",
-      "updated": "2026-11-11",
+      "updated": "2026-11-20",
       "when_to_use": "Planning SDK or server work against 2027-03-30, or assuming a December 2026 MCP revision still exists",
       "related": [
         "mcp-2026-roadmap",
@@ -14381,6 +14381,108 @@
         "pinecone",
         "turbopuffer",
         "qdrant-cloud"
+      ]
+    },
+    {
+      "id": "llamaparse",
+      "path": "practices/llamaparse.md",
+      "title": "LlamaParse — files to markdown or structured JSON",
+      "tags": ["llamaparse", "documents", "parse", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Turning PDFs, scans, or Office files into markdown or JSON for an agent",
+      "links": {
+        "get": "https://cloud.llamaindex.ai",
+        "docs": "https://developers.llamaindex.ai/llamaparse/quickstart/",
+        "home": "https://www.llamaindex.ai/llamaparse"
+      },
+      "related": [
+        "llamaparse-credit-tier-and-cache",
+        "reducto",
+        "firecrawl"
+      ]
+    },
+    {
+      "id": "llamaparse-credit-tier-and-cache",
+      "path": "failure-modes/llamaparse-credit-tier-and-cache.md",
+      "title": "A LlamaParse job bills Agentic, misses the cache, or the region rejects the token",
+      "tags": ["llamaparse", "billing", "cache", "regions"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "A LlamaParse job costs the Agentic rate, a reparse is not free, or a token is rejected in the other region",
+      "related": ["llamaparse", "reducto", "firecrawl"]
+    },
+    {
+      "id": "reducto",
+      "path": "practices/reducto.md",
+      "title": "Reducto — parse, extract, and edit documents",
+      "tags": ["reducto", "documents", "parse", "extract"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Parsing a document into grounded blocks, or extracting fields from it, on Reducto",
+      "links": {
+        "get": "https://studio.reducto.ai/",
+        "docs": "https://docs.reducto.ai/quickstart",
+        "home": "https://reducto.ai/"
+      },
+      "related": [
+        "reducto-parse-defaults-to-r1",
+        "llamaparse",
+        "firecrawl"
+      ]
+    },
+    {
+      "id": "reducto-parse-defaults-to-r1",
+      "path": "failure-modes/reducto-parse-defaults-to-r1.md",
+      "title": "An unset Reducto Parse model becomes r-1 on 7 December 2026",
+      "tags": ["reducto", "parse", "billing", "migration"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "A Reducto Parse call changes model on 7 December 2026, or r-1 ignores the OCR settings you sent",
+      "related": ["reducto", "llamaparse"]
+    },
+    {
+      "id": "upstash-vector",
+      "path": "practices/upstash-vector.md",
+      "title": "Upstash Vector — serverless vector indexes",
+      "tags": ["upstash", "vectors", "search", "serverless"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "Storing agent embeddings in a serverless index that can scale to zero",
+      "links": {
+        "get": "https://console.upstash.com/",
+        "docs": "https://upstash.com/docs/vector/overall/getstarted",
+        "home": "https://upstash.com/"
+      },
+      "related": [
+        "upstash-vector-dimension-and-batch",
+        "pinecone",
+        "turbopuffer",
+        "qdrant-cloud",
+        "lancedb",
+        "voyage-ai"
+      ]
+    },
+    {
+      "id": "upstash-vector-dimension-and-batch",
+      "path": "failure-modes/upstash-vector-dimension-and-batch.md",
+      "title": "An Upstash Vector write exceeds the dimension cap, or a batch bills per vector",
+      "tags": ["upstash", "vectors", "billing", "limits"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-20",
+      "when_to_use": "An Upstash Vector upsert fails on dimension, a follow-up query misses the row, or a batch write bills one request per vector",
+      "related": [
+        "upstash-vector",
+        "pinecone",
+        "turbopuffer",
+        "qdrant-cloud",
+        "lancedb"
       ]
     }
   ]

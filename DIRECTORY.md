@@ -121,7 +121,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [pipecat](practices/pipecat.md) | Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud | [link](https://docs.pipecat.ai/pipecat/get-started/introduction) | pipecat, voice, realtime, cloud | active |
 | [lancedb](practices/lancedb.md) | Storing vectors and source rows inside an agent process, or connecting that SDK to LanceDB Enterprise | [link](https://docs.lancedb.com/oss/v0-41-0/quickstart) | lancedb, vectors, embedded, retrieval | active |
 
-## Services (116)
+## Services (119)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -243,6 +243,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [turbopuffer](practices/turbopuffer.md) | Storing agent documents in namespaces and querying them by vector or attribute without operating a database | [link](https://turbopuffer.com/join) | turbopuffer, vectors, search, retrieval | active |
 | [parallel-search](practices/parallel-search.md) | Giving an agent web excerpts, a page fetch, or a researched answer from Parallel | [link](https://platform.parallel.ai) | parallel, search, mcp, web | active |
 | [huggingface-inference-providers](practices/huggingface-inference-providers.md) | Calling open models from an agent through one Hugging Face token, with failover across hosts | [link](https://huggingface.co/join) | huggingface, routing, models, inference | active |
+| [llamaparse](practices/llamaparse.md) | Turning PDFs, scans, or Office files into markdown or JSON for an agent | [link](https://cloud.llamaindex.ai) | llamaparse, documents, parse, mcp | active |
+| [reducto](practices/reducto.md) | Parsing a document into grounded blocks, or extracting fields from it, on Reducto | [link](https://studio.reducto.ai/) | reducto, documents, parse, extract | active |
+| [upstash-vector](practices/upstash-vector.md) | Storing agent embeddings in a serverless index that can scale to zero | [link](https://console.upstash.com/) | upstash, vectors, search, serverless | active |
 
 ## Protocols and standards (22)
 

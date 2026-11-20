@@ -3208,4 +3208,38 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Codex exec CLI flags 0.171.0 | https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/exec/src/cli.rs |
 | Cloud Agents release notes | https://cursor.com/docs/release-notes/cloud-agents |
 
+## Daily ingest 2026-11-20 (LlamaParse, Reducto, Upstash Vector, MCP draft changelog)
+
+| Topic | URL |
+| --- | --- |
+| LlamaParse | https://www.llamaindex.ai/llamaparse |
+| LlamaParse sign up | https://cloud.llamaindex.ai |
+| LlamaParse platform quickstart | https://developers.llamaindex.ai/llamaparse/quickstart/ |
+| LlamaParse API key | https://developers.llamaindex.ai/llamaparse/general/api_key/ |
+| LlamaParse billing and usage | https://developers.llamaindex.ai/llamaparse/general/billing/ |
+| LlamaParse pricing | https://developers.llamaindex.ai/llamaparse/general/pricing/ |
+| LlamaParse regions | https://developers.llamaindex.ai/llamaparse/general/regions/ |
+| LlamaParse parse a file | https://developers.llamaindex.ai/reference/resources/parsing/methods/create/ |
+| LlamaParse configuring parse | https://developers.llamaindex.ai/llamaparse/parse/guides/configuring-parse/ |
+| LlamaIndex docs index for agents | https://www.llamaindex.ai/llms.txt |
+| Reducto | https://reducto.ai/ |
+| Reducto Studio | https://studio.reducto.ai/ |
+| Reducto API quickstart | https://docs.reducto.ai/quickstart |
+| Reducto API reference for coding agents | https://docs.reducto.ai/agent-guide |
+| Reducto account and settings | https://docs.reducto.ai/studio-account |
+| Reducto authentication | https://reducto.ai/auth.md |
+| Reducto usage and pricing | https://docs.reducto.ai/reference/credit-usage |
+| Reducto parse overview | https://docs.reducto.ai/parse/overview |
+| Reducto r-1 configuration compatibility | https://docs.reducto.ai/configs/parse/r-1-configuration-compatibility |
+| Reducto Parse r-1 | https://docs.reducto.ai/parse/r-1 |
+| Reducto processing settings | https://docs.reducto.ai/configs/parse/ocr-settings |
+| Reducto agentic modes | https://docs.reducto.ai/configs/parse/agentic-modes |
+| Upstash | https://upstash.com/ |
+| Upstash console | https://console.upstash.com/ |
+| Upstash Vector getting started | https://upstash.com/docs/vector/overall/getstarted |
+| What is Upstash Vector? | https://upstash.com/docs/vector/overall/whatisvector |
+| Upstash Vector pricing | https://upstash.com/pricing/vector |
+| Upstash Vector FAQ | https://upstash.com/docs/vector/help/faq |
+| MCP draft changelog | https://modelcontextprotocol.io/specification/draft/changelog |
+
 
