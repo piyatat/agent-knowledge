@@ -123,7 +123,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [docling](practices/docling.md) | Converting PDFs and Office files to markdown on the machine that runs the agent | [link](https://docling-project.github.io/docling/getting_started/installation/) | docling, documents, parse, mcp | active |
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 
-## Services (127)
+## Services (131)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -168,7 +168,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [openai-codex-sites](practices/openai-codex-sites.md) | Publishing a ChatGPT Site (public beta) from a prompt or local project, or contrasting Sites with Codex apps/… | — | openai, hosting, ux, security | active |
 | [claude-code-self-hosted](practices/claude-code-self-hosted.md) | Running Claude Code cloud sessions on your hosts instead of Anthropic-managed environments | — | claude, ops, isolation, hosting | active |
 | [github-copilot-hydrafusion](practices/github-copilot-hydrafusion.md) | Choosing Copilot Fusion Standard/High/Max, or migrating from Auto or HydraFusion | — | github, routing, models, cost | active |
-| [cursor-sentry](practices/cursor-sentry.md) | Starting a Cursor Cloud Agent from a Sentry issue, or wiring Sentry triggers on an Automation | — | cursor, automations, orchestration, ops | active |
+| [cursor-sentry](practices/cursor-sentry.md) | Starting a Cursor Cloud Agent from a Sentry issue, or wiring Sentry triggers on an Automation | [link](https://docs.sentry.io/integrations/coding-agents/cursor/) | cursor, automations, orchestration, ops | active |
 | [github-copilot-sentry](practices/github-copilot-sentry.md) | Sending a Sentry Seer RCA to Copilot cloud agent, or fixing crashes from the Copilot app Sentry canvas | — | github, automations, orchestration, ops | active |
 | [cursor-pagerduty](practices/cursor-pagerduty.md) | Starting a Cursor Automation from PagerDuty incident events (not a mention-based Cloud Agent) | — | cursor, automations, orchestration, ops | active |
 | [google-jules](practices/google-jules.md) | Deciding not to start a Jules task after the 2026-11-11 read-only cutoff, or exporting history before the 202… | [link](https://jules.google/) | jules, google, mcp, agents-md | active |
@@ -256,6 +256,10 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [neon](practices/neon.md) | Giving an app or agent a hosted Postgres that branches and suspends when idle | [link](https://neon.com/signup) | neon, postgres, database, mcp | active |
 | [stripe](practices/stripe.md) | Letting an agent create Stripe customers, Checkout sessions, or subscriptions, or look up a payment | [link](https://dashboard.stripe.com/register) | stripe, payments, mcp, billing | active |
 | [supabase](practices/supabase.md) | Hosting an app’s Postgres with Auth and Storage, or letting an agent query a Supabase project | [link](https://supabase.com/dashboard/sign-up) | supabase, postgres, auth, mcp | active |
+| [resend](practices/resend.md) | Sending app email through Resend, or letting an agent manage domains, templates, and inbound mail | [link](https://resend.com/signup) | resend, email, mcp, messaging | active |
+| [sentry](practices/sentry.md) | Capturing application errors and traces, or letting an agent search Sentry issues and call Seer | [link](https://sentry.io/signup/) | sentry, observability, mcp, errors | active |
+| [workos](practices/workos.md) | Adding enterprise SSO and user auth with WorkOS, or letting an agent manage a WorkOS workspace | [link](https://workos.com/signup) | workos, auth, mcp, sso | active |
+| [upstash-redis](practices/upstash-redis.md) | Caching or rate-limiting with hosted Redis, or letting an agent run commands and change Upstash databases | [link](https://console.upstash.com/) | upstash, redis, cache, mcp | active |
 
 ## Protocols and standards (22)
 

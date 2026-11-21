@@ -6757,14 +6757,21 @@
         "ops"
       ],
       "status": "active",
-      "updated": "2026-09-18",
+      "updated": "2026-11-21",
       "when_to_use": "Starting a Cursor Cloud Agent from a Sentry issue, or wiring Sentry triggers on an Automation",
+      "links": {
+        "get": "https://docs.sentry.io/integrations/coding-agents/cursor/",
+        "docs": "https://docs.sentry.io/product/ai-in-sentry/seer/autofix/",
+        "home": "https://sentry.io/"
+      },
       "related": [
         "cursor-automations",
         "cursor-pagerduty",
         "github-copilot-sentry",
         "cursor-cloud-always-on",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "sentry",
+        "sentry-quota-and-seer-billing"
       ]
     },
     {
@@ -14482,7 +14489,8 @@
         "turbopuffer",
         "qdrant-cloud",
         "lancedb",
-        "voyage-ai"
+        "voyage-ai",
+        "upstash-redis"
       ]
     },
     {
@@ -14735,7 +14743,7 @@
         "docs": "https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server",
         "home": "https://clerk.com/"
       },
-      "related": ["clerk-mcp-workspace-and-secret", "supabase", "composio", "neon"]
+      "related": ["clerk-mcp-workspace-and-secret", "supabase", "composio", "neon", "workos"]
     },
     {
       "id": "clerk-mcp-workspace-and-secret",
@@ -14828,6 +14836,114 @@
       "updated": "2026-11-21",
       "when_to_use": "A Supabase agent query followed instructions in a row, a project will not connect, or a branch creation billed you",
       "related": ["supabase", "neon", "clerk", "prompt-injection-agent-defense"]
+    },
+    {
+      "id": "resend",
+      "path": "practices/resend.md",
+      "title": "Resend — transactional email and a hosted MCP server",
+      "tags": ["resend", "email", "mcp", "messaging"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Sending app email through Resend, or letting an agent manage domains, templates, and inbound mail",
+      "links": {
+        "get": "https://resend.com/signup",
+        "docs": "https://resend.com/docs/mcp-server",
+        "home": "https://resend.com/"
+      },
+      "related": ["resend-quota-and-test-domain", "composio", "stripe"]
+    },
+    {
+      "id": "resend-quota-and-test-domain",
+      "path": "failure-modes/resend-quota-and-test-domain.md",
+      "title": "Resend rejects a send for quota, rate, or the test domain",
+      "tags": ["resend", "email", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "A Resend send returns 429 or 403, mail only arrives for the account owner, or sending pauses",
+      "related": ["resend", "composio", "stripe"]
+    },
+    {
+      "id": "sentry",
+      "path": "practices/sentry.md",
+      "title": "Sentry — error monitoring and an OAuth MCP server",
+      "tags": ["sentry", "observability", "mcp", "errors"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Capturing application errors and traces, or letting an agent search Sentry issues and call Seer",
+      "links": {
+        "get": "https://sentry.io/signup/",
+        "docs": "https://docs.sentry.io/ai/agent-setup/get-started/",
+        "home": "https://sentry.io/"
+      },
+      "related": ["sentry-quota-and-seer-billing", "cursor-sentry", "github-copilot-sentry", "langfuse", "braintrust", "opik"]
+    },
+    {
+      "id": "sentry-quota-and-seer-billing",
+      "path": "failure-modes/sentry-quota-and-seer-billing.md",
+      "title": "Sentry drops events at quota, or Seer bills more contributors than expected",
+      "tags": ["sentry", "observability", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Sentry stops accepting errors, an MCP call is in the wrong organization, or a Seer invoice is larger than the plan price",
+      "related": ["sentry", "cursor-sentry", "github-copilot-sentry", "langfuse"]
+    },
+    {
+      "id": "workos",
+      "path": "practices/workos.md",
+      "title": "WorkOS — AuthKit, enterprise SSO, and a dashboard MCP server",
+      "tags": ["workos", "auth", "mcp", "sso"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Adding enterprise SSO and user auth with WorkOS, or letting an agent manage a WorkOS workspace",
+      "links": {
+        "get": "https://workos.com/signup",
+        "docs": "https://workos.com/docs/mcp",
+        "home": "https://workos.com/"
+      },
+      "related": ["workos-mcp-sandbox-and-audience", "clerk", "supabase", "mcp-oauth-scopes"]
+    },
+    {
+      "id": "workos-mcp-sandbox-and-audience",
+      "path": "failure-modes/workos-mcp-sandbox-and-audience.md",
+      "title": "WorkOS MCP edits the sandbox, or an AuthKit token has the wrong audience",
+      "tags": ["workos", "mcp", "auth", "sso"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "A WorkOS agent changed the wrong environment, a delete did not run, or an MCP client cannot sign in through AuthKit",
+      "related": ["workos", "clerk", "mcp-oauth-scopes", "mcp-enterprise-managed-auth"]
+    },
+    {
+      "id": "upstash-redis",
+      "path": "practices/upstash-redis.md",
+      "title": "Upstash Redis — serverless Redis and an account MCP server",
+      "tags": ["upstash", "redis", "cache", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Caching or rate-limiting with hosted Redis, or letting an agent run commands and change Upstash databases",
+      "links": {
+        "get": "https://console.upstash.com/",
+        "docs": "https://upstash.com/docs/agent-resources/mcp",
+        "home": "https://upstash.com/"
+      },
+      "related": ["upstash-redis-token-and-plan", "upstash-vector", "neon", "supabase"]
+    },
+    {
+      "id": "upstash-redis-token-and-plan",
+      "path": "failure-modes/upstash-redis-token-and-plan.md",
+      "title": "An Upstash Redis token can wipe keys, or a plan change starts billing",
+      "tags": ["upstash", "redis", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "An Upstash agent ran a destructive Redis command, a REST token appeared in the transcript, or a free database started costing money",
+      "related": ["upstash-redis", "upstash-vector", "neon"]
     }
   ]
 }

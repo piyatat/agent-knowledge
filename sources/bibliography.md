@@ -3327,4 +3327,35 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Supabase pricing | https://supabase.com/pricing |
 | Supabase sign-up | https://supabase.com/dashboard/sign-up |
 
+## Daily ingest 2026-11-21 (Resend, Sentry, WorkOS, Upstash Redis)
+
+| Topic | URL |
+| --- | --- |
+| Resend MCP server | https://resend.com/docs/mcp-server |
+| Resend pricing | https://resend.com/docs/knowledge-base/what-is-resend-pricing |
+| Resend account quotas and limits | https://resend.com/docs/knowledge-base/account-quotas-and-limits |
+| Resend add a domain | https://resend.com/docs/add-a-domain |
+| Resend create API key | https://resend.com/docs/api-reference/api-keys/create-api-key |
+| Resend sign-up | https://resend.com/signup |
+| Resend n8n integration (test domain) | https://resend.com/docs/knowledge-base/n8n-integration |
+| Sentry pricing | https://sentry.io/pricing/ |
+| Sentry pricing and billing | https://docs.sentry.io/pricing/ |
+| Sentry error quota | https://docs.sentry.io/pricing/quotas/manage-event-stream-guide/ |
+| Sentry Seer | https://docs.sentry.io/product/ai-in-sentry/seer/ |
+| Sentry agent setup | https://docs.sentry.io/ai/agent-setup/get-started/ |
+| Sentry MCP | https://mcp.sentry.dev/ |
+| Sentry CLI mcp | https://cli.sentry.dev/commands/mcp/ |
+| Sentry sign-up | https://sentry.io/signup/ |
+| Sentry Cursor Agent integration | https://docs.sentry.io/integrations/coding-agents/cursor/ |
+| WorkOS MCP server | https://workos.com/docs/mcp |
+| WorkOS management MCP blog | https://workos.com/blog/management-mcp-server |
+| AuthKit for MCP | https://workos.com/docs/authkit/mcp |
+| WorkOS pricing | https://workos.com/pricing |
+| WorkOS sign-up | https://workos.com/signup |
+| Upstash account MCP | https://upstash.com/docs/agent-resources/mcp |
+| Upstash Redis MCP | https://upstash.com/docs/redis/sdks/mcp |
+| Upstash Redis REST API | https://upstash.com/docs/redis/features/restapi |
+| Upstash Redis pricing | https://upstash.com/pricing/redis |
+| Upstash console | https://console.upstash.com/ |
+
 
