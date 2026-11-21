@@ -123,7 +123,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [docling](practices/docling.md) | Converting PDFs and Office files to markdown on the machine that runs the agent | [link](https://docling-project.github.io/docling/getting_started/installation/) | docling, documents, parse, mcp | active |
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 
-## Services (123)
+## Services (127)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -252,6 +252,10 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [notion-mcp](practices/notion-mcp.md) | Giving a coding agent Notion pages and databases through Notion's hosted MCP server | [link](https://www.notion.com/signup) | notion, mcp, docs, auth | active |
 | [figma-mcp](practices/figma-mcp.md) | Letting an agent read a Figma frame or write frames back to the canvas | [link](https://www.figma.com/signup) | figma, mcp, design, auth | active |
 | [mistral-ocr](practices/mistral-ocr.md) | Turning a PDF or scan into markdown with Mistral's hosted OCR instead of a local parser | [link](https://console.mistral.ai/api-keys) | mistral, documents, ocr, parse | active |
+| [clerk](practices/clerk.md) | Adding sign-up, sessions, and organizations to an app, or letting an agent manage a Clerk workspace | [link](https://dashboard.clerk.com/sign-up) | clerk, auth, mcp, users | active |
+| [neon](practices/neon.md) | Giving an app or agent a hosted Postgres that branches and suspends when idle | [link](https://neon.com/signup) | neon, postgres, database, mcp | active |
+| [stripe](practices/stripe.md) | Letting an agent create Stripe customers, Checkout sessions, or subscriptions, or look up a payment | [link](https://dashboard.stripe.com/register) | stripe, payments, mcp, billing | active |
+| [supabase](practices/supabase.md) | Hosting an app’s Postgres with Auth and Storage, or letting an agent query a Supabase project | [link](https://supabase.com/dashboard/sign-up) | supabase, postgres, auth, mcp | active |
 
 ## Protocols and standards (22)
 

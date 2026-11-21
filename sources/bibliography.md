@@ -3305,4 +3305,26 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Mistral create an API key | https://docs.mistral.ai/getting-started/quickstarts/studio/activate-and-generate-api-key |
 | Mistral API keys | https://console.mistral.ai/api-keys |
 
+## Daily ingest 2026-11-21 (Clerk, Neon, Stripe, Supabase)
+
+| Topic | URL |
+| --- | --- |
+| Clerk MCP server | https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server |
+| Using Clerk with AI | https://clerk.com/docs/guides/ai/overview |
+| Clerk pricing | https://clerk.com/pricing |
+| Clerk sign-up | https://dashboard.clerk.com/sign-up |
+| Integrate Supabase with Clerk | https://clerk.com/docs/guides/development/integrations/databases/supabase |
+| Neon plans | https://neon.com/docs/introduction/plans |
+| Neon MCP server | https://neon.com/docs/ai/neon-mcp-server |
+| Neon CLI mcp | https://neon.com/docs/cli/mcp |
+| Neon scale to zero | https://neon.com/docs/introduction/scale-to-zero |
+| Configuring Neon scale to zero | https://neon.com/docs/guides/scale-to-zero-guide |
+| Neon sign-up | https://neon.com/signup |
+| Stripe MCP | https://docs.stripe.com/mcp |
+| Stripe tools README | https://raw.githubusercontent.com/stripe/ai/main/tools/README.md |
+| Stripe sign-up | https://dashboard.stripe.com/register |
+| Supabase MCP server | https://supabase.com/docs/guides/ai-tools/mcp |
+| Supabase pricing | https://supabase.com/pricing |
+| Supabase sign-up | https://supabase.com/dashboard/sign-up |
+
 

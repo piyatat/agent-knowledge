@@ -11719,7 +11719,8 @@
         "agent-to-agent-a2a-protocol",
         "mcp-streamable-http-transport",
         "prompt-injection-agent-defense",
-        "ap2-payments"
+        "ap2-payments",
+        "stripe"
       ]
     },
     {
@@ -11813,7 +11814,8 @@
         "x402-payments",
         "agent-to-agent-a2a-protocol",
         "google-adk",
-        "ucp-commerce"
+        "ucp-commerce",
+        "stripe"
       ]
     },
     {
@@ -11833,7 +11835,8 @@
       "related": [
         "ap2-payments",
         "x402-payments",
-        "agent-to-agent-a2a-protocol"
+        "agent-to-agent-a2a-protocol",
+        "stripe"
       ]
     },
     {
@@ -14717,6 +14720,114 @@
       "updated": "2026-11-21",
       "when_to_use": "Mistral OCR returns no pages, a URL fails, or a long PDF has to be split",
       "related": ["mistral-ocr", "docling", "llamaparse", "reducto"]
+    },
+    {
+      "id": "clerk",
+      "path": "practices/clerk.md",
+      "title": "Clerk — user auth and a dashboard MCP server",
+      "tags": ["clerk", "auth", "mcp", "users"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Adding sign-up, sessions, and organizations to an app, or letting an agent manage a Clerk workspace",
+      "links": {
+        "get": "https://dashboard.clerk.com/sign-up",
+        "docs": "https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server",
+        "home": "https://clerk.com/"
+      },
+      "related": ["clerk-mcp-workspace-and-secret", "supabase", "composio", "neon"]
+    },
+    {
+      "id": "clerk-mcp-workspace-and-secret",
+      "path": "failure-modes/clerk-mcp-workspace-and-secret.md",
+      "title": "Clerk MCP uses the wrong workspace, or a secret key is exposed",
+      "tags": ["clerk", "mcp", "auth", "secrets"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "A Clerk MCP tool returns a permission error, the agent is in the wrong workspace, or a new instance’s secret key is involved",
+      "related": ["clerk", "supabase", "mcp-server-trust-failures"]
+    },
+    {
+      "id": "neon",
+      "path": "practices/neon.md",
+      "title": "Neon — serverless Postgres that scales to zero",
+      "tags": ["neon", "postgres", "database", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Giving an app or agent a hosted Postgres that branches and suspends when idle",
+      "links": {
+        "get": "https://neon.com/signup",
+        "docs": "https://neon.com/docs/ai/neon-mcp-server",
+        "home": "https://neon.com/"
+      },
+      "related": ["neon-scale-to-zero-and-mcp", "supabase", "clerk", "pinecone", "qdrant-cloud"]
+    },
+    {
+      "id": "neon-scale-to-zero-and-mcp",
+      "path": "failure-modes/neon-scale-to-zero-and-mcp.md",
+      "title": "A Neon query waits on a suspended compute, or MCP can see too much",
+      "tags": ["neon", "postgres", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "The first Neon query is slow, compute never suspends, or an agent key can reach every project",
+      "related": ["neon", "supabase", "mcp-server-trust-failures"]
+    },
+    {
+      "id": "stripe",
+      "path": "practices/stripe.md",
+      "title": "Stripe — payments API and hosted MCP for agents",
+      "tags": ["stripe", "payments", "mcp", "billing"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Letting an agent create Stripe customers, Checkout sessions, or subscriptions, or look up a payment",
+      "links": {
+        "get": "https://dashboard.stripe.com/register",
+        "docs": "https://docs.stripe.com/mcp",
+        "home": "https://stripe.com/"
+      },
+      "related": ["stripe-mcp-key-and-confirmation", "x402-payments", "ap2-payments", "ucp-commerce", "clerk"]
+    },
+    {
+      "id": "stripe-mcp-key-and-confirmation",
+      "path": "failure-modes/stripe-mcp-key-and-confirmation.md",
+      "title": "Stripe MCP rejects a secret key, or a write waits for approval",
+      "tags": ["stripe", "mcp", "auth", "payments"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Stripe MCP returns 401, an OAuth session dies after two weeks, or a refund never finishes",
+      "related": ["stripe", "x402-payments", "ap2-payments", "prompt-injection-agent-defense"]
+    },
+    {
+      "id": "supabase",
+      "path": "practices/supabase.md",
+      "title": "Supabase — hosted Postgres, auth, and an MCP server",
+      "tags": ["supabase", "postgres", "auth", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Hosting an app’s Postgres with Auth and Storage, or letting an agent query a Supabase project",
+      "links": {
+        "get": "https://supabase.com/dashboard/sign-up",
+        "docs": "https://supabase.com/docs/guides/ai-tools/mcp",
+        "home": "https://supabase.com/"
+      },
+      "related": ["supabase-mcp-sql-and-pause", "neon", "clerk", "prompt-injection-agent-defense"]
+    },
+    {
+      "id": "supabase-mcp-sql-and-pause",
+      "path": "failure-modes/supabase-mcp-sql-and-pause.md",
+      "title": "Supabase MCP runs unexpected SQL, or a free project is paused",
+      "tags": ["supabase", "mcp", "postgres", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "A Supabase agent query followed instructions in a row, a project will not connect, or a branch creation billed you",
+      "related": ["supabase", "neon", "clerk", "prompt-injection-agent-defense"]
     }
   ]
 }
