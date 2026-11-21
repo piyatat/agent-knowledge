@@ -123,7 +123,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [docling](practices/docling.md) | Converting PDFs and Office files to markdown on the machine that runs the agent | [link](https://docling-project.github.io/docling/getting_started/installation/) | docling, documents, parse, mcp | active |
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 
-## Services (120)
+## Services (123)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -249,6 +249,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [reducto](practices/reducto.md) | Parsing a document into grounded blocks, or extracting fields from it, on Reducto | [link](https://studio.reducto.ai/) | reducto, documents, parse, extract | active |
 | [upstash-vector](practices/upstash-vector.md) | Storing agent embeddings in a serverless index that can scale to zero | [link](https://console.upstash.com/) | upstash, vectors, search, serverless | active |
 | [opik](practices/opik.md) | Tracing an agent’s model and tool calls in Opik Cloud or on a server you run | [link](https://www.comet.com/signup?from=opik) | opik, observability, evals, tracing | active |
+| [notion-mcp](practices/notion-mcp.md) | Giving a coding agent Notion pages and databases through Notion's hosted MCP server | [link](https://www.notion.com/signup) | notion, mcp, docs, auth | active |
+| [figma-mcp](practices/figma-mcp.md) | Letting an agent read a Figma frame or write frames back to the canvas | [link](https://www.figma.com/signup) | figma, mcp, design, auth | active |
+| [mistral-ocr](practices/mistral-ocr.md) | Turning a PDF or scan into markdown with Mistral's hosted OCR instead of a local parser | [link](https://console.mistral.ai/api-keys) | mistral, documents, ocr, parse | active |
 
 ## Protocols and standards (22)
 

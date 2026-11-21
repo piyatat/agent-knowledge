@@ -3,7 +3,7 @@ id: gemini-cli-mcp
 title: Gemini CLI MCP — settings.json servers and OAuth
 tags: [gemini, mcp, config, auth]
 status: active
-updated: 2026-10-28
+updated: 2026-11-21
 when_to_use: Adding MCP to Gemini CLI, or debugging trust / OAuth / env redaction
 ---
 
@@ -18,6 +18,7 @@ Gemini CLI MCP is configured in **`settings.json`** (`mcpServers` + global `mcp`
 - OAuth (SSE/HTTP): 401 → discover metadata → browser on `localhost/oauth/callback`. Tokens in `~/.gemini/mcp-oauth-tokens.json`. `/mcp auth [name]`. Fails in headless / SSH-without-X11 / containers. `authProviderType`: `dynamic_discovery` | `google_credentials` | `service_account_impersonation`. v0.59.0 hardens metadata-discovery fetches against **SSRF** (pair with `mcp-oauth-discovery-ssrf`); v0.60.0 also requires **RFC 9207 `iss`** on the authorization response before redeeming a code (`mcp-authorization-discovery`). **v0.66.0** (2026-10-27): per-server `oauth.allowPrivateNetwork` (default **false**) opts in OAuth discovery / registration / authorization / token endpoints that resolve to **enterprise private** space — RFC 1918, CGNAT `100.64.0.0/10`, IPv6 ULA `fc00::/7`, and `.internal` / `.local` hostnames. HTTPS is still required off-loopback. **Link-local** (`169.254.0.0/16`, `fe80::/10`) and **loopback** stay restricted. Every DNS record for a hostname must be public unicast **or** an allowed private range. Do not turn this on for untrusted server configs (`mcp-localhost-dns-rebinding`).
 - Manage: `gemini mcp add|list|remove` writes user or workspace settings. `/mcp` shows tools, prompts, and resources. Tool names are sanitized for the Gemini API; collisions are resolved in `discoverMcpTools()`.
 - `trust: true` is a host bypass, not a sandbox. Untrusted / restricted workspace **filters `mcpServers`** and does not connect (fail-closed folder trust, v0.59+; `gemini-cli-trusted-folders`). Treat untrusted MCP content as injection (`mcp-server-trust-failures`).
+- **v0.70.0** (2026-11-19) skips system MCP servers whose command fails the security permission check. A server that connected on v0.66 and is absent after an upgrade is that check, not a missing `mcp.allowed` entry. The v0.70 changelog states the skip; it does not list the permission bits.
 
 ## Sources
 
@@ -29,3 +30,4 @@ Gemini CLI MCP is configured in **`settings.json`** (`mcpServers` + global `mcp`
 - [Latest stable release v0.66.0](https://geminicli.com/docs/changelogs/latest/) — accessed 2026-10-28
 - [MCP servers with Gemini CLI (GitHub docs)](https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md) — accessed 2026-10-28
 - [gemini-cli #29844 — allowPrivateNetwork](https://github.com/google-gemini/gemini-cli/pull/29844) — accessed 2026-10-28
+- [Gemini CLI v0.70.0 changelog](https://github.com/google-gemini/gemini-cli/blob/main/docs/changelogs/latest.md) — accessed 2026-11-21

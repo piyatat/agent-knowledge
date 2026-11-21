@@ -4391,7 +4391,7 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-10-28",
+      "updated": "2026-11-21",
       "when_to_use": "Adding MCP to Gemini CLI, or debugging trust / OAuth / env redaction",
       "related": [
         "gemini-cli-acp",
@@ -5763,14 +5763,15 @@
         "governance"
       ],
       "status": "active",
-      "updated": "2026-09-12",
+      "updated": "2026-11-21",
       "when_to_use": "Writing ~/.gemini/policies TOML rules, or replacing tools.exclude / YOLO allowlists",
       "related": [
         "gemini-cli-settings",
         "gemini-cli-plan-mode",
         "gemini-cli-sandboxing",
         "permission-modes-allow-ask-deny",
-        "gemini-cli-mcp"
+        "gemini-cli-mcp",
+        "gemini-cli-shell-policy-scope"
       ]
     },
     {
@@ -14624,6 +14625,98 @@
         "claude-code-routines",
         "cursor-automations"
       ]
+    },
+    {
+      "id": "gemini-cli-shell-policy-scope",
+      "path": "failure-modes/gemini-cli-shell-policy-scope.md",
+      "title": "A Gemini CLI shell rule misses the command, or a read-only glob now asks",
+      "tags": ["gemini", "permissions", "shell", "policy"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "A Gemini CLI allow or deny rule for a shell command stops matching, or a read-only glob now asks for confirmation",
+      "related": ["gemini-cli-policy-engine", "gemini-cli-sandboxing", "gemini-cli-headless"]
+    },
+    {
+      "id": "notion-mcp",
+      "path": "practices/notion-mcp.md",
+      "title": "Notion MCP — hosted workspace tools for agents",
+      "tags": ["notion", "mcp", "docs", "auth"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Giving a coding agent Notion pages and databases through Notion's hosted MCP server",
+      "links": {
+        "get": "https://www.notion.com/signup",
+        "docs": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+        "home": "https://www.notion.com/"
+      },
+      "related": ["notion-mcp-plan-and-rate-limit", "cursor-notion", "mcp-streamable-http-transport", "composio"]
+    },
+    {
+      "id": "notion-mcp-plan-and-rate-limit",
+      "path": "failure-modes/notion-mcp-plan-and-rate-limit.md",
+      "title": "Notion MCP drops a filter, rate-limits, or the SSE URL fails",
+      "tags": ["notion", "mcp", "rate-limit", "plans"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Notion MCP returns rate_limited, drops a search filter, or a client still uses the SSE endpoint",
+      "related": ["notion-mcp", "rate-limit-backoff-tools", "mcp-streamable-http-transport"]
+    },
+    {
+      "id": "figma-mcp",
+      "path": "practices/figma-mcp.md",
+      "title": "Figma MCP — design context and canvas writes for agents",
+      "tags": ["figma", "mcp", "design", "auth"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Letting an agent read a Figma frame or write frames back to the canvas",
+      "links": {
+        "get": "https://www.figma.com/signup",
+        "docs": "https://developers.figma.com/docs/figma-mcp-server/",
+        "home": "https://www.figma.com/"
+      },
+      "related": ["figma-mcp-seat-and-link", "agent-skills-open-standard", "mcp-server-trust-failures"]
+    },
+    {
+      "id": "figma-mcp-seat-and-link",
+      "path": "failure-modes/figma-mcp-seat-and-link.md",
+      "title": "A Figma MCP read is rate-limited, or a canvas write is refused",
+      "tags": ["figma", "mcp", "rate-limit", "permissions"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "A Figma MCP read fails after a few calls, or a canvas write is refused",
+      "related": ["figma-mcp", "rate-limit-backoff-tools", "mcp-server-trust-failures"]
+    },
+    {
+      "id": "mistral-ocr",
+      "path": "practices/mistral-ocr.md",
+      "title": "Mistral OCR — hosted document pages to markdown",
+      "tags": ["mistral", "documents", "ocr", "parse"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Turning a PDF or scan into markdown with Mistral's hosted OCR instead of a local parser",
+      "links": {
+        "get": "https://console.mistral.ai/api-keys",
+        "docs": "https://docs.mistral.ai/studio/document-processing/basic_ocr",
+        "home": "https://mistral.ai/"
+      },
+      "related": ["mistral-ocr-size-and-url", "docling", "llamaparse", "reducto", "mistral-vibe"]
+    },
+    {
+      "id": "mistral-ocr-size-and-url",
+      "path": "failure-modes/mistral-ocr-size-and-url.md",
+      "title": "Mistral OCR rejects a document URL, or a PDF is too large for one call",
+      "tags": ["mistral", "ocr", "documents", "limits"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Mistral OCR returns no pages, a URL fails, or a long PDF has to be split",
+      "related": ["mistral-ocr", "docling", "llamaparse", "reducto"]
     }
   ]
 }

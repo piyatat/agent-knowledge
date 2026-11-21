@@ -3275,4 +3275,34 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude Code product | https://claude.com/product/claude-code |
 | Claude Code routines | https://code.claude.com/docs/en/routines |
 
+## Daily ingest 2026-11-21 (Gemini CLI 0.70 policy, Notion MCP, Figma MCP, Mistral OCR)
+
+| Topic | URL |
+| --- | --- |
+| Gemini CLI policy engine | https://geminicli.com/docs/reference/policy-engine/ |
+| Gemini CLI v0.70.0 changelog | https://github.com/google-gemini/gemini-cli/blob/main/docs/changelogs/latest.md |
+| gemini-cli v0.70.0 | https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0 |
+| Anchor commandPrefix to the top-level command | https://github.com/google-gemini/gemini-cli/pull/30355 |
+| Keep ASK_USER for unresolved shell expansion | https://github.com/google-gemini/gemini-cli/pull/30338 |
+| Connect to Notion MCP | https://developers.notion.com/guides/mcp/get-started-with-mcp |
+| Notion MCP overview | https://developers.notion.com/guides/mcp/overview |
+| Build an MCP client for Notion | https://developers.notion.com/guides/mcp/build-mcp-client |
+| Notion MCP rate limits | https://developers.notion.com/guides/mcp/rate-limits |
+| Notion request limits | https://developers.notion.com/reference/request-limits |
+| Notion sign-up | https://www.notion.com/signup |
+| Figma MCP server | https://developers.figma.com/docs/figma-mcp-server/ |
+| Figma MCP remote server | https://developers.figma.com/docs/figma-mcp-server/remote-server-installation/ |
+| Figma MCP rate limits and access | https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/ |
+| Figma MCP write to canvas | https://developers.figma.com/docs/figma-mcp-server/write-to-canvas/ |
+| Figma MCP desktop server | https://developers.figma.com/docs/figma-mcp-server/local-server-installation/ |
+| Figma sign-up | https://www.figma.com/signup |
+| Mistral OCR processor | https://docs.mistral.ai/studio/document-processing/basic_ocr |
+| Mistral OCR 4.1 | https://docs.mistral.ai/models/ocr-4-1 |
+| Mistral OCR endpoint | https://docs.mistral.ai/api/endpoint/ocr |
+| Mistral API pricing | https://docs.mistral.ai/inference/pricing |
+| Mistral usage and limits | https://docs.mistral.ai/admin/billing-usage/usage-limits |
+| Mistral Document AI PDF chunking cookbook | https://docs.mistral.ai/resources/cookbooks/mistral-ocr-documentchunking-document_chunking_cookbook |
+| Mistral create an API key | https://docs.mistral.ai/getting-started/quickstarts/studio/activate-and-generate-api-key |
+| Mistral API keys | https://console.mistral.ai/api-keys |
+
 
