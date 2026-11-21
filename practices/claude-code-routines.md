@@ -1,9 +1,10 @@
 ---
 id: claude-code-routines
 title: Claude Code routines — cloud schedule, API, and GitHub triggers
+kind: service
 tags: [claude, automations, cron, orchestration]
 status: active
-updated: 2026-11-03
+updated: 2026-11-21
 when_to_use: Creating a /schedule cloud routine, or choosing routines vs Desktop scheduled tasks vs /loop
 ---
 
@@ -18,12 +19,13 @@ A **routine** is a saved Claude Code prompt plus repos, environment, and connect
 - Schedule: hourly / daily / weekdays / weekly (local wall-clock → UTC; min 1h). Custom cron via `/schedule update`. One-off times auto-disable after fire and do **not** count against the daily routine-run cap. Stagger is a few minutes, stable per routine.
 - API: add trigger on the web, generate a one-time bearer token, POST to the routine `/fire` URL with beta header `experimental-cc-routine-2026-04-01`. Optional `text` arrives in an untrusted `routine-fire-payload` wrapper — the saved prompt must opt in to acting on it.
 - GitHub: needs the Claude GitHub App (not just `/web-setup`). Events: pull_request and release actions; PR filters (author, title, base/head, labels, draft/merged). Preview hourly caps drop extra events. CLI GitHub triggers need v2.1.225+.
-- Contrast: Desktop Local tasks need the app awake, min 1 minute, access local files, store prompts in `~/.claude/scheduled-tasks/*/SKILL.md`. `/loop` is in-session (7-day expiry, 50-task cap, `CLAUDE_CODE_DISABLE_CRON=1`). Channels push events into an **open** local session (`claude-code-channels`).
+- Contrast: Desktop Local tasks need the app awake, min 1 minute, access local files, store prompts in `~/.claude/scheduled-tasks/*/SKILL.md`. `/loop` stays inside one session (50-task cap, `CLAUDE_CODE_DISABLE_CRON=1`). New recurring tasks on **2.1.330+** last up to 30 days while that session runs; older tasks and the docs page still say 7 days (`claude-loop-expiry-split`). Channels push events into an **open** local session (`claude-code-channels`).
 
 ## Sources
 
 - [Automate work with routines](https://code.claude.com/docs/en/routines) — accessed 2026-09-11
 - [Schedule recurring tasks in Claude Code Desktop](https://code.claude.com/docs/en/desktop-scheduled-tasks) — accessed 2026-09-11
 - [v2.1.317](https://github.com/anthropics/claude-code/releases/tag/v2.1.317) — accessed 2026-11-03
-- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-03
-- [Run prompts on a schedule](https://code.claude.com/docs/en/scheduled-tasks) — accessed 2026-09-11
+- [Run prompts on a schedule](https://code.claude.com/docs/en/scheduled-tasks) — accessed 2026-11-21
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-21
+- [v2.1.330](https://github.com/anthropics/claude-code/releases/tag/v2.1.330) — accessed 2026-11-21

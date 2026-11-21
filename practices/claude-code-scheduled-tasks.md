@@ -1,9 +1,10 @@
 ---
 id: claude-code-scheduled-tasks
 title: Claude Code /loop — session-scoped cron vs routines
+kind: knowledge
 tags: [claude, automations, cron, session]
 status: active
-updated: 2026-11-14
+updated: 2026-11-21
 when_to_use: Polling in an open Claude Code session with /loop, or choosing /loop vs Desktop tasks vs cloud routines
 ---
 
@@ -14,15 +15,17 @@ when_to_use: Polling in an open Claude Code session with /loop, or choosing /loo
 ## Notes
 
 - `/loop 5m check the deploy` — fixed cron. `/loop check the deploy` — Claude picks 1–60 minutes each iteration (or uses **Monitor** when available — `claude-code-monitor`). Bare `/loop` runs the built-in maintenance prompt (unfinished work → current-branch PR/CI → cleanup) or `.claude/loop.md` then `~/.claude/loop.md` (plain Markdown, 25k-byte cap; ignored when you pass a prompt). Skills in the prompt must be model-invocable; `/permissions`, `disable-model-invocation`, Skill deny, and MCP prompts arrive as text. Self-paced `/loop` and the built-in maintenance prompt work on every provider (Bedrock / Vertex / Foundry / no feature-flag fetch need **v2.1.248+**). **v2.1.310** also enables Monitor itself on those hosts.
-- Tools: `CronCreate` / `CronList` / `CronDelete` (8-char ids, 50-task cap). One-shot reminders via natural language. Fires between turns, local timezone, vixie-cron 5-field (`L`/`W`/`MON` unsupported). Recurring jitter up to 30 minutes (or half the interval); `:00`/`:30` one-shots may fire up to 90s early. Recurring tasks expire after 7 days. `Esc` cancels a waiting self-paced loop only.
+- Tools: `CronCreate` / `CronList` / `CronDelete` (8-char ids, 50-task cap). One-shot reminders via natural language. Fires between turns, local timezone, vixie-cron 5-field (`L`/`W`/`MON` unsupported). Recurring jitter up to 30 minutes (or half the interval); `:00`/`:30` one-shots may fire up to 90s early. `Esc` cancels a waiting self-paced loop only.
+- **Expiry split.** The scheduled-tasks page still documents a **7-day** expiry (final fire, then delete). Claude Code **2.1.330** (2026-11-20) changes new recurring tasks and `/loop` to last up to **30 days** while the session keeps running, and to say when they end. Tasks created before that release still end at 7 days. See `claude-loop-expiry-split`.
 - Limits: no catch-up for missed fires; closing the terminal stops them (backgrounding the session keeps `/loop` in the background session). `CLAUDE_CODE_DISABLE_CRON=1` hides the tools. Scheduled `/code-review` never launches `ultra`.
 - **v2.1.325** (2026-11-13): `/loop` and scheduled tasks **ask** before running a skill that declares `allowed-tools` or hooks. Add `Skill(name)` to `permissions.allow` to run it unattended. Desktop/IDE/SDK “Always allow” now offers a saved rule **only when that rule would allow the same command again** — a scheduled task that relied on a one-shot Always-allow can wait. Hosted cloud `/loop` still starts when `sandbox.failIfUnavailable` is set (`claude-code-sandboxing`).
 
 ## Sources
 
-- [Run prompts on a schedule](https://code.claude.com/docs/en/scheduled-tasks) — accessed 2026-10-24
+- [Run prompts on a schedule](https://code.claude.com/docs/en/scheduled-tasks) — accessed 2026-11-21
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-21
+- [v2.1.330](https://github.com/anthropics/claude-code/releases/tag/v2.1.330) — accessed 2026-11-21
 - [Automate work with routines](https://code.claude.com/docs/en/routines) — accessed 2026-09-12
 - [Schedule recurring tasks in Claude Code Desktop](https://code.claude.com/docs/en/desktop-scheduled-tasks) — accessed 2026-09-12
 - [v2.1.310 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.310) — accessed 2026-10-24
-- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-14
 - [v2.1.325 release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.325) — accessed 2026-11-14

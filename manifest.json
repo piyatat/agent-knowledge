@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Directory for AI agents to look up knowledge, tools and services before acting or while planning — curated notes with sources",
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -5331,9 +5331,16 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-11-03",
+      "updated": "2026-11-21",
       "when_to_use": "Creating a /schedule cloud routine, or choosing routines vs Desktop scheduled tasks vs /loop",
+      "links": {
+        "get": "https://code.claude.com/docs/en/setup",
+        "docs": "https://code.claude.com/docs/en/routines",
+        "home": "https://claude.com/product/claude-code"
+      },
       "related": [
+        "claude-loop-expiry-split",
+        "claude-code-scheduled-tasks",
         "claude-code-channels",
         "claude-code-on-the-web",
         "claude-code-github-action",
@@ -5673,9 +5680,10 @@
         "session"
       ],
       "status": "active",
-      "updated": "2026-11-14",
+      "updated": "2026-11-21",
       "when_to_use": "Polling in an open Claude Code session with /loop, or choosing /loop vs Desktop tasks vs cloud routines",
       "related": [
+        "claude-loop-expiry-split",
         "claude-code-routines",
         "claude-code-channels",
         "cursor-automations",
@@ -11355,6 +11363,7 @@
       "updated": "2026-11-14",
       "when_to_use": "Publishing or discovering a public MCP server's install metadata",
       "related": [
+        "smithery-proxy-shutdown",
         "mcp-registry-admission",
         "mcp-server-trust-failures",
         "mcp-server-discover",
@@ -11727,6 +11736,7 @@
       "updated": "2026-11-16",
       "when_to_use": "Building a Python or TypeScript agent as an explicit graph that can pause, resume, and survive a crash",
       "related": [
+        "haystack",
         "pydantic-ai",
         "mastra",
         "strands-agents",
@@ -12204,6 +12214,7 @@
       "updated": "2026-11-16",
       "when_to_use": "Tracing agent runs or scoring them in Langfuse Cloud or a self-hosted Langfuse instead of a raw collector",
       "related": [
+        "opik",
         "agent-observability-otel",
         "langsmith-agent-server",
         "promptfoo",
@@ -14399,6 +14410,7 @@
       },
       "related": [
         "llamaparse-credit-tier-and-cache",
+        "docling",
         "reducto",
         "firecrawl"
       ]
@@ -14430,6 +14442,7 @@
       },
       "related": [
         "reducto-parse-defaults-to-r1",
+        "docling",
         "llamaparse",
         "firecrawl"
       ]
@@ -14483,6 +14496,133 @@
         "turbopuffer",
         "qdrant-cloud",
         "lancedb"
+      ]
+    },
+    {
+      "id": "docling",
+      "path": "practices/docling.md",
+      "title": "Docling — local document conversion for agents",
+      "tags": ["docling", "documents", "parse", "mcp"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Converting PDFs and Office files to markdown on the machine that runs the agent",
+      "links": {
+        "get": "https://docling-project.github.io/docling/getting_started/installation/",
+        "docs": "https://docling-project.github.io/docling/usage/mcp/",
+        "home": "https://docling-project.github.io/docling/"
+      },
+      "related": [
+        "docling-archive-and-local-mcp",
+        "llamaparse",
+        "reducto",
+        "firecrawl"
+      ]
+    },
+    {
+      "id": "docling-archive-and-local-mcp",
+      "path": "failure-modes/docling-archive-and-local-mcp.md",
+      "title": "A Docling Office file hits an archive cap, or MCP stays local",
+      "tags": ["docling", "documents", "limits", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "A Docling Office or EPUB conversion fails as an archive limit, an ODS sheet is shorter than the file, or MCP parsed the file locally",
+      "related": ["docling", "llamaparse", "reducto"]
+    },
+    {
+      "id": "opik",
+      "path": "practices/opik.md",
+      "title": "Opik — trace and score an agent on Comet",
+      "tags": ["opik", "observability", "evals", "tracing"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Tracing an agent’s model and tool calls in Opik Cloud or on a server you run",
+      "links": {
+        "get": "https://www.comet.com/signup?from=opik",
+        "docs": "https://www.comet.com/docs/opik/quickstart",
+        "home": "https://www.comet.com/site/products/opik/"
+      },
+      "related": [
+        "opik-unflushed-traces",
+        "langfuse",
+        "braintrust",
+        "agent-observability-otel",
+        "arize-phoenix"
+      ]
+    },
+    {
+      "id": "opik-unflushed-traces",
+      "path": "failure-modes/opik-unflushed-traces.md",
+      "title": "An Opik trace never arrives, or cloud and local settings are mixed",
+      "tags": ["opik", "tracing", "flush", "auth"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "An Opik trace never shows up after a short script, or cloud and self-hosted settings are mixed",
+      "related": ["opik", "langfuse", "braintrust"]
+    },
+    {
+      "id": "haystack",
+      "path": "practices/haystack.md",
+      "title": "Haystack — Python agents and pipelines",
+      "tags": ["haystack", "sdk", "orchestration", "python"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "Building a Python tool-calling agent as a Haystack component instead of a graph framework",
+      "links": {
+        "get": "https://docs.haystack.deepset.ai/docs/installation",
+        "docs": "https://docs.haystack.deepset.ai/docs/agent",
+        "home": "https://haystack.deepset.ai/"
+      },
+      "related": [
+        "haystack-text-always-exits",
+        "langgraph",
+        "pydantic-ai",
+        "llamaindex-workflows"
+      ]
+    },
+    {
+      "id": "haystack-text-always-exits",
+      "path": "failure-modes/haystack-text-always-exits.md",
+      "title": "A Haystack agent stops on plain text, or confirmation never runs",
+      "tags": ["haystack", "agents", "tools", "approval"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "A Haystack agent stopped on plain text before calling the finish tool, or a confirmation hook never asked",
+      "related": ["haystack", "langgraph", "pydantic-ai"]
+    },
+    {
+      "id": "smithery-proxy-shutdown",
+      "path": "failure-modes/smithery-proxy-shutdown.md",
+      "title": "A Smithery MCP URL or API key stopped working on 31 October 2026",
+      "tags": ["smithery", "mcp", "registry", "migration"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "An MCP client still points at server.smithery.ai, run.tools, or a Smithery API key",
+      "related": [
+        "mcp-official-registry",
+        "composio",
+        "mcp-server-trust-failures"
+      ]
+    },
+    {
+      "id": "claude-loop-expiry-split",
+      "path": "failure-modes/claude-loop-expiry-split.md",
+      "title": "A Claude /loop ends at 7 days or at 30, depending on when it was created",
+      "tags": ["claude", "cron", "session", "migration"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-21",
+      "when_to_use": "A Claude Code recurring task ended after a week, or the docs and the CLI disagree on how long /loop lasts",
+      "related": [
+        "claude-code-scheduled-tasks",
+        "claude-code-routines",
+        "cursor-automations"
       ]
     }
   ]

@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. The `get` column points to the official page to install or sign up; whether and how to proceed is the user's call. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (110)
+## Tools (112)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -120,8 +120,10 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [dbos](practices/dbos.md) | Checkpointing an agent loop in Postgres you operate, with optional Conductor recovery across workers | [link](https://docs.dbos.dev/quickstart) | dbos, durability, orchestration, postgres | active |
 | [pipecat](practices/pipecat.md) | Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud | [link](https://docs.pipecat.ai/pipecat/get-started/introduction) | pipecat, voice, realtime, cloud | active |
 | [lancedb](practices/lancedb.md) | Storing vectors and source rows inside an agent process, or connecting that SDK to LanceDB Enterprise | [link](https://docs.lancedb.com/oss/v0-41-0/quickstart) | lancedb, vectors, embedded, retrieval | active |
+| [docling](practices/docling.md) | Converting PDFs and Office files to markdown on the machine that runs the agent | [link](https://docling-project.github.io/docling/getting_started/installation/) | docling, documents, parse, mcp | active |
+| [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 
-## Services (119)
+## Services (120)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -147,7 +149,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [github-copilot-code-review](practices/github-copilot-code-review.md) | Requesting Copilot as a PR reviewer, configuring personal/enterprise auto-review, or contrasting it with Copi… | — | github, review, ci, orchestration | active |
 | [openai-codex-review](practices/openai-codex-review.md) | Running Codex /review or codex review, or contrasting it with Copilot/Bugbot PR review | — | openai, review, cli, git | active |
 | [github-copilot-spaces](practices/github-copilot-spaces.md) | Creating a Copilot Space, or wiring copilot_spaces MCP tools in IDE agent mode | — | github, context, mcp, memory | active |
-| [claude-code-routines](practices/claude-code-routines.md) | Creating a /schedule cloud routine, or choosing routines vs Desktop scheduled tasks vs /loop | — | claude, automations, cron, orchestration | active |
+| [claude-code-routines](practices/claude-code-routines.md) | Creating a /schedule cloud routine, or choosing routines vs Desktop scheduled tasks vs /loop | [link](https://code.claude.com/docs/en/setup) | claude, automations, cron, orchestration | active |
 | [claude-code-slack](practices/claude-code-slack.md) | Setting up @Claude in Slack, or choosing the earlier per-user Slack app vs Claude Tag | — | claude, slack, orchestration, ux | active |
 | [claude-code-on-the-web](practices/claude-code-on-the-web.md) | Starting or teleporting a claude.ai/code cloud session, or contrasting it with Remote Control | — | claude, hosting, session, git | active |
 | [openai-codex-slack](practices/openai-codex-slack.md) | Installing @Codex in Slack or Linear, or contrasting it with local Linear MCP | — | openai, slack, linear, orchestration | active |
@@ -246,6 +248,7 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [llamaparse](practices/llamaparse.md) | Turning PDFs, scans, or Office files into markdown or JSON for an agent | [link](https://cloud.llamaindex.ai) | llamaparse, documents, parse, mcp | active |
 | [reducto](practices/reducto.md) | Parsing a document into grounded blocks, or extracting fields from it, on Reducto | [link](https://studio.reducto.ai/) | reducto, documents, parse, extract | active |
 | [upstash-vector](practices/upstash-vector.md) | Storing agent embeddings in a serverless index that can scale to zero | [link](https://console.upstash.com/) | upstash, vectors, search, serverless | active |
+| [opik](practices/opik.md) | Tracing an agent’s model and tool calls in Opik Cloud or on a server you run | [link](https://www.comet.com/signup?from=opik) | opik, observability, evals, tracing | active |
 
 ## Protocols and standards (22)
 

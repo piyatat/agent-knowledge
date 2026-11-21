@@ -3242,4 +3242,37 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Upstash Vector FAQ | https://upstash.com/docs/vector/help/faq |
 | MCP draft changelog | https://modelcontextprotocol.io/specification/draft/changelog |
 
+## Daily ingest 2026-11-21 (Docling, Opik, Haystack, Smithery shutdown, Claude /loop expiry)
+
+| Topic | URL |
+| --- | --- |
+| Docling | https://docling-project.github.io/docling/ |
+| Docling installation | https://docling-project.github.io/docling/getting_started/installation/ |
+| Docling on PyPI | https://pypi.org/project/docling/ |
+| Docling MCP server | https://docling-project.github.io/docling/usage/mcp/ |
+| Docling advanced options | https://docling-project.github.io/docling/usage/advanced_options/ |
+| Docling for IBM watsonx concepts | https://developer.dcls.saas.ibm.com/concepts/ |
+| Docling for IBM watsonx | https://www.ibm.com/products/docling |
+| Opik | https://www.comet.com/site/products/opik/ |
+| Opik sign-up | https://www.comet.com/signup?from=opik |
+| Opik quickstart | https://www.comet.com/docs/opik/quickstart |
+| Opik SDK configuration | https://www.comet.com/docs/opik/tracing/advanced/sdk_configuration |
+| Opik log traces | https://www.comet.com/docs/opik/tracing/advanced/log_traces |
+| Opik pricing | https://www.comet.com/site/pricing/ |
+| Haystack | https://haystack.deepset.ai/ |
+| Haystack installation | https://docs.haystack.deepset.ai/docs/installation |
+| Haystack Agent | https://docs.haystack.deepset.ai/docs/agent |
+| Haystack hooks | https://docs.haystack.deepset.ai/docs/hooks |
+| Haystack human in the loop | https://docs.haystack.deepset.ai/docs/human-in-the-loop |
+| Haystack migration guide | https://docs.haystack.deepset.ai/docs/migration |
+| Haystack Agent Pack | https://docs.haystack.deepset.ai/docs/agent-pack |
+| haystack-ai on PyPI | https://pypi.org/project/haystack-ai/ |
+| The future of Smithery | https://www.smithery.ai/future |
+| Claude Code scheduled tasks | https://code.claude.com/docs/en/scheduled-tasks |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Claude Code 2.1.330 | https://github.com/anthropics/claude-code/releases/tag/v2.1.330 |
+| Claude Code setup | https://code.claude.com/docs/en/setup |
+| Claude Code product | https://claude.com/product/claude-code |
+| Claude Code routines | https://code.claude.com/docs/en/routines |
+
 
