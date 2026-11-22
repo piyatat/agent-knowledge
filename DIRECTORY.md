@@ -123,7 +123,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [docling](practices/docling.md) | Converting PDFs and Office files to markdown on the machine that runs the agent | [link](https://docling-project.github.io/docling/getting_started/installation/) | docling, documents, parse, mcp | active |
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 
-## Services (131)
+## Services (135)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -260,6 +260,10 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [sentry](practices/sentry.md) | Capturing application errors and traces, or letting an agent search Sentry issues and call Seer | [link](https://sentry.io/signup/) | sentry, observability, mcp, errors | active |
 | [workos](practices/workos.md) | Adding enterprise SSO and user auth with WorkOS, or letting an agent manage a WorkOS workspace | [link](https://workos.com/signup) | workos, auth, mcp, sso | active |
 | [upstash-redis](practices/upstash-redis.md) | Caching or rate-limiting with hosted Redis, or letting an agent run commands and change Upstash databases | [link](https://console.upstash.com/) | upstash, redis, cache, mcp | active |
+| [posthog](practices/posthog.md) | Querying product analytics, feature flags, or errors in PostHog, or letting an agent change them | [link](https://us.posthog.com/signup) | posthog, analytics, flags, mcp | active |
+| [linear-mcp](practices/linear-mcp.md) | Reading or updating Linear issues, projects, and documents from a coding agent | [link](https://linear.app/signup) | linear, mcp, issues, auth | active |
+| [datadog](practices/datadog.md) | Querying Datadog logs, traces, or monitors from an agent, or changing monitors through MCP | [link](https://app.datadoghq.com/signup) | datadog, observability, mcp, logs | active |
+| [convex](practices/convex.md) | Giving an app a hosted Convex backend, or letting an agent inspect a Convex deployment | [link](https://www.convex.dev/signup) | convex, database, mcp, backend | active |
 
 ## Protocols and standards (22)
 

@@ -3358,4 +3358,28 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Upstash Redis pricing | https://upstash.com/pricing/redis |
 | Upstash console | https://console.upstash.com/ |
 
+## Daily ingest 2026-11-22 (PostHog, Linear MCP, Datadog, Convex)
+
+| Topic | URL |
+| --- | --- |
+| PostHog MCP | https://posthog.com/docs/model-context-protocol |
+| PostHog MCP FAQ | https://posthog.com/docs/model-context-protocol/faq |
+| PostHog pricing | https://posthog.com/pricing |
+| PostHog US sign-up | https://us.posthog.com/signup |
+| PostHog EU sign-up | https://eu.posthog.com/signup |
+| Linear MCP server | https://linear.app/docs/mcp |
+| AI at Linear | https://linear.app/docs/ai-at-linear |
+| Linear sign-up | https://linear.app/signup |
+| Datadog MCP Server | https://docs.datadoghq.com/mcp_server/ |
+| Set up the Datadog MCP Server | https://docs.datadoghq.com/mcp_server/setup/ |
+| Datadog MCP access control | https://docs.datadoghq.com/account_management/rbac/mcp_access/ |
+| Datadog free trial | https://www.datadoghq.com/free-datadog-trial/ |
+| Datadog sign-up | https://app.datadoghq.com/signup |
+| Convex MCP server | https://docs.convex.dev/ai/convex-mcp-server |
+| npx convex mcp | https://docs.convex.dev/cli/reference/mcp |
+| Convex limits | https://docs.convex.dev/production/state/limits |
+| Convex pricing | https://www.convex.dev/pricing |
+| Using Codex with Convex | https://docs.convex.dev/ai/using-codex |
+| Convex sign-up | https://www.convex.dev/signup |
+
 

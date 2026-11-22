@@ -3783,6 +3783,7 @@
         "prompt-injection-agent-defense",
         "cursor-microsoft-teams",
         "linear-loops-agent",
+        "linear-mcp",
         "cursor-origin"
       ]
     },
@@ -9978,7 +9979,8 @@
         "github-copilot-automations",
         "openai-codex-automations",
         "prompt-injection-agent-defense",
-        "mcp-local-server-security"
+        "mcp-local-server-security",
+        "linear-mcp"
       ]
     },
     {
@@ -14770,7 +14772,7 @@
         "docs": "https://neon.com/docs/ai/neon-mcp-server",
         "home": "https://neon.com/"
       },
-      "related": ["neon-scale-to-zero-and-mcp", "supabase", "clerk", "pinecone", "qdrant-cloud"]
+      "related": ["neon-scale-to-zero-and-mcp", "supabase", "clerk", "pinecone", "qdrant-cloud", "convex"]
     },
     {
       "id": "neon-scale-to-zero-and-mcp",
@@ -14878,7 +14880,7 @@
         "docs": "https://docs.sentry.io/ai/agent-setup/get-started/",
         "home": "https://sentry.io/"
       },
-      "related": ["sentry-quota-and-seer-billing", "cursor-sentry", "github-copilot-sentry", "langfuse", "braintrust", "opik"]
+      "related": ["sentry-quota-and-seer-billing", "cursor-sentry", "github-copilot-sentry", "langfuse", "braintrust", "opik", "posthog", "datadog"]
     },
     {
       "id": "sentry-quota-and-seer-billing",
@@ -14944,6 +14946,114 @@
       "updated": "2026-11-21",
       "when_to_use": "An Upstash agent ran a destructive Redis command, a REST token appeared in the transcript, or a free database started costing money",
       "related": ["upstash-redis", "upstash-vector", "neon"]
+    },
+    {
+      "id": "posthog",
+      "path": "practices/posthog.md",
+      "title": "PostHog — product analytics, flags, and a hosted MCP server",
+      "tags": ["posthog", "analytics", "flags", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Querying product analytics, feature flags, or errors in PostHog, or letting an agent change them",
+      "links": {
+        "get": "https://us.posthog.com/signup",
+        "docs": "https://posthog.com/docs/model-context-protocol",
+        "home": "https://posthog.com/"
+      },
+      "related": ["posthog-mcp-quota-and-pin", "sentry", "langfuse", "braintrust", "opik"]
+    },
+    {
+      "id": "posthog-mcp-quota-and-pin",
+      "path": "failure-modes/posthog-mcp-quota-and-pin.md",
+      "title": "PostHog MCP hits a rate limit, or a write lands in the wrong project",
+      "tags": ["posthog", "mcp", "billing", "flags"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "A PostHog MCP call returns 429, a flag serves the quota default, or a write lands in the wrong project",
+      "related": ["posthog", "sentry", "rate-limit-backoff-tools"]
+    },
+    {
+      "id": "linear-mcp",
+      "path": "practices/linear-mcp.md",
+      "title": "Linear MCP — hosted issues, projects, and documents",
+      "tags": ["linear", "mcp", "issues", "auth"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Reading or updating Linear issues, projects, and documents from a coding agent",
+      "links": {
+        "get": "https://linear.app/signup",
+        "docs": "https://linear.app/docs/mcp",
+        "home": "https://linear.app/"
+      },
+      "related": ["linear-mcp-token-and-readonly", "linear-loops-agent", "cursor-linear-cloud-agents", "prompt-injection-agent-defense"]
+    },
+    {
+      "id": "linear-mcp-token-and-readonly",
+      "path": "failure-modes/linear-mcp-token-and-readonly.md",
+      "title": "Linear MCP returns 401, or a write is refused on a read-only session",
+      "tags": ["linear", "mcp", "auth", "oauth"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Linear MCP returns 401, a write is refused, or a client is still pointed at the SSE endpoint",
+      "related": ["linear-mcp", "linear-loops-agent", "cursor-linear-cloud-agents", "mcp-oauth-scopes"]
+    },
+    {
+      "id": "datadog",
+      "path": "practices/datadog.md",
+      "title": "Datadog — observability and a site-specific MCP server",
+      "tags": ["datadog", "observability", "mcp", "logs"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Querying Datadog logs, traces, or monitors from an agent, or changing monitors through MCP",
+      "links": {
+        "get": "https://app.datadoghq.com/signup",
+        "docs": "https://docs.datadoghq.com/mcp_server/",
+        "home": "https://www.datadoghq.com/"
+      },
+      "related": ["datadog-mcp-write-and-site", "sentry", "posthog", "langfuse"]
+    },
+    {
+      "id": "datadog-mcp-write-and-site",
+      "path": "failure-modes/datadog-mcp-write-and-site.md",
+      "title": "Datadog MCP hides writes, or the client uses the wrong site",
+      "tags": ["datadog", "mcp", "auth", "observability"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "A Datadog MCP tool is missing, a write is hidden, or the client is pointed at the wrong site",
+      "related": ["datadog", "sentry", "mcp-server-trust-failures"]
+    },
+    {
+      "id": "convex",
+      "path": "practices/convex.md",
+      "title": "Convex — hosted backend and a local MCP server",
+      "tags": ["convex", "database", "mcp", "backend"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Giving an app a hosted Convex backend, or letting an agent inspect a Convex deployment",
+      "links": {
+        "get": "https://www.convex.dev/signup",
+        "docs": "https://docs.convex.dev/ai/convex-mcp-server",
+        "home": "https://www.convex.dev/"
+      },
+      "related": ["convex-mcp-production-and-cap", "neon", "supabase", "pinecone"]
+    },
+    {
+      "id": "convex-mcp-production-and-cap",
+      "path": "failure-modes/convex-mcp-production-and-cap.md",
+      "title": "Convex MCP cannot read production, or a free-plan mutation hits the cap",
+      "tags": ["convex", "mcp", "database", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "A Convex agent cannot read production rows, or a free-plan mutation fails at the resource cap",
+      "related": ["convex", "neon", "supabase"]
     }
   ]
 }
