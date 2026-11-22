@@ -3434,4 +3434,36 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Vercel Sandbox | https://vercel.com/docs/sandbox |
 | Vercel | https://vercel.com/ |
 
+## Daily ingest 2026-11-22 (Statsig, Svix, Deepgram, Standard Webhooks)
+
+| Topic | URL |
+| --- | --- |
+| Statsig MCP overview | https://docs.statsig.com/integrations/mcp/overview |
+| Statsig MCP manual setup | https://docs.statsig.com/integrations/mcp/manual-setup |
+| Statsig MCP V3 tool reference | https://docs.statsig.com/integrations/mcp/tool-reference |
+| Self-serve RBAC for Statsig MCP | https://www.statsig.com/updates/update/self-serve-rbac-mcp |
+| Statsig pricing | https://www.statsig.com/pricing |
+| Statsig sign-up | https://console.statsig.com/sign_up |
+| Svix quickstart | https://docs.svix.com/quickstart |
+| Svix API keys | https://docs.svix.com/api-keys |
+| Svix pricing | https://www.svix.com/pricing/ |
+| Svix retry schedule | https://docs.svix.com/retries |
+| Svix idempotency | https://docs.svix.com/idempotency |
+| Svix Dashboard MCP | https://docs.svix.com/ai/dashboard-mcp |
+| Svix Consumer App Portal MCP | https://docs.svix.com/ai/app-portal-mcp |
+| Svix connecting a coding agent | https://docs.svix.com/receiving/using-app-portal/connecting-your-coding-agent |
+| Svix member access | https://docs.svix.com/account/org-members |
+| Svix FAQ | https://docs.svix.com/faq |
+| Svix sign-up | https://dashboard.svix.com/signup |
+| Deepgram speech-to-text getting started | https://developers.deepgram.com/docs/stt/getting-started |
+| Deepgram model options | https://developers.deepgram.com/docs/model |
+| Deepgram authenticating | https://developers.deepgram.com/guides/fundamentals/authenticating |
+| Deepgram API keys | https://developers.deepgram.com/docs/create-additional-api-keys |
+| Deepgram API rate limits | https://developers.deepgram.com/reference/api-rate-limits |
+| Deepgram concurrency | https://developers.deepgram.com/docs/working-with-concurrency-rate-limits |
+| Deepgram pricing | https://deepgram.com/pricing |
+| Deepgram sign-up | https://console.deepgram.com/signup |
+| Standard Webhooks specification | https://github.com/standard-webhooks/standard-webhooks/blob/main/spec/standard-webhooks.md |
+| Standard Webhooks | https://www.standardwebhooks.com/ |
+
 

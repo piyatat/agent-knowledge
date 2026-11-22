@@ -123,7 +123,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [docling](practices/docling.md) | Converting PDFs and Office files to markdown on the machine that runs the agent | [link](https://docling-project.github.io/docling/getting_started/installation/) | docling, documents, parse, mcp | active |
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 
-## Services (141)
+## Services (144)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -270,8 +270,11 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [railway](practices/railway.md) | Deploying an app on Railway, or letting an agent manage projects and deploys through Railway MCP | [link](https://railway.com/) | railway, hosting, mcp, deploy | active |
 | [fly-io](practices/fly-io.md) | Running an app on Fly Machines, or letting an agent manage Machines and Postgres through Fly MCP | [link](https://fly.io/app/sign-up) | fly, hosting, mcp, machines | active |
 | [cloudflare-r2](practices/cloudflare-r2.md) | Storing agent artifacts, uploads, or public files in object storage without an egress fee | [link](https://dash.cloudflare.com/sign-up) | cloudflare, r2, storage, s3 | active |
+| [statsig](practices/statsig.md) | Checking or changing Statsig feature gates and experiments, or letting an agent use the console | [link](https://console.statsig.com/sign_up) | statsig, flags, experiments, mcp | active |
+| [svix](practices/svix.md) | Sending webhooks to your customers, or letting an agent debug Svix deliveries and ingest | [link](https://dashboard.svix.com/signup) | svix, webhooks, mcp, messaging | active |
+| [deepgram](practices/deepgram.md) | Transcribing live or recorded audio for an agent, or streaming turn-taking speech with Flux | [link](https://console.deepgram.com/signup) | deepgram, speech, voice, transcription | active |
 
-## Protocols and standards (22)
+## Protocols and standards (23)
 
 Open specs agents and tools use to talk to each other.
 
@@ -299,3 +302,4 @@ Open specs agents and tools use to talk to each other.
 | [x402-payments](practices/x402-payments.md) | Letting an agent pay for an HTTP, MCP, or A2A resource with the x402 payment-required flow | — | x402, payments, http, mcp | active |
 | [ap2-payments](practices/ap2-payments.md) | Authorizing an agent to buy from a merchant with signed checkout and payment mandates | — | ap2, payments, commerce, authorization | active |
 | [ucp-commerce](practices/ucp-commerce.md) | Letting an agent discover a merchant and check out over UCP instead of scraping a storefront | — | ucp, commerce, checkout, discovery | active |
+| [standard-webhooks](practices/standard-webhooks.md) | Verifying or sending webhooks with Standard Webhooks headers instead of a vendor-specific signature | — | webhooks, signatures, http, interoperability | active |

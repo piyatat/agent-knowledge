@@ -12927,7 +12927,7 @@
       "tags": ["livekit", "voice", "realtime", "sdk"],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-17",
+      "updated": "2026-11-22",
       "when_to_use": "Building a Python or Node agent that joins a live audio, video, or phone room",
       "links": {
         "get": "https://docs.livekit.io/agents/start/voice-ai/",
@@ -12935,6 +12935,7 @@
         "home": "https://livekit.com/"
       },
       "related": [
+        "deepgram",
         "zep",
         "zep-memory-as-instructions",
         "mem0",
@@ -13082,7 +13083,7 @@
       "tags": ["elevenlabs", "voice", "agents", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-18",
+      "updated": "2026-11-22",
       "when_to_use": "Building a hosted voice or phone agent, or managing those agents from another MCP client",
       "links": {
         "get": "https://elevenlabs.io/app/sign-up",
@@ -13091,6 +13092,7 @@
       },
       "related": [
         "elevenlabs-mcp-workspace",
+        "deepgram",
         "livekit-agents",
         "zep",
         "prompt-injection-agent-defense"
@@ -13614,7 +13616,7 @@
       "tags": ["pipecat", "voice", "realtime", "cloud"],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-19",
+      "updated": "2026-11-22",
       "when_to_use": "Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud",
       "links": {
         "get": "https://docs.pipecat.ai/pipecat/get-started/introduction",
@@ -13623,6 +13625,7 @@
       },
       "related": [
         "pipecat-cloud-reserved-minutes",
+        "deepgram",
         "livekit-agents",
         "elevenlabs-agents",
         "e2b-sandboxes",
@@ -14974,7 +14977,7 @@
         "docs": "https://posthog.com/docs/model-context-protocol",
         "home": "https://posthog.com/"
       },
-      "related": ["posthog-mcp-quota-and-pin", "sentry", "langfuse", "braintrust", "opik"]
+      "related": ["posthog-mcp-quota-and-pin", "statsig", "sentry", "langfuse", "braintrust", "opik"]
     },
     {
       "id": "posthog-mcp-quota-and-pin",
@@ -15229,6 +15232,113 @@
       "updated": "2026-11-22",
       "when_to_use": "An R2 bill spiked after listings or Infrequent Access, or an object token failed on the REST API",
       "related": ["cloudflare-r2", "cloudflare-agents", "supabase"]
+    },
+    {
+      "id": "statsig",
+      "path": "practices/statsig.md",
+      "title": "Statsig — feature gates, experiments, and a console MCP server",
+      "tags": ["statsig", "flags", "experiments", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Checking or changing Statsig feature gates and experiments, or letting an agent use the console",
+      "links": {
+        "get": "https://console.statsig.com/sign_up",
+        "docs": "https://docs.statsig.com/integrations/mcp/overview",
+        "home": "https://www.statsig.com/"
+      },
+      "related": ["statsig-mcp-confirm-and-meter", "posthog", "posthog-mcp-quota-and-pin"]
+    },
+    {
+      "id": "statsig-mcp-confirm-and-meter",
+      "path": "failure-modes/statsig-mcp-confirm-and-meter.md",
+      "title": "A Statsig write needs confirmation, or free-tier lifts stop while gates keep serving",
+      "tags": ["statsig", "mcp", "flags", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "A Statsig MCP update did nothing, a review approval did not ship, or Metric Lifts stopped on the free tier",
+      "related": ["statsig", "posthog"]
+    },
+    {
+      "id": "svix",
+      "path": "practices/svix.md",
+      "title": "Svix — customer webhooks, ingest, and dashboard MCP",
+      "tags": ["svix", "webhooks", "mcp", "messaging"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Sending webhooks to your customers, or letting an agent debug Svix deliveries and ingest",
+      "links": {
+        "get": "https://dashboard.svix.com/signup",
+        "docs": "https://docs.svix.com/ai/dashboard-mcp",
+        "home": "https://www.svix.com/"
+      },
+      "related": ["svix-idempotency-and-disable", "standard-webhooks", "standard-webhooks-reserialized-body", "inngest", "stripe"]
+    },
+    {
+      "id": "svix-idempotency-and-disable",
+      "path": "failure-modes/svix-idempotency-and-disable.md",
+      "title": "A Svix retry sends the event twice, or a failing endpoint turns itself off",
+      "tags": ["svix", "webhooks", "idempotency", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "A Svix send duplicated an event, a customer endpoint stopped receiving, or the message count jumped with payload size",
+      "related": ["svix", "standard-webhooks", "standard-webhooks-reserialized-body", "agent-retry-idempotency"]
+    },
+    {
+      "id": "deepgram",
+      "path": "practices/deepgram.md",
+      "title": "Deepgram — speech-to-text, Flux turn-taking, and voice APIs",
+      "tags": ["deepgram", "speech", "voice", "transcription"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Transcribing live or recorded audio for an agent, or streaming turn-taking speech with Flux",
+      "links": {
+        "get": "https://console.deepgram.com/signup",
+        "docs": "https://developers.deepgram.com/docs/stt/getting-started",
+        "home": "https://deepgram.com/"
+      },
+      "related": ["deepgram-default-model-and-concurrency", "livekit-agents", "pipecat", "elevenlabs-agents"]
+    },
+    {
+      "id": "deepgram-default-model-and-concurrency",
+      "path": "failure-modes/deepgram-default-model-and-concurrency.md",
+      "title": "Deepgram transcribed with Base, or a second project did not add concurrency",
+      "tags": ["deepgram", "speech", "models", "rate-limits"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "A Deepgram transcript used the wrong model, returned 429, or rejected a Bearer token",
+      "related": ["deepgram", "livekit-agents", "pipecat", "rate-limit-backoff-tools"]
+    },
+    {
+      "id": "standard-webhooks",
+      "path": "practices/standard-webhooks.md",
+      "title": "Standard Webhooks — signed webhook headers and retries",
+      "tags": ["webhooks", "signatures", "http", "interoperability"],
+      "kind": "protocol",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Verifying or sending webhooks with Standard Webhooks headers instead of a vendor-specific signature",
+      "links": {
+        "docs": "https://github.com/standard-webhooks/standard-webhooks/blob/main/spec/standard-webhooks.md",
+        "home": "https://www.standardwebhooks.com/"
+      },
+      "related": ["standard-webhooks-reserialized-body", "svix", "svix-idempotency-and-disable"]
+    },
+    {
+      "id": "standard-webhooks-reserialized-body",
+      "path": "failure-modes/standard-webhooks-reserialized-body.md",
+      "title": "A Standard Webhooks signature fails after the body is re-serialized",
+      "tags": ["webhooks", "signatures", "security", "idempotency"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "A webhook signature check fails on a body that parsed as JSON, or a retry is processed twice",
+      "related": ["standard-webhooks", "svix", "agent-retry-idempotency"]
     }
   ]
 }

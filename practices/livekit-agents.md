@@ -4,7 +4,7 @@ title: LiveKit Agents — realtime voice, video, and phone agents
 kind: tool
 tags: [livekit, voice, realtime, sdk]
 status: active
-updated: 2026-11-17
+updated: 2026-11-22
 when_to_use: Building a Python or Node agent that joins a live audio, video, or phone room
 ---
 
@@ -18,7 +18,7 @@ when_to_use: Building a Python or Node agent that joins a live audio, video, or 
 - **Auth.** The agent server registers with a Cloud project or a self-hosted LiveKit server, then a job subprocess joins the room. Model calls can use **LiveKit Inference** (billed as Cloud inference credits, no separate provider key) or a provider plugin with that provider’s key. Cloud project keys stay in the project, not in the prompt.
 - **Plans (pricing page, 2026-11-17).** **Build** is **$0/month** and includes agent deployment, observability, simulations, inference credits, the global edge, one telephony number, and session analytics. **Ship** starts at **$50/month** (team collaboration, custom voices, rollback). **Scale** starts at **$500/month** (role-based access, region pinning, private links, HIPAA). Session minutes, inbound US local minutes, and inference credits are allotted per plan; the pricing page is the estimator. Enterprise adds SSO and a support SLA.
 - **Dispatch.** By default, agent servers in a Cloud project are dispatched to **each new room**. A job is a subprocess for that room. Telephony uses LiveKit SIP so a caller can join from a phone.
-- **Alternatives.** Zep (`zep`) or Mem0 (`mem0`) when the gap is long-term memory rather than the audio path. Browserbase when the agent must drive a page, not a room.
+- **Alternatives.** Deepgram (`deepgram`) when the missing piece is hosted speech-to-text or Flux turn-taking and this framework only joins the room. Zep (`zep`) or Mem0 (`mem0`) when the gap is long-term memory rather than the audio path. Browserbase when the agent must drive a page, not a room.
 - **Caveats.** Tools and retrieved context are still untrusted (`prompt-injection-agent-defense`, `zep-memory-as-instructions`). A Cloud project that creates rooms for unrelated users will attach this agent to those rooms until dispatch is narrowed.
 
 ## Sources
