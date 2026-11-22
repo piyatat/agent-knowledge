@@ -123,7 +123,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [docling](practices/docling.md) | Converting PDFs and Office files to markdown on the machine that runs the agent | [link](https://docling-project.github.io/docling/getting_started/installation/) | docling, documents, parse, mcp | active |
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 
-## Services (138)
+## Services (141)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -193,9 +193,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [greptile-review](practices/greptile-review.md) | Adding a hosted reviewer on GitHub, GitLab, Bitbucket, or Cursor Origin, or reviewing a local branch with the… | — | review, github, gitlab, credits | active |
 | [qodo-platform](practices/qodo-platform.md) | Adding Qodo review on a pull request, or giving a local coding agent Qodo skills | — | qodo, review, github, skills | active |
 | [e2b-sandboxes](practices/e2b-sandboxes.md) | Running agent-generated code in an isolated Linux VM you can pause and resume | — | e2b, sandbox, isolation, sdk | active |
-| [cloudflare-agents](practices/cloudflare-agents.md) | Hosting a durable agent with SQLite state and schedules on Cloudflare | — | cloudflare, hosting, durable, pi | active |
+| [cloudflare-agents](practices/cloudflare-agents.md) | Hosting a durable agent with SQLite state and schedules on Cloudflare | [link](https://dash.cloudflare.com/sign-up) | cloudflare, hosting, durable, pi | active |
 | [daytona-sandboxes](practices/daytona-sandboxes.md) | Running agent code in a Daytona sandbox (container, VM, GPU, or macOS) you can stop, pause, or archive | — | daytona, sandbox, isolation, sdk | active |
-| [vercel-sandbox](practices/vercel-sandbox.md) | Running untrusted or agent-generated code in a Vercel Firecracker microVM with Active CPU billing | — | vercel, sandbox, isolation, sdk | active |
+| [vercel-sandbox](practices/vercel-sandbox.md) | Running untrusted or agent-generated code in a Vercel Firecracker microVM with Active CPU billing | [link](https://vercel.com/signup) | vercel, sandbox, isolation, sdk | active |
 | [modal-sandboxes](practices/modal-sandboxes.md) | Running agent-generated or user code in a Modal container that can burst CPU and memory | — | modal, sandbox, isolation, sdk | active |
 | [langsmith-agent-server](practices/langsmith-agent-server.md) | Hosting a LangGraph or other framework agent with durable threads, separate from LangSmith tracing | — | langsmith, hosting, orchestration, durability | active |
 | [browserbase](practices/browserbase.md) | Giving an agent a hosted browser, or using Search and Fetch before opening a full session | — | browserbase, browser, sandbox, stagehand | active |
@@ -267,6 +267,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [turso](practices/turso.md) | Giving an app or agent many SQLite databases, embedded sync, or SQL over a hosted MCP server | [link](https://app.turso.tech/signup) | turso, sqlite, database, mcp | active |
 | [planetscale](practices/planetscale.md) | Hosting Vitess or Postgres on PlanetScale, or letting an agent inspect branches, schema, and Insights | [link](https://auth.planetscale.com/sign-up) | planetscale, postgres, mysql, database | active |
 | [mongodb-atlas](practices/mongodb-atlas.md) | Hosting MongoDB for an app, or letting an agent query Atlas through the managed MCP server | [link](https://www.mongodb.com/cloud/atlas/register) | mongodb, atlas, database, mcp | active |
+| [railway](practices/railway.md) | Deploying an app on Railway, or letting an agent manage projects and deploys through Railway MCP | [link](https://railway.com/) | railway, hosting, mcp, deploy | active |
+| [fly-io](practices/fly-io.md) | Running an app on Fly Machines, or letting an agent manage Machines and Postgres through Fly MCP | [link](https://fly.io/app/sign-up) | fly, hosting, mcp, machines | active |
+| [cloudflare-r2](practices/cloudflare-r2.md) | Storing agent artifacts, uploads, or public files in object storage without an egress fee | [link](https://dash.cloudflare.com/sign-up) | cloudflare, r2, storage, s3 | active |
 
 ## Protocols and standards (22)
 

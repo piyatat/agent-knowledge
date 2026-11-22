@@ -3407,4 +3407,31 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Atlas registration | https://www.mongodb.com/cloud/atlas/register |
 | MongoDB Atlas product page | https://www.mongodb.com/products/platform/atlas-database |
 
+## Daily ingest 2026-11-22 (Railway, Fly.io, Cloudflare R2)
+
+| Topic | URL |
+| --- | --- |
+| Railway MCP server | https://docs.railway.com/ai/mcp-server |
+| Railway pricing | https://docs.railway.com/pricing |
+| Railway pricing plans | https://docs.railway.com/pricing/plans |
+| Railway Free plan | https://docs.railway.com/pricing/free-plan |
+| Railway | https://railway.com/ |
+| Fly MCP | https://fly.io/mcp/ |
+| Fly.io pricing | https://fly.io/pricing/ |
+| Fly.io resource pricing | https://docs.fly.io/about/pricing |
+| Fly.io Free plan | https://docs.fly.io/about/free-plan |
+| Sign up and sign in to Fly.io | https://docs.fly.io/getting-started/sign-up-sign-in |
+| Fly.io sign-up | https://fly.io/app/sign-up |
+| Cloudflare R2 overview | https://developers.cloudflare.com/r2/ |
+| R2 pricing | https://developers.cloudflare.com/r2/pricing/ |
+| R2 limits | https://developers.cloudflare.com/r2/platform/limits/ |
+| R2 authentication | https://developers.cloudflare.com/r2/api/tokens/ |
+| R2 troubleshooting | https://developers.cloudflare.com/r2/platform/troubleshooting/ |
+| Cloudflare R2 | https://www.cloudflare.com/products/r2/ |
+| Cloudflare sign-up | https://dash.cloudflare.com/sign-up |
+| Cloudflare Agents | https://developers.cloudflare.com/agents/ |
+| Vercel sign-up | https://vercel.com/signup |
+| Vercel Sandbox | https://vercel.com/docs/sandbox |
+| Vercel | https://vercel.com/ |
+
 

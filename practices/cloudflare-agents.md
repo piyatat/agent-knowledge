@@ -4,7 +4,7 @@ title: Cloudflare Agents — durable agents on Workers
 kind: service
 tags: [cloudflare, hosting, durable, pi]
 status: active
-updated: 2026-11-14
+updated: 2026-11-22
 when_to_use: Hosting a durable agent with SQLite state and schedules on Cloudflare
 ---
 
@@ -19,7 +19,7 @@ when_to_use: Hosting a durable agent with SQLite state and schedules on Cloudfla
 - **What the runtime gives you:** per-instance SQL, WebSockets, a scheduler, MCP client, and optional tools (workspace and code execution via Cloudflare Computer, browser, web fetch, web search, AI Search, payments, Code Mode). Channels documented include chat, email, voice, Slack, and webhooks. State cap in the limits table is **1 GB** per agent. CPU time is **30 seconds**, refreshed by an HTTP request, a scheduled task, or an incoming WebSocket message; wall-clock waits (including an LLM response) are not that CPU cap.
 - **Pi harness limits:** there is **no approval step** for tool calls. `abort()` waits until the session is idle. A single model request that streams longer than **15 minutes** can be cut off (alarms run up to 15 minutes; the harness hands off about every 10). Eviction, crash, or a deploy mid-run restarts from the last checkpoint via the wake-up job. Tools marked `replay: "safe"` run again; other in-flight tools return an interrupted result instead of replaying. Partial streamed text is kept and retried under `settings.retry`.
 - **Pricing:** you pay Cloudflare for Workers, Durable Objects, and any model or AI Gateway usage. The docs do not publish a single Agents SKU in the pages cited here.
-- **Alternatives:** run `pi` locally when the files are on a developer machine. E2B when the job is an isolated Linux VM with pause/resume. Foundry Agent Service or Bedrock AgentCore when the agent must live in Azure or AWS (`foundry-agent-service`, `bedrock-agentcore`).
+- **Alternatives:** run `pi` locally when the files are on a developer machine. E2B when the job is an isolated Linux VM with pause/resume. Foundry Agent Service or Bedrock AgentCore when the agent must live in Azure or AWS (`foundry-agent-service`, `bedrock-agentcore`). R2 (`cloudflare-r2`) when the same account needs object storage.
 - **Caveats:** a tool with no approval gate plus a workspace is remote code execution on that object. Pin the Pi minor your `agents` version expects. Untrusted channel text is still untrusted input (`prompt-injection-agent-defense`).
 
 ## Sources

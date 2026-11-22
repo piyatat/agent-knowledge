@@ -11606,8 +11606,13 @@
       ],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-14",
+      "updated": "2026-11-22",
       "when_to_use": "Hosting a durable agent with SQLite state and schedules on Cloudflare",
+      "links": {
+        "get": "https://dash.cloudflare.com/sign-up",
+        "docs": "https://developers.cloudflare.com/agents/",
+        "home": "https://developers.cloudflare.com/agents/"
+      },
       "related": [
         "pi-coding-agent",
         "cloudflare-ai-gateway",
@@ -11615,7 +11620,8 @@
         "foundry-agent-service",
         "bedrock-agentcore",
         "e2b-sandboxes",
-        "prompt-injection-agent-defense"
+        "prompt-injection-agent-defense",
+        "cloudflare-r2"
       ]
     },
     {
@@ -11652,14 +11658,21 @@
       ],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-15",
+      "updated": "2026-11-22",
       "when_to_use": "Running untrusted or agent-generated code in a Vercel Firecracker microVM with Active CPU billing",
+      "links": {
+        "get": "https://vercel.com/signup",
+        "docs": "https://vercel.com/docs/sandbox",
+        "home": "https://vercel.com/"
+      },
       "related": [
         "e2b-sandboxes",
         "daytona-sandboxes",
         "cloudflare-agents",
         "agent-code-sandboxing",
-        "modal-sandboxes"
+        "modal-sandboxes",
+        "railway",
+        "fly-io"
       ]
     },
     {
@@ -15135,6 +15148,87 @@
       "updated": "2026-11-22",
       "when_to_use": "An Atlas agent cannot authorize, tool calls return 429 or 403, or a Free cluster stops accepting connections",
       "related": ["mongodb-atlas", "neon", "convex"]
+    },
+    {
+      "id": "railway",
+      "path": "practices/railway.md",
+      "title": "Railway — hosted apps and a remote MCP server",
+      "tags": ["railway", "hosting", "mcp", "deploy"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Deploying an app on Railway, or letting an agent manage projects and deploys through Railway MCP",
+      "links": {
+        "get": "https://railway.com/",
+        "docs": "https://docs.railway.com/ai/mcp-server",
+        "home": "https://railway.com/"
+      },
+      "related": ["railway-free-sleep-and-mcp-token", "fly-io", "vercel-sandbox", "cloudflare-agents", "neon"]
+    },
+    {
+      "id": "railway-free-sleep-and-mcp-token",
+      "path": "failure-modes/railway-free-sleep-and-mcp-token.md",
+      "title": "A Railway service sleeps or stops, or MCP rejects the token",
+      "tags": ["railway", "mcp", "hosting", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "A Railway service slept or stopped, MCP rejected a token, or an agent deploy also billed model tokens",
+      "related": ["railway", "fly-io", "vercel-sandbox"]
+    },
+    {
+      "id": "fly-io",
+      "path": "practices/fly-io.md",
+      "title": "Fly.io — Machines, Sprites, and an OAuth MCP server",
+      "tags": ["fly", "hosting", "mcp", "machines"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Running an app on Fly Machines, or letting an agent manage Machines and Postgres through Fly MCP",
+      "links": {
+        "get": "https://fly.io/app/sign-up",
+        "docs": "https://fly.io/mcp/",
+        "home": "https://fly.io/"
+      },
+      "related": ["fly-free-overage-and-mcp-grant", "railway", "vercel-sandbox", "e2b-sandboxes", "daytona-sandboxes"]
+    },
+    {
+      "id": "fly-free-overage-and-mcp-grant",
+      "path": "failure-modes/fly-free-overage-and-mcp-grant.md",
+      "title": "Fly bills the whole month after $5, or MCP refuses a write",
+      "tags": ["fly", "mcp", "hosting", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Fly usage crossed the free allowance, a stopped Machine still costs money, or MCP refused a write",
+      "related": ["fly-io", "railway", "vercel-sandbox"]
+    },
+    {
+      "id": "cloudflare-r2",
+      "path": "practices/cloudflare-r2.md",
+      "title": "Cloudflare R2 — object storage with no egress fee",
+      "tags": ["cloudflare", "r2", "storage", "s3"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Storing agent artifacts, uploads, or public files in object storage without an egress fee",
+      "links": {
+        "get": "https://dash.cloudflare.com/sign-up",
+        "docs": "https://developers.cloudflare.com/r2/",
+        "home": "https://www.cloudflare.com/products/r2/"
+      },
+      "related": ["cloudflare-r2-ia-and-class-a", "cloudflare-agents", "cloudflare-workflows", "supabase", "fly-io"]
+    },
+    {
+      "id": "cloudflare-r2-ia-and-class-a",
+      "path": "failure-modes/cloudflare-r2-ia-and-class-a.md",
+      "title": "An R2 list or Infrequent Access tier blows the free allowance",
+      "tags": ["cloudflare", "r2", "storage", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "An R2 bill spiked after listings or Infrequent Access, or an object token failed on the REST API",
+      "related": ["cloudflare-r2", "cloudflare-agents", "supabase"]
     }
   ]
 }
