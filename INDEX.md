@@ -594,9 +594,9 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | figma-mcp | service | `practices/figma-mcp.md` | active | 2026-11-21 | Letting an agent read a Figma frame or write frames back to the canvas | figma-mcp-seat-and-link, agent-skills-open-standard, mcp-server-trust-failures |
 | mistral-ocr | service | `practices/mistral-ocr.md` | active | 2026-11-21 | Turning a PDF or scan into markdown with Mistral's hosted OCR instead of a local parser | mistral-ocr-size-and-url, docling, llamaparse, reducto, mistral-vibe |
 | clerk | service | `practices/clerk.md` | active | 2026-11-21 | Adding sign-up, sessions, and organizations to an app, or letting an agent manage a Clerk workspace | clerk-mcp-workspace-and-secret, supabase, composio, neon, workos |
-| neon | service | `practices/neon.md` | active | 2026-11-21 | Giving an app or agent a hosted Postgres that branches and suspends when idle | neon-scale-to-zero-and-mcp, supabase, clerk, pinecone, qdrant-cloud, convex |
+| neon | service | `practices/neon.md` | active | 2026-11-21 | Giving an app or agent a hosted Postgres that branches and suspends when idle | neon-scale-to-zero-and-mcp, supabase, clerk, pinecone, qdrant-cloud, convex, planetscale, turso, mongodb-atlas |
 | stripe | service | `practices/stripe.md` | active | 2026-11-21 | Letting an agent create Stripe customers, Checkout sessions, or subscriptions, or look up a payment | stripe-mcp-key-and-confirmation, x402-payments, ap2-payments, ucp-commerce, clerk |
-| supabase | service | `practices/supabase.md` | active | 2026-11-21 | Hosting an app’s Postgres with Auth and Storage, or letting an agent query a Supabase project | supabase-mcp-sql-and-pause, neon, clerk, prompt-injection-agent-defense |
+| supabase | service | `practices/supabase.md` | active | 2026-11-21 | Hosting an app’s Postgres with Auth and Storage, or letting an agent query a Supabase project | supabase-mcp-sql-and-pause, neon, clerk, prompt-injection-agent-defense, planetscale, mongodb-atlas |
 | resend | service | `practices/resend.md` | active | 2026-11-21 | Sending app email through Resend, or letting an agent manage domains, templates, and inbound mail | resend-quota-and-test-domain, composio, stripe |
 | sentry | service | `practices/sentry.md` | active | 2026-11-21 | Capturing application errors and traces, or letting an agent search Sentry issues and call Seer | sentry-quota-and-seer-billing, cursor-sentry, github-copilot-sentry, langfuse, braintrust, opik, posthog, datadog |
 | workos | service | `practices/workos.md` | active | 2026-11-21 | Adding enterprise SSO and user auth with WorkOS, or letting an agent manage a WorkOS workspace | workos-mcp-sandbox-and-audience, clerk, supabase, mcp-oauth-scopes |
@@ -604,7 +604,10 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | posthog | service | `practices/posthog.md` | active | 2026-11-22 | Querying product analytics, feature flags, or errors in PostHog, or letting an agent change them | posthog-mcp-quota-and-pin, sentry, langfuse, braintrust, opik |
 | linear-mcp | service | `practices/linear-mcp.md` | active | 2026-11-22 | Reading or updating Linear issues, projects, and documents from a coding agent | linear-mcp-token-and-readonly, linear-loops-agent, cursor-linear-cloud-agents, prompt-injection-agent-defense |
 | datadog | service | `practices/datadog.md` | active | 2026-11-22 | Querying Datadog logs, traces, or monitors from an agent, or changing monitors through MCP | datadog-mcp-write-and-site, sentry, posthog, langfuse |
-| convex | service | `practices/convex.md` | active | 2026-11-22 | Giving an app a hosted Convex backend, or letting an agent inspect a Convex deployment | convex-mcp-production-and-cap, neon, supabase, pinecone |
+| convex | service | `practices/convex.md` | active | 2026-11-22 | Giving an app a hosted Convex backend, or letting an agent inspect a Convex deployment | convex-mcp-production-and-cap, neon, supabase, pinecone, mongodb-atlas, turso |
+| turso | service | `practices/turso.md` | active | 2026-11-22 | Giving an app or agent many SQLite databases, embedded sync, or SQL over a hosted MCP server | turso-quota-block-and-engine, neon, planetscale, convex |
+| planetscale | service | `practices/planetscale.md` | active | 2026-11-22 | Hosting Vitess or Postgres on PlanetScale, or letting an agent inspect branches, schema, and Insights | planetscale-branch-billing-and-mcp, neon, supabase, turso |
+| mongodb-atlas | service | `practices/mongodb-atlas.md` | active | 2026-11-22 | Hosting MongoDB for an app, or letting an agent query Atlas through the managed MCP server | mongodb-atlas-mcp-and-free-tier, neon, convex, turso |
 
 ## Failure Modes
 
@@ -700,6 +703,9 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | linear-mcp-token-and-readonly | knowledge | `failure-modes/linear-mcp-token-and-readonly.md` | active | 2026-11-22 | Linear MCP returns 401, a write is refused, or a client is still pointed at the SSE endpoint | linear-mcp, linear-loops-agent, cursor-linear-cloud-agents, mcp-oauth-scopes |
 | datadog-mcp-write-and-site | knowledge | `failure-modes/datadog-mcp-write-and-site.md` | active | 2026-11-22 | A Datadog MCP tool is missing, a write is hidden, or the client is pointed at the wrong site | datadog, sentry, mcp-server-trust-failures |
 | convex-mcp-production-and-cap | knowledge | `failure-modes/convex-mcp-production-and-cap.md` | active | 2026-11-22 | A Convex agent cannot read production rows, or a free-plan mutation fails at the resource cap | convex, neon, supabase |
+| turso-quota-block-and-engine | knowledge | `failure-modes/turso-quota-block-and-engine.md` | active | 2026-11-22 | Turso queries fail after a limit, a deleted database will not restore, or a libSQL client cannot open a Turso-engine database | turso, neon, planetscale |
+| planetscale-branch-billing-and-mcp | knowledge | `failure-modes/planetscale-branch-billing-and-mcp.md` | active | 2026-11-22 | A PlanetScale branch or resize charged more than expected, MCP queries fail an IP check, or writes still run after query access was tightened | planetscale, neon, supabase |
+| mongodb-atlas-mcp-and-free-tier | knowledge | `failure-modes/mongodb-atlas-mcp-and-free-tier.md` | active | 2026-11-22 | An Atlas agent cannot authorize, tool calls return 429 or 403, or a Free cluster stops accepting connections | mongodb-atlas, neon, convex |
 
 ## Glossary
 

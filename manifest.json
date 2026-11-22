@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Directory for AI agents to look up knowledge, tools and services before acting or while planning — curated notes with sources",
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -14772,7 +14772,7 @@
         "docs": "https://neon.com/docs/ai/neon-mcp-server",
         "home": "https://neon.com/"
       },
-      "related": ["neon-scale-to-zero-and-mcp", "supabase", "clerk", "pinecone", "qdrant-cloud", "convex"]
+      "related": ["neon-scale-to-zero-and-mcp", "supabase", "clerk", "pinecone", "qdrant-cloud", "convex", "planetscale", "turso", "mongodb-atlas"]
     },
     {
       "id": "neon-scale-to-zero-and-mcp",
@@ -14826,7 +14826,7 @@
         "docs": "https://supabase.com/docs/guides/ai-tools/mcp",
         "home": "https://supabase.com/"
       },
-      "related": ["supabase-mcp-sql-and-pause", "neon", "clerk", "prompt-injection-agent-defense"]
+      "related": ["supabase-mcp-sql-and-pause", "neon", "clerk", "prompt-injection-agent-defense", "planetscale", "mongodb-atlas"]
     },
     {
       "id": "supabase-mcp-sql-and-pause",
@@ -15042,7 +15042,7 @@
         "docs": "https://docs.convex.dev/ai/convex-mcp-server",
         "home": "https://www.convex.dev/"
       },
-      "related": ["convex-mcp-production-and-cap", "neon", "supabase", "pinecone"]
+      "related": ["convex-mcp-production-and-cap", "neon", "supabase", "pinecone", "mongodb-atlas", "turso"]
     },
     {
       "id": "convex-mcp-production-and-cap",
@@ -15054,6 +15054,87 @@
       "updated": "2026-11-22",
       "when_to_use": "A Convex agent cannot read production rows, or a free-plan mutation fails at the resource cap",
       "related": ["convex", "neon", "supabase"]
+    },
+    {
+      "id": "turso",
+      "path": "practices/turso.md",
+      "title": "Turso Cloud — hosted SQLite, two engines, and an OAuth MCP server",
+      "tags": ["turso", "sqlite", "database", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Giving an app or agent many SQLite databases, embedded sync, or SQL over a hosted MCP server",
+      "links": {
+        "get": "https://app.turso.tech/signup",
+        "docs": "https://docs.turso.tech/integrations/mcp",
+        "home": "https://turso.tech"
+      },
+      "related": ["turso-quota-block-and-engine", "neon", "planetscale", "convex"]
+    },
+    {
+      "id": "turso-quota-block-and-engine",
+      "path": "failure-modes/turso-quota-block-and-engine.md",
+      "title": "Turso blocks every database at one quota, or the client speaks to the wrong engine",
+      "tags": ["turso", "sqlite", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Turso queries fail after a limit, a deleted database will not restore, or a libSQL client cannot open a Turso-engine database",
+      "related": ["turso", "neon", "planetscale"]
+    },
+    {
+      "id": "planetscale",
+      "path": "practices/planetscale.md",
+      "title": "PlanetScale — Vitess, Neki, and Postgres with a hosted MCP server",
+      "tags": ["planetscale", "postgres", "mysql", "database", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Hosting Vitess or Postgres on PlanetScale, or letting an agent inspect branches, schema, and Insights",
+      "links": {
+        "get": "https://auth.planetscale.com/sign-up",
+        "docs": "https://planetscale.com/docs/mcp-server",
+        "home": "https://planetscale.com/"
+      },
+      "related": ["planetscale-branch-billing-and-mcp", "neon", "supabase", "turso"]
+    },
+    {
+      "id": "planetscale-branch-billing-and-mcp",
+      "path": "failure-modes/planetscale-branch-billing-and-mcp.md",
+      "title": "A PlanetScale branch starts a bill, or MCP can still write after a lock-down",
+      "tags": ["planetscale", "postgres", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "A PlanetScale branch or resize charged more than expected, MCP queries fail an IP check, or writes still run after query access was tightened",
+      "related": ["planetscale", "neon", "supabase"]
+    },
+    {
+      "id": "mongodb-atlas",
+      "path": "practices/mongodb-atlas.md",
+      "title": "MongoDB Atlas — document clusters and a hosted MCP server",
+      "tags": ["mongodb", "atlas", "database", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "Hosting MongoDB for an app, or letting an agent query Atlas through the managed MCP server",
+      "links": {
+        "get": "https://www.mongodb.com/cloud/atlas/register",
+        "docs": "https://www.mongodb.com/docs/mcp-server/overview/",
+        "home": "https://www.mongodb.com/products/platform/atlas-database"
+      },
+      "related": ["mongodb-atlas-mcp-and-free-tier", "neon", "convex", "turso"]
+    },
+    {
+      "id": "mongodb-atlas-mcp-and-free-tier",
+      "path": "failure-modes/mongodb-atlas-mcp-and-free-tier.md",
+      "title": "Atlas MCP rejects a custom agent, or a Free cluster pauses or throttles",
+      "tags": ["mongodb", "atlas", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-22",
+      "when_to_use": "An Atlas agent cannot authorize, tool calls return 429 or 403, or a Free cluster stops accepting connections",
+      "related": ["mongodb-atlas", "neon", "convex"]
     }
   ]
 }

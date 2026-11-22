@@ -3382,4 +3382,29 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Using Codex with Convex | https://docs.convex.dev/ai/using-codex |
 | Convex sign-up | https://www.convex.dev/signup |
 
+## Daily ingest 2026-11-22 (Turso, PlanetScale, MongoDB Atlas)
+
+| Topic | URL |
+| --- | --- |
+| Turso Cloud | https://docs.turso.tech/turso-cloud |
+| Turso SDKs | https://docs.turso.tech/sdk/introduction |
+| Turso MCP | https://docs.turso.tech/integrations/mcp |
+| Turso pricing | https://turso.tech/pricing.md |
+| Recover deleted Turso databases | https://docs.turso.tech/features/recover-deleted-databases |
+| Turso sign-up | https://app.turso.tech/signup |
+| PlanetScale plans | https://planetscale.com/docs/planetscale-plans |
+| PlanetScale pricing | https://planetscale.com/pricing.md |
+| PlanetScale billing | https://planetscale.com/docs/billing |
+| PlanetScale MCP | https://planetscale.com/docs/mcp-server |
+| PlanetScale MCP service tokens | https://planetscale.com/docs/mcp/service-token |
+| PlanetScale sign-up | https://auth.planetscale.com/sign-up |
+| MongoDB MCP server overview | https://www.mongodb.com/docs/mcp-server/overview/ |
+| MongoDB MCP access models | https://www.mongodb.com/docs/mcp-server/remote-mcp/access-models/ |
+| MongoDB managed MCP rate limits | https://www.mongodb.com/docs/mcp-server/remote-mcp/rate-limits/ |
+| Atlas Free cluster limits | https://www.mongodb.com/docs/atlas/reference/free-shared-limitations/ |
+| Get started with the MongoDB MCP server | https://www.mongodb.com/docs/mcp-server/get-started/ |
+| MongoDB pricing | https://www.mongodb.com/pricing |
+| Atlas registration | https://www.mongodb.com/cloud/atlas/register |
+| MongoDB Atlas product page | https://www.mongodb.com/products/platform/atlas-database |
+
 

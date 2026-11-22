@@ -123,7 +123,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [docling](practices/docling.md) | Converting PDFs and Office files to markdown on the machine that runs the agent | [link](https://docling-project.github.io/docling/getting_started/installation/) | docling, documents, parse, mcp | active |
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 
-## Services (135)
+## Services (138)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -264,6 +264,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [linear-mcp](practices/linear-mcp.md) | Reading or updating Linear issues, projects, and documents from a coding agent | [link](https://linear.app/signup) | linear, mcp, issues, auth | active |
 | [datadog](practices/datadog.md) | Querying Datadog logs, traces, or monitors from an agent, or changing monitors through MCP | [link](https://app.datadoghq.com/signup) | datadog, observability, mcp, logs | active |
 | [convex](practices/convex.md) | Giving an app a hosted Convex backend, or letting an agent inspect a Convex deployment | [link](https://www.convex.dev/signup) | convex, database, mcp, backend | active |
+| [turso](practices/turso.md) | Giving an app or agent many SQLite databases, embedded sync, or SQL over a hosted MCP server | [link](https://app.turso.tech/signup) | turso, sqlite, database, mcp | active |
+| [planetscale](practices/planetscale.md) | Hosting Vitess or Postgres on PlanetScale, or letting an agent inspect branches, schema, and Insights | [link](https://auth.planetscale.com/sign-up) | planetscale, postgres, mysql, database | active |
+| [mongodb-atlas](practices/mongodb-atlas.md) | Hosting MongoDB for an app, or letting an agent query Atlas through the managed MCP server | [link](https://www.mongodb.com/cloud/atlas/register) | mongodb, atlas, database, mcp | active |
 
 ## Protocols and standards (22)
 
