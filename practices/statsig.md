@@ -4,7 +4,7 @@ title: Statsig — feature gates, experiments, and a console MCP server
 kind: service
 tags: [statsig, flags, experiments, mcp]
 status: active
-updated: 2026-11-22
+updated: 2026-11-23
 when_to_use: Checking or changing Statsig feature gates and experiments, or letting an agent use the console
 ---
 
@@ -18,7 +18,7 @@ when_to_use: Checking or changing Statsig feature gates and experiments, or lett
 - **What an agent can do.** `get_context`, `search`, and `fetch` orient the session. Read tools cover gates, experiments, dynamic configs, metrics, audit logs, and Logs Explorer. Create and update tools cover gates, experiments, and dynamic configs. `discover_tools` plus `api_read`, `api_write`, and `api_destructive` reach layers, segments, Parameter Stores, reviews, and partial updates. Clients that opt into expanded exposure also get typed tools for some of those. Legacy V1 connections still work.
 - **Permissions.** Project Settings → Roles sets a project MCP ceiling of no access, read only, or read and write. A role can only narrow that ceiling. Read-and-write MCP access does not override entity permissions or review rules. Update tools and `api_destructive` require a `confirmation`. Approving a review does not commit the change. `api_destructive` includes sensitive updates and review actions, not only deletion.
 - **Plans (pricing page, 2026-11-22).** Developer is free: 2 million metered events a calendar month, unlimited flag and config checks, 50,000 session replays, one year of analytics retention, and unlimited seats. Pro is $150 a month: 5 million events, then $0.05 per extra 1,000, 100,000 session replays, unlimited analytics retention, change reviews, and API controls. The $150 is charged at the start of the period; overages land on the next bill. Enterprise is custom and adds warehouse-native deployment, SSO, and a HIPAA BAA. Flag and config checks at 0% or 100% are not metered unless Metric Lifts are on and the gate is a partial rollout.
-- **Alternatives.** PostHog when the same project should also hold analytics and error tracking.
+- **Alternatives.** LaunchDarkly (`launchdarkly`) for flags, experiments, and a hosted MCP on another vendor. PostHog when the same project should also hold analytics and error tracking.
 - **Caveats.** Passing the free-event cap stops Metric Lift math, not gate targeting, and a confirmation is a real write. Details: `statsig-mcp-confirm-and-meter`.
 
 ## Sources

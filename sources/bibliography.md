@@ -3544,4 +3544,33 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Checkly sign-up | https://app.checklyhq.com/signup/ |
 | Checkly | https://www.checklyhq.com/ |
 
+## Daily ingest 2026-11-23 (Paddle, MotherDuck, LaunchDarkly, Claude Code 2.1.331)
+
+| Topic | URL |
+| --- | --- |
+| Paddle MCP server | https://developer.paddle.com/sdks/ai/paddle-mcp/ |
+| Connect the live Paddle MCP server with OAuth | https://developer.paddle.com/changelog/2026/paddle-mcp-oauth/ |
+| Paddle go-live checklist | https://developer.paddle.com/build/go-live-checklist/ |
+| Paddle pricing | https://www.paddle.com/pricing |
+| Paddle sign-up | https://login.paddle.com/signup |
+| Paddle | https://www.paddle.com/ |
+| MotherDuck MCP setup | https://motherduck.com/docs/key-tasks/ai-and-motherduck/mcp-workflows/mcp-setup/ |
+| MotherDuck MCP access token | https://motherduck.com/docs/key-tasks/ai-and-motherduck/mcp-workflows/connect-with-access-token/ |
+| MotherDuck read-only MCP | https://motherduck.com/docs/key-tasks/ai-and-motherduck/mcp-workflows/securing-read-only-access/ |
+| MotherDuck pricing | https://motherduck.com/docs/about-motherduck/billing/pricing/ |
+| MotherDuck agent account signup | https://motherduck.com/docs/key-tasks/ai-and-motherduck/agent-account-signup/ |
+| MotherDuck | https://motherduck.com/ |
+| MotherDuck app | https://app.motherduck.com/ |
+| LaunchDarkly hosted MCP server | https://launchdarkly.com/docs/home/getting-started/mcp-hosted |
+| Get started with LaunchDarkly | https://launchdarkly.com/docs/home/getting-started |
+| Joining a LaunchDarkly account | https://launchdarkly.com/docs/home/getting-started/join-account |
+| LaunchDarkly pricing | https://launchdarkly.com/pricing/ |
+| LaunchDarkly sign-up | https://app.launchdarkly.com/signup |
+| LaunchDarkly | https://launchdarkly.com/ |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Claude Code 2.1.331 | https://github.com/anthropics/claude-code/releases/tag/v2.1.331 |
+| Claude Code Code Mode | https://code.claude.com/docs/en/code-mode |
+| Claude Code plugin install | https://code.claude.com/docs/en/plugins/install |
+| Claude Code plugins overview | https://code.claude.com/docs/en/plugins/overview |
+
 

@@ -3412,8 +3412,13 @@
         "supply-chain"
       ],
       "status": "active",
-      "updated": "2026-11-14",
+      "updated": "2026-11-23",
       "when_to_use": "Packaging or installing Claude Code skills/hooks/MCP/LSP/mods as a plugin, or pinning engines[\"claude-code\"] in plugin.json",
+      "links": {
+        "get": "https://code.claude.com/docs/en/plugins/install",
+        "docs": "https://code.claude.com/docs/en/plugins/overview",
+        "home": "https://claude.com/product/claude-code"
+      },
       "related": [
         "cursor-plugins",
         "agent-skills-open-standard",
@@ -3424,7 +3429,8 @@
         "claude-code-security",
         "claude-code-security-guidance",
         "claude-code-mods",
-        "claude-code-monitor"
+        "claude-code-monitor",
+        "claude-plugin-marketplace-autoupdate"
       ]
     },
     {
@@ -3870,7 +3876,7 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-11-20",
+      "updated": "2026-11-23",
       "when_to_use": "Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks instead of CLAUDE.md advice",
       "links": {
         "get": "https://code.claude.com/docs/en/setup",
@@ -11036,7 +11042,7 @@
         "experimental"
       ],
       "status": "active",
-      "updated": "2026-11-20",
+      "updated": "2026-11-23",
       "when_to_use": "Turning on experimental Code Mode so Claude writes JavaScript that calls tools in one step, or diagnosing why it will not start",
       "related": [
         "code-mode-tool-orchestration",
@@ -11045,7 +11051,8 @@
         "claude-code-hooks",
         "claude-code-auto-mode",
         "claude-code-agent-teams",
-        "claude-code-mode-hook-fail-open"
+        "claude-code-mode-hook-fail-open",
+        "claude-code-mode-provider-docs"
       ]
     },
     {
@@ -14815,7 +14822,7 @@
         "docs": "https://docs.stripe.com/mcp",
         "home": "https://stripe.com/"
       },
-      "related": ["stripe-mcp-key-and-confirmation", "polar", "x402-payments", "ap2-payments", "ucp-commerce", "clerk"]
+      "related": ["stripe-mcp-key-and-confirmation", "polar", "paddle", "x402-payments", "ap2-payments", "ucp-commerce", "clerk"]
     },
     {
       "id": "stripe-mcp-key-and-confirmation",
@@ -14970,14 +14977,14 @@
       "tags": ["posthog", "analytics", "flags", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-23",
       "when_to_use": "Querying product analytics, feature flags, or errors in PostHog, or letting an agent change them",
       "links": {
         "get": "https://us.posthog.com/signup",
         "docs": "https://posthog.com/docs/model-context-protocol",
         "home": "https://posthog.com/"
       },
-      "related": ["posthog-mcp-quota-and-pin", "statsig", "sentry", "langfuse", "braintrust", "opik"]
+      "related": ["posthog-mcp-quota-and-pin", "statsig", "launchdarkly", "sentry", "langfuse", "braintrust", "opik"]
     },
     {
       "id": "posthog-mcp-quota-and-pin",
@@ -15240,14 +15247,14 @@
       "tags": ["statsig", "flags", "experiments", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-23",
       "when_to_use": "Checking or changing Statsig feature gates and experiments, or letting an agent use the console",
       "links": {
         "get": "https://console.statsig.com/sign_up",
         "docs": "https://docs.statsig.com/integrations/mcp/overview",
         "home": "https://www.statsig.com/"
       },
-      "related": ["statsig-mcp-confirm-and-meter", "posthog", "posthog-mcp-quota-and-pin"]
+      "related": ["statsig-mcp-confirm-and-meter", "launchdarkly", "posthog", "posthog-mcp-quota-and-pin"]
     },
     {
       "id": "statsig-mcp-confirm-and-meter",
@@ -15462,7 +15469,7 @@
         "docs": "https://clickhouse.com/docs/products/cloud/features/ai-ml/remote-mcp",
         "home": "https://clickhouse.com/"
       },
-      "related": ["clickhouse-idle-and-mcp", "neon", "supabase", "datadog"]
+      "related": ["clickhouse-idle-and-mcp", "motherduck", "neon", "supabase", "datadog"]
     },
     {
       "id": "clickhouse-idle-and-mcp",
@@ -15543,7 +15550,7 @@
         "docs": "https://polar.sh/docs/integrate/mcp",
         "home": "https://polar.sh/"
       },
-      "related": ["polar-live-mcp-and-refund-fees", "stripe", "x402-payments"]
+      "related": ["polar-live-mcp-and-refund-fees", "stripe", "paddle", "x402-payments"]
     },
     {
       "id": "polar-live-mcp-and-refund-fees",
@@ -15582,6 +15589,109 @@
       "updated": "2026-11-23",
       "when_to_use": "Checkly checks stopped on a free account, a browser check returned 402, or an agent edited a different Checkly account",
       "related": ["checkly", "sentry", "datadog"]
+    },
+    {
+      "id": "paddle",
+      "path": "practices/paddle.md",
+      "title": "Paddle Billing — merchant of record, with sandbox and live MCP servers",
+      "tags": ["paddle", "payments", "billing", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Selling software while Paddle is the merchant of record, or letting an agent change a Paddle catalog and subscriptions",
+      "links": {
+        "get": "https://login.paddle.com/signup",
+        "docs": "https://developer.paddle.com/sdks/ai/paddle-mcp/",
+        "home": "https://www.paddle.com/"
+      },
+      "related": ["paddle-sandbox-key-and-live-writes", "polar", "stripe", "x402-payments"]
+    },
+    {
+      "id": "paddle-sandbox-key-and-live-writes",
+      "path": "failure-modes/paddle-sandbox-key-and-live-writes.md",
+      "title": "A Paddle sandbox key hit live MCP, or a read-only grant tried to change prices",
+      "tags": ["paddle", "payments", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "A Paddle MCP call returned an auth error, a sandbox test moved a live catalog, or an agent could read prices and could not change them",
+      "related": ["paddle", "polar", "stripe"]
+    },
+    {
+      "id": "motherduck",
+      "path": "practices/motherduck.md",
+      "title": "MotherDuck — hosted DuckDB, with a read-write remote MCP server",
+      "tags": ["motherduck", "duckdb", "analytics", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Querying analytical tables with hosted DuckDB, or letting an agent read and write a MotherDuck organization",
+      "links": {
+        "get": "https://app.motherduck.com/",
+        "docs": "https://motherduck.com/docs/key-tasks/ai-and-motherduck/mcp-workflows/mcp-setup/",
+        "home": "https://motherduck.com/"
+      },
+      "related": ["motherduck-mcp-write-and-unclaimed", "clickhouse-cloud", "neon", "supabase"]
+    },
+    {
+      "id": "motherduck-mcp-write-and-unclaimed",
+      "path": "failure-modes/motherduck-mcp-write-and-unclaimed.md",
+      "title": "MotherDuck MCP wrote data, or an agent-created organization disappeared",
+      "tags": ["motherduck", "mcp", "billing", "analytics"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "A MotherDuck agent changed tables it was only supposed to read, a Standard Duckling kept billing after the query, or an unclaimed organization vanished",
+      "related": ["motherduck", "clickhouse-cloud"]
+    },
+    {
+      "id": "launchdarkly",
+      "path": "practices/launchdarkly.md",
+      "title": "LaunchDarkly — feature flags and a hosted MCP server",
+      "tags": ["launchdarkly", "flags", "experiments", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Changing LaunchDarkly flags or experiments from an agent, or checking a flag before a release",
+      "links": {
+        "get": "https://app.launchdarkly.com/signup",
+        "docs": "https://launchdarkly.com/docs/home/getting-started/mcp-hosted",
+        "home": "https://launchdarkly.com/"
+      },
+      "related": ["launchdarkly-mcp-writes-and-token", "statsig", "posthog"]
+    },
+    {
+      "id": "launchdarkly-mcp-writes-and-token",
+      "path": "failure-modes/launchdarkly-mcp-writes-and-token.md",
+      "title": "LaunchDarkly MCP could change flags, or an API token was rejected",
+      "tags": ["launchdarkly", "flags", "mcp", "auth"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "A LaunchDarkly agent turned a flag on, a hosted MCP call returned 401 with an API token, or an old tool name failed after reconnecting",
+      "related": ["launchdarkly", "statsig", "posthog"]
+    },
+    {
+      "id": "claude-code-mode-provider-docs",
+      "path": "failure-modes/claude-code-mode-provider-docs.md",
+      "title": "Code Mode docs still block Bedrock after the 2.1.331 changelog added it",
+      "tags": ["claude", "code-mode", "bedrock", "providers"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Code Mode will not start on Bedrock, Foundry, or a gateway, or a provider session was expected to run it after Claude Code 2.1.331",
+      "related": ["claude-code-code-mode", "claude-code-mode-hook-fail-open"]
+    },
+    {
+      "id": "claude-plugin-marketplace-autoupdate",
+      "path": "failure-modes/claude-plugin-marketplace-autoupdate.md",
+      "title": "Managed Claude Code plugin marketplaces will auto-update after 30 November 2026",
+      "tags": ["claude", "plugins", "supply-chain", "marketplaces"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "A managed Claude Code marketplace should stay on a pinned commit, or a plugin gained extra plugins after an update",
+      "related": ["claude-code-plugins", "malicious-skills-supply-chain"]
     }
   ]
 }

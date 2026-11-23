@@ -15,7 +15,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [cursor-sdk](practices/cursor-sdk.md) | Scripting the same Cursor agent from Python (local cwd or Cloud VM) instead of the CLI or editor | — | cursor, sdk, cli, orchestration | active |
 | [openai-agents-sdk](practices/openai-agents-sdk.md) | Choosing openai-agents (Python/JS) instead of owning the Responses API loop yourself | — | sdk, orchestration, handoff, tools | active |
 | [openai-codex-sdk](practices/openai-codex-sdk.md) | Driving Codex CLI/app-server from TypeScript or Python instead of openai-agents or a raw Responses loop | — | sdk, openai, orchestration, sandbox | active |
-| [claude-code-plugins](practices/claude-code-plugins.md) | Packaging or installing Claude Code skills/hooks/MCP/LSP/mods as a plugin, or pinning engines["claude-code"]… | — | plugins, skills, claude, supply-chain | active |
+| [claude-code-plugins](practices/claude-code-plugins.md) | Packaging or installing Claude Code skills/hooks/MCP/LSP/mods as a plugin, or pinning engines["claude-code"]… | [link](https://code.claude.com/docs/en/plugins/install) | plugins, skills, claude, supply-chain | active |
 | [goose-aaif-agent](practices/goose-aaif-agent.md) | Choosing or embedding the AAIF-hosted local agent (goose) versus Cursor/Claude Code/Codex | — | aaif, goose, mcp, acp | active |
 | [openai-codex-app-server](practices/openai-codex-app-server.md) | Embedding Codex (auth, history, approvals, streamed events) in a custom client instead of the Codex SDK or a… | — | openai, sdk, orchestration, transport | active |
 | [claude-code-hooks](practices/claude-code-hooks.md) | Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks… | [link](https://code.claude.com/docs/en/setup) | claude, hooks, permissions, safety | active |
@@ -124,7 +124,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 
-## Services (152)
+## Services (155)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -282,6 +282,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [render](practices/render.md) | Deploying a web service, static site, or Postgres on Render, or letting an agent manage that workspace throug… | [link](https://dashboard.render.com/register) | render, hosting, mcp, deploy | active |
 | [polar](practices/polar.md) | Selling a software product while a merchant of record collects tax, or letting an agent manage Polar products… | [link](https://polar.sh/signup) | polar, payments, billing, mcp | active |
 | [checkly](practices/checkly.md) | Scheduling browser, API, or uptime checks against a deployed app, or letting an agent inspect Checkly results | [link](https://app.checklyhq.com/signup/) | checkly, monitoring, synthetics, mcp | active |
+| [paddle](practices/paddle.md) | Selling software while Paddle is the merchant of record, or letting an agent change a Paddle catalog and subs… | [link](https://login.paddle.com/signup) | paddle, payments, billing, mcp | active |
+| [motherduck](practices/motherduck.md) | Querying analytical tables with hosted DuckDB, or letting an agent read and write a MotherDuck organization | [link](https://app.motherduck.com/) | motherduck, duckdb, analytics, mcp | active |
+| [launchdarkly](practices/launchdarkly.md) | Changing LaunchDarkly flags or experiments from an agent, or checking a flag before a release | [link](https://app.launchdarkly.com/signup) | launchdarkly, flags, experiments, mcp | active |
 
 ## Protocols and standards (23)
 
