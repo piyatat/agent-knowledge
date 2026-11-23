@@ -14754,14 +14754,14 @@
       "tags": ["clerk", "auth", "mcp", "users"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-21",
+      "updated": "2026-11-23",
       "when_to_use": "Adding sign-up, sessions, and organizations to an app, or letting an agent manage a Clerk workspace",
       "links": {
         "get": "https://dashboard.clerk.com/sign-up",
         "docs": "https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server",
         "home": "https://clerk.com/"
       },
-      "related": ["clerk-mcp-workspace-and-secret", "supabase", "composio", "neon", "workos"]
+      "related": ["clerk-mcp-workspace-and-secret", "supabase", "composio", "neon", "workos", "better-auth"]
     },
     {
       "id": "clerk-mcp-workspace-and-secret",
@@ -14916,14 +14916,14 @@
       "tags": ["workos", "auth", "mcp", "sso"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-21",
+      "updated": "2026-11-23",
       "when_to_use": "Adding enterprise SSO and user auth with WorkOS, or letting an agent manage a WorkOS workspace",
       "links": {
         "get": "https://workos.com/signup",
         "docs": "https://workos.com/docs/mcp",
         "home": "https://workos.com/"
       },
-      "related": ["workos-mcp-sandbox-and-audience", "clerk", "supabase", "mcp-oauth-scopes"]
+      "related": ["workos-mcp-sandbox-and-audience", "clerk", "supabase", "mcp-oauth-scopes", "better-auth"]
     },
     {
       "id": "workos-mcp-sandbox-and-audience",
@@ -15420,6 +15420,87 @@
       "updated": "2026-11-23",
       "when_to_use": "A QStash retry changed the message count, a signature check failed on a valid delivery, or a callback never returned",
       "related": ["qstash", "upstash-redis", "svix", "agent-retry-idempotency"]
+    },
+    {
+      "id": "better-auth",
+      "path": "practices/better-auth.md",
+      "title": "Better Auth — TypeScript auth library, plus an optional dashboard",
+      "tags": ["better-auth", "auth", "typescript", "sessions"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor",
+      "links": {
+        "get": "https://better-auth.com/docs/installation",
+        "docs": "https://better-auth.com/docs/introduction",
+        "home": "https://better-auth.com/"
+      },
+      "related": ["better-auth-secret-and-origin", "clerk", "workos", "supabase"]
+    },
+    {
+      "id": "better-auth-secret-and-origin",
+      "path": "failure-modes/better-auth-secret-and-origin.md",
+      "title": "Replacing the Better Auth secret drops sessions, or a redirect skips the origin check",
+      "tags": ["better-auth", "auth", "secrets", "csrf"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Sessions died after a Better Auth secret change, a callback URL was accepted from an untrusted site, or rate limits ignore the real client IP",
+      "related": ["better-auth", "clerk", "workos"]
+    },
+    {
+      "id": "clickhouse-cloud",
+      "path": "practices/clickhouse-cloud.md",
+      "title": "ClickHouse Cloud — hosted columnar analytics and a read-only MCP",
+      "tags": ["clickhouse", "analytics", "database", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Querying a large event or log table with SQL, or letting an agent run read-only analytics against ClickHouse Cloud",
+      "links": {
+        "get": "https://console.clickhouse.cloud/signUp",
+        "docs": "https://clickhouse.com/docs/products/cloud/features/ai-ml/remote-mcp",
+        "home": "https://clickhouse.com/"
+      },
+      "related": ["clickhouse-idle-and-mcp", "neon", "supabase", "datadog"]
+    },
+    {
+      "id": "clickhouse-idle-and-mcp",
+      "path": "failure-modes/clickhouse-idle-and-mcp.md",
+      "title": "A ClickHouse service wakes while idle, or MCP cannot change the data",
+      "tags": ["clickhouse", "billing", "mcp", "analytics"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "A ClickHouse Cloud bill grew while nobody queried, a paused query timed out, or an agent could not insert or alter through MCP",
+      "related": ["clickhouse-cloud", "neon", "datadog"]
+    },
+    {
+      "id": "twilio",
+      "path": "practices/twilio.md",
+      "title": "Twilio — SMS, voice, and Verify, with a docs-only MCP",
+      "tags": ["twilio", "sms", "voice", "messaging"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Sending an SMS or WhatsApp message, placing a call, or checking a phone number from an app",
+      "links": {
+        "get": "https://www.twilio.com/try-twilio",
+        "docs": "https://www.twilio.com/docs/ai/mcp",
+        "home": "https://www.twilio.com/"
+      },
+      "related": ["twilio-trial-and-docs-mcp", "resend", "deepgram", "livekit-agents"]
+    },
+    {
+      "id": "twilio-trial-and-docs-mcp",
+      "path": "failure-modes/twilio-trial-and-docs-mcp.md",
+      "title": "A Twilio trial rejects a custom SMS, or the docs MCP looks like the account API",
+      "tags": ["twilio", "sms", "trial", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "A Twilio SMS to a real user failed on a new account, US 10DLC will not register, or an agent treated the Twilio MCP server as permission to send",
+      "related": ["twilio", "resend", "deepgram"]
     }
   ]
 }

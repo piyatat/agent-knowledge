@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. The `get` column points to the official page to install or sign up; whether and how to proceed is the user's call. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (112)
+## Tools (113)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -122,8 +122,9 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [lancedb](practices/lancedb.md) | Storing vectors and source rows inside an agent process, or connecting that SDK to LanceDB Enterprise | [link](https://docs.lancedb.com/oss/v0-41-0/quickstart) | lancedb, vectors, embedded, retrieval | active |
 | [docling](practices/docling.md) | Converting PDFs and Office files to markdown on the machine that runs the agent | [link](https://docling-project.github.io/docling/getting_started/installation/) | docling, documents, parse, mcp | active |
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
+| [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 
-## Services (147)
+## Services (149)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -276,6 +277,8 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [algolia](practices/algolia.md) | Searching a product or content catalog, or letting an agent query an Algolia index through MCP | [link](https://dashboard.algolia.com/users/sign_up) | algolia, search, catalog, mcp | active |
 | [infisical](practices/infisical.md) | Giving an agent API access without placing credentials in its environment, or administering Infisical secrets | [link](https://app.infisical.com/signup) | infisical, secrets, mcp, agents | active |
 | [qstash](practices/qstash.md) | Scheduling or retrying an HTTP call without operating a queue, or pacing deliveries to an agent endpoint | [link](https://console.upstash.com/) | qstash, upstash, queues, webhooks | active |
+| [clickhouse-cloud](practices/clickhouse-cloud.md) | Querying a large event or log table with SQL, or letting an agent run read-only analytics against ClickHouse… | [link](https://console.clickhouse.cloud/signUp) | clickhouse, analytics, database, mcp | active |
+| [twilio](practices/twilio.md) | Sending an SMS or WhatsApp message, placing a call, or checking a phone number from an app | [link](https://www.twilio.com/try-twilio) | twilio, sms, voice, messaging | active |
 
 ## Protocols and standards (23)
 

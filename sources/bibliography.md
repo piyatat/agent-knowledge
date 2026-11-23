@@ -3492,4 +3492,30 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | QStash | https://upstash.com/qstash |
 | Upstash console | https://console.upstash.com/ |
 
+## Daily ingest 2026-11-23 (Better Auth, ClickHouse Cloud, Twilio)
+
+| Topic | URL |
+| --- | --- |
+| Better Auth installation | https://better-auth.com/docs/installation |
+| Better Auth options | https://better-auth.com/docs/reference/options |
+| Better Auth security | https://better-auth.com/docs/reference/security |
+| Better Auth Infrastructure | https://better-auth.com/docs/infrastructure/introduction |
+| Better Auth pricing | https://better-auth.com/pricing |
+| Better Auth email service | https://better-auth.com/docs/infrastructure/services/email |
+| Better Auth | https://better-auth.com/ |
+| ClickHouse Cloud pricing | https://clickhouse.com/pricing |
+| ClickHouse Cloud pricing (markdown) | https://clickhouse.com/pricing.md |
+| ClickHouse Cloud billing overview | https://clickhouse.com/docs/products/cloud/reference/billing/billing-overview |
+| ClickHouse automatic idling | https://clickhouse.com/docs/products/cloud/features/autoscaling/idling |
+| ClickHouse remote MCP | https://clickhouse.com/docs/products/cloud/features/ai-ml/remote-mcp |
+| ClickHouse Cloud sign-up | https://console.clickhouse.cloud/signUp |
+| ClickHouse | https://clickhouse.com/ |
+| Twilio trial account | https://www.twilio.com/docs/usage/trials |
+| Get started with your Twilio free trial account | https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account |
+| Requests to Twilio | https://www.twilio.com/docs/usage/requests-to-twilio |
+| A2P 10DLC registration application quickstart | https://www.twilio.com/docs/messaging/compliance/a2p-10dlc/quickstart |
+| Twilio MCP server | https://www.twilio.com/docs/ai/mcp |
+| Twilio sign-up | https://www.twilio.com/try-twilio |
+| Twilio | https://www.twilio.com/ |
+
 

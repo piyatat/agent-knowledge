@@ -4,7 +4,7 @@ title: Clerk — user auth and a dashboard MCP server
 kind: service
 tags: [clerk, auth, mcp, users]
 status: active
-updated: 2026-11-21
+updated: 2026-11-23
 when_to_use: Adding sign-up, sessions, and organizations to an app, or letting an agent manage a Clerk workspace
 ---
 
@@ -19,7 +19,7 @@ when_to_use: Adding sign-up, sessions, and organizations to an app, or letting a
 - **Keys.** Publishable keys appear on application reads. A secret key is returned only by `create_application` or `create_production_instance`, and only encrypted to a public key the agent generated for that call. Other tools do not return secret keys. Details and the untrusted-key case: `clerk-mcp-workspace-and-secret`.
 - **Plans (pricing page, 2026-11-21).** Hobby is $0: unlimited applications, up to 3 dashboard seats, **50,000 monthly retained users per app**, a fixed 7-day session, and 1 day of application logs. A retained user is someone who returns at least one day after sign-up; the first 24 hours are not billed. Pro is **$25/month** ($20 billed annually) with the same 50,000 included, then volume pricing from $0.02, one SSO connection, and one Directory Sync connection. Business is **$300/month** ($250 annually) with 10 seats, a SOC 2 report, and 30-day logs. Extra Directory Sync connections on paid plans are billed from **1 January 2027**.
 - **Supabase.** Clerk’s native third-party auth integration is the path into a Supabase project. The older Supabase JWT template has been deprecated since **1 April 2025**.
-- **Alternatives.** Supabase (`supabase`) when Auth, Postgres, and Storage should be one project. Neon (`neon`) when the database is Neon and managed Better Auth is enough. WorkOS (`workos`) when customers connect their own identity provider and SSO is billed per connection. Composio (`composio`) when the agent needs someone else’s SaaS tools, not your app’s users.
+- **Alternatives.** Supabase (`supabase`) when Auth, Postgres, and Storage should be one project. Neon (`neon`) when the database is Neon and its managed auth is enough. Better Auth (`better-auth`) when sign-in should be a TypeScript library in the app, with users in your database. WorkOS (`workos`) when customers connect their own identity provider and SSO is billed per connection. Composio (`composio`) when the agent needs someone else’s SaaS tools, not your app’s users.
 - **Caveats.** A missing scope or a weaker workspace role fails the tool. Production keys do not work on localhost. Creating a production instance cannot be undone.
 
 ## Sources
