@@ -4,7 +4,7 @@ title: Fly.io — Machines, Sprites, and an OAuth MCP server
 kind: service
 tags: [fly, hosting, mcp, machines]
 status: active
-updated: 2026-11-22
+updated: 2026-11-23
 when_to_use: Running an app on Fly Machines, or letting an agent manage Machines and Postgres through Fly MCP
 ---
 
@@ -19,7 +19,7 @@ when_to_use: Running an app on Fly Machines, or letting an agent manage Machines
 - **Free plan.** Only the personal organization can be on Free. Without a card, the $1 expires in 7 days and then new resources cannot be created. With a card, $5 resets on the 1st and covers Machines, volumes, snapshots, transfer, Sprites, and one Managed Postgres Developer cluster ($4/month, so about $1 remains for everything else). Limits: 1 member, 3 Machines, no performance CPUs, volumes up to 5 GB each, 3 Sprites, no extensions, no dedicated IPv4. Crossing $5 moves the org to Pay As You Go and bills the **whole month** at standard rates, not only the part above $5. The pricing card’s “credit card required” line is the monthly $5 allowance; the Free plan page is the one that spells out the no-card $1.
 - **MCP sharp edges.** `create_machine` starts a billable Machine unless launch is skipped, and a lost response is not retried for you. `exec_machine_command` needs `fly:machines:exec`. Full Machine config, metadata, and process args need `fly:machines:sensitive:read`. Secret values are never returned. `query_postgres_database` is read-only, times out at 5 seconds, rejects results over 1,000 rows, and returns large integers as doubles. Reading Sprite files, logs, or services can wake a sleeping Sprite. Sprite cold storage bills at $0.02 per GB-month while the Sprite exists.
 - **Docs disagree on the starting plan.** The Free plan page and the pricing page say every new account starts on Free. The getting-started sign-up page still says new accounts start on Pay As You Go. Follow the Free plan page before assuming the first deploy is unmetered or already on Pay As You Go.
-- **Alternatives.** Railway (`railway`) for a PaaS with included credit. E2B (`e2b-sandboxes`) or Daytona (`daytona-sandboxes`) when the job is an isolated sandbox API rather than an app you keep.
+- **Alternatives.** Railway (`railway`) for a PaaS with included credit. Render (`render`) for git-backed services, a Free spin-down tier, and workspace plans. E2B (`e2b-sandboxes`) or Daytona (`daytona-sandboxes`) when the job is an isolated sandbox API rather than an app you keep.
 
 ## Sources
 

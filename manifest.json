@@ -14808,14 +14808,14 @@
       "tags": ["stripe", "payments", "mcp", "billing"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-21",
+      "updated": "2026-11-23",
       "when_to_use": "Letting an agent create Stripe customers, Checkout sessions, or subscriptions, or look up a payment",
       "links": {
         "get": "https://dashboard.stripe.com/register",
         "docs": "https://docs.stripe.com/mcp",
         "home": "https://stripe.com/"
       },
-      "related": ["stripe-mcp-key-and-confirmation", "x402-payments", "ap2-payments", "ucp-commerce", "clerk"]
+      "related": ["stripe-mcp-key-and-confirmation", "polar", "x402-payments", "ap2-payments", "ucp-commerce", "clerk"]
     },
     {
       "id": "stripe-mcp-key-and-confirmation",
@@ -14889,14 +14889,14 @@
       "tags": ["sentry", "observability", "mcp", "errors"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-21",
+      "updated": "2026-11-23",
       "when_to_use": "Capturing application errors and traces, or letting an agent search Sentry issues and call Seer",
       "links": {
         "get": "https://sentry.io/signup/",
         "docs": "https://docs.sentry.io/ai/agent-setup/get-started/",
         "home": "https://sentry.io/"
       },
-      "related": ["sentry-quota-and-seer-billing", "cursor-sentry", "github-copilot-sentry", "langfuse", "braintrust", "opik", "posthog", "datadog"]
+      "related": ["sentry-quota-and-seer-billing", "checkly", "cursor-sentry", "github-copilot-sentry", "langfuse", "braintrust", "opik", "posthog", "datadog"]
     },
     {
       "id": "sentry-quota-and-seer-billing",
@@ -15159,14 +15159,14 @@
       "tags": ["railway", "hosting", "mcp", "deploy"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-23",
       "when_to_use": "Deploying an app on Railway, or letting an agent manage projects and deploys through Railway MCP",
       "links": {
         "get": "https://railway.com/",
         "docs": "https://docs.railway.com/ai/mcp-server",
         "home": "https://railway.com/"
       },
-      "related": ["railway-free-sleep-and-mcp-token", "fly-io", "vercel-sandbox", "cloudflare-agents", "neon"]
+      "related": ["railway-free-sleep-and-mcp-token", "render", "fly-io", "vercel-sandbox", "cloudflare-agents", "neon"]
     },
     {
       "id": "railway-free-sleep-and-mcp-token",
@@ -15186,14 +15186,14 @@
       "tags": ["fly", "hosting", "mcp", "machines"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-23",
       "when_to_use": "Running an app on Fly Machines, or letting an agent manage Machines and Postgres through Fly MCP",
       "links": {
         "get": "https://fly.io/app/sign-up",
         "docs": "https://fly.io/mcp/",
         "home": "https://fly.io/"
       },
-      "related": ["fly-free-overage-and-mcp-grant", "railway", "vercel-sandbox", "e2b-sandboxes", "daytona-sandboxes"]
+      "related": ["fly-free-overage-and-mcp-grant", "render", "railway", "vercel-sandbox", "e2b-sandboxes", "daytona-sandboxes"]
     },
     {
       "id": "fly-free-overage-and-mcp-grant",
@@ -15501,6 +15501,87 @@
       "updated": "2026-11-23",
       "when_to_use": "A Twilio SMS to a real user failed on a new account, US 10DLC will not register, or an agent treated the Twilio MCP server as permission to send",
       "related": ["twilio", "resend", "deepgram"]
+    },
+    {
+      "id": "render",
+      "path": "practices/render.md",
+      "title": "Render — hosted apps, datastores, and an OAuth MCP server",
+      "tags": ["render", "hosting", "mcp", "deploy"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Deploying a web service, static site, or Postgres on Render, or letting an agent manage that workspace through MCP",
+      "links": {
+        "get": "https://dashboard.render.com/register",
+        "docs": "https://render.com/docs/mcp-server",
+        "home": "https://render.com/"
+      },
+      "related": ["render-free-expiry-and-mcp-env", "railway", "fly-io", "vercel-sandbox", "neon"]
+    },
+    {
+      "id": "render-free-expiry-and-mcp-env",
+      "path": "failure-modes/render-free-expiry-and-mcp-env.md",
+      "title": "A Render free instance stops or expires, or MCP rewrites its environment",
+      "tags": ["render", "hosting", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "A Render URL sat on a loading page, a free database vanished, or an agent deploy replaced environment variables",
+      "related": ["render", "railway", "fly-io"]
+    },
+    {
+      "id": "polar",
+      "path": "practices/polar.md",
+      "title": "Polar — merchant of record for software, with an OAuth MCP server",
+      "tags": ["polar", "payments", "billing", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Selling a software product while a merchant of record collects tax, or letting an agent manage Polar products and orders",
+      "links": {
+        "get": "https://polar.sh/signup",
+        "docs": "https://polar.sh/docs/integrate/mcp",
+        "home": "https://polar.sh/"
+      },
+      "related": ["polar-live-mcp-and-refund-fees", "stripe", "x402-payments"]
+    },
+    {
+      "id": "polar-live-mcp-and-refund-fees",
+      "path": "failure-modes/polar-live-mcp-and-refund-fees.md",
+      "title": "Polar MCP hit the live organization, or a refund kept the fee",
+      "tags": ["polar", "payments", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "A Polar test charge moved real money, a refund left the fee, or an agent-created organization disappeared before anyone claimed it",
+      "related": ["polar", "stripe"]
+    },
+    {
+      "id": "checkly",
+      "path": "practices/checkly.md",
+      "title": "Checkly — synthetic and uptime monitoring, with an HTTP MCP server",
+      "tags": ["checkly", "monitoring", "synthetics", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Scheduling browser, API, or uptime checks against a deployed app, or letting an agent inspect Checkly results",
+      "links": {
+        "get": "https://app.checklyhq.com/signup/",
+        "docs": "https://www.checklyhq.com/docs/ai/mcp-server/",
+        "home": "https://www.checklyhq.com/"
+      },
+      "related": ["checkly-hobby-cap-and-account", "sentry", "datadog"]
+    },
+    {
+      "id": "checkly-hobby-cap-and-account",
+      "path": "failure-modes/checkly-hobby-cap-and-account.md",
+      "title": "Checkly stopped the checks, or MCP used the wrong account",
+      "tags": ["checkly", "monitoring", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Checkly checks stopped on a free account, a browser check returned 402, or an agent edited a different Checkly account",
+      "related": ["checkly", "sentry", "datadog"]
     }
   ]
 }

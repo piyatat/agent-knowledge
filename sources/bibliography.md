@@ -3518,4 +3518,30 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Twilio sign-up | https://www.twilio.com/try-twilio |
 | Twilio | https://www.twilio.com/ |
 
+## Daily ingest 2026-11-23 (Render, Polar, Checkly)
+
+| Topic | URL |
+| --- | --- |
+| Render MCP server | https://render.com/docs/mcp-server |
+| Deploy for free | https://render.com/docs/free |
+| Render pricing | https://render.com/pricing |
+| Render sign-up | https://dashboard.render.com/register |
+| Render | https://render.com/ |
+| Polar introduction | https://polar.sh/docs/introduction |
+| Polar MCP | https://polar.sh/docs/integrate/mcp |
+| Polar pricing | https://polar.sh/docs/merchant-of-record/fees |
+| Polar sandbox | https://polar.sh/docs/integrate/sandbox |
+| Polar auth.md | https://polar.sh/auth.md |
+| Polar sign-up | https://polar.sh/signup |
+| Polar | https://polar.sh/ |
+| Checkly MCP server | https://www.checklyhq.com/docs/ai/mcp-server/ |
+| Set up the Checkly MCP server | https://www.checklyhq.com/docs/ai/mcp-server/setup/ |
+| Checkly pricing | https://www.checklyhq.com/pricing/ |
+| Checkly pricing (markdown) | https://www.checklyhq.com/pricing.md |
+| Checkly usage and check runs | https://www.checklyhq.com/docs/admin/usage/ |
+| Checkly plan changes and billing | https://www.checklyhq.com/docs/admin/billing/ |
+| Checkly create a browser check | https://www.checklyhq.com/docs/api-reference/checks/create-a-browser-check/ |
+| Checkly sign-up | https://app.checklyhq.com/signup/ |
+| Checkly | https://www.checklyhq.com/ |
+
 

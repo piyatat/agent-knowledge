@@ -124,7 +124,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 
-## Services (149)
+## Services (152)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -279,6 +279,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [qstash](practices/qstash.md) | Scheduling or retrying an HTTP call without operating a queue, or pacing deliveries to an agent endpoint | [link](https://console.upstash.com/) | qstash, upstash, queues, webhooks | active |
 | [clickhouse-cloud](practices/clickhouse-cloud.md) | Querying a large event or log table with SQL, or letting an agent run read-only analytics against ClickHouse… | [link](https://console.clickhouse.cloud/signUp) | clickhouse, analytics, database, mcp | active |
 | [twilio](practices/twilio.md) | Sending an SMS or WhatsApp message, placing a call, or checking a phone number from an app | [link](https://www.twilio.com/try-twilio) | twilio, sms, voice, messaging | active |
+| [render](practices/render.md) | Deploying a web service, static site, or Postgres on Render, or letting an agent manage that workspace throug… | [link](https://dashboard.render.com/register) | render, hosting, mcp, deploy | active |
+| [polar](practices/polar.md) | Selling a software product while a merchant of record collects tax, or letting an agent manage Polar products… | [link](https://polar.sh/signup) | polar, payments, billing, mcp | active |
+| [checkly](practices/checkly.md) | Scheduling browser, API, or uptime checks against a deployed app, or letting an agent inspect Checkly results | [link](https://app.checklyhq.com/signup/) | checkly, monitoring, synthetics, mcp | active |
 
 ## Protocols and standards (23)
 

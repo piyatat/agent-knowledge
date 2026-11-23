@@ -4,7 +4,7 @@ title: Stripe — payments API and hosted MCP for agents
 kind: service
 tags: [stripe, payments, mcp, billing]
 status: active
-updated: 2026-11-21
+updated: 2026-11-23
 when_to_use: Letting an agent create Stripe customers, Checkout sessions, or subscriptions, or look up a payment
 ---
 
@@ -19,7 +19,7 @@ when_to_use: Letting an agent create Stripe customers, Checkout sessions, or sub
 - **Connected accounts.** Tools default to the account on the OAuth session or API key. Acting for a connected account does not use OAuth. Authenticate with a platform agent API key and pass the connected account id in the `Stripe-Account` header.
 - **Retired packages.** `@stripe/agent-toolkit`, `stripe-agent-toolkit`, and the local `@stripe/mcp` proxy get no further updates, including security fixes. Point the client at the hosted server.
 - **Pricing.** Card and billing fees are Stripe’s published processing rates; this note does not restate them. The MCP cutoff and the 14-day OAuth session are in `stripe-mcp-key-and-confirmation`.
-- **Alternatives.** x402 (`x402-payments`) when an agent pays an HTTP or MCP resource per request. AP2 (`ap2-payments`) and UCP (`ucp-commerce`) when a merchant checkout uses those protocols. Clerk (`clerk`) can bill app plans through a connected Stripe account, but those plans are configured in Clerk.
+- **Alternatives.** Polar (`polar`) when a merchant of record should collect tax and resell the software. x402 (`x402-payments`) when an agent pays an HTTP or MCP resource per request. AP2 (`ap2-payments`) and UCP (`ucp-commerce`) when a merchant checkout uses those protocols. Clerk (`clerk`) can bill app plans through a connected Stripe account, but those plans are configured in Clerk.
 - **Caveats.** Stripe tells you to keep client-side tool approval on and to be careful combining this server with others because of prompt injection. Revoking a session applies only to the account and the live-or-sandbox environment you are viewing.
 
 ## Sources
