@@ -4,13 +4,13 @@ title: Upstash Redis — serverless Redis and an account MCP server
 kind: service
 tags: [upstash, redis, cache, mcp]
 status: active
-updated: 2026-11-21
+updated: 2026-11-23
 when_to_use: Caching or rate-limiting with hosted Redis, or letting an agent run commands and change Upstash databases
 ---
 
 ## Summary
 
-**Upstash Redis** is hosted Redis with a REST API for runtimes that cannot hold a TCP connection, plus the Redis protocol. The account MCP server at `https://mcp.upstash.com/mcp` manages Redis and the rest of the account (QStash, Workflow, Vector, Search, Box, and Blob) over Streamable HTTP. A separate local MCP runs commands against one database whose REST token sits in the client. Use this for cache, counters, and short-lived state. Use Upstash Vector (`upstash-vector`) for embeddings, and Neon (`neon`) or Supabase (`supabase`) for relational data.
+**Upstash Redis** is hosted Redis with a REST API for runtimes that cannot hold a TCP connection, plus the Redis protocol. The account MCP server at `https://mcp.upstash.com/mcp` manages Redis and the rest of the account (QStash, Workflow, Vector, Search, Box, and Blob) over Streamable HTTP. A separate local MCP runs commands against one database whose REST token sits in the client. Use this for cache, counters, and short-lived state. Use Upstash Vector (`upstash-vector`) for embeddings, QStash (`qstash`) to schedule or retry an HTTP call, and Neon (`neon`) or Supabase (`supabase`) for relational data.
 
 ## Notes
 

@@ -2,7 +2,7 @@
   "name": "agent-knowledge",
   "version": "0.1.0",
   "description": "Directory for AI agents to look up knowledge, tools and services before acting or while planning — curated notes with sources",
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "entries": [
     {
       "id": "mcp-progressive-disclosure",
@@ -14943,14 +14943,14 @@
       "tags": ["upstash", "redis", "cache", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-21",
+      "updated": "2026-11-23",
       "when_to_use": "Caching or rate-limiting with hosted Redis, or letting an agent run commands and change Upstash databases",
       "links": {
         "get": "https://console.upstash.com/",
         "docs": "https://upstash.com/docs/agent-resources/mcp",
         "home": "https://upstash.com/"
       },
-      "related": ["upstash-redis-token-and-plan", "upstash-vector", "neon", "supabase"]
+      "related": ["upstash-redis-token-and-plan", "upstash-vector", "qstash", "neon", "supabase"]
     },
     {
       "id": "upstash-redis-token-and-plan",
@@ -15339,6 +15339,87 @@
       "updated": "2026-11-22",
       "when_to_use": "A webhook signature check fails on a body that parsed as JSON, or a retry is processed twice",
       "related": ["standard-webhooks", "svix", "agent-retry-idempotency"]
+    },
+    {
+      "id": "algolia",
+      "path": "practices/algolia.md",
+      "title": "Algolia — hosted catalog search and read-only MCP",
+      "tags": ["algolia", "search", "catalog", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Searching a product or content catalog, or letting an agent query an Algolia index through MCP",
+      "links": {
+        "get": "https://dashboard.algolia.com/users/sign_up",
+        "docs": "https://www.algolia.com/doc/guides/model-context-protocol",
+        "home": "https://www.algolia.com/"
+      },
+      "related": ["algolia-public-mcp-and-replicas", "exa", "tavily", "parallel-search", "pinecone"]
+    },
+    {
+      "id": "algolia-public-mcp-and-replicas",
+      "path": "failure-modes/algolia-public-mcp-and-replicas.md",
+      "title": "An Algolia MCP URL exposes the index, or replicas inflate the record count",
+      "tags": ["algolia", "mcp", "search", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "An Algolia MCP URL leaked index data, a search bill jumped, or replicas pushed records over the allowance",
+      "related": ["algolia", "exa", "pinecone"]
+    },
+    {
+      "id": "infisical",
+      "path": "practices/infisical.md",
+      "title": "Infisical — secrets vault and Agent Vault credential broker",
+      "tags": ["infisical", "secrets", "mcp", "agents"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Giving an agent API access without placing credentials in its environment, or administering Infisical secrets",
+      "links": {
+        "get": "https://app.infisical.com/signup",
+        "docs": "https://infisical.com/docs/documentation/platform/agent-vault/overview",
+        "home": "https://infisical.com/"
+      },
+      "related": ["infisical-mcp-returns-secrets", "e2b-sandboxes", "daytona-sandboxes", "modal-sandboxes", "clerk", "workos"]
+    },
+    {
+      "id": "infisical-mcp-returns-secrets",
+      "path": "failure-modes/infisical-mcp-returns-secrets.md",
+      "title": "Infisical MCP returned secret values, or an admin could not open Agent Vault",
+      "tags": ["infisical", "mcp", "secrets", "agents"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "An Infisical MCP tool returned secret values, a write tool was exposed, or an organization admin could not open an Agent Vault project",
+      "related": ["infisical", "e2b-sandboxes", "daytona-sandboxes", "modal-sandboxes"]
+    },
+    {
+      "id": "qstash",
+      "path": "practices/qstash.md",
+      "title": "QStash — serverless HTTP queue and scheduler",
+      "tags": ["qstash", "upstash", "queues", "webhooks"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "Scheduling or retrying an HTTP call without operating a queue, or pacing deliveries to an agent endpoint",
+      "links": {
+        "get": "https://console.upstash.com/",
+        "docs": "https://upstash.com/docs/qstash/overall/getstarted",
+        "home": "https://upstash.com/qstash"
+      },
+      "related": ["qstash-retry-bill-and-signature", "upstash-redis", "upstash-vector", "svix", "inngest", "trigger-dev"]
+    },
+    {
+      "id": "qstash-retry-bill-and-signature",
+      "path": "failure-modes/qstash-retry-bill-and-signature.md",
+      "title": "A QStash retry changed the bill, or the signature check failed",
+      "tags": ["qstash", "upstash", "billing", "webhooks"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-23",
+      "when_to_use": "A QStash retry changed the message count, a signature check failed on a valid delivery, or a callback never returned",
+      "related": ["qstash", "upstash-redis", "svix", "agent-retry-idempotency"]
     }
   ]
 }

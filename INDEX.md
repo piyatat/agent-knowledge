@@ -600,7 +600,7 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | resend | service | `practices/resend.md` | active | 2026-11-21 | Sending app email through Resend, or letting an agent manage domains, templates, and inbound mail | resend-quota-and-test-domain, composio, stripe |
 | sentry | service | `practices/sentry.md` | active | 2026-11-21 | Capturing application errors and traces, or letting an agent search Sentry issues and call Seer | sentry-quota-and-seer-billing, cursor-sentry, github-copilot-sentry, langfuse, braintrust, opik, posthog, datadog |
 | workos | service | `practices/workos.md` | active | 2026-11-21 | Adding enterprise SSO and user auth with WorkOS, or letting an agent manage a WorkOS workspace | workos-mcp-sandbox-and-audience, clerk, supabase, mcp-oauth-scopes |
-| upstash-redis | service | `practices/upstash-redis.md` | active | 2026-11-21 | Caching or rate-limiting with hosted Redis, or letting an agent run commands and change Upstash databases | upstash-redis-token-and-plan, upstash-vector, neon, supabase |
+| upstash-redis | service | `practices/upstash-redis.md` | active | 2026-11-23 | Caching or rate-limiting with hosted Redis, or letting an agent run commands and change Upstash databases | upstash-redis-token-and-plan, upstash-vector, qstash, neon, supabase |
 | posthog | service | `practices/posthog.md` | active | 2026-11-22 | Querying product analytics, feature flags, or errors in PostHog, or letting an agent change them | posthog-mcp-quota-and-pin, statsig, sentry, langfuse, braintrust, opik |
 | linear-mcp | service | `practices/linear-mcp.md` | active | 2026-11-22 | Reading or updating Linear issues, projects, and documents from a coding agent | linear-mcp-token-and-readonly, linear-loops-agent, cursor-linear-cloud-agents, prompt-injection-agent-defense |
 | datadog | service | `practices/datadog.md` | active | 2026-11-22 | Querying Datadog logs, traces, or monitors from an agent, or changing monitors through MCP | datadog-mcp-write-and-site, sentry, posthog, langfuse |
@@ -615,6 +615,9 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | svix | service | `practices/svix.md` | active | 2026-11-22 | Sending webhooks to your customers, or letting an agent debug Svix deliveries and ingest | svix-idempotency-and-disable, standard-webhooks, standard-webhooks-reserialized-body, inngest, stripe |
 | deepgram | service | `practices/deepgram.md` | active | 2026-11-22 | Transcribing live or recorded audio for an agent, or streaming turn-taking speech with Flux | deepgram-default-model-and-concurrency, livekit-agents, pipecat, elevenlabs-agents |
 | standard-webhooks | protocol | `practices/standard-webhooks.md` | active | 2026-11-22 | Verifying or sending webhooks with Standard Webhooks headers instead of a vendor-specific signature | standard-webhooks-reserialized-body, svix, svix-idempotency-and-disable |
+| algolia | service | `practices/algolia.md` | active | 2026-11-23 | Searching a product or content catalog, or letting an agent query an Algolia index through MCP | algolia-public-mcp-and-replicas, exa, tavily, parallel-search, pinecone |
+| infisical | service | `practices/infisical.md` | active | 2026-11-23 | Giving an agent API access without placing credentials in its environment, or administering Infisical secrets | infisical-mcp-returns-secrets, e2b-sandboxes, daytona-sandboxes, modal-sandboxes, clerk, workos |
+| qstash | service | `practices/qstash.md` | active | 2026-11-23 | Scheduling or retrying an HTTP call without operating a queue, or pacing deliveries to an agent endpoint | qstash-retry-bill-and-signature, upstash-redis, upstash-vector, svix, inngest, trigger-dev |
 
 ## Failure Modes
 
@@ -720,6 +723,9 @@ Lean map for agents. Open pages by id/path only when tags match. Prefer `status:
 | svix-idempotency-and-disable | knowledge | `failure-modes/svix-idempotency-and-disable.md` | active | 2026-11-22 | A Svix send duplicated an event, a customer endpoint stopped receiving, or the message count jumped with payload size | svix, standard-webhooks, standard-webhooks-reserialized-body, agent-retry-idempotency |
 | deepgram-default-model-and-concurrency | knowledge | `failure-modes/deepgram-default-model-and-concurrency.md` | active | 2026-11-22 | A Deepgram transcript used the wrong model, returned 429, or rejected a Bearer token | deepgram, livekit-agents, pipecat, rate-limit-backoff-tools |
 | standard-webhooks-reserialized-body | knowledge | `failure-modes/standard-webhooks-reserialized-body.md` | active | 2026-11-22 | A webhook signature check fails on a body that parsed as JSON, or a retry is processed twice | standard-webhooks, svix, agent-retry-idempotency |
+| algolia-public-mcp-and-replicas | knowledge | `failure-modes/algolia-public-mcp-and-replicas.md` | active | 2026-11-23 | An Algolia MCP URL leaked index data, a search bill jumped, or replicas pushed records over the allowance | algolia, exa, pinecone |
+| infisical-mcp-returns-secrets | knowledge | `failure-modes/infisical-mcp-returns-secrets.md` | active | 2026-11-23 | An Infisical MCP tool returned secret values, a write tool was exposed, or an organization admin could not open an Agent Vault project | infisical, e2b-sandboxes, daytona-sandboxes, modal-sandboxes |
+| qstash-retry-bill-and-signature | knowledge | `failure-modes/qstash-retry-bill-and-signature.md` | active | 2026-11-23 | A QStash retry changed the message count, a signature check failed on a valid delivery, or a callback never returned | qstash, upstash-redis, svix, agent-retry-idempotency |
 
 ## Glossary
 

@@ -3466,4 +3466,30 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Standard Webhooks specification | https://github.com/standard-webhooks/standard-webhooks/blob/main/spec/standard-webhooks.md |
 | Standard Webhooks | https://www.standardwebhooks.com/ |
 
+## Daily ingest 2026-11-23 (Algolia, Infisical, QStash)
+
+| Topic | URL |
+| --- | --- |
+| Algolia MCP servers | https://www.algolia.com/doc/guides/model-context-protocol |
+| Algolia Public MCP | https://www.algolia.com/doc/guides/model-context-protocol/public-mcp |
+| Algolia API keys | https://www.algolia.com/doc/guides/security/api-keys |
+| Algolia pricing | https://www.algolia.com/pricing |
+| How am I billed on the Grow plan? | https://support.algolia.com/hc/en-us/articles/15745996583441-How-am-I-billed-on-the-Grow-plan |
+| Algolia sign-up | https://dashboard.algolia.com/users/sign_up |
+| Algolia | https://www.algolia.com/ |
+| Agent Vault overview | https://infisical.com/docs/documentation/platform/agent-vault/overview |
+| Why Agent Vault | https://infisical.com/docs/documentation/getting-started/choose-a-product/agent-vault |
+| Agent Vault projects | https://infisical.com/docs/documentation/platform/agent-vault/projects |
+| Infisical pricing | https://infisical.com/pricing |
+| Infisical MCP server README | https://github.com/Infisical/infisical-mcp-server/blob/main/README.md |
+| Infisical sign-up | https://app.infisical.com/signup |
+| Infisical | https://infisical.com/ |
+| QStash getting started | https://upstash.com/docs/qstash/overall/getstarted |
+| Verify QStash signatures | https://upstash.com/docs/qstash/howto/signature |
+| QStash retry | https://upstash.com/docs/qstash/features/retry |
+| QStash flow control | https://upstash.com/docs/qstash/features/flowcontrol |
+| QStash pricing | https://upstash.com/pricing/qstash |
+| QStash | https://upstash.com/qstash |
+| Upstash console | https://console.upstash.com/ |
+
 

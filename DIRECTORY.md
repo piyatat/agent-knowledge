@@ -123,7 +123,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [docling](practices/docling.md) | Converting PDFs and Office files to markdown on the machine that runs the agent | [link](https://docling-project.github.io/docling/getting_started/installation/) | docling, documents, parse, mcp | active |
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 
-## Services (144)
+## Services (147)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -273,6 +273,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [statsig](practices/statsig.md) | Checking or changing Statsig feature gates and experiments, or letting an agent use the console | [link](https://console.statsig.com/sign_up) | statsig, flags, experiments, mcp | active |
 | [svix](practices/svix.md) | Sending webhooks to your customers, or letting an agent debug Svix deliveries and ingest | [link](https://dashboard.svix.com/signup) | svix, webhooks, mcp, messaging | active |
 | [deepgram](practices/deepgram.md) | Transcribing live or recorded audio for an agent, or streaming turn-taking speech with Flux | [link](https://console.deepgram.com/signup) | deepgram, speech, voice, transcription | active |
+| [algolia](practices/algolia.md) | Searching a product or content catalog, or letting an agent query an Algolia index through MCP | [link](https://dashboard.algolia.com/users/sign_up) | algolia, search, catalog, mcp | active |
+| [infisical](practices/infisical.md) | Giving an agent API access without placing credentials in its environment, or administering Infisical secrets | [link](https://app.infisical.com/signup) | infisical, secrets, mcp, agents | active |
+| [qstash](practices/qstash.md) | Scheduling or retrying an HTTP call without operating a queue, or pacing deliveries to an agent endpoint | [link](https://console.upstash.com/) | qstash, upstash, queues, webhooks | active |
 
 ## Protocols and standards (23)
 
