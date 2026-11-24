@@ -14836,14 +14836,14 @@
       "tags": ["stripe", "payments", "mcp", "billing"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-24",
       "when_to_use": "Letting an agent create Stripe customers, Checkout sessions, or subscriptions, or look up a payment",
       "links": {
         "get": "https://dashboard.stripe.com/register",
         "docs": "https://docs.stripe.com/mcp",
         "home": "https://stripe.com/"
       },
-      "related": ["stripe-mcp-key-and-confirmation", "polar", "paddle", "x402-payments", "ap2-payments", "ucp-commerce", "clerk"]
+      "related": ["stripe-mcp-key-and-confirmation", "polar", "paddle", "orb", "x402-payments", "ap2-payments", "ucp-commerce", "clerk"]
     },
     {
       "id": "stripe-mcp-key-and-confirmation",
@@ -14897,7 +14897,7 @@
         "docs": "https://resend.com/docs/mcp-server",
         "home": "https://resend.com/"
       },
-      "related": ["resend-quota-and-test-domain", "composio", "stripe", "loops"]
+      "related": ["resend-quota-and-test-domain", "composio", "stripe", "loops", "knock"]
     },
     {
       "id": "resend-quota-and-test-domain",
@@ -15402,14 +15402,14 @@
       "tags": ["infisical", "secrets", "mcp", "agents"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-24",
       "when_to_use": "Giving an agent API access without placing credentials in its environment, or administering Infisical secrets",
       "links": {
         "get": "https://app.infisical.com/signup",
         "docs": "https://infisical.com/docs/documentation/platform/agent-vault/overview",
         "home": "https://infisical.com/"
       },
-      "related": ["infisical-mcp-returns-secrets", "e2b-sandboxes", "daytona-sandboxes", "modal-sandboxes", "clerk", "workos"]
+      "related": ["infisical-mcp-returns-secrets", "unkey", "e2b-sandboxes", "daytona-sandboxes", "modal-sandboxes", "clerk", "workos"]
     },
     {
       "id": "infisical-mcp-returns-secrets",
@@ -15564,14 +15564,14 @@
       "tags": ["polar", "payments", "billing", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-24",
       "when_to_use": "Selling a software product while a merchant of record collects tax, or letting an agent manage Polar products and orders",
       "links": {
         "get": "https://polar.sh/signup",
         "docs": "https://polar.sh/docs/integrate/mcp",
         "home": "https://polar.sh/"
       },
-      "related": ["polar-live-mcp-and-refund-fees", "stripe", "paddle", "x402-payments"]
+      "related": ["polar-live-mcp-and-refund-fees", "stripe", "paddle", "orb", "x402-payments"]
     },
     {
       "id": "polar-live-mcp-and-refund-fees",
@@ -15728,7 +15728,7 @@
         "docs": "https://loops.so/docs/mcp-server",
         "home": "https://loops.so/"
       },
-      "related": ["loops-send-quota-and-test-inbox", "resend"]
+      "related": ["loops-send-quota-and-test-inbox", "resend", "knock"]
     },
     {
       "id": "loops-send-quota-and-test-inbox",
@@ -15967,6 +15967,87 @@
       "updated": "2026-11-24",
       "when_to_use": "Logfire MCP returns no rows or 429, new spans stop arriving on the free plan, or an agent deleted a dashboard",
       "related": ["logfire", "langfuse", "pydantic-ai"]
+    },
+    {
+      "id": "knock",
+      "path": "practices/knock.md",
+      "title": "Knock — cross-channel notifications and an OAuth MCP server",
+      "tags": ["knock", "notifications", "messaging", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Sending one product workflow across email, in-app, push, SMS, and chat, or letting an agent edit those workflows",
+      "links": {
+        "get": "https://dashboard.knock.app/signup",
+        "docs": "https://docs.knock.app/ai/mcp-server",
+        "home": "https://knock.app/"
+      },
+      "related": ["knock-sandbox-and-service-token", "resend", "loops", "twilio"]
+    },
+    {
+      "id": "knock-sandbox-and-service-token",
+      "path": "failure-modes/knock-sandbox-and-service-token.md",
+      "title": "A Knock service token changes production, or a test message still counts",
+      "tags": ["knock", "notifications", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "A Knock agent edited the live workflow, a test send appeared on the bill, or in-app messages could not be sandboxed",
+      "related": ["knock", "resend", "loops"]
+    },
+    {
+      "id": "unkey",
+      "path": "practices/unkey.md",
+      "title": "Unkey — API keys and Compute, with two MCP servers",
+      "tags": ["unkey", "api-keys", "mcp", "hosting"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Issuing and verifying keys for your own API, or letting an agent manage those keys and a Compute deployment",
+      "links": {
+        "get": "https://app.unkey.com/auth/sign-up",
+        "docs": "https://www.unkey.com/docs/platform/ai-coding/mcp-servers",
+        "home": "https://www.unkey.com/"
+      },
+      "related": ["unkey-verify-and-free-quota", "infisical"]
+    },
+    {
+      "id": "unkey-verify-and-free-quota",
+      "path": "failure-modes/unkey-verify-and-free-quota.md",
+      "title": "Unkey verify returns 200 for a bad key, or the free quota throttles the API",
+      "tags": ["unkey", "api-keys", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "An Unkey verification looked successful for a rejected key, a free workspace suddenly allows 5 requests a minute, or an agent rolled back a deployment",
+      "related": ["unkey", "infisical"]
+    },
+    {
+      "id": "orb",
+      "path": "practices/orb.md",
+      "title": "Orb — usage-based billing, with an API-key MCP server",
+      "tags": ["orb", "billing", "usage", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Rating raw usage events into invoices and credits, or letting an agent inspect a bill and change a plan",
+      "links": {
+        "get": "https://app.withorb.com/signup",
+        "docs": "https://docs.withorb.com/api-reference/mcp-server",
+        "home": "https://www.withorb.com/"
+      },
+      "related": ["orb-test-key-and-grace", "stripe", "polar", "paddle"]
+    },
+    {
+      "id": "orb-test-key-and-grace",
+      "path": "failure-modes/orb-test-key-and-grace.md",
+      "title": "An Orb test key misses live usage, or a late event never reaches the invoice",
+      "tags": ["orb", "billing", "usage", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Orb usage is missing from an invoice, a test key changed the wrong account, or an agent granted credits it should only have read",
+      "related": ["orb", "stripe", "polar"]
     }
   ]
 }

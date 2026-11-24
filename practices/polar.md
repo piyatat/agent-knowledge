@@ -4,7 +4,7 @@ title: Polar — merchant of record for software, with an OAuth MCP server
 kind: service
 tags: [polar, payments, billing, mcp]
 status: active
-updated: 2026-11-23
+updated: 2026-11-24
 when_to_use: Selling a software product while a merchant of record collects tax, or letting an agent manage Polar products and orders
 ---
 
@@ -19,7 +19,7 @@ when_to_use: Selling a software product while a merchant of record collects tax,
 - **Sandbox.** `sandbox.polar.sh` is a separate server, not a test mode on the live organization. It needs its own user, organization, and access token. The API base is `https://sandbox-api.polar.sh`. The MCP URL is `https://mcp.polar.sh/mcp/polar-sandbox`. Checkout uses Stripe test cards. Customer emails in the sandbox go only to organization members.
 - **MCP tools.** The server does not dump every operation into the prompt. `search` looks up the API spec, and `execute` runs a short JavaScript snippet that calls `polar.request` inside a sandbox with no other network. `search_docs` and `read_docs_page` read the docs. Writes include refunds, subscription revocation, and customer deletion. Add `?readonly=true` so the grant and the tool list stay read-only. Tool-call telemetry is on unless the URL has `?telemetry=false`.
 - **Money that does not come back.** A refund does not return the transaction fee. Polar may refund a charge on its own for up to 60 days to head off a dispute. A dispute costs $15 either way and comes out of the balance. Payout fees are Stripe’s, not an extra Polar markup: $2 per month with an active payout, plus 0.25% + $0.25 per payout. Details: `polar-live-mcp-and-refund-fees`.
-- **Alternatives.** Stripe (`stripe`) when you are the merchant and want Checkout, Billing, or Treasury on your own account. Paddle (`paddle`) when the merchant of record should be Paddle. x402 (`x402-payments`) when an agent pays per HTTP request.
+- **Alternatives.** Orb (`orb`) when you remain the seller and need usage rating on raw events. Stripe (`stripe`) when you are the merchant and want Checkout, Billing, or Treasury on your own account. Paddle (`paddle`) when the merchant of record should be Paddle. x402 (`x402-payments`) when an agent pays per HTTP request.
 
 ## Sources
 

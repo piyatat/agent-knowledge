@@ -4,13 +4,13 @@ title: Infisical — secrets vault and Agent Vault credential broker
 kind: service
 tags: [infisical, secrets, mcp, agents]
 status: active
-updated: 2026-11-23
+updated: 2026-11-24
 when_to_use: Giving an agent API access without placing credentials in its environment, or administering Infisical secrets
 ---
 
 ## Summary
 
-**Infisical** splits secrets storage from agent access. Secrets Management stores values for people, apps, and CI. Agent Vault is a proxy: the agent calls an API, MCP server, database, or SSH host, and the proxy attaches the real credential for the duration of a session. The official MCP server is a separate local process for administering the vault. By default it returns secret values and exposes every tool, including create, update, and delete. Use Agent Vault when a sandbox agent (E2B, Daytona, Modal, Kubernetes, or Docker, per Infisical’s guides) should reach services without holding keys. Use Clerk (`clerk`) or WorkOS (`workos`) for end-user login.
+**Infisical** splits secrets storage from agent access. Secrets Management stores values for people, apps, and CI. Agent Vault is a proxy: the agent calls an API, MCP server, database, or SSH host, and the proxy attaches the real credential for the duration of a session. The official MCP server is a separate local process for administering the vault. By default it returns secret values and exposes every tool, including create, update, and delete. Use Agent Vault when a sandbox agent (E2B, Daytona, Modal, Kubernetes, or Docker, per Infisical’s guides) should reach services without holding keys. Use Unkey (`unkey`) when the job is issuing and verifying keys for an API you expose. Use Clerk (`clerk`) or WorkOS (`workos`) for end-user login.
 
 ## Notes
 

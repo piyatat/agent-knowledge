@@ -3674,4 +3674,35 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Braintrust docs | https://docs.braintrust.dev/ |
 | Braintrust | https://www.braintrust.dev/ |
 
+## Daily ingest 2026-11-24 (Knock, Unkey, Orb)
+
+| Topic | URL |
+| --- | --- |
+| Knock MCP server | https://docs.knock.app/ai/mcp-server |
+| Knock service tokens | https://docs.knock.app/developer-tools/service-tokens |
+| Knock plans and usage | https://docs.knock.app/manage-your-account/knock-plans |
+| Knock environments | https://docs.knock.app/version-control/environments |
+| Knock pricing | https://knock.app/pricing |
+| Knock sign-up | https://dashboard.knock.app/signup |
+| Knock | https://knock.app/ |
+| Unkey MCP servers | https://www.unkey.com/docs/platform/ai-coding/mcp-servers |
+| Unkey limits | https://www.unkey.com/docs/platform/billing/limits |
+| Issue and verify your first Unkey key | https://www.unkey.com/docs/api-management/get-started/quickstart |
+| Unkey verify API key | https://www.unkey.com/docs/platform/api-reference/keys/verify-api-key |
+| Unkey insufficient_permissions | https://www.unkey.com/docs/errors/unkey/authorization/insufficient_permissions |
+| Unkey changelog, 2026-11-20 | https://www.unkey.com/changelog/2026-11-20 |
+| Unkey pricing | https://www.unkey.com/pricing |
+| Unkey sign-up | https://app.unkey.com/auth/sign-up |
+| Unkey | https://www.unkey.com/ |
+| Orb MCP server | https://docs.withorb.com/api-reference/mcp-server |
+| Orb core concepts | https://docs.withorb.com/core-concepts |
+| Orb ingest events | https://docs.withorb.com/api-reference/event/ingest-events |
+| Orb backfill and amend events | https://docs.withorb.com/events-and-metrics/reporting-errors |
+| Orb invoice issuance | https://docs.withorb.com/invoicing/invoice-issuance |
+| Orb request idempotency | https://docs.withorb.com/api-reference/idempotency |
+| Orb pricing | https://www.withorb.com/pricing |
+| Orb credit consumption | https://www.withorb.com/pricing/consumption-table |
+| Orb sign-up | https://app.withorb.com/signup |
+| Orb | https://www.withorb.com/ |
+
 

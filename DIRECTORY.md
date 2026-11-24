@@ -124,7 +124,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 
-## Services (164)
+## Services (167)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -294,6 +294,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [grafana-cloud](practices/grafana-cloud.md) | Querying metrics, logs, and traces in a Grafana Cloud stack, or letting an agent use that stack through MCP | [link](https://grafana.com/auth/sign-up/create-user) | grafana, observability, mcp, metrics | active |
 | [auth0](practices/auth0.md) | Adding Auth0 sign-in to an app, or letting an agent change that tenant through the Auth0 MCP server | [link](https://auth0.com/signup) | auth0, auth, mcp, users | active |
 | [logfire](practices/logfire.md) | Tracing an agent or service in Pydantic Logfire, or letting an agent query that project over MCP | [link](https://pydantic.dev/signup) | logfire, observability, otel, mcp | active |
+| [knock](practices/knock.md) | Sending one product workflow across email, in-app, push, SMS, and chat, or letting an agent edit those workfl… | [link](https://dashboard.knock.app/signup) | knock, notifications, messaging, mcp | active |
+| [unkey](practices/unkey.md) | Issuing and verifying keys for your own API, or letting an agent manage those keys and a Compute deployment | [link](https://app.unkey.com/auth/sign-up) | unkey, api-keys, mcp, hosting | active |
+| [orb](practices/orb.md) | Rating raw usage events into invoices and credits, or letting an agent inspect a bill and change a plan | [link](https://app.withorb.com/signup) | orb, billing, usage, mcp | active |
 
 ## Protocols and standards (23)
 

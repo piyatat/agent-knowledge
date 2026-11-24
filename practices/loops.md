@@ -10,7 +10,7 @@ when_to_use: Sending product email and lifecycle campaigns from one audience, or
 
 ## Summary
 
-**Loops** is hosted email for a software product: campaigns, workflows, and transactional mail share one audience. The plan price follows subscribed contacts, not seats, and paid plans do not charge per send. A remote MCP server at `https://mcp.loops.so` signs in with OAuth and can change contacts, campaigns, and sends. Use Loops when marketing and product mail belong in one audience. Use Resend (`resend`) when the job is a sending API with inbound mail and no marketing audience.
+**Loops** is hosted email for a software product: campaigns, workflows, and transactional mail share one audience. The plan price follows subscribed contacts, not seats, and paid plans do not charge per send. A remote MCP server at `https://mcp.loops.so` signs in with OAuth and can change contacts, campaigns, and sends. Use Loops when marketing and product mail belong in one audience. Use Resend (`resend`) when the job is a sending API with inbound mail and no marketing audience. Use Knock (`knock`) when that workflow should also reach in-app, push, SMS, or chat.
 
 ## Notes
 
