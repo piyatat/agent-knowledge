@@ -4,13 +4,13 @@ title: Resend — transactional email and a hosted MCP server
 kind: service
 tags: [resend, email, mcp, messaging]
 status: active
-updated: 2026-11-21
+updated: 2026-11-24
 when_to_use: Sending app email through Resend, or letting an agent manage domains, templates, and inbound mail
 ---
 
 ## Summary
 
-**Resend** is a hosted email API for transactional sends, inbound mail, broadcasts, and automations. A remote MCP server at `https://mcp.resend.com/mcp` lets an agent act on one team over Streamable HTTP. The same sending tools exist as a local server; inbox threads exist only on the remote server. Use Resend when the app sends its own mail. Use Composio (`composio`) when the agent should use someone’s Gmail account instead.
+**Resend** is a hosted email API for transactional sends, inbound mail, broadcasts, and automations. A remote MCP server at `https://mcp.resend.com/mcp` lets an agent act on one team over Streamable HTTP. The same sending tools exist as a local server; inbox threads exist only on the remote server. Use Resend when the app sends its own mail. Use Loops (`loops`) when marketing and transactional mail share one audience. Use Composio (`composio`) when the agent should use someone’s Gmail account instead.
 
 ## Notes
 

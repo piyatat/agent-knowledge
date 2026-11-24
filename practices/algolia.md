@@ -4,13 +4,13 @@ title: Algolia — hosted catalog search and read-only MCP
 kind: service
 tags: [algolia, search, catalog, mcp]
 status: active
-updated: 2026-11-23
+updated: 2026-11-24
 when_to_use: Searching a product or content catalog, or letting an agent query an Algolia index through MCP
 ---
 
 ## Summary
 
-**Algolia** is hosted keyword search for a catalog you index: products, docs, or other records. Higher plans add recommendations, rules, and AI ranking. Four hosted MCP servers exist. Public MCP searches selected indices and is read-only. Productivity MCP is a signed-in, read-only view of whatever that user may already see. DevEx MCP returns client snippets and does not read your indices. DocSearch MCP searches public documentation. Use Algolia when the task is search over your own catalog. Use Exa (`exa`), Tavily (`tavily`), or Parallel (`parallel-search`) for the public web, and a vector store such as Pinecone (`pinecone`) when the query is an embedding.
+**Algolia** is hosted keyword search for a catalog you index: products, docs, or other records. Higher plans add recommendations, rules, and AI ranking. Four hosted MCP servers exist. Public MCP searches selected indices and is read-only. Productivity MCP is a signed-in, read-only view of whatever that user may already see. DevEx MCP returns client snippets and does not read your indices. DocSearch MCP searches public documentation. Use Algolia when the task is search over your own catalog. Use Typesense Cloud (`typesense-cloud`) when that catalog should sit on a dedicated cluster the agent can also write. Use Exa (`exa`), Tavily (`tavily`), or Parallel (`parallel-search`) for the public web, and a vector store such as Pinecone (`pinecone`) when the query is an embedding.
 
 ## Notes
 

@@ -4253,7 +4253,7 @@
         "auth"
       ],
       "status": "active",
-      "updated": "2026-10-23",
+      "updated": "2026-11-24",
       "when_to_use": "Adding stdio or HTTP MCP to Codex, or using Codex account grants for enterprise MCP auth",
       "related": [
         "openai-codex-sdk",
@@ -4263,7 +4263,8 @@
         "claude-code-mcp",
         "cursor-mcp-json",
         "mcp-oauth-scopes",
-        "openai-codex-presets"
+        "openai-codex-presets",
+        "codex-lazy-mcp-and-exec-resume"
       ]
     },
     {
@@ -5711,7 +5712,7 @@
         "orchestration"
       ],
       "status": "active",
-      "updated": "2026-11-20",
+      "updated": "2026-11-24",
       "when_to_use": "Scripting Codex with codex exec / codex e, running that turn on an existing app server, or resuming a headless session",
       "links": {
         "get": "https://developers.openai.com/codex/cli",
@@ -5726,7 +5727,8 @@
         "claude-code-headless",
         "cursor-cli-headless",
         "openai-codex-sandbox",
-        "openai-codex-daybreak"
+        "openai-codex-daybreak",
+        "codex-lazy-mcp-and-exec-resume"
       ]
     },
     {
@@ -14869,14 +14871,14 @@
       "tags": ["resend", "email", "mcp", "messaging"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-21",
+      "updated": "2026-11-24",
       "when_to_use": "Sending app email through Resend, or letting an agent manage domains, templates, and inbound mail",
       "links": {
         "get": "https://resend.com/signup",
         "docs": "https://resend.com/docs/mcp-server",
         "home": "https://resend.com/"
       },
-      "related": ["resend-quota-and-test-domain", "composio", "stripe"]
+      "related": ["resend-quota-and-test-domain", "composio", "stripe", "loops"]
     },
     {
       "id": "resend-quota-and-test-domain",
@@ -15031,14 +15033,14 @@
       "tags": ["datadog", "observability", "mcp", "logs"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-24",
       "when_to_use": "Querying Datadog logs, traces, or monitors from an agent, or changing monitors through MCP",
       "links": {
         "get": "https://app.datadoghq.com/signup",
         "docs": "https://docs.datadoghq.com/mcp_server/",
         "home": "https://www.datadoghq.com/"
       },
-      "related": ["datadog-mcp-write-and-site", "sentry", "posthog", "langfuse"]
+      "related": ["datadog-mcp-write-and-site", "sentry", "posthog", "langfuse", "axiom"]
     },
     {
       "id": "datadog-mcp-write-and-site",
@@ -15354,14 +15356,14 @@
       "tags": ["algolia", "search", "catalog", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-24",
       "when_to_use": "Searching a product or content catalog, or letting an agent query an Algolia index through MCP",
       "links": {
         "get": "https://dashboard.algolia.com/users/sign_up",
         "docs": "https://www.algolia.com/doc/guides/model-context-protocol",
         "home": "https://www.algolia.com/"
       },
-      "related": ["algolia-public-mcp-and-replicas", "exa", "tavily", "parallel-search", "pinecone"]
+      "related": ["algolia-public-mcp-and-replicas", "exa", "tavily", "parallel-search", "pinecone", "typesense-cloud"]
     },
     {
       "id": "algolia-public-mcp-and-replicas",
@@ -15692,6 +15694,98 @@
       "updated": "2026-11-23",
       "when_to_use": "A managed Claude Code marketplace should stay on a pinned commit, or a plugin gained extra plugins after an update",
       "related": ["claude-code-plugins", "malicious-skills-supply-chain"]
+    },
+    {
+      "id": "loops",
+      "path": "practices/loops.md",
+      "title": "Loops — marketing and transactional email, with an OAuth MCP server",
+      "tags": ["loops", "email", "mcp", "messaging"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Sending product email and lifecycle campaigns from one audience, or letting an agent manage Loops contacts and transactional mail",
+      "links": {
+        "get": "https://app.loops.so/register",
+        "docs": "https://loops.so/docs/mcp-server",
+        "home": "https://loops.so/"
+      },
+      "related": ["loops-send-quota-and-test-inbox", "resend"]
+    },
+    {
+      "id": "loops-send-quota-and-test-inbox",
+      "path": "failure-modes/loops-send-quota-and-test-inbox.md",
+      "title": "A Loops send succeeds and delivers nothing, or the free quota stops marketing",
+      "tags": ["loops", "email", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "A Loops transactional call returned success but no mail arrived, a campaign skipped new contacts, or MCP could not sign in",
+      "related": ["loops", "resend"]
+    },
+    {
+      "id": "typesense-cloud",
+      "path": "practices/typesense-cloud.md",
+      "title": "Typesense Cloud — dedicated search clusters and an OAuth MCP server",
+      "tags": ["typesense", "search", "mcp", "catalog"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Hosting a product or content catalog on a dedicated search cluster, or letting an agent create that cluster and index it",
+      "links": {
+        "get": "https://cloud.typesense.org/signup",
+        "docs": "https://typesense.org/docs/guide/typesense-cloud/mcp-server.html",
+        "home": "https://cloud.typesense.org/"
+      },
+      "related": ["typesense-free-tier-and-mcp", "algolia"]
+    },
+    {
+      "id": "typesense-free-tier-and-mcp",
+      "path": "failure-modes/typesense-free-tier-and-mcp.md",
+      "title": "A Typesense free cluster starts billing, or MCP changes data",
+      "tags": ["typesense", "search", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "A Typesense Cloud cluster was deleted, the free hours ran out, or an agent resized, imported, or terminated a cluster",
+      "related": ["typesense-cloud", "algolia"]
+    },
+    {
+      "id": "axiom",
+      "path": "practices/axiom.md",
+      "title": "Axiom — event storage, APL queries, and an OAuth MCP server",
+      "tags": ["axiom", "observability", "logs", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Storing and querying event data in Axiom, or letting an agent investigate datasets and manage monitors",
+      "links": {
+        "get": "https://app.axiom.co/register",
+        "docs": "https://axiom.co/docs/console/intelligence/mcp-server",
+        "home": "https://axiom.co/"
+      },
+      "related": ["axiom-unclaimed-org-and-query-cap", "datadog", "sentry"]
+    },
+    {
+      "id": "axiom-unclaimed-org-and-query-cap",
+      "path": "failure-modes/axiom-unclaimed-org-and-query-cap.md",
+      "title": "An Axiom agent org disappears, or a query hits a cap",
+      "tags": ["axiom", "observability", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "An Axiom organization an agent created was deleted, a monitor never notified, or an APL query returned 429 or a short result",
+      "related": ["axiom", "datadog", "sentry"]
+    },
+    {
+      "id": "codex-lazy-mcp-and-exec-resume",
+      "path": "failure-modes/codex-lazy-mcp-and-exec-resume.md",
+      "title": "Codex lists an MCP server that is not running, or exec resume keeps the old sandbox",
+      "tags": ["openai", "codex", "mcp", "sandbox"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "A Codex stdio MCP tool fails on the first call after startup looked healthy, or codex exec resume used a wider sandbox than the new command",
+      "related": ["openai-codex-mcp", "openai-codex-exec", "openai-codex-sandbox"]
     }
   ]
 }

@@ -4,13 +4,13 @@ title: Datadog — observability and a site-specific MCP server
 kind: service
 tags: [datadog, observability, mcp, logs]
 status: active
-updated: 2026-11-22
+updated: 2026-11-24
 when_to_use: Querying Datadog logs, traces, or monitors from an agent, or changing monitors through MCP
 ---
 
 ## Summary
 
-**Datadog** is hosted observability for metrics, traces, logs, monitors, and related products. Its remote MCP server answers tool calls with the signed-in user’s own permissions, so an agent sees the same data that user sees in the UI. The server does not send that data to a third-party model; the coding client does, under that client’s agreement. GovCloud sites (`ddog-gov.com` and `us2.ddog-gov.com`) are unsupported. A 14-day trial is the public entry. Use Sentry (`sentry`) or PostHog (`posthog`) when the source of truth is an error tracker or product analytics, not the Datadog org.
+**Datadog** is hosted observability for metrics, traces, logs, monitors, and related products. Its remote MCP server answers tool calls with the signed-in user’s own permissions, so an agent sees the same data that user sees in the UI. The server does not send that data to a third-party model; the coding client does, under that client’s agreement. GovCloud sites (`ddog-gov.com` and `us2.ddog-gov.com`) are unsupported. A 14-day trial is the public entry. Use Axiom (`axiom`) for usage-priced event storage, including an organization an agent provisions itself. Use Sentry (`sentry`) or PostHog (`posthog`) when the source of truth is an error tracker or product analytics, not the Datadog org.
 
 ## Notes
 

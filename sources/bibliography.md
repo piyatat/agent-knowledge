@@ -3573,4 +3573,36 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude Code plugin install | https://code.claude.com/docs/en/plugins/install |
 | Claude Code plugins overview | https://code.claude.com/docs/en/plugins/overview |
 
+## Daily ingest 2026-11-24 (Loops, Typesense Cloud, Axiom, Codex 0.172.0)
+
+| Topic | URL |
+| --- | --- |
+| Loops MCP server | https://loops.so/docs/mcp-server |
+| Loops API introduction | https://loops.so/docs/api-reference/intro |
+| Loops pricing | https://loops.so/pricing |
+| Loops billing | https://loops.so/docs/account/billing |
+| Loops transactional email | https://loops.so/docs/transactional |
+| Send a Loops transactional email | https://loops.so/docs/api-reference/send-transactional-email |
+| Loops double opt-in | https://loops.so/docs/contacts/double-opt-in |
+| Loops DNS zone file export | https://loops.so/docs/deliverability/dns-zone-file-export |
+| Loops sign-up | https://app.loops.so/register |
+| Loops | https://loops.so/ |
+| Typesense Cloud MCP server | https://typesense.org/docs/guide/typesense-cloud/mcp-server.html |
+| Typesense Cloud free tier | https://cloud-help.typesense.org/article/how-does-the-free-tier-work |
+| Typesense Cloud billing process | https://cloud-help.typesense.org/article/billing-process |
+| Typesense Cloud rate limits | https://typesense.org/docs/cloud-management-api/v1/rate-limits.html |
+| Typesense Cloud sign-up | https://cloud.typesense.org/signup |
+| Typesense Cloud | https://cloud.typesense.org/ |
+| Typesense | https://typesense.org/ |
+| Axiom MCP server | https://axiom.co/docs/console/intelligence/mcp-server |
+| Axiom agent-created organizations | https://axiom.co/docs/console/intelligence/agent-created-orgs |
+| Axiom query cost limits | https://axiom.co/docs/console/intelligence/query-cost-limits |
+| Axiom limits | https://axiom.co/docs/reference/limits |
+| Axiom pricing | https://axiom.co/pricing |
+| Axiom sign-up | https://app.axiom.co/register |
+| Axiom | https://axiom.co/ |
+| Codex CLI 0.172.0 | https://github.com/openai/codex/releases/tag/rust-v0.172.0 |
+| Enable lazy startup for stdio MCP servers by default | https://github.com/openai/codex/pull/62366 |
+| ChatGPT and Codex changelog | https://learn.chatgpt.com/docs/changelog |
+
 

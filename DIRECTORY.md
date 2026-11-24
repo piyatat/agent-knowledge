@@ -124,7 +124,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 
-## Services (155)
+## Services (158)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -285,6 +285,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [paddle](practices/paddle.md) | Selling software while Paddle is the merchant of record, or letting an agent change a Paddle catalog and subs… | [link](https://login.paddle.com/signup) | paddle, payments, billing, mcp | active |
 | [motherduck](practices/motherduck.md) | Querying analytical tables with hosted DuckDB, or letting an agent read and write a MotherDuck organization | [link](https://app.motherduck.com/) | motherduck, duckdb, analytics, mcp | active |
 | [launchdarkly](practices/launchdarkly.md) | Changing LaunchDarkly flags or experiments from an agent, or checking a flag before a release | [link](https://app.launchdarkly.com/signup) | launchdarkly, flags, experiments, mcp | active |
+| [loops](practices/loops.md) | Sending product email and lifecycle campaigns from one audience, or letting an agent manage Loops contacts an… | [link](https://app.loops.so/register) | loops, email, mcp, messaging | active |
+| [typesense-cloud](practices/typesense-cloud.md) | Hosting a product or content catalog on a dedicated search cluster, or letting an agent create that cluster a… | [link](https://cloud.typesense.org/signup) | typesense, search, mcp, catalog | active |
+| [axiom](practices/axiom.md) | Storing and querying event data in Axiom, or letting an agent investigate datasets and manage monitors | [link](https://app.axiom.co/register) | axiom, observability, logs, mcp | active |
 
 ## Protocols and standards (23)
 

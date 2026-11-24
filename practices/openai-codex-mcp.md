@@ -3,7 +3,7 @@ id: openai-codex-mcp
 title: Codex MCP — config.toml servers vs removed mcp-server
 tags: [openai, mcp, config, auth]
 status: active
-updated: 2026-10-23
+updated: 2026-11-24
 when_to_use: Adding stdio or HTTP MCP to Codex, or using Codex account grants for enterprise MCP auth
 ---
 
@@ -15,6 +15,7 @@ Codex stores MCP in **`config.toml`**: user `~/.codex/config.toml` or trusted-pr
 
 - Names may include `:`, `@`, `/`, and `.` (package-style) in CLI commands and auth (Codex 0.152.0). Stdio: `command` + optional `args`, `cwd`, `env`, `env_vars` (whitelist extra parent vars; `source = "remote"` only with the experimental remote executor). HTTP: `url` plus `bearer_token_env_var`, `http_headers`, `env_http_headers`, optional `http_headers_helper` (local command printing JSON headers; refresh once after same-origin 401/403). Optional `auth` = `oauth` (default, stored MCP OAuth) or `chatgpt` (current ChatGPT session for a **trusted first-party ChatGPT origin**, then stored OAuth). Either mode can connect unauthenticated if nothing resolves. `codex mcp login <name>` from a shell; Codex **0.161.0** (2026-10-07) also adds **`/mcp login <name>`** in the TUI without leaving the session. Enterprise MCP auth **fails closed** on config refresh (`#49260`).
 - **0.164.0** (2026-10-23): enterprise MCP connections can authenticate with **eligible Codex account grants** or a **dedicated sign-in**, including OAuth clients that require secrets. Status listings use thread connections; rejected credentials re-prompt rather than looping on a stale grant. Do not put client secrets in committed TOML — env vars / the dedicated sign-in flow. Managed workspaces can still allowlist servers by `command` / `url` (`openai-codex-access-tokens`).
+- **Lazy stdio (0.172.0, 2026-11-24):** `mcp_lazy_stdio_startup` is stable and on by default. An optional stdio server whose tool catalog is already cached is listed immediately, and the process starts on the first tool call. A server marked `required` still connects during startup. A broken optional server therefore looks available until that call (`codex-lazy-mcp-and-exec-resume`).
 - Policy: `enabled`, `required` (fail startup if init fails), `enabled_tools` then `disabled_tools`, `default_tools_approval_mode` = `auto` | `prompt` | `writes` (prompt unless the tool is read-only) | `approve`, per-tool `[mcp_servers.<name>.tools.<tool>] approval_mode` and `output_token_limit`. Timeouts: `startup_timeout_sec` (default 10) / `tool_timeout_sec` (default 60). Optional servers wait `mcp_optional_startup_grace_ms` (default 1000; `0` waits the full startup timeout).
 - `experimental_environment = "remote"` starts **stdio** through a remote executor; streamable HTTP remote placement is not implemented. Project `.codex/config.toml` loads only for **trusted** projects.
 - Plugin-bundled servers: `[plugins."<id>".mcp_servers.<name>]` toggles enablement and approval without editing the plugin (`openai-codex-plugins`). Plugin HTTP OAuth in `.mcp.json` uses camelCase `clientId` / `callbackUrl` / `callbackPort`.
@@ -33,3 +34,5 @@ Codex stores MCP in **`config.toml`**: user `~/.codex/config.toml` or trusted-pr
 - [Codex MCP server removal](https://learn.chatgpt.com/docs/mcp-server) — accessed 2026-10-04
 - [Codex App Server](https://developers.openai.com/codex/app-server.md) — accessed 2026-10-04
 - [Docs MCP](https://developers.openai.com/learn/docs-mcp) — accessed 2026-10-04
+- [Codex CLI 0.172.0](https://github.com/openai/codex/releases/tag/rust-v0.172.0) — accessed 2026-11-24
+- [Enable lazy startup for stdio MCP servers by default](https://github.com/openai/codex/pull/62366) — accessed 2026-11-24
