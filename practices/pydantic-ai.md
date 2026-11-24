@@ -4,13 +4,13 @@ title: Pydantic AI — typed Python agent framework
 kind: tool
 tags: [pydantic, sdk, orchestration, mcp]
 status: active
-updated: 2026-11-15
+updated: 2026-11-24
 when_to_use: Building a typed Python agent with Pydantic AI, including MCP tools and approval gates
 ---
 
 ## Summary
 
-**Pydantic AI** is a Python library for an agent loop with typed outputs, tools, and model providers. The full install is `pip install pydantic-ai` or `uv add pydantic-ai` (**Python 3.11+**), which pulls OpenAI, Anthropic, and Google clients plus CLI, MCP, evals, and Logfire. `pydantic-ai-slim[...]` installs one extra at a time. It is not the OpenAI Agents SDK (`openai-agents-sdk`) and not Strands (`strands-agents`).
+**Pydantic AI** is a Python library for an agent loop with typed outputs, tools, and model providers. The full install is `pip install pydantic-ai` or `uv add pydantic-ai` (**Python 3.11+**), which pulls OpenAI, Anthropic, and Google clients plus CLI, MCP, evals, and Logfire. `pydantic-ai-slim[...]` installs one extra at a time. It is not the OpenAI Agents SDK (`openai-agents-sdk`) and not Strands (`strands-agents`). Hosted traces for that stack are Logfire (`logfire`).
 
 ## Notes
 

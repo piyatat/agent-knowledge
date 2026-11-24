@@ -84,7 +84,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [pi-coding-agent](practices/pi-coding-agent.md) | Running a minimal terminal coding agent you extend with packages, or embedding the Pi SDK | — | pi, cli, skills, extensions | active |
 | [grok-build](practices/grok-build.md) | Running xAI's coding agent in a terminal, CI job, or ACP editor instead of Cursor Grok Bot | — | grok, cli, acp, permissions | active |
 | [strands-agents](practices/strands-agents.md) | Building a Python or TypeScript agent loop with Strands instead of Google ADK or a hand-rolled Bedrock loop | — | strands, sdk, orchestration, amazon | active |
-| [pydantic-ai](practices/pydantic-ai.md) | Building a typed Python agent with Pydantic AI, including MCP tools and approval gates | — | pydantic, sdk, orchestration, mcp | active |
+| [pydantic-ai](practices/pydantic-ai.md) | Building a typed Python agent with Pydantic AI, including MCP tools and approval gates | [link](https://pydantic.dev/docs/ai/overview/install/) | pydantic, sdk, orchestration, mcp | active |
 | [langgraph](practices/langgraph.md) | Building a Python or TypeScript agent as an explicit graph that can pause, resume, and survive a crash | — | langgraph, sdk, orchestration, durability | active |
 | [mastra](practices/mastra.md) | Building a TypeScript agent with tools, approval gates, and workflows in one framework | — | mastra, sdk, orchestration, mcp | active |
 | [crewai](practices/crewai.md) | Building a Python multi-agent crew with Flows, or scaffolding one with the crewai CLI | — | crewai, sdk, orchestration, python | active |
@@ -124,7 +124,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 
-## Services (161)
+## Services (164)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -203,10 +203,10 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [graphite-agent](practices/graphite-agent.md) | Adding a hosted GitHub pull-request reviewer that also stacks PRs, or starting a Cursor Cloud Agent from Grap… | — | graphite, review, github, stacking | active |
 | [gemini-agent-runtime](practices/gemini-agent-runtime.md) | Deploying an ADK, LangGraph, or containerized agent on Google Cloud without running the server yourself | — | google, hosting, gemini, a2a | active |
 | [openrouter](practices/openrouter.md) | Routing an agent through many model providers with one OpenAI-compatible key, or failing over when a provider… | — | openrouter, routing, models, api | active |
-| [langfuse](practices/langfuse.md) | Tracing agent runs or scoring them in Langfuse Cloud or a self-hosted Langfuse instead of a raw collector | — | langfuse, observability, otel, evals | active |
+| [langfuse](practices/langfuse.md) | Tracing agent runs or scoring them in Langfuse Cloud or a self-hosted Langfuse instead of a raw collector | [link](https://cloud.langfuse.com/auth/sign-up) | langfuse, observability, otel, evals | active |
 | [context7](practices/context7.md) | Fetching current library documentation into a coding agent instead of relying on training data | — | context7, mcp, docs, discovery | active |
 | [github-mcp-server](practices/github-mcp-server.md) | Giving a coding agent GitHub issues, pull requests, and repository tools through GitHub's hosted MCP server | — | github, mcp, git, auth | active |
-| [braintrust](practices/braintrust.md) | Tracing agent runs and scoring experiments in Braintrust instead of a self-hosted collector | — | braintrust, evals, observability, tracing | active |
+| [braintrust](practices/braintrust.md) | Tracing agent runs and scoring experiments in Braintrust instead of a self-hosted collector | [link](https://www.braintrust.dev/signup) | braintrust, evals, observability, tracing | active |
 | [composio](practices/composio.md) | Giving an agent authenticated GitHub, Gmail, Slack, or other app tools without writing each OAuth flow | — | composio, mcp, auth, tools | active |
 | [firecrawl](practices/firecrawl.md) | Turning a URL or a search into markdown for an agent, or driving a page after the scrape | — | firecrawl, mcp, web, scrape | active |
 | [exa](practices/exa.md) | Giving an agent token-efficient web search, page contents, or an async research run | — | exa, mcp, search, web | active |
@@ -291,6 +291,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [honeycomb](practices/honeycomb.md) | Querying production traces in Honeycomb, or letting an agent investigate a team through MCP | [link](https://ui.honeycomb.io/signup) | honeycomb, observability, tracing, mcp | active |
 | [meilisearch-cloud](practices/meilisearch-cloud.md) | Hosting typo-tolerant catalog search, or letting an agent search a Meilisearch project over MCP | [link](https://cloud.meilisearch.com/register) | meilisearch, search, catalog, mcp | active |
 | [netlify](practices/netlify.md) | Deploying a site or serverless app on Netlify, or letting an agent publish it through Netlify MCP | [link](https://app.netlify.com/signup) | netlify, hosting, mcp, deploy | active |
+| [grafana-cloud](practices/grafana-cloud.md) | Querying metrics, logs, and traces in a Grafana Cloud stack, or letting an agent use that stack through MCP | [link](https://grafana.com/auth/sign-up/create-user) | grafana, observability, mcp, metrics | active |
+| [auth0](practices/auth0.md) | Adding Auth0 sign-in to an app, or letting an agent change that tenant through the Auth0 MCP server | [link](https://auth0.com/signup) | auth0, auth, mcp, users | active |
+| [logfire](practices/logfire.md) | Tracing an agent or service in Pydantic Logfire, or letting an agent query that project over MCP | [link](https://pydantic.dev/signup) | logfire, observability, otel, mcp | active |
 
 ## Protocols and standards (23)
 

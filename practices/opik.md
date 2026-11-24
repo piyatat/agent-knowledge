@@ -4,13 +4,13 @@ title: Opik — trace and score an agent on Comet
 kind: service
 tags: [opik, observability, evals, tracing]
 status: active
-updated: 2026-11-21
+updated: 2026-11-24
 when_to_use: Tracing an agent’s model and tool calls in Opik Cloud or on a server you run
 ---
 
 ## Summary
 
-**Opik** is Comet’s open-source tracing and evaluation product for LLM apps. It records traces and spans (model calls, tools, retrieval), scores them, and stores prompt and experiment runs. Use the hosted cloud or the same codebase on a host you operate. It sits next to Langfuse (`langfuse`) and Braintrust (`braintrust`).
+**Opik** is Comet’s open-source tracing and evaluation product for LLM apps. It records traces and spans (model calls, tools, retrieval), scores them, and stores prompt and experiment runs. Use the hosted cloud or the same codebase on a host you operate. It sits next to Langfuse (`langfuse`), Braintrust (`braintrust`), and Logfire (`logfire`).
 
 ## Notes
 

@@ -10,7 +10,7 @@ when_to_use: Storing and querying event data in Axiom, or letting an agent inves
 
 ## Summary
 
-**Axiom** is hosted event and log storage queried with Axiom Processing Language, plus metrics, monitors, and dashboards. Personal is free with hard caps. Axiom Cloud is a monthly platform fee plus usage past an allowance. The remote MCP server queries as the signed-in member and can manage dashboards, monitors, and notifiers. An agent can also provision a temporary organization and hand back a claim link. Use Axiom when the task is event search on usage-priced storage. Use Honeycomb (`honeycomb`) when the question is a wide trace under a monthly event cap. Use Datadog (`datadog`) or Sentry (`sentry`) when the source of truth is already that vendor’s org.
+**Axiom** is hosted event and log storage queried with Axiom Processing Language, plus metrics, monitors, and dashboards. Personal is free with hard caps. Axiom Cloud is a monthly platform fee plus usage past an allowance. The remote MCP server queries as the signed-in member and can manage dashboards, monitors, and notifiers. An agent can also provision a temporary organization and hand back a claim link. Use Axiom when the task is event search on usage-priced storage. Use Honeycomb (`honeycomb`) when the question is a wide trace under a monthly event cap. Use Grafana Cloud (`grafana-cloud`) when the stack is already Prometheus, Loki, and Tempo. Use Datadog (`datadog`) or Sentry (`sentry`) when the source of truth is already that vendor’s org.
 
 ## Notes
 

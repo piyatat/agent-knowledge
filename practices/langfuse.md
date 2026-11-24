@@ -4,7 +4,7 @@ title: Langfuse — traces, prompts, and scores
 kind: service
 tags: [langfuse, observability, otel, evals]
 status: active
-updated: 2026-11-16
+updated: 2026-11-24
 when_to_use: Tracing agent runs or scoring them in Langfuse Cloud or a self-hosted Langfuse instead of a raw collector
 ---
 
@@ -19,7 +19,7 @@ when_to_use: Tracing agent runs or scoring them in Langfuse Cloud or a self-host
 - **Auth boundary.** Tracing SDKs use the secret key and belong on the server. `@langfuse/browser` takes only the public key and posts scores; it does not create traces. Do not ship the secret key to a browser or mobile app.
 - **OpenTelemetry.** An app that already emits spans can POST OTLP/HTTP (JSON or protobuf; **not gRPC**) to `{base}/api/public/otel` with Basic auth (`public:secret`). Send header `x-langfuse-ingestion-version: 4` or directly ingested spans can lag by up to **10 minutes**. On Langfuse Cloud, `POST /api/public/ingestion` stops accepting everything except **scores** on **2026-11-16**; move custom ingestion to the v4 API or the OTEL endpoint.
 - **Agents.** Docs MCP is `https://langfuse.com/api/mcp` with no authentication (read the docs, not your project). A skill lives in `github.com/langfuse/skills`. Neither replaces project keys.
-- **Alternatives.** Export GenAI spans to your own collector when you do not want a Langfuse project (`agent-observability-otel`). LangSmith when the trace store must sit next to a hosted LangGraph deployment.
+- **Alternatives.** Export GenAI spans to your own collector when you do not want a Langfuse project (`agent-observability-otel`). LangSmith when the trace store must sit next to a hosted LangGraph deployment. Logfire (`logfire`) when the same records should land in Pydantic’s store, including a Pydantic AI app.
 - **Caveats.** SDK major and server major must match. EU is the default host. The legacy ingestion route is the wrong target for new traces after 2026-11-16. A process that exits without flush drops the run.
 
 ## Sources

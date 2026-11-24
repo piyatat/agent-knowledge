@@ -10,7 +10,7 @@ when_to_use: Querying production traces in Honeycomb, or letting an agent invest
 
 ## Summary
 
-**Honeycomb** stores traces, events, and time-series metrics. Each span in a trace counts as one event. Free includes 20 million events and 100 million metric data points a month, plus the MCP server. Pro starts at $150 a month for 50 million events on the 2026 pricing page. The remote MCP server is regional and stays dark until a team owner turns on Honeycomb Intelligence. Use Honeycomb when the task is wide traces under a monthly event cap. Use Datadog (`datadog`) when that org is already the source of truth, or Axiom (`axiom`) for usage-priced event storage.
+**Honeycomb** stores traces, events, and time-series metrics. Each span in a trace counts as one event. Free includes 20 million events and 100 million metric data points a month, plus the MCP server. Pro starts at $150 a month for 50 million events on the 2026 pricing page. The remote MCP server is regional and stays dark until a team owner turns on Honeycomb Intelligence. Use Honeycomb when the task is wide traces under a monthly event cap. Use Datadog (`datadog`) when that org is already the source of truth, or Axiom (`axiom`) for usage-priced event storage. Use Grafana Cloud (`grafana-cloud`) when metrics, logs, and traces should stay in one Grafana stack.
 
 ## Notes
 

@@ -3638,4 +3638,40 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Netlify pricing | https://www.netlify.com/pricing/ |
 | Netlify | https://www.netlify.com/ |
 
+## Daily ingest 2026-11-24 (Grafana Cloud, Auth0, Logfire)
+
+| Topic | URL |
+| --- | --- |
+| Grafana Cloud MCP server | https://grafana.com/docs/grafana-cloud/ai-tools/mcp-servers/cloud-mcp/ |
+| Grafana Assistant pricing | https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/assistant/ |
+| Grafana Cloud pricing | https://grafana.com/pricing/ |
+| Grafana Cloud logs pricing | https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/logs/ |
+| Grafana Cloud traces pricing | https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/traces/ |
+| Grafana Cloud metrics pricing | https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/metrics/ |
+| Create a Grafana Cloud account | https://grafana.com/auth/sign-up/create-user |
+| Grafana Cloud | https://grafana.com/products/cloud/ |
+| Auth0 MCP server | https://auth0.com/docs/get-started/auth0-mcp-server |
+| Getting started with the Auth0 MCP server | https://auth0.com/docs/get-started/auth0-mcp-server/getting-started-with-auth0-mcp-server |
+| Auth0 MCP tools reference | https://auth0.com/docs/get-started/auth0-mcp-server/auth0-mcp-tools-reference |
+| Auth0 MCP server repository | https://github.com/auth0/auth0-mcp-server |
+| Auth0 pricing | https://auth0.com/pricing.md |
+| Auth0 Free plan rate limits | https://auth0.com/docs/troubleshoot/customer-support/operational-policies/rate-limit-policy/rate-limit-configurations/free-public |
+| Auth0 rate limit policy | https://auth0.com/docs/troubleshoot/customer-support/operational-policies/rate-limit-policy |
+| Auth for MCP | https://auth0.com/ai/docs/mcp/overview |
+| Sign up for Auth0 | https://auth0.com/signup |
+| Auth0 | https://auth0.com/ |
+| Logfire MCP server | https://pydantic.dev/docs/logfire/guides/mcp-server/ |
+| Logfire query limits | https://pydantic.dev/docs/logfire/reference/query-limits/ |
+| Logfire pricing | https://pydantic.dev/pricing |
+| Sign up for Logfire | https://pydantic.dev/signup |
+| Pydantic Logfire | https://pydantic.dev/logfire |
+| Pydantic AI installation | https://pydantic.dev/docs/ai/overview/install/ |
+| Pydantic AI overview | https://pydantic.dev/docs/ai/overview/ |
+| Langfuse Cloud sign-up | https://cloud.langfuse.com/auth/sign-up |
+| Get started with Langfuse tracing | https://langfuse.com/docs/observability/get-started |
+| Langfuse | https://langfuse.com/ |
+| Braintrust sign-up | https://www.braintrust.dev/signup |
+| Braintrust docs | https://docs.braintrust.dev/ |
+| Braintrust | https://www.braintrust.dev/ |
+
 

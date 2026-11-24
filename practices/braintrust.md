@@ -4,13 +4,13 @@ title: Braintrust — traces, evals, and Loop
 kind: service
 tags: [braintrust, evals, observability, tracing]
 status: active
-updated: 2026-11-16
+updated: 2026-11-24
 when_to_use: Tracing agent runs and scoring experiments in Braintrust instead of a self-hosted collector
 ---
 
 ## Summary
 
-**Braintrust** is a hosted platform for agent traces, datasets, experiments, and online scores. You instrument with an SDK or the `bt` CLI, then compare runs in the UI. It is not Langfuse (`langfuse`), which you can self-host, and not Inspect (`inspect-ai`), which runs evals as local Python tasks.
+**Braintrust** is a hosted platform for agent traces, datasets, experiments, and online scores. You instrument with an SDK or the `bt` CLI, then compare runs in the UI. It is not Langfuse (`langfuse`), which you can self-host, and not Inspect (`inspect-ai`), which runs evals as local Python tasks. Use Logfire (`logfire`) when the meter is OpenTelemetry records next to Pydantic AI.
 
 ## Notes
 
