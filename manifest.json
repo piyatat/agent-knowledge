@@ -15040,7 +15040,7 @@
         "docs": "https://docs.datadoghq.com/mcp_server/",
         "home": "https://www.datadoghq.com/"
       },
-      "related": ["datadog-mcp-write-and-site", "sentry", "posthog", "langfuse", "axiom"]
+      "related": ["datadog-mcp-write-and-site", "sentry", "posthog", "langfuse", "axiom", "honeycomb"]
     },
     {
       "id": "datadog-mcp-write-and-site",
@@ -15168,14 +15168,14 @@
       "tags": ["railway", "hosting", "mcp", "deploy"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-24",
       "when_to_use": "Deploying an app on Railway, or letting an agent manage projects and deploys through Railway MCP",
       "links": {
         "get": "https://railway.com/",
         "docs": "https://docs.railway.com/ai/mcp-server",
         "home": "https://railway.com/"
       },
-      "related": ["railway-free-sleep-and-mcp-token", "render", "fly-io", "vercel-sandbox", "cloudflare-agents", "neon"]
+      "related": ["railway-free-sleep-and-mcp-token", "render", "fly-io", "vercel-sandbox", "cloudflare-agents", "neon", "netlify"]
     },
     {
       "id": "railway-free-sleep-and-mcp-token",
@@ -15363,7 +15363,7 @@
         "docs": "https://www.algolia.com/doc/guides/model-context-protocol",
         "home": "https://www.algolia.com/"
       },
-      "related": ["algolia-public-mcp-and-replicas", "exa", "tavily", "parallel-search", "pinecone", "typesense-cloud"]
+      "related": ["algolia-public-mcp-and-replicas", "exa", "tavily", "parallel-search", "pinecone", "typesense-cloud", "meilisearch-cloud"]
     },
     {
       "id": "algolia-public-mcp-and-replicas",
@@ -15518,14 +15518,14 @@
       "tags": ["render", "hosting", "mcp", "deploy"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-24",
       "when_to_use": "Deploying a web service, static site, or Postgres on Render, or letting an agent manage that workspace through MCP",
       "links": {
         "get": "https://dashboard.render.com/register",
         "docs": "https://render.com/docs/mcp-server",
         "home": "https://render.com/"
       },
-      "related": ["render-free-expiry-and-mcp-env", "railway", "fly-io", "vercel-sandbox", "neon"]
+      "related": ["render-free-expiry-and-mcp-env", "railway", "fly-io", "vercel-sandbox", "neon", "netlify"]
     },
     {
       "id": "render-free-expiry-and-mcp-env",
@@ -15736,7 +15736,7 @@
         "docs": "https://typesense.org/docs/guide/typesense-cloud/mcp-server.html",
         "home": "https://cloud.typesense.org/"
       },
-      "related": ["typesense-free-tier-and-mcp", "algolia"]
+      "related": ["typesense-free-tier-and-mcp", "algolia", "meilisearch-cloud"]
     },
     {
       "id": "typesense-free-tier-and-mcp",
@@ -15763,7 +15763,7 @@
         "docs": "https://axiom.co/docs/console/intelligence/mcp-server",
         "home": "https://axiom.co/"
       },
-      "related": ["axiom-unclaimed-org-and-query-cap", "datadog", "sentry"]
+      "related": ["axiom-unclaimed-org-and-query-cap", "datadog", "sentry", "honeycomb"]
     },
     {
       "id": "axiom-unclaimed-org-and-query-cap",
@@ -15786,6 +15786,87 @@
       "updated": "2026-11-24",
       "when_to_use": "A Codex stdio MCP tool fails on the first call after startup looked healthy, or codex exec resume used a wider sandbox than the new command",
       "related": ["openai-codex-mcp", "openai-codex-exec", "openai-codex-sandbox"]
+    },
+    {
+      "id": "honeycomb",
+      "path": "practices/honeycomb.md",
+      "title": "Honeycomb — traces, events, and a regional MCP server",
+      "tags": ["honeycomb", "observability", "tracing", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Querying production traces in Honeycomb, or letting an agent investigate a team through MCP",
+      "links": {
+        "get": "https://ui.honeycomb.io/signup",
+        "docs": "https://docs.honeycomb.io/integrations/mcp/configuration-guide",
+        "home": "https://www.honeycomb.io/"
+      },
+      "related": ["honeycomb-intelligence-and-throttle", "datadog", "axiom"]
+    },
+    {
+      "id": "honeycomb-intelligence-and-throttle",
+      "path": "failure-modes/honeycomb-intelligence-and-throttle.md",
+      "title": "Honeycomb MCP shows no tools, or ingest starts dropping events",
+      "tags": ["honeycomb", "observability", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Honeycomb MCP authenticates but lists no tools, a query misses older spans, or ingest accepts only one event in ten",
+      "related": ["honeycomb", "datadog", "axiom"]
+    },
+    {
+      "id": "meilisearch-cloud",
+      "path": "practices/meilisearch-cloud.md",
+      "title": "Meilisearch Cloud — hosted search and an experimental MCP route",
+      "tags": ["meilisearch", "search", "catalog", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Hosting typo-tolerant catalog search, or letting an agent search a Meilisearch project over MCP",
+      "links": {
+        "get": "https://cloud.meilisearch.com/register",
+        "docs": "https://www.meilisearch.com/docs/getting_started/integrations/mcp",
+        "home": "https://www.meilisearch.com/"
+      },
+      "related": ["meilisearch-mcp-key-and-samples", "algolia", "typesense-cloud"]
+    },
+    {
+      "id": "meilisearch-mcp-key-and-samples",
+      "path": "failure-modes/meilisearch-mcp-key-and-samples.md",
+      "title": "Meilisearch MCP misses the index, or it returns live documents",
+      "tags": ["meilisearch", "search", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Meilisearch MCP returns feature_not_enabled or a permission error, a long query misses words, or sample documents include private fields",
+      "related": ["meilisearch-cloud", "algolia", "typesense-cloud"]
+    },
+    {
+      "id": "netlify",
+      "path": "practices/netlify.md",
+      "title": "Netlify — credit-metered hosting and an OAuth MCP server",
+      "tags": ["netlify", "hosting", "mcp", "deploy"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "Deploying a site or serverless app on Netlify, or letting an agent publish it through Netlify MCP",
+      "links": {
+        "get": "https://app.netlify.com/signup",
+        "docs": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/",
+        "home": "https://www.netlify.com/"
+      },
+      "related": ["netlify-credit-pause-and-token", "railway", "render", "fly-io"]
+    },
+    {
+      "id": "netlify-credit-pause-and-token",
+      "path": "failure-modes/netlify-credit-pause-and-token.md",
+      "title": "A Netlify site pauses for the whole team, or the agent token dies",
+      "tags": ["netlify", "hosting", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-24",
+      "when_to_use": "A Netlify URL says Site not available, a deploy is refused, or MCP returns 401 after a password change",
+      "related": ["netlify", "railway", "render"]
     }
   ]
 }

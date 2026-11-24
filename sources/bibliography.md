@@ -3605,4 +3605,37 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Enable lazy startup for stdio MCP servers by default | https://github.com/openai/codex/pull/62366 |
 | ChatGPT and Codex changelog | https://learn.chatgpt.com/docs/changelog |
 
+## Daily ingest 2026-11-24 (Honeycomb, Meilisearch Cloud, Netlify)
+
+| Topic | URL |
+| --- | --- |
+| Connect to Honeycomb MCP | https://docs.honeycomb.io/integrations/mcp/configuration-guide |
+| Honeycomb MCP tools | https://docs.honeycomb.io/integrations/mcp/tools |
+| Troubleshooting Honeycomb MCP | https://docs.honeycomb.io/integrations/mcp/troubleshooting |
+| Manage team API keys | https://docs.honeycomb.io/configure/teams/manage-api-keys |
+| How Honeycomb calculates usage | https://docs.honeycomb.io/get-started/manage-costs/how-honeycomb-calculates-usage |
+| 2026 Pro plan changes | https://docs.honeycomb.io/get-started/honeycomb/2026-pro-plan-changes |
+| Honeycomb pricing | https://www.honeycomb.io/pricing |
+| Sign up for Honeycomb | https://docs.honeycomb.io/get-started/create-account |
+| Honeycomb | https://www.honeycomb.io/ |
+| Meilisearch MCP | https://www.meilisearch.com/docs/getting_started/integrations/mcp |
+| Meilisearch experimental features | https://www.meilisearch.com/docs/capabilities/platform/management/experimental_features |
+| Meilisearch pricing model | https://www.meilisearch.com/docs/capabilities/platform/billing/pricing_model |
+| Create a Meilisearch project | https://www.meilisearch.com/docs/capabilities/platform/infrastructure/create_a_project |
+| Meilisearch billing overview | https://www.meilisearch.com/docs/capabilities/platform/billing/overview |
+| Meilisearch first project | https://www.meilisearch.com/docs/getting_started/first_project |
+| Meilisearch FAQ | https://www.meilisearch.com/docs/resources/help/faq |
+| Meilisearch known limitations | https://www.meilisearch.com/docs/resources/help/known_limitations |
+| Meilisearch pricing | https://www.meilisearch.com/pricing |
+| Meilisearch | https://www.meilisearch.com/ |
+| Authenticating AI agents with Netlify | https://www.netlify.com/auth.md |
+| Netlify agent setup overview | https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/ |
+| Netlify credit-based pricing plans | https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/ |
+| How Netlify credits work | https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work/ |
+| Resume paused Netlify projects | https://docs.netlify.com/manage/accounts-and-billing/billing/resume-paused-projects/ |
+| Netlify credit-based billing FAQ | https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/billing-faq-for-credit-based-plans/ |
+| Netlify Agent Runners overview | https://docs.netlify.com/build/build-with-ai/agent-runners/overview/ |
+| Netlify pricing | https://www.netlify.com/pricing/ |
+| Netlify | https://www.netlify.com/ |
+
 

@@ -10,7 +10,7 @@ when_to_use: Hosting a product or content catalog on a dedicated search cluster,
 
 ## Summary
 
-**Typesense Cloud** runs Typesense on a dedicated cluster you pay for by the hour, with no cap on records or operations. The remote MCP server at `https://cloud.typesense.org/mcp/v1` can create clusters, index documents, and tune search under the permissions chosen at consent. The open-source server is the self-hosted alternative; this entry is the managed cloud. Use it when an agent should both provision search and write the index. Use Algolia (`algolia`) when you want a multi-tenant search API whose public MCP is read-only.
+**Typesense Cloud** runs Typesense on a dedicated cluster you pay for by the hour, with no cap on records or operations. The remote MCP server at `https://cloud.typesense.org/mcp/v1` can create clusters, index documents, and tune search under the permissions chosen at consent. The open-source server is the self-hosted alternative; this entry is the managed cloud. Use it when an agent should both provision search and write the index. Use Algolia (`algolia`) when you want a multi-tenant search API whose public MCP is read-only. Use Meilisearch Cloud (`meilisearch-cloud`) when the engine should also be self-hostable and the agent only needs to search.
 
 ## Notes
 

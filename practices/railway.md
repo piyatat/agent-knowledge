@@ -4,13 +4,13 @@ title: Railway — hosted apps and a remote MCP server
 kind: service
 tags: [railway, hosting, mcp, deploy]
 status: active
-updated: 2026-11-23
+updated: 2026-11-24
 when_to_use: Deploying an app on Railway, or letting an agent manage projects and deploys through Railway MCP
 ---
 
 ## Summary
 
-**Railway** hosts services, single-node databases, volumes, and buckets. Plans are Free ($0, $1 of usage, services sleep), Hobby ($5), Pro ($20), and Enterprise. The subscription fee counts toward resource usage. A hosted MCP server at `https://mcp.railway.com` can create projects, redeploy, and hand work to Railway Agent. Use Railway for a long-running app with a dashboard and domains. Use Fly.io (`fly-io`) for per-second Machines, or Vercel Sandbox (`vercel-sandbox`) for a short isolated microVM.
+**Railway** hosts services, single-node databases, volumes, and buckets. Plans are Free ($0, $1 of usage, services sleep), Hobby ($5), Pro ($20), and Enterprise. The subscription fee counts toward resource usage. A hosted MCP server at `https://mcp.railway.com` can create projects, redeploy, and hand work to Railway Agent. Use Railway for a long-running app with a dashboard and domains. Use Fly.io (`fly-io`) for per-second Machines, Netlify (`netlify`) for a site billed in credits, or Vercel Sandbox (`vercel-sandbox`) for a short isolated microVM.
 
 ## Notes
 

@@ -124,7 +124,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 
-## Services (158)
+## Services (161)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -288,6 +288,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [loops](practices/loops.md) | Sending product email and lifecycle campaigns from one audience, or letting an agent manage Loops contacts an… | [link](https://app.loops.so/register) | loops, email, mcp, messaging | active |
 | [typesense-cloud](practices/typesense-cloud.md) | Hosting a product or content catalog on a dedicated search cluster, or letting an agent create that cluster a… | [link](https://cloud.typesense.org/signup) | typesense, search, mcp, catalog | active |
 | [axiom](practices/axiom.md) | Storing and querying event data in Axiom, or letting an agent investigate datasets and manage monitors | [link](https://app.axiom.co/register) | axiom, observability, logs, mcp | active |
+| [honeycomb](practices/honeycomb.md) | Querying production traces in Honeycomb, or letting an agent investigate a team through MCP | [link](https://ui.honeycomb.io/signup) | honeycomb, observability, tracing, mcp | active |
+| [meilisearch-cloud](practices/meilisearch-cloud.md) | Hosting typo-tolerant catalog search, or letting an agent search a Meilisearch project over MCP | [link](https://cloud.meilisearch.com/register) | meilisearch, search, catalog, mcp | active |
+| [netlify](practices/netlify.md) | Deploying a site or serverless app on Netlify, or letting an agent publish it through Netlify MCP | [link](https://app.netlify.com/signup) | netlify, hosting, mcp, deploy | active |
 
 ## Protocols and standards (23)
 

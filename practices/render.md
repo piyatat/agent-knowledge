@@ -4,13 +4,13 @@ title: Render — hosted apps, datastores, and an OAuth MCP server
 kind: service
 tags: [render, hosting, mcp, deploy]
 status: active
-updated: 2026-11-23
+updated: 2026-11-24
 when_to_use: Deploying a web service, static site, or Postgres on Render, or letting an agent manage that workspace through MCP
 ---
 
 ## Summary
 
-**Render** hosts web services, static sites, workers, cron jobs, Postgres, Redis-compatible Key Value, workflows, and agent sandboxes. The workspace subscription is separate from each service’s compute plan: Hobby is $0, Pro is $25 a month, and Scale is $499 a month, plus compute. A free web service spins down after 15 minutes without inbound traffic. The hosted MCP server is `https://mcp.render.com/mcp`. It can create services, replace environment variables, redeploy, and run read-only SQL. Use Render for a git-backed app with a dashboard. Use Railway (`railway`) or Fly.io (`fly-io`) when those billing shapes fit better, and Vercel Sandbox (`vercel-sandbox`) for a short isolated microVM.
+**Render** hosts web services, static sites, workers, cron jobs, Postgres, Redis-compatible Key Value, workflows, and agent sandboxes. The workspace subscription is separate from each service’s compute plan: Hobby is $0, Pro is $25 a month, and Scale is $499 a month, plus compute. A free web service spins down after 15 minutes without inbound traffic. The hosted MCP server is `https://mcp.render.com/mcp`. It can create services, replace environment variables, redeploy, and run read-only SQL. Use Render for a git-backed app with a dashboard. Use Railway (`railway`) or Fly.io (`fly-io`) when those billing shapes fit better, Netlify (`netlify`) when a shared credit cap should pause every site on the team, and Vercel Sandbox (`vercel-sandbox`) for a short isolated microVM.
 
 ## Notes
 
