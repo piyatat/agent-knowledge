@@ -15301,14 +15301,14 @@
       "tags": ["svix", "webhooks", "mcp", "messaging"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-25",
       "when_to_use": "Sending webhooks to your customers, or letting an agent debug Svix deliveries and ingest",
       "links": {
         "get": "https://dashboard.svix.com/signup",
         "docs": "https://docs.svix.com/ai/dashboard-mcp",
         "home": "https://www.svix.com/"
       },
-      "related": ["svix-idempotency-and-disable", "standard-webhooks", "standard-webhooks-reserialized-body", "inngest", "stripe"]
+      "related": ["svix-idempotency-and-disable", "standard-webhooks", "standard-webhooks-reserialized-body", "inngest", "stripe", "hookdeck"]
     },
     {
       "id": "svix-idempotency-and-disable",
@@ -15408,14 +15408,14 @@
       "tags": ["infisical", "secrets", "mcp", "agents"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-24",
+      "updated": "2026-11-25",
       "when_to_use": "Giving an agent API access without placing credentials in its environment, or administering Infisical secrets",
       "links": {
         "get": "https://app.infisical.com/signup",
         "docs": "https://infisical.com/docs/documentation/platform/agent-vault/overview",
         "home": "https://infisical.com/"
       },
-      "related": ["infisical-mcp-returns-secrets", "unkey", "e2b-sandboxes", "daytona-sandboxes", "modal-sandboxes", "clerk", "workos"]
+      "related": ["infisical-mcp-returns-secrets", "unkey", "e2b-sandboxes", "daytona-sandboxes", "modal-sandboxes", "clerk", "workos", "doppler"]
     },
     {
       "id": "infisical-mcp-returns-secrets",
@@ -15927,14 +15927,14 @@
       "tags": ["auth0", "auth", "mcp", "users"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-24",
+      "updated": "2026-11-25",
       "when_to_use": "Adding Auth0 sign-in to an app, or letting an agent change that tenant through the Auth0 MCP server",
       "links": {
         "get": "https://auth0.com/signup",
         "docs": "https://auth0.com/docs/get-started/auth0-mcp-server/getting-started-with-auth0-mcp-server",
         "home": "https://auth0.com/"
       },
-      "related": ["auth0-mcp-beta-and-rate-limit", "clerk", "workos", "better-auth"]
+      "related": ["auth0-mcp-beta-and-rate-limit", "clerk", "workos", "better-auth", "auth0-fga"]
     },
     {
       "id": "auth0-mcp-beta-and-rate-limit",
@@ -16227,6 +16227,87 @@
       "updated": "2026-11-25",
       "when_to_use": "A Liveblocks feature paused, a new room was refused, or an MCP secret changed production data",
       "related": ["liveblocks", "convex"]
+    },
+    {
+      "id": "hookdeck",
+      "path": "practices/hookdeck.md",
+      "title": "Hookdeck — inbound event gateway and a hosted MCP server",
+      "tags": ["hookdeck", "webhooks", "events", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Receiving provider webhooks into your own services, or letting an agent inspect and retry Hookdeck deliveries",
+      "links": {
+        "get": "https://dashboard.hookdeck.com/signup",
+        "docs": "https://hookdeck.com/docs",
+        "home": "https://hookdeck.com/"
+      },
+      "related": ["hookdeck-developer-lock-and-mcp-write", "svix", "qstash", "standard-webhooks"]
+    },
+    {
+      "id": "hookdeck-developer-lock-and-mcp-write",
+      "path": "failure-modes/hookdeck-developer-lock-and-mcp-write.md",
+      "title": "Hookdeck locked the free dashboard, or an MCP key changed production",
+      "tags": ["hookdeck", "webhooks", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Hookdeck stopped showing the dashboard, a paused connection dropped events, or an agent retried or edited a live connection",
+      "related": ["hookdeck", "svix", "qstash"]
+    },
+    {
+      "id": "doppler",
+      "path": "practices/doppler.md",
+      "title": "Doppler — secrets manager with a local experimental MCP server",
+      "tags": ["doppler", "secrets", "mcp", "agents"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Storing app secrets for people and agents, or letting an agent read and edit a Doppler config",
+      "links": {
+        "get": "https://dashboard.doppler.com/register",
+        "docs": "https://docs.doppler.com/docs/start",
+        "home": "https://www.doppler.com/"
+      },
+      "related": ["doppler-mcp-cli-token", "infisical", "unkey"]
+    },
+    {
+      "id": "doppler-mcp-cli-token",
+      "path": "failure-modes/doppler-mcp-cli-token.md",
+      "title": "Doppler MCP used an account-wide token, or a restricted secret came back",
+      "tags": ["doppler", "secrets", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "A Doppler agent printed secret values, changed the wrong project, or a Developer workplace rejected another user",
+      "related": ["doppler", "infisical", "infisical-mcp-returns-secrets"]
+    },
+    {
+      "id": "auth0-fga",
+      "path": "practices/auth0-fga.md",
+      "title": "Auth0 FGA — hosted relationship authorization on OpenFGA",
+      "tags": ["auth0-fga", "authorization", "openfga", "rebac"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Checking whether a user can act on an object, instead of encoding those relationships in app code",
+      "links": {
+        "get": "https://dashboard.fga.dev/",
+        "docs": "https://docs.fga.dev/",
+        "home": "https://auth0.com/fine-grained-authorization"
+      },
+      "related": ["auth0-fga-trial-and-list-rate", "auth0", "clerk", "workos"]
+    },
+    {
+      "id": "auth0-fga-trial-and-list-rate",
+      "path": "failure-modes/auth0-fga-trial-and-list-rate.md",
+      "title": "Auth0 FGA throttled ListObjects, or a trial store was treated as production",
+      "tags": ["auth0-fga", "authorization", "rate-limits", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "An Auth0 FGA check or list returned a rate limit, the trial tuple or user cap was hit, or a token was rejected",
+      "related": ["auth0-fga", "auth0", "auth0-mcp-beta-and-rate-limit"]
     }
   ]
 }

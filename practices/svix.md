@@ -4,13 +4,13 @@ title: Svix — customer webhooks, ingest, and dashboard MCP
 kind: service
 tags: [svix, webhooks, mcp, messaging]
 status: active
-updated: 2026-11-22
+updated: 2026-11-25
 when_to_use: Sending webhooks to your customers, or letting an agent debug Svix deliveries and ingest
 ---
 
 ## Summary
 
-**Svix** is a hosted webhook platform. You send messages to a consumer application (usually one per customer), and Svix delivers them to that customer’s endpoints. It also ingests webhooks from providers such as Stripe or GitHub and forwards the verified payload to your handler. Two MCP servers exist: Dashboard MCP for your environment, and App Portal MCP for one customer application. Use Svix when you operate the webhook sender. Use Standard Webhooks (`standard-webhooks`) when you only need the signature scheme. Use Inngest (`inngest`) when the job is a durable workflow, not customer delivery.
+**Svix** is a hosted webhook platform. You send messages to a consumer application (usually one per customer), and Svix delivers them to that customer’s endpoints. It also ingests webhooks from providers such as Stripe or GitHub and forwards the verified payload to your handler. Two MCP servers exist: Dashboard MCP for your environment, and App Portal MCP for one customer application. Use Svix when you operate the webhook sender. Use Hookdeck (`hookdeck`) when the job is receiving provider webhooks into your own services. Use Standard Webhooks (`standard-webhooks`) when you only need the signature scheme. Use Inngest (`inngest`) when the job is a durable workflow, not customer delivery.
 
 ## Notes
 

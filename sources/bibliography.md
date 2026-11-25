@@ -3773,4 +3773,35 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Liveblocks | https://liveblocks.io/ |
 | Liveblocks docs | https://liveblocks.io/docs |
 
+## Daily ingest 2026-11-25 (Hookdeck, Doppler, Auth0 FGA)
+
+| Topic | URL |
+| --- | --- |
+| Event Gateway pricing | https://hookdeck.com/pricing |
+| Hookdeck billing | https://hookdeck.com/docs/platform/billing |
+| Hookdeck basics | https://hookdeck.com/docs/hookdeck-basics |
+| Hookdeck MCP and skills | https://hookdeck.com/docs/mcp |
+| Remote MCP server | https://hookdeck.com/changelog/remote-mcp |
+| Sign up for Hookdeck | https://dashboard.hookdeck.com/signup |
+| Hookdeck | https://hookdeck.com/ |
+| Hookdeck docs | https://hookdeck.com/docs |
+| Doppler pricing | https://www.doppler.com/pricing |
+| Doppler platform limits | https://docs.doppler.com/docs/platform-limits |
+| Doppler API reference | https://docs.doppler.com/reference/api |
+| Doppler service tokens | https://docs.doppler.com/docs/service-tokens |
+| Doppler secret visibility | https://docs.doppler.com/docs/secret-visibility |
+| Doppler MCP server | https://docs.doppler.com/docs/mcp |
+| Doppler docs | https://docs.doppler.com/docs/start |
+| Doppler register | https://dashboard.doppler.com/register |
+| Doppler | https://www.doppler.com/ |
+| Introduction to Auth0 FGA | https://docs.fga.dev/fga |
+| Getting started with Auth0 FGA | https://docs.fga.dev/getting-started |
+| Auth0 FGA subscription plans | https://docs.fga.dev/subscription-plans |
+| Auth0 FGA versus OpenFGA | https://docs.fga.dev/openfga-vs-auth0-fga |
+| Authorization for MCP servers | https://docs.fga.dev/modeling/agents/mcp-authorization |
+| OpenFGA | https://openfga.dev/ |
+| Auth0 FGA dashboard | https://dashboard.fga.dev/ |
+| Auth0 FGA | https://auth0.com/fine-grained-authorization |
+| Auth0 FGA docs | https://docs.fga.dev/ |
+
 

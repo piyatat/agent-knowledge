@@ -124,7 +124,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 
-## Services (173)
+## Services (176)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -303,6 +303,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [fal](practices/fal.md) | Generating or editing images, video, or audio through fal Model APIs or the fal MCP server | [link](https://fal.ai/login) | fal, media, inference, mcp | active |
 | [cartesia](practices/cartesia.md) | Speaking or transcribing with Cartesia Sonic or Ink, or letting an agent call the Cartesia MCP server | [link](https://play.cartesia.ai/sign-up) | cartesia, speech, voice, mcp | active |
 | [liveblocks](practices/liveblocks.md) | Adding shared rooms, comments, or presence so people and agents edit the same document | [link](https://liveblocks.io/signup) | liveblocks, realtime, collaboration, mcp | active |
+| [hookdeck](practices/hookdeck.md) | Receiving provider webhooks into your own services, or letting an agent inspect and retry Hookdeck deliveries | [link](https://dashboard.hookdeck.com/signup) | hookdeck, webhooks, events, mcp | active |
+| [doppler](practices/doppler.md) | Storing app secrets for people and agents, or letting an agent read and edit a Doppler config | [link](https://dashboard.doppler.com/register) | doppler, secrets, mcp, agents | active |
+| [auth0-fga](practices/auth0-fga.md) | Checking whether a user can act on an object, instead of encoding those relationships in app code | [link](https://dashboard.fga.dev/) | auth0-fga, authorization, openfga, rebac | active |
 
 ## Protocols and standards (23)
 
