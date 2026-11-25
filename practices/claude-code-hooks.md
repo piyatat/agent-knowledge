@@ -4,7 +4,7 @@ title: Claude Code hooks — settings.json lifecycle gates
 kind: tool
 tags: [claude, hooks, permissions, safety]
 status: active
-updated: 2026-11-23
+updated: 2026-11-25
 when_to_use: Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks instead of CLAUDE.md advice
 ---
 
@@ -20,6 +20,7 @@ Claude Code **hooks** run at named lifecycle events (CLI, IDE, Desktop, and Clau
 - **v2.1.328 (2026-11-19):** `"onFailure": "block"` also applies to `mcp_tool` hooks, the same as `command` and `http`. A managed `PostToolUse` hook no longer runs for a call that was refused before it ran: no log entry, rewrite, block, or stop on that event. `PostToolBatch` still receives most of those calls, and they are not marked refused.
 - **v2.1.329 (2026-11-19):** The trust dialog names where a folder’s hooks are declared. Claude Desktop and other non-interactive hosts warn in the conversation when hooks in managed settings fail to load. Inside Code Mode, a `PreToolUse` hook that errors no longer refuses the script’s tool call. `"onFailure": "block"` is what refuses it (`claude-code-mode-hook-fail-open`).
 - **v2.1.331 (2026-11-23):** A `PermissionDenied` hook that returns `retry: true` tells Claude to make the refused call again only when you asked for that call.
+- **v2.1.332 (2026-11-25):** `PreSkillShellCommand` can refuse the inline shell commands in a skill or command as that skill loads. A settings file that names this event on 2.1.331 or older opens a dialog at start (`claude-code-332-model-alias`).
 - `/hooks` is **read-only**. `defaultMode: "bypassPermissions"` in project/local settings is ignored (set it in user/managed settings or `--permission-mode`). Cursor can map `PreToolUse` → `preToolUse` when third-party skills are on; keep a native `.cursor/hooks.json` for Cloud Agents.
 
 ## Sources
@@ -30,7 +31,8 @@ Claude Code **hooks** run at named lifecycle events (CLI, IDE, Desktop, and Clau
 - [CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — accessed 2026-10-09
 - [Agent SDK hooks](https://code.claude.com/docs/en/agent-sdk/hooks) — accessed 2026-11-03
 - [v2.1.317](https://github.com/anthropics/claude-code/releases/tag/v2.1.317) — accessed 2026-11-03
-- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-23
+- [Claude Code changelog](https://code.claude.com/docs/en/changelog) — accessed 2026-11-25
 - [v2.1.331](https://github.com/anthropics/claude-code/releases/tag/v2.1.331) — accessed 2026-11-23
+- [v2.1.332](https://github.com/anthropics/claude-code/releases/tag/v2.1.332) — accessed 2026-11-25
 - [Claude Code setup](https://code.claude.com/docs/en/setup) — accessed 2026-11-19
 - [Claude Code memory](https://code.claude.com/docs/en/memory) — accessed 2026-08-22

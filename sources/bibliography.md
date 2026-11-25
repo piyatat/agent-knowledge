@@ -3705,4 +3705,34 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Orb sign-up | https://app.withorb.com/signup |
 | Orb | https://www.withorb.com/ |
 
+## Daily ingest 2026-11-25 (Sanity, GrowthBook, Postmark, Claude Code 2.1.332)
+
+| Topic | URL |
+| --- | --- |
+| Sanity MCP server | https://www.sanity.io/docs/ai/mcp-server |
+| Context MCP reference | https://www.sanity.io/docs/context/mcp-reference |
+| How AI credits work | https://www.sanity.io/docs/platform-management/how-ai-credits-work |
+| Plans and payments | https://www.sanity.io/docs/platform-management/plans-and-payments |
+| Understanding quotas | https://www.sanity.io/docs/help/understanding-quotas |
+| Sanity pricing | https://www.sanity.io/pricing |
+| Get started with Sanity | https://www.sanity.io/get-started |
+| Sanity | https://www.sanity.io/ |
+| Official GrowthBook MCP server | https://docs.growthbook.io/integrations/mcp |
+| Connect AI agents to GrowthBook | https://docs.growthbook.io/integrations/ai-agents |
+| GrowthBook pricing | https://www.growthbook.io/pricing |
+| Get started with GrowthBook | https://www.growthbook.io/get-started |
+| GrowthBook | https://www.growthbook.io/ |
+| Postmark API overview | https://postmarkapp.com/developer/api/overview |
+| Account and server API tokens | https://postmarkapp.com/support/article/1008-what-are-the-account-and-server-api-tokens |
+| Account approval | https://postmarkapp.com/support/article/1084-how-does-the-account-approval-process-work |
+| Server sandbox mode | https://postmarkapp.com/developer/user-guide/sandbox-mode/server-sandbox-mode/ |
+| Message streams | https://postmarkapp.com/message-streams |
+| Bulk email | https://postmarkapp.com/developer/api/bulk-email |
+| Postmark pricing | https://postmarkapp.com/pricing |
+| Sign up for Postmark | https://account.postmarkapp.com/sign_up |
+| Postmark | https://postmarkapp.com/ |
+| Postmark developer docs | https://postmarkapp.com/developer |
+| Claude Code changelog | https://code.claude.com/docs/en/changelog |
+| Claude Code 2.1.332 | https://github.com/anthropics/claude-code/releases/tag/v2.1.332 |
+
 

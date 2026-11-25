@@ -4,13 +4,13 @@ title: PostHog — product analytics, flags, and a hosted MCP server
 kind: service
 tags: [posthog, analytics, flags, mcp]
 status: active
-updated: 2026-11-23
+updated: 2026-11-25
 when_to_use: Querying product analytics, feature flags, or errors in PostHog, or letting an agent change them
 ---
 
 ## Summary
 
-**PostHog** is a hosted product platform: analytics, session replay, feature flags, experiments, error tracking, logs, surveys, and LLM observability. A remote MCP server at `https://mcp.posthog.com/mcp` lets an agent read and write that project. Connecting and calling tools is free; the underlying queries still consume each product’s usage, and tools that run a model bill PostHog AI credits. Those AI tools appear only when the organization has AI data processing on. Use PostHog when flags, product analytics, and errors should live in one project. Use Statsig (`statsig`) when gates and experiments are the product and analytics is secondary. Use Sentry (`sentry`) when the job is application errors and Seer. Use Langfuse (`langfuse`), Braintrust (`braintrust`), or Opik (`opik`) when the job is model and tool traces.
+**PostHog** is a hosted product platform: analytics, session replay, feature flags, experiments, error tracking, logs, surveys, and LLM observability. A remote MCP server at `https://mcp.posthog.com/mcp` lets an agent read and write that project. Connecting and calling tools is free; the underlying queries still consume each product’s usage, and tools that run a model bill PostHog AI credits. Those AI tools appear only when the organization has AI data processing on. Use PostHog when flags, product analytics, and errors should live in one project. Use Statsig (`statsig`) when gates and experiments are the product and analytics is secondary. Use GrowthBook (`growthbook`) when flags and experiments should be seat-priced or self-hosted. Use Sentry (`sentry`) when the job is application errors and Seer. Use Langfuse (`langfuse`), Braintrust (`braintrust`), or Opik (`opik`) when the job is model and tool traces.
 
 ## Notes
 

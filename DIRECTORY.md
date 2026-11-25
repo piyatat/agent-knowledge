@@ -124,7 +124,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 
-## Services (167)
+## Services (170)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -297,6 +297,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [knock](practices/knock.md) | Sending one product workflow across email, in-app, push, SMS, and chat, or letting an agent edit those workfl… | [link](https://dashboard.knock.app/signup) | knock, notifications, messaging, mcp | active |
 | [unkey](practices/unkey.md) | Issuing and verifying keys for your own API, or letting an agent manage those keys and a Compute deployment | [link](https://app.unkey.com/auth/sign-up) | unkey, api-keys, mcp, hosting | active |
 | [orb](practices/orb.md) | Rating raw usage events into invoices and credits, or letting an agent inspect a bill and change a plan | [link](https://app.withorb.com/signup) | orb, billing, usage, mcp | active |
+| [sanity](practices/sanity.md) | Editing structured content in a Sanity dataset, or letting an agent query and publish documents | [link](https://www.sanity.io/get-started) | sanity, cms, content, mcp | active |
+| [growthbook](practices/growthbook.md) | Running feature flags and experiments on GrowthBook, or letting an agent change them | [link](https://www.growthbook.io/get-started) | growthbook, flags, experiments, mcp | active |
+| [postmark](practices/postmark.md) | Sending transactional application email through Postmark after a domain is verified | [link](https://account.postmarkapp.com/sign_up) | postmark, email, messaging, deliverability | active |
 
 ## Protocols and standards (23)
 

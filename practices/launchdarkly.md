@@ -4,13 +4,13 @@ title: LaunchDarkly — feature flags and a hosted MCP server
 kind: service
 tags: [launchdarkly, flags, experiments, mcp]
 status: active
-updated: 2026-11-23
+updated: 2026-11-25
 when_to_use: Changing LaunchDarkly flags or experiments from an agent, or checking a flag before a release
 ---
 
 ## Summary
 
-**LaunchDarkly** hosts feature flags, experiments, agent configs, and app observability. The hosted MCP server is `https://mcp.launchdarkly.com/mcp`. It is absent on the federal and EU instances. Developer is $0. The sign-up page says that account is free forever and includes 14 days of unlimited access. The pricing page says Developer is never billed and that you upgrade when you hit a limit. Use LaunchDarkly when flags and guarded releases are the job. Use Statsig (`statsig`) or PostHog (`posthog`) when gates already live in one of those projects.
+**LaunchDarkly** hosts feature flags, experiments, agent configs, and app observability. The hosted MCP server is `https://mcp.launchdarkly.com/mcp`. It is absent on the federal and EU instances. Developer is $0. The sign-up page says that account is free forever and includes 14 days of unlimited access. The pricing page says Developer is never billed and that you upgrade when you hit a limit. Use LaunchDarkly when flags and guarded releases are the job. Use Statsig (`statsig`) or PostHog (`posthog`) when gates already live in one of those projects. Use GrowthBook (`growthbook`) when flags should be seat-priced or run on a server you host.
 
 ## Notes
 

@@ -4,13 +4,13 @@ title: Knock — cross-channel notifications and an OAuth MCP server
 kind: service
 tags: [knock, notifications, messaging, mcp]
 status: active
-updated: 2026-11-24
+updated: 2026-11-25
 when_to_use: Sending one product workflow across email, in-app, push, SMS, and chat, or letting an agent edit those workflows
 ---
 
 ## Summary
 
-**Knock** is hosted notification infrastructure. One workflow can deliver email, in-app feed or toast, push, SMS, Slack, and other channels, and it stores the recipient profiles. A remote MCP server at `https://mcp.knock.app/mcp` signs in with OAuth, or with a service token for a client that has no browser. Free is $0 with no card. Use Knock when several channels share one workflow and one preference model. Use Resend (`resend`) or Loops (`loops`) when the job is email only. Knock still leaves delivery to your own downstream provider, and that provider bills you separately.
+**Knock** is hosted notification infrastructure. One workflow can deliver email, in-app feed or toast, push, SMS, Slack, and other channels, and it stores the recipient profiles. A remote MCP server at `https://mcp.knock.app/mcp` signs in with OAuth, or with a service token for a client that has no browser. Free is $0 with no card. Use Knock when several channels share one workflow and one preference model. Use Resend (`resend`) or Loops (`loops`) when the job is email only. Knock still leaves delivery to your own downstream provider, such as Postmark (`postmark`), and that provider bills you separately.
 
 ## Notes
 

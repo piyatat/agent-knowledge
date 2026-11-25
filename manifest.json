@@ -3876,7 +3876,7 @@
         "safety"
       ],
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-25",
       "when_to_use": "Authoring .claude/settings.json hooks, including MCP elicitation gates, or choosing command/http/prompt hooks instead of CLAUDE.md advice",
       "links": {
         "get": "https://code.claude.com/docs/en/setup",
@@ -3892,7 +3892,8 @@
         "claude-code-elicitation",
         "claude-code-gateway",
         "claude-agent-sdk",
-        "claude-code-mode-hook-fail-open"
+        "claude-code-mode-hook-fail-open",
+        "claude-code-332-model-alias"
       ]
     },
     {
@@ -4796,14 +4797,15 @@
         "tokens"
       ],
       "status": "active",
-      "updated": "2026-09-07",
-      "when_to_use": "Authoring .claude/skills SKILL.md, or migrating .claude/commands into skills",
+      "updated": "2026-11-25",
+      "when_to_use": "Authoring .claude/skills SKILL.md, migrating .claude/commands into skills, or using a skill an MCP server publishes",
       "related": [
         "claude-code-plugins",
         "claude-skills-api",
         "agent-skills-open-standard",
         "openai-codex-skills",
-        "skills-invocation-modes"
+        "skills-invocation-modes",
+        "claude-code-332-model-alias"
       ]
     },
     {
@@ -14890,14 +14892,14 @@
       "tags": ["resend", "email", "mcp", "messaging"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-24",
+      "updated": "2026-11-25",
       "when_to_use": "Sending app email through Resend, or letting an agent manage domains, templates, and inbound mail",
       "links": {
         "get": "https://resend.com/signup",
         "docs": "https://resend.com/docs/mcp-server",
         "home": "https://resend.com/"
       },
-      "related": ["resend-quota-and-test-domain", "composio", "stripe", "loops", "knock"]
+      "related": ["resend-quota-and-test-domain", "composio", "stripe", "loops", "knock", "postmark"]
     },
     {
       "id": "resend-quota-and-test-domain",
@@ -14998,14 +15000,14 @@
       "tags": ["posthog", "analytics", "flags", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-25",
       "when_to_use": "Querying product analytics, feature flags, or errors in PostHog, or letting an agent change them",
       "links": {
         "get": "https://us.posthog.com/signup",
         "docs": "https://posthog.com/docs/model-context-protocol",
         "home": "https://posthog.com/"
       },
-      "related": ["posthog-mcp-quota-and-pin", "statsig", "launchdarkly", "sentry", "langfuse", "braintrust", "opik"]
+      "related": ["posthog-mcp-quota-and-pin", "statsig", "launchdarkly", "growthbook", "sentry", "langfuse", "braintrust", "opik"]
     },
     {
       "id": "posthog-mcp-quota-and-pin",
@@ -15268,14 +15270,14 @@
       "tags": ["statsig", "flags", "experiments", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-25",
       "when_to_use": "Checking or changing Statsig feature gates and experiments, or letting an agent use the console",
       "links": {
         "get": "https://console.statsig.com/sign_up",
         "docs": "https://docs.statsig.com/integrations/mcp/overview",
         "home": "https://www.statsig.com/"
       },
-      "related": ["statsig-mcp-confirm-and-meter", "launchdarkly", "posthog", "posthog-mcp-quota-and-pin"]
+      "related": ["statsig-mcp-confirm-and-meter", "launchdarkly", "posthog", "posthog-mcp-quota-and-pin", "growthbook"]
     },
     {
       "id": "statsig-mcp-confirm-and-meter",
@@ -15672,14 +15674,14 @@
       "tags": ["launchdarkly", "flags", "experiments", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-25",
       "when_to_use": "Changing LaunchDarkly flags or experiments from an agent, or checking a flag before a release",
       "links": {
         "get": "https://app.launchdarkly.com/signup",
         "docs": "https://launchdarkly.com/docs/home/getting-started/mcp-hosted",
         "home": "https://launchdarkly.com/"
       },
-      "related": ["launchdarkly-mcp-writes-and-token", "statsig", "posthog"]
+      "related": ["launchdarkly-mcp-writes-and-token", "statsig", "posthog", "growthbook"]
     },
     {
       "id": "launchdarkly-mcp-writes-and-token",
@@ -15721,14 +15723,14 @@
       "tags": ["loops", "email", "mcp", "messaging"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-24",
+      "updated": "2026-11-25",
       "when_to_use": "Sending product email and lifecycle campaigns from one audience, or letting an agent manage Loops contacts and transactional mail",
       "links": {
         "get": "https://app.loops.so/register",
         "docs": "https://loops.so/docs/mcp-server",
         "home": "https://loops.so/"
       },
-      "related": ["loops-send-quota-and-test-inbox", "resend", "knock"]
+      "related": ["loops-send-quota-and-test-inbox", "resend", "knock", "postmark"]
     },
     {
       "id": "loops-send-quota-and-test-inbox",
@@ -15975,14 +15977,14 @@
       "tags": ["knock", "notifications", "messaging", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-24",
+      "updated": "2026-11-25",
       "when_to_use": "Sending one product workflow across email, in-app, push, SMS, and chat, or letting an agent edit those workflows",
       "links": {
         "get": "https://dashboard.knock.app/signup",
         "docs": "https://docs.knock.app/ai/mcp-server",
         "home": "https://knock.app/"
       },
-      "related": ["knock-sandbox-and-service-token", "resend", "loops", "twilio"]
+      "related": ["knock-sandbox-and-service-token", "resend", "loops", "twilio", "postmark"]
     },
     {
       "id": "knock-sandbox-and-service-token",
@@ -16048,6 +16050,98 @@
       "updated": "2026-11-24",
       "when_to_use": "Orb usage is missing from an invoice, a test key changed the wrong account, or an agent granted credits it should only have read",
       "related": ["orb", "stripe", "polar"]
+    },
+    {
+      "id": "sanity",
+      "path": "practices/sanity.md",
+      "title": "Sanity — structured content and two different MCP servers",
+      "tags": ["sanity", "cms", "content", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Editing structured content in a Sanity dataset, or letting an agent query and publish documents",
+      "links": {
+        "get": "https://www.sanity.io/get-started",
+        "docs": "https://www.sanity.io/docs/ai/mcp-server",
+        "home": "https://www.sanity.io/"
+      },
+      "related": ["sanity-mcp-writes-and-public-dataset", "notion-mcp"]
+    },
+    {
+      "id": "sanity-mcp-writes-and-public-dataset",
+      "path": "failure-modes/sanity-mcp-writes-and-public-dataset.md",
+      "title": "A Sanity agent published content, or Context MCP refused a project token",
+      "tags": ["sanity", "cms", "mcp", "auth"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "A Sanity agent published a draft, opened a dataset to the public, or a read-only content call returned 403",
+      "related": ["sanity", "notion-mcp"]
+    },
+    {
+      "id": "growthbook",
+      "path": "practices/growthbook.md",
+      "title": "GrowthBook — feature flags, experiments, and an OAuth MCP server",
+      "tags": ["growthbook", "flags", "experiments", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Running feature flags and experiments on GrowthBook, or letting an agent change them",
+      "links": {
+        "get": "https://www.growthbook.io/get-started",
+        "docs": "https://docs.growthbook.io/integrations/mcp",
+        "home": "https://www.growthbook.io/"
+      },
+      "related": ["growthbook-mcp-write-passthrough", "statsig", "launchdarkly", "posthog"]
+    },
+    {
+      "id": "growthbook-mcp-write-passthrough",
+      "path": "failure-modes/growthbook-mcp-write-passthrough.md",
+      "title": "A GrowthBook write bypasses the skill guardrails, or the free event cap is misread",
+      "tags": ["growthbook", "flags", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "A GrowthBook agent deleted a flag, a skill workflow was skipped, or managed-warehouse events stopped at the free allowance",
+      "related": ["growthbook", "statsig", "launchdarkly"]
+    },
+    {
+      "id": "postmark",
+      "path": "practices/postmark.md",
+      "title": "Postmark — transactional email with a manual sending review",
+      "tags": ["postmark", "email", "messaging", "deliverability"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Sending transactional application email through Postmark after a domain is verified",
+      "links": {
+        "get": "https://account.postmarkapp.com/sign_up",
+        "docs": "https://postmarkapp.com/developer",
+        "home": "https://postmarkapp.com/"
+      },
+      "related": ["postmark-approval-and-sandbox-quota", "resend", "loops", "knock"]
+    },
+    {
+      "id": "postmark-approval-and-sandbox-quota",
+      "path": "failure-modes/postmark-approval-and-sandbox-quota.md",
+      "title": "Postmark blocks an unapproved recipient, or a sandbox send spends the free quota",
+      "tags": ["postmark", "email", "deliverability", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Postmark refused a recipient, a test send used the monthly allowance, or a bulk broadcast returned error 14",
+      "related": ["postmark", "resend", "loops"]
+    },
+    {
+      "id": "claude-code-332-model-alias",
+      "path": "failure-modes/claude-code-332-model-alias.md",
+      "title": "Claude Code 2.1.332 moves cloud aliases to Sonnet 5.5 and gates skill shells",
+      "tags": ["claude", "models", "skills", "hooks"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "A Claude Code session on Foundry, Agent Platform, or Bedrock Mantle picked a different model, or a skill's inline shell ran or was blocked on load",
+      "related": ["claude-code-skills", "claude-code-hooks", "claude-code-mode-provider-docs", "claude-code-computer-use"]
     }
   ]
 }
