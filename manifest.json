@@ -12956,7 +12956,7 @@
       "tags": ["livekit", "voice", "realtime", "sdk"],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-25",
       "when_to_use": "Building a Python or Node agent that joins a live audio, video, or phone room",
       "links": {
         "get": "https://docs.livekit.io/agents/start/voice-ai/",
@@ -12965,6 +12965,7 @@
       },
       "related": [
         "deepgram",
+        "cartesia",
         "zep",
         "zep-memory-as-instructions",
         "mem0",
@@ -13112,7 +13113,7 @@
       "tags": ["elevenlabs", "voice", "agents", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-25",
       "when_to_use": "Building a hosted voice or phone agent, or managing those agents from another MCP client",
       "links": {
         "get": "https://elevenlabs.io/app/sign-up",
@@ -13122,6 +13123,7 @@
       "related": [
         "elevenlabs-mcp-workspace",
         "deepgram",
+        "cartesia",
         "livekit-agents",
         "zep",
         "prompt-injection-agent-defense"
@@ -13645,7 +13647,7 @@
       "tags": ["pipecat", "voice", "realtime", "cloud"],
       "kind": "tool",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-25",
       "when_to_use": "Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud",
       "links": {
         "get": "https://docs.pipecat.ai/pipecat/get-started/introduction",
@@ -13655,6 +13657,7 @@
       "related": [
         "pipecat-cloud-reserved-minutes",
         "deepgram",
+        "cartesia",
         "livekit-agents",
         "elevenlabs-agents",
         "e2b-sandboxes",
@@ -14381,7 +14384,7 @@
       "tags": ["huggingface", "routing", "models", "inference"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-20",
+      "updated": "2026-11-25",
       "when_to_use": "Calling open models from an agent through one Hugging Face token, with failover across hosts",
       "links": {
         "get": "https://huggingface.co/join",
@@ -14394,6 +14397,7 @@
         "together-ai",
         "groq-cloud",
         "cerebras-inference",
+        "fal",
         "vllm"
       ]
     },
@@ -15081,14 +15085,14 @@
       "tags": ["convex", "database", "mcp", "backend"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-25",
       "when_to_use": "Giving an app a hosted Convex backend, or letting an agent inspect a Convex deployment",
       "links": {
         "get": "https://www.convex.dev/signup",
         "docs": "https://docs.convex.dev/ai/convex-mcp-server",
         "home": "https://www.convex.dev/"
       },
-      "related": ["convex-mcp-production-and-cap", "neon", "supabase", "pinecone", "mongodb-atlas", "turso"]
+      "related": ["convex-mcp-production-and-cap", "neon", "supabase", "liveblocks", "pinecone", "mongodb-atlas", "turso"]
     },
     {
       "id": "convex-mcp-production-and-cap",
@@ -15324,14 +15328,14 @@
       "tags": ["deepgram", "speech", "voice", "transcription"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-25",
       "when_to_use": "Transcribing live or recorded audio for an agent, or streaming turn-taking speech with Flux",
       "links": {
         "get": "https://console.deepgram.com/signup",
         "docs": "https://developers.deepgram.com/docs/stt/getting-started",
         "home": "https://deepgram.com/"
       },
-      "related": ["deepgram-default-model-and-concurrency", "livekit-agents", "pipecat", "elevenlabs-agents"]
+      "related": ["deepgram-default-model-and-concurrency", "livekit-agents", "pipecat", "elevenlabs-agents", "cartesia"]
     },
     {
       "id": "deepgram-default-model-and-concurrency",
@@ -16142,6 +16146,87 @@
       "updated": "2026-11-25",
       "when_to_use": "A Claude Code session on Foundry, Agent Platform, or Bedrock Mantle picked a different model, or a skill's inline shell ran or was blocked on load",
       "related": ["claude-code-skills", "claude-code-hooks", "claude-code-mode-provider-docs", "claude-code-computer-use"]
+    },
+    {
+      "id": "fal",
+      "path": "practices/fal.md",
+      "title": "fal — generative media APIs and a hosted MCP server",
+      "tags": ["fal", "media", "inference", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Generating or editing images, video, or audio through fal Model APIs or the fal MCP server",
+      "links": {
+        "get": "https://fal.ai/login",
+        "docs": "https://fal.ai/docs/documentation",
+        "home": "https://fal.ai/"
+      },
+      "related": ["fal-credit-lock-and-concurrency", "huggingface-inference-providers", "together-ai"]
+    },
+    {
+      "id": "fal-credit-lock-and-concurrency",
+      "path": "failure-modes/fal-credit-lock-and-concurrency.md",
+      "title": "A fal call locked for credits, queued on concurrency, or billed the wrong account",
+      "tags": ["fal", "billing", "rate-limits", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "A fal request returned 429, the account locked, or an MCP run billed the wrong account",
+      "related": ["fal", "huggingface-inference-providers"]
+    },
+    {
+      "id": "cartesia",
+      "path": "practices/cartesia.md",
+      "title": "Cartesia — Sonic speech, Ink transcription, and voice agents",
+      "tags": ["cartesia", "speech", "voice", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Speaking or transcribing with Cartesia Sonic or Ink, or letting an agent call the Cartesia MCP server",
+      "links": {
+        "get": "https://play.cartesia.ai/sign-up",
+        "docs": "https://docs.cartesia.ai/get-started/overview",
+        "home": "https://www.cartesia.ai/"
+      },
+      "related": ["cartesia-overage-and-version", "deepgram", "elevenlabs-agents", "livekit-agents", "pipecat"]
+    },
+    {
+      "id": "cartesia-overage-and-version",
+      "path": "failure-modes/cartesia-overage-and-version.md",
+      "title": "Cartesia blocked a request on credits, concurrency, or the wrong key",
+      "tags": ["cartesia", "speech", "billing", "rate-limits"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "A Cartesia request returned 429 or 400, a key was rejected, or speech stopped at a zero balance",
+      "related": ["cartesia", "deepgram", "elevenlabs-agents"]
+    },
+    {
+      "id": "liveblocks",
+      "path": "practices/liveblocks.md",
+      "title": "Liveblocks — shared rooms for people and agents",
+      "tags": ["liveblocks", "realtime", "collaboration", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Adding shared rooms, comments, or presence so people and agents edit the same document",
+      "links": {
+        "get": "https://liveblocks.io/signup",
+        "docs": "https://liveblocks.io/docs",
+        "home": "https://liveblocks.io/"
+      },
+      "related": ["liveblocks-free-pause-and-secret", "convex"]
+    },
+    {
+      "id": "liveblocks-free-pause-and-secret",
+      "path": "failure-modes/liveblocks-free-pause-and-secret.md",
+      "title": "Liveblocks paused a free feature, or an MCP secret wrote production",
+      "tags": ["liveblocks", "realtime", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "A Liveblocks feature paused, a new room was refused, or an MCP secret changed production data",
+      "related": ["liveblocks", "convex"]
     }
   ]
 }

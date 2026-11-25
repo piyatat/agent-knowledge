@@ -124,7 +124,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 
-## Services (170)
+## Services (173)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -300,6 +300,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [sanity](practices/sanity.md) | Editing structured content in a Sanity dataset, or letting an agent query and publish documents | [link](https://www.sanity.io/get-started) | sanity, cms, content, mcp | active |
 | [growthbook](practices/growthbook.md) | Running feature flags and experiments on GrowthBook, or letting an agent change them | [link](https://www.growthbook.io/get-started) | growthbook, flags, experiments, mcp | active |
 | [postmark](practices/postmark.md) | Sending transactional application email through Postmark after a domain is verified | [link](https://account.postmarkapp.com/sign_up) | postmark, email, messaging, deliverability | active |
+| [fal](practices/fal.md) | Generating or editing images, video, or audio through fal Model APIs or the fal MCP server | [link](https://fal.ai/login) | fal, media, inference, mcp | active |
+| [cartesia](practices/cartesia.md) | Speaking or transcribing with Cartesia Sonic or Ink, or letting an agent call the Cartesia MCP server | [link](https://play.cartesia.ai/sign-up) | cartesia, speech, voice, mcp | active |
+| [liveblocks](practices/liveblocks.md) | Adding shared rooms, comments, or presence so people and agents edit the same document | [link](https://liveblocks.io/signup) | liveblocks, realtime, collaboration, mcp | active |
 
 ## Protocols and standards (23)
 

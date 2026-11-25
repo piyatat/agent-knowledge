@@ -4,13 +4,13 @@ title: Pipecat — Python voice pipelines and Pipecat Cloud
 kind: tool
 tags: [pipecat, voice, realtime, cloud]
 status: active
-updated: 2026-11-22
+updated: 2026-11-25
 when_to_use: Building a Python voice pipeline you run yourself, or hosting that agent on Pipecat Cloud
 ---
 
 ## Summary
 
-**Pipecat** is an open-source Python framework (BSD-2-Clause) for voice and multimodal agents. A pipeline orders audio in, speech-to-text, the model, text-to-speech, and audio out. You pick the model, speech, and transport providers. **Pipecat Cloud** (Daily) runs the agent image in Daily-hosted regions; **Pipecat Enterprise** runs it on a Kubernetes cluster you operate, with the same control plane. A warm instance bills while idle (`pipecat-cloud-reserved-minutes`). LiveKit Agents (`livekit-agents`) is the other room-native framework. ElevenLabs Agents (`elevenlabs-agents`) is a hosted voice product with its own stack.
+**Pipecat** is an open-source Python framework (BSD-2-Clause) for voice and multimodal agents. A pipeline orders audio in, speech-to-text, the model, text-to-speech, and audio out. You pick the model, speech, and transport providers. **Pipecat Cloud** (Daily) runs the agent image in Daily-hosted regions; **Pipecat Enterprise** runs it on a Kubernetes cluster you operate, with the same control plane. A warm instance bills while idle (`pipecat-cloud-reserved-minutes`). LiveKit Agents (`livekit-agents`) is the other room-native framework. ElevenLabs Agents (`elevenlabs-agents`) is a hosted voice product with its own stack. Cartesia (`cartesia`) is a speech API this pipeline can call.
 
 ## Notes
 

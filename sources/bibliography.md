@@ -3735,4 +3735,42 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Claude Code changelog | https://code.claude.com/docs/en/changelog |
 | Claude Code 2.1.332 | https://github.com/anthropics/claude-code/releases/tag/v2.1.332 |
 
+## Daily ingest 2026-11-25 (fal, Cartesia, Liveblocks)
+
+| Topic | URL |
+| --- | --- |
+| fal Model API pricing | https://fal.ai/docs/documentation/model-apis/pricing |
+| fal Model API FAQ | https://fal.ai/docs/documentation/model-apis/faq |
+| fal concurrency limits | https://fal.ai/docs/documentation/model-apis/concurrency-limits |
+| Get your fal API key | https://fal.ai/docs/documentation/setting-up/authentication |
+| fal accounts and identity | https://fal.ai/docs/documentation/setting-up/accounts-and-identity |
+| fal key-based authentication | https://fal.ai/docs/documentation/model-apis/authentication/key-based |
+| fal MCP server | https://fal.ai/mcp |
+| Login to fal | https://fal.ai/login |
+| fal | https://fal.ai/ |
+| fal documentation | https://fal.ai/docs/documentation |
+| Cartesia pricing | https://www.cartesia.ai/pricing |
+| How Cartesia charges | https://docs.cartesia.ai/pricing |
+| Cartesia API conventions | https://docs.cartesia.ai/use-the-api/api-conventions |
+| Cartesia concurrency and timeouts | https://docs.cartesia.ai/use-the-api/concurrency-limits-and-timeouts |
+| Sonic 3.6 | https://docs.cartesia.ai/build-with-cartesia/tts-models/latest |
+| Text-to-speech bytes | https://docs.cartesia.ai/api-reference/tts/bytes |
+| Generate an access token | https://docs.cartesia.ai/api-reference/auth/access-token |
+| Cartesia MCP | https://docs.cartesia.ai/tools/ai/mcp |
+| Line agent concurrency | https://docs.cartesia.ai/line/infrastructure/scaling |
+| Cartesia sign-up | https://play.cartesia.ai/sign-up |
+| Cartesia | https://www.cartesia.ai/ |
+| Cartesia overview | https://docs.cartesia.ai/get-started/overview |
+| Liveblocks pricing | https://liveblocks.io/pricing |
+| Liveblocks plans | https://liveblocks.io/docs/pricing/plans |
+| Liveblocks pricing FAQ | https://liveblocks.io/docs/pricing/faqs |
+| Liveblocks MCP server | https://liveblocks.io/docs/tools/mcp-server |
+| liveblocks-mcp-server README | https://github.com/liveblocks/liveblocks-mcp-server/blob/main/README.md |
+| Create a Liveblocks account | https://liveblocks.io/docs/platform/account-management/create-an-account |
+| Liveblocks projects | https://liveblocks.io/docs/platform/projects |
+| Liveblocks REST API | https://liveblocks.io/docs/api-reference/rest-api-endpoints |
+| Liveblocks sign-up | https://liveblocks.io/signup |
+| Liveblocks | https://liveblocks.io/ |
+| Liveblocks docs | https://liveblocks.io/docs |
+
 

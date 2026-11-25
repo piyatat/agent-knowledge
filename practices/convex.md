@@ -4,13 +4,13 @@ title: Convex — hosted backend and a local MCP server
 kind: service
 tags: [convex, database, mcp, backend]
 status: active
-updated: 2026-11-22
+updated: 2026-11-25
 when_to_use: Giving an app a hosted Convex backend, or letting an agent inspect a Convex deployment
 ---
 
 ## Summary
 
-**Convex** is a hosted application backend: queries, mutations, actions, file storage, crons, and text and vector search. The agent interface in the current docs is a local MCP server shipped with the Convex CLI. It uses the account login by default, so it can see every project that login can open, while production stays limited until the operator opts in. Use Neon (`neon`) or Supabase (`supabase`) when the app needs Postgres. Use Convex when the app’s functions and data should live in one hosted deployment.
+**Convex** is a hosted application backend: queries, mutations, actions, file storage, crons, and text and vector search. The agent interface in the current docs is a local MCP server shipped with the Convex CLI. It uses the account login by default, so it can see every project that login can open, while production stays limited until the operator opts in. Use Neon (`neon`) or Supabase (`supabase`) when the app needs Postgres. Use Convex when the app’s functions and data should live in one hosted deployment. Use Liveblocks (`liveblocks`) when the missing piece is a shared room rather than that backend.
 
 ## Notes
 
