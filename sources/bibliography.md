@@ -3804,4 +3804,40 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Auth0 FGA | https://auth0.com/fine-grained-authorization |
 | Auth0 FGA docs | https://docs.fga.dev/ |
 
+## Daily ingest 2026-11-25 (Tinybird, Stytch, Ably)
+
+| Topic | URL |
+| --- | --- |
+| Tinybird free plan | https://www.tinybird.co/docs/forward/pricing/free |
+| Tinybird Developer plan | https://www.tinybird.co/docs/forward/pricing/developer |
+| Tinybird limits | https://www.tinybird.co/docs/forward/pricing/limits |
+| Tinybird MCP | https://www.tinybird.co/docs/forward/query-data/mcp |
+| Tinybird Query API | https://www.tinybird.co/docs/forward/query-data/sql-api |
+| Tinybird pricing | https://www.tinybird.co/pricing |
+| Tinybird sign-up | https://cloud.tinybird.co/signup |
+| Tinybird | https://www.tinybird.co/ |
+| Stytch pricing | https://stytch.com/pricing |
+| Stytch API keys | https://stytch.com/docs/resources/workspace-management/api-keys |
+| Stytch MCP server | https://stytch.com/docs/resources/workspace-management/stytch-mcp-server |
+| Stytch Connected Apps | https://stytch.com/connected-apps |
+| Consumer API overview | https://stytch.com/docs/api-reference/consumer/api/overview |
+| Consumer API 400 errors | https://stytch.com/docs/api-reference/consumer/api/errors/400 |
+| Sandbox values | https://stytch.com/docs/api-reference/consumer/api/resources/sandbox-values |
+| Stytch rate limits | https://stytch.com/docs/resources/policies/platform/rate-limits |
+| Send an SMS OTP | https://stytch.com/docs/api-reference/consumer/api/otp/via-sms/send |
+| Create a Stytch account | https://stytch.com/dashboard/create-account |
+| Stytch | https://stytch.com/ |
+| Ably pricing overview | https://ably.com/docs/platform/pricing |
+| Ably limits | https://ably.com/docs/platform/pricing/limits |
+| Ably token auth | https://ably.com/docs/auth/token |
+| Ably basic auth | https://ably.com/docs/auth/basic |
+| Ably AI Transport | https://ably.com/docs/ai-transport.md |
+| Error 40167 | https://ably.com/docs/platform/errors/codes/40167-untrusted-client-type-declaration |
+| Error 40112 | https://ably.com/docs/platform/errors/codes/40112-account-message-limit-exceeded |
+| Ably error codes | https://ably.com/docs/platform/errors/codes |
+| Ably pricing FAQs | https://ably.com/docs/platform/pricing/faqs |
+| Sign up for Ably | https://ably.com/sign-up |
+| Ably | https://ably.com/ |
+| Ably docs | https://ably.com/docs |
+
 

@@ -14795,7 +14795,7 @@
         "docs": "https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server",
         "home": "https://clerk.com/"
       },
-      "related": ["clerk-mcp-workspace-and-secret", "supabase", "composio", "neon", "workos", "better-auth", "auth0"]
+      "related": ["clerk-mcp-workspace-and-secret", "supabase", "composio", "neon", "workos", "better-auth", "auth0", "stytch"]
     },
     {
       "id": "clerk-mcp-workspace-and-secret",
@@ -15496,7 +15496,7 @@
         "docs": "https://clickhouse.com/docs/products/cloud/features/ai-ml/remote-mcp",
         "home": "https://clickhouse.com/"
       },
-      "related": ["clickhouse-idle-and-mcp", "motherduck", "neon", "supabase", "datadog"]
+      "related": ["clickhouse-idle-and-mcp", "motherduck", "neon", "supabase", "datadog", "tinybird"]
     },
     {
       "id": "clickhouse-idle-and-mcp",
@@ -16215,7 +16215,7 @@
         "docs": "https://liveblocks.io/docs",
         "home": "https://liveblocks.io/"
       },
-      "related": ["liveblocks-free-pause-and-secret", "convex"]
+      "related": ["liveblocks-free-pause-and-secret", "convex", "ably"]
     },
     {
       "id": "liveblocks-free-pause-and-secret",
@@ -16308,6 +16308,87 @@
       "updated": "2026-11-25",
       "when_to_use": "An Auth0 FGA check or list returned a rate limit, the trial tuple or user cap was hit, or a token was rejected",
       "related": ["auth0-fga", "auth0", "auth0-mcp-beta-and-rate-limit"]
+    },
+    {
+      "id": "tinybird",
+      "path": "practices/tinybird.md",
+      "title": "Tinybird — managed ClickHouse queries published as APIs",
+      "tags": ["tinybird", "analytics", "clickhouse", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Publishing SQL over event data as an API, or letting an agent query a Tinybird workspace",
+      "links": {
+        "get": "https://cloud.tinybird.co/signup",
+        "docs": "https://www.tinybird.co/docs/forward/query-data/mcp",
+        "home": "https://www.tinybird.co/"
+      },
+      "related": ["tinybird-free-query-and-mcp-token", "clickhouse-cloud", "motherduck"]
+    },
+    {
+      "id": "tinybird-free-query-and-mcp-token",
+      "path": "failure-modes/tinybird-free-query-and-mcp-token.md",
+      "title": "Tinybird stopped an LLM call, or MCP kept using the token in the URL",
+      "tags": ["tinybird", "analytics", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "A Tinybird query returned 429, an MCP SQL call returned 403, or text-to-SQL stopped after the free credits",
+      "related": ["tinybird", "clickhouse-cloud", "motherduck"]
+    },
+    {
+      "id": "stytch",
+      "path": "practices/stytch.md",
+      "title": "Stytch — consumer and B2B auth, with a workspace MCP server",
+      "tags": ["stytch", "auth", "mcp", "b2b"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Adding passwordless or organization login, or letting an agent configure a Stytch workspace",
+      "links": {
+        "get": "https://stytch.com/dashboard/create-account",
+        "docs": "https://stytch.com/docs/resources/workspace-management/stytch-mcp-server",
+        "home": "https://stytch.com/"
+      },
+      "related": ["stytch-test-host-and-sandbox", "clerk", "workos", "auth0", "better-auth"]
+    },
+    {
+      "id": "stytch-test-host-and-sandbox",
+      "path": "failure-modes/stytch-test-host-and-sandbox.md",
+      "title": "Stytch refused an email, or a test send never left the sandbox",
+      "tags": ["stytch", "auth", "email", "rate-limits"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "A Stytch login returned billing_not_verified, a magic link never arrived, or SMS OTP in Test returned 429",
+      "related": ["stytch", "clerk", "auth0"]
+    },
+    {
+      "id": "ably",
+      "path": "practices/ably.md",
+      "title": "Ably — hosted realtime pub/sub and AI Transport",
+      "tags": ["ably", "realtime", "pubsub", "ai-transport"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "Publishing a live stream or agent output to many subscribed clients",
+      "links": {
+        "get": "https://ably.com/sign-up",
+        "docs": "https://ably.com/docs",
+        "home": "https://ably.com/"
+      },
+      "related": ["ably-mau-and-message-block", "liveblocks", "convex"]
+    },
+    {
+      "id": "ably-mau-and-message-block",
+      "path": "failure-modes/ably-mau-and-message-block.md",
+      "title": "Ably billed two users for one person, or blocked the account on messages",
+      "tags": ["ably", "realtime", "billing", "auth"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-25",
+      "when_to_use": "An Ably connection returned 40111 or 40167, publishes returned 40112, or one person counted as many monthly users",
+      "related": ["ably", "liveblocks", "convex"]
     }
   ]
 }

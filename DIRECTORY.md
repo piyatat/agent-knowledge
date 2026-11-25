@@ -124,7 +124,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 
-## Services (176)
+## Services (179)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -306,6 +306,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [hookdeck](practices/hookdeck.md) | Receiving provider webhooks into your own services, or letting an agent inspect and retry Hookdeck deliveries | [link](https://dashboard.hookdeck.com/signup) | hookdeck, webhooks, events, mcp | active |
 | [doppler](practices/doppler.md) | Storing app secrets for people and agents, or letting an agent read and edit a Doppler config | [link](https://dashboard.doppler.com/register) | doppler, secrets, mcp, agents | active |
 | [auth0-fga](practices/auth0-fga.md) | Checking whether a user can act on an object, instead of encoding those relationships in app code | [link](https://dashboard.fga.dev/) | auth0-fga, authorization, openfga, rebac | active |
+| [tinybird](practices/tinybird.md) | Publishing SQL over event data as an API, or letting an agent query a Tinybird workspace | [link](https://cloud.tinybird.co/signup) | tinybird, analytics, clickhouse, mcp | active |
+| [stytch](practices/stytch.md) | Adding passwordless or organization login, or letting an agent configure a Stytch workspace | [link](https://stytch.com/dashboard/create-account) | stytch, auth, mcp, b2b | active |
+| [ably](practices/ably.md) | Publishing a live stream or agent output to many subscribed clients | [link](https://ably.com/sign-up) | ably, realtime, pubsub, ai-transport | active |
 
 ## Protocols and standards (23)
 
