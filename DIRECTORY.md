@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. The `get` column points to the official page to install or sign up; whether and how to proceed is the user's call. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (113)
+## Tools (114)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -123,8 +123,9 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [docling](practices/docling.md) | Converting PDFs and Office files to markdown on the machine that runs the agent | [link](https://docling-project.github.io/docling/getting_started/installation/) | docling, documents, parse, mcp | active |
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
+| [openfga](practices/openfga.md) | Running relationship checks on a server you operate instead of Auth0 FGA | [link](https://openfga.dev/docs/getting-started/setup-openfga/docker) | openfga, authorization, rebac, cncf | active |
 
-## Services (179)
+## Services (181)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -309,6 +310,8 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [tinybird](practices/tinybird.md) | Publishing SQL over event data as an API, or letting an agent query a Tinybird workspace | [link](https://cloud.tinybird.co/signup) | tinybird, analytics, clickhouse, mcp | active |
 | [stytch](practices/stytch.md) | Adding passwordless or organization login, or letting an agent configure a Stytch workspace | [link](https://stytch.com/dashboard/create-account) | stytch, auth, mcp, b2b | active |
 | [ably](practices/ably.md) | Publishing a live stream or agent output to many subscribed clients | [link](https://ably.com/sign-up) | ably, realtime, pubsub, ai-transport | active |
+| [nango](practices/nango.md) | Giving an agent a user's SaaS tools through a scoped session, without handing it provider credentials | [link](https://app.nango.dev/signup) | nango, mcp, auth, integrations | active |
+| [amplitude](practices/amplitude.md) | Querying product events and editing Amplitude charts from an agent, or choosing Amplitude instead of PostHog | [link](https://amplitude.com/get-started) | amplitude, analytics, mcp, experiments | active |
 
 ## Protocols and standards (23)
 

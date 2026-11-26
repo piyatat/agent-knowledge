@@ -3840,4 +3840,36 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Ably | https://ably.com/ |
 | Ably docs | https://ably.com/docs |
 
+## Daily ingest 2026-11-26 (Nango, Amplitude, OpenFGA)
+
+| Topic | URL |
+| --- | --- |
+| Nango pricing | https://nango.dev/pricing/ |
+| Nango limits | https://nango.dev/docs/guides/platform/limits |
+| Nango agent sessions | https://nango.dev/docs/guides/agent-sessions |
+| Nango tenant | https://nango.dev/docs/guides/agent-sessions/tenant |
+| Nango toolsets | https://nango.dev/docs/guides/agent-sessions/toolsets |
+| Nango Management MCP | https://docs.nango.dev/docs/reference/backend/management-mcp |
+| Migrate from Connection MCP | https://nango.dev/docs/guides/platform/migrations/migrate-from-connection-mcp |
+| Nango changelog | https://nango.dev/docs/updates/changelog |
+| Sign up for Nango | https://app.nango.dev/signup |
+| Nango | https://nango.dev/ |
+| Amplitude pricing | https://amplitude.com/pricing |
+| Amplitude plans and billing | https://amplitude.com/docs/admin/billing-use/plans-and-billing |
+| Amplitude limits and quotas | https://amplitude.com/docs/data/limits-and-quotas |
+| Create an Amplitude account | https://amplitude.com/docs/get-started/create-a-new-account |
+| Track instrumentation progress | https://amplitude.com/docs/get-started/track-your-progress |
+| Amplitude MTU billing | https://amplitude.com/docs/admin/billing-use/mtu-guide |
+| Amplitude MCP | https://amplitude.com/docs/amplitude-ai/amplitude-mcp |
+| Get started with Amplitude | https://amplitude.com/get-started |
+| Amplitude | https://amplitude.com/ |
+| OpenFGA configuration | https://openfga.dev/docs/getting-started/setup-openfga/configuration |
+| Configuring OpenFGA | https://openfga.dev/docs/getting-started/setup-openfga/configure-openfga |
+| Setup OpenFGA with Docker | https://openfga.dev/docs/getting-started/setup-openfga/docker |
+| Perform a Check | https://openfga.dev/docs/getting-started/perform-check |
+| Running OpenFGA in production | https://openfga.dev/docs/best-practices/running-in-production |
+| Auth0 FGA versus OpenFGA | https://docs.fga.dev/openfga-vs-auth0-fga |
+| Introduction to OpenFGA | https://openfga.dev/docs/fga |
+| OpenFGA | https://openfga.dev/ |
+
 

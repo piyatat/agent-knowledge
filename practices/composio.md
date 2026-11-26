@@ -4,7 +4,7 @@ title: Composio — hosted app tools for agents
 kind: service
 tags: [composio, mcp, auth, tools]
 status: active
-updated: 2026-11-17
+updated: 2026-11-26
 when_to_use: Giving an agent authenticated GitHub, Gmail, Slack, or other app tools without writing each OAuth flow
 ---
 
@@ -18,7 +18,7 @@ when_to_use: Giving an agent authenticated GitHub, Gmail, Slack, or other app to
 - **Auth.** Send a project API key as `x-api-key` (`COMPOSIO_API_KEY`, or the key stored by `composio login`). A scoped project key needs **Session management** to create sessions and **Session tool execution** to run tools or use session MCP. Default auth is Composio-managed OAuth; pass `auth_configs` to use your own OAuth app. Connected-account reads redact credentials — this is not a token-export API. Provider packages follow the **framework** (`composio_openai_agents` / `@composio/openai-agents` for the OpenAI Agents SDK; `composio_openai` is Chat Completions).
 - **MCP.** Pass `mcp: true` / `mcp=True` and give the client `session.mcp.url` plus `session.mcp.headers`. Those headers are the credential that created the session: a project key stays in one project; a user-only key is sent as `x-user-api-key` and can reach every project that user can access. Prefer a project key. The SDK refuses to attach the key when the MCP URL’s origin differs from the API base (`@composio/core` ≥ **0.19.1**, `composio` ≥ **0.22.1**). The direct-tools preset plus `mcp: true` exposes only the tool slugs you list.
 - **Limits.** Hobby (no card, hard cap): **100,000** tool calls/month, of which **20,000** may use Composio-managed apps; **50,000** trigger events; **3** seats; **2,000** requests/minute. Meta tools such as search are free. Pro is **$29/month** (10,000 requests/minute, monthly credits, no rollover). Accounts created before **2026-08-15** keep prior pricing through **2026-12-31**. Enterprise adds SSO, SCIM, and customer-managed keys.
-- **Alternatives.** One vendor’s remote MCP when you only need that vendor (`github-mcp-server`). A local gateway when the tools must run on the machine (`docker-mcp-toolkit`).
+- **Alternatives.** Nango (`nango`) when your backend should mint a scoped session and the agent should hold a session token, not provider credentials or an environment key. One vendor’s remote MCP when you only need that vendor (`github-mcp-server`). A local gateway when the tools must run on the machine (`docker-mcp-toolkit`).
 - **Caveats.** MCP calls skip SDK `beforeExecute` / `afterExecute` hooks and in-process custom tools. If the client cannot do elicitation, set `noElicitationSupportFallback` to `deny` or the approval-gated call follows the fallback you chose (`allow` runs it). Same `user_id` reuses connected accounts on later sessions. Treat Connect Links and tool results as untrusted input (`prompt-injection-agent-defense`).
 
 ## Sources

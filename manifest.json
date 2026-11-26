@@ -12471,9 +12471,10 @@
       "tags": ["composio", "mcp", "auth", "tools"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-17",
+      "updated": "2026-11-26",
       "when_to_use": "Giving an agent authenticated GitHub, Gmail, Slack, or other app tools without writing each OAuth flow",
       "related": [
+        "nango",
         "github-mcp-server",
         "docker-mcp-toolkit",
         "mcp-oauth-scopes",
@@ -15004,14 +15005,14 @@
       "tags": ["posthog", "analytics", "flags", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-25",
+      "updated": "2026-11-26",
       "when_to_use": "Querying product analytics, feature flags, or errors in PostHog, or letting an agent change them",
       "links": {
         "get": "https://us.posthog.com/signup",
         "docs": "https://posthog.com/docs/model-context-protocol",
         "home": "https://posthog.com/"
       },
-      "related": ["posthog-mcp-quota-and-pin", "statsig", "launchdarkly", "growthbook", "sentry", "langfuse", "braintrust", "opik"]
+      "related": ["posthog-mcp-quota-and-pin", "amplitude", "statsig", "launchdarkly", "growthbook", "sentry", "langfuse", "braintrust", "opik"]
     },
     {
       "id": "posthog-mcp-quota-and-pin",
@@ -16289,14 +16290,14 @@
       "tags": ["auth0-fga", "authorization", "openfga", "rebac"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-25",
+      "updated": "2026-11-26",
       "when_to_use": "Checking whether a user can act on an object, instead of encoding those relationships in app code",
       "links": {
         "get": "https://dashboard.fga.dev/",
         "docs": "https://docs.fga.dev/",
         "home": "https://auth0.com/fine-grained-authorization"
       },
-      "related": ["auth0-fga-trial-and-list-rate", "auth0", "clerk", "workos"]
+      "related": ["auth0-fga-trial-and-list-rate", "openfga", "auth0", "clerk", "workos"]
     },
     {
       "id": "auth0-fga-trial-and-list-rate",
@@ -16389,6 +16390,87 @@
       "updated": "2026-11-25",
       "when_to_use": "An Ably connection returned 40111 or 40167, publishes returned 40112, or one person counted as many monthly users",
       "related": ["ably", "liveblocks", "convex"]
+    },
+    {
+      "id": "nango",
+      "path": "practices/nango.md",
+      "title": "Nango — hosted OAuth, tools, and scoped agent sessions",
+      "tags": ["nango", "mcp", "auth", "integrations"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Giving an agent a user's SaaS tools through a scoped session, without handing it provider credentials",
+      "links": {
+        "get": "https://app.nango.dev/signup",
+        "docs": "https://nango.dev/docs/guides/agent-sessions",
+        "home": "https://nango.dev/"
+      },
+      "related": ["nango-session-cap-and-timeout", "composio", "github-mcp-server"]
+    },
+    {
+      "id": "nango-session-cap-and-timeout",
+      "path": "failure-modes/nango-session-cap-and-timeout.md",
+      "title": "A Nango session hit the connection cap, or a timed-out tool may have run",
+      "tags": ["nango", "mcp", "billing", "timeouts"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "A Nango session failed to create, a connection was refused, or a tool timeout may have run the call twice",
+      "related": ["nango", "composio"]
+    },
+    {
+      "id": "amplitude",
+      "path": "practices/amplitude.md",
+      "title": "Amplitude — product analytics with a hosted MCP server",
+      "tags": ["amplitude", "analytics", "mcp", "experiments"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Querying product events and editing Amplitude charts from an agent, or choosing Amplitude instead of PostHog",
+      "links": {
+        "get": "https://amplitude.com/get-started",
+        "docs": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp",
+        "home": "https://amplitude.com/"
+      },
+      "related": ["amplitude-free-block-and-region", "posthog", "statsig", "growthbook"]
+    },
+    {
+      "id": "amplitude-free-block-and-region",
+      "path": "failure-modes/amplitude-free-block-and-region.md",
+      "title": "Amplitude kept events the charts cannot show, or MCP used the wrong region",
+      "tags": ["amplitude", "analytics", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "An Amplitude chart is missing events, MCP signed into the wrong region, or a free org lost its charts",
+      "related": ["amplitude", "posthog"]
+    },
+    {
+      "id": "openfga",
+      "path": "practices/openfga.md",
+      "title": "OpenFGA — relationship authorization you run yourself",
+      "tags": ["openfga", "authorization", "rebac", "cncf"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Running relationship checks on a server you operate instead of Auth0 FGA",
+      "links": {
+        "get": "https://openfga.dev/docs/getting-started/setup-openfga/docker",
+        "docs": "https://openfga.dev/docs/fga",
+        "home": "https://openfga.dev/"
+      },
+      "related": ["openfga-default-auth-and-list-cap", "auth0-fga", "auth0"]
+    },
+    {
+      "id": "openfga-default-auth-and-list-cap",
+      "path": "failure-modes/openfga-default-auth-and-list-cap.md",
+      "title": "OpenFGA accepted an anonymous write, or a list stopped at 1000",
+      "tags": ["openfga", "authorization", "auth", "consistency"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "An OpenFGA check returned 400, a list looked complete at 1000 rows, or a restart dropped the tuples",
+      "related": ["openfga", "auth0-fga"]
     }
   ]
 }
