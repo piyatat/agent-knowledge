@@ -4,13 +4,13 @@ title: fal — generative media APIs and a hosted MCP server
 kind: service
 tags: [fal, media, inference, mcp]
 status: active
-updated: 2026-11-25
+updated: 2026-11-26
 when_to_use: Generating or editing images, video, or audio through fal Model APIs or the fal MCP server
 ---
 
 ## Summary
 
-**fal** hosts generative models behind one API: image, video, audio, and 3D on Model APIs, and Python apps you deploy on fal Serverless. Model APIs draw a prepaid credit balance and bill per output, or per GPU-second when a model has no output price. The hosted MCP server at `https://mcp.fal.ai/mcp-relay` lets a coding agent search and run those models after a browser sign-in. Use fal when the job is media. Use Hugging Face Inference Providers (`huggingface-inference-providers`) when the job is chat or embeddings across open models. Serverless is a separate product and needs fal to approve the account.
+**fal** hosts generative models behind one API: image, video, audio, and 3D on Model APIs, and Python apps you deploy on fal Serverless. Model APIs draw a prepaid credit balance and bill per output, or per GPU-second when a model has no output price. The hosted MCP server at `https://mcp.fal.ai/mcp-relay` lets a coding agent search and run those models after a browser sign-in. Use fal when the job is media. Use Replicate (`replicate`) for a community model billed by hardware time. Use Mux (`mux`) when the video must be stored and played. Use Hugging Face Inference Providers (`huggingface-inference-providers`) when the job is chat or embeddings across open models. Serverless is a separate product and needs fal to approve the account.
 
 ## Notes
 

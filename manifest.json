@@ -14385,7 +14385,7 @@
       "tags": ["huggingface", "routing", "models", "inference"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-25",
+      "updated": "2026-11-26",
       "when_to_use": "Calling open models from an agent through one Hugging Face token, with failover across hosts",
       "links": {
         "get": "https://huggingface.co/join",
@@ -14398,6 +14398,7 @@
         "together-ai",
         "groq-cloud",
         "cerebras-inference",
+        "replicate",
         "fal",
         "vllm"
       ]
@@ -15275,14 +15276,14 @@
       "tags": ["statsig", "flags", "experiments", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-25",
+      "updated": "2026-11-26",
       "when_to_use": "Checking or changing Statsig feature gates and experiments, or letting an agent use the console",
       "links": {
         "get": "https://console.statsig.com/sign_up",
         "docs": "https://docs.statsig.com/integrations/mcp/overview",
         "home": "https://www.statsig.com/"
       },
-      "related": ["statsig-mcp-confirm-and-meter", "launchdarkly", "posthog", "posthog-mcp-quota-and-pin", "growthbook"]
+      "related": ["statsig-mcp-confirm-and-meter", "launchdarkly", "posthog", "posthog-mcp-quota-and-pin", "growthbook", "unleash"]
     },
     {
       "id": "statsig-mcp-confirm-and-meter",
@@ -15679,14 +15680,14 @@
       "tags": ["launchdarkly", "flags", "experiments", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-25",
+      "updated": "2026-11-26",
       "when_to_use": "Changing LaunchDarkly flags or experiments from an agent, or checking a flag before a release",
       "links": {
         "get": "https://app.launchdarkly.com/signup",
         "docs": "https://launchdarkly.com/docs/home/getting-started/mcp-hosted",
         "home": "https://launchdarkly.com/"
       },
-      "related": ["launchdarkly-mcp-writes-and-token", "statsig", "posthog", "growthbook"]
+      "related": ["launchdarkly-mcp-writes-and-token", "statsig", "posthog", "growthbook", "unleash"]
     },
     {
       "id": "launchdarkly-mcp-writes-and-token",
@@ -16090,14 +16091,14 @@
       "tags": ["growthbook", "flags", "experiments", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-25",
+      "updated": "2026-11-26",
       "when_to_use": "Running feature flags and experiments on GrowthBook, or letting an agent change them",
       "links": {
         "get": "https://www.growthbook.io/get-started",
         "docs": "https://docs.growthbook.io/integrations/mcp",
         "home": "https://www.growthbook.io/"
       },
-      "related": ["growthbook-mcp-write-passthrough", "statsig", "launchdarkly", "posthog"]
+      "related": ["growthbook-mcp-write-passthrough", "statsig", "launchdarkly", "posthog", "unleash"]
     },
     {
       "id": "growthbook-mcp-write-passthrough",
@@ -16155,14 +16156,14 @@
       "tags": ["fal", "media", "inference", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-25",
+      "updated": "2026-11-26",
       "when_to_use": "Generating or editing images, video, or audio through fal Model APIs or the fal MCP server",
       "links": {
         "get": "https://fal.ai/login",
         "docs": "https://fal.ai/docs/documentation",
         "home": "https://fal.ai/"
       },
-      "related": ["fal-credit-lock-and-concurrency", "huggingface-inference-providers", "together-ai"]
+      "related": ["fal-credit-lock-and-concurrency", "huggingface-inference-providers", "together-ai", "replicate", "mux"]
     },
     {
       "id": "fal-credit-lock-and-concurrency",
@@ -16471,6 +16472,87 @@
       "updated": "2026-11-26",
       "when_to_use": "An OpenFGA check returned 400, a list looked complete at 1000 rows, or a restart dropped the tuples",
       "related": ["openfga", "auth0-fga"]
+    },
+    {
+      "id": "unleash",
+      "path": "practices/unleash.md",
+      "title": "Unleash — feature flags evaluated in the SDK, with an admin MCP server",
+      "tags": ["unleash", "flags", "experiments", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Evaluating feature flags inside the app from a polled Unleash configuration, or letting an agent change those flags",
+      "links": {
+        "get": "https://auth.app.getunleash.io/sign-up",
+        "docs": "https://docs.getunleash.io/integrate/mcp",
+        "home": "https://www.getunleash.io/"
+      },
+      "related": ["unleash-change-request-and-oss-cap", "growthbook", "statsig", "launchdarkly"]
+    },
+    {
+      "id": "unleash-change-request-and-oss-cap",
+      "path": "failure-modes/unleash-change-request-and-oss-cap.md",
+      "title": "An Unleash change never went live, or Open Source applied it immediately",
+      "tags": ["unleash", "flags", "mcp", "approvals"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "An Unleash flag did not match what the agent reported, a release was refused, or Open Source rejected a second project",
+      "related": ["unleash", "growthbook", "launchdarkly"]
+    },
+    {
+      "id": "replicate",
+      "path": "practices/replicate.md",
+      "title": "Replicate — run a published model on a prepaid credit balance",
+      "tags": ["replicate", "models", "inference", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Running a model published on Replicate, including a community model, from an agent or the Replicate MCP server",
+      "links": {
+        "get": "https://replicate.com/signin",
+        "docs": "https://replicate.com/docs/reference/mcp",
+        "home": "https://replicate.com/"
+      },
+      "related": ["replicate-credit-and-hour-retention", "fal", "huggingface-inference-providers"]
+    },
+    {
+      "id": "replicate-credit-and-hour-retention",
+      "path": "failure-modes/replicate-credit-and-hour-retention.md",
+      "title": "A Replicate prediction spent credit after it failed, or the output disappeared",
+      "tags": ["replicate", "billing", "retention", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "A Replicate prediction returned 429, a failed run still cost money, or the output URL was gone an hour later",
+      "related": ["replicate", "fal"]
+    },
+    {
+      "id": "mux",
+      "path": "practices/mux.md",
+      "title": "Mux — video upload, playback, and a code-mode MCP server",
+      "tags": ["mux", "video", "streaming", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Uploading video and playing it back from an app, or letting an agent manage a Mux environment",
+      "links": {
+        "get": "https://dashboard.mux.com/signup",
+        "docs": "https://www.mux.com/docs/integrations/mcp-server",
+        "home": "https://www.mux.com/"
+      },
+      "related": ["mux-free-cap-and-execute", "fal", "replicate"]
+    },
+    {
+      "id": "mux-free-cap-and-execute",
+      "path": "failure-modes/mux-free-cap-and-execute.md",
+      "title": "Mux refused another asset, or execute changed the wrong environment",
+      "tags": ["mux", "video", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "A Mux upload failed on a free account, a list showed 10 assets, or an agent edited video it was only asked to inspect",
+      "related": ["mux", "fal"]
     }
   ]
 }

@@ -3872,4 +3872,34 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Introduction to OpenFGA | https://openfga.dev/docs/fga |
 | OpenFGA | https://openfga.dev/ |
 
+## Daily ingest 2026-11-26 (Unleash, Replicate, Mux)
+
+| Topic | URL |
+| --- | --- |
+| Unleash pricing | https://www.getunleash.io/pricing |
+| Unleash MCP server | https://docs.getunleash.io/integrate/mcp |
+| Unleash quickstart | https://docs.getunleash.io/get-started/quickstart |
+| Sign up for Unleash hosted | https://auth.app.getunleash.io/sign-up |
+| Unleash | https://www.getunleash.io/ |
+| Replicate billing | https://replicate.com/docs/topics/billing |
+| Replicate prepaid credit | https://replicate.com/docs/topics/billing/prepaid-credit |
+| Replicate pricing | https://replicate.com/pricing |
+| Replicate rate limits | https://replicate.com/docs/topics/predictions/rate-limits |
+| Replicate data retention | https://replicate.com/docs/topics/predictions/data-retention |
+| Replicate API tokens | https://replicate.com/docs/topics/security/api-tokens |
+| Replicate MCP server | https://replicate.com/docs/reference/mcp |
+| Replicate MCP | https://mcp.replicate.com/ |
+| Replicate HTTP API | https://replicate.com/docs/reference/http |
+| Sign in to Replicate | https://replicate.com/signin |
+| Replicate | https://replicate.com/ |
+| Mux pricing | https://www.mux.com/docs/pricing/overview |
+| Estimating what Mux costs | https://www.mux.com/pricing |
+| Mux Video free plan changelog | https://www.mux.com/docs/changelog/video-free-plan |
+| Mux free plan | https://www.mux.com/blog/free-plan |
+| Using the Mux MCP server | https://www.mux.com/docs/integrations/mcp-server |
+| Make Mux API requests | https://www.mux.com/docs/core/make-api-requests |
+| Mux fundamentals | https://www.mux.com/docs/core/mux-fundamentals |
+| Sign up for Mux | https://dashboard.mux.com/signup |
+| Mux | https://www.mux.com/ |
+
 

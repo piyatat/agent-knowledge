@@ -4,13 +4,13 @@ title: GrowthBook — feature flags, experiments, and an OAuth MCP server
 kind: service
 tags: [growthbook, flags, experiments, mcp]
 status: active
-updated: 2026-11-25
+updated: 2026-11-26
 when_to_use: Running feature flags and experiments on GrowthBook, or letting an agent change them
 ---
 
 ## Summary
 
-**GrowthBook** is an open-source feature-flag and experimentation platform, offered as GrowthBook Cloud or as a server you run. Cloud MCP is `https://mcp.growthbook.io/mcp` and signs in with OAuth. Cloud Starter is free for 3 users and 1 project, with a 1 million event allowance on the managed warehouse. Use GrowthBook when flags should be seat-priced or self-hosted. Use Statsig (`statsig`) or LaunchDarkly (`launchdarkly`) when the flags already live there. Use PostHog (`posthog`) when flags sit next to product analytics and error tracking.
+**GrowthBook** is an open-source feature-flag and experimentation platform, offered as GrowthBook Cloud or as a server you run. Cloud MCP is `https://mcp.growthbook.io/mcp` and signs in with OAuth. Cloud Starter is free for 3 users and 1 project, with a 1 million event allowance on the managed warehouse. Use GrowthBook when flags should be seat-priced or self-hosted and experiments need the managed warehouse. Use Unleash (`unleash`) when the SDK should evaluate a polled configuration, including on the open-source server. Use Statsig (`statsig`) or LaunchDarkly (`launchdarkly`) when the flags already live there. Use PostHog (`posthog`) when flags sit next to product analytics and error tracking.
 
 ## Notes
 

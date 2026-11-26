@@ -4,13 +4,13 @@ title: Hugging Face Inference Providers — one token for many model hosts
 kind: service
 tags: [huggingface, routing, models, inference]
 status: active
-updated: 2026-11-25
+updated: 2026-11-26
 when_to_use: Calling open models from an agent through one Hugging Face token, with failover across hosts
 ---
 
 ## Summary
 
-**Hugging Face Inference Providers** routes chat, embeddings, and other open models through one token. Hugging Face says routing is powered by OpenRouter: a request goes to a provider that serves the model and moves to another if that provider is down or rate limited. The OpenAI-compatible base URL is `https://router.huggingface.co/v1`. Provider rates pass through with no Hugging Face markup. Dedicated GPUs you rent are Inference Endpoints. A server you run is `vllm`.
+**Hugging Face Inference Providers** routes chat, embeddings, and other open models through one token. Hugging Face says routing is powered by OpenRouter: a request goes to a provider that serves the model and moves to another if that provider is down or rate limited. The OpenAI-compatible base URL is `https://router.huggingface.co/v1`. Provider rates pass through with no Hugging Face markup. Dedicated GPUs you rent are Inference Endpoints. A server you run is `vllm`. Use Replicate (`replicate`) to run one published model, including a community model, on that model’s hardware clock.
 
 ## Notes
 

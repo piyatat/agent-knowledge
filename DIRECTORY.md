@@ -125,7 +125,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 | [openfga](practices/openfga.md) | Running relationship checks on a server you operate instead of Auth0 FGA | [link](https://openfga.dev/docs/getting-started/setup-openfga/docker) | openfga, authorization, rebac, cncf | active |
 
-## Services (181)
+## Services (184)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -312,6 +312,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [ably](practices/ably.md) | Publishing a live stream or agent output to many subscribed clients | [link](https://ably.com/sign-up) | ably, realtime, pubsub, ai-transport | active |
 | [nango](practices/nango.md) | Giving an agent a user's SaaS tools through a scoped session, without handing it provider credentials | [link](https://app.nango.dev/signup) | nango, mcp, auth, integrations | active |
 | [amplitude](practices/amplitude.md) | Querying product events and editing Amplitude charts from an agent, or choosing Amplitude instead of PostHog | [link](https://amplitude.com/get-started) | amplitude, analytics, mcp, experiments | active |
+| [unleash](practices/unleash.md) | Evaluating feature flags inside the app from a polled Unleash configuration, or letting an agent change those… | [link](https://auth.app.getunleash.io/sign-up) | unleash, flags, experiments, mcp | active |
+| [replicate](practices/replicate.md) | Running a model published on Replicate, including a community model, from an agent or the Replicate MCP server | [link](https://replicate.com/signin) | replicate, models, inference, mcp | active |
+| [mux](practices/mux.md) | Uploading video and playing it back from an app, or letting an agent manage a Mux environment | [link](https://dashboard.mux.com/signup) | mux, video, streaming, mcp | active |
 
 ## Protocols and standards (23)
 

@@ -4,13 +4,13 @@ title: Statsig — feature gates, experiments, and a console MCP server
 kind: service
 tags: [statsig, flags, experiments, mcp]
 status: active
-updated: 2026-11-25
+updated: 2026-11-26
 when_to_use: Checking or changing Statsig feature gates and experiments, or letting an agent use the console
 ---
 
 ## Summary
 
-**Statsig** is a hosted product platform for feature gates, dynamic configs, experiments, and product analytics. A remote MCP server at `https://api.statsig.com/v3/mcp` lets an agent read and change one project. Version 3 ships 18 default tools and discovers the rest of the Console API on demand. Use Statsig when gates and experiments are the job. Use PostHog (`posthog`) when flags, product analytics, and errors should live in one project. Use GrowthBook (`growthbook`) when the same flags should be seat-priced or self-hosted.
+**Statsig** is a hosted product platform for feature gates, dynamic configs, experiments, and product analytics. A remote MCP server at `https://api.statsig.com/v3/mcp` lets an agent read and change one project. Version 3 ships 18 default tools and discovers the rest of the Console API on demand. Use Statsig when gates and experiments are the job. Use PostHog (`posthog`) when flags, product analytics, and errors should live in one project. Use GrowthBook (`growthbook`) when the same flags should be seat-priced or self-hosted. Use Unleash (`unleash`) when evaluation should happen in the SDK from a configuration you can also run yourself.
 
 ## Notes
 
