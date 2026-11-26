@@ -4,7 +4,7 @@ title: Cloudflare R2 — object storage with no egress fee
 kind: service
 tags: [cloudflare, r2, storage, s3]
 status: active
-updated: 2026-11-22
+updated: 2026-11-26
 when_to_use: Storing agent artifacts, uploads, or public files in object storage without an egress fee
 ---
 
@@ -18,7 +18,7 @@ when_to_use: Storing agent artifacts, uploads, or public files in object storage
 - **Price.** Standard Class A (writes and lists, including `ListObjects` and `ListBuckets`) is $4.50 per million. Class B (gets and heads) is $0.36 per million. Deletes and abort-multipart are free. Infrequent Access is $0.01 per GB-month, Class A $9 per million, Class B $0.90 per million, plus $0.01 per GB retrieved, and a 30-day minimum even if the object is deleted sooner. Cloudflare rounds usage up to the next GB-month and the next million operations. Storage is the average of daily peaks over 30 days. The first 100,000 buckets are included; extras are $0.10 per bucket-month. Super Slurper and Sippy migrations are free to invoke and still generate Class A writes.
 - **Limits.** A single PUT stops at 5 GiB. Multipart objects can reach 5 TiB, with parts from 5 MiB and at most 10,000 parts. One write per second to the same key. Object keys up to 1,024 bytes and custom metadata up to 8,192 bytes. The Cloudflare REST API allows 1,200 R2 requests per five minutes per account; object throughput belongs on the S3 API. Public `r2.dev` URLs are for testing and can return 429 under hundreds of requests per second. A custom domain is the production public path.
 - **What is billed on failure.** Authentication and authorization failures (401, and 403 for a bad signature, expired request, skewed clock, or `AccessDenied`) are not charged. A `PutObject` that fails with 412 (`PreconditionFailed`) or 400 (`BadDigest`) still counts as Class A.
-- **Alternatives.** Supabase Storage when the files sit next to that project’s Postgres (`supabase`). A Fly volume (`fly-io`) when a Machine needs a disk, not an object API.
+- **Alternatives.** Supabase Storage when the files sit next to that project’s Postgres (`supabase`). Cloudinary (`cloudinary`) when delivery should resize or reformat images. A Fly volume (`fly-io`) when a Machine needs a disk, not an object API.
 - **Caveats.** Listing a bucket is a Class A operation, and Infrequent Access ignores the free tier. Details: `cloudflare-r2-ia-and-class-a`.
 
 ## Sources

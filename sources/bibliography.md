@@ -3902,4 +3902,34 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Sign up for Mux | https://dashboard.mux.com/signup |
 | Mux | https://www.mux.com/ |
 
+## Daily ingest 2026-11-26 (Cloudinary, Firebase, Neo4j Aura)
+
+| Topic | URL |
+| --- | --- |
+| Cloudinary billing and plans | https://cloudinary.com/documentation/billing_and_plans |
+| Cloudinary pricing snapshot | https://cloudinary.com/pricing.md |
+| Cloudinary pricing | https://cloudinary.com/pricing |
+| Cloudinary AI agent tools and MCP servers | https://cloudinary.com/documentation/cloudinary_llm_mcp |
+| Cloudinary Admin API | https://cloudinary.com/documentation/admin_api |
+| Why a Cloudinary account was disabled | https://cloudinary.com/documentation/ts_why_is_my_account_disabled_and_how_can_i_recover_my_disabled_account |
+| Cloudinary MCP servers | https://github.com/cloudinary/mcp-servers |
+| Register for Cloudinary | https://cloudinary.com/users/register_free |
+| Cloudinary | https://cloudinary.com/ |
+| Firebase pricing plans | https://firebase.google.com/docs/projects/billing/firebase-pricing-plans |
+| Firebase pricing | https://firebase.google.com/pricing |
+| Firestore usage and limits | https://firebase.google.com/docs/firestore/quotas |
+| Firebase Authentication limits | https://firebase.google.com/docs/auth/limits |
+| Cloud Storage billing after September 2024 | https://firebase.google.com/docs/storage/faqs-storage-changes-announced-sept-2024 |
+| Firebase MCP server | https://firebase.google.com/docs/ai-assistance/mcp-server |
+| Firebase console | https://console.firebase.google.com/ |
+| Firebase | https://firebase.google.com/ |
+| Neo4j AuraDB quotas and limits | https://neo4j.com/docs/aura/quotas-and-limits/ |
+| Aura instance actions | https://neo4j.com/docs/aura/managing-instances/instance-actions/ |
+| Neo4j pricing | https://neo4j.com/pricing/ |
+| MCP for Aura | https://neo4j.com/docs/mcp/current/mcp-for-aura/ |
+| Neo4j MCP quickstart | https://neo4j.com/docs/mcp/current/quickstart/ |
+| Introducing MCP for Aura | https://neo4j.com/blog/genai/introducing-mcp-for-aura/ |
+| Neo4j Aura console | https://console.neo4j.io/ |
+| Neo4j | https://neo4j.com/ |
+
 

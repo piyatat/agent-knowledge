@@ -10,7 +10,7 @@ when_to_use: Uploading video and playing it back from an app, or letting an agen
 
 ## Summary
 
-**Mux** ingests video, stores one encoded asset, and delivers HLS to players. Quality-of-experience analytics and on-demand captions are included with that video. Mux Robots runs separate AI jobs, such as chapters or moderation, on on-demand assets. New on-demand accounts default to basic quality, and basic input is free. Every plan includes 100,000 delivery minutes and 100,000 Robots units a month. Pay as you go adds a $20 usage credit. The hosted MCP server is `https://mcp.mux.com`. Its `execute` tool runs the Mux TypeScript SDK for the environment you authorized. Use Mux when the app must store and play video. Use fal (`fal`) or Replicate (`replicate`) when the job is to generate the video.
+**Mux** ingests video, stores one encoded asset, and delivers HLS to players. Quality-of-experience analytics and on-demand captions are included with that video. Mux Robots runs separate AI jobs, such as chapters or moderation, on on-demand assets. New on-demand accounts default to basic quality, and basic input is free. Every plan includes 100,000 delivery minutes and 100,000 Robots units a month. Pay as you go adds a $20 usage credit. The hosted MCP server is `https://mcp.mux.com`. Its `execute` tool runs the Mux TypeScript SDK for the environment you authorized. Use Mux when the app must store and play video. Use fal (`fal`) or Replicate (`replicate`) when the job is to generate the video. Use Cloudinary (`cloudinary`) when the job is image and video transforms on a CDN.
 
 ## Notes
 

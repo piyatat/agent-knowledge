@@ -125,7 +125,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 | [openfga](practices/openfga.md) | Running relationship checks on a server you operate instead of Auth0 FGA | [link](https://openfga.dev/docs/getting-started/setup-openfga/docker) | openfga, authorization, rebac, cncf | active |
 
-## Services (184)
+## Services (187)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -315,6 +315,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [unleash](practices/unleash.md) | Evaluating feature flags inside the app from a polled Unleash configuration, or letting an agent change those… | [link](https://auth.app.getunleash.io/sign-up) | unleash, flags, experiments, mcp | active |
 | [replicate](practices/replicate.md) | Running a model published on Replicate, including a community model, from an agent or the Replicate MCP server | [link](https://replicate.com/signin) | replicate, models, inference, mcp | active |
 | [mux](practices/mux.md) | Uploading video and playing it back from an app, or letting an agent manage a Mux environment | [link](https://dashboard.mux.com/signup) | mux, video, streaming, mcp | active |
+| [cloudinary](practices/cloudinary.md) | Transforming and delivering images or video from a CDN, or letting an agent manage a Cloudinary product envir… | [link](https://cloudinary.com/users/register_free) | cloudinary, images, video, mcp | active |
+| [firebase](practices/firebase.md) | Hosting an app’s Auth and Firestore on Google, or letting an agent change that Firebase project | [link](https://console.firebase.google.com/) | firebase, firestore, auth, mcp | active |
+| [neo4j-aura](practices/neo4j-aura.md) | Storing an app’s graph on Neo4j Aura, or letting an agent query that instance over MCP | [link](https://console.neo4j.io/) | neo4j, graph, database, mcp | active |
 
 ## Protocols and standards (23)
 

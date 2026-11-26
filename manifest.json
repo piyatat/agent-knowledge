@@ -12981,7 +12981,7 @@
       "tags": ["zep", "memory", "mcp", "graph"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-17",
+      "updated": "2026-11-26",
       "when_to_use": "Storing and retrieving a user’s facts across agent sessions, including a voice agent",
       "links": {
         "get": "https://app.getzep.com/",
@@ -12994,7 +12994,8 @@
         "letta-code",
         "livekit-agents",
         "agent-memory-poisoning",
-        "memory-wiki-vs-rag"
+        "memory-wiki-vs-rag",
+        "neo4j-aura"
       ]
     },
     {
@@ -14871,14 +14872,14 @@
       "tags": ["supabase", "postgres", "auth", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-21",
+      "updated": "2026-11-26",
       "when_to_use": "Hosting an app’s Postgres with Auth and Storage, or letting an agent query a Supabase project",
       "links": {
         "get": "https://supabase.com/dashboard/sign-up",
         "docs": "https://supabase.com/docs/guides/ai-tools/mcp",
         "home": "https://supabase.com/"
       },
-      "related": ["supabase-mcp-sql-and-pause", "neon", "clerk", "prompt-injection-agent-defense", "planetscale", "mongodb-atlas"]
+      "related": ["supabase-mcp-sql-and-pause", "neon", "clerk", "prompt-injection-agent-defense", "planetscale", "mongodb-atlas", "firebase"]
     },
     {
       "id": "supabase-mcp-sql-and-pause",
@@ -15249,14 +15250,14 @@
       "tags": ["cloudflare", "r2", "storage", "s3"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-22",
+      "updated": "2026-11-26",
       "when_to_use": "Storing agent artifacts, uploads, or public files in object storage without an egress fee",
       "links": {
         "get": "https://dash.cloudflare.com/sign-up",
         "docs": "https://developers.cloudflare.com/r2/",
         "home": "https://www.cloudflare.com/products/r2/"
       },
-      "related": ["cloudflare-r2-ia-and-class-a", "cloudflare-agents", "cloudflare-workflows", "supabase", "fly-io"]
+      "related": ["cloudflare-r2-ia-and-class-a", "cloudflare-agents", "cloudflare-workflows", "supabase", "fly-io", "cloudinary"]
     },
     {
       "id": "cloudflare-r2-ia-and-class-a",
@@ -16541,7 +16542,7 @@
         "docs": "https://www.mux.com/docs/integrations/mcp-server",
         "home": "https://www.mux.com/"
       },
-      "related": ["mux-free-cap-and-execute", "fal", "replicate"]
+      "related": ["mux-free-cap-and-execute", "fal", "replicate", "cloudinary"]
     },
     {
       "id": "mux-free-cap-and-execute",
@@ -16553,6 +16554,87 @@
       "updated": "2026-11-26",
       "when_to_use": "A Mux upload failed on a free account, a list showed 10 assets, or an agent edited video it was only asked to inspect",
       "related": ["mux", "fal"]
+    },
+    {
+      "id": "cloudinary",
+      "path": "practices/cloudinary.md",
+      "title": "Cloudinary — image and video transforms on a CDN",
+      "tags": ["cloudinary", "images", "video", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Transforming and delivering images or video from a CDN, or letting an agent manage a Cloudinary product environment",
+      "links": {
+        "get": "https://cloudinary.com/users/register_free",
+        "docs": "https://cloudinary.com/documentation/cloudinary_llm_mcp",
+        "home": "https://cloudinary.com/"
+      },
+      "related": ["cloudinary-credit-window-and-admin-limit", "mux", "cloudflare-r2", "fal"]
+    },
+    {
+      "id": "cloudinary-credit-window-and-admin-limit",
+      "path": "failure-modes/cloudinary-credit-window-and-admin-limit.md",
+      "title": "Cloudinary delivery stopped, or the Admin API returned 420",
+      "tags": ["cloudinary", "billing", "images", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "A Cloudinary transform URL failed after heavy use, an Admin API call returned 420, or a generated image never appeared",
+      "related": ["cloudinary", "mux", "cloudflare-r2"]
+    },
+    {
+      "id": "firebase",
+      "path": "practices/firebase.md",
+      "title": "Firebase — Auth, Firestore, and a local MCP server",
+      "tags": ["firebase", "firestore", "auth", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Hosting an app’s Auth and Firestore on Google, or letting an agent change that Firebase project",
+      "links": {
+        "get": "https://console.firebase.google.com/",
+        "docs": "https://firebase.google.com/docs/ai-assistance/mcp-server",
+        "home": "https://firebase.google.com/"
+      },
+      "related": ["firebase-spark-shutoff-and-mcp-write", "supabase", "clerk", "auth0"]
+    },
+    {
+      "id": "firebase-spark-shutoff-and-mcp-write",
+      "path": "failure-modes/firebase-spark-shutoff-and-mcp-write.md",
+      "title": "Firebase Spark shut a product off, or the agent deployed and deleted data",
+      "tags": ["firebase", "firestore", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "A Firebase product stopped on Spark, Storage returned 402, or an agent deleted a Firestore database",
+      "related": ["firebase", "supabase", "clerk"]
+    },
+    {
+      "id": "neo4j-aura",
+      "path": "practices/neo4j-aura.md",
+      "title": "Neo4j Aura — hosted graph database with a per-instance MCP server",
+      "tags": ["neo4j", "graph", "database", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Storing an app’s graph on Neo4j Aura, or letting an agent query that instance over MCP",
+      "links": {
+        "get": "https://console.neo4j.io/",
+        "docs": "https://neo4j.com/docs/mcp/current/mcp-for-aura/",
+        "home": "https://neo4j.com/"
+      },
+      "related": ["neo4j-aura-pause-and-write-tool", "zep", "mem0"]
+    },
+    {
+      "id": "neo4j-aura-pause-and-write-tool",
+      "path": "failure-modes/neo4j-aura-pause-and-write-tool.md",
+      "title": "Aura Free would not connect, or a Cypher tool changed the graph",
+      "tags": ["neo4j", "graph", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "An Aura Free instance rejected queries after a few idle days, or an agent’s Cypher wrote when the task was to read",
+      "related": ["neo4j-aura", "zep"]
     }
   ]
 }
