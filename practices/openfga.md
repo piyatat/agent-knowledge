@@ -10,7 +10,7 @@ when_to_use: Running relationship checks on a server you operate instead of Auth
 
 ## Summary
 
-**OpenFGA** is the CNCF authorization engine Auth0 maintains. A store holds a model and relationship tuples, and Check answers whether a user has a relation on an object. You run the server and its database. There is no hosted dashboard and no usage bill from the project. Auth0 FGA (`auth0-fga`) is the same core as a hosted service, with a trial cap and an enterprise contract for production. Use OpenFGA when the checks must stay on infrastructure you operate. Use Auth0 (`auth0`), Clerk (`clerk`), or Stytch (`stytch`) for sign-in. OpenFGA does not sign users in.
+**OpenFGA** is the CNCF authorization engine Auth0 maintains. A store holds a model and relationship tuples, and Check answers whether a user has a relation on an object. You run the server and its database. There is no hosted dashboard and no usage bill from the project. Auth0 FGA (`auth0-fga`) is the same core as a hosted service, with a trial cap and an enterprise contract for production. Use OpenFGA when the checks must stay on infrastructure you operate. Use Cerbos (`cerbos`) when the rule is a policy over roles and attributes rather than stored relationships. Use Auth0 (`auth0`), Clerk (`clerk`), or Stytch (`stytch`) for sign-in. OpenFGA does not sign users in.
 
 ## Notes
 

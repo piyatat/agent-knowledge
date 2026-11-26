@@ -10,7 +10,7 @@ when_to_use: Checking whether a user can act on an object, instead of encoding t
 
 ## Summary
 
-**Auth0 FGA** is a hosted authorization service for relationship checks (ReBAC), built on OpenFGA, the CNCF project Auth0 maintains. A store holds an authorization model and tuples such as “user anne is a viewer of document 1.” The free trial is for evaluation, has no SLA, and is not currently time-limited; production requires an enterprise contract, and the subscription page does not publish a dollar price. On the trial, Check is 20 requests a second per store and ListObjects is 10 requests a minute. Use Auth0 FGA for those checks. Use Auth0 (`auth0`) for sign-in. Use OpenFGA (`openfga`) when you will run the engine and its database yourself.
+**Auth0 FGA** is a hosted authorization service for relationship checks (ReBAC), built on OpenFGA, the CNCF project Auth0 maintains. A store holds an authorization model and tuples such as “user anne is a viewer of document 1.” The free trial is for evaluation, has no SLA, and is not currently time-limited; production requires an enterprise contract, and the subscription page does not publish a dollar price. On the trial, Check is 20 requests a second per store and ListObjects is 10 requests a minute. Use Auth0 FGA for those checks. Use Auth0 (`auth0`) for sign-in. Use OpenFGA (`openfga`) when you will run the engine and its database yourself. Use Cerbos (`cerbos`) when the decision should come from a policy file beside the app.
 
 ## Notes
 

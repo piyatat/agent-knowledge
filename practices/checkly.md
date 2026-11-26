@@ -4,13 +4,13 @@ title: Checkly — synthetic and uptime monitoring, with an HTTP MCP server
 kind: service
 tags: [checkly, monitoring, synthetics, mcp]
 status: active
-updated: 2026-11-23
+updated: 2026-11-26
 when_to_use: Scheduling browser, API, or uptime checks against a deployed app, or letting an agent inspect Checkly results
 ---
 
 ## Summary
 
-**Checkly** runs scheduled uptime monitors and synthetic checks (HTTP, multistep, Playwright browser, and Playwright suites) from Checkly’s locations, then alerts and can write a status page. Hobby is free and hard-capped: 10 uptime monitors, 1,000 browser runs, and 10,000 API runs a month. Past that cap, checks stop. The MCP server is `https://api.checklyhq.com/mcp`. OAuth works only for Checkly-approved clients. Use Checkly to learn that a flow broke before a user reports it. Use Sentry (`sentry`) for exceptions the app already threw, and Datadog (`datadog`) when the agent needs the wider log and trace platform.
+**Checkly** runs scheduled uptime monitors and synthetic checks (HTTP, multistep, Playwright browser, and Playwright suites) from Checkly’s locations, then alerts and can write a status page. Hobby is free and hard-capped: 10 uptime monitors, 1,000 browser runs, and 10,000 API runs a month. Past that cap, checks stop. The MCP server is `https://api.checklyhq.com/mcp`. OAuth works only for Checkly-approved clients. Use Checkly to learn that a flow broke before a user reports it. Use incident.io (`incident-io`) to declare that failure and page on-call. Use Sentry (`sentry`) for exceptions the app already threw, and Datadog (`datadog`) when the agent needs the wider log and trace platform.
 
 ## Notes
 

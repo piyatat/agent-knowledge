@@ -3932,4 +3932,33 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Neo4j Aura console | https://console.neo4j.io/ |
 | Neo4j | https://neo4j.com/ |
 
+## Daily ingest 2026-11-26 (Cerbos, incident.io, Appwrite)
+
+| Topic | URL |
+| --- | --- |
+| Install Cerbos from binary | https://docs.cerbos.dev/cerbos/latest/installation/binary.html |
+| Cerbos configuration | https://docs.cerbos.dev/cerbos/latest/configuration/index.html |
+| Cerbos server configuration | https://docs.cerbos.dev/cerbos/latest/configuration/server.html |
+| How Cerbos evaluates requests | https://docs.cerbos.dev/cerbos/latest/policies/evaluation.html |
+| Cerbos PDP Admin API | https://docs.cerbos.dev/cerbos/latest/api/admin_api.html |
+| Cerbos quickstart | https://docs.cerbos.dev/cerbos/latest/quickstart.html |
+| Cerbos pricing | https://www.cerbos.dev/pricing |
+| Cerbos | https://www.cerbos.dev/ |
+| incident.io pricing | https://incident.io/pricing |
+| incident.io remote MCP | https://docs.incident.io/ai/remote-mcp |
+| Installing incident.io | https://docs.incident.io/getting-started/installing |
+| incident.io billing | https://docs.incident.io/admin/billing |
+| Changing incident.io plans | https://docs.incident.io/admin/change-plan |
+| incident.io API keys | https://docs.incident.io/admin/api-keys |
+| incident.io API introduction | https://docs.incident.io/api-reference/introduction |
+| incident.io free trial | https://incident.io/free-trial |
+| incident.io | https://incident.io/ |
+| Appwrite Cloud pricing | https://appwrite.io/pricing.md |
+| Appwrite pricing | https://appwrite.io/pricing |
+| Appwrite free plan | https://appwrite.io/docs/advanced/billing/free |
+| Appwrite free-project pause | https://appwrite.io/changelog/entry/2026-02-20-1 |
+| Appwrite MCP server | https://appwrite.io/docs/tooling/ai/mcp-servers |
+| Sign up for Appwrite | https://appwrite.io/sign-up |
+| Appwrite | https://appwrite.io/ |
+
 

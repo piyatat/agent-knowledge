@@ -10,7 +10,7 @@ when_to_use: Hosting an app’s Auth and Firestore on Google, or letting an agen
 
 ## Summary
 
-**Firebase** is Google’s app backend: Authentication, Cloud Firestore, Hosting, Cloud Functions, Cloud Messaging, Remote Config, and Cloud Storage. Spark is the no-cost plan and needs no card. Blaze is pay as you go and keeps the Spark quotas before charging. The MCP server is local. It uses the Firebase CLI user’s credentials, or Application Default Credentials, and can deploy, edit Firestore, and change Auth users. There is no hosted Firebase MCP URL. Use Firebase when the app should sit on Firestore and Firebase Auth. Use Supabase (`supabase`) when the database should be Postgres. Use Clerk (`clerk`) or Auth0 (`auth0`) when sign-in is a separate vendor.
+**Firebase** is Google’s app backend: Authentication, Cloud Firestore, Hosting, Cloud Functions, Cloud Messaging, Remote Config, and Cloud Storage. Spark is the no-cost plan and needs no card. Blaze is pay as you go and keeps the Spark quotas before charging. The MCP server is local. It uses the Firebase CLI user’s credentials, or Application Default Credentials, and can deploy, edit Firestore, and change Auth users. There is no hosted Firebase MCP URL. Use Firebase when the app should sit on Firestore and Firebase Auth. Use Supabase (`supabase`) when the database should be Postgres. Use Appwrite (`appwrite`) for a hosted users, database, and files backend that also has a self-hosted server. Use Clerk (`clerk`) or Auth0 (`auth0`) when sign-in is a separate vendor.
 
 ## Notes
 

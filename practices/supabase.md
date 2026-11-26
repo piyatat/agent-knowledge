@@ -10,7 +10,7 @@ when_to_use: Hosting an app’s Postgres with Auth and Storage, or letting an ag
 
 ## Summary
 
-**Supabase** is hosted Postgres plus Auth, Storage, Realtime, and Edge Functions. Unused products are optional. A remote MCP server at `https://mcp.supabase.com/mcp` lets an agent list tables, run SQL, apply migrations, and manage projects after OAuth. Use Supabase when the app wants that bundle. Use Neon (`neon`) when the need is scale-to-zero Postgres without the rest. Use Clerk (`clerk`) when sign-in should stay a separate product; Clerk can be a Supabase third-party auth provider. Use Firebase (`firebase`) when the app should sit on Firestore and Firebase Auth instead of Postgres.
+**Supabase** is hosted Postgres plus Auth, Storage, Realtime, and Edge Functions. Unused products are optional. A remote MCP server at `https://mcp.supabase.com/mcp` lets an agent list tables, run SQL, apply migrations, and manage projects after OAuth. Use Supabase when the app wants that bundle. Use Neon (`neon`) when the need is scale-to-zero Postgres without the rest. Use Clerk (`clerk`) when sign-in should stay a separate product; Clerk can be a Supabase third-party auth provider. Use Firebase (`firebase`) when the app should sit on Firestore and Firebase Auth instead of Postgres. Use Appwrite (`appwrite`) when you want that style of backend without Postgres as the primary database.
 
 ## Notes
 

@@ -14879,7 +14879,7 @@
         "docs": "https://supabase.com/docs/guides/ai-tools/mcp",
         "home": "https://supabase.com/"
       },
-      "related": ["supabase-mcp-sql-and-pause", "neon", "clerk", "prompt-injection-agent-defense", "planetscale", "mongodb-atlas", "firebase"]
+      "related": ["supabase-mcp-sql-and-pause", "neon", "clerk", "prompt-injection-agent-defense", "planetscale", "mongodb-atlas", "firebase", "appwrite"]
     },
     {
       "id": "supabase-mcp-sql-and-pause",
@@ -15600,14 +15600,14 @@
       "tags": ["checkly", "monitoring", "synthetics", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-26",
       "when_to_use": "Scheduling browser, API, or uptime checks against a deployed app, or letting an agent inspect Checkly results",
       "links": {
         "get": "https://app.checklyhq.com/signup/",
         "docs": "https://www.checklyhq.com/docs/ai/mcp-server/",
         "home": "https://www.checklyhq.com/"
       },
-      "related": ["checkly-hobby-cap-and-account", "sentry", "datadog"]
+      "related": ["checkly-hobby-cap-and-account", "sentry", "datadog", "incident-io"]
     },
     {
       "id": "checkly-hobby-cap-and-account",
@@ -16299,7 +16299,7 @@
         "docs": "https://docs.fga.dev/",
         "home": "https://auth0.com/fine-grained-authorization"
       },
-      "related": ["auth0-fga-trial-and-list-rate", "openfga", "auth0", "clerk", "workos"]
+      "related": ["auth0-fga-trial-and-list-rate", "openfga", "auth0", "clerk", "workos", "cerbos"]
     },
     {
       "id": "auth0-fga-trial-and-list-rate",
@@ -16461,7 +16461,7 @@
         "docs": "https://openfga.dev/docs/fga",
         "home": "https://openfga.dev/"
       },
-      "related": ["openfga-default-auth-and-list-cap", "auth0-fga", "auth0"]
+      "related": ["openfga-default-auth-and-list-cap", "auth0-fga", "auth0", "cerbos"]
     },
     {
       "id": "openfga-default-auth-and-list-cap",
@@ -16596,7 +16596,7 @@
         "docs": "https://firebase.google.com/docs/ai-assistance/mcp-server",
         "home": "https://firebase.google.com/"
       },
-      "related": ["firebase-spark-shutoff-and-mcp-write", "supabase", "clerk", "auth0"]
+      "related": ["firebase-spark-shutoff-and-mcp-write", "supabase", "clerk", "auth0", "appwrite"]
     },
     {
       "id": "firebase-spark-shutoff-and-mcp-write",
@@ -16635,6 +16635,87 @@
       "updated": "2026-11-26",
       "when_to_use": "An Aura Free instance rejected queries after a few idle days, or an agent’s Cypher wrote when the task was to read",
       "related": ["neo4j-aura", "zep"]
+    },
+    {
+      "id": "cerbos",
+      "path": "practices/cerbos.md",
+      "title": "Cerbos — policy decisions you run beside the app",
+      "tags": ["cerbos", "authorization", "policy", "pdp"],
+      "kind": "tool",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Deciding allow or deny from a versioned policy instead of relationship tuples",
+      "links": {
+        "get": "https://docs.cerbos.dev/cerbos/latest/installation/binary.html",
+        "docs": "https://docs.cerbos.dev/cerbos/latest/",
+        "home": "https://www.cerbos.dev/"
+      },
+      "related": ["cerbos-default-deny-and-admin", "openfga", "auth0-fga", "auth0"]
+    },
+    {
+      "id": "cerbos-default-deny-and-admin",
+      "path": "failure-modes/cerbos-default-deny-and-admin.md",
+      "title": "Cerbos denied a missing policy, or the admin password was still the default",
+      "tags": ["cerbos", "authorization", "auth", "policy"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "A Cerbos check denied an action that should be allowed, or a PDP was reachable without TLS",
+      "related": ["cerbos", "openfga", "auth0-fga"]
+    },
+    {
+      "id": "incident-io",
+      "path": "practices/incident-io.md",
+      "title": "incident.io — incidents, on-call, and a hosted MCP server",
+      "tags": ["incident-io", "incidents", "on-call", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Declaring an incident or paging on-call from an agent, or reading what is already open",
+      "links": {
+        "get": "https://incident.io/free-trial",
+        "docs": "https://docs.incident.io/ai/remote-mcp",
+        "home": "https://incident.io/"
+      },
+      "related": ["incident-io-basic-plan-and-page", "checkly", "sentry", "cursor-pagerduty"]
+    },
+    {
+      "id": "incident-io-basic-plan-and-page",
+      "path": "failure-modes/incident-io-basic-plan-and-page.md",
+      "title": "incident.io MCP was missing on Basic, or a key paged on-call",
+      "tags": ["incident-io", "incidents", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "An incident.io agent could not connect, a write failed on a read-only session, or a page went out",
+      "related": ["incident-io", "checkly", "sentry"]
+    },
+    {
+      "id": "appwrite",
+      "path": "practices/appwrite.md",
+      "title": "Appwrite — hosted auth, data, and files, with a remote MCP server",
+      "tags": ["appwrite", "backend", "auth", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "Hosting an app’s users, database, and files on Appwrite, or letting an agent change that project",
+      "links": {
+        "get": "https://appwrite.io/sign-up",
+        "docs": "https://appwrite.io/docs/tooling/ai/mcp-servers",
+        "home": "https://appwrite.io/"
+      },
+      "related": ["appwrite-free-pause-and-write", "supabase", "firebase", "clerk"]
+    },
+    {
+      "id": "appwrite-free-pause-and-write",
+      "path": "failure-modes/appwrite-free-pause-and-write.md",
+      "title": "An Appwrite Free project paused, or a write tool changed it",
+      "tags": ["appwrite", "billing", "mcp", "backend"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-26",
+      "when_to_use": "An Appwrite project stopped answering after a quiet week, or an agent created or deleted data while reading",
+      "related": ["appwrite", "supabase", "firebase"]
     }
   ]
 }

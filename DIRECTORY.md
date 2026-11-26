@@ -4,7 +4,7 @@
 
 Look here **before acting or while planning**: find the tool, service or protocol that already covers the job, then open its note. The `get` column points to the official page to install or sign up; whether and how to proceed is the user's call. For free-text lookup run `npm run lookup -- "<task>"`. Knowledge/practice notes are in `INDEX.md`.
 
-## Tools (114)
+## Tools (115)
 
 Installable agents, CLIs, SDKs, IDE integrations and plugins.
 
@@ -124,8 +124,9 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [haystack](practices/haystack.md) | Building a Python tool-calling agent as a Haystack component instead of a graph framework | [link](https://docs.haystack.deepset.ai/docs/installation) | haystack, sdk, orchestration, python | active |
 | [better-auth](practices/better-auth.md) | Adding email, social, or organization sign-in inside a TypeScript app instead of a hosted auth vendor | [link](https://better-auth.com/docs/installation) | better-auth, auth, typescript, sessions | active |
 | [openfga](practices/openfga.md) | Running relationship checks on a server you operate instead of Auth0 FGA | [link](https://openfga.dev/docs/getting-started/setup-openfga/docker) | openfga, authorization, rebac, cncf | active |
+| [cerbos](practices/cerbos.md) | Deciding allow or deny from a versioned policy instead of relationship tuples | [link](https://docs.cerbos.dev/cerbos/latest/installation/binary.html) | cerbos, authorization, policy, pdp | active |
 
-## Services (187)
+## Services (189)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -318,6 +319,8 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [cloudinary](practices/cloudinary.md) | Transforming and delivering images or video from a CDN, or letting an agent manage a Cloudinary product envir… | [link](https://cloudinary.com/users/register_free) | cloudinary, images, video, mcp | active |
 | [firebase](practices/firebase.md) | Hosting an app’s Auth and Firestore on Google, or letting an agent change that Firebase project | [link](https://console.firebase.google.com/) | firebase, firestore, auth, mcp | active |
 | [neo4j-aura](practices/neo4j-aura.md) | Storing an app’s graph on Neo4j Aura, or letting an agent query that instance over MCP | [link](https://console.neo4j.io/) | neo4j, graph, database, mcp | active |
+| [incident-io](practices/incident-io.md) | Declaring an incident or paging on-call from an agent, or reading what is already open | [link](https://incident.io/free-trial) | incident-io, incidents, on-call, mcp | active |
+| [appwrite](practices/appwrite.md) | Hosting an app’s users, database, and files on Appwrite, or letting an agent change that project | [link](https://appwrite.io/sign-up) | appwrite, backend, auth, mcp | active |
 
 ## Protocols and standards (23)
 
