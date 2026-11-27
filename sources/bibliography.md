@@ -4054,4 +4054,33 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | SendGrid sign-up | https://signup.sendgrid.com/ |
 | Twilio SendGrid | https://www.twilio.com/en-us/sendgrid |
 
+## Daily ingest 2026-11-27 (HubSpot, Intercom, Airbyte)
+
+| Topic | URL |
+| --- | --- |
+| Remote HubSpot MCP server | https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server |
+| HubSpot MCP generally available | https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available |
+| HubSpot API usage guidelines | https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines |
+| HubSpot CRM Search API | https://developers.hubspot.com/docs/api-reference/latest/crm/search-the-crm |
+| HubSpot technical limits | https://legal.hubspot.com/hubspot-product-and-services-catalog/technical-limits |
+| HubSpot headless pricing | https://www.hubspot.com/company-news/pricing-headless |
+| HubSpot free CRM | https://www.hubspot.com/products/crm |
+| HubSpot sign-up | https://app.hubspot.com/signup-hubspot/crm |
+| Intercom MCP | https://developers.intercom.com/docs/guides/mcp |
+| Intercom Fin Operator tools | https://developers.intercom.com/docs/guides/fin-operator-mcp |
+| Intercom rate limiting | https://developers.intercom.com/docs/references/rest-api/errors/rate-limiting |
+| Intercom pricing | https://www.intercom.com/pricing |
+| Intercom pricing guide | https://www.intercom.com/learning-center/intercom-pricing |
+| Intercom sign-up | https://www.intercom.com/signup |
+| Intercom | https://www.intercom.com/ |
+| Airbyte MCP | https://docs.airbyte.com/platform/airbyte-mcp |
+| Install the Airbyte MCP | https://docs.airbyte.com/platform/airbyte-mcp/install |
+| Airbyte MCP tools | https://docs.airbyte.com/platform/airbyte-mcp/tools |
+| Advanced Airbyte MCP configuration | https://docs.airbyte.com/platform/airbyte-mcp/advanced-configuration |
+| Airbyte credits | https://docs.airbyte.com/platform/cloud/managing-airbyte-cloud/manage-credits |
+| Airbyte pricing | https://airbyte.com/pricing |
+| Airbyte Cloud release notes | https://docs.airbyte.com/release_notes/cloud |
+| Airbyte sign-up | https://cloud.airbyte.com/signup |
+| Airbyte | https://airbyte.com/ |
+
 

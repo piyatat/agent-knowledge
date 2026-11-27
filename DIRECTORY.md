@@ -126,7 +126,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [openfga](practices/openfga.md) | Running relationship checks on a server you operate instead of Auth0 FGA | [link](https://openfga.dev/docs/getting-started/setup-openfga/docker) | openfga, authorization, rebac, cncf | active |
 | [cerbos](practices/cerbos.md) | Deciding allow or deny from a versioned policy instead of relationship tuples | [link](https://docs.cerbos.dev/cerbos/latest/installation/binary.html) | cerbos, authorization, policy, pdp | active |
 
-## Services (198)
+## Services (201)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -330,6 +330,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [snowflake](practices/snowflake.md) | Querying a warehouse that already holds the data, or exposing Cortex tools to an external agent | [link](https://signup.snowflake.com/) | snowflake, warehouse, mcp, analytics | active |
 | [assemblyai](practices/assemblyai.md) | Transcribing recorded or live audio, or letting an agent submit a public audio URL | [link](https://www.assemblyai.com/dashboard/signup) | assemblyai, speech, transcription, mcp | active |
 | [sendgrid](practices/sendgrid.md) | Sending transactional email from a Twilio account after a sender is verified | [link](https://signup.sendgrid.com/) | sendgrid, email, twilio, messaging | active |
+| [hubspot](practices/hubspot.md) | Reading or updating HubSpot contacts, deals, and tickets, or letting an agent change that CRM | [link](https://app.hubspot.com/signup-hubspot/crm) | hubspot, crm, mcp, contacts | active |
+| [intercom](practices/intercom.md) | Reading or updating an Intercom inbox, help center, or Fin setup from an agent | [link](https://www.intercom.com/signup) | intercom, support, mcp, fin | active |
+| [airbyte](practices/airbyte.md) | Moving source data into a warehouse on a schedule, or letting an agent start and inspect those syncs | [link](https://cloud.airbyte.com/signup) | airbyte, etl, sync, mcp | active |
 
 ## Protocols and standards (24)
 

@@ -10,7 +10,7 @@ when_to_use: Sending lifecycle email, push, or SMS from one audience, or letting
 
 ## Summary
 
-**Customer.io** is hosted messaging for people and objects: email, push, in-app, SMS, WhatsApp, and webhooks, plus journeys that send them. The MCP server can read the workspace and, with extra scopes, create drafts or publish live sends. There is no permanent free plan. A 14-day trial allows 5,000 messages. Essentials starts at $100 a month. Use Customer.io when one audience drives several channels. Use Loops (`loops`) or Resend (`resend`) when the job is email. Use Knock (`knock`) when your app owns the workflow and Customer.io is only a downstream channel.
+**Customer.io** is hosted messaging for people and objects: email, push, in-app, SMS, WhatsApp, and webhooks, plus journeys that send them. The MCP server can read the workspace and, with extra scopes, create drafts or publish live sends. There is no permanent free plan. A 14-day trial allows 5,000 messages. Essentials starts at $100 a month. Use Customer.io when one audience drives several channels. Use Intercom (`intercom`) when the job is the support inbox. Use Loops (`loops`) or Resend (`resend`) when the job is email. Use Knock (`knock`) when your app owns the workflow and Customer.io is only a downstream channel.
 
 ## Notes
 

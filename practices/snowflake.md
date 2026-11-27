@@ -10,7 +10,7 @@ when_to_use: Querying a warehouse that already holds the data, or exposing Corte
 
 ## Summary
 
-**Snowflake** is a hosted data warehouse. Each account can expose a managed MCP server that serves Cortex Analyst, Cortex Search, Cortex Agents, a coding agent, custom tools, and SQL. The server speaks MCP revision `2025-11-25` and does not support dynamic client registration. Agent runs bill AI Credits. SQL still bills a virtual warehouse in Platform Credits. A self-service trial leaves AI features off until a credit card is on the account. Use Snowflake when the tables and the governance already live there. Use ClickHouse Cloud (`clickhouse-cloud`) or MotherDuck (`motherduck`) for a separate analytics database.
+**Snowflake** is a hosted data warehouse. Each account can expose a managed MCP server that serves Cortex Analyst, Cortex Search, Cortex Agents, a coding agent, custom tools, and SQL. The server speaks MCP revision `2025-11-25` and does not support dynamic client registration. Agent runs bill AI Credits. SQL still bills a virtual warehouse in Platform Credits. A self-service trial leaves AI features off until a credit card is on the account. Use Snowflake when the tables and the governance already live there. Use Airbyte (`airbyte`) to load those tables on a schedule. Use ClickHouse Cloud (`clickhouse-cloud`) or MotherDuck (`motherduck`) for a separate analytics database.
 
 ## Notes
 

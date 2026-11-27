@@ -10,7 +10,7 @@ when_to_use: Reading or updating records in an Airtable base, or letting an agen
 
 ## Summary
 
-**Airtable** stores records in bases and can present them as interfaces, forms, and automations. Plans are per workspace. Free allows 1,000 records per base and 1,000 API calls per workspace each month. A hosted MCP server at `https://mcp.airtable.com/mcp` is on every plan, including Free, at no extra charge, and it uses that same API quota. Use Airtable when the system of record is a base. Use Notion (`notion-mcp`) for pages and databases in Notion. Use Convex (`convex`) or Neon (`neon`) when the data should live in an application database.
+**Airtable** stores records in bases and can present them as interfaces, forms, and automations. Plans are per workspace. Free allows 1,000 records per base and 1,000 API calls per workspace each month. A hosted MCP server at `https://mcp.airtable.com/mcp` is on every plan, including Free, at no extra charge, and it uses that same API quota. Use Airtable when the system of record is a base. Use HubSpot (`hubspot`) when the records are a CRM. Use Notion (`notion-mcp`) for pages and databases in Notion. Use Convex (`convex`) or Neon (`neon`) when the data should live in an application database.
 
 ## Notes
 

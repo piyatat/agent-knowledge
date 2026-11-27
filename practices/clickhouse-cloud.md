@@ -10,7 +10,7 @@ when_to_use: Querying a large event or log table with SQL, or letting an agent r
 
 ## Summary
 
-**ClickHouse Cloud** is hosted columnar SQL for analytics. You pay for compute, storage, backups, egress, and ClickPipes, with no monthly minimum. A new organization gets **$300** of credits for **30 days**, then pay-as-you-go. Compute can idle to zero; storage does not. A managed MCP server at `https://mcp.clickhouse.cloud/mcp` lists schema and runs read-only queries after you enable it on that service. Use it for analytical scans. Use Neon (`neon`) or Supabase (`supabase`) for transactional Postgres. Use Snowflake (`snowflake`) when the tables and the agent tools should stay in one governed account.
+**ClickHouse Cloud** is hosted columnar SQL for analytics. You pay for compute, storage, backups, egress, and ClickPipes, with no monthly minimum. A new organization gets **$300** of credits for **30 days**, then pay-as-you-go. Compute can idle to zero; storage does not. A managed MCP server at `https://mcp.clickhouse.cloud/mcp` lists schema and runs read-only queries after you enable it on that service. Use it for analytical scans. Use Airbyte (`airbyte`) when the job is moving data in rather than querying it. Use Neon (`neon`) or Supabase (`supabase`) for transactional Postgres. Use Snowflake (`snowflake`) when the tables and the agent tools should stay in one governed account.
 
 ## Notes
 

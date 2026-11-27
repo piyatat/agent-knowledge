@@ -15502,7 +15502,7 @@
         "docs": "https://clickhouse.com/docs/products/cloud/features/ai-ml/remote-mcp",
         "home": "https://clickhouse.com/"
       },
-      "related": ["clickhouse-idle-and-mcp", "motherduck", "neon", "supabase", "datadog", "tinybird", "snowflake"]
+      "related": ["clickhouse-idle-and-mcp", "motherduck", "neon", "supabase", "datadog", "tinybird", "snowflake", "airbyte"]
     },
     {
       "id": "clickhouse-idle-and-mcp",
@@ -16788,7 +16788,7 @@
         "docs": "https://docs.customer.io/ai/mcp/get-started/",
         "home": "https://customer.io/"
       },
-      "related": ["customer-io-trial-and-live-write", "loops", "knock", "resend"]
+      "related": ["customer-io-trial-and-live-write", "loops", "knock", "resend", "intercom"]
     },
     {
       "id": "customer-io-trial-and-live-write",
@@ -16868,7 +16868,7 @@
         "docs": "https://airtable.com/developers/agents/mcp/getting-started",
         "home": "https://www.airtable.com/"
       },
-      "related": ["airtable-api-grace-and-mcp-write", "notion-mcp", "convex", "neon"]
+      "related": ["airtable-api-grace-and-mcp-write", "notion-mcp", "convex", "neon", "hubspot"]
     },
     {
       "id": "airtable-api-grace-and-mcp-write",
@@ -16922,7 +16922,7 @@
         "docs": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
         "home": "https://www.snowflake.com/"
       },
-      "related": ["snowflake-trial-ai-and-mcp-sql", "clickhouse-cloud", "motherduck", "tinybird"]
+      "related": ["snowflake-trial-ai-and-mcp-sql", "clickhouse-cloud", "motherduck", "tinybird", "airbyte"]
     },
     {
       "id": "snowflake-trial-ai-and-mcp-sql",
@@ -16988,6 +16988,87 @@
       "updated": "2026-11-27",
       "when_to_use": "SendGrid API sends stopped after a trial, sandbox returned 200 and nothing arrived, or a key could change the account",
       "related": ["sendgrid", "twilio", "resend", "postmark"]
+    },
+    {
+      "id": "hubspot",
+      "path": "practices/hubspot.md",
+      "title": "HubSpot — free CRM with a remote read-write MCP server",
+      "tags": ["hubspot", "crm", "mcp", "contacts"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Reading or updating HubSpot contacts, deals, and tickets, or letting an agent change that CRM",
+      "links": {
+        "get": "https://app.hubspot.com/signup-hubspot/crm",
+        "docs": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "home": "https://www.hubspot.com/products/crm"
+      },
+      "related": ["hubspot-search-cap-and-mcp-confirm", "airtable", "intercom", "customer-io"]
+    },
+    {
+      "id": "hubspot-search-cap-and-mcp-confirm",
+      "path": "failure-modes/hubspot-search-cap-and-mcp-confirm.md",
+      "title": "HubSpot search stopped at 10,000 rows, or MCP did not write",
+      "tags": ["hubspot", "crm", "mcp", "limits"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "A HubSpot search returned 400 past the first pages, a 429 arrived under the daily cap, or an MCP write never landed",
+      "related": ["hubspot", "airtable", "intercom"]
+    },
+    {
+      "id": "intercom",
+      "path": "practices/intercom.md",
+      "title": "Intercom — support inbox, Fin, and a hosted MCP server",
+      "tags": ["intercom", "support", "mcp", "fin"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Reading or updating an Intercom inbox, help center, or Fin setup from an agent",
+      "links": {
+        "get": "https://www.intercom.com/signup",
+        "docs": "https://developers.intercom.com/docs/guides/mcp",
+        "home": "https://www.intercom.com/"
+      },
+      "related": ["intercom-region-and-operator-apply", "customer-io", "hubspot", "knock"]
+    },
+    {
+      "id": "intercom-region-and-operator-apply",
+      "path": "failure-modes/intercom-region-and-operator-apply.md",
+      "title": "Intercom MCP missed the workspace, or Operator changed live config",
+      "tags": ["intercom", "support", "mcp", "fin"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Intercom MCP connected and returned nothing, a note reopened a conversation, or Fin Operator published a change",
+      "related": ["intercom", "customer-io", "hubspot"]
+    },
+    {
+      "id": "airbyte",
+      "path": "practices/airbyte.md",
+      "title": "Airbyte Cloud — data syncs billed in credits, with a write-capable MCP",
+      "tags": ["airbyte", "etl", "sync", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Moving source data into a warehouse on a schedule, or letting an agent start and inspect those syncs",
+      "links": {
+        "get": "https://cloud.airbyte.com/signup",
+        "docs": "https://docs.airbyte.com/platform/airbyte-mcp",
+        "home": "https://airbyte.com/"
+      },
+      "related": ["airbyte-credit-arrears-and-sync", "snowflake", "clickhouse-cloud", "tinybird"]
+    },
+    {
+      "id": "airbyte-credit-arrears-and-sync",
+      "path": "failure-modes/airbyte-credit-arrears-and-sync.md",
+      "title": "Airbyte kept syncing with no credits left, or MCP started a billed run",
+      "tags": ["airbyte", "etl", "billing", "mcp"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "An Airbyte sync kept running after credits hit zero, a manual sync was refused, or an agent started a full refresh",
+      "related": ["airbyte", "snowflake", "clickhouse-cloud"]
     }
   ]
 }
