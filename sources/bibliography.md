@@ -3989,4 +3989,36 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | OpenTelemetry GenAI semantic conventions | https://github.com/open-telemetry/semantic-conventions-genai |
 | OpenTelemetry | https://opentelemetry.io/ |
 
+## Daily ingest 2026-11-27 (Vercel, Airtable, Apify)
+
+| Topic | URL |
+| --- | --- |
+| Vercel pricing | https://vercel.com/pricing |
+| Vercel Hobby plan | https://vercel.com/docs/plans/hobby |
+| Vercel Pro plan | https://vercel.com/docs/plans/pro-plan |
+| Vercel account plans | https://vercel.com/docs/plans |
+| Vercel fluid compute pricing | https://vercel.com/docs/functions/usage-and-pricing |
+| Vercel Spend Management | https://vercel.com/docs/spend-management |
+| Vercel MCP | https://vercel.com/docs/agent-resources/vercel-mcp |
+| Vercel MCP deployments | https://vercel.com/docs/agent-resources/vercel-mcp/tools/deployments |
+| Vercel MCP environment variables | https://vercel.com/docs/agent-resources/vercel-mcp/tools/environment-variables |
+| Why a Vercel deployment was paused | https://vercel.com/kb/guide/why-is-my-account-deployment-blocked |
+| Vercel sign up | https://vercel.com/signup |
+| Vercel | https://vercel.com/ |
+| Airtable plans overview | https://support.airtable.com/articles/2277136852-airtable-plans-overview |
+| Airtable pricing | https://airtable.com/pricing |
+| Airtable API call limits | https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable |
+| Using the Airtable MCP server | https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server |
+| Airtable MCP | https://www.airtable.com/platform/mcp |
+| Airtable MCP server overview | https://airtable.com/developers/agents/mcp/getting-started |
+| Airtable sign up | https://airtable.com/signup |
+| Airtable | https://www.airtable.com/ |
+| Apify pricing | https://apify.com/pricing |
+| Apify subscription plans | https://docs.apify.com/account/subscriptions |
+| Apify limits | https://docs.apify.com/account/limits |
+| Apify MCP server | https://docs.apify.com/mcp |
+| Apify MCP server README | https://github.com/apify/apify-mcp-server/blob/HEAD/README.md |
+| Apify sign up | https://console.apify.com/sign-up |
+| Apify | https://apify.com/ |
+
 

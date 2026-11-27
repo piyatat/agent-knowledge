@@ -126,7 +126,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [openfga](practices/openfga.md) | Running relationship checks on a server you operate instead of Auth0 FGA | [link](https://openfga.dev/docs/getting-started/setup-openfga/docker) | openfga, authorization, rebac, cncf | active |
 | [cerbos](practices/cerbos.md) | Deciding allow or deny from a versioned policy instead of relationship tuples | [link](https://docs.cerbos.dev/cerbos/latest/installation/binary.html) | cerbos, authorization, policy, pdp | active |
 
-## Services (192)
+## Services (195)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -324,6 +324,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [mixpanel](practices/mixpanel.md) | Querying product events, funnels, or replays in Mixpanel, or letting an agent change a board or flag | [link](https://mixpanel.com/register/) | mixpanel, analytics, mcp, experiments | active |
 | [pagerduty](practices/pagerduty.md) | Reading who is on call or changing a PagerDuty incident from an agent, instead of only receiving a Cursor tri… | [link](https://www.pagerduty.com/sign-up/) | pagerduty, incidents, on-call, mcp | active |
 | [customer-io](practices/customer-io.md) | Sending lifecycle email, push, or SMS from one audience, or letting an agent draft a Customer.io campaign | [link](https://fly.customer.io/signup) | customer-io, messaging, email, mcp | active |
+| [vercel](practices/vercel.md) | Deploying a web app on Vercel, or letting an agent inspect logs and publish a deployment | [link](https://vercel.com/signup) | vercel, hosting, mcp, deploy | active |
+| [airtable](practices/airtable.md) | Reading or updating records in an Airtable base, or letting an agent build tables and automations | [link](https://airtable.com/signup) | airtable, database, mcp, records | active |
+| [apify](practices/apify.md) | Running an Apify Store Actor to collect site data, or letting an agent search and start that run | [link](https://console.apify.com/sign-up) | apify, scrape, mcp, actors | active |
 
 ## Protocols and standards (24)
 

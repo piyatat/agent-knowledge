@@ -11684,7 +11684,8 @@
         "agent-code-sandboxing",
         "modal-sandboxes",
         "railway",
-        "fly-io"
+        "fly-io",
+        "vercel"
       ]
     },
     {
@@ -12555,7 +12556,8 @@
         "stagehand",
         "playwright-mcp",
         "prompt-injection-agent-defense",
-        "x402-payments"
+        "x402-payments",
+        "apify"
       ]
     },
     {
@@ -14718,7 +14720,7 @@
         "docs": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
         "home": "https://www.notion.com/"
       },
-      "related": ["notion-mcp-plan-and-rate-limit", "cursor-notion", "mcp-streamable-http-transport", "composio"]
+      "related": ["notion-mcp-plan-and-rate-limit", "cursor-notion", "mcp-streamable-http-transport", "composio", "airtable"]
     },
     {
       "id": "notion-mcp-plan-and-rate-limit",
@@ -15204,7 +15206,7 @@
         "docs": "https://docs.railway.com/ai/mcp-server",
         "home": "https://railway.com/"
       },
-      "related": ["railway-free-sleep-and-mcp-token", "render", "fly-io", "vercel-sandbox", "cloudflare-agents", "neon", "netlify"]
+      "related": ["railway-free-sleep-and-mcp-token", "render", "fly-io", "vercel-sandbox", "vercel", "cloudflare-agents", "neon", "netlify"]
     },
     {
       "id": "railway-free-sleep-and-mcp-token",
@@ -15554,7 +15556,7 @@
         "docs": "https://render.com/docs/mcp-server",
         "home": "https://render.com/"
       },
-      "related": ["render-free-expiry-and-mcp-env", "railway", "fly-io", "vercel-sandbox", "neon", "netlify"]
+      "related": ["render-free-expiry-and-mcp-env", "railway", "fly-io", "vercel-sandbox", "vercel", "neon", "netlify"]
     },
     {
       "id": "render-free-expiry-and-mcp-env",
@@ -15884,7 +15886,7 @@
         "docs": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/",
         "home": "https://www.netlify.com/"
       },
-      "related": ["netlify-credit-pause-and-token", "railway", "render", "fly-io"]
+      "related": ["netlify-credit-pause-and-token", "railway", "render", "fly-io", "vercel"]
     },
     {
       "id": "netlify-credit-pause-and-token",
@@ -16824,6 +16826,87 @@
       "updated": "2026-11-27",
       "when_to_use": "An OTLP export returned HTTP 200 while dropping spans, or profiles went to the wrong path",
       "related": ["otlp", "langfuse", "logfire", "grafana-cloud"]
+    },
+    {
+      "id": "vercel",
+      "path": "practices/vercel.md",
+      "title": "Vercel — framework hosting with a hosted MCP server",
+      "tags": ["vercel", "hosting", "mcp", "deploy"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Deploying a web app on Vercel, or letting an agent inspect logs and publish a deployment",
+      "links": {
+        "get": "https://vercel.com/signup",
+        "docs": "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "home": "https://vercel.com/"
+      },
+      "related": ["vercel-hobby-pause-and-mcp-write", "netlify", "railway", "render", "vercel-sandbox", "fly-io"]
+    },
+    {
+      "id": "vercel-hobby-pause-and-mcp-write",
+      "path": "failure-modes/vercel-hobby-pause-and-mcp-write.md",
+      "title": "A Vercel Hobby deploy stays paused, or MCP ships production",
+      "tags": ["vercel", "hosting", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "A Vercel site returns 503 DEPLOYMENT_PAUSED, or an agent published a production deploy or read an env value",
+      "related": ["vercel", "netlify", "vercel-sandbox"]
+    },
+    {
+      "id": "airtable",
+      "path": "practices/airtable.md",
+      "title": "Airtable — bases, interfaces, and a hosted MCP server",
+      "tags": ["airtable", "database", "mcp", "records"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Reading or updating records in an Airtable base, or letting an agent build tables and automations",
+      "links": {
+        "get": "https://airtable.com/signup",
+        "docs": "https://airtable.com/developers/agents/mcp/getting-started",
+        "home": "https://www.airtable.com/"
+      },
+      "related": ["airtable-api-grace-and-mcp-write", "notion-mcp", "convex", "neon"]
+    },
+    {
+      "id": "airtable-api-grace-and-mcp-write",
+      "path": "failure-modes/airtable-api-grace-and-mcp-write.md",
+      "title": "Airtable API calls return 429, or MCP wrote schema and records",
+      "tags": ["airtable", "database", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Airtable API calls returned 429, a base stopped accepting records, or an agent changed schema",
+      "related": ["airtable", "notion-mcp", "convex"]
+    },
+    {
+      "id": "apify",
+      "path": "practices/apify.md",
+      "title": "Apify — Actor marketplace with a hosted MCP server",
+      "tags": ["apify", "scrape", "mcp", "actors"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Running an Apify Store Actor to collect site data, or letting an agent search and start that run",
+      "links": {
+        "get": "https://console.apify.com/sign-up",
+        "docs": "https://docs.apify.com/mcp",
+        "home": "https://apify.com/"
+      },
+      "related": ["apify-usage-block-and-actor-search", "firecrawl", "browserbase", "x402-payments"]
+    },
+    {
+      "id": "apify-usage-block-and-actor-search",
+      "path": "failure-modes/apify-usage-block-and-actor-search.md",
+      "title": "An Apify run was blocked, or Store search hid the Actor",
+      "tags": ["apify", "scrape", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "An Apify Actor stopped for usage, search missed a Store Actor, or call-actor returned no rows",
+      "related": ["apify", "firecrawl", "browserbase"]
     }
   ]
 }
