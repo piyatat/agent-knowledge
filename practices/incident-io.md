@@ -4,13 +4,13 @@ title: incident.io — incidents, on-call, and a hosted MCP server
 kind: service
 tags: [incident-io, incidents, on-call, mcp]
 status: active
-updated: 2026-11-26
+updated: 2026-11-27
 when_to_use: Declaring an incident or paging on-call from an agent, or reading what is already open
 ---
 
 ## Summary
 
-**incident.io** is hosted incident response, on-call, and status pages for Slack or Microsoft Teams. Basic is free and does not include the remote MCP server or the API. Team, Pro, and Enterprise do. The MCP server is `https://mcp.incident.io/mcp`. OAuth acts as the person who approves it and lasts 28 days. An API key acts as a service, does not expire until you delete it, and can page someone when its scopes allow that. Use Checkly (`checkly`) to notice that a flow failed. Use Sentry (`sentry`) for exceptions the app already threw. Use Cursor’s PagerDuty trigger (`cursor-pagerduty`) when the page comes from PagerDuty rather than incident.io.
+**incident.io** is hosted incident response, on-call, and status pages for Slack or Microsoft Teams. Basic is free and does not include the remote MCP server or the API. Team, Pro, and Enterprise do. The MCP server is `https://mcp.incident.io/mcp`. OAuth acts as the person who approves it and lasts 28 days. An API key acts as a service, does not expire until you delete it, and can page someone when its scopes allow that. Use Checkly (`checkly`) to notice that a flow failed. Use Sentry (`sentry`) for exceptions the app already threw. Use PagerDuty (`pagerduty`) when the agent should read or change that PagerDuty account. Use Cursor’s PagerDuty trigger (`cursor-pagerduty`) when a Cursor Automation should start from those incident events.
 
 ## Notes
 

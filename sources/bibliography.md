@@ -3961,4 +3961,32 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Sign up for Appwrite | https://appwrite.io/sign-up |
 | Appwrite | https://appwrite.io/ |
 
+## Daily ingest 2026-11-27 (Mixpanel, PagerDuty, Customer.io, OTLP)
+
+| Topic | URL |
+| --- | --- |
+| Mixpanel pricing | https://mixpanel.com/pricing/ |
+| Mixpanel pricing docs | https://docs.mixpanel.com/docs/pricing |
+| Mixpanel MCP server | https://docs.mixpanel.com/docs/mcp |
+| Mixpanel rate limits | https://docs.mixpanel.com/reference/rate-limits |
+| Mixpanel sign up | https://mixpanel.com/register/ |
+| Mixpanel | https://mixpanel.com/ |
+| PagerDuty pricing | https://www.pagerduty.com/pricing/ |
+| PagerDuty MCP server | https://docs.pagerduty.com/ai-automation/advance/pagerduty-mcp-server |
+| PagerDuty REST API rate limits | https://docs.pagerduty.com/developer/rest-api-rate-limits |
+| PagerDuty sign up | https://www.pagerduty.com/sign-up/ |
+| PagerDuty | https://www.pagerduty.com/ |
+| Customer.io pricing | https://customer.io/pricing |
+| Customer.io plan features | https://docs.customer.io/accounts/billing/plan-features/ |
+| Customer.io MCP server | https://docs.customer.io/ai/mcp/get-started/ |
+| Customer.io APIs | https://docs.customer.io/integrations/api/customerio-apis/ |
+| Customer.io agent authentication | https://customer.io/auth.md |
+| Customer.io sign up | https://fly.customer.io/signup |
+| Customer.io | https://customer.io/ |
+| OTLP specification 1.11.1 | https://opentelemetry.io/docs/specs/otlp/ |
+| OTLP exporter configuration | https://opentelemetry.io/docs/languages/sdk-configuration/otlp-exporter/ |
+| Generative AI semantic conventions (moved) | https://opentelemetry.io/docs/specs/semconv/gen-ai/ |
+| OpenTelemetry GenAI semantic conventions | https://github.com/open-telemetry/semantic-conventions-genai |
+| OpenTelemetry | https://opentelemetry.io/ |
+
 

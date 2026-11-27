@@ -4,13 +4,13 @@ title: Amplitude — product analytics with a hosted MCP server
 kind: service
 tags: [amplitude, analytics, mcp, experiments]
 status: active
-updated: 2026-11-26
+updated: 2026-11-27
 when_to_use: Querying product events and editing Amplitude charts from an agent, or choosing Amplitude instead of PostHog
 ---
 
 ## Summary
 
-**Amplitude** is a hosted product-analytics platform: events, session replay, feature flags, experiments, guides, and surveys. The product MCP lets an agent read and edit that organization. It does not ingest events. A separate Docs MCP serves public documentation with no sign-in. Free includes 2 million events a month, needs no card, and has no time limit. Use Amplitude when the job is product events, replays, and charts. Use PostHog (`posthog`) when analytics, flags, and error tracking should share one project and a free org should drop events past the allowance. Use Statsig (`statsig`) or GrowthBook (`growthbook`) when gates and experiments are the product.
+**Amplitude** is a hosted product-analytics platform: events, session replay, feature flags, experiments, guides, and surveys. The product MCP lets an agent read and edit that organization. It does not ingest events. A separate Docs MCP serves public documentation with no sign-in. Free includes 2 million events a month, needs no card, and has no time limit. Use Amplitude when the job is product events, replays, and charts. Use PostHog (`posthog`) when analytics, flags, and error tracking should share one project and a free org should drop events past the allowance. Use Mixpanel (`mixpanel`) when a free org should pause queries past 1 million events instead of keeping charts and hiding the extra events. Use Statsig (`statsig`) or GrowthBook (`growthbook`) when gates and experiments are the product.
 
 ## Notes
 

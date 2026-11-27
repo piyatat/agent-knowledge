@@ -3,13 +3,13 @@ id: cursor-pagerduty
 title: Cursor Automations — PagerDuty incident triggers
 tags: [cursor, automations, orchestration, ops]
 status: active
-updated: 2026-09-18
+updated: 2026-11-27
 when_to_use: Starting a Cursor Automation from PagerDuty incident events (not a mention-based Cloud Agent)
 ---
 
 ## Summary
 
-**PagerDuty** is an Automation **trigger** for Cursor Cloud Agents: incident created / acknowledged / resolved / any. There is no `@Cursor` mention surface on PagerDuty (unlike Slack/Linear). Not Sentry issue triggers (`cursor-sentry`) and not a PagerDuty MCP install.
+**PagerDuty** is an Automation **trigger** for Cursor Cloud Agents: incident created / acknowledged / resolved / any. There is no `@Cursor` mention surface on PagerDuty (unlike Slack/Linear). The hosted PagerDuty MCP server is a separate product (`pagerduty`). This trigger is not a Sentry issue trigger (`cursor-sentry`).
 
 ## Notes
 

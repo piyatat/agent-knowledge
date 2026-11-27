@@ -4,13 +4,13 @@ title: Loops — marketing and transactional email, with an OAuth MCP server
 kind: service
 tags: [loops, email, mcp, messaging]
 status: active
-updated: 2026-11-25
+updated: 2026-11-27
 when_to_use: Sending product email and lifecycle campaigns from one audience, or letting an agent manage Loops contacts and transactional mail
 ---
 
 ## Summary
 
-**Loops** is hosted email for a software product: campaigns, workflows, and transactional mail share one audience. The plan price follows subscribed contacts, not seats, and paid plans do not charge per send. A remote MCP server at `https://mcp.loops.so` signs in with OAuth and can change contacts, campaigns, and sends. Use Loops when marketing and product mail belong in one audience. Use Resend (`resend`) when the job is a sending API with inbound mail and no marketing audience. Use Postmark (`postmark`) when transactional mail should stay on a reviewed, separate stream. Use Knock (`knock`) when that workflow should also reach in-app, push, SMS, or chat.
+**Loops** is hosted email for a software product: campaigns, workflows, and transactional mail share one audience. The plan price follows subscribed contacts, not seats, and paid plans do not charge per send. A remote MCP server at `https://mcp.loops.so` signs in with OAuth and can change contacts, campaigns, and sends. Use Loops when marketing and product mail belong in one audience. Use Resend (`resend`) when the job is a sending API with inbound mail and no marketing audience. Use Postmark (`postmark`) when transactional mail should stay on a reviewed, separate stream. Use Knock (`knock`) when that workflow should also reach in-app, push, SMS, or chat. Use Customer.io (`customer-io`) when those channels share one audience and a 14-day trial is enough to start.
 
 ## Notes
 

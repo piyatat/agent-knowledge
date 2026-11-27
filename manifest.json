@@ -6839,11 +6839,12 @@
         "ops"
       ],
       "status": "active",
-      "updated": "2026-09-18",
+      "updated": "2026-11-27",
       "when_to_use": "Starting a Cursor Automation from PagerDuty incident events (not a mention-based Cloud Agent)",
       "related": [
         "cursor-automations",
         "cursor-sentry",
+        "pagerduty",
         "cursor-cloud-always-on",
         "prompt-injection-agent-defense",
         "heartbeat-dead-man-switch"
@@ -15007,14 +15008,14 @@
       "tags": ["posthog", "analytics", "flags", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-26",
+      "updated": "2026-11-27",
       "when_to_use": "Querying product analytics, feature flags, or errors in PostHog, or letting an agent change them",
       "links": {
         "get": "https://us.posthog.com/signup",
         "docs": "https://posthog.com/docs/model-context-protocol",
         "home": "https://posthog.com/"
       },
-      "related": ["posthog-mcp-quota-and-pin", "amplitude", "statsig", "launchdarkly", "growthbook", "sentry", "langfuse", "braintrust", "opik"]
+      "related": ["posthog-mcp-quota-and-pin", "amplitude", "mixpanel", "statsig", "launchdarkly", "growthbook", "sentry", "langfuse", "braintrust", "opik"]
     },
     {
       "id": "posthog-mcp-quota-and-pin",
@@ -15730,14 +15731,14 @@
       "tags": ["loops", "email", "mcp", "messaging"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-25",
+      "updated": "2026-11-27",
       "when_to_use": "Sending product email and lifecycle campaigns from one audience, or letting an agent manage Loops contacts and transactional mail",
       "links": {
         "get": "https://app.loops.so/register",
         "docs": "https://loops.so/docs/mcp-server",
         "home": "https://loops.so/"
       },
-      "related": ["loops-send-quota-and-test-inbox", "resend", "knock", "postmark"]
+      "related": ["loops-send-quota-and-test-inbox", "resend", "knock", "postmark", "customer-io"]
     },
     {
       "id": "loops-send-quota-and-test-inbox",
@@ -15984,14 +15985,14 @@
       "tags": ["knock", "notifications", "messaging", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-25",
+      "updated": "2026-11-27",
       "when_to_use": "Sending one product workflow across email, in-app, push, SMS, and chat, or letting an agent edit those workflows",
       "links": {
         "get": "https://dashboard.knock.app/signup",
         "docs": "https://docs.knock.app/ai/mcp-server",
         "home": "https://knock.app/"
       },
-      "related": ["knock-sandbox-and-service-token", "resend", "loops", "twilio", "postmark"]
+      "related": ["knock-sandbox-and-service-token", "resend", "loops", "twilio", "postmark", "customer-io"]
     },
     {
       "id": "knock-sandbox-and-service-token",
@@ -16427,14 +16428,14 @@
       "tags": ["amplitude", "analytics", "mcp", "experiments"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-26",
+      "updated": "2026-11-27",
       "when_to_use": "Querying product events and editing Amplitude charts from an agent, or choosing Amplitude instead of PostHog",
       "links": {
         "get": "https://amplitude.com/get-started",
         "docs": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp",
         "home": "https://amplitude.com/"
       },
-      "related": ["amplitude-free-block-and-region", "posthog", "statsig", "growthbook"]
+      "related": ["amplitude-free-block-and-region", "posthog", "mixpanel", "statsig", "growthbook"]
     },
     {
       "id": "amplitude-free-block-and-region",
@@ -16670,14 +16671,14 @@
       "tags": ["incident-io", "incidents", "on-call", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-26",
+      "updated": "2026-11-27",
       "when_to_use": "Declaring an incident or paging on-call from an agent, or reading what is already open",
       "links": {
         "get": "https://incident.io/free-trial",
         "docs": "https://docs.incident.io/ai/remote-mcp",
         "home": "https://incident.io/"
       },
-      "related": ["incident-io-basic-plan-and-page", "checkly", "sentry", "cursor-pagerduty"]
+      "related": ["incident-io-basic-plan-and-page", "checkly", "sentry", "pagerduty", "cursor-pagerduty"]
     },
     {
       "id": "incident-io-basic-plan-and-page",
@@ -16716,6 +16717,113 @@
       "updated": "2026-11-26",
       "when_to_use": "An Appwrite project stopped answering after a quiet week, or an agent created or deleted data while reading",
       "related": ["appwrite", "supabase", "firebase"]
+    },
+    {
+      "id": "mixpanel",
+      "path": "practices/mixpanel.md",
+      "title": "Mixpanel — product analytics with a hosted MCP server",
+      "tags": ["mixpanel", "analytics", "mcp", "experiments"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Querying product events, funnels, or replays in Mixpanel, or letting an agent change a board or flag",
+      "links": {
+        "get": "https://mixpanel.com/register/",
+        "docs": "https://docs.mixpanel.com/docs/mcp",
+        "home": "https://mixpanel.com/"
+      },
+      "related": ["mixpanel-free-pause-and-region", "amplitude", "posthog", "statsig"]
+    },
+    {
+      "id": "mixpanel-free-pause-and-region",
+      "path": "failure-modes/mixpanel-free-pause-and-region.md",
+      "title": "Mixpanel paused queries on Free, or MCP used the wrong region",
+      "tags": ["mixpanel", "analytics", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "A Mixpanel report stopped, MCP hit the wrong region, or a service account wrote Lexicon data",
+      "related": ["mixpanel", "amplitude", "posthog"]
+    },
+    {
+      "id": "pagerduty",
+      "path": "practices/pagerduty.md",
+      "title": "PagerDuty — incidents and on-call, with a hosted MCP server",
+      "tags": ["pagerduty", "incidents", "on-call", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Reading who is on call or changing a PagerDuty incident from an agent, instead of only receiving a Cursor trigger",
+      "links": {
+        "get": "https://www.pagerduty.com/sign-up/",
+        "docs": "https://docs.pagerduty.com/ai-automation/advance/pagerduty-mcp-server",
+        "home": "https://www.pagerduty.com/"
+      },
+      "related": ["pagerduty-free-plan-and-default-writes", "incident-io", "cursor-pagerduty", "checkly", "sentry"]
+    },
+    {
+      "id": "pagerduty-free-plan-and-default-writes",
+      "path": "failure-modes/pagerduty-free-plan-and-default-writes.md",
+      "title": "PagerDuty MCP was missing on Free, or the default tools changed an incident",
+      "tags": ["pagerduty", "incidents", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "A PagerDuty agent could not connect on Free, or a default connection acknowledged an incident",
+      "related": ["pagerduty", "incident-io", "cursor-pagerduty"]
+    },
+    {
+      "id": "customer-io",
+      "path": "practices/customer-io.md",
+      "title": "Customer.io — lifecycle messaging and a hosted MCP server",
+      "tags": ["customer-io", "messaging", "email", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Sending lifecycle email, push, or SMS from one audience, or letting an agent draft a Customer.io campaign",
+      "links": {
+        "get": "https://fly.customer.io/signup",
+        "docs": "https://docs.customer.io/ai/mcp/get-started/",
+        "home": "https://customer.io/"
+      },
+      "related": ["customer-io-trial-and-live-write", "loops", "knock", "resend"]
+    },
+    {
+      "id": "customer-io-trial-and-live-write",
+      "path": "failure-modes/customer-io-trial-and-live-write.md",
+      "title": "Customer.io dropped a send, or an agent published a live campaign",
+      "tags": ["customer-io", "messaging", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "A Customer.io trial or new Essentials account dropped mail, or an agent published a live campaign",
+      "related": ["customer-io", "loops", "knock"]
+    },
+    {
+      "id": "otlp",
+      "path": "practices/otlp.md",
+      "title": "OTLP — OpenTelemetry Protocol for traces, metrics, and logs",
+      "tags": ["otlp", "otel", "observability", "protocol"],
+      "kind": "protocol",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Sending traces, metrics, or logs from an agent to a collector with the OpenTelemetry Protocol",
+      "links": {
+        "docs": "https://opentelemetry.io/docs/specs/otlp/",
+        "home": "https://opentelemetry.io/"
+      },
+      "related": ["otlp-partial-success-and-profiles-path", "langfuse", "grafana-cloud", "logfire", "honeycomb"]
+    },
+    {
+      "id": "otlp-partial-success-and-profiles-path",
+      "path": "failure-modes/otlp-partial-success-and-profiles-path.md",
+      "title": "An OTLP export returned 200 and still dropped telemetry",
+      "tags": ["otlp", "otel", "observability", "protocol"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "An OTLP export returned HTTP 200 while dropping spans, or profiles went to the wrong path",
+      "related": ["otlp", "langfuse", "logfire", "grafana-cloud"]
     }
   ]
 }

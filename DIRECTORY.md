@@ -126,7 +126,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [openfga](practices/openfga.md) | Running relationship checks on a server you operate instead of Auth0 FGA | [link](https://openfga.dev/docs/getting-started/setup-openfga/docker) | openfga, authorization, rebac, cncf | active |
 | [cerbos](practices/cerbos.md) | Deciding allow or deny from a versioned policy instead of relationship tuples | [link](https://docs.cerbos.dev/cerbos/latest/installation/binary.html) | cerbos, authorization, policy, pdp | active |
 
-## Services (189)
+## Services (192)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -321,8 +321,11 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [neo4j-aura](practices/neo4j-aura.md) | Storing an app’s graph on Neo4j Aura, or letting an agent query that instance over MCP | [link](https://console.neo4j.io/) | neo4j, graph, database, mcp | active |
 | [incident-io](practices/incident-io.md) | Declaring an incident or paging on-call from an agent, or reading what is already open | [link](https://incident.io/free-trial) | incident-io, incidents, on-call, mcp | active |
 | [appwrite](practices/appwrite.md) | Hosting an app’s users, database, and files on Appwrite, or letting an agent change that project | [link](https://appwrite.io/sign-up) | appwrite, backend, auth, mcp | active |
+| [mixpanel](practices/mixpanel.md) | Querying product events, funnels, or replays in Mixpanel, or letting an agent change a board or flag | [link](https://mixpanel.com/register/) | mixpanel, analytics, mcp, experiments | active |
+| [pagerduty](practices/pagerduty.md) | Reading who is on call or changing a PagerDuty incident from an agent, instead of only receiving a Cursor tri… | [link](https://www.pagerduty.com/sign-up/) | pagerduty, incidents, on-call, mcp | active |
+| [customer-io](practices/customer-io.md) | Sending lifecycle email, push, or SMS from one audience, or letting an agent draft a Customer.io campaign | [link](https://fly.customer.io/signup) | customer-io, messaging, email, mcp | active |
 
-## Protocols and standards (23)
+## Protocols and standards (24)
 
 Open specs agents and tools use to talk to each other.
 
@@ -351,3 +354,4 @@ Open specs agents and tools use to talk to each other.
 | [ap2-payments](practices/ap2-payments.md) | Authorizing an agent to buy from a merchant with signed checkout and payment mandates | — | ap2, payments, commerce, authorization | active |
 | [ucp-commerce](practices/ucp-commerce.md) | Letting an agent discover a merchant and check out over UCP instead of scraping a storefront | — | ucp, commerce, checkout, discovery | active |
 | [standard-webhooks](practices/standard-webhooks.md) | Verifying or sending webhooks with Standard Webhooks headers instead of a vendor-specific signature | — | webhooks, signatures, http, interoperability | active |
+| [otlp](practices/otlp.md) | Sending traces, metrics, or logs from an agent to a collector with the OpenTelemetry Protocol | — | otlp, otel, observability, protocol | active |
