@@ -4,13 +4,13 @@ title: ClickHouse Cloud — hosted columnar analytics and a read-only MCP
 kind: service
 tags: [clickhouse, analytics, database, mcp]
 status: active
-updated: 2026-11-23
+updated: 2026-11-27
 when_to_use: Querying a large event or log table with SQL, or letting an agent run read-only analytics against ClickHouse Cloud
 ---
 
 ## Summary
 
-**ClickHouse Cloud** is hosted columnar SQL for analytics. You pay for compute, storage, backups, egress, and ClickPipes, with no monthly minimum. A new organization gets **$300** of credits for **30 days**, then pay-as-you-go. Compute can idle to zero; storage does not. A managed MCP server at `https://mcp.clickhouse.cloud/mcp` lists schema and runs read-only queries after you enable it on that service. Use it for analytical scans. Use Neon (`neon`) or Supabase (`supabase`) for transactional Postgres.
+**ClickHouse Cloud** is hosted columnar SQL for analytics. You pay for compute, storage, backups, egress, and ClickPipes, with no monthly minimum. A new organization gets **$300** of credits for **30 days**, then pay-as-you-go. Compute can idle to zero; storage does not. A managed MCP server at `https://mcp.clickhouse.cloud/mcp` lists schema and runs read-only queries after you enable it on that service. Use it for analytical scans. Use Neon (`neon`) or Supabase (`supabase`) for transactional Postgres. Use Snowflake (`snowflake`) when the tables and the agent tools should stay in one governed account.
 
 ## Notes
 

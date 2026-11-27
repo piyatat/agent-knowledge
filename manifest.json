@@ -14902,14 +14902,14 @@
       "tags": ["resend", "email", "mcp", "messaging"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-25",
+      "updated": "2026-11-27",
       "when_to_use": "Sending app email through Resend, or letting an agent manage domains, templates, and inbound mail",
       "links": {
         "get": "https://resend.com/signup",
         "docs": "https://resend.com/docs/mcp-server",
         "home": "https://resend.com/"
       },
-      "related": ["resend-quota-and-test-domain", "composio", "stripe", "loops", "knock", "postmark"]
+      "related": ["resend-quota-and-test-domain", "composio", "stripe", "loops", "knock", "postmark", "sendgrid"]
     },
     {
       "id": "resend-quota-and-test-domain",
@@ -15334,14 +15334,14 @@
       "tags": ["deepgram", "speech", "voice", "transcription"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-25",
+      "updated": "2026-11-27",
       "when_to_use": "Transcribing live or recorded audio for an agent, or streaming turn-taking speech with Flux",
       "links": {
         "get": "https://console.deepgram.com/signup",
         "docs": "https://developers.deepgram.com/docs/stt/getting-started",
         "home": "https://deepgram.com/"
       },
-      "related": ["deepgram-default-model-and-concurrency", "livekit-agents", "pipecat", "elevenlabs-agents", "cartesia"]
+      "related": ["deepgram-default-model-and-concurrency", "livekit-agents", "pipecat", "elevenlabs-agents", "cartesia", "assemblyai"]
     },
     {
       "id": "deepgram-default-model-and-concurrency",
@@ -15495,14 +15495,14 @@
       "tags": ["clickhouse", "analytics", "database", "mcp"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-27",
       "when_to_use": "Querying a large event or log table with SQL, or letting an agent run read-only analytics against ClickHouse Cloud",
       "links": {
         "get": "https://console.clickhouse.cloud/signUp",
         "docs": "https://clickhouse.com/docs/products/cloud/features/ai-ml/remote-mcp",
         "home": "https://clickhouse.com/"
       },
-      "related": ["clickhouse-idle-and-mcp", "motherduck", "neon", "supabase", "datadog", "tinybird"]
+      "related": ["clickhouse-idle-and-mcp", "motherduck", "neon", "supabase", "datadog", "tinybird", "snowflake"]
     },
     {
       "id": "clickhouse-idle-and-mcp",
@@ -15522,14 +15522,14 @@
       "tags": ["twilio", "sms", "voice", "messaging"],
       "kind": "service",
       "status": "active",
-      "updated": "2026-11-23",
+      "updated": "2026-11-27",
       "when_to_use": "Sending an SMS or WhatsApp message, placing a call, or checking a phone number from an app",
       "links": {
         "get": "https://www.twilio.com/try-twilio",
         "docs": "https://www.twilio.com/docs/ai/mcp",
         "home": "https://www.twilio.com/"
       },
-      "related": ["twilio-trial-and-docs-mcp", "resend", "deepgram", "livekit-agents"]
+      "related": ["twilio-trial-and-docs-mcp", "resend", "deepgram", "livekit-agents", "sendgrid"]
     },
     {
       "id": "twilio-trial-and-docs-mcp",
@@ -16907,6 +16907,87 @@
       "updated": "2026-11-27",
       "when_to_use": "An Apify Actor stopped for usage, search missed a Store Actor, or call-actor returned no rows",
       "related": ["apify", "firecrawl", "browserbase"]
+    },
+    {
+      "id": "snowflake",
+      "path": "practices/snowflake.md",
+      "title": "Snowflake — governed warehouse with a managed MCP server",
+      "tags": ["snowflake", "warehouse", "mcp", "analytics"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Querying a warehouse that already holds the data, or exposing Cortex tools to an external agent",
+      "links": {
+        "get": "https://signup.snowflake.com/",
+        "docs": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "home": "https://www.snowflake.com/"
+      },
+      "related": ["snowflake-trial-ai-and-mcp-sql", "clickhouse-cloud", "motherduck", "tinybird"]
+    },
+    {
+      "id": "snowflake-trial-ai-and-mcp-sql",
+      "path": "failure-modes/snowflake-trial-ai-and-mcp-sql.md",
+      "title": "A Snowflake trial has no Cortex, or MCP SQL was not what it looked like",
+      "tags": ["snowflake", "mcp", "billing", "warehouse"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "A Snowflake trial rejected Cortex, an MCP analyst call did not return rows, or a SQL tool changed data",
+      "related": ["snowflake", "clickhouse-cloud", "motherduck"]
+    },
+    {
+      "id": "assemblyai",
+      "path": "practices/assemblyai.md",
+      "title": "AssemblyAI — speech-to-text, with an account MCP server",
+      "tags": ["assemblyai", "speech", "transcription", "mcp"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Transcribing recorded or live audio, or letting an agent submit a public audio URL",
+      "links": {
+        "get": "https://www.assemblyai.com/dashboard/signup",
+        "docs": "https://www.assemblyai.com/docs/mcp-server",
+        "home": "https://www.assemblyai.com/"
+      },
+      "related": ["assemblyai-session-bill-and-gateway", "deepgram", "cartesia", "livekit-agents", "pipecat"]
+    },
+    {
+      "id": "assemblyai-session-bill-and-gateway",
+      "path": "failure-modes/assemblyai-session-bill-and-gateway.md",
+      "title": "An AssemblyAI stream billed idle time, or a summary skipped the free credits",
+      "tags": ["assemblyai", "speech", "mcp", "billing"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "An AssemblyAI streaming bill included silence, a free account was charged for a summary, or MCP returned 401",
+      "related": ["assemblyai", "deepgram", "cartesia"]
+    },
+    {
+      "id": "sendgrid",
+      "path": "practices/sendgrid.md",
+      "title": "SendGrid — Twilio email API with a 60-day trial",
+      "tags": ["sendgrid", "email", "twilio", "messaging"],
+      "kind": "service",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "Sending transactional email from a Twilio account after a sender is verified",
+      "links": {
+        "get": "https://signup.sendgrid.com/",
+        "docs": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+        "home": "https://www.twilio.com/en-us/sendgrid"
+      },
+      "related": ["sendgrid-trial-stop-and-full-key", "twilio", "resend", "postmark", "loops"]
+    },
+    {
+      "id": "sendgrid-trial-stop-and-full-key",
+      "path": "failure-modes/sendgrid-trial-stop-and-full-key.md",
+      "title": "SendGrid stopped sending, or a new API key was Full Access",
+      "tags": ["sendgrid", "email", "billing", "auth"],
+      "kind": "knowledge",
+      "status": "active",
+      "updated": "2026-11-27",
+      "when_to_use": "SendGrid API sends stopped after a trial, sandbox returned 200 and nothing arrived, or a key could change the account",
+      "related": ["sendgrid", "twilio", "resend", "postmark"]
     }
   ]
 }

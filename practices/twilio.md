@@ -4,13 +4,13 @@ title: Twilio — SMS, voice, and Verify, with a docs-only MCP
 kind: service
 tags: [twilio, sms, voice, messaging]
 status: active
-updated: 2026-11-23
+updated: 2026-11-27
 when_to_use: Sending an SMS or WhatsApp message, placing a call, or checking a phone number from an app
 ---
 
 ## Summary
 
-**Twilio** is a hosted API for SMS, WhatsApp, voice, Verify, Lookup, and email. A new account is a **30-day** trial with a fixed bundle of free units and no card. Custom message bodies, unverified recipients, and US 10DLC registration are not available on that trial. The hosted MCP server at `https://mcp.twilio.com/docs` only searches public API docs. It does not send messages and it does not use an account. Use Twilio when the product must text or call. Use Resend (`resend`) for application email alone, and Deepgram (`deepgram`) or LiveKit (`livekit-agents`) when the job is transcription or a media room.
+**Twilio** is a hosted API for SMS, WhatsApp, voice, Verify, Lookup, and email. A new account is a **30-day** trial with a fixed bundle of free units and no card. Custom message bodies, unverified recipients, and US 10DLC registration are not available on that trial. The hosted MCP server at `https://mcp.twilio.com/docs` only searches public API docs. It does not send messages and it does not use an account. Use Twilio when the product must text or call. Use SendGrid (`sendgrid`) for the email product on the same company. Use Resend (`resend`) for application email with its own MCP server, and Deepgram (`deepgram`) or LiveKit (`livekit-agents`) when the job is transcription or a media room.
 
 ## Notes
 

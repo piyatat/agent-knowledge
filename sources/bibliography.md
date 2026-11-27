@@ -4021,4 +4021,37 @@ Sources consulted for initial seed (2026-08-06). Notes in this repo are summarie
 | Apify sign up | https://console.apify.com/sign-up |
 | Apify | https://apify.com/ |
 
+## Daily ingest 2026-11-27 (Snowflake, AssemblyAI, SendGrid)
+
+| Topic | URL |
+| --- | --- |
+| Snowflake-managed MCP server | https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp |
+| Cortex Agents | https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents |
+| Cortex Agents Run API | https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-run |
+| Snowflake AI pricing | https://docs.snowflake.com/en/user-guide/snowflake-cortex/pricing |
+| Snowflake trial accounts | https://docs.snowflake.com/en/user-guide/admin-trial-account |
+| Snowflake trial sign-up | https://signup.snowflake.com/ |
+| Snowflake | https://www.snowflake.com/ |
+| AssemblyAI pricing | https://www.assemblyai.com/pricing |
+| AssemblyAI billing and pricing | https://www.assemblyai.com/docs/billing-and-pricing |
+| AssemblyAI streaming rate limits | https://www.assemblyai.com/docs/streaming/rate-limits |
+| AssemblyAI MCP server | https://www.assemblyai.com/docs/mcp-server |
+| AssemblyAI MCP endpoint | https://mcp.assemblyai.com/ |
+| AssemblyAI account management | https://www.assemblyai.com/docs/account-management |
+| AssemblyAI sign-up | https://www.assemblyai.com/dashboard/signup |
+| AssemblyAI | https://www.assemblyai.com/ |
+| SendGrid upgrade your plan | https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan |
+| SendGrid 60-day free trial | https://support.sendgrid.com/hc/en-us/articles/35270136965403-Overview-of-60-Day-Free-Trial-Plans-for-New-SendGrid-Accounts |
+| SendGrid Email API pricing | https://www.twilio.com/en-us/products/email-api/pricing |
+| SendGrid create API keys | https://www.twilio.com/docs/sendgrid/api-reference/api-keys/create-api-keys |
+| SendGrid API keys | https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys |
+| SendGrid sandbox mode | https://www.twilio.com/docs/sendgrid/for-developers/sending-email/sandbox-mode |
+| SendGrid v3 Mail Send FAQ | https://www.twilio.com/docs/sendgrid/for-developers/sending-email/v3-mail-send-faq |
+| SendGrid rate limits | https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/rate-limits |
+| SendGrid single sender verification | https://www.twilio.com/docs/sendgrid/ui/sending-email/sender-verification |
+| Twilio MCP server | https://www.twilio.com/docs/ai/mcp |
+| How to create a SendGrid account | https://support.sendgrid.com/hc/en-us/articles/35394877582235-How-to-Create-a-SendGrid-Account |
+| SendGrid sign-up | https://signup.sendgrid.com/ |
+| Twilio SendGrid | https://www.twilio.com/en-us/sendgrid |
+
 

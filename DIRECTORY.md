@@ -126,7 +126,7 @@ Installable agents, CLIs, SDKs, IDE integrations and plugins.
 | [openfga](practices/openfga.md) | Running relationship checks on a server you operate instead of Auth0 FGA | [link](https://openfga.dev/docs/getting-started/setup-openfga/docker) | openfga, authorization, rebac, cncf | active |
 | [cerbos](practices/cerbos.md) | Deciding allow or deny from a versioned policy instead of relationship tuples | [link](https://docs.cerbos.dev/cerbos/latest/installation/binary.html) | cerbos, authorization, policy, pdp | active |
 
-## Services (195)
+## Services (198)
 
 Hosted platforms, cloud agents, integrations and managed features.
 
@@ -327,6 +327,9 @@ Hosted platforms, cloud agents, integrations and managed features.
 | [vercel](practices/vercel.md) | Deploying a web app on Vercel, or letting an agent inspect logs and publish a deployment | [link](https://vercel.com/signup) | vercel, hosting, mcp, deploy | active |
 | [airtable](practices/airtable.md) | Reading or updating records in an Airtable base, or letting an agent build tables and automations | [link](https://airtable.com/signup) | airtable, database, mcp, records | active |
 | [apify](practices/apify.md) | Running an Apify Store Actor to collect site data, or letting an agent search and start that run | [link](https://console.apify.com/sign-up) | apify, scrape, mcp, actors | active |
+| [snowflake](practices/snowflake.md) | Querying a warehouse that already holds the data, or exposing Cortex tools to an external agent | [link](https://signup.snowflake.com/) | snowflake, warehouse, mcp, analytics | active |
+| [assemblyai](practices/assemblyai.md) | Transcribing recorded or live audio, or letting an agent submit a public audio URL | [link](https://www.assemblyai.com/dashboard/signup) | assemblyai, speech, transcription, mcp | active |
+| [sendgrid](practices/sendgrid.md) | Sending transactional email from a Twilio account after a sender is verified | [link](https://signup.sendgrid.com/) | sendgrid, email, twilio, messaging | active |
 
 ## Protocols and standards (24)
 

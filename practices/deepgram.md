@@ -4,13 +4,13 @@ title: Deepgram — speech-to-text, Flux turn-taking, and voice APIs
 kind: service
 tags: [deepgram, speech, voice, transcription]
 status: active
-updated: 2026-11-25
+updated: 2026-11-27
 when_to_use: Transcribing live or recorded audio for an agent, or streaming turn-taking speech with Flux
 ---
 
 ## Summary
 
-**Deepgram** is a hosted speech API. Pre-recorded and streaming transcription use Nova models. Flux STT is a streaming model with built-in end-of-turn detection for voice agents. The same account also exposes text-to-speech and a Voice Agent API. Use Deepgram when a pipeline you run needs the speech model. Use LiveKit Agents (`livekit-agents`) or Pipecat (`pipecat`) when you also need the room and the agent loop. Use ElevenLabs Agents (`elevenlabs-agents`) when the whole voice agent should be hosted. Use Cartesia (`cartesia`) when Sonic speech or Ink transcription should run on Cartesia’s credit plan.
+**Deepgram** is a hosted speech API. Pre-recorded and streaming transcription use Nova models. Flux STT is a streaming model with built-in end-of-turn detection for voice agents. The same account also exposes text-to-speech and a Voice Agent API. Use Deepgram when a pipeline you run needs the speech model. Use LiveKit Agents (`livekit-agents`) or Pipecat (`pipecat`) when you also need the room and the agent loop. Use ElevenLabs Agents (`elevenlabs-agents`) when the whole voice agent should be hosted. Use Cartesia (`cartesia`) when Sonic speech or Ink transcription should run on Cartesia’s credit plan. Use AssemblyAI (`assemblyai`) when streaming should bill by open session, or an agent should submit a public audio URL.
 
 ## Notes
 
